@@ -1,0 +1,167 @@
+=== VECTOR DATABASE DUMP V2 (39 Items) ===
+
+ID: tbl_T1_row_0
+CONTENT:
+CHEMICAL: Chemical Ammunition and Substances. GROUP: Compati-bility Group2. GEAR: Standard safety gear. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_1
+CONTENT:
+CHEMICAL: 1. GROUP: 2. GEAR: Standard safety gear. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_2
+CONTENT:
+CHEMICAL: Toxic \( Agents^1 \). GROUP: K. GEAR: Full Protective Clothing. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_3
+CONTENT:
+CHEMICAL: Tear Gas, O-Chlorobenzol. GROUP: G. GEAR: Full Protective Clothing. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_4
+CONTENT:
+CHEMICAL: Smoke, Titanium Tetrachloride (FM). GROUP: G. GEAR: Full Protective Clothing. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_5
+CONTENT:
+CHEMICAL: Smoke, Sulpher trioxide-chlorosulphonic acid solution (FS). GROUP: G. GEAR: Full Protective Clothing. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_6
+CONTENT:
+CHEMICAL: Smoke, Aluminum-zinc oxide-hexachloroethane (HC). GROUP: G. GEAR: Breathing Apparatus, Do NOT use Water. Breathing Apparatus is REQUIRED. CRITICAL: APPLY NO WATER!
+--------------------------------------------------
+ID: tbl_T1_row_7
+CONTENT:
+CHEMICAL: White Phosphorous (WP). GROUP: H. GEAR: Full Protective Clothing. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_8
+CONTENT:
+CHEMICAL: White Phosphorous plasticized (PWP). GROUP: H. GEAR: Full Protective Clothing. No specific breathing apparatus indicated. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_9
+CONTENT:
+CHEMICAL: Thermite or Thermate (TH). GROUP: G. GEAR: Breathing Apparatus, Do NOT use Water. Breathing Apparatus is REQUIRED. CRITICAL: APPLY NO WATER!
+--------------------------------------------------
+ID: tbl_T1_row_10
+CONTENT:
+CHEMICAL: Pyrotechnic Material (PT). GROUP: G. GEAR: Breathing Apparatus, Do NOT use Water. Breathing Apparatus is REQUIRED. CRITICAL: APPLY NO WATER!
+--------------------------------------------------
+ID: tbl_T1_row_11
+CONTENT:
+CHEMICAL: Calcium Phosphide. GROUP: L. GEAR: Breathing Apparatus, Do NOT use Water. Breathing Apparatus is REQUIRED. CRITICAL: APPLY NO WATER!
+--------------------------------------------------
+ID: tbl_T1_row_12
+CONTENT:
+CHEMICAL: Signaling Smokes. GROUP: G. GEAR: Breathing Apparatus. Breathing Apparatus is REQUIRED. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_13
+CONTENT:
+CHEMICAL: Isobutyl methacrylate with oil (IM). GROUP: J. GEAR: Breathing Apparatus. Breathing Apparatus is REQUIRED. Water application is PERMITTED.
+--------------------------------------------------
+ID: tbl_T1_row_14
+CONTENT:
+CHEMICAL: Napalm (NP). GROUP: J. GEAR: Full Protective Clothing, Breathing Apparatus, Do NOT use Water. Breathing Apparatus is REQUIRED. CRITICAL: APPLY NO WATER!
+--------------------------------------------------
+ID: tbl_T1_row_15
+CONTENT:
+CHEMICAL: Triethylaluminim (TEA)(TPA). GROUP: L. GEAR: Full Protective Clothing, Do NOT use Water. No specific breathing apparatus indicated. CRITICAL: APPLY NO WATER!
+--------------------------------------------------
+ID: tbl_1_row_0
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: B | B: X | D:  X Note {1)}  | E:  X Note {1)}  | F:  X Note {1)}  | S: X
+--------------------------------------------------
+ID: tbl_1_row_1
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: C | C: X | D: X | E: X | F: 2) | G: 4) | N:  X Note {5)}  | S: X
+--------------------------------------------------
+ID: tbl_1_row_2
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: D | B:  X Note {1)}  | C: X | D: X | E: X | F: 2) | G: 4) | N:  X Note {5)}  | S: X
+--------------------------------------------------
+ID: tbl_1_row_3
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: E | B:  X Note {1)}  | C: X | D: X | E: X | F: 2) | G: 4) | N:  X Note {5)}  | S: X
+--------------------------------------------------
+ID: tbl_1_row_4
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: F | B:  X Note {1)}  | C: 2) | D: 2) | E: 2) | F: X | G: 4) | S: X
+--------------------------------------------------
+ID: tbl_1_row_5
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: G | C: 4) | D: 4) | E: 4) | F: 4) | G: X | S: X
+--------------------------------------------------
+ID: tbl_1_row_6
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: H | H: X | S: X
+--------------------------------------------------
+ID: tbl_1_row_7
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: J | J: X | S: X
+--------------------------------------------------
+ID: tbl_1_row_8
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: K | K: X
+--------------------------------------------------
+ID: tbl_1_row_9
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: L | L: 3)
+--------------------------------------------------
+ID: tbl_1_row_10
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: N | C:  X Note {5)}  | D:  X Note {5)}  | E:  X Note {5)}  | N:  X Note {6)}  | S:  X Note {7)} 
+--------------------------------------------------
+ID: tbl_1_row_11
+CONTENT:
+TABLE CONTEXT: Compatibility Group Mixing Rules. DATA: Compatibility Group: S | B: X | C: X | D: X | E: X | F: X | G: X | H: X | J: X | N:  X Note {7)}  | S:  X Note {6)} 
+--------------------------------------------------
+ID: txt_1
+CONTENT:
+Table T.1 Compatibility Group and Chemical Hazard Symbols Required for Storage of Chemical Ammunition and Substances.
+--------------------------------------------------
+ID: txt_3
+CONTENT:
+1 Toxic Agents without explosives components that normally would be assigned to Hazard Division 6.1 may be stored as compatibility group K.  
+2 See Chapter 3.
+--------------------------------------------------
+ID: txt_4
+CONTENT:
+Articles may be mixed in aboveground storage as shown in the following table:
+--------------------------------------------------
+ID: txt_5
+CONTENT:
+Table 6 - Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups.
+--------------------------------------------------
+ID: txt_8
+CONTENT:
+1) Compatibility Group B fuses may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F.  
+2) Storage in the same building is permitted if effectively segregated to prevent propagation.  
+3) Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.  
+4) Mixing of articles of Compatibility Group G with articles of other compatibility groups is at the discretion of the National Competent Authority.  
+5) Articles of Compatibility Group N should not in general be stored with articles in other compatibility groups except S. However, if such articles are stored with articles of
+--------------------------------------------------
+ID: txt_9
+CONTENT:
+Compatibility Group C, D and E, the articles of Compatibility Group N should be considered as having the characteristics of Compatibility Group D and the compatibility groups mixing rules apply accordingly.
+--------------------------------------------------
+ID: txt_10
+CONTENT:
+6) It is allowed to mix 1.6N munitions. The Compatibility Group of the mixed set remains N if the munitions belong to the same family or if it has been demonstrated that, in case of a detonation of one munition, there is no instant transmission to the munitions of another family (the families are then called "compatible"). If it is not the case the whole set of munitions should be considered as having the characteristics of Compatibility Group D.  
+7) A mixed set of munitions 1.6N and 1.4S may be considered as having the characteristics of Compatibility Group N.
+--------------------------------------------------
+ID: txt_11
+CONTENT:
+# 1.2.3.3. Mixed Storage - Special Circumstances
+--------------------------------------------------
+ID: txt_12
+CONTENT:
+a) There may be special circumstances where the above mixing rules may be modified by the National Competent Authority subject to adequate technical justification based on tests where these are considered to be appropriate.  
+b) Very small quantity HD 1.1 and large quantity Hazard Division 1.2.1/1.2.2. It should be possible to arrange storage in such a manner that the mixture will behave as 1.2.1/1.2.2.  
+c) Mixing of Hazard Division 1.1, Hazard Division 1.2.1/1.2.2 and Hazard Division 1.3 The quantity distance to be applied in these unusual circumstances is that which is the greatest when considering the aggregate NEQ as Hazard Division 1.1, Hazard Division 1.2.1, Hazard Division 1.2.2 or Hazard Division 1.3.  
+d) With the exception of substances in Compatibility Group A, which should not be mixed with other compatibility groups, the mixing of substances and articles is permitted as shown in Tables 5 and 6.
+--------------------------------------------------
+ID: txt_13
+CONTENT:
+# 1.2.3.4. Suspect Ammunition and Explosives (Mixed storage)
+--------------------------------------------------
+ID: txt_14
+CONTENT:
+Suspect ammunition and explosives must not be stored with any other ammunition and explosives.
+--------------------------------------------------

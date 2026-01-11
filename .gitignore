@@ -1,0 +1,22 @@
+# Gereksiz Sistem Dosyalari
+__pycache__/
+*.py[cod]
+*.ds_store
+
+# Buyuk Model Dosyalari (Bunlar Github'a gitmemeli)
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.h5
+models/checkpoints/
+models/lora_model/
+data/chroma_db/
+*.sqlite3
+
+# Onbellek ve Sanal Ortam
+unsloth_compiled_cache/
+.locks/
+venv/
+.env
+

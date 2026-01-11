@@ -1,0 +1,19 @@
+--- CONTEXT: AASTP-1 TABLE 6 (RULES FOR MIXING) ---
+
+Table 6 - Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups.
+
+<table><tr><td>Compatibility Group</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>J</td><td>K</td><td>L</td><td>N</td><td>S</td></tr><tr><td>B</td><td>X</td><td></td><td>\( X^{1)} \)</td><td>\( X^{1)} \)</td><td>\( X^{1)} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>C</td><td></td><td>X</td><td>X</td><td>X</td><td>2)</td><td>4)</td><td></td><td></td><td></td><td></td><td>\( X^{5)} \)</td><td>X</td></tr><tr><td>D</td><td>\( X^{1)} \)</td><td>X</td><td>X</td><td>X</td><td>2)</td><td>4)</td><td></td><td></td><td></td><td></td><td>\( X^{5)} \)</td><td>X</td></tr><tr><td>E</td><td>\( X^{1)} \)</td><td>X</td><td>X</td><td>X</td><td>2)</td><td>4)</td><td></td><td></td><td></td><td></td><td>\( X^{5)} \)</td><td>X</td></tr><tr><td>F</td><td>\( X^{1)} \)</td><td>2)</td><td>2)</td><td>2)</td><td>X</td><td>4)</td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>G</td><td></td><td>4)</td><td>4)</td><td>4)</td><td>4)</td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>H</td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>J</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>X</td></tr><tr><td>K</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td></tr><tr><td>L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3)</td><td></td><td></td></tr><tr><td>N</td><td></td><td>\( X^{5)} \)</td><td>\( X^{5)} \)</td><td>\( X^{5)} \)</td><td></td><td></td><td></td><td></td><td></td><td></td><td>\( X^{6)} \)</td><td>\( X^{7)} \)</td></tr><tr><td>S</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td></td><td></td><td>\( X^{7)} \)</td><td>\( X^{6)} \)</td></tr></table>
+
+### LEGEND: X = Mixing permitted
+
+### NOTES
+
+1) Compatibility Group B fuses may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F.
+2) Storage in the same building is permitted if effectively segregated to prevent propagation.
+3) Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.
+4) Mixing of articles of Compatibility Group G with articles of other compatibility groups is at the discretion of the National Competent Authority.
+5) Articles of Compatibility Group N should not in general be stored with articles in other compatibility groups except S. However, if such articles are stored with articles of Compatibility Group C, D and E, the articles of Compatibility Group N should be considered as having the characteristics of Compatibility Group D and the compatibility groups mixing rules apply accordingly.
+6) It is allowed to mix 1.6N munitions. The Compatibility Group of the mixed set remains N if the munitions belong to the same family or if it has been demonstrated that, in case of a detonation of one munition, there is no instant transmission to the munitions of another family (the families are then called "compatible"). If it is not the case the whole set of munitions should be considered as having the characteristics of Compatibility Group D.
+7) A mixed set of munitions 1.6N and 1.4S may be considered as having the characteristics of Compatibility Group N.
+
+#
