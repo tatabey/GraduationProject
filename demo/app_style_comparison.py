@@ -3,14 +3,13 @@ from unsloth import FastLanguageModel
 import torch
 import os
 
-# --- AYARLAR ---
+# --- SETTINGS ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Hangi modeli test ediyorsak onun yolunu verelim (Phi-3 veya Llama)
-# Şu an Phi-3 ile devam edelim, Llama için yolu değiştirebilirsiniz.
+# Define the path of the model being tested
 MODEL_PATH = os.path.join(BASE_DIR, "models", "lora_model") 
 
-# --- MODELİ YÜKLE ---
-print(f"🚀 Stil Analizi İçin Model Yükleniyor: {MODEL_PATH}...")
+# --- LOAD MODEL ---
+print(f"🚀 Loading Model for Style Analysis: {MODEL_PATH}...")
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name = MODEL_PATH,
     max_seq_length = 2048,
@@ -21,9 +20,9 @@ FastLanguageModel.for_inference(model)
 
 def style_test(scenario):
     
-    # 1. ORTAK PROMPT (Format Emri YOK)
-    # Modele bilerek "Şu formatı kullan" DEMİYORUZ.
-    # Bakalım Fine-Tuned model kendiliğinden formatı yapacak mı?
+    # 1. COMMON PROMPT (No Formatting Command)
+    # We deliberately do NOT tell the model to use a specific format.
+    # We want to see if the Fine-Tuned model applies the format naturally.
     prompt = f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
 ### Instruction:
@@ -37,15 +36,14 @@ Verify compliance with AASTP-1 Table 6 standards.
     
     inputs = tokenizer([prompt], return_tensors="pt").to("cuda")
 
-    # --- DURUM A: BASE MODEL (Fine-Tuning KAPALI) ---
-    # LoRA adaptörlerini geçici olarak devre dışı bırakıyoruz.
-    # Model fabrika ayarlarına (saf haline) dönüyor.
+    # --- CASE A: BASE MODEL (Fine-Tuning DISABLED) ---
+    # Temporarily disable LoRA adapters to see the "factory settings."
     with model.disable_adapter():
         outputs_base = model.generate(
             **inputs, 
             max_new_tokens=128,
             use_cache=True, 
-            temperature=0.7 # Biraz daha konuşkan olsun
+            temperature=0.7 # Slightly more conversational
         )
         res_base = tokenizer.batch_decode(outputs_base)[0]
         if "### Response:\n" in res_base:
@@ -53,13 +51,13 @@ Verify compliance with AASTP-1 Table 6 standards.
         else:
             clean_base = res_base
 
-    # --- DURUM B: FINE-TUNED MODEL (Fine-Tuning AÇIK) ---
-    # LoRA adaptörleri devrede. Askeri kimlik aktif.
+    # --- CASE B: FINE-TUNED MODEL (Fine-Tuning ENABLED) ---
+    # LoRA adapters active. "Military identity" enabled.
     outputs_ft = model.generate(
         **inputs, 
         max_new_tokens=128,
         use_cache=True, 
-        temperature=0.1 # Daha ciddi ve tutarlı
+        temperature=0.1 # More precise and consistent
     )
     res_ft = tokenizer.batch_decode(outputs_ft)[0]
     if "### Response:\n" in res_ft:
@@ -69,41 +67,40 @@ Verify compliance with AASTP-1 Table 6 standards.
 
     return clean_base, clean_ft
 
-# --- ARAYÜZ TASARIMI ---
+# --- UI DESIGN ---
 with gr.Blocks(theme=gr.themes.Base()) as demo:
     gr.Markdown(
         """
-        # 🎭 Fine-Tuning Etkisi: Üslup ve Format Testi
-        **Sol Taraf (Base Model):** Modelin eğitilmemiş, ham hali. (Genel amaçlı asistan)
-        **Sağ Taraf (Fine-Tuned):** Eğittiğimiz model. (Askeri Denetçi formatı)
+        # 🎭 Fine-Tuning Impact: Style and Format Test
+        **Left Side (Base Model):** Untrained, raw state of the model.
+        **Right Side (Fine-Tuned):** The model we trained.
         
-        *Not: Bu testte RAG (Doküman okuma) KAPALIDIR. Sadece davranış farkına odaklanıyoruz.*
         """
     )
     
     with gr.Row():
         input_text = gr.Textbox(
-            label="Senaryo", 
-            placeholder="Örn: Group F articles are stored with Group C...",
+            label="Scenario", 
+            placeholder="E.g.: Group F articles are stored with Group C...",
             lines=2
         )
     
-    submit_btn = gr.Button("Stil Farkını Göster", variant="primary")
+    submit_btn = gr.Button("Show Style Difference", variant="primary")
     
     with gr.Row():
-        # SOL KOLON
+        # LEFT COLUMN
         with gr.Column():
-            gr.Markdown("### 👶 Base Model (Eğitimsiz)")
-            output_base = gr.Textbox(label="Çıktı (Sohbet Tarzı)", lines=6, interactive=False)
-            gr.Markdown("*Beklenti: Uzun cümleler, sohbet havası, belirsiz format.*")
+            gr.Markdown("### 👶 Base Model (Untrained)")
+            output_base = gr.Textbox(label="Output (Chat Style)", lines=6, interactive=False)
+            gr.Markdown("*Expectation: Long sentences, conversational tone, vague format.*")
             
-        # SAĞ KOLON
+        # RIGHT COLUMN
         with gr.Column():
-            gr.Markdown("### 👮 Fine-Tuned Model (Eğitilmiş)")
-            output_ft = gr.Textbox(label="Çıktı (Askeri Format)", lines=6, interactive=False)
-            gr.Markdown("*Beklenti: 'COMPLIANCE / REASONING' formatı, net ve sert üslup.*")
+            gr.Markdown("### 👮 Fine-Tuned Model (Trained)")
+            output_ft = gr.Textbox(label="Output (Military Format)", lines=6, interactive=False)
+            gr.Markdown("*Expectation: 'COMPLIANCE / REASONING' format, concise and strict tone.*")
 
-    # Örnek
+    # Example
     gr.Examples(
         examples=[
             ["Scenario: Compatibility Group F articles are stored in the same building as Compatibility Group C articles."]
