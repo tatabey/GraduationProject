@@ -5,19 +5,18 @@ import os
 import re
 import chromadb
 from chromadb.utils import embedding_functions
-# --- MEVCUT IMPORTLARIN ALTINA EKLEYİN ---
 from groq import Groq
 
-# Groq API Anahtarı (https://console.groq.com/keys adresinden alıp buraya yapıştırın)
+# Groq API Anahtarı
 GROQ_API_KEY = "***REMOVED***" 
-# Model: Llama-3.3-70B (Çok güçlü ve hızlı)
+# Model: Llama-3.3-70B
 API_MODEL_NAME = "llama-3.3-70b-versatile" 
-
 try:
     client_groq = Groq(api_key=GROQ_API_KEY)
 except Exception as e:
     print(f"⚠️ Groq istemcisi hatası: {e}")
     client_groq = None
+    
 # ==============================================================================
 # 1. AYARLAR VE YOL YAPILANDIRMASI
 # ==============================================================================
@@ -30,9 +29,9 @@ print(f"📂 Proje Ana Dizini: {BASE_DIR}")
 MODEL_PATH = os.path.join(BASE_DIR, "models", "llama", "lora_model") 
 DB_PATH = os.path.join(BASE_DIR, "data", "chroma_db")
 
-# ==============================================================================
-# 2. MODEL VE DB YÜKLEME
-# ==============================================================================
+#==============================================================================
+#2. MODEL VE DB YÜKLEME
+#==============================================================================
 print(f"🚀 Loading Trained Model: {MODEL_PATH}")
 if not os.path.exists(MODEL_PATH):
     print("⚠️ WARNING: Local model not found, using base model.")
@@ -54,11 +53,9 @@ client = chromadb.PersistentClient(path=DB_PATH)
 emb_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 collection = client.get_collection(name="aastp1_universal", embedding_function=emb_fn)
 
-# ... (Importlar ve Model Yükleme kısımları aynı) ...
-
-# ==============================================================================
-# 3. YARDIMCI FONKSİYONLAR (AKILLI METADATA FİLTRELEME)
-# ==============================================================================
+#==============================================================================
+#3. YARDIMCI FONKSİYONLAR (AKILLI METADATA FİLTRELEME)
+#==============================================================================
 
 # Kimyasal madde anahtar kelimeleri
 CHEMICAL_KEYWORDS = [
@@ -126,16 +123,12 @@ def retrieve_knowledge(scenario):
 
     # Sorgu tipine göre strateji
     if query_type == "compatibility" and len(groups) >= 2:
-        # Compatibility matrix sorgusu - özelleştirilmiş arama
         return retrieve_compatibility(scenario, groups)
     elif query_type == "chemical":
-        # Kimyasal madde sorgusu
         return retrieve_chemical(scenario)
     else:
-        # Genel arama
         return retrieve_general(scenario)
 
-# app_system_final.py içindeki retrieve_compatibility fonksiyonunu böyle güncelleyin:
 
 def retrieve_compatibility(scenario, groups):
     """
@@ -171,23 +164,20 @@ def retrieve_compatibility(scenario, groups):
                 print(f"✅ Metadata ile Kural Bulundu: {doc}")
                 unique_docs.append(doc)
                 
-                # Ekstra: İlgili notları da getir (Opsiyonel)
                 if "Note" in doc:
-                    # Not getirme mantığı buraya eklenebilir
                     pass
                     
-                return unique_docs # Kesin bulduk, dönelim.
+                return unique_docs 
                 
         except Exception as e:
             print(f"⚠️ Filtreleme hatası: {e}")
 
     # 2. STRATEJİ: Metadata sonuç vermediyse Semantic Search (Fallback)
-    # Örn: Kullanıcı grup ismi vermedi, genel bir şey sordu.
     print("⚠️ Metadata ile bulunamadı, genel aramaya geçiliyor...")
     results = collection.query(
         query_texts=[scenario],
         n_results=5,
-        where={"type": "compatibility_rule"} # Yine de sadece kurallarda ara
+        where={"type": "compatibility_rule"}
     )
     
     unique_docs.extend(results['documents'][0])
@@ -217,7 +207,6 @@ def retrieve_chemical(scenario):
     )
     all_docs.extend(results['documents'][0])
 
-    # Deduplicate
     seen = set()
     unique_docs = []
     for doc in all_docs:
@@ -238,10 +227,10 @@ def retrieve_general(scenario):
 
     return results['documents'][0][:8]
 
+
 # ==============================================================================
 # 4. POST-PROCESSING: RAG-BASED VERDICT EXTRACTION
 # ==============================================================================
-
 def extract_verdict_from_rag(docs, groups):
     """
     RAG dökümanlarından kesin sonuç çıkarır.
@@ -255,12 +244,10 @@ def extract_verdict_from_rag(docs, groups):
     g1, g2 = groups[0].upper(), groups[1].upper()
 
     for doc in docs:
-        # Her iki grubu da içeren dökümanı bul
         has_g1 = f"Group {g1}" in doc
         has_g2 = f"Group {g2}" in doc
 
         if has_g1 and has_g2:
-            # Döküman her iki grubu da içeriyor - sonucu çıkar
             doc_upper = doc.upper()
 
             if "PERMITTED" in doc_upper and "NOT" not in doc_upper:
@@ -281,12 +268,8 @@ def extract_chemical_verdict_from_rag(docs, scenario):
     for doc in docs:
         doc_lower = doc.lower()
 
-        # Kimyasal madde adını bul
         for chemical in CHEMICAL_KEYWORDS:
             if chemical in scenario_lower and chemical in doc_lower:
-                # Bu kimyasal maddeyle ilgili döküman bulundu
-
-                # Ekipman kontrolü
                 equipment_issues = []
 
                 if "set 1" in scenario_lower and "set 1" in doc_lower:
@@ -308,7 +291,6 @@ def extract_chemical_verdict_from_rag(docs, scenario):
 
     return None, None
 
-# ... (parse_model_response ve generate_html_card) ...
 
 def parse_model_response(text):
     clean_text = text.replace("###", "").replace("**", "").strip()
@@ -355,32 +337,29 @@ def get_api_second_opinion(scenario, context):
         return f"API Error: {str(e)}"
 
 
-
 def generate_html_card(index, scenario, verdict, reasoning, evidence, api_opinion=""):
-    # Renk Paleti (Açık Tema İçin)
     if verdict == "COMPLIANT":
-        color = "#15803d" # Yeşil (Koyu ton)
+        color = "#16a34a"
         icon = "✅"
-        bg = "#f0fdf4"    # Çok açık yeşil arka plan
+        bg = "#dcfce7"   
     elif verdict == "NON-COMPLIANT":
-        color = "#b91c1c" # Kırmızı (Koyu ton)
+        color = "#dc2626" 
         icon = "⛔"
-        bg = "#fef2f2"    # Çok açık kırmızı arka plan
+        bg = "#fee2e2"    
     else:
-        color = "#b45309" # Turuncu (Koyu ton)
+        color = "#d97706" 
         icon = "⚠️"
-        bg = "#fffbeb"    # Çok açık sarı arka plan
+        bg = "#fef3c7"
 
-    # Kanıt Listesi (Evidence) - Okunaklı Stil
+
     evidence_list_html = ""
     keywords = set(re.findall(r"(Note \d+|Table \w+|Set \d+|Group [A-Z])", reasoning, re.IGNORECASE))
     keywords = set([k.upper() for k in keywords])
 
     for i, doc in enumerate(evidence):
         is_relevant = False
-        # Normal Kanıt: Beyaz arka plan, Koyu Gri yazı
-        style = "margin-bottom: 6px; padding: 6px; border-radius: 4px; color: #374151; border: 1px solid #e5e7eb; background-color: #ffffff;"
-        prefix = f"<span style='color: #6b7280; font-size: 0.8em; font-weight: 600;'>[DOC {i+1}]</span> "
+        style = "margin-bottom: 6px; padding: 6px; border-radius: 4px; color: #000000; border: 1px solid #d1d5db; background-color: #ffffff;"
+        prefix = f"<span style='color: #4b5563; font-size: 0.8em; font-weight: 600;'>[DOC {i+1}]</span> "
         
         for k in keywords:
             if k in doc.upper():
@@ -388,18 +367,16 @@ def generate_html_card(index, scenario, verdict, reasoning, evidence, api_opinio
                 break
         
         if is_relevant:
-            # Eşleşen Kanıt: Mavi arka plan, Lacivert yazı
-            style = "margin-bottom: 6px; padding: 6px; border-radius: 4px; background-color: #eff6ff; color: #1e40af; border-left: 4px solid #3b82f6; border: 1px solid #bfdbfe;"
+            style = "margin-bottom: 6px; padding: 6px; border-radius: 4px; background-color: #eff6ff; color: #1e3a8a; border-left: 4px solid #2563eb; border: 1px solid #bfdbfe;"
             prefix = f"<span style='color: #2563eb; font-weight: bold; font-size: 0.8em;'>[MATCHED]</span> "
 
         evidence_list_html += f"<li style='{style}'>{prefix}{doc}</li>"
 
-    # --- API GÖRÜŞÜ KUTUSU ---
     api_html_block = ""
     if api_opinion:
         api_color = "#2563eb"
         api_bg = "#eff6ff"
-        api_text = "#1e3a8a" # Lacivert yazı (okunabilirlik için)
+        api_text = "#1e3a8a" 
         
         if "NON-COMPLIANT" in api_opinion.upper(): 
             api_color = "#dc2626"
@@ -408,42 +385,41 @@ def generate_html_card(index, scenario, verdict, reasoning, evidence, api_opinio
         elif "COMPLIANT" in api_opinion.upper(): 
             api_color = "#16a34a"
             api_bg = "#f0fdf4"
-            api_text = "#166534"
+            api_text = "#14532d"
         
         api_html_block = f"""
         <div style="margin-top: 15px; padding: 12px; background-color: {api_bg}; border: 3px solid {api_color}; border-radius: 8px;">
             <div style="font-size: 0.85em; font-weight: 800; color: {api_color}; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px;">
                 🤖 LLAMA-3.3-70B (via API)
             </div>
-            <div style="font-size: 0.95em; color: {api_text}; font-style: italic; font-weight: 500;">
+            <div style="font-size: 0.95em; color: {api_text}; font-style: italic; font-weight: 600;">
                 "{api_opinion}"
             </div>
         </div>
         """
 
-    # HTML Kart Şablonu (Koyu yazılarla güncellendi)
     return f"""
-    <div style="border: 4px solid {color}40; border-left: 6px solid {color}; border-radius: 8px; margin-bottom: 24px; background-color: {bg}; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+    <div style="border: 2px solid {color}; border-left: 8px solid {color}; border-radius: 8px; margin-bottom: 24px; background-color: {bg}; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
         <div style="padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-                <span style="font-weight: 800; font-size: 1.25em; color: {color}; letter-spacing: 0.5px;">{icon} CASE {index}: {verdict}</span>
+                <span style="font-weight: 900; font-size: 1.3em; color: {color}; letter-spacing: 0.5px;">{icon} CASE {index}: {verdict}</span>
             </div>
             
             <div style="margin-bottom: 16px;">
-                <p style="margin: 0; color: #64748b; font-size: 0.75em; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">SCENARIO</p>
-                <p style="margin: 4px 0; color: #0f172a; font-size: 1.05em; font-weight: 600; line-height: 1.5;">"{scenario}"</p>
+                <p style="margin: 0; color: #4b5563; font-size: 0.75em; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">SCENARIO</p>
+                <p style="margin: 4px 0; color: #000000; font-size: 1.1em; font-weight: 600; line-height: 1.5;">"{scenario}"</p>
             </div>
             
             <div style="margin-bottom: 16px;">
-                <p style="margin: 0; color: #64748b; font-size: 0.75em; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">AI REASONING (Local Model)</p>
-                <p style="margin: 4px 0; color: #334155; font-weight: 500; font-size: 1em;">{reasoning}</p>
+                <p style="margin: 0; color: #4b5563; font-size: 0.75em; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Model Response</p>
+                <p style="margin: 4px 0; color: #000000; font-weight: 500; font-size: 1em;">{reasoning}</p>
             </div>
             
             {api_html_block}
 
-            <details style="margin-top: 16px; border-top: 1px solid {color}30; padding-top: 12px;">
-                <summary style="cursor: pointer; color: #475569; font-size: 0.9em; font-weight: 600; user-select: none;">
-                    🔍 <span style="text-decoration: underline;">Evidence Analysis</span> (Click to expand)
+            <details style="margin-top: 16px; border-top: 1px solid {color}40; padding-top: 12px;">
+                <summary style="cursor: pointer; color: #000000; font-size: 0.9em; font-weight: 700; user-select: none;">
+                    🔍 <span style="color: #000000;">Evidence Analysis</span>
                 </summary>
                 <ul style="font-size: 0.9em; list-style-type: none; padding-left: 0; margin-top: 10px; max-height: 300px; overflow-y: auto;">
                     {evidence_list_html}
@@ -455,9 +431,8 @@ def generate_html_card(index, scenario, verdict, reasoning, evidence, api_opinio
 
 
 # ==============================================================================
-# 4. MAIN PROCESSING ENGINE (UPDATED - ENGLISH UI)
+# 4. MAIN PROCESSING ENGINE (UPDATED - PROMPT FIX)
 # ==============================================================================
-
 def run_audit(input_text, progress=gr.Progress()):
     # 1. Prepare Scenarios
     scenarios = [line.strip() for line in input_text.split('\n') if line.strip()]
@@ -472,7 +447,7 @@ def run_audit(input_text, progress=gr.Progress()):
     for i, scenario in enumerate(scenarios):
         current_step = i + 1
         
-        # --- A. SHOW TEMPORARY LOADING CARD (ENGLISH) ---
+        # --- A. SHOW TEMPORARY LOADING CARD ---
         loading_card = f"""
         <div style="padding: 20px; margin-bottom: 24px; border: 2px dashed #3b82f6; border-radius: 8px; background-color: #eff6ff; color: #1e3a8a; text-align: center; font-family: 'Segoe UI', sans-serif;">
             <div style="font-weight: 800; font-size: 1.1em; margin-bottom: 8px;">⚙️ ANALYZING: SCENARIO {current_step} / {total_scenarios}</div>
@@ -480,8 +455,6 @@ def run_audit(input_text, progress=gr.Progress()):
             <div style="margin-top: 10px; font-size: 0.8em; color: #60a5fa;">(Scanning knowledge base and awaiting LLM verdict...)</div>
         </div>
         """
-        
-        # Yield current results + loading card
         yield full_html + loading_card
 
         # --- B. BACKGROUND PROCESSING ---
@@ -497,7 +470,6 @@ def run_audit(input_text, progress=gr.Progress()):
         elif query_type == "chemical":
             rag_verdict, rag_source = extract_chemical_verdict_from_rag(evidence_docs, scenario)
 
-        # Prompt Preparation
         alpaca_prompt = f"""Below is an instruction that describes a task.
 
 ### Instruction:
@@ -520,43 +492,32 @@ CRITICAL:
 {scenario}
 
 ### Your Analysis:
-VERDICT: [COMPLIANT/NON-COMPLIANT/CONDITIONAL]
-REASONING: [Quote the exact rule that applies]
 """
 
-        # Model Inference
         inputs = tokenizer([alpaca_prompt], return_tensors="pt").to("cuda")
         outputs = model.generate(
             **inputs,
-            max_new_tokens=256,
+            max_new_tokens=512,
             use_cache=True,
             temperature=0.1
         )
-        response_text = tokenizer.batch_decode(outputs)[0].split("### Your Analysis:")[-1].strip().replace("<|end_of_text|>", "")
+        response_text = tokenizer.batch_decode(outputs)[0].split("### Your Analysis:")[-1].strip().replace("<|end_of_text|>", "").replace("<|eot_id|>", "")
 
-        # Parse & Override
         model_verdict, model_reasoning = parse_model_response(response_text)
+        
         final_verdict = model_verdict
         final_reasoning = model_reasoning
 
-        if rag_verdict is not None:
-            if rag_verdict != model_verdict:
-                final_verdict = rag_verdict
-                final_reasoning = f"[RAG-VERIFIED] {rag_source[:200]}..." if rag_source else model_reasoning
-            else:
-                final_reasoning = f"[CONFIRMED] {model_reasoning}"
+        if rag_verdict is not None and rag_verdict != model_verdict:
+            print(f"📉 [RAW MODE]: Model '{model_verdict}' dedi, RAG '{rag_verdict}' bulmuştu.")
 
-        # API Second Opinion
         api_opinion_text = get_api_second_opinion(scenario, context_str)
 
-        # --- C. GENERATE PERMANENT CARD ---
         new_card = generate_html_card(current_step, scenario, final_verdict, final_reasoning, evidence_docs, api_opinion=api_opinion_text)
         full_html += new_card
 
-        # --- D. UPDATE VIEW ---
+        # --- E. UPDATE VIEW ---
         yield full_html
-
-
 
 # ==============================================================================
 # 5. TEST SENARYOLARI
@@ -591,40 +552,58 @@ body, .gradio-container {
     color: #1e293b !important;
 }
 
-/* --- SOL TARAFTAKİ PANEL (Giriş Kısmı) --- */
-
-/* 1. ETİKET (BAŞLIK) KISMI: Tam Genişlik Lacivert Blok */
-.gradio-container label {
-    background-color: #1e293b !important; /* Tüm çerçeve Lacivert */
-    color: #ffffff !important;           /* Yazı Beyaz */
-    border: 2px solid #1e293b !important;
-    padding: 10px 15px !important;       /* İç boşluk (Rahat görünüm) */
-    border-radius: 8px 8px 0 0 !important; /* Sadece üst köşeleri yuvarla */
-    display: block !important;           /* Kutu gibi davranmasını sağlar */
-    width: auto !important;              /* Genişliği otomatik ayarla */
-    margin-bottom: 0 !important;         /* Altındaki kutuyla birleşsin */
-    font-weight: bold !important;
-}
-
-/* (Varsa) İçindeki span etiketinin arka planını temizle */
-.gradio-container label span {
-    background-color: transparent !important;
-    color: #ffffff !important;
+/* --- SOL TARAF: GİRİŞ KUTUSU (AUDIT INPUT) ÖZEL STİLİ --- */
+#audit_input {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
     padding: 0 !important;
 }
 
-/* 2. GİRİŞ KUTUSU (TEXTAREA): Beyaz Kutu, Siyah Yazı */
-textarea {
-    background-color: #ffffff !important; 
-    color: #000000 !important;           /* Yazı Rengi Siyah */
-    border: 2px solid #1e293b !important; /* Çerçeve Lacivert */
-    border-top: none !important;         /* Üst çizgi yok (Başlıkla bütünleşsin) */
-    border-radius: 0 0 8px 8px !important; /* Sadece alt köşeleri yuvarla */
-    font-family: 'Consolas', 'Monaco', monospace !important;
-    min-height: 200px !important;        /* Biraz daha yüksek olsun */
+/* Başlık (Label) Kısmı: Mavi Zemin */
+#audit_input span.label-wrap, #audit_input label span {
+    background-color: #1BADCF !important; 
+    color: #ffffff !important;           
+    border: 2px solid #1BADCF !important;
+    border-bottom: none !important;      
+    padding: 10px 15px !important;
+    border-radius: 8px 8px 0 0 !important; 
+    display: block !important;
+    font-weight: bold !important;
+    font-size: 1.1em !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 
-/* --- DİĞER GENEL AYARLAR --- */
+/* 2. Yazı Alanı (Textarea): Mavi Çerçeve, Siyahlık Yok */
+#audit_input textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #1BADCF !important; 
+    border-top: none !important;
+    border-radius: 0 0 10px 10px !important;
+    font-family: 'Consolas', 'Monaco', monospace !important;
+    min-height: 250px !important;
+    box-shadow: none !important;          
+    outline: none !important;             
+}
+
+/* Focus (Tıklanınca) Durumu İçin de Siyahlığı Engelle */
+#audit_input textarea:focus {
+    border-color: #1BADCF !important;
+    box-shadow: 0 0 0 2px rgba(27, 173, 207, 0.2) !important; 
+}
+
+/* --- DİĞER TÜM BAŞLIKLAR (SİYAH) --- */
+.gradio-container label, .gradio-container span.label-wrap, .gradio-container .label {
+    color: #000000 !important; 
+    font-weight: 800 !important;
+    opacity: 1 !important;
+    font-size: 1em !important;
+}
+
+/* --- GENEL METİNLER --- */
 .prose { color: #1e293b !important; }
 h1, h2, h3 { color: #0f172a !important; }
 
@@ -633,6 +612,7 @@ button.primary {
     background-color: #2563eb !important;
     color: white !important;
     border-radius: 8px !important;
+    font-weight: bold !important;
 }
 """
 
@@ -646,23 +626,24 @@ with gr.Blocks(theme=gr.themes.Base(), css=css, title="AASTP-1 AI Auditor") as d
     with gr.Row():
         with gr.Column(scale=1):
             input_box = gr.Textbox(
-                label="Audit Scenarios (Enter one case per line)",
+                label="Audit Scenarios (Enter one case per line)", 
                 lines=8, 
-                placeholder="E.g.: Found Group B stored with Group D...",
-                value=TEST_SET_MATRIX 
+                placeholder="Ex: Found Group B stored with Group D...",
+                value=TEST_SET_MATRIX,
+                elem_id="audit_input"  
             )
-            
+                        
             gr.Markdown("### 🔽 Ready-to-Use Test Batches (Click to Load)")
-            gr.Examples(
-                examples=[
-                    [TEST_SET_MATRIX],
-                    [TEST_SET_CHEMICAL],
-                    [TEST_SET_COMPLEX]
-                ],
-                inputs=input_box,
-                label="Load Test Scenarios"
-            )
             
+            with gr.Row():
+                btn_matrix = gr.Button("📂 Load: Matrix Rules (Test Set 1)", size="sm")
+                btn_chemical = gr.Button("🧪 Load: Chemical Rules (Test Set 2)", size="sm")
+                btn_complex = gr.Button("🧩 Load: Complex Scenarios (Test Set 3)", size="sm")
+
+            btn_matrix.click(fn=lambda: TEST_SET_MATRIX, inputs=None, outputs=input_box)
+            btn_chemical.click(fn=lambda: TEST_SET_CHEMICAL, inputs=None, outputs=input_box)
+            btn_complex.click(fn=lambda: TEST_SET_COMPLEX, inputs=None, outputs=input_box)
+                        
             audit_btn = gr.Button("🚀 START AUDIT", variant="primary", size="lg")
         
         with gr.Column(scale=2):
