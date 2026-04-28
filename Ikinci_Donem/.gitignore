@@ -1,0 +1,17 @@
+# ChromaDB — binary DB dosyaları
+pipeline/data/chroma_db/
+
+# PDF kaynak belgesi — telif hakkı + büyük dosya
+AASTP-1-May2006.003973.pdf
+
+# MinerU ham JSON chunk'ları — yeniden üretilebilir
+pipeline/input/chunks/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Geçici dosyalar
+/tmp/
+*.tmp

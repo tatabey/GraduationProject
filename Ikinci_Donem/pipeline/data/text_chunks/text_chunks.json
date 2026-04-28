@@ -1,0 +1,552 @@
+[
+  {
+    "chunk_id": "chunk_p19_idx3",
+    "title": "Preamble",
+    "section_path": [
+      "Preamble"
+    ],
+    "content": "During this period the United Nations Group of Experts on Explosives recommended a classification system for use in the transport of explosives. In the interests of standardization, AC/258 in 1971 adopted the United Nations classification system for storage of military ammunition and explosives.",
+    "page_idx": 19,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p19_idx4",
+    "title": "1.1.2.6.",
+    "section_path": [
+      "1.1.2.6."
+    ],
+    "content": "1.1.2.6.\nThe reputation of the Manual grew with time: several no-NATO nations requested copies of it. Member nations requested more and more information on the subjects covered.\nIn 1974, it was decided to carry out a general revision to consolidate the corrigenda which had been issued since the beginning and to improve general presentation, as a Manual in three parts:\n- Part I dealing with the general principles;\n- Part II containing more detailed information on above-ground storage and the historical background of the Manual;\n- Part III dealing with special types of storage.",
+    "page_idx": 19,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p19_idx8",
+    "title": "1.1.2.7.",
+    "section_path": [
+      "1.1.2.7."
+    ],
+    "content": "1.1.2.7.\nDuring this period the Group was involved in designing and evaluating field trials, both on mockups and at full scale, in order to improve its quantity-distance criteria (in particular the \"ESKIMO\" series of trials in the United States). Group members also took part in several large-scale trials relating to underground explosions.\nThe resulting conclusions and recommendations were incorporated in the Manual which was revised once more under the new reference AC/258-D/258.",
+    "page_idx": 19,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p19_idx11",
+    "title": "1.1.2.8.",
+    "section_path": [
+      "1.1.2.8."
+    ],
+    "content": "1.1.2.8.\nIn 1981, the Group recognized the fact that in some circumstances the principles set out in Part I of the Manual could not be applied without seriously affecting operational efficiency. It was therefore decided to instigate a new part, Part IV, dealing with the principles to be applied in such cases. At the same time, some chapters (field storage, missile installations and depots containing basic loads) which had been included in Parts II and III up to that time but were better suited to Part IV were moved to part IV.",
+    "page_idx": 19,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p19_idx13",
+    "title": "1.1.2.9.",
+    "section_path": [
+      "1.1.2.9."
+    ],
+    "content": "1.1.2.9.\nThroughout ten years, since 1981, 23 corrigenda to the Manual were issued.\nIn addition, the idea grew that a presentation more in accordance with NATO standards should be adopted. This was achieved by restructuring the Manual in the form of an Allied Publication (AP) and producing Standardization Agreements (STANAG) with which to implement the AP.",
+    "page_idx": 19,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p20_idx23",
+    "title": "CHAPTER 2 - CLASSIFICATION CODES AND MIXING OF",
+    "section_path": [
+      "CHAPTER 2 - CLASSIFICATION CODES AND MIXING OF"
+    ],
+    "content": "CHAPTER 2 - CLASSIFICATION CODES AND MIXING OF",
+    "page_idx": 20,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p20_idx24",
+    "title": "AMMUNITION AND EXPLOSIVES IN STORAGE",
+    "section_path": [
+      "AMMUNITION AND EXPLOSIVES IN STORAGE"
+    ],
+    "content": "AMMUNITION AND EXPLOSIVES IN STORAGE",
+    "page_idx": 20,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p20_idx26",
+    "title": "1.2.1.1. General",
+    "section_path": [
+      "1.2.1.1. General"
+    ],
+    "content": "1.2.1.1. General\nIn order to promote the safe storage and transport of dangerous goods, an International System for Classification has been devised. The system consists of 9 classes (1-9) of which Class 1 comprises ammunition and explosives. Class 1 is divided into divisions. The hazard division indicates the type of hazard to be expected primarily in the event of an accident: mass explosion (Division 1.1), projection effects (Division 1.2), fire and radiant heat (Division 1.3), no significant hazard (Division 1.4), mass detonation with very low probability of initiation (Division 1.5) and detonation of a single article, with low probability of initiation (Division 1.6). Ammunition and explosives must be classified in accordance with STANAG 4123. National authorities competent for the classification of ammunition and explosives are given in AASTP-3.",
+    "page_idx": 20,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p20_idx28",
+    "title": "1.2.1.2. Definitions of the Hazard Divisions",
+    "section_path": [
+      "1.2.1.2. Definitions of the Hazard Divisions"
+    ],
+    "content": "1.2.1.2. Definitions of the Hazard Divisions",
+    "page_idx": 20,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p20_idx29",
+    "title": "a) Hazard Division 1.1",
+    "section_path": [
+      "a) Hazard Division 1.1"
+    ],
+    "content": "a) Hazard Division 1.1\nSubstances and articles which have a mass explosion hazard (a mass explosion is one which affects the entire load virtually instantaneously.)\n1. The major hazards of this division are blast, high velocity projections and other projections of relatively low velocity.\n2. The explosion results in severe structural damage, the severity and range being determined by the amount of high explosives involved. There may be a risk from heavy debris propelled from the structure in which the explosion occurs or from the crater.\nb) Hazard Division 1.2\nSubstances and articles which have a projection hazard but not a mass explosion hazard\n1. The explosion results in items burning and exploding progressively, a few at a time. Furthermore fragments, firebrands and unexploded items may be projected in considerable numbers; some of these may explode on or some time after impact and cause fires or explosions. Blast effects are limited to the immediate vicinity.\n2. For the purpose of determining quantity-distances a distinction, depending on the size and range of fragments, is made between those items which give fragments of moderate range (classified as HD 1.2.2) and those which give fragments with a considerable range (classified as HD 1.2.1). HD 1.2.2 items include HE projectiles (with or without propelling charges) with an individual NEQ less than or equal to $0.71\\mathrm{kg}$ and other items not containing HE such as cartridges, rounds with inert projectiles, pyrotechnic items or rocket motors. HD 1.2.1 items are generally HE projectiles (with or without propelling charges) with an individual NEQ greater than $0.71\\mathrm{kg}$ .",
+    "page_idx": 20,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p21_idx42",
+    "title": "c) Hazard Division 1.3",
+    "section_path": [
+      "c) Hazard Division 1.3"
+    ],
+    "content": "c) Hazard Division 1.3\nSubstances and articles which have a fire hazard and either a minor blast hazard or a minor projection hazard or both, but not a mass explosion hazard.\n1. This division comprises substances and articles:\n(a) which give rise to considerable radiant heat, or\n(b) which burn one after another, producing minor blast or projection effects or both.\n2. This division includes some items which burn with great violence and intense heat emitting considerable thermal radiation (mass fire hazard) and others which burn sporadically. Items in this division may explode but do not usually form dangerous fragments. Firebrands and burning containers may be projected.\nd) Hazard Division 1.4\nSubstances and articles which present no significant hazard\n1. This division includes items which have primarily a moderate fire hazard. They do not contribute excessively to a fire. The effects are largely confined to the package. No fragments of appreciable size or range are to be expected. An external fire does not cause the simultaneous explosion of the total contents of a package of such items.\n2. Some but not all of the above items are assigned to Compatibility Group S. These items are so packed or designed that any explosive effect during storage and transportation is confined within the package unless the package has been degraded by fire.\ne) Hazard Division 1.5\nVery insensitive substances which have a mass explosion hazard\nThis division comprises substances which have a mass explosion hazard but are so insensitive that there is very little probability of initiation or of transition from burning to detonation under normal conditions.\nNOTE 1: The probability of transition from burning to detonation is greater when large bulk quantities are transported or stored.\nNOTE 2: For storage purposes, such substances are treated as Hazard Division 1.1 since, if an explosion should occur, the hazard is the same as for items formally assigned to Hazard Division 1.1 (i.e. blast).\nf) Hazard Division 1.6\nExtremely insensitive articles which do not have a mass explosion hazard.\nThis division comprises articles which contain only extremely insensitive detonating substances and which demonstrate a negligible probability of accidental initiation or propagation.\nNOTE: The risk from articles of Hazard Division 1.6 is limited to the explosion of a single article.",
+    "page_idx": 21,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p23_idx73",
+    "title": "1.2.1.3.",
+    "section_path": [
+      "1.2.1.3."
+    ],
+    "content": "1.2.1.3.\nAll the information necessary for hazard classification of ammunition and explosives will be found in AASTP-3. Ammunition which does not contain any explosive or other dangerous goods (for instance dummy bombs, cartridges and projectiles) is excluded from the system of hazard classification.",
+    "page_idx": 23,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p23_idx75",
+    "title": "1.2.1.4. Depleted Uranium (DU) Ammunition",
+    "section_path": [
+      "1.2.1.4. Depleted Uranium (DU) Ammunition"
+    ],
+    "content": "1.2.1.4. Depleted Uranium (DU) Ammunition\nAmmunition containing DU in the form of a penetrator or projectile is assigned to the Hazard Classification appropriate to the explosives content of the ammunition only. The normal storage rules associated with the Hazard Classification may need to be modified to take account of the slight radioactivity and chemical toxicity of DU and therefore rules may be prescribed for DU ammunition as a separate class of ammunition, or for specific types of DU ammunition (see Part I, Chapter 9).",
+    "page_idx": 23,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p23_idx77",
+    "title": "1.2.1.5. Effect of Package on Classification",
+    "section_path": [
+      "1.2.1.5. Effect of Package on Classification"
+    ],
+    "content": "1.2.1.5. Effect of Package on Classification\nAs the packaging may have a decisive effect on the classification, particular care must be taken to ensure that the correct classification is determined for each configuration in which ammunition and explosives are stored or transported. Therefore every significant change in the packaging (e.g. degradation) may well affect the classification awarded.",
+    "page_idx": 23,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p24_idx84",
+    "title": "Section II - Compatibility Groups",
+    "section_path": [
+      "Section II - Compatibility Groups"
+    ],
+    "content": "Section II - Compatibility Groups",
+    "page_idx": 24,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p24_idx85",
+    "title": "1.2.2.1. General Principles",
+    "section_path": [
+      "1.2.2.1. General Principles"
+    ],
+    "content": "1.2.2.1. General Principles\na) Ammunition and explosives are considered to be compatible if they may be stored together without significantly increasing either the probability of an accident or, for a given quantity, the magnitude of the effects of such an accident.\nb) Ammunition and explosives should not be stored together with other goods which can hazard them. Examples are highly flammable materials, acids, and corrosives.\nc) The safety of ammunition and explosives in storage would be enhanced if each kind was kept separate. However, a proper balance of the interests of safety against other factors may require the mixing of several kinds of ammunition and explosives.\nd) The principles of mixing compatibility groups may differ in storage and transport circumstances. Detailed information on mixing compatibility groups is to be found in AASTP-3.",
+    "page_idx": 24,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p24_idx87",
+    "title": "1.2.2.2. Determination of Compatibility Groups",
+    "section_path": [
+      "1.2.2.2. Determination of Compatibility Groups"
+    ],
+    "content": "1.2.2.2. Determination of Compatibility Groups\nOn the basis of the definitions in paragraph 1.2.2.3. ammunition and explosives are formally grouped into thirteen Compatibility Groups: A to H, J, K, L, N and S.",
+    "page_idx": 24,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p24_idx89",
+    "title": "1.2.2.3. Definitions of the Compatibility Groups",
+    "section_path": [
+      "1.2.2.3. Definitions of the Compatibility Groups"
+    ],
+    "content": "1.2.2.3. Definitions of the Compatibility Groups\nGroup A Primary explosive substance.\nGroup B Article containing a primary explosive substance and not containing two or more effective protective features.\nGroup C Propellant explosive substance or other deflagrating explosive substance or article containing such explosive substance.\nGroup D Secondary detonating explosive substance or black powder or article containing a secondary detonating explosive substance, in each case without means of initiation and without a propelling charge, or article containing a primary explosive substance and containing two or more effective protective features.\nAASTP-1 (Edition 1)",
+    "page_idx": 24,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx101",
+    "title": "Group E",
+    "section_path": [
+      "Group E"
+    ],
+    "content": "Group E\nArticle containing a secondary detonating explosive substance, without means of initiation, with propelling charge (other than one containing a flammable liquid or gel or hypergolic liquids).",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx103",
+    "title": "Group F",
+    "section_path": [
+      "Group F"
+    ],
+    "content": "Group F\nArticle containing a secondary detonating explosive substance with its own means of initiation, with a propelling charge (other than one containing a flammable liquid or gel or hypergolic liquids) or without a propelling charge.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx105",
+    "title": "Group G",
+    "section_path": [
+      "Group G"
+    ],
+    "content": "Group G\nPyrotechnic substance, or article containing a pyrotechnic substance, or article containing both an explosive substance and an illuminating, incendiary, tear- or smoke-producing substance (other than a water-activated article or one containing white phosphorus, phosphides, a pyrophoric substance, a flammable liquid or gel, or hypergolic liquids).",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx107",
+    "title": "Group H",
+    "section_path": [
+      "Group H"
+    ],
+    "content": "Group H\nArticle containing both explosive substance and white phosphorus.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx109",
+    "title": "Group J",
+    "section_path": [
+      "Group J"
+    ],
+    "content": "Group J\nArticle containing both an explosive substance and a flammable liquid or gel.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx111",
+    "title": "Group K",
+    "section_path": [
+      "Group K"
+    ],
+    "content": "Group K\nArticle containing both an explosive substance and a toxic chemical agent.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx113",
+    "title": "Group L",
+    "section_path": [
+      "Group L"
+    ],
+    "content": "Group L\nExplosive substance or article containing an explosive substance and presenting a special risk (e.g. due to water activation or presence of hypergolic liquids, phosphides or a pyrophoric substance) and needing isolation of each type.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx115",
+    "title": "Group N",
+    "section_path": [
+      "Group N"
+    ],
+    "content": "Group N\nArticles which contain only extremely insensitive detonating substances and which demonstrate a negligible probability of accidental initiation or propagation.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx117",
+    "title": "Group S",
+    "section_path": [
+      "Group S"
+    ],
+    "content": "Group S\nSubstances or articles so packed or designed that any hazardous effects arising from accidental functioning are confined within the package unless the package has been degraded by fire, in which case all blast or projection effects are limited to the extent that they do not significantly hinder or prohibit fire-fighting or other emergency response efforts in the immediate vicinity of the package.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p25_idx119",
+    "title": "1.2.2.4. Classification Code",
+    "section_path": [
+      "1.2.2.4. Classification Code"
+    ],
+    "content": "1.2.2.4. Classification Code\nThe classification code is composed of the number of the hazard division (see Section I) and the letter of the compatibility group (see this Section) for example \"1.1 B\". Guidance on the practical procedure of classifying an item by hazard division and compatibility group is given in AASTP-3.",
+    "page_idx": 25,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p26_idx126",
+    "title": "Section III - Mixing of Ammunition and Explosives in Storage",
+    "section_path": [
+      "Section III - Mixing of Ammunition and Explosives in Storage"
+    ],
+    "content": "Section III - Mixing of Ammunition and Explosives in Storage",
+    "page_idx": 26,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p26_idx127",
+    "title": "1.2.3.1. Mixed Storage",
+    "section_path": [
+      "1.2.3.1. Mixed Storage"
+    ],
+    "content": "1.2.3.1. Mixed Storage\nAmmunition and explosives of different hazard divisions may be stored together if compatible. The required quantity-distances and the permitted quantities must be determined in accordance with Part II of this Manual.",
+    "page_idx": 26,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p26_idx129",
+    "title": "1.2.3.2. Storage Limitations",
+    "section_path": [
+      "1.2.3.2. Storage Limitations"
+    ],
+    "content": "1.2.3.2. Storage Limitations\nThe rules which apply to the mixing of hazard divisions and compatibility groups in above ground storage are detailed below. Special rules apply to underground storage. The basic rules are given in the form of three tables as follows:\nTABLE 4: Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions.\nTABLE 5: Aboveground Storage of Explosive Substances. Rules for mixing of Compatibility Groups.\nTABLE 6: Aboveground Storage of Explosive Articles. Rules for Mixing of Compatibility Groups.\nSpecial circumstances are addressed at paragraph 1.2.3.3. and suspect ammunition and explosives at paragraph 1.2.3.4.\nMixed hazard divisions (HD) should be aggregated in the following table:\nNOTES:\nIf any of the following circumstances exists, the mix must be aggregated as 1.1, unless relevant trials or analysis indicate otherwise:\na) The presence of 1.2 shaped charges.\nb) High energy propellants (e.g. as used in some tank gun applications).\nc) High loading density storage of 1.3 in conditions of relatively heavy confinement.\nd) 1.2.1 articles with an individual NEQ $>5$ kg.\n3 If demonstrated by testing or analogy. If not: 1.1.\n1 1.4 may be stored with any other HD without aggregation of the NEQ.\nMixed 1.2.1/1.2.2 will usually behave as aggregated 1.2 or 1.3. However, there is a significant risk that, in certain circumstances, a mix of 1.2.1/1.2.2 and 1.3 will behave as an aggregated quantity of 1.1.\nAASTP-1 (Edition 1)\nSubstances may be mixed in aboveground storage as shown in the following table:\nLEGEND: X = Mixing permitted",
+    "page_idx": 26,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p28_idx158",
+    "title": "NOTES:",
+    "section_path": [
+      "NOTES:"
+    ],
+    "content": "NOTES:\n1) Mixing permitted provided substances have all passed UN Test Series 3. Storage of substances of any Compatibility Groups C, D or G which have failed UN Test Series 3 will require special consideration by the National Competent Authority.\n2) Compatibility Group L substances must always be stored separately from all substances of other compatibility groups as well from all other substances of Compatibility Group L.\n3) The mixing of Compatibility Group G substances with other compatibility groups is at the discretion of the National Competent Authority.\nArticles may be mixed in aboveground storage as shown in the following table:\nLEGEND: X= Mixing permitted",
+    "page_idx": 28,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p29_idx168",
+    "title": "NOTES",
+    "section_path": [
+      "NOTES"
+    ],
+    "content": "NOTES\n1) Compatibility Group B fuses may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F.\n2) Storage in the same building is permitted if effectively segregated to prevent propagation.\n3) Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.\n4) Mixing of articles of Compatibility Group G with articles of other compatibility groups is at the discretion of the National Competent Authority.\n5) Articles of Compatibility Group N should not in general be stored with articles in other compatibility groups except S. However, if such articles are stored with articles of\nAASTP-1 (Edition 1)\nCompatibility Group C, D and E, the articles of Compatibility Group N should be considered as having the characteristics of Compatibility Group D and the compatibility groups mixing rules apply accordingly.\nIt is allowed to mix 1.6N munitions. The Compatibility Group of the mixed set remains N if the munitions belong to the same family or if it has been demonstrated that, in case of a detonation of one munition, there is no instant transmission to the munitions of another family (the families are then called \"compatible\"). If it is not the case the whole set of munitions should be considered as having the characteristics of Compatibility Group D.\n7) A mixed set of munitions 1.6N and 1.4S may be considered as having the characteristics of Compatibility Group N.",
+    "page_idx": 29,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p30_idx179",
+    "title": "1.2.3.3. Mixed Storage - Special Circumstances",
+    "section_path": [
+      "1.2.3.3. Mixed Storage - Special Circumstances"
+    ],
+    "content": "1.2.3.3. Mixed Storage - Special Circumstances\na) There may be special circumstances where the above mixing rules may be modified by the National Competent Authority subject to adequate technical justification based on tests where these are considered to be appropriate.\nb) Very small quantity HD 1.1 and large quantity Hazard Division 1.2.1/1.2.2. It should be possible to arrange storage in such a manner that the mixture will behave as 1.2.1/1.2.2.\nc) Mixing of Hazard Division 1.1, Hazard Division 1.2.1/1.2.2 and Hazard Division 1.3 The quantity distance to be applied in these unusual circumstances is that which is the greatest when considering the aggregate NEQ as Hazard Division 1.1, Hazard Division 1.2.1, Hazard Division 1.2.2 or Hazard Division 1.3.\nd) With the exception of substances in Compatibility Group A, which should not be mixed with other compatibility groups, the mixing of substances and articles is permitted as shown in Tables 5 and 6.",
+    "page_idx": 30,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p30_idx181",
+    "title": "1.2.3.4. Suspect Ammunition and Explosives (Mixed storage)",
+    "section_path": [
+      "1.2.3.4. Suspect Ammunition and Explosives (Mixed storage)"
+    ],
+    "content": "1.2.3.4. Suspect Ammunition and Explosives (Mixed storage)\nSuspect ammunition and explosives must not be stored with any other ammunition and explosives.\nAASTP-1 (Edition 1)",
+    "page_idx": 30,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p32_idx193",
+    "title": "CHAPTER 3 - ABOVEGROUND STORAGE IN DEPOTS",
+    "section_path": [
+      "CHAPTER 3 - ABOVEGROUND STORAGE IN DEPOTS"
+    ],
+    "content": "CHAPTER 3 - ABOVEGROUND STORAGE IN DEPOTS",
+    "page_idx": 32,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p32_idx194",
+    "title": "Section I - Principles of the Quantity-Distances",
+    "section_path": [
+      "Section I - Principles of the Quantity-Distances"
+    ],
+    "content": "Section I - Principles of the Quantity-Distances",
+    "page_idx": 32,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p32_idx195",
+    "title": "1.3.1.1. General",
+    "section_path": [
+      "1.3.1.1. General"
+    ],
+    "content": "1.3.1.1. General\na) PES such as buildings, stacks and vehicles (trucks, trailers and railcars) present an obvious risk to personnel and property. Such sites are located at carefully calculated distances from each other and from other buildings and installations to ensure the minimum practicable risk to life and property (including ammunition). These distances are called Quantity-Distances and are tabulated in Annex A, Section II.\nb) The tables in Annex A, Section II are concerned with storage sites containing more than $500\\mathrm{kg}$ NEQ. Storage of NEQs less than $500\\mathrm{kg}$ needs special consideration and nations requiring advice should contact the Secretary of AC/258.",
+    "page_idx": 32,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p32_idx197",
+    "title": "1.3.1.2. Basis of Quantity-Distances",
+    "section_path": [
+      "1.3.1.2. Basis of Quantity-Distances"
+    ],
+    "content": "1.3.1.2. Basis of Quantity-Distances\nThe quantity-distances are based on an extensive series of trials and a careful analysis of all available data on accidental explosions in different countries. However, quantity-distances are subject to uncertainty owing to the variability of explosions. These quantity-distances are generated by distance functions subject, in certain cases, to fixed minimum or maximum distances. The fixed values are independent of the NEQ because they are based on the projection hazard from individual rounds or operational factors (see Part II, Annex A). As regards the rounding of values of quantity-distances, see Annex A, paragraph 2. Criteria and formulae for quantity-distances are given in Part II, Annex A.",
+    "page_idx": 32,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p32_idx199",
+    "title": "1.3.1.3. Kinds of Quantity-Distances",
+    "section_path": [
+      "1.3.1.3. Kinds of Quantity-Distances"
+    ],
+    "content": "1.3.1.3. Kinds of Quantity-Distances\na) There are two kinds of Interior Quantity-Distances for each hazard division:\n1) Inter-Magazine Distances (see paragraphs 1.3.1.8. - 1.3.1.11)\n2) Explosives Workshop Distances (see paragraphs 1.3.1.12. - 1.3.1.13)\nb) There are two kinds of Exterior Quantity-Distances for each hazard division:\nAASTP-1 (Edition 1)\n1) Public Traffic Route Distances (see paragraph 1.3.1.14)\n2) Inhabited Building Distances (see paragraph 1.3.1.15)",
+    "page_idx": 32,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p33_idx213",
+    "title": "1.3.1.4. Quantity-Distances for Hazard Division 1.1",
+    "section_path": [
+      "1.3.1.4. Quantity-Distances for Hazard Division 1.1"
+    ],
+    "content": "1.3.1.4. Quantity-Distances for Hazard Division 1.1\nAnnex A, Table 1 gives Interior and Exterior Quantity-Distances for ammunition and explosives of Hazard Division 1.1. The Inter-Magazine Distances should not be used for packages of primary explosives and other very sensitive explosive substances like blasting gelatine which require individual assessment when at an ES.",
+    "page_idx": 33,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p33_idx215",
+    "title": "1.3.1.5. Quantity-Distances for Hazard Division 1.2",
+    "section_path": [
+      "1.3.1.5. Quantity-Distances for Hazard Division 1.2"
+    ],
+    "content": "1.3.1.5. Quantity-Distances for Hazard Division 1.2",
+    "page_idx": 33,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p33_idx216",
+    "title": "a) General",
+    "section_path": [
+      "a) General"
+    ],
+    "content": "a) General\nAnnex A, Table 2 gives Interior and Exterior Quantity-Distances for ammunition and explosives of Hazard Division 1.2 but before appropriate quantity-distances can be selected there are two factors to be considered. The first is the range of fragments and lobbed ammunition which are projected from a PES. The second is the total number of such projections likely to hazard an ES. If comprehensive data is available for a particular item, then the quantity-distances for Hazard Division 1.2, which are based on trials with individual rounds considered to be representative, may be replaced by this more appropriate data taking into account the vulnerability of the ammunition, explosives and buildings at the Exposed Sites under consideration (see Part II, Chapter 5, Section II.).",
+    "page_idx": 33,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p33_idx218",
+    "title": "b) Fragments and Lobbed ammunition from Rounds greater than $0.71\\mathrm{kg}$ individual NEQ.",
+    "section_path": [
+      "b) Fragments and Lobbed ammunition from Rounds greater than $0.71\\mathrm{kg}$ individual NEQ."
+    ],
+    "content": "b) Fragments and Lobbed ammunition from Rounds greater than $0.71\\mathrm{kg}$ individual NEQ.\nThis, the most hazardous part of Hazard Division 1.2 comprises those rounds and ammunition which contain a high explosive charge and may also contain a propelling or pyrotechnic charge. The total explosives content of these rounds, etc will be greater than $0.71\\mathrm{kg}$ . It is impractical to specify quantity-distances which allow for the maximum possible flight ranges of propulsive items but the likely range of packaged items, if involved in an accident during storage, is typical of this part of Hazard Division 1.2. Munitions which explode during an accident will rarely detonate in their design mode. In a fire situation explosive fillings may melt and expand, breaching their casings and then explode via cook-off or burning to detonation reactions. These explosions may involve anything from $100\\%$ to very little of the fill dependent on the amount of the filling that has escaped through the breach. The fragmentation produced by such reactions is totally different to that generated in a design detonation. The case splits open producing large (for a $105\\mathrm{mm}$ shell, for example $2 - 3\\mathrm{kg}$ ) but comparatively few fragments with velocities of $100 - 500\\mathrm{ms}^{-1}$ . These are likely to be projected further than the smaller fragments from the full detonation of similar munitions in a HD 1.1\nreaction. Quantities of unexploded munitions, sub-assemblies or sub-munitions also may be projected to considerable ranges and will, due to thermal or mechanical damage, be more hazardous than in their pristine state. Data on individual round characteristics obtained from tests and accidental explosions may be used to determine the validity of including a specific round in this category or to reduce it to the lesser category described in Paragraph c) below. These items are hereafter called rounds of HD 1.2.1.\n(c) Fragments and Lobbed Ammunition from Rounds less than or equal to $0.71\\mathrm{kg}$ individual NEQ.\nThis less hazardous part of Hazard Division 1.2 comprises those rounds and ammunition which contain a high explosive charge and may also contain a propelling or pyrotechnic charge. The total explosives content of these rounds, etc will be less than or equal to $0.71\\mathrm{kg}$ . It will also typically comprise ammunition which does not contain HE and will include pyrotechnic rounds and articles, inert projectile rounds. Tests show that many items of this type produce fragments and lobbed ammunition with a range significantly less than that of items in b) above but of course greater than that of ammunition and explosives of Hazard Division 1.4. These items are hereafter called rounds of HD 1.2.2.\n(d) Subdivisions for Storage\nIt is important not to exaggerate the significance of the value of $0.71\\mathrm{kg}$ used in b) and c) above. It was based on a break point in the database supporting the Quantity Distance relationships and tables and the NEQ of the rounds tested. If comprehensive data is available for a particular item, then the item may be placed in that category of HD 1.2 supported by the data and allocated the relevant Quantity Distances. It may also be necessary to take into account the vulnerability of ammunition, explosives and buildings at the ES under consideration, see Part II, Chapter 5, Section II.\n(e) Number of Fragments and Lobbed Items at an Exposed Site\nFollowing the initiation of an event in storage there will be a delay before there are any violent events and projections. This delay will be highly dependent on the nature, dimensions and packaging of the items involved. For $40\\mathrm{mm}$ HE rounds it can be as short as two or three minutes and for $105\\mathrm{mm}$ HE rounds 15-20 minutes. Once ammunition starts to react the rate of reactions increases rapidly and then decreases more slowly. Reactions may still occur hours after the event. The ability of the storage structure at the PES to contain the fragments etc will determine both in time and density the effects at the exposed site. For medium and lightly constructed PES where, at some stage, walls and/or roofs will be destroyed, the modifying effect of the building on the fragmentation is not taken into account. In the light of the indeterminacy of the fragmentation effects both in time and quantity, fire fighting will, in general, be inadvisable. However the\ninstallation of automatic fire-fighting arrangements could be invaluable from the stock preservation and event containment points of view. Evacuation from PTR and beyond may be possible. However the quantity-distances given at Annex A assume no amelioration from fire-fighting or evacuation. They are based on the total fragmentation at the exposed site from the event at the PES.",
+    "page_idx": 33,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p35_idx242",
+    "title": "f) Arrangements for Fire-Fighting",
+    "section_path": [
+      "f) Arrangements for Fire-Fighting"
+    ],
+    "content": "f) Arrangements for Fire-Fighting\nThe levels of protection afforded by the Inter-Magazine Distances in Annex A are based on the fragment density at the Exposed Site for the total incident and the degree of protection afforded by the structure at the Exposed Site. It is assumed that an incident involving Hazard Division 1.2 cannot be promptly curtailed by fire-fighting. It is considered unlikely that any significant attempts could be made to fight a fire involving Hazard Division 1.2 explosives as it is anticipated that such efforts would have to be made from such a distance and from behind protective cover so as to make those efforts ineffective. In addition some storage areas are too remote from professional fire-fighting services, and other lack suitable protective cover from behind which firemen could even attempt to attack a fire involving ammunition of Hazard Division 1.2. The levels of protection take into account the fact that the Explosives Area is endangered by firebrands, projections and lobbed ammunition which would most likely propagate fire or explosion if the quantity-distances were insufficient. The available fire-fighting effort should be directed at preventing the spread of fire and the subsequent propagation of explosions.\nFuller recommendations are given in Chapter 4, Part II of the Manual.\nSituations which require no QDs\n(g) Where either the PES or the ES is an earth covered building or a building which can contain the effects generated in an accidental explosion of the HD 1.2 then, in general, no Q-Ds are necessary. The separation to other explosive storehouses, explosive workshops, public traffic routes or inhabited buildings will be dependent on constructional details, access for rescue and fire-fighting personnel or other administrative arrangements. For public traffic routes and inhabited buildings consideration should be given to the use of fixed distances of $30\\mathrm{m}$ for ammunition of HD 1.2.2 or $60\\mathrm{m}$ for HD 1.2.1. However where there is an aperture such as a door in the PES and the ES has either an unprotected and undefined door pointing towards the PES or offers little or no protection to its contents then the Q-Ds recommended at Annex A Table 2 column b should be applied.",
+    "page_idx": 35,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p36_idx254",
+    "title": "1.3.1.6. Quantity-Distances for Hazard Division 1.3",
+    "section_path": [
+      "1.3.1.6. Quantity-Distances for Hazard Division 1.3"
+    ],
+    "content": "1.3.1.6. Quantity-Distances for Hazard Division 1.3",
+    "page_idx": 36,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p36_idx255",
+    "title": "a) General",
+    "section_path": [
+      "a) General"
+    ],
+    "content": "a) General\nAnnex A, Tables 3A and 3B give Interior and Exterior Quantity-Distances for ammunition and explosives of Hazard Division 1.3 but the selection of appropriate quantity-distances requires separate consideration of two types of explosives, namely propellants (Compatibility Group C) and other items (Compatibility Group G). Although many hazardous effects are common to both types, the dominant hazards used as the basis of certain quantity-distances are different in the two cases hence there are two tables.",
+    "page_idx": 36,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p36_idx257",
+    "title": "b) Explosives producing a mass fire effect",
+    "section_path": [
+      "b) Explosives producing a mass fire effect"
+    ],
+    "content": "b) Explosives producing a mass fire effect\nThe explosives producing a mass fire effect are likely to be propellants which produce a fireball with intense radiant heat, fire brands and some fragments. The firebrands may be massive fiery chunks of burning propellant. (The effect of quite normal winds may augment a calculated flame radius by $50\\%$ . A building with marked asymmetry of construction such as an igloo or building with protective roof and walls, but with one relatively weak wall or a door, induces very directional effects from the flames and the projection of burning packages.)",
+    "page_idx": 36,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p36_idx259",
+    "title": "c) Ammunition and Explosives not Producing a Mass Fire Effect",
+    "section_path": [
+      "c) Ammunition and Explosives not Producing a Mass Fire Effect"
+    ],
+    "content": "c) Ammunition and Explosives not Producing a Mass Fire Effect\nItems other than propellants produce a moderate fire with moderate projections and firebrands. The projections include fragments but these are less hazardous than those which characterize Hazard Division 1.2.",
+    "page_idx": 36,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p36_idx261",
+    "title": "1.3.1.7. Distances for Hazard Division 1.4",
+    "section_path": [
+      "1.3.1.7. Distances for Hazard Division 1.4"
+    ],
+    "content": "1.3.1.7. Distances for Hazard Division 1.4\nSeparation distances from ammunition and explosives of Hazard Division 1.4 are not a function of the NEQ. Separation distances prescribed by fire regulations apply.",
+    "page_idx": 36,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p36_idx263",
+    "title": "1.3.1.8. Inter-Magazine Distances - General Considerations",
+    "section_path": [
+      "1.3.1.8. Inter-Magazine Distances - General Considerations"
+    ],
+    "content": "1.3.1.8. Inter-Magazine Distances - General Considerations\na) These distances are the minimum permissible distances between PES and storage sites containing ammunition or explosives. These distances are intended to provide specified degrees of protection to the ammunition and explosives at the ES. The degree of protection is highly dependent upon factors such as\nsensitiveness of explosives, type of ammunition, type of packaging, and type and construction of building at the PES or ES or both. In general the provision of stronger buildings allows the use of smaller quantity-distances for a given degree of protection, or achieves a better standard of protection at a given distance, especially in the case of a PES containing ammunition and explosives of Hazard Division 1.1 or 1.2.\nb) The selection of the optimum combination of types of construction of the buildings, quantity-distance and degree of protection involves a balance between the cost of construction, the availability and cost of land, and the value of the stocks of ammunition and explosives which might be rendered unserviceable at ES in the event of an accident at the PES. The hazard divisions and compatibility groups of the ammunition and explosives and the need for flexibility in the use of the sites should be taken into account.\nc) The following paragraphs describe the levels of protection corresponding to common combinations of buildings or stacks and quantity-distances for each hazard division as a guide for decisions on the optimum solution. These levels of protection are incorporated in the Inter-Magazine Distances in Annex A, Tables 1 to 3. Some entries in the tables show only one level of protection owing to a lack of information at the present time. In a few cases it is not possible to predict the level of protection as it depends on the type of structure at the ES and the sensitiveness of its contents. An indication of the full range of possibilities is given in Part II, Chapter 5.",
+    "page_idx": 36,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p37_idx274",
+    "title": "1.3.1.9. Inter-Magazine Distances for Hazard Division 1.1",
+    "section_path": [
+      "1.3.1.9. Inter-Magazine Distances for Hazard Division 1.1"
+    ],
+    "content": "1.3.1.9. Inter-Magazine Distances for Hazard Division 1.1",
+    "page_idx": 37,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p37_idx275",
+    "title": "a) Protection of Stocks",
+    "section_path": [
+      "a) Protection of Stocks"
+    ],
+    "content": "a) Protection of Stocks\nThe observed damage to stocks at an Exposed Site from an accidental explosion varies widely and, although detailed prediction of such effects is outside the scope of this Manual, a measure of guidance is given here. Since an igloo is designed to resist external blast, primary fragments or secondary projections, the design ensures that the stocks survive and would be expected to generally remain serviceable. However, at the D3-distances the ground shock may render unserviceable sensitive electrical and electronic components of guided missiles, etc. For open stacks and buildings, other than those covered with earth, a general assessment is that for distances less than D5-distances it is probable that, even though propagation may not have taken place, the stocks are likely to be unserviceable and covered by debris from the collapsed building. Stocks at D7-distances and greater are only likely to be serviceable if the building has not suffered serious structural damage although some structural damage at the D7-distances, dependent on the type of building, can be expected.",
+    "page_idx": 37,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p38_idx284",
+    "title": "b) Alternative Levels of Protection at an ES",
+    "section_path": [
+      "b) Alternative Levels of Protection at an ES"
+    ],
+    "content": "b) Alternative Levels of Protection at an ES\nAs described above, the igloo design affords extremely good protection to its contents. Weaker buildings and open stacks would not be expected to give such good protection although concrete structures are considered to be superior generally to brick from an Exposed Site point of view. The level of protection also depends on the vulnerability or robustness of the ammunition stored at the Exposed Site and the type of traversing used. The following paragraphs describe the three levels of protection which are incorporated in Annex A, Table 1 and which are intended to provide an adequate basis for the selection of a particular quantity-distance. Some entries in the table show only one level of protection due to a lack of data. The three levels of protection are:\n1) There is virtually complete protection against practically instantaneous propagation of explosion by ground shock, blast, flame and high velocity projections. There are unlikely to be fires or subsequent explosions caused by these effects or by lobbed ammunition. The stocks are likely to be serviceable. However, ground shock may cause indirect damage and even explosions among specially vulnerable types of ammunition or in conditions of saturated soil. These exceptional circumstances require individual assessment rather than use of the quantity-distances in Annex A.\n2) There is a high degree of protection against practically instantaneous propagation of explosion by ground shock, blast, flame and high velocity projections. There are occasional fires or subsequent explosions caused by these effects or by lobbed ammunition. Most of the stocks are likely to be serviceable although some are covered by debris.\n3) There is only a limited degree of protection against practically instantaneous propagation of explosion by ground shock, flame and high velocity projections. There are likely to be fires or subsequent explosions caused by these effects or by lobbed ammunition. The stocks are likely to be heavily damaged and rendered unserviceable; they are sometimes completely buried by debris. This level of protection is not recommended for new construction.",
+    "page_idx": 38,
+    "type": "text_chunk"
+  },
+  {
+    "chunk_id": "chunk_p38_idx287",
+    "title": "1.3.1.10. Inter-Magazine Distances for Hazard Division 1.2",
+    "section_path": [
+      "1.3.1.10. Inter-Magazine Distances for Hazard Division 1.2"
+    ],
+    "content": "1.3.1.10. Inter-Magazine Distances for Hazard Division 1.2\nThe Inter-Magazine Distances for Hazard Division 1.2 relate essentially to three levels of protection of ammunition and explosives at an ES:",
+    "page_idx": 38,
+    "type": "text_chunk"
+  }
+]
