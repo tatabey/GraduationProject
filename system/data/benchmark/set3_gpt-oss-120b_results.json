@@ -1,0 +1,1352 @@
+[
+  {
+    "item_no": 1,
+    "text": "A hardened observation shelter is designed to withstand 0.05 bar side-on overpressure. The nearest PES stores 1,000 kg NEQ (Q^1/3 = 10). The shelter is sited 222 m away, giving a scaled distance of 22.2 m/kg^1/3. Per the table, the expected peak side-on overpressure at 22.2 Q^1/3 is 0.05 bar. The design pressure matches the expected value; the siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The table in Section 1.3.7.3 lists a scaled distance of 22.2 m / kg¹⁄³ with an expected peak side‑on overpressure of 0.05 bar, which matches the shelter’s design pressure. No other provision in the provided context (e.g., projection‑hazard limits) contradicts this siting, so the design complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 1.05
+  },
+  {
+    "item_no": 2,
+    "text": "A lightly constructed guard hut is designed to withstand only 0.05 bar overpressure. The nearest PES contains 1,000 kg NEQ (Q^1/3 = 10). The hut is located 148 m away, giving a scaled distance of 14.8 m/kg^1/3. The table specifies 0.09 bar at this scaled distance. The expected overpressure (0.09 bar) exceeds the design pressure (0.05 bar); the siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) lists a scaled distance of 14.8 m/kg¹/³ with an expected side‑on overpressure of 0.09 bar. The guard hut is only designed for 0.05 bar, which is lower than the expected value, so the siting does not meet the protection level required by the standard. Hence the audit finding that the siting is non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.45
+  },
+  {
+    "item_no": 3,
+    "text": "A reinforced concrete shelter is rated for 0.09 bar overpressure. The PES holds 8,000 kg NEQ (Q^1/3 = 20). The shelter is 296 m from the PES, giving a scaled distance of 14.8 m/kg^1/3. Per the table, expected overpressure at 14.8 Q^1/3 is 0.09 bar. The design matches the table value; the shelter siting is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Although the over‑pressure of 0.09 bar matches the value for a scaled distance of 14.8 m · kg⁻¹/³ in Table (p.70), the standard also requires compliance with the projection‑hazard limits. The shelter is sited at 296 m, which is below the 400 m distance for a “minor” projection hazard and only slightly above the 270 m distance where a “significant” hazard still applies (see the projection‑hazard text). Without additional protection or qualifying conditions, the siting does not meet the projection‑hazard requirements.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 1.04
+  },
+  {
+    "item_no": 4,
+    "text": "A workshop building is rated for 0.09 bar overpressure. The PES contains 8,000 kg NEQ (Q^1/3 = 20). The workshop is 192 m away, giving a scaled distance of 9.6 m/kg^1/3. The table specifies 0.16 bar at 9.6 Q^1/3. The expected overpressure exceeds the building's design capacity; the siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The table (p.70) lists a peak side‑on overpressure of 0.16 bar at a scaled distance of 9.6 m·kg⁻¹/³. The workshop is rated for only 0.09 bar, which is lower than the expected 0.16 bar; therefore the siting violates the protection level requirement, confirming the audit’s conclusion of non‑compliance.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.52
+  },
+  {
+    "item_no": 5,
+    "text": "A field storage tent is sited 555 m from a PES storing 1,000 kg NEQ (Q^1/3 = 10), giving a scaled distance of 55.5 m/kg^1/3. The table specifies 0.015 bar at this scaled distance. The tent structure is only required to withstand 0.015 bar; the siting meets the requirement.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 1.3.7.3 (Levels of Protection) lists a scaled distance of 55.5 m·kg⁻¹/³ corresponding to an expected side‑on overpressure of 0.015 bar. Siting the tent 555 m from a PES with Q = 1 000 kg gives exactly this scaled distance, so the required over‑pressure resistance of 0.015 bar is satisfied. No rule in the provided context is violated.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 6,
+    "text": "A vehicle park is assessed as acceptable at 0.015 bar overpressure. The PES holds 8,000 kg NEQ (Q^1/3 = 20). The park is 160 m away (scaled distance 8.0 Q^1/3). The table specifies 0.21 bar at 8.0 Q^1/3. The expected overpressure far exceeds 0.015 bar; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 1.3.7.3 (p.70), a scaled distance of 8.0 Q¹/³ corresponds to an expected side‑on overpressure of 0.21 bar, not 0.015 bar. The item’s acceptance of only 0.015 bar therefore contradicts the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 52.78
+  },
+  {
+    "item_no": 7,
+    "text": "An earth-covered magazine is designed to resist 0.70 bar overpressure. The adjacent PES stores 27,000 kg NEQ (Q^1/3 = 30). The magazine is 108 m away (scaled distance 3.6 m/kg^1/3). The table specifies 0.70 bar at 3.6 Q^1/3. The design pressure equals the expected overpressure; siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) lists a scaled distance of 3.6 m / kg¹ᐟ³ corresponding to an expected side‑on overpressure of 0.70 bar. The magazine’s Q = 27 000 kg (Q¹ᐟ³ = 30) and distance 108 m give a scaled distance of 108 / 30 = 3.6, matching the table entry; the design pressure of 0.70 bar therefore meets the required overpressure, so the siting complies.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.55
+  },
+  {
+    "item_no": 8,
+    "text": "A processing building rated at 0.21 bar overpressure is located 144 m from a PES with 27,000 kg NEQ (Q^1/3 = 30), giving a scaled distance of 4.8 m/kg^1/3. The table shows overpressure between 0.21 bar (8.0 Q^1/3) and 0.70 bar (3.6 Q^1/3) at this range. The expected overpressure exceeds the building's 0.21 bar rating; the siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.70) the overpressure for a scaled distance of 4.8 m kg⁻¹ᐟ³ (which lies between 7.2 and 3.6 m kg⁻¹ᐟ³) is between 0.24 bar and 0.70 bar, i.e., greater than the building’s 0.21 bar rating. Therefore the siting violates the protection level and the audit finding that it is non‑compliant is consistent with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.77
+  },
+  {
+    "item_no": 9,
+    "text": "A hardened igloo designed for 1.80 bar overpressure is located 72 m from a PES holding 27,000 kg NEQ (Q^1/3 = 30), giving a scaled distance of 2.4 m/kg^1/3. The table specifies 1.80 bar at 2.4 Q^1/3. The design overpressure matches; siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The calculated scaled distance (72 m / 30 = 2.4 m·kg⁻¹/³) matches the entry in Table (p.70) “1.3.7.3. Levels of Protection”, where a scaled distance of 2.4 corresponds to a peak side‑on overpressure of 1.80 bar. The igloo’s design overpressure of 1.80 bar therefore satisfies the required protection level.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.51
+  },
+  {
+    "item_no": 10,
+    "text": "A standard warehouse is assessed to withstand 0.02 bar overpressure. The PES stores 1,000 kg NEQ (Q^1/3 = 10) and is 96 m away (scaled distance 9.6 Q^1/3). The table specifies 0.16 bar at this distance. The warehouse design is wholly inadequate; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) lists a scaled distance of 9.6 Q¹/³ with an expected side‑on overpressure of 0.16 bar. The warehouse is only rated for 0.02 bar, far below the required 0.16 bar, so the assessment that the design is inadequate and non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.44
+  },
+  {
+    "item_no": 11,
+    "text": "An administrative building rated for 0.015 bar is sited 666 m from a PES holding 8,000 kg NEQ (Q^1/3 = 20), giving a scaled distance of 33.3 m/kg^1/3. The table specifies 0.03 bar at 33.3 Q^1/3. The expected overpressure exceeds the rating; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table p.70 lists a scaled distance of 33.3 m kg⁻¹ᐟ³ in the range 44.4–33.3 with an expected side‑on overpressure of 0.02–0.03 bar, which is higher than the building’s rating of 0.015 bar; therefore the audit’s conclusion that the situation is non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 54.04
+  },
+  {
+    "item_no": 12,
+    "text": "A field ammunition point is located 133 m from a PES with 1,000 kg NEQ (Q^1/3 = 10) at a scaled distance of 13.3 m/kg^1/3 (between 14.8 and 9.6 Q^1/3). The facility is designed for 0.12 bar, which conservatively exceeds the 0.09 bar at 14.8 Q^1/3. The design overpressure exceeds the table expectation; siting is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 1.3.7.3 (p.70), a scaled distance of 14.8 Q¹/³ corresponds to 0.09 bar and 9.6 Q¹/³ to 0.16 bar. The site’s scaled distance of 13.3 Q¹/³ therefore requires an over‑pressure between 0.09 bar and 0.16 bar. The facility is designed for 0.12 bar, which does **not** exceed the maximum expected value (0.16 bar) and is only slightly above the lower bound (0.09 bar). The statement that the design “exceeds the table expectation” is incorrect, so the siting claim is not compliant.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.85
+  },
+  {
+    "item_no": 13,
+    "text": "A control room designed for 0.24 bar is positioned 72 m from a PES holding 1,000 kg NEQ (Q^1/3 = 10), giving a scaled distance of 7.2 m/kg^1/3. The table specifies 0.24 bar at 7.2 Q^1/3. However, the table also shows 0.70 bar at 3.6 Q^1/3 and the PES has no earthwork barrier. At 7.2 Q^1/3 the expected value is exactly at design limit — no margin. The installation plan specifies a minimum 20% margin; the zero-margin siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.70) the expected side‑on overpressure at a scaled distance of 7.2 Q¹/³ is 0.24 bar, which matches the control‑room design; the standard does not prescribe a required 20 % safety margin, so the siting meets the listed protection level.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.52
+  },
+  {
+    "item_no": 14,
+    "text": "An explosives workshop designed for 0.21 bar is located 160 m from a PES containing 8,000 kg NEQ (Q^1/3 = 20), giving a scaled distance of 8.0 m/kg^1/3. The table specifies 0.21 bar at 8.0 Q^1/3. The design overpressure matches the table value; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The calculated scaled distance is 160 m / 20 = 8.0 m·kg⁻¹ᐟ³, and Table (p.70) 1.3.7.3 lists a scaled distance of 8.0 m·kg⁻¹ᐟ³ as corresponding to a peak side‑on overpressure of 0.21 bar. Since the design overpressure matches this table value, the arrangement complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.45
+  },
+  {
+    "item_no": 15,
+    "text": "A storage annex rated for 0.16 bar is built 120 m from a PES with 8,000 kg NEQ (Q^1/3 = 20). Scaled distance = 6.0 m/kg^1/3, which lies between 7.2 Q^1/3 (0.24 bar) and 3.6 Q^1/3 (0.70 bar). The interpolated expected overpressure significantly exceeds 0.16 bar; the annex siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) shows that a scaled distance of 7.2 m/kg¹ᐟ³ corresponds to 0.24 bar and 3.6 m/kg¹ᐟ³ to 0.70 bar; a distance of 6.0 m/kg¹ᐟ³ falls between these points, giving an expected overpressure well above 0.16 bar. Since the annex is only rated for 0.16 bar, the siting violates the protection level, confirming the audit’s conclusion of non‑compliance.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.72
+  },
+  {
+    "item_no": 16,
+    "text": "A personnel shelter must survive 0.09 bar. The PES stores 512 kg NEQ (Q^1/3 = 8). The shelter is 118 m away (scaled distance 14.75 ≈ 14.8 Q^1/3). Table specifies 0.09 bar at 14.8 Q^1/3. Design matches table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) lists a scaled distance of 14.8 Q¹/³ corresponding to a peak side‑on overpressure of 0.09 bar. The calculated scaled distance (118 m / 8 ≈ 14.75 ≈ 14.8) places the shelter at the same protection level, so the design meets the required 0.09 bar criterion.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 53.79
+  },
+  {
+    "item_no": 17,
+    "text": "A sensor station rated for 0.09 bar is 77 m from a PES with 512 kg NEQ (Q^1/3 = 8). Scaled distance = 9.6 m/kg^1/3. Table specifies 0.16 bar at this distance. Expected overpressure exceeds rating; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.70) the scaled distance of 9.6 m·kg⁻¹/³ corresponds to an expected peak side‑on overpressure of 0.16 bar. The sensor station is only rated for 0.09 bar, which is below the expected value, so it does not meet the protection requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.45
+  },
+  {
+    "item_no": 18,
+    "text": "A covered vehicle shelter rated for 0.03 bar is 888 m from a PES with 8,000 kg NEQ (Q^1/3 = 20). Scaled distance = 44.4 m/kg^1/3. Table specifies 0.02–0.03 bar at this range. The design overpressure (0.03 bar) equals the upper bound of the expected range; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 1.3.7.3 (p.70), a scaled distance of 44.4 m / kg¹ᐟ³ falls in the 44.4–33.3 m / kg¹ᐟ³ range, which corresponds to an expected peak side‑on overpressure of 0.02–0.03 bar. The shelter’s design pressure of 0.03 bar is at the upper limit of this interval, thus meeting the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 19,
+    "text": "A light prefab office rated for 0.02 bar is 667 m from a PES with 8,000 kg NEQ (Q^1/3 = 20). Scaled distance = 33.3 m/kg^1/3. Table specifies 0.03 bar at this distance. Expected overpressure exceeds the 0.02 bar rating; siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 1.3.7.3 shows that a scaled distance of 33.3 m·kg⁻¹ᐟ³ falls in the 44.4 – 33.3 range with an expected side‑on overpressure of 0.02 – 0.03 bar. The office is only rated for 0.02 bar, so the expected overpressure exceeds its rating, making the siting non‑compliant as the audit states.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.49
+  },
+  {
+    "item_no": 20,
+    "text": "An underground command bunker rated for 1.80 bar is 48 m from a PES with 8,000 kg NEQ (Q^1/3 = 20). Scaled distance = 2.4 m/kg^1/3. Table specifies 1.80 bar at this distance. The bunker design exactly matches the expected peak overpressure; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) “Levels of Protection” lists a scaled distance of 2.4 m·kg⁻¹ᐟ³ with an expected peak side‑on overpressure of 1.80 bar. The bunker’s rating of 1.80 bar at a scaled distance of 48 m / 20 = 2.4 matches this table, so the design complies.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.63
+  },
+  {
+    "item_no": 21,
+    "text": "An igloo rated for 0.70 bar is 24 m from a PES with 1,000 kg NEQ (Q^1/3 = 10). Scaled distance = 2.4 m/kg^1/3. Table specifies 1.80 bar at this distance. The expected overpressure (1.80 bar) exceeds the design capacity (0.70 bar); non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 1.3.7.3 (p.70) lists a scaled distance of 2.4 m / kg¹ᐟ³ corresponding to an expected side‑on overpressure of 1.80 bar. The igloo is only rated for 0.70 bar, so the predicted overpressure exceeds its design capacity, violating the protection level requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 53.79
+  },
+  {
+    "item_no": 22,
+    "text": "A maintenance bay designed for 0.16 bar is 192 m from a PES holding 8,000 kg NEQ (Q^1/3 = 20). Scaled distance = 9.6 m/kg^1/3. Table specifies 0.16 bar. Design overpressure equals the table value; siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 1.3.7.3 (p.70) lists a scaled distance of 9.6 m·kg⁻¹/³ with a peak side‑on overpressure of 0.16 bar. The maintenance bay’s distance (192 m) and Q¹/³ (20) give a scaled distance of 9.6, matching the table entry, so the siting meets the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.5
+  },
+  {
+    "item_no": 23,
+    "text": "A fuze assembly room rated for 0.05 bar is 160 m from a PES storing 8,000 kg NEQ (Q^1/3 = 20). Scaled distance = 8.0 m/kg^1/3. Table specifies 0.21 bar. The room's design capacity is far below the expected overpressure; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "According to the table, a scaled distance of 8.0 m/kg¹⁄³ corresponds to an expected side‑on overpressure of 0.21 bar. The fuze assembly room is only rated for 0.05 bar, which is well below the required protection level, so the audit finding that the design is non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.73
+  },
+  {
+    "item_no": 24,
+    "text": "A hardened magazine rated for 0.24 bar is located at a scaled distance of 7.2 Q^1/3 from a PES. For a PES with 27,000 kg NEQ (Q^1/3 = 30), this equals 216 m. Table specifies 0.24 bar at 7.2 Q^1/3. The design matches; siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 1.3.7.3 (p.70) lists a scaled distance of 7.2 (Q in kg, distance in m) as the limit for a peak side‑on overpressure of 0.24 bar. The magazine is sited at exactly this scaled distance (7.2 × 30 = 216 m), thus meeting the required protection level. No other clause in the provided context contradicts this placement.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 25,
+    "text": "A guard post rated for 0.21 bar is at a scaled distance of 7.2 Q^1/3 from a PES. For Q = 27,000 kg (Q^1/3 = 30), this equals 216 m. Table specifies 0.24 bar at 7.2 Q^1/3. The 0.21 bar rating is below the 0.24 bar expectation; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 1.3.7.3 (p.70), a scaled distance of 7.2 Q¹/³ corresponds to an expected side‑on overpressure of 0.24 bar. The guard post is only rated for 0.21 bar, which is below the required protection level for that distance, thus it does not comply with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 26,
+    "text": "An earth-covered igloo rated for 0.70 bar is at a scaled distance of 3.6 Q^1/3 from a PES storing 1,000 kg NEQ. Distance = 36 m. Table specifies 0.70 bar at 3.6 Q^1/3. Compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) lists a scaled distance of 3.6 Q¹/³ with an expected side‑on overpressure of 0.70 bar; for Q = 1 000 kg this gives a distance of 36 m, matching the item’s data. The earth‑covered igloo is rated for 0.70 bar, so it meets the specified protection level.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 53.16
+  },
+  {
+    "item_no": 27,
+    "text": "A processing facility rated for 0.24 bar is at a scaled distance of 3.6 Q^1/3 from a PES storing 1,000 kg NEQ. Distance = 36 m. Table specifies 0.70 bar at 3.6 Q^1/3. The 0.24 bar rating is far below the expected 0.70 bar; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.70) 1.3.7.3, a scaled distance of 3.6 Q¹/³ corresponds to an expected side‑on overpressure of 0.70 bar. The processing facility is only rated for 0.24 bar, which is well below the required protection level for that distance, thus it does not meet the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 2.06
+  },
+  {
+    "item_no": 28,
+    "text": "A staff caravan park is assessed as acceptable at 0.015 bar side-on overpressure. The PES stores 125 kg NEQ (Q^1/3 = 5). The caravan park is 277 m away (55.4 Q^1/3 ≈ 55.5 Q^1/3). Table specifies 0.015 bar at 55.5 Q^1/3. The expected level matches the acceptable threshold; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 1.3.7.3 (p.70) lists a scaled distance of 55.5 Q¹ᐟ³ corresponding to a side‑on overpressure of 0.015 bar; the calculated scaled distance (277 m / 5 ≈ 55.5) matches this entry, so the assessed overpressure is within the acceptable limit. Additionally, the distance (277 m) exceeds the projection‑hazard limit of 14.8 Q¹ᐟ³ (≈ 74 m), so no projection restriction applies. Hence the assessment complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 0.6
+  },
+  {
+    "item_no": 29,
+    "text": "A staff caravan park assessed for 0.015 bar is 222 m from a PES storing 125 kg NEQ (Q^1/3 = 5), giving a scaled distance of 44.4 Q^1/3. Table specifies 0.02 bar at this distance. The expected overpressure (0.02 bar) exceeds the acceptable limit (0.015 bar); non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.70) shows that a scaled distance of 44.4 Q¹/³ corresponds to an expected peak overpressure of 0.02 bar, which exceeds the acceptable limit of 0.015 bar; therefore the site does not meet the protection level.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page70",
+    "elapsed_s": 0.56
+  },
+  {
+    "item_no": 30,
+    "text": "A Q-D safety review confirmed that a support building rated for 0.09 bar is at a scaled distance of 14.8 Q^1/3 from every PES on the site. The table specifies exactly 0.09 bar at this scaled distance. The building design matches the table-specified overpressure for its location; fully compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) lists a scaled distance of 14.8 Q¹/³ with an expected peak side‑on overpressure of 0.09 bar, matching the support building’s rating. The projection‑hazard note applies only to distances **less than** 14.8 Q¹/³, so at 14.8 Q¹/³ the overpressure requirement is satisfied. Hence the design complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page70",
+    "elapsed_s": 2.99
+  },
+  {
+    "item_no": 31,
+    "text": "A barricaded PES stores 1,000 kg NEQ (Q^1/3 = 10). An exposed site (ES) is located to the SIDE of the barricade at 180 m (scaled distance 18.0 Q^1/3). Table 71 specifies that from the side at 18.0 Q^1/3, the expected overpressure is 0.05 bar. The ES is rated for 0.05 bar; the siting is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context (Table (p.178)) lists Q‑D distances for a 1 000 kg NEQ store (e.g., 18 m, 60 m, 80 m) but does not contain a rule stating that a side distance of 18 Q¹/³ (180 m) corresponds to an overpressure of 0.05 bar. Since the standard excerpt does not support the claimed 0.05 bar value or the required side distance, the siting cannot be confirmed as compliant.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.65
+  },
+  {
+    "item_no": 32,
+    "text": "A barricaded PES holds 1,000 kg NEQ (Q^1/3 = 10). An ES is located to the SIDE at 120 m (scaled distance 12.0 Q^1/3). Table 71 specifies 0.09 bar from the side at this distance. The ES is only designed for 0.05 bar; the expected overpressure exceeds the design; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table B‑I specifies side distances for light‑structure barricaded PES; even the smallest listed distance (NEQ 5 000 kg) requires 320 m side separation, which is far greater than the 120 m used in the item. Therefore the ES is placed too close and the over‑pressure requirement (0.09 bar) exceeds the ES design (0.05 bar), violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 59.72
+  },
+  {
+    "item_no": 33,
+    "text": "A barricaded igloo holds 8,000 kg NEQ (Q^1/3 = 20). An exposed site is to the REAR at 280 m (scaled distance 14.0 Q^1/3). Table 71 specifies 0.05 bar from the rear at 14.0 Q^1/3. The ES is rated for 0.05 bar. The direction and distance comply with the table.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 1.3.7.3 (Levels of Protection) shows that a scaled distance of 14 (Q = 8000 kg, Q¹ᐟ³ = 20) corresponds to an expected peak over‑pressure of about 0.09 bar, while 0.05 bar is only reached at a scaled distance of ≈22.2. Therefore the ES rated for 0.05 bar does not meet the required protection at 14 Q¹ᐟ³, contradicting the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.92
+  },
+  {
+    "item_no": 34,
+    "text": "A barricaded PES holds 8,000 kg NEQ (Q^1/3 = 20). An ES is to the REAR at 186 m (scaled distance 9.3 Q^1/3). Table 71 specifies 0.09 bar from the rear at 9.3 Q^1/3. The ES is rated only for 0.05 bar; expected overpressure exceeds the rating; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The supplied standards (Table B‑II, Table B‑I, etc.) list only distance requirements for PES‑ES separations and do not provide over‑pressure values such as “0.09 bar at 9.3 Q¹/³”. Consequently the audit’s conclusion that the ES rating (0.05 bar) is exceeded cannot be verified from the given context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.9
+  },
+  {
+    "item_no": 35,
+    "text": "An installation to the rear of a barricaded PES (8,000 kg NEQ, Q^1/3 = 20) is at 280 m. The building is rated for 0.05 bar. Scaled distance from rear = 14.0 Q^1/3. Table 71 confirms 0.05 bar from the rear at 14.0 Q^1/3. Design matches table expectation; compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.70) shows that a scaled distance of about 14.8 Q¹/³ corresponds to a peak over‑pressure of 0.09 bar, not 0.05 bar. The audit item assumes 0.05 bar at a scaled distance of 14.0 Q¹/³, which contradicts the values given in the standard (Table p.70 and the rear entries of Table p.71). Therefore the design does not meet the required over‑pressure limit.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.6
+  },
+  {
+    "item_no": 36,
+    "text": "A side-facing ES (1,000 kg NEQ PES, Q^1/3 = 10) is 120 m from the barricade side (scaled distance 12.0 Q^1/3). The designer used the rear-column value (9.3 Q^1/3 = 0.09 bar) and rated the structure for 0.09 bar. However, at 12.0 Q^1/3 from the SIDE, Table 71 also specifies 0.09 bar. Although the value coincides here, the designer's approach used the wrong column — a procedural error. The correct side scaled distance for 0.05 bar is 18.0 Q^1/3 (180 m), not 120 m; the structure is sited 60 m too close.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.70) “Scaled Distance … Peak Incident (Side‑on) Overpressure Expected”, side‑facing structures must be evaluated using the side‑on column values (e.g., 0.05 bar at 22.2 Q¹⁄³, 0.09 bar at 14.8 Q¹⁄³). The designer applied the rear‑column value (9.3 Q¹⁄³ = 0.09 bar) to a side‑on situation, which is a procedural violation of the standard’s side‑on over‑pressure criteria.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 53.67
+  },
+  {
+    "item_no": 37,
+    "text": "A public traffic route (light density) passes 270 m from an open-stack PES. Table 71 notes state that 270 m is a tolerable projection hazard distance for public traffic routes when traffic is not dense and PES is an open stack. The siting complies with the table note.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71’s note for 270 m lists tolerable cases as (i) main or dense public traffic routes with an open‑stack or light‑structure PES, (ii) non‑dense public traffic routes only when the PES is heavy‑walled or earth‑covered, and (iii) sparsely populated areas with an open‑stack or light‑structure PES. A non‑dense (light‑density) public traffic route with an open‑stack PES is not included, so the 270 m siting is not compliant.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.58
+  },
+  {
+    "item_no": 38,
+    "text": "A major public traffic route (heavy traffic) passes 270 m from an open-stack PES. Table 71 notes state that 270 m is tolerable for heavy traffic only when the PES is an earth-covered building, not an open stack. For heavy traffic with an open stack, 400 m is required. The 270 m siting is non-compliant for this combination.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.71) lists 270 m as a tolerable distance for “Main public traffic routes or when the traffic is dense and when the PES is an open stack or light structure.” Therefore a heavy‑traffic public route 270 m from an open‑stack PES meets the standard, and the item’s claim of non‑compliance is incorrect.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.67
+  },
+  {
+    "item_no": 39,
+    "text": "An inhabited building is located 400 m from an open-stack PES. Table 71 notes state that 400 m represents a minor hazard from projections, tolerable for inhabited buildings when the PES is a heavy-walled or earth-covered building OR for all inhabited buildings when PES is heavy-walled. The earth-covered PES here satisfies the condition; the 400 m siting complies with the table note.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71 (p.71) specifies that at 400 m the minor hazard is tolerable for “All ‘Inhabited Buildings’ when the PES is a heavy‑walled or earth‑covered building.” An open‑stack PES does not meet this condition, so the 400 m siting of an inhabited building next to an open‑stack PES is not compliant.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.49
+  },
+  {
+    "item_no": 40,
+    "text": "Inhabited buildings are situated 270 m from an open-stack PES. Table 71 notes state that 270 m is tolerable for 'sparsely populated areas' with open stacks, but there would be 'a small expectation of damage or injury from projections.' The buildings house a densely populated residential area, not a sparsely populated area. The siting does not meet the table conditions; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71 and the accompanying text state that a 270 m distance is only tolerable for sparsely populated areas with an open‑stack PES, while densely populated inhabited buildings require a minimum distance of 400 m (see the note “in densely populated areas considerations should be given to the use of a minimum Inhabited Building Distance of 400 m”). Therefore placing densely populated residential buildings at 270 m violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.97
+  },
+  {
+    "item_no": 41,
+    "text": "A barricaded PES (1,000 kg NEQ) faces a public traffic route on its side at 180 m. Table 71 specifies that from the side at 18.0 Q^1/3, the overpressure is 0.05 bar. The public traffic route is rated for 0.05 bar exposure. Siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.71) lists a side‑on overpressure of 0.05 bar at a scaled distance of 18 Q¹⁄³, which for a 1 000 kg NEQ equals 180 m. The public traffic route is rated for 0.05 bar and, per the note, such exposure is permissible for a light‑structure (barricaded) PES when traffic is not dense. Hence the siting meets the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 52.98
+  },
+  {
+    "item_no": 42,
+    "text": "A barricaded magazine (1,000 kg NEQ, Q^1/3 = 10) has an exposed site to the side at 96 m (scaled distance 9.6 Q^1/3). Table 71 does not list 9.6 Q^1/3 for the side direction; the smallest listed side distance is 12.0 Q^1/3 giving 0.09 bar. At 9.6 Q^1/3 the overpressure exceeds 0.09 bar. The ES is designed for 0.09 bar — overpressure at 9.6 Q^1/3 is higher; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 1.3.7.3 (p.70) lists a side‑on scaled distance of 9.6 Q¹/³ with an expected peak overpressure of 0.16 bar, which exceeds the 0.09 bar design limit of the ES. Therefore the magazine’s exposed site at 9.6 Q¹/³ is not compliant with the protection level.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.71
+  },
+  {
+    "item_no": 43,
+    "text": "An explosives storage igloo (8,000 kg NEQ, Q^1/3 = 20) is barricaded. An ammunition technical office is sited 240 m to the rear (scaled distance 12.0 Q^1/3). The table from the rear: 14.0 Q^1/3 = 0.05 bar, 9.3 Q^1/3 = 0.09 bar. At 12.0 Q^1/3 (rear), the overpressure falls between 0.05 and 0.09 bar. The office is designed for 0.09 bar, which conservatively covers the expected value; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 1.3.7.3 (p.70) lists a peak side‑on overpressure of 0.05 bar at a scaled distance of 22.2 Q¹⁄³ and 0.09 bar at 14.8 Q¹⁄³; therefore at 12.0 Q¹⁄³ the expected overpressure lies between 0.05 bar and 0.09 bar. The ammunition technical office is designed for 0.09 bar, which meets or exceeds the expected value, satisfying the requirement that the design over‑pressure rating must be at least the calculated over‑pressure.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.74
+  },
+  {
+    "item_no": 44,
+    "text": "A barricaded PES (8,000 kg NEQ, Q^1/3 = 20) has an administrative block to the rear at 160 m (scaled distance 8.0 Q^1/3). The rear column in Table 71 shows 9.3 Q^1/3 = 0.09 bar; at 8.0 Q^1/3 the overpressure exceeds 0.09 bar. The block is designed for only 0.09 bar; expected overpressure is higher than the design; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) shows that at a scaled distance of 8.0 Q¹/³ the expected peak side‑on overpressure is 0.21 bar, which is higher than the block’s design limit of 0.09 bar; therefore the audit’s conclusion that the block is non‑compliant is consistent with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 45,
+    "text": "A sparsely populated residential hamlet is 270 m from an open-stack PES. Table 71 notes confirm that 270 m is tolerable for sparsely populated areas with open stacks (small expectation of damage or injury). Siting is within the table's tolerable limit.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.71) states that at 270 m there is a significant hazard but it is tolerable for “Sparsely populated areas when the PES is an open stack or a light structure; there would be a small expectation of damage or injury from projections.” The item matches this condition, so the siting is within the tolerable limit.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.49
+  },
+  {
+    "item_no": 46,
+    "text": "A built-up urban area is 270 m from an open-stack PES. Table 71 notes state 270 m is tolerable only for sparsely populated areas with open stacks. A dense urban area does not qualify as sparsely populated; the siting is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.71) lists the 270 m projection hazard as tolerable only for (i) main public traffic routes or dense traffic when the PES is an open‑stack or light structure, and (ii) sparsely populated areas with an open‑stack PES. A dense built‑up urban area is not included, so the siting is indeed non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 52.86
+  },
+  {
+    "item_no": 47,
+    "text": "An earth-covered barricaded PES (1,000 kg NEQ) sits adjacent to a major public traffic route. The route is 400 m from the PES. Table 71 notes specify 400 m as tolerable for main PTR (dense traffic) when PES is a heavy-walled or earth-covered building. The earth-covered condition is met; the 400 m siting is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.71) under “3) 400 m” states that a minor hazard at 400 m is tolerable for “main public traffic routes … when the PES is a heavy‑walled or earth‑covered building.” The PES is earth‑covered and the route is a main public traffic route at exactly 400 m, satisfying this condition.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 48,
+    "text": "A main public traffic route (heavy traffic) is 400 m from a light-structure open-stack PES. Table 71 notes specify 400 m is tolerable for dense traffic only when PES is heavy-walled or earth-covered. An open stack or light structure does not qualify; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the 400 m hazard tolerable list in the context, a main public traffic route (or dense traffic) is only acceptable at 400 m when the PES is a heavy‑walled or earth‑covered building. Open‑stack or light‑structure PESs are only permitted for built‑up areas, not for main public traffic routes, so the 400 m separation is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.59
+  },
+  {
+    "item_no": 49,
+    "text": "A barricaded PES (27,000 kg NEQ, Q^1/3 = 30) has an exposed site to the SIDE at 540 m (scaled distance 18.0 Q^1/3). Table 71 specifies 0.05 bar from the side at 18.0 Q^1/3. The ES design standard is 0.05 bar. Compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.70) lists a side‑on overpressure of 0.05 bar only at a scaled distance of 22.2 Q¹/³; at a closer distance of 18.0 Q¹/³ the expected overpressure would be higher than 0.05 bar. Therefore specifying 0.05 bar for a site at 18.0 Q¹/³ is not supported by the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.5
+  },
+  {
+    "item_no": 50,
+    "text": "A barricaded PES (27,000 kg NEQ, Q^1/3 = 30) has an exposed site to the SIDE at 360 m (scaled distance 12.0 Q^1/3). Table 71 specifies 0.09 bar from the side at 12.0 Q^1/3. The ES is designed for 0.05 bar; expected overpressure exceeds the rating; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.70) shows that at a scaled distance of 12 Q¹⁄³ the side‑on peak over‑pressure is ≥0.09 bar (the 14.8 Q¹⁄³ entry gives 0.09 bar, so a shorter distance yields a higher value). Table (p.71) lists the same 0.09 bar side value. The ES is only rated for 0.05 bar, which is below the expected over‑pressure, so the finding that the installation is non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.8
+  },
+  {
+    "item_no": 51,
+    "text": "A barricaded PES (27,000 kg NEQ, Q^1/3 = 30) has an exposed site to the REAR at 420 m (scaled distance 14.0 Q^1/3). Table 71 specifies 0.05 bar from the rear at 14.0 Q^1/3. ES is rated for 0.05 bar. Rear direction, correct distance — compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.71) lists a rear‑direction peak overpressure of 0.05 bar at the scaled distance of 14 Q¹⁄³, which matches the ES rating of 0.05 bar for the barricaded PES. The distance and direction therefore satisfy the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 53.85
+  },
+  {
+    "item_no": 52,
+    "text": "A barricaded PES (27,000 kg NEQ, Q^1/3 = 30) has an ES to the REAR at 279 m (scaled distance 9.3 Q^1/3). Table 71 specifies 0.09 bar from the rear at 9.3 Q^1/3. ES is designed for 0.05 bar; the 0.09 bar expectation exceeds it; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to TABLE B-I, light‑structure barricaded PES (NEQ ≈ 20 000 kg) must have a minimum rear exterior distance of 610 m. The audit item places the ES only 279 m away, which is well below the required distance, thus violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 1.11
+  },
+  {
+    "item_no": 53,
+    "text": "A built-up residential area is 400 m from a heavy-walled barricaded PES. Table 71 notes state 400 m is tolerable for all inhabited buildings when PES is heavy-walled. The PES qualifies as heavy-walled; the siting is compliant with the projection hazard note.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71 (p.71) states that at 400 m the hazard is tolerable for built‑up areas **only when the PES is an open stack or a light structure**; heavy‑walled PES are not listed for built‑up areas, they are only allowed for “All Inhabited Buildings”. Therefore a built‑up residential area 400 m from a heavy‑walled barricaded PES does not meet the tolerable condition.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.59
+  },
+  {
+    "item_no": 54,
+    "text": "A built-up residential area is 270 m from a heavy-walled PES. Table 71 notes: 270 m for inhabited buildings is only tolerable 'when PES is a heavy-walled or earth-covered building AND for main PTR with dense traffic'. It is not listed as tolerable for inhabited buildings at 270 m from any PES type. 400 m is the minimum for inhabited buildings; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.71) lists 270 m as tolerable only for main public traffic routes (dense traffic) with an open‑stack or light‑structure PES, or for public traffic routes (non‑dense) with a heavy‑walled/earth‑covered PES, but not for inhabited/building areas. The 400 m distance is the minimum for all inhabited buildings when the PES is heavy‑walled or earth‑covered. Therefore a built‑up residential area at 270 m from a heavy‑walled PES violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.48
+  },
+  {
+    "item_no": 55,
+    "text": "An ammunition depot barricaded PES (8,000 kg NEQ) has a light-traffic public road 270 m from the side. Table 71 notes confirm 270 m is tolerable for public traffic routes with non-dense traffic when PES is an open stack or light structure. The road satisfies the light/non-dense traffic condition; siting is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71 notes state that at 270 m the hazard is tolerable for public traffic routes with non‑dense traffic only when the PES is a heavy‑walled or earth‑covered building; an open‑stack or light‑structure PES is not listed for non‑dense traffic (it is only allowed for dense traffic). Therefore the described siting does not meet the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.87
+  },
+  {
+    "item_no": 56,
+    "text": "A densely trafficked highway is 270 m from an open-stack PES. Table 71 notes allow 270 m for non-dense traffic with open stacks. A densely trafficked highway does not qualify as non-dense traffic; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.71) states that at 270 m the hazard is tolerable “when the traffic is dense and when the PES is an open stack or light structure.” Therefore a densely trafficked highway 270 m from an open‑stack PES complies with the standard, contrary to the audit item’s claim.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 51.67
+  },
+  {
+    "item_no": 57,
+    "text": "A barricaded PES (512 kg NEQ, Q^1/3 = 8) faces an ES to the SIDE at 144 m (scaled distance 18.0 Q^1/3). Table 71 specifies 0.05 bar from the side at 18.0 Q^1/3. ES rated for 0.05 bar. Compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.70) shows that a side‑on peak overpressure of 0.05 bar corresponds to a scaled distance of 22.2 Q¹⁄³, not 18.0 Q¹⁄³. At a scaled distance of 18.0 Q¹⁄³ the expected overpressure is between 0.05 bar and 0.09 bar (greater than 0.05 bar), so an ES rated only for 0.05 bar would not meet the required protection level.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 1.07
+  },
+  {
+    "item_no": 58,
+    "text": "A barricaded PES (512 kg NEQ, Q^1/3 = 8) has an ES to the REAR at 64 m (scaled distance 8.0 Q^1/3). Table 71 rear values: 14.0 Q^1/3 = 0.05 bar, 9.3 Q^1/3 = 0.09 bar. At 8.0 Q^1/3 from the rear, overpressure exceeds 0.09 bar. ES rated for 0.09 bar; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table B‑I specifies that for light‑structure, barricaded PES the required exterior distance to an ES on the rear side is 610 m (e.g., “Rear on … Exterior Quantity‑Distance to ES in metres: 610”). The audit item places the ES only 64 m (scaled distance 8 Q¹⁄³) from the PES, which is far below the 610 m minimum, therefore the arrangement violates the distance requirement of the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 1.01
+  },
+  {
+    "item_no": 59,
+    "text": "An unbarricaded stack PES has a public traffic route 400 m away (dense traffic). Table 71 notes: 400 m is tolerable for main public traffic routes (dense) when PES is open stack. The open-stack condition satisfies this note; siting is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71 specifies that at 400 m the hazard is tolerable for main public traffic routes (dense) only when the PES is a heavy‑walled or earth‑covered building, while an open‑stack PES is only acceptable for built‑up areas. Therefore an unbarricaded open‑stack PES 400 m from a dense main public traffic route does not meet the listed tolerable conditions.",
+    "expected": "UYGUN",
+    "table": "Table_page71",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 60,
+    "text": "An unbarricaded open-stack PES has an inhabited building district 400 m away. Table 71 notes: 400 m for inhabited buildings is tolerable when PES is heavy-walled or earth-covered. An open stack does not satisfy this condition; inhabited buildings at 400 m from an open stack do not comply with the table projection hazard note.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 71 lists 400 m as tolerable for “All Inhabited Buildings” only when the PES is a heavy‑walled or earth‑covered building; an open‑stack PES is not included in that condition. Therefore an inhabited building 400 m from an unbarricaded open‑stack does not meet the required distance. (See Table (p.71) bullet points for 400 m tolerable cases.)",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page71",
+    "elapsed_s": 0.82
+  },
+  {
+    "item_no": 61,
+    "text": "A geological survey for a proposed underground magazine site reported granite with a density of 2.65 g/cm³ and P-wave velocity of 5,700 m/s. Table 104 specifies granite density as 2.5–2.8 g/cm³ and P-wave velocity as 5,500–5,900 m/s. Both measured values fall within the tabulated ranges; the geological assessment is consistent.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists granite density as 2.5–2.8 g/cm³ and P‑wave velocity as 5 500–5 900 m/s; the reported values of 2.65 g/cm³ and 5 700 m/s fall within these limits, so the geological assessment conforms to the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 51.75
+  },
+  {
+    "item_no": 62,
+    "text": "A site assessment classified the subsurface as granite with a P-wave velocity of 4,800 m/s. Table 104 specifies P-wave velocity for granite as 5,500–5,900 m/s. The measured 4,800 m/s is significantly below the tabulated range; the material cannot be classified as granite per the table. The assessment is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists granite P‑wave velocity as 5500–5900 m/s; the measured value of 4800 m/s lies outside this range, so the material cannot be classified as granite according to the table, making the assessment non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.76
+  },
+  {
+    "item_no": 63,
+    "text": "A geophysical survey identified basalt at a proposed underground storage site with density 2.9 g/cm³ and P-wave velocity 6,400 m/s. Table 104 specifies basalt density as 2.7–3.1 g/cm³ and P-wave as 6,400 m/s. Measured values match the table exactly; the classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) “a) General” lists basalt with a density range of 2.7–3.1 g/cm³ and a P‑wave velocity of 6400 m/s. The surveyed values (density 2.9 g/cm³, P‑wave 6400 m/s) fall within these limits, so the classification as basalt complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 1.12
+  },
+  {
+    "item_no": 64,
+    "text": "A contractor classified a rock as basalt based on its density of 3.3 g/cm³. Table 104 specifies basalt density as 2.7–3.1 g/cm³. A density of 3.3 g/cm³ exceeds the tabulated range for basalt; the classification is incorrect.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the acceptable density range for basalt as 2.7–3.1 g/cm³. The contractor’s reported density of 3.3 g/cm³ lies outside this range, so the classification does not meet the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.36
+  },
+  {
+    "item_no": 65,
+    "text": "A site characterisation report for an underground tunnel magazine identified limestone with density 2.65 g/cm³ and P-wave velocity 6,000 m/s. Table 104 specifies limestone density 2.5–2.8 g/cm³ and P-wave 5,900–6,100 m/s. All values fall within the tabulated ranges; the classification is consistent.",
+    "verdict": "UYGUN",
+    "reasoning": "The report assigns the rock type “limestone” with density 2.65 g/cm³ and P‑wave velocity 6 000 m/s, which both lie inside the ranges given for limestone in Table (p.104) a) General (density 2.5–2.8 g/cm³, P‑wave 5 900–6 100 m/s). Therefore the classification follows the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 54.78
+  },
+  {
+    "item_no": 66,
+    "text": "A geological log classified the host rock as limestone with a measured P-wave velocity of 7,500 m/s. Table 104 specifies limestone P-wave velocity as 5,900–6,100 m/s. The measured velocity far exceeds the tabulated range; the limestone classification is incorrect.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the P‑wave velocity for limestone as 5 900–6 100 m/s. The measured velocity of 7 500 m/s lies far outside this range, so the classification of the host rock as limestone contradicts the standard’s material property specifications.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.42
+  },
+  {
+    "item_no": 67,
+    "text": "A geotechnical report for a proposed earth-covered magazine identified sandstone with density 2.3 g/cm³ and P-wave velocity 3,000 m/s. Table 104 specifies sandstone density 2.0–2.6 g/cm³ and P-wave velocity 1,400–4,300 m/s. Both values fall within the wide sandstone ranges; the classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists sandstone density as 2.0–2.6 g/cm³ and P‑wave velocity as 1,400–4,300 m/s; the reported values (2.3 g/cm³, 3,000 m/s) lie within these limits, so the material classification follows the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.55
+  },
+  {
+    "item_no": 68,
+    "text": "A site classified the host material as sandstone with P-wave velocity 5,500 m/s. Table 104 specifies sandstone P-wave velocity as 1,400–4,300 m/s. The measured 5,500 m/s exceeds the upper bound; the material is unlikely to be sandstone. The classification contradicts the table data and is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the P‑wave velocity range for sandstone as 1 400–4 300 m/s. The site’s reported velocity of 5 500 m/s lies outside this range, so classifying the material as sandstone violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.48
+  },
+  {
+    "item_no": 69,
+    "text": "A below-grade storage site confirmed unsaturated sand with density 2.0 g/cm³ and P-wave 600 m/s. Table 104 specifies Sand (Unsaturated) density 1.7–2.3 g/cm³ and P-wave 200–1,000 m/s. Values are within range; the geomechanical classification is consistent with the table.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists Sand (Unsaturated) with density 1.7–2.3 g/cm³ and P‑wave velocity 200–1 000 m/s. The site’s reported density 2.0 g/cm³ and P‑wave 600 m/s both lie within these limits, so the classification matches the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.55
+  },
+  {
+    "item_no": 70,
+    "text": "A site report classified the substrate as unsaturated sand with P-wave velocity 1,500 m/s. Table 104 specifies unsaturated sand P-wave velocity as 200–1,000 m/s. The measured velocity exceeds the tabulated range; the unsaturated sand classification is incorrect.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists “Sand (Unsaturated)” with a P‑wave velocity range of 200–1000 m/s. The reported velocity of 1 500 m/s lies outside this range, so the classification as unsaturated sand does not meet the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 53.7
+  },
+  {
+    "item_no": 71,
+    "text": "Saturated sand at a coastal underground storage site was measured: density 2.71 g/cm³, P-wave velocity 1,800 m/s. Table 104 specifies saturated sand density 2.71 g/cm³ and P-wave 800–2,200 m/s. Values match; classification is consistent.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists saturated sand with a fixed density of 2.71 g/cm³ and a permissible P‑wave velocity range of 800–2200 m/s. The measured density (2.71 g/cm³) and P‑wave velocity (1,800 m/s) fall within these limits, so the classification is consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.44
+  },
+  {
+    "item_no": 72,
+    "text": "A site report identified saturated sand with density 2.0 g/cm³. Table 104 specifies saturated sand density as 2.71 g/cm³. The measured density is significantly below the tabulated value; the material does not match the saturated sand definition in the table.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) defines “Sand (Saturated)” with a fixed density of 2.71 g/cm³. The audit item reports a saturated sand density of 2.0 g/cm³, which falls outside this definition (and matches the range for sandstone or unsaturated sand), thus violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.43
+  },
+  {
+    "item_no": 73,
+    "text": "A surface-buried magazine is sited in soil with density 2.1 g/cm³ and P-wave velocity 700 m/s. Table 104 specifies soil density 1.7–2.3 g/cm³ and P-wave 300–900 m/s. Both values are within the tabulated ranges; soil classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists “Soil” with density 1.7–2.3 g/cm³ and P‑wave velocity 300–900 m/s. The magazine’s site values (2.1 g/cm³, 700 m/s) fall within these limits, so the soil classification complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.43
+  },
+  {
+    "item_no": 74,
+    "text": "A geotechnical report classified the site medium as soil with P-wave velocity 1,200 m/s. Table 104 specifies soil P-wave velocity as 300–900 m/s. The measured velocity exceeds the tabulated range; the soil classification is inconsistent with the table.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the allowable P‑wave velocity range for “Soil” as 300–900 m/s. The reported velocity of 1,200 m/s lies outside this range, so classifying the medium as soil violates the table’s specification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.38
+  },
+  {
+    "item_no": 75,
+    "text": "An S-wave velocity of 2,900 m/s was measured at a granite site proposed for underground storage. Table 104 specifies granite S-wave velocity as 2,800–3,000 m/s. The measured 2,900 m/s is within the tabulated range; the granite classification is confirmed.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the S‑wave velocity for granite as 2800–3000 m/s. The measured value of 2 900 m/s lies within this interval, so the site’s classification as granite is consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 54.73
+  },
+  {
+    "item_no": 76,
+    "text": "An S-wave velocity of 4,000 m/s was reported for a rock classified as granite. Table 104 specifies granite S-wave velocity as 2,800–3,000 m/s. The measured value substantially exceeds the tabulated range; the granite classification is incorrect.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the allowable S‑wave velocity for granite as 2800–3000 m/s. The reported value of 4000 m/s lies outside this range, indicating the rock cannot be correctly classified as granite according to the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.36
+  },
+  {
+    "item_no": 77,
+    "text": "Basalt at an underground magazine site measured S-wave velocity of 3,200 m/s. Table 104 specifies basalt S-wave velocity as 3,200 m/s exactly. The measured value matches the table; basalt classification is confirmed.",
+    "verdict": "UYGUN",
+    "reasoning": "The measured S‑wave velocity of 3,200 m/s for basalt exactly matches the value listed for basalt in Table (p.104) (“S wave Velocity (m/s): 3200”), therefore the classification conforms to the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.77
+  },
+  {
+    "item_no": 78,
+    "text": "A rock classified as basalt measured an S-wave velocity of 2,200 m/s. Table 104 specifies basalt S-wave velocity as 3,200 m/s. The measured velocity is significantly below the tabulated value; the basalt classification is incorrect.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the S‑wave velocity for basalt as 3200 m/s. The measured value of 2200 m/s is well below this tabulated value, so the finding correctly identifies a discrepancy with the standard’s specified property.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.71
+  },
+  {
+    "item_no": 79,
+    "text": "Unsaturated sand at a proposed storage site has an S-wave velocity of 300 m/s. Table 104 specifies unsaturated sand S-wave velocity as 80–400 m/s. The measured value falls within range; classification is consistent.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the S‑wave velocity for “Sand (Unsaturated)” as 80–400 m/s. The measured value of 300 m/s falls within this interval, so the classification matches the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.47
+  },
+  {
+    "item_no": 80,
+    "text": "A material classified as unsaturated sand measured an S-wave velocity of 600 m/s. Table 104 specifies S-wave velocity for unsaturated sand as 80–400 m/s. The 600 m/s exceeds the upper limit; the classification is inconsistent with table data.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the S‑wave velocity for “Sand (Unsaturated)” as 80–400 m/s. The measured value of 600 m/s lies outside this range, so the material’s classification as unsaturated sand is inconsistent with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 53.68
+  },
+  {
+    "item_no": 81,
+    "text": "Soil at a proposed earth-covered magazine was found to have S-wave velocity 280 m/s. Table 104 specifies soil S-wave velocity as 120–360 m/s. The 280 m/s is within range; soil classification is confirmed.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the allowable S‑wave velocity for “Soil” as 120–360 m/s. The measured value of 280 m/s falls within this range, so the soil classification complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.44
+  },
+  {
+    "item_no": 82,
+    "text": "A material classified as soil at an underground storage site showed S-wave velocity of 500 m/s. Table 104 specifies soil S-wave velocity as 120–360 m/s. The 500 m/s exceeds the tabulated range; the soil classification is not supported by the table.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) defines the S‑wave velocity range for “Soil” as 120–360 m/s. The measured S‑wave velocity of 500 m/s lies outside this interval, so the material cannot be classified as soil according to the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 83,
+    "text": "Saturated sand at an underground storage foundation measured S-wave velocity 700 m/s. Table 104 specifies saturated sand S-wave velocity as 320–880 m/s. The measured value is within the tabulated range; the saturated sand classification is valid.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the S‑wave velocity for “Sand (Saturated)” as 320–880 m/s. The measured value of 700 m/s lies within this interval, so the classification of the material as saturated sand complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 1.6
+  },
+  {
+    "item_no": 84,
+    "text": "A material classified as saturated sand measured S-wave velocity 1,100 m/s. Table 104 specifies saturated sand S-wave velocity as 320–880 m/s. The measured value exceeds the upper bound; the classification is non-compliant with the table.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the S‑wave velocity for “Sand (Saturated)” as 320–880 m/s. The measured value of 1 100 m/s lies outside this interval, so the material cannot be classified as saturated sand according to the table. Hence the audit finding that the classification is non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.47
+  },
+  {
+    "item_no": 85,
+    "text": "A limestone formation at a tunnel magazine site measured density 2.7 g/cm³ and S-wave velocity 2,900 m/s. Table 104 specifies limestone density 2.5–2.8 g/cm³ and S-wave 2,800–3,000 m/s. Both values are within range; classification is confirmed.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists limestone density as 2.5–2.8 g/cm³ and S‑wave velocity as 2,800–3,000 m/s; the measured values of 2.7 g/cm³ and 2,900 m/s fall within these limits, so the classification is consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 52.77
+  },
+  {
+    "item_no": 86,
+    "text": "A site report classified host rock as limestone with density 3.2 g/cm³. Table 104 specifies limestone density as 2.5–2.8 g/cm³. The measured density is well above the tabulated range; the limestone classification is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists the allowable density range for limestone as 2.5–2.8 g/cm³. The site report records a density of 3.2 g/cm³, which lies outside this range, so the limestone classification violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.75
+  },
+  {
+    "item_no": 87,
+    "text": "A sandstone formation for a covered storage site measured density 2.4 g/cm³ and S-wave velocity 2,200 m/s. Table 104 specifies sandstone density 2.0–2.6 g/cm³ and S-wave 700–2,800 m/s. Both values are within range; classification is consistent.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) a) General lists sandstone density as 2.0–2.6 g/cm³ and S‑wave velocity as 700–2 800 m/s. The measured values of 2.4 g/cm³ and 2 200 m/s fall within these limits, so the classification as sandstone is consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 0.72
+  },
+  {
+    "item_no": 88,
+    "text": "A rock classified as sandstone at a proposed magazine site measured S-wave velocity 3,500 m/s. Table 104 specifies sandstone S-wave velocity as 700–2,800 m/s. The measured 3,500 m/s exceeds the upper bound; the sandstone classification is not supported.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists the S‑wave velocity range for sandstone as 700–2 800 m/s. The measured value of 3 500 m/s lies outside this range, so the sandstone classification is not justified according to the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 0.39
+  },
+  {
+    "item_no": 89,
+    "text": "A ground shock analysis for an underground magazine used granite parameters: density 2.6 g/cm³, P-wave 5,600 m/s, S-wave 2,850 m/s. Table 104 confirms all three values fall within the granite ranges. The ground shock model inputs are consistent with the table.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.104) lists granite density 2.5‑2.8 g/cm³, P‑wave velocity 5500‑5900 m/s, and S‑wave velocity 2800‑3000 m/s. The analysis uses density 2.6 g/cm³, P‑wave 5600 m/s, and S‑wave 2850 m/s, all of which lie within these specified ranges, so the model inputs are consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page104",
+    "elapsed_s": 19.24
+  },
+  {
+    "item_no": 90,
+    "text": "A ground shock model used parameters: density 1.8 g/cm³, P-wave 5,700 m/s, labeled 'granite'. Table 104 specifies granite density as 2.5–2.8 g/cm³. The density of 1.8 g/cm³ is below the granite range; the material label is incorrect. Using wrong material parameters invalidates the ground shock model; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.104) lists granite density as 2.5–2.8 g/cm³; the model uses 1.8 g/cm³, which falls outside this range, making the material label incorrect and violating the standard’s material property specifications.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page104",
+    "elapsed_s": 41.99
+  },
+  {
+    "item_no": 91,
+    "text": "An underground magazine design report classifies the host medium as dry sand with a seismic P-wave velocity (c_p) of 600 m/s. Table 108 specifies c_p = 600 m/s for dry sand. The stated value matches the table; the medium classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the seismic P‑wave velocity [c_p] for Dry Sand as 600 m/s. The design report assigns the host medium as Dry Sand with c_p = 600 m/s, which matches the standard value, so the classification is compliant.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 40.29
+  },
+  {
+    "item_no": 92,
+    "text": "A geotechnical report classifies the host medium as dry sand and assigns a P-wave velocity (c_p) of 2,850 m/s. Table 108 specifies c_p = 600 m/s for dry sand. The stated 2,850 m/s matches weak rock, not dry sand; the classification is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the P‑wave velocity for Dry Sand as 600 m/s, while 2850 m/s is the value assigned to Weak Rock. Assigning 2850 m/s to a medium classified as Dry Sand contradicts the standard’s specified property, making the classification non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.78
+  },
+  {
+    "item_no": 93,
+    "text": "A site assessment for an underground igloo identifies weak rock with c_p = 2,850 m/s. Table 108 specifies c_p = 2,850 m/s for weak rock. The value matches; the medium classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the P‑wave velocity (c_p) for “Weak Rock” as 2850 m/s. The site assessment reports the same value, so the classification aligns with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.73
+  },
+  {
+    "item_no": 94,
+    "text": "An underground magazine design assumes weak rock with c_p = 5,900 m/s. Table 108 specifies c_p = 5,900 m/s for strong rock, not weak rock (which is 2,850 m/s). Using strong rock velocity for a weak rock site is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) specifies the P‑wave velocity (c_p) for weak rock as 2 850 m/s and for strong rock as 5 900 m/s. The item assigns the strong‑rock value (5 900 m/s) to a weak‑rock site, which contradicts the listed values, thus it is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.35
+  },
+  {
+    "item_no": 95,
+    "text": "A blast analysis for an underground facility in strong rock uses c_p = 5,900 m/s. Table 108 specifies c_p = 5,900 m/s for strong rock. The value is correctly taken from the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the P‑wave velocity [c_p] for Strong Rock as 5900 m/s; the analysis uses exactly this value, so it follows the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.66
+  },
+  {
+    "item_no": 96,
+    "text": "A structural analyst uses c_p = 600 m/s for a facility designed for a strong rock site. Table 108 specifies strong rock c_p = 5,900 m/s. Using dry sand velocity for strong rock significantly underestimates wave transmission; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the compressional wave velocity for strong rock as c_p = 5900 m/s, while dry sand is 600 m/s. Using 600 m/s for a strong rock site deviates from the specified value, thus violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.34
+  },
+  {
+    "item_no": 97,
+    "text": "An underground storage design in dry sand uses a medium density (p_s) of 2,000 kg/m³. Table 108 specifies p_s = 2,000 kg/m³ for dry sand. The density value is consistent with the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the medium density [p_s] for Dry Sand as 2000 kg/m³, which matches the value used in the design; therefore the item complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.23
+  },
+  {
+    "item_no": 98,
+    "text": "A design report uses p_s = 2,800 kg/m³ for a dry sand site. Table 108 specifies p_s = 2,000 kg/m³ for dry sand; 2,800 kg/m³ is the strong rock value. Applying strong rock density to a dry sand site is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the density p_s for Dry Sand as 2000 kg/m³, while 2800 kg/m³ is assigned to Strong Rock. Using the Strong Rock value for a Dry Sand site contradicts the specified table values.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.41
+  },
+  {
+    "item_no": 99,
+    "text": "A weak rock underground magazine design uses p_s = 2,200 kg/m³. Table 108 specifies p_s = 2,200 kg/m³ for weak rock. The density value matches the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the parameter [p_s] for “Weak Rock” as 2200 kg/m³. The design uses p_s = 2,200 kg/m³, which exactly matches the specified value, therefore it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.57
+  },
+  {
+    "item_no": 100,
+    "text": "An engineer uses p_s = 2,000 kg/m³ for a weak rock underground site. Table 108 specifies weak rock p_s = 2,200 kg/m³. The used value (2,000 kg/m³) belongs to dry sand, not weak rock; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the density parameter [p_s] for weak rock as 2200 kg/m³, while the engineer used 2000 kg/m³, which corresponds to dry sand. Using the wrong value violates the standard specification for weak rock.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.34
+  },
+  {
+    "item_no": 101,
+    "text": "A strong rock underground igloo design uses p_s = 2,800 kg/m³. Table 108 specifies p_s = 2,800 kg/m³ for strong rock. The value is correctly applied; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the parameter p_s for “Strong Rock” as 2800 kg/m³, which matches the value used in the design; therefore the application is in accordance with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.09
+  },
+  {
+    "item_no": 102,
+    "text": "An underground facility in strong rock uses p_s = 2,200 kg/m³ in the ground shock model. Table 108 specifies strong rock p_s = 2,800 kg/m³; 2,200 kg/m³ is the weak rock value. Applying wrong density to a strong rock site produces incorrect results; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the density [p_s] for Strong Rock as 2800 kg/m³, while the audit item uses 2200 kg/m³ (the Weak Rock value). Applying the Weak Rock density to a Strong Rock site contradicts the specified standard values, making the practice non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.28
+  },
+  {
+    "item_no": 103,
+    "text": "A tamped underground charge in dry sand uses a Scaled IBD of 5.5 m/kg^(1/3). Table 108 specifies Scaled IBD (tamped) = 5.5 m/kg^(1/3) for dry sand. The design value matches the table; compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists “Scaled IBD (tamped)” for dry sand as 5.5 with units m/kg, not m/kg^(1/3). The item’s specification of m/kg^(1/3) does not match the unit defined in the standard, therefore it is not compliant.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.14
+  },
+  {
+    "item_no": 104,
+    "text": "A tamped charge in dry sand is designed with Scaled IBD = 7.3 m/kg^(1/3). Table 108 specifies 5.5 m/kg^(1/3) for dry sand (tamped); 7.3 is the weak rock value. The design uses the wrong media column; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the Scaled IBD (tamped) for dry sand as 5.5 m/kg^(1/3), while the value 7.3 m/kg^(1/3) is assigned to weak rock. Using 7.3 m/kg^(1/3) for a dry‑sand tamped charge therefore violates the specified media column.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 42.11
+  },
+  {
+    "item_no": 105,
+    "text": "An underground magazine in weak rock uses Scaled IBD (tamped) = 7.3 m/kg^(1/3). Table 108 specifies this exact value for weak rock (tamped). The Scaled IBD is correctly taken from the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the Scaled IBD (tamped) for weak rock as 7.3 m/kg, which is exactly the value used in the item; therefore the item follows the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.56
+  },
+  {
+    "item_no": 106,
+    "text": "A tamped charge in weak rock is assigned Scaled IBD = 6.9 m/kg^(1/3). Table 108 specifies 7.3 m/kg^(1/3) for weak rock (tamped); 6.9 is the strong rock value. The wrong media column was used; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the Scaled IBD (tamped) for weak rock as 7.3 m/kg, while 6.9 m/kg is the value for strong rock. Assigning 6.9 m/kg to weak rock uses the wrong media column, violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.73
+  },
+  {
+    "item_no": 107,
+    "text": "A tamped charge in strong rock uses Scaled IBD = 6.9 m/kg^(1/3). Table 108 specifies 6.9 m/kg^(1/3) for strong rock (tamped). The design value is consistent with the table; compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists “Scaled IBD (tamped)” for strong rock as 6.9 m/kg (units shown as m/kg). The audit item states the value as 6.9 m/kg^(1/3), which does not match the unit specified in the standard, thus violating the table’s definition.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.27
+  },
+  {
+    "item_no": 108,
+    "text": "A tamped charge in strong rock is designed with Scaled IBD = 5.5 m/kg^(1/3). Table 108 specifies 6.9 m/kg^(1/3) for strong rock (tamped); 5.5 is the dry sand value. The wrong column was applied; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the Scaled IBD (tamped) for strong rock as 6.9 m/kg, while the item uses 5.5 m/kg, which is the value for dry sand. Applying the dry‑sand column to strong rock contradicts the specified standard values.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 23.33
+  },
+  {
+    "item_no": 109,
+    "text": "A low-density explosive charge (γ ≤ 50 kg/m³) in dry sand uses Scaled IBD = 2.8 m/kg^(1/3). Table 108 specifies Scaled IBD (γ ≤ 50 kg/m³) = 2.8 for dry sand. The value matches the low-density row; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the Scaled IBD for dry sand (γ ≤ 50 kg/m³) as 2.8 m/kg^(1/3). The audit item uses this exact value, so it conforms to the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.89
+  },
+  {
+    "item_no": 110,
+    "text": "A low-density charge (γ ≤ 50 kg/m³) in dry sand is designed using Scaled IBD = 5.5 m/kg^(1/3). Table 108 specifies the tamped row (5.5) — not the low-density row (2.8) — for dry sand. Using the tamped value for a low-density charge overestimates the required separation; the designer applied the wrong row from the table.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists separate Scaled IBD values: 5.5 m/kg for tamped dry sand and 2.8 m/kg for low‑density dry sand (≤ 50 kg/m³). The accompanying text states that for loading densities up to 50 kg/m³ the IBD is about 50 % of the tamped value, implying the low‑density row (2.8) must be used. Applying the tamped row (5.5) to a low‑density charge therefore violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 42.01
+  },
+  {
+    "item_no": 111,
+    "text": "A low-density charge (γ ≤ 50 kg/m³) in weak rock uses Scaled IBD = 3.7 m/kg^(1/3). Table 108 specifies 3.7 m/kg^(1/3) for weak rock (γ ≤ 50 kg/m³). The value is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the Scaled IBD for weak rock as 3.7 m/kg^(1/3) for low‑density charges (γ ≤ 50 kg/m³). The item uses exactly this value, matching the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.5
+  },
+  {
+    "item_no": 112,
+    "text": "A low-density charge in weak rock is designed with Scaled IBD = 3.5 m/kg^(1/3). Table 108 specifies 3.7 for weak rock (γ ≤ 50 kg/m³); 3.5 is the strong rock value. The wrong media column was used; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 108 lists the Scaled IBD for weak rock as 3.7 m/kg^(1/3); the item uses 3.5, which is the value for strong rock. Selecting the strong‑rock column for a weak‑rock scenario violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.59
+  },
+  {
+    "item_no": 113,
+    "text": "A low-density charge (γ ≤ 50 kg/m³) in strong rock uses Scaled IBD = 3.5 m/kg^(1/3). Table 108 specifies 3.5 m/kg^(1/3) for strong rock in the low-density row. The design value is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the Scaled IBD for strong rock in the low‑density row as 3.5 m/kg^(1/3), and the example in the standard explicitly states that the required scaled IBD for strong rock is 3.5 m/kg^(1/3). The item matches these values, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.42
+  },
+  {
+    "item_no": 114,
+    "text": "A low-density charge in strong rock uses Scaled IBD = 2.8 m/kg^(1/3). Table 108 specifies 3.5 for strong rock (γ ≤ 50 kg/m³); 2.8 is the dry sand value. The wrong column was applied; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the Scaled IBD for Strong Rock as 3.5 m/kg^(1/3), while the item uses 2.8 m/kg^(1/3), which is the value for Dry Sand. Applying the Dry Sand column to Strong Rock violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 40.62
+  },
+  {
+    "item_no": 115,
+    "text": "A ground shock model for an underground facility uses u_p = 0.06 m/s for a dry sand medium. Table 108 specifies u_p = 0.06 m/s for dry sand. The particle velocity parameter matches the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the particle velocity parameter u_p for Dry Sand as 0.06 m/s. The model uses exactly this value, matching the standard specification.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.66
+  },
+  {
+    "item_no": 116,
+    "text": "A ground shock model uses u_p = 0.23 m/s for a dry sand medium. Table 108 specifies u_p = 0.06 m/s for dry sand; 0.23 m/s is the strong rock value. Using strong rock u_p for a dry sand site overestimates ground acceleration; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the particle velocity for Dry Sand as u_p = 0.06 m/s, while the model uses u_p = 0.23 m/s, which is the value assigned to Strong Rock. This contradicts the specified value for the dry‑sand medium, violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.24
+  },
+  {
+    "item_no": 117,
+    "text": "A blast analysis for a weak rock underground magazine uses u_p = 0.115 m/s. Table 108 specifies u_p = 0.115 m/s for weak rock. The particle velocity parameter is correctly applied; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the particle‑velocity parameter for weak rock as uₚ = 0.115 m/s, and the analysis applies exactly this value, matching the standard specification.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 41.56
+  },
+  {
+    "item_no": 118,
+    "text": "A ground shock model for a weak rock site uses u_p = 0.06 m/s. Table 108 specifies u_p = 0.115 m/s for weak rock; 0.06 m/s is the dry sand value. Applying dry sand u_p to weak rock underestimates particle velocity; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the particle‑velocity parameter u_p for weak rock as 0.115 m/s, while the dry‑sand value is 0.06 m/s. The audit item applies the dry‑sand value to a weak‑rock site, which contradicts the specified value in the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.69
+  },
+  {
+    "item_no": 119,
+    "text": "A strong rock underground facility analysis uses u_p = 0.23 m/s. Table 108 specifies u_p = 0.23 m/s for strong rock. The parameter is correctly sourced from the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.108) lists the particle velocity for Strong Rock as uₚ = 0.23 m/s. The audit item uses exactly this value, matching the standard specification, therefore it complies with the referenced table.",
+    "expected": "UYGUN",
+    "table": "Table_page108",
+    "elapsed_s": 42.08
+  },
+  {
+    "item_no": 120,
+    "text": "A ground shock analysis for a strong rock site uses u_p = 0.115 m/s. Table 108 specifies u_p = 0.23 m/s for strong rock; 0.115 m/s is the weak rock value. Applying weak rock particle velocity to a strong rock site underestimates dynamic loading; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.108) lists the particle‑velocity value for strong rock as uₚ = 0.23 m/s, while 0.115 m/s is the value for weak rock. Using the weak‑rock value for a strong‑rock site therefore contradicts the specified standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page108",
+    "elapsed_s": 41.36
+  },
+  {
+    "item_no": 121,
+    "text": "A storage facility contains HD 1.1 explosives. The fire hazard placard designates Fire Division 1 with the hazard description 'mass explosion'. Table 133 specifies HD 1.1 → Fire Division 1, mass explosion. The placard classification is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) under Section 1.7.2.1 lists Hazard Division HD 1.1 with Fire Division 1 and the hazard description “mass explosion”. The placard in the item matches this mapping, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 42.06
+  },
+  {
+    "item_no": 122,
+    "text": "A storage facility contains HD 1.1 explosives. The fire hazard placard designates Fire Division 2. Table 133 specifies HD 1.1 → Fire Division 1. Assigning FD 2 to an HD 1.1 store is incorrect; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.1 with Fire Division 1. The item reports that the facility uses Fire Division 2 for HD 1.1, which contradicts the table and is therefore a violation; the audit correctly identifies this as non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 23.21
+  },
+  {
+    "item_no": 123,
+    "text": "An igloo stores HD 1.5 explosive substances. The emergency response placard shows Fire Division 1. Table 133 specifies HD 1.5 → Fire Division 1 (mass explosion). The classification is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) and Section 1.7.2.1 explicitly state that Hazard Division HD 1.5 corresponds to Fire Division 1 (mass explosion). The placard therefore matches the standard classification.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.39
+  },
+  {
+    "item_no": 124,
+    "text": "An igloo stores HD 1.5 explosive substances. The fire placard shows Fire Division 3. Table 133 specifies HD 1.5 → Fire Division 1. FD 3 is assigned to HD 1.3; the placard is wrong for an HD 1.5 store; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) lists HD 1.5 as belonging to Fire Division 1, while Fire Division 3 is assigned to HD 1.3. Therefore a placard showing FD 3 for an HD 1.5 store does not match the standard mapping.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 42.05
+  },
+  {
+    "item_no": 125,
+    "text": "A magazine contains HD 1.2 explosive articles (those that do not mass explode). The fire division label is FD 2 with hazard description 'explosion with projection'. Table 133 specifies HD 1.2 → Fire Division 2, explosion with projection. The labelling is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.2 as being assigned to Fire Division 2 with the hazard description “Explosion with projection.” The magazine’s labeling matches this mapping, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 42.56
+  },
+  {
+    "item_no": 126,
+    "text": "A store holds HD 1.2 explosive articles. The fire division marking shows FD 1. Table 133 specifies HD 1.2 → Fire Division 2. FD 1 corresponds to HD 1.1/1.5 (mass explosion); assigning it to HD 1.2 is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) specifies that Hazard Division 1.2 (and 1.6) correspond to Fire Division 2, while Fire Division 1 is assigned only to HD 1.1 and HD 1.5. Marking HD 1.2 with FD 1 therefore violates the mapping rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 43.93
+  },
+  {
+    "item_no": 127,
+    "text": "An explosives building stores HD 1.6 articles. The fire division placard reads FD 2. Table 133 specifies HD 1.6 → Fire Division 2 (explosion with projection). The classification is consistent with the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) under section 1.7.2.1 lists HD 1.6 → Fire Division 2, and the accompanying text confirms that HD 1.6 belongs to Fire Division 2. The building’s placard matches this mapping, so the classification complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.98
+  },
+  {
+    "item_no": 128,
+    "text": "An explosives building stores HD 1.6 articles. The fire division placard reads FD 4. Table 133 specifies HD 1.6 → Fire Division 2. FD 4 ('no significant hazard') is incorrect for HD 1.6; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) links Hazard Division 1.6 to Fire Division 2, whereas Fire Division 4 is assigned to Hazard Division 1.4 (no significant hazard). The placard showing FD 4 for HD 1.6 therefore contradicts the table’s mapping.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.41
+  },
+  {
+    "item_no": 129,
+    "text": "A propellant store holds HD 1.3 substances. The emergency sign designates Fire Division 3 with hazard description 'mass fire, or fire with minor blast or projections'. Table 133 specifies HD 1.3 → FD 3. The sign is correctly classified; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.3 as corresponding to Fire Division 3 with the description “Mass fire, or fire with minor blast or projections.” The emergency sign matches this mapping, so it is correctly classified.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.45
+  },
+  {
+    "item_no": 130,
+    "text": "A propellant store holds HD 1.3 substances. The fire hazard placard shows Fire Division 1. Table 133 specifies HD 1.3 → Fire Division 3. Marking an HD 1.3 store as FD 1 (mass explosion) overstates the hazard classification; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 1.7.2.1 (p.133) specifies that Hazard Division 1.3 maps to Fire Division 3. Using Fire Division 1 for an HD 1.3 propellant store therefore misclassifies the hazard and breaches the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.42
+  },
+  {
+    "item_no": 131,
+    "text": "A storage cell contains HD 1.4 explosive articles (very insensitive detonating substances). The fire division label shows FD 4 with description 'no significant hazard'. Table 133 specifies HD 1.4 → Fire Division 4. The labelling is correct; compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context only includes Table 6, which specifies mixing rules for compatibility groups and contains no information about fire division labels or Table 133. Since no rule in the context confirms that FD 4 is the correct label for HD 1.4 articles, the claim of compliance cannot be verified.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.32
+  },
+  {
+    "item_no": 132,
+    "text": "A storage cell holds HD 1.4 articles. The fire division sign shows FD 2. Table 133 specifies HD 1.4 → Fire Division 4. FD 2 ('explosion with projection') does not match HD 1.4; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.4 as being associated with Fire Division 4. The item shows a Fire Division 2 sign for HD 1.4, which contradicts this mapping, thus violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.1
+  },
+  {
+    "item_no": 133,
+    "text": "A hazard sign in a mixed storage area correctly identifies HD 1.1 material as 'mass explosion' hazard. Table 133 confirms HD 1.1 → FD 1 → mass explosion. The hazard description on the sign is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.1 with Fire Division 1 and specifies the hazard as “Mass explosion.” The sign’s description matches this entry, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.27
+  },
+  {
+    "item_no": 134,
+    "text": "A hazard sign identifies HD 1.1 material as 'mass fire, or fire with minor blast or projections'. Table 133 specifies HD 1.1 → FD 1 → mass explosion — not mass fire. The hazard description is incorrect for HD 1.1; non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists HD 1.1 with Fire Division 1 and the hazard “Mass explosion”, while “Mass fire, or fire with minor blast or projections” is assigned to HD 1.3 (Fire Division 3). Therefore identifying HD 1.1 as a mass fire is incorrect, confirming the audit finding of non‑compliance.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.48
+  },
+  {
+    "item_no": 135,
+    "text": "An emergency response plan lists HD 1.3 propellants under the category 'mass fire, or fire with minor blast or projections' (Fire Division 3). Table 133 confirms HD 1.3 → FD 3. The emergency categorisation is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 133 (p.133) explicitly maps Hazard Division HD 1.3 (propellants) to Fire Division 3, which is defined as “mass fire, or fire with minor blast or projections.” The emergency response plan follows this mapping, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 40.52
+  },
+  {
+    "item_no": 136,
+    "text": "An emergency response plan categorises HD 1.3 propellants under FD 4 ('no significant hazard'). Table 133 specifies HD 1.3 → FD 3. Classifying HD 1.3 as 'no significant hazard' understates the fire risk; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) assigns Hazard Division 1.3 (propellants) to Fire Division 3 (mass fire), not to Fire Division 4 (“no significant hazard”). Classifying HD 1.3 as FD 4 contradicts this mapping, violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.21
+  },
+  {
+    "item_no": 137,
+    "text": "A fire hazard sign at a demolition store correctly marks HD 1.5 material as Fire Division 1. Table 133 specifies HD 1.5 → FD 1 (same as HD 1.1 — both are mass-explosion hazards). The classification is consistent with the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists HD 1.5 under Fire Division 1 (mass‑explosion hazard). The sign marks HD 1.5 as FD 1, which matches this mapping, so the classification complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.58
+  },
+  {
+    "item_no": 138,
+    "text": "A fire hazard sign marks HD 1.5 material as Fire Division 3. Table 133 specifies HD 1.5 → Fire Division 1. FD 3 is for HD 1.3 (mass fire); applying it to HD 1.5 understates the mass-explosion risk; non-compliant.",
+    "verdict": "DEĞERLENDİRİLEMEDİ",
+    "reasoning": "hata: Error code: 429 - {'message': \"We're experiencing high traffic right now! Please try again soon.\", 'type': 'too_many_requests_error', 'param': 'queue', 'code': 'queue_exceeded'}",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.39
+  },
+  {
+    "item_no": 139,
+    "text": "A storage record correctly identifies HD 1.6 articles as Fire Division 2 ('explosion with projection'). Table 133 confirms HD 1.6 → FD 2. The record classification is correct; compliant.",
+    "verdict": "DEĞERLENDİRİLEMEDİ",
+    "reasoning": "hata: Error code: 429 - {'message': \"We're experiencing high traffic right now! Please try again soon.\", 'type': 'too_many_requests_error', 'param': 'queue', 'code': 'queue_exceeded'}",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 42.36
+  },
+  {
+    "item_no": 140,
+    "text": "A storage record classifies HD 1.6 articles as Fire Division 3. Table 133 specifies HD 1.6 → Fire Division 2. FD 3 corresponds to HD 1.3 (mass fire); it is incorrect for HD 1.6; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 133 (p.133) and the accompanying text state that Hazard Division 1.6 is assigned to Fire Division 2. Classifying HD 1.6 articles as Fire Division 3 contradicts this mapping, thus the record is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.91
+  },
+  {
+    "item_no": 141,
+    "text": "An inspection report confirms that a magazine holding HD 1.4 articles is marked as FD 4 ('no significant hazard'). Table 133 specifies HD 1.4 → FD 4. The magazine marking is correct; compliant.",
+    "verdict": "DEĞERLENDİRİLEMEDİ",
+    "reasoning": "hata: Error code: 429 - {'message': \"We're experiencing high traffic right now! Please try again soon.\", 'type': 'too_many_requests_error', 'param': 'queue', 'code': 'queue_exceeded'}",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.13
+  },
+  {
+    "item_no": 142,
+    "text": "An inspection report finds that a magazine holding HD 1.4 articles is marked FD 1. Table 133 specifies HD 1.4 → FD 4. FD 1 is reserved for mass-explosion hazards (HD 1.1/1.5); the marking is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 133, Hazard Division 1.4 must be assigned Fire Division 4 (no significant hazard), while Fire Division 1 is reserved for mass‑explosion hazards (HD 1.1/1.5). Marking a HD 1.4 magazine with FD 1 therefore violates the specified mapping.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.43
+  },
+  {
+    "item_no": 143,
+    "text": "A mixed-hazard storage area contains both HD 1.1 and HD 1.5 items. Both are labelled under Fire Division 1. Table 133 specifies both HD 1.1 and HD 1.5 → FD 1. The combined labelling is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 4 specifies that when HD 1.5 is stored together with HD 1.1 the aggregate hazard classification is HD 1.1. Since Table 133 maps HD 1.1 (and HD 1.5) to Fire Division 1, labeling the mixed‑hazard area as FD 1 follows the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 43.0
+  },
+  {
+    "item_no": 144,
+    "text": "A mixed-hazard area stores HD 1.1 (mass explosion) and HD 1.3 (mass fire) together under a single Fire Division 3 label. Table 133 specifies HD 1.1 → FD 1, not FD 3. The dominant hazard (mass explosion) must dictate the fire division; labelling the area only as FD 3 understates the risk for HD 1.1; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 4 specifies that storing HD 1.1 together with HD 1.3 results in an aggregate classification of HD 1.1. According to Table 133, HD 1.1 maps to Fire Division 1, not FD 3. Therefore labeling the mixed‑hazard area as FD 3 understates the required fire division and is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.46
+  },
+  {
+    "item_no": 145,
+    "text": "An ammunition depot correctly assigns FD 2 to all HD 1.2 and HD 1.6 storage cells. Table 133 specifies both HD 1.2 and HD 1.6 → FD 2. The assignment is consistent with the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 133 lists HD 1.2 and HD 1.6 with Fire Division 2, so assigning FD 2 to those hazard divisions follows the standard. No other rule in the provided context contradicts this mapping.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 41.39
+  },
+  {
+    "item_no": 146,
+    "text": "An ammunition depot assigns FD 2 to HD 1.2 cells and FD 3 to HD 1.6 cells. Table 133 specifies HD 1.6 → FD 2 (same as HD 1.2). Assigning FD 3 to HD 1.6 is incorrect; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 133 (p.133) lists HD 1.6 with Fire Division 2, the same as HD 1.2. Assigning FD 3 to HD 1.6 contradicts this mapping, so the depot’s assignment is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 41.23
+  },
+  {
+    "item_no": 147,
+    "text": "A safety audit confirms that the hazard description 'explosion with projection' is used only for Fire Division 2 stores (HD 1.2 and HD 1.6 items). Table 133 confirms this mapping. The audit finding is consistent with the table; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.2 and HD 1.6 under Fire Division 2 with the hazard “Explosion with projection,” and no other fire divisions use this description. The audit finding matches this mapping, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 42.4
+  },
+  {
+    "item_no": 148,
+    "text": "A safety audit finds that an HD 1.3 propellant store is described as 'explosion with projection' (FD 2). Table 133 specifies HD 1.3 → FD 3 ('mass fire, or fire with minor blast or projections'). Using the FD 2 description for HD 1.3 is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) assigns Hazard Division 1.3 to Fire Division 3 (“mass fire, or fire with minor blast or projections”). The audit describes HD 1.3 as “explosion with projection” (FD 2), which contradicts the standard mapping, making the description non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 42.79
+  },
+  {
+    "item_no": 149,
+    "text": "A risk assessment correctly states that HD 1.4 items present 'no significant hazard' (FD 4) and therefore require reduced fire emergency response measures compared to FD 1-3 stores. Table 133 confirms HD 1.4 → FD 4. The risk assessment classification is correct; compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) lists Hazard Division HD 1.4 as corresponding to Fire Division 4 with the hazard description “No significant hazard,” and the accompanying section on “Substances and articles which present no significant hazard” confirms that such items require less extensive fire‑emergency measures than FD 1‑3 stores. The risk assessment’s classification matches these provisions.",
+    "expected": "UYGUN",
+    "table": "Table_page133",
+    "elapsed_s": 21.79
+  },
+  {
+    "item_no": 150,
+    "text": "A risk assessment classifies HD 1.2 items as FD 4 ('no significant hazard') to justify reduced emergency response planning. Table 133 specifies HD 1.2 → FD 2 (explosion with projection). Applying FD 4 to HD 1.2 dangerously underestimates the hazard; non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 133 (p.133) assigns Hazard Division 1.2 to Fire Division 2 (explosion with projection). Classifying HD 1.2 as FD 4 (“no significant hazard”) contradicts this mapping, thus the risk assessment does not comply with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page133",
+    "elapsed_s": 42.61
+  }
+]

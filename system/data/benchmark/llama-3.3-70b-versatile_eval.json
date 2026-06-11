@@ -1,0 +1,35 @@
+{
+  "total": 3,
+  "correct": 2,
+  "wrong": 1,
+  "accuracy": 66.66666666666666,
+  "by_table": {
+    "Table 4": {
+      "correct": 2,
+      "total": 3
+    }
+  },
+  "by_verdict": {
+    "UYGUN": {
+      "tp": 2,
+      "fn": 1,
+      "fp": 0
+    },
+    "BELİRSİZ": {
+      "tp": 0,
+      "fn": 0,
+      "fp": 1
+    }
+  },
+  "errors": [
+    {
+      "item_no": 1,
+      "text": "Magazine Alpha stores 800 kg NEQ of HD 1.1 artillery shells and 300 kg NEQ of HD 1.5 insensitive munitions. The combined storage is classified and treated as HD 1.1 for all quantity-distance calculations.",
+      "verdict": "BELİRSİZ",
+      "reasoning": "The context does not provide information on how to classify and treat the combined storage of HD 1.1 and HD 1.5 munitions, as the tables and sections provided only discuss Hazard Divisions 1.1-1.4 and 1.6, but do not mention the specific rules for combining different hazard divisions or the treatment of HD 1.5 insensitive munitions.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 2.68
+    }
+  ]
+}

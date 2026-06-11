@@ -132,7 +132,10 @@ MODEL_LADDER = [
 # Benchmark dayanıklılık / token bütçesi
 GROQ_RPM_DELAY   = 2.0    # Groq çağrıları arası saniye (~30 RPM free tier)
 LLM_MAX_TOKENS   = 2000   # reasoning modelleri (gpt-oss/qwen3) düşünme + VERDICT için alan
-CONTEXT_CHAR_CAP = 6000   # API'ye giden bağlam üst sınırı (input token tasarrufu)
+# API'ye giden bağlam üst sınırı. 3+3 split modunda bağlam 6 doküman olur
+# (ölçülen: 11-19k char); eski 6000 sınırı TEXT bloklarını tamamen kesiyordu
+# (tablolar listede önce). 24000 = en büyük ölçülen bağlam + pay.
+CONTEXT_CHAR_CAP = 24000
 
 # ---------------------------------------------------------------------------
 # LLM — Ollama (indeksleme özeti için, yerel)

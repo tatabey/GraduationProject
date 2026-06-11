@@ -1,0 +1,10 @@
+{
+  "kb_name": "ufc_test",
+  "collection": "ufc_test",
+  "pdf": "UFC_4-010-01.pdf",
+  "tables": 9,
+  "chunks": 278,
+  "total": 298,
+  "chroma_dir": "system/data/kbs/ufc_test/chroma_db",
+  "created_at": "2026-06-11 16:47"
+}

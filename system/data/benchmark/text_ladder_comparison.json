@@ -1,0 +1,23 @@
+[
+  {
+    "label": "gpt-oss-120b",
+    "params_b": 120.0,
+    "provider": "cerebras",
+    "accuracy": 64.5,
+    "per_class": {
+      "UYGUN": 61.5,
+      "UYGUN DEĞİL": 68.1
+    },
+    "per_table": {
+      "Compatibility_Mixing": 68.0,
+      "NEQ_Computation": 76.0,
+      "Inter_Magazine_Distance": 52.0,
+      "Barricade_Rules": 64.0,
+      "IBD_Personnel": 36.0,
+      "Traffic_Projection": 76.0,
+      "Underground_Storage": 72.0,
+      "Workshop_Construction": 72.0
+    },
+    "avg_s": 11.83
+  }
+]

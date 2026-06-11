@@ -1,0 +1,32 @@
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  MODEL-BOYUTU MERDİVENİ — AASTP-1 / 200 Senaryo (2 sınıf: UYGUN / UYGUN DEĞİL)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  Model                       Params  Sağlay.  Doğruluk   UYGUN   DEĞİL  Ort.Süre
+  ────────────────────────── ─────── ──────── ───────── ─────── ─────── ─────────
+  gpt-oss-120b                  120B cerebras     64.5%     61%     68%     11.8s
+
+  Tablo Bazında Doğruluk (%):
+  Tablo           gpt-oss-120b
+  ────────────────────────────
+  Barricade_Rules          64.0
+  Compatibility_Mixing          68.0
+  IBD_Personnel           36.0
+  Inter_Magazine_Distance          52.0
+  NEQ_Computation          76.0
+  Traffic_Projection          76.0
+  Underground_Storage          72.0
+  Workshop_Construction          72.0
+
+  Verdict Dağılımı:
+  Verdict         gpt-oss-120b
+  ────────────────────────────
+  UYGUN                     96
+  UYGUN DEĞİL              104
+  Beklenen      
+
+    UYGUN: 109 beklenen
+    UYGUN DEĞİL: 91 beklenen
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+

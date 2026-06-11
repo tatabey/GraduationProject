@@ -1,0 +1,20 @@
+[
+  {
+    "label": "gpt-oss-120b",
+    "params_b": 120.0,
+    "provider": "cerebras",
+    "accuracy": 85.33,
+    "per_class": {
+      "UYGUN": 76.5,
+      "UYGUN DEĞİL": 95.7
+    },
+    "per_table": {
+      "Table 4": 83.3,
+      "Table 5": 83.3,
+      "Table 6": 83.3,
+      "Table T.2": 83.3,
+      "Table 133": 93.3
+    },
+    "avg_s": 0.8
+  }
+]

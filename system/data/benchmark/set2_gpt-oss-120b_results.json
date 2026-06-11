@@ -1,0 +1,1352 @@
+[
+  {
+    "item_no": 1,
+    "text": "An EED storage facility located near a medium-wave broadcast transmitter operating at 400 kHz was surveyed. The measured ambient field strength was 250 V/m rms. Table 6-1 specifies a threshold of 300 V/m for the 200–525 kHz band. Since the measured field is below the threshold, HERO safety requirements are met.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑1 lists the minimum safe field strength for the 200 kHz–525 kHz band as 300 V/m rms. The measured ambient field of 250 V/m rms is below this threshold, satisfying the requirement in section 1.6.0.4 that systems remain safe when the RF intensity does not exceed the values in Table 6‑1.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.77
+  },
+  {
+    "item_no": 2,
+    "text": "A communication tower near an ordnance depot operates at 350 kHz. A radio-frequency survey measured an ambient field of 380 V/m rms. Table 6-1 specifies a maximum service field strength of 300 V/m for the 200–525 kHz band. The measured field exceeds the threshold and the facility does not comply with HERO requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 lists a maximum allowable service field strength of 300 V/m rms for the 200 kHz–525 kHz band. The measured ambient field of 380 V/m rms exceeds this limit, so the facility fails to meet the HERO requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.41
+  },
+  {
+    "item_no": 3,
+    "text": "An EED storage area adjacent to a 10 MHz shortwave station was evaluated. The measured field strength was 170 V/m rms. Table 6-1 sets 200 V/m as the threshold for the 525 kHz–32 MHz band. The facility is within the permitted limit and is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑1 specifies a maximum field strength of 200 V/m rms for the 525 kHz–32 MHz band. The measured 170 V/m rms is below this limit, so the storage area meets the standard’s requirement.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.38
+  },
+  {
+    "item_no": 4,
+    "text": "A shortwave transmitter at 20 MHz is located 150 m from an ammunition storage building. The RF survey recorded a field strength of 230 V/m. Table 6-1 specifies 200 V/m for the 525 kHz–32 MHz band. The measured value exceeds the limit; HERO compliance is not achieved.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 lists the allowable field‑strength limit for the 525 kHz–32 MHz band as 200 V/m. The measured value of 230 V/m exceeds this limit, therefore the HERO requirement is not met.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 57.91
+  },
+  {
+    "item_no": 5,
+    "text": "An EED facility near a VHF antenna operating at 100 MHz was assessed. The power density was measured at 7.5 W/m². Table 6-1 specifies a limit of 10 W/m² for the 32–150 MHz band. The measured value is below the threshold and HERO-safe.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 in the provided context only lists numeric power‑density limits for the first two frequency ranges (300 W/m² for 200 kHz‑525 kHz and 200 W/m² for 525 kHz‑32 MHz); it does not specify a 10 W/m² limit for the 32‑150 MHz band. Since the standard does not contain the cited limit, the item’s claim cannot be verified as compliant.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 2.39
+  },
+  {
+    "item_no": 6,
+    "text": "A depot storing EEDs is adjacent to a VHF broadcast antenna at 88 MHz. The measured power density at the storage area boundary is 14 W/m². Table 6-1 specifies 10 W/m² for the 32–150 MHz band. The depot does not meet HERO safety requirements.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑1 defines the maximum allowable power density for the 32 MHz–150 MHz band as 10 W/m². The measured value of 14 W/m² at the depot boundary exceeds this limit, so the depot indeed fails the HERO safety requirement, confirming the audit finding.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.77
+  },
+  {
+    "item_no": 7,
+    "text": "An ordnance storage site was assessed for RF hazard near a 180 MHz tactical radio network. Measured power density: 80 W/m². Table 6-1 threshold for 150–225 MHz is 100 W/m². The site is within the permitted power density and complies with HERO requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 in the provided context lists the frequency band 150 MHz‑225 MHz (Serial 4) but does not specify a corresponding field‑strength or power‑density limit; the 100 W/m² threshold cited in the item is not present in the standard excerpt, so compliance cannot be confirmed.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 1.1
+  },
+  {
+    "item_no": 8,
+    "text": "A military communications mast operating at 200 MHz is co-located 50 m from an EED magazine. RF measurement shows 130 W/m² at the magazine wall. Table 6-1 specifies 100 W/m² for the 150–225 MHz band. The measured level exceeds the limit.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided Table 6‑1 only lists field‑strength limits for Serial 1 (300 W/m²) and Serial 2 (200 W/m²); the row for the 150 MHz‑225 MHz band (Serial 4) contains no value, so the standard does not specify a 100 W/m² limit for that frequency range. Consequently the claim that the measured 130 W/m² exceeds a defined limit cannot be confirmed from the given context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.75
+  },
+  {
+    "item_no": 9,
+    "text": "A UHF transmitter at 400 MHz operates near an EED storage building. The site survey measured 40 W/m². Table 6-1 limits power density to 50 W/m² for 225–790 MHz. The storage building is HERO-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑1 specifies that for the frequency band 225 MHz – 790 MHz the maximum allowable power density is 50 W/m². The measured value of 40 W/m² is below this limit, and the storage building is stated to be HERO‑compliant, so the condition satisfies the standard.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 51.74
+  },
+  {
+    "item_no": 10,
+    "text": "A radar system operating at 600 MHz is installed on a mast near an ammunition compound. The measured power density at the compound perimeter is 80 W/m². Table 6-1 specifies 50 W/m² for the 225–790 MHz band. The compound fails HERO compliance for this frequency range.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Section 1.6.0.4 the RF intensity must not exceed the minimum level given in Table 6‑1. For the 225 MHz–790 MHz band (Serial 5) Table 6‑1 sets the limit at 50 W/m², but the measured power density is 80 W/m², which exceeds the allowed value, so the installation is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.7
+  },
+  {
+    "item_no": 11,
+    "text": "A microwave link at 2.4 GHz operates near an ordnance storage facility. Survey results show 700 W/m² at the closest EED storage point. Table 6-1 allows up to 1000 W/m² for the 790 MHz–18 GHz band. The facility complies with HERO requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context only includes Table 6‑2, which lists No‑Fire Threshold Values in milliwatts for specific EED types and does not contain any limit of 1000 W/m² for the 790 MHz–18 GHz band. Since the standard limit referenced by the item is absent from the context, compliance cannot be verified.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 7.65
+  },
+  {
+    "item_no": 12,
+    "text": "A radar installation operating at 10 GHz is sited 200 m from an EED magazine. Power density measurements at the magazine reach 1200 W/m². Table 6-1 specifies 1000 W/m² for the 790 MHz–18 GHz band. The EED storage area exceeds the HERO threshold and is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6-1 sets the maximum allowable power density for the 790 MHz–18 GHz band at 1000 W/m². The measured 1200 W/m² exceeds this limit, therefore the installation is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.5
+  },
+  {
+    "item_no": 13,
+    "text": "A millimeter-wave sensor at 25 GHz is located near an EED storage area. The measured power density is 70 W/m². Table 6-1 specifies 100 W/m² for the 18–40 GHz band. The storage area is within the HERO-safe limit and is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context for Table 6‑1 lists frequencies up to 18 GHz but does not include a power‑density limit for the 18 GHz–40 GHz band; thus the claim that the limit is 100 W/m² cannot be verified from the standard. Without a documented limit, the item’s compliance cannot be confirmed.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.55
+  },
+  {
+    "item_no": 14,
+    "text": "A 30 GHz point-to-point link terminal is mounted on a building 30 m from an EED store. Measured power density at the store entrance is 160 W/m². Table 6-1 specifies 100 W/m² for the 18–40 GHz band. The store is non-compliant for HERO.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context for Table 6‑1 lists the frequency band 18 GHz – 40 GHz (Serial 7) but does not specify a corresponding field‑strength or power‑density limit (e.g., 100 W/m²). Since the standard excerpt does not contain the 100 W/m² value, the claim that the measured 160 W/m² exceeds the limit cannot be verified from the given documents. Therefore the item’s conclusion of non‑compliance is not supported by the supplied standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.66
+  },
+  {
+    "item_no": 15,
+    "text": "A comprehensive RF survey of an EED depot was conducted across all frequency bands. The highest recorded values were: 200 V/m at 300 kHz, 150 V/m at 5 MHz, 8 W/m² at 80 MHz, 60 W/m² at 175 MHz, 35 W/m² at 500 MHz, 600 W/m² at 3 GHz, and 50 W/m² at 28 GHz. All measured values are within Table 6-1 limits across all bands. The depot is HERO-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 only specifies Field Strength/Power Density limits for the ranges 200 kHz‑525 kHz (300) and 525 kHz‑32 MHz (200). The audit item reports values at 80 MHz, 175 MHz, 500 MHz, 3 GHz and 28 GHz, but the context provides no limits for these higher bands, so the claim that all measurements are within Table 6‑1 limits cannot be verified.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 57.89
+  },
+  {
+    "item_no": 16,
+    "text": "An EED storage site adjacent to a multi-frequency communication hub was surveyed. At 450 MHz (225–790 MHz band) the power density was 55 W/m², exceeding the 50 W/m² limit in Table 6-1. Although all other frequency bands were within limits, the 225–790 MHz exceedance means the facility does not fully comply with HERO requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 in the provided context lists only the field‑strength/power‑density values “300” and “200” for the first two frequency ranges and does not specify a 50 W/m² limit for the 225 MHz–790 MHz band. Since the standard does not contain the cited 50 W/m² threshold, the claim of non‑compliance based on a 55 W/m² measurement cannot be validated.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.6
+  },
+  {
+    "item_no": 17,
+    "text": "An EED testing laboratory operates near a 1 GHz test antenna. The measured power density in the EED storage area is 950 W/m². Table 6-1 specifies 1000 W/m² for 790 MHz–18 GHz. The laboratory is within the threshold.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided excerpt of Table 6‑1 does not show a 1000 W/m² limit for the 790 MHz–18 GHz band; the threshold value is missing from the context, so the claim that 950 W/m² is within the standard cannot be verified.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.54
+  },
+  {
+    "item_no": 18,
+    "text": "An ordnance compound is located downrange of a 500 MHz radar. The measured power density at the compound fence is 60 W/m². Table 6-1 specifies 50 W/m² for 225–790 MHz. The radar positioning makes this compound HERO non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided excerpt of Table 6‑1 lists only the limits for the first two frequency ranges (300 W/m² for 200 kHz‑525 kHz and 200 W/m² for 525 kHz‑32 MHz); the entry for the 225 MHz‑790 MHz band (Serial 5) does not show a 50 W/m² limit. Since the standard’s specific limit for the 500 MHz band is not present in the context, the claim that 60 W/m² exceeds the allowed value cannot be verified.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.65
+  },
+  {
+    "item_no": 19,
+    "text": "A facility storing electric detonators is assessed against HERO requirements at 3 MHz. The ambient field strength is 190 V/m. Table 6-1 allows 200 V/m for 525 kHz–32 MHz. The detonator storage area meets the HERO safety standard.",
+    "verdict": "UYGUN",
+    "reasoning": "3 MHz falls within the 525 kHz–32 MHz band of Table 6‑1, which permits a maximum field strength of 200 V/m. The measured ambient field of 190 V/m is below this limit, so the HERO safety standard is satisfied.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.41
+  },
+  {
+    "item_no": 20,
+    "text": "A radio transmitter at 260 MHz is installed on the roof of an EED storage building. Internal measurements show 80 W/m² inside the storage area. Table 6-1 specifies 50 W/m² for 225–790 MHz. Mounting the transmitter on the EED store results in non-compliant field levels.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 (Section 1.6.0.5) sets the maximum field strength/power density for the 225 MHz–790 MHz band at 50 W/m². The measured level of 80 W/m² inside the storage area exceeds this limit, therefore the installation does not meet the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 53.75
+  },
+  {
+    "item_no": 21,
+    "text": "An EED depot was evaluated for RF emissions from a nearby airport surveillance radar at 2.8 GHz. The peak power density at the depot boundary was 850 W/m². Table 6-1 permits up to 1000 W/m² for the 790 MHz–18 GHz band. The depot is HERO-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6-1 lists the permitted field strength/power density values only for the first two frequency bands (300 W/m² for 200 kHz‑525 kHz and 200 W/m² for 525 kHz‑32 MHz); the entry for the 790 MHz‑18 GHz band (Serial 6) is blank in the provided context, so no allowance of 1000 W/m² can be confirmed. Consequently, the reported 850 W/m² cannot be verified as compliant.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.56
+  },
+  {
+    "item_no": 22,
+    "text": "A communication relay operating at 120 MHz is positioned 100 m from an EED igloo. Power density at the igloo wall: 12 W/m². Table 6-1 specifies 10 W/m² for 32–150 MHz. The relay siting does not comply with HERO distance requirements.",
+    "verdict": "UYGUN",
+    "reasoning": "The excerpt of Table 6‑1 only provides power‑density limits for frequencies up to 32 MHz (300 W/m² and 200 W/m²) and does not list a 10 W/m² limit for the 32 MHz–150 MHz band, nor any HERO distance requirement. Since the standard text supplied does not contain a rule that the 12 W/m² value violates, the item cannot be judged non‑compliant based on the provided context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.73
+  },
+  {
+    "item_no": 23,
+    "text": "A satellite ground station uplink at 28 GHz is located near an ammunition depot. Power density measurements at the depot boundary: 85 W/m². Table 6-1 permits 100 W/m² for 18–40 GHz. The depot boundary level is within limits.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context for Table 6‑1 lists the frequency band 18 GHz‑40 GHz (Serial 7) but does not specify the allowed power‑density value; therefore the claim that 100 W/m² is permitted cannot be verified from the standard excerpt. Without the stated limit in the context, the item’s compliance cannot be confirmed.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.58
+  },
+  {
+    "item_no": 24,
+    "text": "A 400 kHz navigation beacon is sited adjacent to an EED storage building. Measurements at the building entrance show 320 V/m. Table 6-1 specifies 300 V/m for 200–525 kHz. The field level exceeds the HERO threshold.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 sets the maximum allowable field strength for the 200 kHz–525 kHz band at 300 V/m. The measured 320 V/m at the storage building entrance exceeds this limit, violating the minimum service RF environment requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 55.75
+  },
+  {
+    "item_no": 25,
+    "text": "Following installation of RF shielding on an EED magazine near a 7 MHz HF transmitter, post-mitigation measurements show 120 V/m. Table 6-1 threshold for 525 kHz–32 MHz is 200 V/m. The shielding brings the facility into HERO compliance.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑1 specifies that for the 525 kHz–32 MHz band the maximum allowable field strength is 200 V/m. The post‑mitigation measurement of 120 V/m is below this limit, so the facility meets the standard’s requirement.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 26,
+    "text": "A portable radar operating at 35 GHz was parked 20 m from an EED container yard during an exercise. Power density measurements at the containers reached 140 W/m². Table 6-1 specifies 100 W/m² for 18–40 GHz. The operational positioning is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided Table 6‑1 only lists power density limits for frequencies up to 18 GHz; the row for 18 GHz – 40 GHz is empty, so no 100 W/m² limit is defined in the context. Consequently, the claim that 140 W/m² exceeds a standard limit cannot be verified.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.62
+  },
+  {
+    "item_no": 27,
+    "text": "An EED storage igloo is located 500 m from a 1.5 GHz cellular base station. Measured power density at the igloo: 300 W/m². Table 6-1 allows 1000 W/m² for 790 MHz–18 GHz. The cellular infrastructure does not create a HERO hazard at this distance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided excerpt of Table 6‑1 lists only the power‑density limits for the first two frequency bands (300 W/m² for 200 kHz‑525 kHz and 200 W/m² for 525 kHz‑32 MHz); it does not show a 1000 W/m² limit for the 790 MHz‑18 GHz band, so the claim cannot be verified from the context. Additionally, the standard excerpt contains no guidance on HERO hazards, so the statement about the cellular infrastructure cannot be assessed.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 0.6
+  },
+  {
+    "item_no": 28,
+    "text": "A UHF television transmitter at 700 MHz is 300 m from an ammunition storage area. The measured power density at the perimeter fence is 65 W/m². Table 6-1 specifies 50 W/m² for 225–790 MHz. The facility is not HERO-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 specifies a maximum power density of 50 W/m² for the 225 MHz–790 MHz band, but the measured density is 65 W/m², exceeding the allowed limit and thus violating the standard’s RF environment requirement for ammunition storage areas.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.45
+  },
+  {
+    "item_no": 29,
+    "text": "An EED facility near a naval radar at 9.5 GHz was assessed. The peak power density recorded at the EED building was 900 W/m². Table 6-1 permits 1000 W/m² for 790 MHz–18 GHz. The facility is within the limit.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑1 in the provided context lists the frequency band 790 MHz – 18 GHz (Serial 6) but does not specify a permitted power‑density value (the column is blank). Since the standard does not state a 1000 W/m² limit for that band, the claim that 900 W/m² is within the limit cannot be verified from the given document.",
+    "expected": "UYGUN",
+    "table": "Table 6-1",
+    "elapsed_s": 54.93
+  },
+  {
+    "item_no": 30,
+    "text": "A tactical radio network at 160 MHz operates continuously at an ordnance depot. RF measurements inside the EED magazine show 110 W/m². Table 6-1 specifies 100 W/m² for 150–225 MHz. The internal field level is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided context for Table 6‑1 lists frequency bands but does not include the specific field‑strength/power‑density limits (e.g., 100 W/m² for 150–225 MHz). Without that numeric limit in the standard excerpt, we cannot confirm that a measured 110 W/m² exceeds an established threshold, so the claim of non‑compliance is not supported by the given documentation.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6-1",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 31,
+    "text": "A safety evaluation for US Mk 114 Primer was conducted using a test current of 0.04 A. Table 6-2 specifies a no-fire threshold current of 0.05 A for this EED type. The applied test current is below the threshold; the EED satisfies no-fire safety requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the US Mk 114 Primer’s No‑Fire Threshold Value as 0.19 (power mW) and a Typical Safety Factor of 0.05 dB, not a current threshold of 0.05 A. The item’s claim that a 0.04 A test current is below a 0.05 A threshold is unsupported by the provided standard, so the safety conclusion is not compliant.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.74
+  },
+  {
+    "item_no": 32,
+    "text": "A circuit test on US Mk 114 Primers applied 0.07 A through the lead wires during inspection. Table 6-2 lists the no-fire threshold current as 0.05 A for the US Mk 114 Primer. The applied current exceeds the no-fire threshold; the test configuration is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "TABLE 6‑2 lists the US Mk 114 Primer’s no‑fire threshold as a power value (0.19 mW) and a safety‑factor of 0.05, not a current threshold of 0.05 A. Since the standard does not specify a 0.05 A current limit, the claim that 0.07 A exceeds a no‑fire threshold is unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.6
+  },
+  {
+    "item_no": 33,
+    "text": "A UK F120 EED was subjected to an energy stimulus of 0.15 MJ during a safety test. Table 6-2 specifies a no-fire threshold energy of 0.20 MJ for the UK F120. Since the applied energy is below the no-fire threshold, the EED is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold Value for the UK F120 EED as 0.20 MJ. The applied energy of 0.15 MJ is below this threshold, satisfying the requirement that the stimulus must not exceed the no‑fire limit. Hence the EED is compliant.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.48
+  },
+  {
+    "item_no": 34,
+    "text": "A diagnostic procedure on a UK F120 EED applied 0.25 MJ of electrical energy. Table 6-2 specifies the no-fire energy threshold as 0.20 MJ. The applied energy exceeds the no-fire threshold, violating EED safety requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for the UK F120 EED as 0.20 MJ. The diagnostic procedure applied 0.25 MJ, which exceeds this threshold, thereby breaching the safety requirement specified in the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 55.05
+  },
+  {
+    "item_no": 35,
+    "text": "Testing of a FRG EL 37 EED used a stimulus current of 0.010 A. Table 6-2 specifies a no-fire threshold of 0.015 A for the FRG EL 37. The applied current is below the threshold; the test is safe and compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the FRG EL 37 no‑fire threshold as 0.3 mW (with a safety factor of 0.015 dB), not a current of 0.015 A. The item’s claim of a 0.015 A threshold is inconsistent with the standard’s specification.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.39
+  },
+  {
+    "item_no": 36,
+    "text": "During maintenance, a FRG EL 37 EED was subjected to 0.02 A through its firing circuit. Table 6-2 specifies a no-fire threshold current of 0.015 A for this EED type. The applied current exceeds the no-fire level; the handling procedure is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the FRG EL 37 no‑fire threshold as 0.3 (mW) and a safety factor of 0.015 dB, not a current of 0.015 A. The item’s claim that 0.02 A exceeds a 0.015 A no‑fire level is not supported by the standard, so the conclusion of non‑compliance is unfounded.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 37,
+    "text": "A US Mk 114 Primer is stored in an environment where stray power levels are 5.0 mW. Table 6-2 specifies a no-fire threshold power of 7.5 mW for the Mk 114. Stray power is below the threshold; storage conditions comply with EED safety requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for the US Mk 114 Primer as 0.19 mW, not 7.5 mW. The stray power of 5.0 mW is above the specified 0.19 mW threshold, so the storage condition does not meet the safety requirement.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.42
+  },
+  {
+    "item_no": 38,
+    "text": "Stray electromagnetic power in a US Mk 114 Primer storage bay was measured at 9 mW. Table 6-2 specifies a no-fire power threshold of 7.5 mW for the US Mk 114 Primer. The stray power level exceeds the no-fire threshold; the storage area is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "TABLE 6‑2 lists the No‑Fire Threshold for the US Mk 114 Primer as 0.19 mW, not 7.5 mW as stated in the item; therefore the item’s reference to the threshold value is incorrect.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.55
+  },
+  {
+    "item_no": 39,
+    "text": "A UK F120 EED storage facility assessed stray power levels at 20 mW. Table 6-2 specifies a no-fire power threshold of 26 mW for UK F120. The stray power is within the safe limit; HERO requirements are met.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "TABLE 6‑2 lists the No‑Fire Threshold for UK F120 as 0.2 mW, not 26 mW. The assessed stray power of 20 mW therefore exceeds the specified threshold, so the HERO requirement is not met.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 53.72
+  },
+  {
+    "item_no": 40,
+    "text": "UK F120 EEDs are stored in a bay where measured stray power reaches 30 mW. Table 6-2 specifies a no-fire power threshold of 26 mW for the UK F120. Stray power exceeds the no-fire threshold; the storage is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the UK F120 no‑fire threshold as 0.2 mW, not 26 mW as stated in the item. Because the item misquotes the threshold value, its conclusion does not follow the standard’s specified limit.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.52
+  },
+  {
+    "item_no": 41,
+    "text": "A FRG EL 37 EED storage area was assessed; stray power measured at 15 mW. Table 6-2 specifies a no-fire threshold of 20 mW for the FRG EL 37. Stray power is below the threshold; the storage environment is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for the FRG EL 37 as 0.3 mW, not 20 mW. A measured stray power of 15 mW exceeds this threshold, so the storage environment is not compliant.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.41
+  },
+  {
+    "item_no": 42,
+    "text": "FRG EL 37 EEDs are stored adjacent to electrical switchgear inducing 25 mW of stray power. Table 6-2 specifies a no-fire power threshold of 20 mW for this EED type. The stray power exceeds the limit; the storage arrangement is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "TABLE 6‑2 lists the No‑Fire Threshold for FRG EL 37 as 0.3 mW, not 20 mW. The ITEM’s claim of a 20 mW threshold contradicts the standard, so the finding is not compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.54
+  },
+  {
+    "item_no": 43,
+    "text": "A US Mk 114 Primer was tested for energy sensitivity using 0.10 MJ stimulus. Table 6-2 specifies 0.19 MJ as the no-fire energy threshold. The applied stimulus is well below the no-fire level; the test protocol is safe and compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the US Mk 114 Primer no‑fire threshold as 0.19 MJ. The test applied 0.10 MJ, which is below this threshold, so the stimulus is within the safe range defined by the standard.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.36
+  },
+  {
+    "item_no": 44,
+    "text": "A compatibility evaluation applied 0.22 MJ to a US Mk 114 Primer bridgewire. Table 6-2 specifies a no-fire energy of 0.19 MJ for the Mk 114. The evaluation exceeds the no-fire energy limit; the procedure is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for the US Mk 114 Primer as 0.19 MJ. The evaluation applied 0.22 MJ, which exceeds this limit, violating the no‑fire energy requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 54.95
+  },
+  {
+    "item_no": 45,
+    "text": "A UK F120 EED resistance was measured at 13 Ω during incoming inspection. Table 6-2 specifies a resistance range of 10–16 Ω for the UK F120. The measured resistance falls within the specified range; the EED passes inspection criteria.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the UK F120 EED resistance range as 10 – 16 Ω. The measured value of 13 Ω lies within this interval, therefore the item meets the specified inspection criterion.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.76
+  },
+  {
+    "item_no": 46,
+    "text": "A batch of UK F120 EEDs measured 18 Ω resistance during acceptance testing. Table 6-2 specifies an acceptable resistance range of 10–16 Ω. The measured resistance is outside the specified range; the batch fails quality compliance.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the UK F120 EED resistance range as 10 – 16 Ω. The measured value of 18 Ω lies outside this range, so according to the standard the batch does not meet the required specification and must be deemed non‑compliant. The audit finding correctly identifies the failure.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.43
+  },
+  {
+    "item_no": 47,
+    "text": "A FRG EL 37 EED measured 1.2 Ω resistance during lot acceptance testing. Table 6-2 specifies a resistance range of 0.8–1.7 Ω for this type. The measured value is within the range; the lot is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the FRG EL 37 EED resistance range as 0.8 – 1.7 Ω. The measured resistance of 1.2 Ω falls within this specified range, therefore the lot meets the standard requirement.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.56
+  },
+  {
+    "item_no": 48,
+    "text": "FRG EL 37 EEDs from a storage lot measured 2.0 Ω during periodic testing. Table 6-2 specifies a resistance range of 0.8–1.7 Ω. The measured resistance exceeds the upper limit; the items do not meet specification.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the FRG EL 37 EED resistance range as 0.8 – 1.7 Ω. The measured value of 2.0 Ω is above the upper limit, so the item does not satisfy the specified electrical characteristic.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.37
+  },
+  {
+    "item_no": 49,
+    "text": "A US Mk 114 Primer measured 5 Ω resistance on incoming acceptance. Table 6-2 specifies a resistance range of 3–7 Ω for the Mk 114. The value is within the specified range; the EED batch is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the US Mk 114 Primer resistance range as 3 – 7 Ω. The measured value of 5 Ω lies within this interval, therefore the batch meets the specified electrical characteristic.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 52.98
+  },
+  {
+    "item_no": 50,
+    "text": "A US Mk 114 Primer lot measured 2 Ω resistance during shelf-life testing. Table 6-2 specifies 3–7 Ω as the acceptable resistance range. The resistance is below the lower specification limit; the lot fails compliance check.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the US Mk 114 Primer resistance range as 3 – 7 Ω. The measured value of 2 Ω falls below the lower specification limit, therefore the lot does not meet the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.39
+  },
+  {
+    "item_no": 51,
+    "text": "Safety analysis for a FRG EL 37 EED circuit in an EME environment confirmed stray current of 0.012 A at the EED leads. Table 6-2 specifies a no-fire current threshold of 0.015 A. The stray current is below the threshold; the circuit design is HERO-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "TABLE 6‑2 lists the No‑Fire threshold for FRG EL 37 as 0.3 mW (power), not a current value of 0.015 A. The audit item applies an incorrect current threshold, so the conclusion of HERO‑compliance is not supported by the standard.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.47
+  },
+  {
+    "item_no": 52,
+    "text": "A FRG EL 37 EED circuit design resulted in 0.018 A predicted stray current at the EED bridgewire under maximum EME conditions. Table 6-2 specifies 0.015 A as the no-fire threshold. The predicted current exceeds the no-fire limit; redesign is required for compliance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the FRG EL 37 EED with a No‑Fire Threshold Value of 0.3 (mW), not 0.015 A; the item misinterprets the threshold as an amperage limit, so the claim that the predicted 0.018 A exceeds the standard’s no‑fire limit is unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 2.08
+  },
+  {
+    "item_no": 53,
+    "text": "A UK F120 EED subjected to a simulated stray current of 0.040 A during HERO testing. Table 6-2 lists the no-fire threshold current as 0.045 A. The test current is below the threshold; the EED remains safe and compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the UK F120’s No‑Fire Threshold Value as 0.2 (power, not current) and the 0.045 entry is the “Typical Safety Factor dB,” not a current threshold. The item incorrectly treats 0.045 A as the no‑fire current limit, so the claim of compliance is unsupported.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 54,
+    "text": "A UK F120 EED handling procedure allows up to 0.050 A in lead wires during connector mating. Table 6-2 specifies a no-fire threshold of 0.045 A for the UK F120. The procedure-permitted current exceeds the no-fire level; the procedure is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the UK F120 No‑Fire Threshold as 0.2 mW, while the 0.045 value shown is the “Typical Safety Factor” and not an amperage limit. Since the standard does not specify a 0.045 A no‑fire current, the claim that the procedure exceeds the no‑fire threshold is unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 52.85
+  },
+  {
+    "item_no": 55,
+    "text": "An ammunition depot assessed stray energy from static discharge at 0.12 MJ reaching a FRG EL 37 EED. Table 6-2 specifies a no-fire energy threshold of 0.30 MJ for the FRG EL 37. The assessed static energy is well below the limit; the depot meets EED safety requirements.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for the FRG EL 37 EED as 0.30 MJ. The depot’s assessed stray energy of 0.12 MJ is well below this limit, so the requirement is satisfied.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.37
+  },
+  {
+    "item_no": 56,
+    "text": "An electromagnetic pulse assessment showed peak energy of 0.35 MJ at FRG EL 37 EED locations. Table 6-2 specifies a no-fire energy threshold of 0.30 MJ. The assessed pulse energy exceeds the threshold; additional shielding is required for compliance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for FRG EL 37 as 0.30 MJ. The audit finding reports a peak pulse energy of 0.35 MJ, which exceeds this threshold, violating the standard’s limit. Consequently the condition is non‑compliant and requires mitigation.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.47
+  },
+  {
+    "item_no": 57,
+    "text": "A US Mk 114 Primer storage area was assessed for lightning-induced stray power. Analysis showed a maximum induced power of 6.0 mW. Table 6-2 specifies 7.5 mW as the no-fire threshold. The lightning protection system keeps the EED storage compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "TABLE 6‑2 lists the No‑Fire Threshold for the US Mk 114 Primer as 0.19 mW, not 7.5 mW. The assessed induced power of 6.0 mW exceeds this threshold, so the storage area does not meet the standard.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.37
+  },
+  {
+    "item_no": 58,
+    "text": "Lightning analysis for a US Mk 114 Primer magazine showed induced stray power of 8 mW under a direct strike 50 m away without adequate surge protection. Table 6-2 specifies 7.5 mW as the no-fire power threshold. The magazine is non-compliant without surge protection.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for the US Mk 114 Primer as 0.19 mW, not 7.5 mW as cited in the item. Since the standard does not specify a 7.5 mW threshold nor a surge‑protection requirement, the item’s claim of non‑compliance based on that threshold is not supported by the provided standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 0.65
+  },
+  {
+    "item_no": 59,
+    "text": "A quality assurance check verified that FRG EL 37 EEDs from a production batch exhibited 0.28 MJ no-fire energy during lot testing. Table 6-2 specifies 0.30 MJ as the minimum no-fire threshold. Wait — the lot no-fire energy (0.28 MJ) is below the threshold, meaning it fires more easily. Re-evaluation: the lot no-fire energy meets the safety margin in Table 6-2 only if it does not fire below 0.30 MJ. Since 0.28 MJ < 0.30 MJ, and the table value is a no-fire threshold (must not fire below this), the lot complies if it did not fire at 0.28 MJ. The test confirmed no firing at 0.28 MJ, demonstrating compliant no-fire behavior.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6‑2 lists the FRG EL 37 no‑fire threshold as 0.30 MJ. The audit finding reports a measured no‑fire energy of 0.28 MJ, which is below the specified minimum threshold, indicating the device’s no‑fire performance does not meet the required specification. Therefore the lot does not comply with the standard.",
+    "expected": "UYGUN",
+    "table": "TABLE 6-2",
+    "elapsed_s": 55.65
+  },
+  {
+    "item_no": 60,
+    "text": "A production lot of UK F120 EEDs was tested and found to fire at 0.18 MJ, below the no-fire threshold of 0.20 MJ specified in Table 6-2. An EED that fires below its tabulated no-fire threshold value fails safety criteria and is non-compliant with Table 6-2 requirements.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6‑2 lists the No‑Fire Threshold for UK F120 as 0.20 MJ. The No‑Fire Threshold is defined as the maximum energy that must not cause firing (see section 1.6.0.3, “No‑Fire Thresholds (NFT)”). An EED that fires at 0.18 MJ, i.e., below this threshold, violates the safety criteria implied by the NFT definition, making the finding of non‑compliance consistent with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "TABLE 6-2",
+    "elapsed_s": 1.86
+  },
+  {
+    "item_no": 61,
+    "text": "Magazine Complex A stores 37,500 kg NEQ of HD 1.1 munitions across its igloos. The table specifies a maximum NEQ of 40,000 kg for HD 1.1. The stored quantity is within the prescribed limit and is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.1 as 40 000 kg. The stored quantity of 37 500 kg is below this limit, so the storage complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.42
+  },
+  {
+    "item_no": 62,
+    "text": "Storage Area B holds 42,000 kg NEQ of HD 1.1 detonating munitions in a single complex. The table specifies a maximum NEQ of 40,000 kg for HD 1.1. The stored quantity exceeds the limit; the configuration is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division HD 1.1 as 40 000 kg. The item stores 42 000 kg NEQ of HD 1.1, which exceeds this limit, therefore the configuration violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 63,
+    "text": "An HD 1.2 magazine stores 9,500 kg NEQ of explosive articles. The table specifies a maximum NEQ of 10,000 kg for HD 1.2. The quantity is within the limit and compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The context’s Table (p.192) lists the maximum Net Explosives Quantity for Hazard Division 1.2 as 10 000 kg. The reported storage of 9 500 kg is below this limit, and 1.3.2.3 confirms that the total NEQ of HD 1.2 ammunition is the basis for compliance. Therefore the item complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.45
+  },
+  {
+    "item_no": 64,
+    "text": "A depot stores 11,200 kg NEQ of HD 1.2 explosive articles in a single licensed site. The table specifies a maximum NEQ of 10,000 kg for HD 1.2. The stored quantity exceeds the limit by 1,200 kg; the storage is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.2 as 10 000 kg. The depot stores 11 200 kg NEQ of HD 1.2, which exceeds this limit by 1 200 kg, therefore the storage does not comply with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 52.86
+  },
+  {
+    "item_no": 65,
+    "text": "A propellant storage facility contains 34,000 kg NEQ of HD 1.3 propellants. The table specifies 35,000 kg NEQ maximum for HD 1.3 propellants. The quantity is within the limit; the facility is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.3 (propellants) as 35 000 kg. The facility stores 34 000 kg NEQ, which is below this limit, therefore it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.35
+  },
+  {
+    "item_no": 66,
+    "text": "A propellant storage complex holds 36,500 kg NEQ of HD 1.3 propellants. The table specifies a maximum of 35,000 kg NEQ for HD 1.3 propellants. The excess of 1,500 kg makes the storage non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) sets the maximum allowable NEQ for Hazard Division 1.3 (propellants) at 35 000 kg. The storage complex contains 36 500 kg NEQ, exceeding this limit, which breaches the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.63
+  },
+  {
+    "item_no": 67,
+    "text": "A pyrotechnic storage area holds 32,000 kg NEQ of HD 1.3 substances (other than propellants). The table specifies 35,000 kg NEQ maximum for HD 1.3 (other than propellants). The stored quantity is within the limit; the facility is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.3 (other than propellants) as 35 000 kg. The stored quantity of 32 000 kg NEQ is below this limit, and no other provision in the provided context imposes a stricter restriction. Hence the facility complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.47
+  },
+  {
+    "item_no": 68,
+    "text": "An HD 1.3 (other than propellants) storage site accumulated 37,000 kg NEQ after an emergency transfer from a neighboring facility. The table specifies a maximum of 35,000 kg NEQ. The accumulated quantity is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.192), the maximum allowed NEQ for HD 1.3 (other than propellants) is 35 000 kg. The site accumulated 37 000 kg NEQ, which exceeds this limit, making it non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.62
+  },
+  {
+    "item_no": 69,
+    "text": "A warehouse stores 18,000 kg NEQ of HD 1.4 signal cartridges. The table specifies 20,000 kg NEQ maximum for HD 1.4. The stored quantity is within the specified limit and is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The table on page 192 lists the maximum allowable NEQ for Hazard Division 1.4 as 20 000 kg. The warehouse stores 18 000 kg NEQ, which is below this limit, therefore it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 54.09
+  },
+  {
+    "item_no": 70,
+    "text": "An HD 1.4 storage building holds 22,500 kg NEQ of practice ammunition. The table specifies a maximum of 20,000 kg NEQ for HD 1.4. The stored quantity exceeds the limit; the storage arrangement is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.192) the maximum allowed NEQ for Hazard Division 1.4 is 20 000 kg. The building stores 22 500 kg NEQ, which exceeds this limit, therefore the arrangement does not comply with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.68
+  },
+  {
+    "item_no": 71,
+    "text": "An ammunition depot stores HD 1.1 munitions in two separate magazines: 20,000 kg NEQ in Magazine 1 and 18,000 kg NEQ in Magazine 2, totaling 38,000 kg NEQ. The table specifies a 40,000 kg NEQ maximum for HD 1.1. The total is within the limit; the storage is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable Net Explosives Quantity for Hazard Division 1.1 as 40 000 kg NEQ. The depot’s combined NEQ of 38 000 kg (20 000 kg + 18 000 kg) is below this limit, and per §1.3.2.3 a) the total NEQ of a single PES is the basis for compliance. Therefore the storage meets the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 1.98
+  },
+  {
+    "item_no": 72,
+    "text": "Three HD 1.2 magazines at a depot contain 4,000, 4,500, and 3,000 kg NEQ respectively, totaling 11,500 kg NEQ at the same licensed site. The table limits HD 1.2 to 10,000 kg NEQ. The combined quantity exceeds the limit.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) sets the maximum NEQ for Hazard Division 1.2 at 10 000 kg, and Section 1.3.2.3(b) requires that magazines at the same site be treated as a single site with aggregate NEQ. The combined 11 500 kg exceeds the 10 000 kg limit, thus violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 1.12
+  },
+  {
+    "item_no": 73,
+    "text": "During an annual inventory, an HD 1.4 storage site was confirmed to hold 15,000 kg NEQ. The table specifies 20,000 kg NEQ as the maximum for HD 1.4. The inventory confirms the site is within the permitted limit and is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum NEQ for Hazard Division 1.4 as 20 000 kg. The inventory shows 15 000 kg NEQ, which is below this limit, so the site complies with the specified maximum.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.5
+  },
+  {
+    "item_no": 74,
+    "text": "An HD 1.3 propellant facility received a shipment that brought total stored NEQ to 38,000 kg. The table specifies a maximum of 35,000 kg NEQ for HD 1.3 propellants. After the shipment, the site exceeds its licensed NEQ limit and is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum NEQ for Hazard Division 1.3 (propellants) as 35 000 kg. The reported stored NEQ of 38 000 kg exceeds this limit, so the site is indeed out of compliance, matching the standard’s restriction.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 51.32
+  },
+  {
+    "item_no": 75,
+    "text": "A coastal munitions depot stores exactly 40,000 kg NEQ of HD 1.1 munitions. The table specifies the limit as 40,000 kg NEQ for HD 1.1. Storing exactly at the limit is compliant per the table specification.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the permissible quantity for Hazard Division HD 1.1 as 40 000 kg NEQ. Storing exactly 40 000 kg NEQ does not exceed this listed limit, therefore the depot’s storage complies with the table specification.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.94
+  },
+  {
+    "item_no": 76,
+    "text": "An emergency contingency plan allowed temporary storage of 45,000 kg NEQ of HD 1.1 at a single site without seeking a waiver. The table specifies 40,000 kg NEQ as the maximum for HD 1.1. Exceeding this limit without a waiver is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) lists the maximum allowable quantity for Hazard Division 1.1 as 40 000 kg NEQ. The contingency plan stores 45 000 kg NEQ, exceeding this limit, and no waiver is indicated, thus violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 2.28
+  },
+  {
+    "item_no": 77,
+    "text": "An HD 1.2 explosive articles storage site holds 7,800 kg NEQ. The table specifies 10,000 kg NEQ as the HD 1.2 limit. The stored quantity is well within the limit; the facility is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "The table for Hazard Division 1.2 lists a maximum Net Explosives Quantity of 10 000 kg NEQ (Table (p.192)). The site stores 7 800 kg NEQ, which is below this limit, so it meets the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 1.04
+  },
+  {
+    "item_no": 78,
+    "text": "A transfer operation moved 3,000 kg NEQ of HD 1.2 articles to a site already holding 9,000 kg NEQ, bringing the total to 12,000 kg NEQ. The table limits HD 1.2 to 10,000 kg NEQ. The transfer resulted in a non-compliant storage quantity.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) sets the maximum for Hazard Division 1.2 at 10 000 kg NEQ. After the transfer the site holds 12 000 kg NEQ, which exceeds this limit, so the audit finding that the storage quantity is non‑compliant is correct.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 2.42
+  },
+  {
+    "item_no": 79,
+    "text": "An HD 1.3 (other than propellants) storage facility holds 28,000 kg NEQ of incendiary munitions. The table permits up to 35,000 kg NEQ for this sub-category. The quantity is within the prescribed limit; storage is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.3 (other than propellants) as 35 000 kg. The facility stores 28 000 kg, which is below this limit, therefore the storage complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 3.34
+  },
+  {
+    "item_no": 80,
+    "text": "An HD 1.1 storage complex was found during inspection to hold 43,000 kg NEQ due to undocumented surplus from a dissolved unit. The table specifies a maximum of 40,000 kg NEQ for HD 1.1. The undocumented surplus makes the site non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) lists the maximum NEQ for Hazard Division 1.1 as 40 000 kg. The inspected complex holds 43 000 kg NEQ, exceeding this limit, and no provision in the provided storage rules permits a higher amount. Hence the site is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 58.83
+  },
+  {
+    "item_no": 81,
+    "text": "An HD 1.4 training ammunition store holds 5,000 kg NEQ. The table specifies a maximum of 20,000 kg NEQ for HD 1.4. The stored quantity is far within the limit; the facility is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.4 as 20 000 kg. The store’s 5 000 kg is well below this limit, thus it complies with the specified maximum.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.34
+  },
+  {
+    "item_no": 82,
+    "text": "A facility storing both HD 1.3 propellants and HD 1.3 (other than propellants) computed their totals separately: 20,000 kg + 16,000 kg = 36,000 kg NEQ for HD 1.3 propellants alone. The table specifies 35,000 kg NEQ maximum for HD 1.3 propellants. The propellant sub-category alone exceeds the limit; the facility is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists separate NEQ limits of 35 000 kg for HD 1.3 (propellants) and 35 000 kg for HD 1.3 (other than propellants). The facility stores 20 000 kg of propellants, which is below the 35 000 kg limit; the 16 000 kg of “other than propellants” is a distinct sub‑category and must not be added to the propellant total. Therefore the finding that the propellant limit is exceeded is incorrect.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 83,
+    "text": "A remote ammunition storage site was licensed for HD 1.1 and currently holds 25,000 kg NEQ. The table specifies 40,000 kg NEQ maximum for HD 1.1. The site is operating at 62.5% of its licensed limit; storage is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division HD 1.1 as 40 000 kg. The site stores 25 000 kg NEQ, which is below this limit, so the storage complies with the specified maximum.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.39
+  },
+  {
+    "item_no": 84,
+    "text": "An HD 1.2 igloo complex received an authorization to store 10,000 kg NEQ. Due to an administrative error, 10,500 kg NEQ was stored. The table specifies 10,000 kg NEQ as the maximum for HD 1.2. Even a small excess constitutes non-compliance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) lists the maximum NEQ for Hazard Division 1.2 as 10 000 kg. Storing 10 500 kg exceeds this limit, violating the specified maximum for HD 1.2.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.82
+  },
+  {
+    "item_no": 85,
+    "text": "A mobile field storage unit for HD 1.4 items carries 12,000 kg NEQ. The table specifies 20,000 kg NEQ maximum for HD 1.4. The loaded quantity is within the allowed limit; the unit is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum NEQ for Hazard Division 1.4 as 20 000 kg. The mobile unit carries only 12 000 kg NEQ, which is below this limit, so it complies with the specified maximum.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 53.93
+  },
+  {
+    "item_no": 86,
+    "text": "An HD 1.3 (other than propellants) facility stores 35,001 kg NEQ — just one kilogram above the limit. The table specifies exactly 35,000 kg NEQ maximum. Even a marginal excess constitutes non-compliance with the NEQ limit.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.192) lists the maximum NEQ for Hazard Division 1.3 (other than propellants) as 35 000 kg. Storing 35 001 kg exceeds this explicit limit, so the facility is not compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 2.15
+  },
+  {
+    "item_no": 87,
+    "text": "An HD 1.1 magazine complex holds 39,999 kg NEQ — just below the 40,000 kg limit. The table specifies 40,000 kg NEQ as the maximum for HD 1.1. The quantity is within the limit; storage is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.192) lists the maximum allowable NEQ for Hazard Division 1.1 as 40 000 kg. The reported quantity of 39 999 kg is below this limit, so the storage complies with the specified maximum.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.76
+  },
+  {
+    "item_no": 88,
+    "text": "A site licensed for HD 1.4 storage contains 21,000 kg NEQ following an emergency shipment. The table specifies 20,000 kg NEQ maximum for HD 1.4. The emergency shipment caused the site to exceed its licensed and tabulated limit.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.192) – Section 14. Background, the maximum allowed NEQ for Hazard Division 1.4 is 20 000 kg. The site now holds 21 000 kg NEQ, which exceeds this tabulated limit, violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 89,
+    "text": "A propellant depot stores 30,000 kg NEQ of HD 1.3 propellants and 4,000 kg NEQ of HD 1.4 items. The HD 1.3 propellant quantity (30,000 kg) is within the 35,000 kg limit. The HD 1.4 quantity (4,000 kg) is within the 20,000 kg limit. Both comply with the table.",
+    "verdict": "UYGUN",
+    "reasoning": "The Table (p.192) sets the NEQ limits at 35 000 kg for Hazard Division 1.3 (propellants) and 20 000 kg for Hazard Division 1.4. The depot stores 30 000 kg of HD 1.3 propellants and 4 000 kg of HD 1.4 items, both below the respective limits, thus complying with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page192",
+    "elapsed_s": 0.38
+  },
+  {
+    "item_no": 90,
+    "text": "A mixed-HD depot stores 35,000 kg NEQ of HD 1.3 propellants and an additional 1,000 kg NEQ of HD 1.3 propellants in an annex. The combined 36,000 kg NEQ for a single site exceeds the 35,000 kg limit specified in the table for HD 1.3 propellants.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The standard (Table (p.192) – 14. Background) sets the maximum NEQ for Hazard Division 1.3 (propellants) at 35 000 kg. Storing 35 000 kg plus an additional 1 000 kg (total 36 000 kg) for a single site exceeds this limit, making the depot non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page192",
+    "elapsed_s": 52.95
+  },
+  {
+    "item_no": 91,
+    "text": "Personnel handling toxic agent munitions (Compatibility Group K) wore Full Protective Clothing Set 1 during the operation. Table 147 specifies Set 1 full protective clothing for toxic agents. The correct protective equipment was worn; the operation is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists for Compatibility Group K only “Full Protective Clothing: X” and does not specify Set 1 as the required protective set; therefore the standard does not confirm that Set 1 clothing satisfies the requirement for Group K. The audit item’s claim of compliance is not supported by the cited table.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.5
+  },
+  {
+    "item_no": 92,
+    "text": "Personnel handling toxic agent munitions (Group K) wore Full Protective Clothing Set 2 instead of Set 1. Table 147 requires Set 1 for toxic agents. Using a lower protection set violates the protective equipment requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) states “Full Protective Clothing: Set 3,” indicating that the full protective gear for toxic agents (Group K) must be Set 3, not Set 2. Using Set 2 therefore breaches the protective equipment requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.78
+  },
+  {
+    "item_no": 93,
+    "text": "Technicians handling tear gas (O-Chlorobenzol) munitions (Group G) wore Full Protective Clothing Set 2. Table 147 specifies Set 2 for tear gas. The correct protective equipment was used; the operation is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided Table (p.147) entry for “Tear Gas, O‑Chlorobenzol” only indicates Compatibility Group G and that a breathing apparatus (X) is required; it does not assign Full Protective Clothing Set 2 to this substance. Since the standard excerpt does not specify Set 2 as the required protective clothing, the claim of compliance cannot be verified.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 94,
+    "text": "Handling of tear gas (O-Chlorobenzol) munitions (Group G) was conducted without any protective clothing. Table 147 mandates Full Protective Clothing Set 2 for tear gas handling. The absence of required protective equipment is a non-compliant procedure.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Chemical Ammunition and Substances: Tear Gas, O‑Chlorobenzol; … Breathing Apparatus: X” and does not specify a requirement for Full Protective Clothing Set 2. Therefore the standard does not mandate full protective clothing for tear‑gas handling, so the claim that the procedure is non‑compliant is unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.56
+  },
+  {
+    "item_no": 95,
+    "text": "Smoke, Titanium Tetrachloride (FM, Group G) was handled by personnel wearing Full Protective Clothing Set 2. Table 147 specifies Set 2 for FM smoke. The handling was conducted with appropriate protection.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Smoke, Titanium Tetrachloride (FM)” with group G and “Breathing Apparatus: X” but does not assign it to Set 2; the table shows no Set 2 designation for FM smoke. Therefore the claim that Set 2 is specified for this substance is not supported by the provided standard.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 54.95
+  },
+  {
+    "item_no": 96,
+    "text": "FS smoke (Sulphur Trioxide-Chlorosulphonic Acid, Group G) was handled using only breathing apparatus without full protective clothing. Table 147 requires Full Protective Clothing Set 2 for FS smoke. The omission of full clothing constitutes non-compliance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Smoke, Sulpher trioxide‑chlorosulphonic acid solution (FS); … Breathing Apparatus: X” and does not require Full Protective Clothing for this substance. Therefore handling FS smoke with only breathing apparatus meets the standard, and the claim that omission of full clothing is non‑compliant is unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.6
+  },
+  {
+    "item_no": 97,
+    "text": "Personnel handling HC smoke (Aluminum-Zinc Oxide-Hexachloroethane, Group G) wore breathing apparatus and water was not applied during the operation. Table 147 requires breathing apparatus and No Water for HC smoke. The protective measures are correct and compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "In Table (p.147) the entry for “Smoke, Aluminum‑zinc oxide‑hexachloroethane (HC)” shows only “: G” with no “X” under the Breathing Apparatus or Apply No Water columns, indicating that the standard does not require those measures for HC smoke. Hence the claim that breathing apparatus and “No Water” are required is not supported by the provided standard.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 98,
+    "text": "During a training exercise, water was applied to a HC smoke (Group G) ammunition fire. Table 147 explicitly states 'Apply No Water' for HC smoke. Applying water violates the protective procedures specified in the table.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Smoke, Aluminum‑zinc oxide‑hexachloroethane (HC)” under Group G but does **not** mark the “Apply No Water” column (no “X” is shown), so the standard does not explicitly prohibit water for HC smoke. Therefore the claim that applying water violates the table’s procedures is not supported by the provided context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.57
+  },
+  {
+    "item_no": 99,
+    "text": "White Phosphorous (WP, Group H) munitions were handled by personnel wearing Full Protective Clothing Set 3. Table 147 specifies Set 3 for white phosphorous. The correct protection level was applied; the handling is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.147) lists White Phosphorous (WP) under group H and specifies that full protective clothing corresponds to Set 3; the personnel used Set 3, meeting the required protection level.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.59
+  },
+  {
+    "item_no": 100,
+    "text": "White Phosphorous Plasticized (PWP, Group H) was handled using Full Protective Clothing Set 2. Table 147 requires Full Protective Clothing Set 3 for PWP. Set 2 provides insufficient protection; the handling procedure is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists White Phosphorous plasticized (PWP) – Group H – under the “Full Protective Clothing” column as requiring Set 3. The audit item states that Set 2 was used, which does not meet the required Set 3 protection, thus the handling procedure violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 53.86
+  },
+  {
+    "item_no": 101,
+    "text": "Thermite (TH, Group G) handling was conducted with breathing apparatus. Water was not used. Table 147 specifies breathing apparatus and No Water for thermite. Both required protective measures were applied; the operation is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Thermite or Thermate (TH); : G” without any “Breathing Apparatus” or “Apply No Water” markers, unlike other entries that show an “X” for those requirements. Since the standard does not specify those protective measures for thermite, the audit claim is not supported by the cited table.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.59
+  },
+  {
+    "item_no": 102,
+    "text": "Personnel handling Thermate (TH, Group G) did not use breathing apparatus. Table 147 mandates breathing apparatus for thermite/thermate handling. Omitting the breathing apparatus renders the handling procedure non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 147 lists “Thermite or Thermate (TH); : G” without a “Breathing Apparatus” entry, unlike other substances where a breathing apparatus is marked. Since the standard does not require breathing apparatus for TH, the claim that omission is non‑compliant contradicts the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.51
+  },
+  {
+    "item_no": 103,
+    "text": "Pyrotechnic Material (PT, Group G) handling was conducted with breathing apparatus and no water application. Table 147 requires breathing apparatus and No Water for pyrotechnic material. Both specified requirements were met; the handling is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Pyrotechnic Material (PT); : G” without an “X” in the Breathing Apparatus or Apply No Water columns, indicating those measures are not required for PT. The audit item incorrectly states that Table 147 mandates both breathing apparatus and no‑water application for PT, which contradicts the table’s specifications.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 1.42
+  },
+  {
+    "item_no": 104,
+    "text": "Calcium Phosphide (Group L) was handled without breathing apparatus. Table 147 requires breathing apparatus and No Water for calcium phosphide. The absence of breathing apparatus is a non-compliant protective measure.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists Calcium Phosphide (Group L) without an “X” under the Breathing Apparatus column, indicating no mandatory breathing apparatus requirement. Therefore handling it without breathing apparatus does not violate the standard as presented.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.75
+  },
+  {
+    "item_no": 105,
+    "text": "Personnel handling Napalm (NP, Group J) wore Full Protective Clothing Set 3, used breathing apparatus, and applied no water. Table 147 specifies Set 3, breathing apparatus, and No Water for napalm. All three requirements were met; the handling is fully compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.147) lists Napalm (NP) in Compatibility Group J with the “Apply No Water” symbol (X) and, by the column headings, requires Full Protective Clothing Set 3 and a Breathing Apparatus. Additionally, Section 1.7.2.3 states that for groups G, H, J, L the three supplementary symbols (full protective suit, respirator facepiece, no water) must be applied. The described handling meets all three requirements, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 52.94
+  },
+  {
+    "item_no": 106,
+    "text": "Napalm (NP, Group J) was handled with Full Protective Clothing Set 3 and breathing apparatus, but water was used during clean-up. Table 147 specifies No Water for napalm. Using water violated one of the required protective measures.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists Napalm (NP) in Compatibility Group J with “Apply No Water: X”, indicating that water must not be used. The audit item reports water was used during clean‑up, directly violating this table requirement (and the supplementary symbol rule that prohibits water).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.39
+  },
+  {
+    "item_no": 107,
+    "text": "Signaling Smokes (Group G) were handled by personnel wearing breathing apparatus. Table 147 specifies breathing apparatus for signaling smokes. The required protection was used; handling is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "In Table (p.147) the entry for “Signaling Smokes” lists only the compatibility group G and does not include a “Breathing Apparatus: X” requirement, unlike other smoke entries. Therefore the standard does not specify breathing apparatus for signaling smokes, making the audit item’s claim inaccurate.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.75
+  },
+  {
+    "item_no": 108,
+    "text": "Signaling Smokes (Group G) were handled without any breathing protection. Table 147 requires breathing apparatus for signaling smoke handling. The omission of breathing apparatus constitutes non-compliance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Breathing Apparatus: X” for several smoke agents (e.g., Titanium Tetrachloride, Sulphur dioxide‑chlorosulphonic acid), but the entry for “Signaling Smokes; : G.” does not include a Breathing Apparatus requirement. Hence the standard does not mandate breathing protection for signaling smokes, making the audit finding of non‑compliance unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.74
+  },
+  {
+    "item_no": 109,
+    "text": "Triethylaluminium (TEA, Group L) was handled by personnel wearing Full Protective Clothing Set 3, and water was not used during the operation. Table 147 specifies Set 3 and No Water for TEA. Both requirements were satisfied; compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists Triethylaluminium (TEA) under group L with “Apply No Water: X” but does not show an entry for Full Protective Clothing Set 3 in that row. Since the standard does not require Set 3 for TEA, the audit claim that both requirements are satisfied is unsupported.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.51
+  },
+  {
+    "item_no": 110,
+    "text": "Triethylaluminium (TEA, Group L) spill was cleaned up with water by personnel in Set 3 clothing. Table 147 specifies Set 3 full protective clothing AND No Water for TEA. Applying water violates the No Water requirement even when other protections are in place.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists Triethylaluminium (TEA) (group L) with “Apply No Water: X”, meaning water must not be used for cleanup. Cleaning the spill with water violates this explicit prohibition, regardless of the use of Set 3 full protective clothing.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 54.58
+  },
+  {
+    "item_no": 111,
+    "text": "Isobutyl Methacrylate with Oil (IM, Group J) was handled with breathing apparatus. Table 147 specifies breathing apparatus for Group J items with flammable liquid content. The breathing apparatus requirement was met; handling is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Isobutyl methacrylate with oil (IM); : J” without a “Breathing Apparatus: X” entry, unlike other substances where the requirement is explicitly marked. The standard therefore does not mandate breathing apparatus for this Group J item, so the claim of compliance cannot be verified from the provided context.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.49
+  },
+  {
+    "item_no": 112,
+    "text": "During an emergency response to a Napalm (NP, Group J) fire, personnel wore only breathing apparatus without full protective clothing. Table 147 requires Set 3 full protective clothing in addition to breathing apparatus for napalm. The absence of Set 3 clothing makes the response procedure non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists Napalm (NP) under Group J and specifies the need for Set 3 full protective clothing (in addition to breathing apparatus). The audit item describes a response that used only breathing apparatus and omitted Set 3 clothing, violating the requirement shown in Table 147.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.48
+  },
+  {
+    "item_no": 113,
+    "text": "A chemical ammunition handling drill for Toxic Agents (Group K) required personnel to wear Full Protective Clothing Set 1. All participants were verified to have Set 1 clothing fitted correctly. Table 147 specifies Set 1 for toxic agents. The drill procedure is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) only indicates that for compatibility group K “Full Protective Clothing: X” is required, without specifying Set 1; the standard (1.7.2.3 g) leaves the exact type of full protective clothing to national authorities. Therefore the claim that Set 1 is mandated for toxic agents is not supported by the provided context.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.55
+  },
+  {
+    "item_no": 114,
+    "text": "White Phosphorous (WP, Group H) handling was performed without any full protective clothing, relying only on breathing apparatus. Table 147 requires Full Protective Clothing Set 3 for WP. Performing WP handling without Set 3 is a serious non-compliance.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.147) lists White Phosphorous (WP) with the entry “H; Apply No Water: X” and does not assign Full Protective Clothing Set 3 to WP. Since the standard does not require Set 3 for WP, the handling without full protective clothing does not breach the cited rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.69
+  },
+  {
+    "item_no": 115,
+    "text": "Personnel handling HC smoke (Group G) correctly refrained from using water and wore breathing apparatus throughout the operation. Table 147 specifies both measures for HC smoke. Full compliance was achieved.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Smoke, Aluminum‑zinc oxide‑hexachloroethane (HC)” only with Compatibility Group G and does not include “Breathing Apparatus: X” nor “Apply No Water: X”. Since the standard does not require those measures for HC smoke, the claim of full compliance based on Table 147 is unsupported.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 53.76
+  },
+  {
+    "item_no": 116,
+    "text": "Calcium Phosphide (Group L) storage emergency response personnel used water to suppress a fire, without breathing apparatus. Table 147 specifies both No Water and breathing apparatus for Calcium Phosphide. Both required measures were violated; the response is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists Calcium Phosphide (group L) without an “X” in the “Apply No Water” or “Breathing Apparatus” columns, indicating that the standard does not require water suppression to be prohibited nor the use of breathing apparatus for this material. Consequently, the audit claim that both measures were violated is not supported by the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 1.14
+  },
+  {
+    "item_no": 117,
+    "text": "Pyrotechnic Material (Group G) was processed in a ventilated area with all personnel using breathing apparatus. No water was available or used in the processing area. Table 147 specifies breathing apparatus and No Water for pyrotechnic material. Both requirements met.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Pyrotechnic Material (PT); : G” without any “Breathing Apparatus” or “Apply No Water” markers (the X symbols appear only for other substances such as Tear Gas, White Phosphorous, Napalm, etc.). Therefore the standard does not specify those requirements for Group G pyrotechnic material, and the audit claim that Table 147 mandates them is unsupported.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 0.9
+  },
+  {
+    "item_no": 118,
+    "text": "FS smoke munitions (Group G) were handled using only latex gloves without full protective clothing. Table 147 requires Full Protective Clothing Set 2 for FS smoke handling. Gloves alone do not satisfy the Set 2 requirement; the handling is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists FS smoke (Group G) with a requirement for Full Protective Clothing (Set 2) and the supplementary symbols section (1.7.2.3) mandates wearing a full protective suit for Group G ammunition. Using only latex gloves does not meet this requirement, so the handling is non‑compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.45
+  },
+  {
+    "item_no": 119,
+    "text": "Thermite (TH, Group G) disposal operations used breathing apparatus throughout. Water suppression was not employed at any stage. Table 147 specifies both breathing apparatus and No Water for thermite. Full compliance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists “Thermite or Thermate (TH); : G” without any “X” under the Breathing Apparatus or Apply No Water columns, indicating that the standard does not require breathing apparatus nor a no‑water rule for thermite. The item’s claim that Table 147 specifies both requirements is not supported by the provided table.",
+    "expected": "UYGUN",
+    "table": "Table_page147",
+    "elapsed_s": 3.54
+  },
+  {
+    "item_no": 120,
+    "text": "Tear gas munitions (Group G) were stored in the same bay where personnel handled White Phosphorous (Group H) using only Set 2 clothing. Table 147 requires Set 3 for White Phosphorous handling. Using Set 2 instead of Set 3 for WP is a non-compliant protection level.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.147) lists White Phosphorous (WP) under group H with only “Apply No Water: X” and does not specify a requirement for Full Protective Clothing (Set 3). Since the standard does not mandate Set 3 for WP handling, the claim that using Set 2 is non‑compliant is unsupported.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page147",
+    "elapsed_s": 0.61
+  },
+  {
+    "item_no": 121,
+    "text": "Propelled grenades containing a secondary detonating explosive charge with an integral fuze and a propelling charge are classified as Compatibility Group F. Table 25 defines Group F as: article containing a secondary detonating explosive substance with its own means of initiation, with a propelling charge. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) “Definitions of the Compatibility Groups” lists Group F as “Article containing a secondary detonating explosive substance with its own means of initiation, with a propelling charge,” which matches the description of the propelled grenades. Hence the classification as Compatibility Group F complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 59.27
+  },
+  {
+    "item_no": 122,
+    "text": "Illumination flares containing pyrotechnic composition (without explosive substance) are classified as Group E. Table 25 defines Group E as articles with a secondary detonating explosive substance and propelling charge but no initiation means. Pure pyrotechnic articles without detonating explosives belong to Group G. The Group E classification is incorrect.",
+    "verdict": "UYGUN",
+    "reasoning": "According to the provided definitions, Group G covers “Pyrotechnic substance, or article containing a pyrotechnic substance…”, i.e., pure pyrotechnic articles without a secondary detonating explosive substance. Group E (not shown in the excerpt) is defined as articles with a secondary detonating explosive substance and a propelling charge. Since illumination flares contain only pyrotechnic composition and no secondary detonating explosive, they belong to Group G, making the Group E classification incorrect.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.58
+  },
+  {
+    "item_no": 123,
+    "text": "Signal pistol cartridges containing a pyrotechnic composition are classified as Compatibility Group G. Table 25 defines Group G as pyrotechnic substance or article containing pyrotechnic substance. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.25) “Definitions of the Compatibility Groups”, Compatibility Group G is defined as “Pyrotechnic substance, or article containing a pyrotechnic substance…”. Signal pistol cartridges that contain a pyrotechnic composition are therefore articles containing a pyrotechnic substance, which places them correctly in Group G. The item’s classification matches this definition.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.4
+  },
+  {
+    "item_no": 124,
+    "text": "An illuminating shell containing both an explosive burster and a pyrotechnic flare composition is classified as Group N. Table 25 defines Group N as articles containing only extremely insensitive detonating substances. A shell with a conventional explosive burster does not qualify as Group N. The correct classification would be Group G (pyrotechnic with explosive).",
+    "verdict": "UYGUN",
+    "reasoning": "According to the Compatibility Group definitions, Group N is limited to articles that contain only extremely insensitive detonating substances (Table p.25). The illuminating shell includes a conventional explosive burster, which is not “extremely insensitive,” so it does not meet the Group N criteria. Group G covers articles that contain both an explosive substance and a pyrotechnic (illuminating) substance, which matches the shell’s composition. Therefore the audit’s conclusion that the shell should be classified as Group G is consistent with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.63
+  },
+  {
+    "item_no": 125,
+    "text": "Incendiary bombs containing both an explosive element and white phosphorus are classified as Group H. Table 25 defines Group H as articles containing both an explosive substance and white phosphorus. The classification correctly reflects the composition.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group H as “Article containing both explosive substance and white phosphorus.” The item’s classification of incendiary bombs with an explosive element and white phosphorus as Group H matches this definition, thus complying with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.42
+  },
+  {
+    "item_no": 126,
+    "text": "White phosphorus artillery shells are classified as Compatibility Group G (pyrotechnic). Table 25 specifically defines Group H for articles containing both an explosive substance and white phosphorus. Articles with white phosphorus must be Group H, not Group G.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The definitions in Table (p.25) state that Compatibility Group G excludes articles containing white phosphorus, while Compatibility Group H is defined as “Article containing both explosive substance and white phosphorus.” Classifying white‑phosphorus artillery shells as Group G contradicts these definitions.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 53.83
+  },
+  {
+    "item_no": 127,
+    "text": "Fuel-air explosive munitions containing both an explosive charge and a flammable gel are classified as Group J. Table 25 defines Group J as articles containing both an explosive substance and a flammable liquid or gel. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group J as “Article containing both an explosive substance and a flammable liquid or gel.” A fuel‑air explosive munition with an explosive charge and a flammable gel fits this definition, so the classification as Group J complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 128,
+    "text": "Napalm-filled bombs (containing flammable gel and explosive burster) are classified as Group H. Table 25 defines Group H as articles with explosive and white phosphorus specifically. Articles containing explosive plus flammable gel belong to Group J, not Group H.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.25) the definition of Compatibility Group H is “Article containing both explosive substance and white phosphorus,” while Group J is defined as “Article containing both an explosive substance and a flammable liquid or gel.” Napalm‑filled bombs contain flammable gel, not white phosphorus, so they belong to Group J, not Group H. The audit item misclassifies them, violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.57
+  },
+  {
+    "item_no": 129,
+    "text": "Binary chemical munitions containing both an explosive charge and a toxic chemical agent are classified as Compatibility Group K. Table 25 defines Group K as articles containing both explosive substance and toxic chemical agent. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.25) “Definitions of the Compatibility Groups,” Compatibility Group K is defined as “Article containing both an explosive substance and a toxic chemical agent.” The item’s classification of binary chemical munitions (explosive charge + toxic agent) as Group K matches this definition, so it complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.39
+  },
+  {
+    "item_no": 130,
+    "text": "Non-lethal chemical grenades containing only tear gas compound (no explosive) are classified as Compatibility Group K. Table 25 defines Group K as articles containing BOTH explosive substance AND toxic chemical agent. Items without an explosive component cannot be Group K.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.25) “Compatibility Group K … Article containing both an explosive substance and a toxic chemical agent.” The audited grenades contain only tear‑gas (toxic agent) and no explosive, so they do not meet the definition of Group K. Hence the classification is not compliant.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.43
+  },
+  {
+    "item_no": 131,
+    "text": "Water-activated explosive devices needing isolation from other munitions are classified as Group L. Table 25 defines Group L as explosive substances or articles presenting special risk (e.g., water activation) needing isolation of each type. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group L as “explosive substance or article … presenting a special risk (e.g., due to water activation) and needing isolation of each type.” The item’s classification of water‑activated devices as Group L therefore follows the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 54.83
+  },
+  {
+    "item_no": 132,
+    "text": "Hypergolic liquid propellant munitions are classified as Group J (flammable liquid with explosive). Table 25 excludes hypergolic liquids from Group J explicitly and assigns articles with hypergolic liquids to Group L (special risk requiring isolation). Group J is incorrect for hypergolic-containing munitions.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.25) “Definitions of the Compatibility Groups”, Group J is defined only for articles with an explosive and a flammable liquid or gel, explicitly excluding hypergolic liquids, while Group L is defined for articles presenting a special risk such as the presence of hypergolic liquids. Classifying hypergolic liquid propellant munitions as Group J therefore contradicts the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.46
+  },
+  {
+    "item_no": 133,
+    "text": "Extremely insensitive detonating munitions (EIDS) with negligible probability of accidental initiation are classified as Compatibility Group N. Table 25 defines Group N as articles containing only extremely insensitive detonating substances with negligible initiation probability. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group N as “Articles which contain only extremely insensitive detonating substances and which demonstrate a negligible probability of accidental initiation or propagation.” The item’s description matches this definition, so the classification is correct.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 1.01
+  },
+  {
+    "item_no": 134,
+    "text": "Standard artillery shells with conventional RDX-based bursters are classified as Group N (extremely insensitive). Table 25 restricts Group N to articles with only extremely insensitive detonating substances. Conventional RDX bursters do not qualify; Group D or F would be appropriate.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided standard states that “articles of Compatibility Group N should be considered as having the characteristics of Compatibility Group D” and gives mixing rules for Group N, but it does not contain a rule (e.g., Table 25) limiting Group N only to extremely insensitive detonating substances. Therefore the claim that RDX‑based bursters must be re‑classified to Group D or F is not supported by the cited standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.86
+  },
+  {
+    "item_no": 135,
+    "text": "Consumer fireworks packed to contain any accidental hazardous effects within the package are classified as Compatibility Group S. Table 25 defines Group S as substances or articles so packed that hazardous effects from accidental functioning are confined within the package. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group S as “substances or articles so packed … that any hazardous effects arising from accidental functioning are confined within the package,” and the “Substances and articles which present no significant hazard” section confirms that items assigned to Group S are packed to confine accidental hazardous effects. The item’s classification of consumer fireworks as Group S therefore complies with these definitions.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 54.85
+  },
+  {
+    "item_no": 136,
+    "text": "Bulk propellant in open drums is classified as Compatibility Group S. Table 25 defines Group S as substances 'packed or designed' such that hazardous effects are confined. Bulk propellant in open containers cannot confine hazardous effects; Group S is incorrect.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.25) “Definitions of the Compatibility Groups”, Group S is defined as substances or articles that are “so packed or designed that any hazardous effects … are confined within the package”. Bulk propellant placed in open drums is not packed or designed to confine hazardous effects, therefore it does not meet the criteria for Group S. The audit finding that the classification is incorrect complies with this definition.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.86
+  },
+  {
+    "item_no": 137,
+    "text": "Artillery shells with secondary detonating explosive, a propelling charge, and no fuze are classified as Compatibility Group E. Table 25 defines Group E as articles with secondary detonating explosive substance, without means of initiation, with propelling charge. The classification matches.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) “Definitions of the Compatibility Groups” specifies Compatibility Group E as articles that contain a secondary detonating explosive substance, have no means of initiation (no fuze), and include a propelling charge. The artillery shells described match this definition, so the classification is correct.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.51
+  },
+  {
+    "item_no": 138,
+    "text": "A guided missile with an explosive warhead, integral safe-arm fuze, and rocket motor is classified as Compatibility Group E. Table 25 defines Group E as having no means of initiation. A missile with its own fuze (means of initiation) belongs to Group F, not Group E.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The provided definitions state that Compatibility Group F is for articles “without means of initiation” (see the definition of Group F in the context). Therefore a guided missile that includes its own safe‑arm fuze (a means of initiation) cannot be placed in Group F, contradicting the item’s claim. Additionally, the context does not show Group E defined as “no means of initiation,” so the classification asserted in the item is not supported by the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.56
+  },
+  {
+    "item_no": 139,
+    "text": "Smoke grenades containing titanium tetrachloride (pyrotechnic, no explosive content) are classified as Compatibility Group G. Table 25 defines Group G as pyrotechnic substance or article. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group G as “Pyrotechnic substance, or article containing a pyrotechnic substance…”, which matches smoke grenades containing titanium tetrachloride that have no explosive content. Therefore the classification as Group G complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.41
+  },
+  {
+    "item_no": 140,
+    "text": "Practice bombs with inert filling (sand) and no explosive components are classified as Group G. Table 25 defines Group G as pyrotechnic substance or article containing pyrotechnic substance. An inert practice bomb with no explosive or pyrotechnic content is not Group G; inert items are outside the compatibility group system.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 25 (1.2.2.3) defines Compatibility Group G as “pyrotechnic substance, or article containing a pyrotechnic substance…”. An inert practice bomb containing only sand has no pyrotechnic or explosive content, therefore it does not meet the definition of Group G and falls outside the compatibility‑group system. Classifying such an inert item as Group G violates this definition.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 53.99
+  },
+  {
+    "item_no": 141,
+    "text": "Mortar bombs containing secondary explosive filling with integral impact fuze and no propelling charge are classified as Group F. Table 25 defines Group F as articles with secondary detonating explosive and own means of initiation, with or without propelling charge. Without propelling charge is explicitly included in Group F. Correct classification.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group F as “Article containing a secondary detonating explosive substance with its own means of initiation, with a propelling charge … or without a propelling charge.” The mortar bomb has a secondary explosive filling, an integral impact fuze (means of initiation), and no propelling charge, thus matches the Group F definition.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.53
+  },
+  {
+    "item_no": 142,
+    "text": "Phosphorus smoke pots containing white phosphorus composition (no explosive) are classified as Group H. Table 25 defines Group H as articles containing BOTH explosive substance AND white phosphorus. Items with white phosphorus but no explosive component are not Group H; Group G applies.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.25) the definition of Compatibility Group H is “Article containing both explosive substance and white phosphorus.” The item describes a smoke pot with only white phosphorus and no explosive, which does not meet this definition, so classifying it as Group H violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.48
+  },
+  {
+    "item_no": 143,
+    "text": "Special explosive devices requiring complete isolation from all other munitions due to the presence of pyrophoric substances are classified as Group L. Table 25 defines Group L as needing isolation due to special risk including pyrophoric substance. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group L as “explosive substance … presenting a special risk (e.g. … presence of … a pyrophoric substance) and needing isolation of each type.” Therefore classifying special explosive devices with pyrophoric substances as Group L is consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.41
+  },
+  {
+    "item_no": 144,
+    "text": "Demolition charges containing standard TNT are classified as Group L (special risk). Table 25 reserves Group L for articles presenting special risk such as water activation, hypergolic liquids, phosphides, or pyrophoric substances. Standard TNT charges have no such special risk and should be classified as Group D.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group L as “explosive substance … presenting a special risk (e.g. water activation, hypergolic liquids, phosphides or a pyrophoric substance)”. Standard TNT lacks these special risks, so according to the definition it must not be placed in Group L but in a non‑special‑risk group such as Group D. The item’s claim aligns with this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.5
+  },
+  {
+    "item_no": 145,
+    "text": "Safety-in-transit devices packaged to limit blast/projection effects to within the package under accidental functioning are classified as Compatibility Group S. Table 25 defines Group S as substances/articles packaged or designed to confine hazardous effects. The classification correctly applies Group S.",
+    "verdict": "UYGUN",
+    "reasoning": "The ITEM describes devices that confine blast/projection effects within the package, which matches the definition of Compatibility Group S in Table (p.25): “Substances or articles so packed or designed that any hazardous effects arising from accidental functioning are confined within the package…”. Therefore the classification as Group S is consistent with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 55.34
+  },
+  {
+    "item_no": 146,
+    "text": "A thermobaric warhead containing fuel and explosive is classified as Compatibility Group F. Table 25 defines Group F for articles with secondary detonating explosive, own initiation means, with or without propelling charge — but specifically excluding those with flammable liquid. A thermobaric fuel-air warhead with flammable liquid content should be classified as Group J.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.25) the definition of Compatibility Group F explicitly excludes articles with a propelling charge that contains a flammable liquid or gel, whereas Group J is defined for articles that contain both an explosive substance and a flammable liquid or gel. Therefore a thermobaric warhead with flammable liquid content must be classified as Group J, not Group F.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.58
+  },
+  {
+    "item_no": 147,
+    "text": "Multi-spectral screening smoke munitions containing both an illuminating component (pyrotechnic) and an incendiary substance are classified as Group G. Table 25 includes articles containing both explosive substance and illuminating/incendiary substances within Group G. The classification is correct.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group G as including “article containing both an explosive substance and an illuminating, incendiary, tear‑ or smoke‑producing substance,” which matches the described multi‑spectral screening smoke munition. Therefore the classification of the item as Group G complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.87
+  },
+  {
+    "item_no": 148,
+    "text": "An EED detonator assembly (primary explosive, bridgewire) is classified as Group F. Table 25 defines Group F as articles with secondary detonating explosive. Detonators use primary explosive, not secondary detonating explosive. Detonators are correctly Group B or A, not Group F.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.25) defines Compatibility Group F as “Article containing a secondary detonating explosive substance…”, while the 1.2.2.3 definitions list Group A as “Primary explosive substance” and Group B as “Article containing a primary explosive substance…”. An EED detonator uses a primary explosive, so it must be classified as Group A or B, not Group F. Hence the classification violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 0.58
+  },
+  {
+    "item_no": 149,
+    "text": "Anti-tank rounds consisting of a shaped-charge warhead with secondary detonating explosive, no propelling charge, and no integral fuze are classified as Compatibility Group D. However, if the same round incorporates its own fuze mechanism, Table 25 requires reclassification to Group F. An inspected batch confirmed the rounds carry no integral fuze; Group D is applied correctly.",
+    "verdict": "UYGUN",
+    "reasoning": "The item’s anti‑tank rounds contain a secondary detonating explosive, have no means of initiation (no fuze) and no propelling charge, which matches the definition of Compatibility Group D in Section 1.2.2.3. Since the inspected batch lacks an integral fuze, the Group D classification is correct.",
+    "expected": "UYGUN",
+    "table": "Table_page25",
+    "elapsed_s": 0.48
+  },
+  {
+    "item_no": 150,
+    "text": "Calcium phosphide grenades containing both an explosive expulsion charge and calcium phosphide are classified as Compatibility Group K (explosive + toxic chemical). Table 25 defines Group K as articles with explosive and toxic chemical agent. Calcium phosphide presents a special isolation risk; the correct group is L, not K. The classification is non-compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.25) defines Compatibility Group K as “Article containing both an explosive substance and a toxic chemical agent,” while Group L is defined as “Explosive substance … presenting a special risk (e.g. … phosphides) and needing isolation of each type.” Because calcium phosphide is a phosphide, the grenades fall under Group L, so classifying them as Group K is indeed non‑compliant, confirming the audit finding.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page25",
+    "elapsed_s": 53.66
+  }
+]

@@ -1,0 +1,852 @@
+[
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 1,
+    "bbox": [
+      391,
+      33,
+      608,
+      45
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      842,
+      61,
+      927,
+      73
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      927,
+      86
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      850,
+      89,
+      927,
+      102
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "table",
+    "img_path": "images/ce402dc971106efd0a3e226a5c7bbd6ea1b386ad49cf49dace4e71061ae974ae.jpg",
+    "table_caption": [
+      "Figure B-III",
+      "AC/258-FORM X"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td colspan=\"6\">EXPLOSIVES LIMIT LICENCE</td><td colspan=\"14\">2. UNIT</td><td colspan=\"7\">3. LICENCE No.</td><td></td></tr><tr><td colspan=\"10\">SITE No./NAME ESL 2</td><td colspan=\"10\">5. FOR USE AS Storage Site</td><td colspan=\"7\">6. ADEQUATE FIRE FIGHTING YES/NO-</td><td></td></tr><tr><td colspan=\"6\">ELECTRICAL STANDARD</td><td colspan=\"7\">8. LIGHTNING PROTECTION YES/NO-</td><td colspan=\"7\">9. AREA PLAN No.</td><td colspan=\"7\">10. SAFEGUARD PLAN No.</td><td></td></tr><tr><td colspan=\"27\">CONSTRUCTIONAL DETAILSNIL</td><td></td></tr><tr><td colspan=\"5\">HEADWALL &amp; DOOR7BAR/3BAR/OTHER</td><td colspan=\"6\">13. TYPE OF FLOOR Earth/wood</td><td colspan=\"7\">14. TYPE OF HEATING NIL</td><td colspan=\"4\">15.</td><td colspan=\"6\">16. SITE DRAWING No.</td></tr><tr><td colspan=\"27\">TRAVESSE DETAILSEarth barricades on all four sides.</td><td></td></tr><tr><td rowspan=\"2\">EXPOSED SITEPOTENTIAL EMISSIONSITE</td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td colspan=\"12\">QUANTITY DISTANCE (METRES)</td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\">POLHARD TOAMFIELDLLIGIT</td><td rowspan=\"2\"></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ES No./NAMEON ARE A PLAN</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>ESN1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>APB)</td><td>ROAD</td><td></td><td></td><td></td><td></td><td>MOUSE</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>65</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>250</td><td>400</td><td></td><td></td><td></td><td></td><td>985</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td colspan=\"27\">NET EXPLOSIVE QUANTITY (HOMBO/1000 KLOGRAMMES)</td><td></td></tr><tr><td>HD 1-1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>D92</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>D1030</td><td>D1118</td><td></td><td></td><td></td><td></td><td>D1310</td><td></td><td></td><td></td></tr><tr><td>HD 1-21</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>10750</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>135250</td><td>135250</td><td></td><td></td><td></td><td></td><td>270250</td><td></td><td></td><td></td></tr><tr><td>HD 1-22</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>10250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>90250</td><td>90250</td><td></td><td></td><td></td><td></td><td>183250</td><td></td><td></td><td></td></tr><tr><td>HD 1-33</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>D180</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>D2250</td><td>D3250</td><td></td><td></td><td></td><td></td><td>D4250</td><td></td><td></td><td></td></tr><tr><td>HD 1-34</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>25250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>60250</td><td>50250</td><td></td><td></td><td></td><td></td><td>L4250</td><td></td><td></td><td></td></tr><tr><td colspan=\"19\">MAXIMUM NEQ(dg) PERMITTED BY QUANTITY DISTANCE</td><td rowspan=\"4\" colspan=\"7\">21. LICENSING AUTHORITY(Date) (Signature)</td><td></td><td></td></tr><tr><td>HD 1:</td><td colspan=\"2\">2 000 HD 1-21</td><td colspan=\"4\">250 000 HD 1-22</td><td colspan=\"4\">250 000 HD 1-33</td><td colspan=\"3\">80 000 HD 1-34</td><td colspan=\"4\">250 000</td><td></td><td rowspan=\"3\"></td><td></td></tr><tr><td colspan=\"18\">ANY COMMINATION OF HD NOT EXCEEDING ONE OF THESE FIGURES WHEN MIXED IN ACCORDANCE WITH</td><td></td><td></td></tr><tr><td colspan=\"6\">HDMI TO PHYSICAL CAPACITY NOT EXCEEDING A TOTAL OF</td><td colspan=\"2\"></td><td colspan=\"10\">UNITS OF SPACE IN ACCORDANCE WITH</td><td></td><td></td></tr></table>",
+    "bbox": [
+      213,
+      168,
+      840,
+      764
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      363,
+      3,
+      631,
+      15
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      391,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "page_number",
+    "text": "-I-B-21-",
+    "bbox": [
+      472,
+      925,
+      529,
+      935
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      938,
+      927,
+      950
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 1,
+    "bbox": [
+      391,
+      33,
+      608,
+      45
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      842,
+      61,
+      927,
+      73
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      927,
+      86
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      850,
+      89,
+      927,
+      102
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "table",
+    "img_path": "images/54275cb3bb790c2a97786c8de52198331e57f451dcc5ff1d16eee0e87d4fec9f.jpg",
+    "table_caption": [
+      "Figure B-IV",
+      "AC/258-FORM X"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td colspan=\"6\">EXPLOSIVES LIMIT LICENCE</td><td colspan=\"13\">2. UNIT</td><td colspan=\"6\">3. LICENCE No.</td><td></td></tr><tr><td colspan=\"10\">SITE No./NAMEAPB 3</td><td colspan=\"9\">FOR USE ASExplosives Workshop</td><td colspan=\"6\">ADEQUATE FIRE FIGHTINGYES/NO</td><td></td></tr><tr><td colspan=\"5\">ELECTRICAL STANDARD</td><td colspan=\"8\">8. LIGHTNING PROTECTION YES/NO-</td><td colspan=\"6\">AREA PLAN No.</td><td colspan=\"6\">O. SAFEGUARD PLAN No.</td><td></td></tr><tr><td colspan=\"25\">CONSTRUCTIONAL DETAILSLight construction without protective roof</td><td></td></tr><tr><td colspan=\"5\">HEADWALL &amp; DOOR7BAR/3BAR/OTHER</td><td colspan=\"6\">TYPE OF FLOORConcrete</td><td colspan=\"6\">TYPE OF HEATINGSteamheating</td><td colspan=\"3\">IS.</td><td colspan=\"5\">SITE DRAWING No.</td><td></td></tr><tr><td colspan=\"25\">TRAVESSE DETALSumbarricaded</td><td></td></tr><tr><td rowspan=\"2\">EXPOSELIFEPOTENTIAL EMISSIONSIE</td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td colspan=\"12\">QUANTITY DISTANCE (METRES)</td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\"></td><td rowspan=\"2\">POLAND NO. ISHOLD LO(ELECTIVE)</td><td rowspan=\"2\"></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>(1) No./NAMEON: NEA PLAN</td><td></td><td></td><td></td><td>ESH1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>ESL2</td><td></td><td></td><td></td><td></td><td></td><td>ROAD</td><td></td><td></td><td></td><td>HOUSE</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>260</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>250</td><td></td><td></td><td></td><td></td><td></td><td>430</td><td></td><td></td><td></td><td>1010</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td colspan=\"25\">NET EXPLOSIVE QUANTITY (NONDS/1000KLOGRAMMES)</td><td></td></tr><tr><td>HD I-1</td><td></td><td></td><td></td><td>D8250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>17250</td><td></td><td></td><td></td><td></td><td></td><td>D1120</td><td></td><td></td><td></td><td>D1310</td><td></td><td></td><td></td></tr><tr><td>HD I-21</td><td></td><td></td><td></td><td>2250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>90250</td><td></td><td></td><td></td><td></td><td></td><td>135250</td><td></td><td></td><td></td><td>270250</td><td></td><td></td><td></td></tr><tr><td>HD I-22</td><td></td><td></td><td></td><td>2250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>90250</td><td></td><td></td><td></td><td></td><td></td><td>90250</td><td></td><td></td><td></td><td>180250</td><td></td><td></td><td></td></tr><tr><td>HD I-33</td><td></td><td></td><td></td><td>D1250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>D1250</td><td></td><td></td><td></td><td></td><td></td><td>D3250</td><td></td><td></td><td></td><td>D4250</td><td></td><td></td><td></td></tr><tr><td>HD I-34</td><td></td><td></td><td></td><td>2250</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>60250</td><td></td><td></td><td></td><td></td><td></td><td>60250</td><td></td><td></td><td></td><td>14250</td><td></td><td></td><td></td></tr><tr><td colspan=\"18\">MAXIMUM NEQ(kg) PERMITTED BY QUANTITY DISTANCE</td><td rowspan=\"4\" colspan=\"6\">21. LICENSING AUTHORITY(Date) (Signature)</td><td></td><td></td></tr><tr><td>HD I-1</td><td colspan=\"3\">10 000 HDI-21</td><td colspan=\"4\">250 000 HDI-22</td><td colspan=\"4\">250 000 HDI-33</td><td colspan=\"4\">250 000 HDI-34</td><td colspan=\"2\">250 000</td><td></td><td></td></tr><tr><td colspan=\"18\">ANY COMMINATION OF HD NOT EXCEEDING ONE OF THESE FIGURES WHEN MIXED IN ACCORDANCE WITH</td><td></td><td></td></tr><tr><td colspan=\"6\">HDID HDI-4 TO PHYSICAL CAPACITY NOT EXCEEDING A TOTAL OF</td><td colspan=\"3\"></td><td colspan=\"9\">UNITS OF SPACE IN ACCORDANCE WITH</td><td></td><td></td></tr></table>",
+    "bbox": [
+      193,
+      168,
+      838,
+      781
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      363,
+      3,
+      631,
+      15
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      393,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "page_number",
+    "text": "-1-B-22-",
+    "bbox": [
+      472,
+      925,
+      529,
+      935
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      938,
+      929,
+      950
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 2,
+    "bbox": [
+      391,
+      32,
+      610,
+      46
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      840,
+      60,
+      929,
+      73
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      927,
+      86
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      850,
+      87,
+      927,
+      102
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "image",
+    "img_path": "images/13ae505ee65034c63cd2367cdc114d430ea2951f269de352994c61ec6695d831.jpg",
+    "image_caption": [
+      "Figure B-V - Sketch of Ground available and surrounding facilities"
+    ],
+    "image_footnote": [],
+    "content": "1\n2\n3\n4\na\nN\nInhabited Building\nInhabited Building\nRailway, used for passenger traffic\nto a small extent\nPublic Traffic Route, heavy traffic\nAll distances in m",
+    "sub_type": "text_image",
+    "bbox": [
+      90,
+      176,
+      749,
+      847
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      391,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "footer",
+    "text": "-I-B-23-",
+    "bbox": [
+      472,
+      925,
+      529,
+      937
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      937,
+      929,
+      951
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 2,
+    "bbox": [
+      391,
+      32,
+      608,
+      45
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      840,
+      60,
+      929,
+      73
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      927,
+      86
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      850,
+      87,
+      927,
+      102
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "table",
+    "img_path": "images/63db0a41ab573a6e94016a10256243a319e9984a4cbf356477b6e29357c79d3c.jpg",
+    "table_caption": [
+      "TABLE B-I (PAGE 1)",
+      "EXTERIOR QUANTITY-DISTANCES"
+    ],
+    "table_footnote": [
+      "NOTE 1: Heavy traffic on road - therefore full Inhabited Building Distance."
+    ],
+    "table_body": "<table><tr><td rowspan=\"2\">ESH No.(PES)TYPE</td><td rowspan=\"2\">NEQkg/HD</td><td colspan=\"6\">Exterior Quantity-Distance to ES in metres</td></tr><tr><td>InhabitedBuildingDistance</td><td>ReferenceColumn/-Row</td><td>Public Traffic RouteHeavyTraf.1)</td><td>ReferenceColumn/-Row</td><td>RailwayLight passenger Traf.2)</td><td>ReferenceColumn/Row</td></tr><tr><td>IGLOOS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>1 &amp; 2</td><td>20 000/1.1</td><td></td><td>Table 1f/20</td><td>610</td><td>Table 1f/19(D13)</td><td>405</td><td>Table 1f/19(D11)</td></tr><tr><td>Face on</td><td></td><td>610</td><td>a/20</td><td>610</td><td>a/19(D13)</td><td>405</td><td>a/19(D11)</td></tr><tr><td>Rear on</td><td></td><td>610</td><td>b/20</td><td>610</td><td>b/19(D13)</td><td>405</td><td>b/19(D11)</td></tr><tr><td>Side on</td><td></td><td>610</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>3 &amp; 4</td><td>17 500/1.3(prop.)</td><td></td><td>Table 3Af/20</td><td>240</td><td>Table 3Af/19(D4)</td><td>160</td><td>Table 3Af/19(D3)</td></tr><tr><td>Face on</td><td></td><td>240</td><td></td><td>170</td><td>a/19(D4)</td><td>115</td><td>a/19(D3)</td></tr><tr><td>Rear on</td><td></td><td>170</td><td></td><td>170</td><td>b/19(D4)</td><td>115</td><td>b/19(D3)</td></tr><tr><td>Side on</td><td></td><td>170</td><td></td><td></td><td></td><td></td><td>Table 2f/193)</td></tr><tr><td>Face on</td><td>5 000/1.2</td><td>Table 2f/20(D2)</td><td>320</td><td>320</td><td>f/20(D2)</td><td>135</td><td>a/193)</td></tr><tr><td>Rear on</td><td></td><td>320</td><td>a/20(D2)</td><td>320</td><td>a/20(D2)</td><td>135</td><td>b/193)</td></tr><tr><td>Side on</td><td></td><td>320</td><td>b/20(D2)</td><td>320</td><td>b/20(D2)</td><td>135</td><td>**</td></tr><tr><td></td><td></td><td>*</td><td>*</td><td>*</td><td>*</td><td>**</td><td></td></tr><tr><td>5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Face on</td><td></td><td>170</td><td>f/20</td><td>170</td><td>f/19</td><td>60</td><td>f/193)</td></tr><tr><td>Rear on</td><td></td><td>170</td><td>a/20</td><td>170</td><td>a/19</td><td>60</td><td>a/193)</td></tr><tr><td>Side on</td><td></td><td>170</td><td>b/20</td><td>170</td><td>b/19</td><td>60</td><td>b/193)</td></tr></table>",
+    "bbox": [
+      141,
+      181,
+      863,
+      612
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "NOTE 2: Light passenger traffic, the railway can be easily stopped - therefore use 2/3 Inhabited Building Distance.",
+    "bbox": [
+      129,
+      675,
+      917,
+      690
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "NOTE 3: Traffic is stopped promptly to avoid worst attack.",
+    "bbox": [
+      129,
+      718,
+      541,
+      732
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "\\*) HD 1.2 Q-Ds govern.",
+    "bbox": [
+      201,
+      760,
+      403,
+      775
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "\\*\\*) Except for face on HD 1.2 Q-Ds govern.",
+    "bbox": [
+      201,
+      782,
+      531,
+      796
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      391,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "footer",
+    "text": "-I-B-24-",
+    "bbox": [
+      470,
+      925,
+      531,
+      937
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      938,
+      929,
+      951
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 2,
+    "bbox": [
+      391,
+      32,
+      608,
+      45
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      840,
+      60,
+      929,
+      73
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      927,
+      86
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      850,
+      87,
+      927,
+      102
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "table",
+    "img_path": "images/c2513a56ce21b09b355ce331eb6083ef301e3094c78c2d79c51ee5c1e842cbcf.jpg",
+    "table_caption": [
+      "TABLE B-I (PAGE 2)",
+      "EXTERIOR QUANTITY-DISTANCES"
+    ],
+    "table_footnote": [
+      "NOTE 1: Heavy traffic on road – therefore use full Inhabited Building Distance."
+    ],
+    "table_body": "<table><tr><td rowspan=\"2\">ESH No.(PES)TYPE</td><td rowspan=\"2\">NEQkg/HD</td><td colspan=\"6\">Exterior Quantity-Distances to ES in metres</td></tr><tr><td>InhabitedBuildingDistance</td><td>ReferenceColumn/Row</td><td>Public Traffic RouteHeavyTraffic1)</td><td>ReferenceColumn/Row</td><td>RailwayLight PassengerTraffic2)</td><td>ReferenceColumn/Row</td></tr><tr><td>LIGHTSTRUC-TURES.BARRICA-DED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>1 &amp; 2</td><td>20 000/1.1</td><td>610</td><td>Table 1d/20</td><td>610</td><td>Table 1d/19</td><td>405</td><td>Table 1d/19</td></tr><tr><td>3 &amp; 4</td><td>17 500/1.3(prop.)</td><td>170</td><td>Table 3Ad/20</td><td>170</td><td>Table 3Ad/19</td><td>115</td><td>Table 3Ad/19</td></tr><tr><td></td><td>5 000/1.2</td><td>320*</td><td>Table 2d/20*</td><td>320*</td><td>Table 2d/19*</td><td>135*</td><td>Table 2d/193)*</td></tr><tr><td>5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td>170</td><td>Table 3Be/20</td><td>170</td><td>Table 3Be/19</td><td>60</td><td>Table 3Be/193)</td></tr><tr><td>ExplosivesWorkshopsNo. 1 &amp; 2</td><td colspan=\"7\">The workshops are light structures barricaded and with protective roofs. These equate to a columnC in Tables 1 and 2 as PES. Table 1 gives a minimum exterior quantity-distance of 400 m to an In-habited Building or major Public Traffic Route and 270 m to a minor Public Traffic Route.</td></tr></table>",
+    "bbox": [
+      132,
+      182,
+      853,
+      605
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "NOTE 2: Light passenger traffic, the railway can be easily stopped - therefore use 2/3 Inhabited Building Distance.",
+    "bbox": [
+      129,
+      667,
+      917,
+      682
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "NOTE 3: Traffic is stopped promptly to avoid worst attack.",
+    "bbox": [
+      129,
+      710,
+      539,
+      725
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "\\*) HD 1.2 Q-Ds govern.",
+    "bbox": [
+      131,
+      752,
+      354,
+      768
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      391,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "footer",
+    "text": "-I-B-25-",
+    "bbox": [
+      470,
+      925,
+      531,
+      937
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      937,
+      929,
+      951
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 2,
+    "bbox": [
+      391,
+      32,
+      608,
+      45
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      840,
+      60,
+      929,
+      73
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      927,
+      86
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      850,
+      87,
+      927,
+      102
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "table",
+    "img_path": "images/0599409fb50b9fc8ca48970e45e8dcf7743086cf0d627f96945b2b8a8e5f29c4.jpg",
+    "table_caption": [
+      "TABLE B-II",
+      "INTERIOR QUANTITY-DISTANCES"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td rowspan=\"2\">ESH No.(PES)TYPE</td><td rowspan=\"2\">NEQKg/HD</td><td colspan=\"5\">Interior Quantity-Distances to ES in metres</td></tr><tr><td>ReferenceTable/column</td><td>OtherESH</td><td>ReferenceTable/row</td><td>Workshop</td><td>ReferenceTable/row</td></tr><tr><td>Igloo (7 bar)ESH 1 &amp; 2</td><td>20 000/1.1</td><td>1/f</td><td>22(virtuallycompleteprotection)</td><td>1/1</td><td> $220^{1)}$ </td><td>1/16</td></tr><tr><td rowspan=\"2\">ESH 3 &amp; 4</td><td>17 500/1.3(prop.)</td><td>3A/f</td><td>25(high/limiteddegree protection)</td><td>3A/1</td><td>84</td><td>3A/16</td></tr><tr><td>5 000/1.2</td><td>2/f</td><td>2</td><td>2/1*</td><td>25*</td><td>2/16</td></tr><tr><td>ESH 5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td>3B/g</td><td>2**</td><td>3B/1</td><td>25</td><td>3B/16</td></tr><tr><td>Light struc-ture, barri-cadedESH 1 &amp; 2</td><td>20 000/1.1</td><td>1/d</td><td>66(High degreeprotection)</td><td>1/14</td><td> $220^{1)}$ </td><td>1/16</td></tr><tr><td rowspan=\"2\">ESH 3 &amp; 4</td><td>17 500/1.3(prop.)</td><td>3A/d</td><td>32</td><td>3A/14</td><td>84</td><td>3A/16</td></tr><tr><td>5 000/1.2</td><td>2/d</td><td>90(limited de-gree of pro-tection)***</td><td>2/14***</td><td>25***</td><td>2/16***</td></tr><tr><td>ESH 5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td>3B/c</td><td>60</td><td>3B/14</td><td>25</td><td>3B/16</td></tr></table>",
+    "bbox": [
+      136,
+      182,
+      858,
+      742
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "NOTE 1: Attention is drawn to paragraph 1.3.1.13. regarding separation of Explosives Workshops from storage sites containing HD 1.1 ammunition.",
+    "bbox": [
+      129,
+      761,
+      929,
+      796
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "\\*) HD 1.3 Q-Ds govern.",
+    "bbox": [
+      129,
+      804,
+      354,
+      819
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "\\*\\*) Virtually complete protection - considerations may require greater distance.",
+    "bbox": [
+      129,
+      825,
+      717,
+      840
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "\\*\\*\\*) HD 1.2 Q-Ds govern for ESH and HD 1.3 Q-Ds for workshops.",
+    "bbox": [
+      129,
+      847,
+      640,
+      861
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      391,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "footer",
+    "text": "-I-B-26-",
+    "bbox": [
+      470,
+      925,
+      531,
+      937
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      937,
+      929,
+      951
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "text_level": 2,
+    "bbox": [
+      391,
+      32,
+      611,
+      46
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "ANNEX I-B",
+    "bbox": [
+      840,
+      60,
+      929,
+      73
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1",
+    "bbox": [
+      855,
+      74,
+      929,
+      87
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1)",
+    "bbox": [
+      848,
+      87,
+      929,
+      100
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED",
+    "bbox": [
+      391,
+      910,
+      608,
+      923
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "footer",
+    "text": "-1-B-27-",
+    "bbox": [
+      470,
+      925,
+      531,
+      935
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2",
+    "bbox": [
+      840,
+      937,
+      929,
+      950
+    ],
+    "page_idx": 6
+  }
+]

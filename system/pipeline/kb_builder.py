@@ -111,8 +111,9 @@ def reindex_from_units(
     chroma_dir.mkdir(parents=True, exist_ok=True)
 
     chroma  = chromadb.PersistentClient(path=str(chroma_dir))
+    from pipeline.retriever import best_device
     emb_fn  = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=EMBED_MODEL
+        model_name=EMBED_MODEL, device=best_device() or "cpu"
     )
     try:
         chroma.delete_collection(col_name)

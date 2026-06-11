@@ -1,0 +1,132 @@
+{
+  "total": 138,
+  "correct": 123,
+  "wrong": 15,
+  "accuracy": 89.13043478260869,
+  "by_table": {
+    "Table 4": {
+      "correct": 24,
+      "total": 28
+    },
+    "Table 5": {
+      "correct": 23,
+      "total": 27
+    },
+    "Table 6": {
+      "correct": 24,
+      "total": 27
+    },
+    "Table T.2": {
+      "correct": 24,
+      "total": 28
+    },
+    "Table 133": {
+      "correct": 28,
+      "total": 28
+    }
+  },
+  "by_verdict": {
+    "UYGUN": {
+      "tp": 61,
+      "fn": 14,
+      "fp": 1
+    },
+    "UYGUN DEĞİL": {
+      "tp": 62,
+      "fn": 1,
+      "fp": 14
+    }
+  },
+  "errors": [
+    {
+      "item_no": 1,
+      "text": "Magazine Alpha stores 800 kg NEQ of HD 1.1 artillery shells and 300 kg NEQ of HD 1.5 insensitive munitions. The combined storage is classified and treated as HD 1.1 for all quantity-distance calculations.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table (p.192) lists separate NEQ limits for each Hazard Division (e.g., HD 1.1 = 40 000 kg NEQ) and does not combine HD 1.5 with HD 1.1. The standard requires each hazard division to be evaluated according to its own classification; treating HD 1.5 insensitive munitions as HD 1.1 for quantity‑distance calculations violates this rule.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 11,
+      "text": "Magazine L-7 stores HD 1.5 substances alongside other HD 1.5 items. The combined storage is classified as HD 1.1.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 4 shows that when a hazard division is stored with the same division the aggregate classification remains that division (e.g., “HD 1.1 stored with HD 1.1 → aggregate classification HD 1.1”, “HD 1.2.1 stored with HD 1.2.1 → HD 1.2.1”, etc.). By analogy, HD 1.5 stored with HD 1.5 should be classified as HD 1.5, not downgraded to HD 1.1 as stated in the item. Hence the classification is non‑compliant.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 0.82
+    },
+    {
+      "item_no": 12,
+      "text": "Facility R-1 stores HD 1.6 and HD 1.2.1 items together. The aggregate classification applied is HD 1.2.1.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 4 specifies that when HD 1.2.1 is stored with HD 1.6, the default aggregate classification is HD 1.1 (or HD 1.2.1 only if proven by testing or analogy). The item applies HD 1.2.1 without such justification, violating the rule.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 25,
+      "text": "Building F-6 stores HD 1.5 and HD 1.5 items together. The storage is classified as HD 1.5 for standoff calculations.",
+      "verdict": "UYGUN",
+      "reasoning": "Table 4 – “Aboveground Storage, Mixing and Aggregation Rules” specifies that when Hazard Division 1.5 material is stored together with Hazard Division 1.5 material, the aggregate classification remains HD 1.5. The audit item stores only HD 1.5 items together and classifies the storage as HD 1.5, which follows this rule.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 47,
+      "text": "Building 22 stores Compatibility Group C and Group D explosive substances together. All substances have been confirmed to have passed UN Test Series 3, and the required documentation is on file.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 lists “Compatibility Group C with Compatibility Group D: mixing not permitted.” The exception in Note 1 (mixing permitted if UN Test Series 3 passed) only applies to cells marked as permitted, not to this “not permitted” entry. Therefore storing C and D together violates the standard.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 48,
+      "text": "Magazine Delta stores Compatibility Group D substances that have all passed UN Test Series 3, stored together with Compatibility Group C substances that have also passed UN Test Series 3.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 (Aboveground Storage of Explosive Substances) lists Compatibility Group C with Compatibility Group D as “mixing not permitted”. The note about UN Test Series 3 only applies to entries that are otherwise permitted, so storing CG D and CG C together violates the table’s prohibition.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 49,
+      "text": "Depot Bravo stores Compatibility Group C substances with Compatibility Group C substances. All substances have passed UN Test Series 3, with documentation available.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 (Aboveground Storage of Explosive Substances) lists “Compatibility Group C with Compatibility Group C: mixing not permitted.” The note about UN Test Series 3 only applies to entries where mixing is permitted, not to this prohibited combination. Therefore storing Group C substances together violates the standard.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 50,
+      "text": "Facility 9 stores Compatibility Group D and Group D explosive substances together. All substances have passed UN Test Series 3.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 (Aboveground Storage of Explosive Substances) lists “Compatibility Group D with Compatibility Group D: mixing not permitted.” The note allowing mixing when UN Test Series 3 is passed applies only to entries marked as permitted, not to this prohibited combination. Therefore storing Group D substances together violates the standard.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 92,
+      "text": "Magazine 12 stores Compatibility Group B fuzes with Compatibility Group D articles. The NEQ of the fuzes is aggregated and treated as Compatibility Group F for Q-D calculations.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 6 shows that mixing Compatibility Group B with Compatibility Group D is “mixing not permitted”. Therefore storing B‑group fuzes together with D‑group articles violates the mixing rule, and reclassifying the B‑group fuzes’ NEQ as Group F for Q‑D calculations does not change this prohibition.",
+      "expected": "UYGUN",
+      "table": "Table 6",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 93,
+      "text": "Depot 13 stores Compatibility Group B fuzes with Compatibility Group E articles. The combined NEQ is designated as Compatibility Group F, and Q-D calculations are performed accordingly.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 6 shows that mixing Compatibility Group B with Compatibility Group E is “mixing not permitted”. Therefore storing B‑group fuzes together with E‑group articles and reclassifying the combined NEQ as Group F violates the permitted‑mixing rules.",
+      "expected": "UYGUN",
+      "table": "Table 6",
+      "elapsed_s": 0.0
+    }
+  ]
+}

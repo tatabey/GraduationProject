@@ -1,0 +1,8 @@
+[
+  {
+    "table_name": "Table_page79",
+    "page_idx": 79,
+    "reject_reason": "html_len=0 < 100",
+    "html_len": 0
+  }
+]

@@ -1,0 +1,8890 @@
+[
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "the least amount allowed by the appropriate table for distances separating the storage sites or explosives workshops concerned. ",
+    "bbox": [
+      171,
+      125,
+      884,
+      161
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "c) The quantity-distances required from each of two or more nearby storage sites to contain given quantities of ammunition and explosives of different hazard divisions at different times are determined as follows: ",
+    "bbox": [
+      112,
+      175,
+      882,
+      232
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1. Consider each building or stack, in turn, as a PES. ",
+      "2. Refer to the table of each hazard division which can be stored in the building or stack considered as a PES. ",
+      "3. Determine the quantity-distances for each hazard division as the minimum to be required from the building or stack. ",
+      "4. Record the quantity-distances in terms of each hazard division in each instance as those to be required from the building or stack. "
+    ],
+    "bbox": [
+      173,
+      245,
+      884,
+      454
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "d) Alternatively calculate the permitted quantity of each hazard division based upon the available distances. ",
+    "bbox": [
+      112,
+      473,
+      882,
+      510
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "1.3.2.5. Required Quantity-Distances of Ammunition or Explosives of more than one Hazard Division in a Single Site ",
+    "bbox": [
+      115,
+      547,
+      882,
+      576
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "When ammunition or explosives of different hazard divisions are kept in a single site at the same time, the required quantity-distances are determined as follows using the Q-D Tables in Annex A, Section II: ",
+    "bbox": [
+      112,
+      599,
+      882,
+      635
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) When ammunition or explosives of Hazard Division 1.4 are kept in the same site as ammunition or explosives of one or more other hazard divisions, the Hazard Division 1.4 is ignored subject to the overriding requirement of $25\\mathrm{m}$ where appropriate, see Annex A, Section II, paragraph 9. ",
+      "2) When different types of ammunition of Hazard Division 1.2 are kept in the same site, the required quantity-distance is that given for the aggregate quantity taken as the more hazardous type (see subparagraph 1.3.1.5.b)). ",
+      "3) When different types of ammunition of Hazard Division 1.3 are kept in the same site, the required quantity-distance is that given for the aggregate quantity requiring the largest quantity-distance in Tables 3A or 3B (see subparagraphs 1.3.1.6.a) - c)). "
+    ],
+    "bbox": [
+      114,
+      656,
+      884,
+      882
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-19- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "4) When ammunition or explosives of Hazard Division 1.1 and 1.2 are kept in the same site, determine the quantity-distance for the aggregate quantity (i.e. the total quantity of Hazard Divisions 1.1 and 1.2) considered as Hazard Division 1.1. Next determine the quantity-distance for the aggregate quantity considered as Hazard Division 1.2, taking account of 2) above, when appropriate. The required quantity-distance is the greater of these two distances. ",
+      "5) When ammunition or explosives of Hazard Division 1.1 and 1.3 are kept in the same site, determine the quantity-distance for the aggregate quantity considered as Hazard Division 1.1. Next, determine the quantity-distance for the aggregate quantity considered as Hazard Division 1.3. The required quantity-distance is the greater of these two distances. ",
+      "6) When ammunition or explosives of Hazard Division 1.2 and 1.3 are kept in the same site, determine the quantity-distance for the amount of Hazard Division 1.2. Next, determine the quantity-distance for the amount of Hazard Division 1.3. The required quantity-distance is the greater of these two distances. ",
+      "7) When ammunition or explosives of Hazard Divisions 1.1, 1.2 and 1.3 are kept in the same site, determine the quantity-distance for the aggregate quantity considered as Hazard Division 1.1, next as Hazard Division 1.2 and finally as Hazard Division 1.3. The required quantity-distance is the greatest of these three distances. "
+    ],
+    "bbox": [
+      112,
+      152,
+      884,
+      503
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "1.3.2.6. Permissible Quantities of Ammunition or Explosives of more than one Hazard Division in a Single Site ",
+    "bbox": [
+      115,
+      536,
+      882,
+      566
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "When ammunition or explosives of different hazard divisions are kept in a single site at the same time the permissible quantities are determined as follows using the Q-D Tables in Annex A, Section II: ",
+    "bbox": [
+      112,
+      596,
+      882,
+      633
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) When ammunition or explosives of Hazard Division 1.4 are kept in the same site as ammunition or explosives of one or more other hazard divisions, any quantity ",
+      "of Hazard Division 1.4 may be included subject to the availability of the 25 m distance where appropriate, see Annex A, Section II, paragraph 9. ",
+      "2) When different types of ammunition of Hazard Division 1.2 are kept in the same site, the permissible aggregate quantity is that given for the more hazardous type (see subparagraph 1.3.1.5.b)). ",
+      "3) When different types of ammunition of Hazard Division 1.3 are kept in the same site, the permissible aggregate quantity is the lower quantity in Tables 3A or 3B (see subparagraph 1.3.1.6.a) - c)). "
+    ],
+    "bbox": [
+      112,
+      652,
+      885,
+      862
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-20- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      941
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "4) When ammunition or explosives of Hazard Divisions 1.1 and 1.2 are kept in the same site, the permissible aggregate quantity of Hazard Division 1.2 is determined as described in 2) above. Next, determine the permissible quantity of Hazard Division 1.1. The permissible quantity of the combined hazard divisions is the smaller of these two quantities. ",
+      "5) When ammunition or explosives of Hazard Divisions 1.1 and 1.3 are kept in the same site, determine the permissible quantity for each hazard division. The permissible quantity of the combined hazard divisions is the smaller of these two quantities. ",
+      "6) When ammunition or explosives of Hazard Divisions 1.2 and 1.3 are kept in the same site, determine the permissible quantity for each hazard division separately. The two quantities may be stored together independently. ",
+      "7) When ammunition or explosives of Hazard Division 1.1, 1.2 and 1.3 are kept in the same site, determine the permissible quantity of Hazard Division 1.1 alone, next, the permissible quantity of Hazard Division 1.2 alone, and finally the permissible quantity of Hazard Division 1.3 alone. The permissible quantity of the combined hazard divisions is the smallest of these three quantities. "
+    ],
+    "bbox": [
+      112,
+      125,
+      884,
+      476
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "1.3.2.7. Relaxation of Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      504,
+      477,
+      519
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "a) Interior Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      112,
+      542,
+      366,
+      557
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Relaxation of Inter-Magazine Distances may result in the total loss of stocks in other buildings or stacks or at least their being rendered unserviceable. Furthermore, a much larger explosion may result than that used as basis for Exterior Quantity-Distances. Disastrous damage to property and injury to the general public may be the consequence. ",
+      "2) Relaxation of Explosives Workshop Distances may be permitted when a specially constructed building is available to protect against blast and debris or where the number of persons in the workshop is small. "
+    ],
+    "bbox": [
+      173,
+      584,
+      885,
+      750
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "b) Exterior Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      112,
+      770,
+      371,
+      785
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Relaxation of Exterior Quantity-Distances may increase the hazard to life and property. Relaxation should therefore be permitted only with the written consent of the appropriate authorities (see also subparagraph 1.1.1.1.d)). ",
+    "bbox": [
+      171,
+      806,
+      884,
+      864
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-21- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      806,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-22- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "Section III - Quantity-Distances for Certain ",
+    "text_level": 1,
+    "bbox": [
+      368,
+      155,
+      687,
+      169
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "Types of Ammunition and Explosives ",
+    "text_level": 1,
+    "bbox": [
+      391,
+      184,
+      665,
+      198
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.1. Barricaded Stacks of Ammunition ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      243,
+      480,
+      258
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "a) Stacks (Modules) of Bombs etc. ",
+    "bbox": [
+      112,
+      281,
+      396,
+      295
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "D1-distances up to 30 000 kg and D2-distances from 30 001 to 120 000 kg as shown in Annex A, Section II, Table 1 may be used between unboxed bombs of Hazard Division 1.1 under the following conditions: ",
+    "bbox": [
+      171,
+      323,
+      884,
+      380
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) The stacks are to be separated by effective earth barricades. ",
+      "2) The bombs must be relatively strong so as to withstand intense air shock without being crushed. ",
+      "3) There should be the minimum of flammable dunnage etc., which could catch alight and lead to subsequent mass explosion of a stack. ",
+      "4) When the D1-distances are used then the stacking height must not exceed 1 m. "
+    ],
+    "bbox": [
+      173,
+      408,
+      885,
+      554
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "In the event of an explosion in one stack the distances will provide a high degree of protection against simultaneous detonation of bombs in adjacent stacks. Some of the bombs in the ES may be buried and not immediately accessible, some may be slightly damaged. There may be occasional fires and delayed low order explosions, particularly if the bombs are stacked on concrete storage pads. ",
+    "bbox": [
+      243,
+      580,
+      884,
+      681
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "b) Other Unpackaged Ammunition of Hazard Division 1.1 ",
+    "bbox": [
+      112,
+      707,
+      554,
+      723
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "In principle, the foregoing distances and conditions may be applicable to other kinds of unboxed ammunition of Hazard Division 1.1 and Compatibility Group D. An example is the 155 mm shell M107 which has a robust steel casing and a relatively insensitive high explosive filling. Each case must be judged on its merits, using ad hoc tests or analogy with existing test data as requisite. ",
+    "bbox": [
+      171,
+      744,
+      885,
+      824
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "c) Cluster Bomb Units ",
+    "bbox": [
+      114,
+      844,
+      315,
+      859
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-23- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "Tests have shown that certain packaged cluster bomb units (CBU) may be stored safely in accordance with subparagraph a) above. In this case, it is the robust containers rather than the heavy casings which prevent sympathetic detonation between stacks. Each type of bomblet and container must be carefully assessed to ensure a satisfactory combination for the application of this modular storage. ",
+    "bbox": [
+      171,
+      125,
+      884,
+      205
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "d) Buffered Storage ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      225,
+      295,
+      239
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "1) Tests have shown that stacks of certain types of bombs can be stored in the same facility in such a manner separated by using buffer materials (ammunition as well as inert materials), that even though a high order detonation will propagate through one stack it will not propagate to the second stack. Storage under these conditions presents the risk of explosion of a single stack only, rather than a mass risk involving all the stacks in one module, cell, or building. Hence, the Net Explosives Quantity (NEQ) of the larger stack plus the NEQ of the \"buffer\" material, if any, may be used to determine the quantity-distances requirement for each entire module or building so used. ",
+    "bbox": [
+      174,
+      260,
+      885,
+      426
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "2) The storage of bombs using the buffered storage concept and basing the NEQ of storage on the NEQ of the largest stack plus the buffer material is authorized provided nationally approved storage arrangements are used. See Part II, Chapter 3, Section I. ",
+    "bbox": [
+      173,
+      452,
+      882,
+      511
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.2. Unbarricaded Stacks of TNT or Amatol Filled Shell ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      524,
+      601,
+      540
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "Certain types of TNT or Amatol filled projectiles of Hazard Division 1.1 may be stored in stacks which comply with the principle that, although a high order detonation would propagate throughout a stack, it would be unlikely to propagate from stack to stack. Storage under these conditions presents the risk of explosion of a single stack only, rather than a mass risk involving all the stacks in one module or building. Hence the NEQ of the appropriate single stack may be used to determine the quantity-distances for each entire module or building so used. The special types of projectiles and the conditions are given in Part II, Chapter 3, Section I. ",
+    "bbox": [
+      112,
+      571,
+      887,
+      693
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.3. Unbarricaded Storage of Fixed Ammunition with Robust Shell ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      720,
+      675,
+      736
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "Trials show that ammunition comprising robust shell with an explosive content not exceeding about 20 % of the total weight (excluding propelling charges, cartridge cases and weight of packages) and ",
+    "bbox": [
+      112,
+      758,
+      885,
+      796
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-24- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "with shell-walls sufficiently thick to prevent perforation by fragments produced by ammunition of Hazard Division 1.1 may be stored without barricades without the risk of practically instantaneous explosion provided an increased quantity-distance is used. ",
+    "bbox": [
+      112,
+      122,
+      882,
+      180
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.4. Complete Rounds ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      207,
+      371,
+      222
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "Complete rounds of fixed or semifixed ammunition of Hazard Division 1.1 involve also the risk of Hazard Division 1.2. Therefore, the greater of the distances given in Annex A, Table 1 or Table 2 is observed. ",
+    "bbox": [
+      112,
+      252,
+      882,
+      289
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.5. Propulsive Rockets ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      317,
+      381,
+      332
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "Rockets stored in a propulsive state (i.e. unpackaged propulsive rockets and missiles in the assembled condition, waiting to be placed upon a tactical launcher or vehicle) present special problems in which the flight range of the rocket is the main safety criterion rather than the explosive content. Consequently the rockets should be stored in special buildings or held by devices to prevent their flight (see Part II, Chapter 3, Section II). The quantity-distances for the appropriate hazard division apply only when these conditions are met, except for the special case of missiles on the launchers at a missile installation (see Part IV, Chapter 3). Rockets or missiles in either an assembled or unassembled condition, when packaged as for storage and transport, do not in practice present the risk of significant flight. ",
+    "bbox": [
+      112,
+      363,
+      884,
+      527
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.6. Storage of Very Sensitive Explosives ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      555,
+      497,
+      571
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "It is possible for the blast at an ES to cause practically instantaneous initiation of packaged primary explosive substances and certain other very sensitive explosive substances like blasting gelatine even when barricaded at the D4-distances in Annex A, Table 1. Storage conditions for such explosives are assessed individually taking account of the protection afforded by packaging and the building at the ES. ",
+    "bbox": [
+      112,
+      600,
+      882,
+      681
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "1.3.3.7. Storage of Depleted Uranium (DU) Ammunition ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      695,
+      579,
+      709
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "Quantity-distances will, in general, be those appropriate to the Hazard Classification of the particular ammunition stored. In some cases a special radiological safety distance may be required between a storehouse and the nearest point of public access if it is estimated that the adverse radiological/toxic effects of an atmospheric dispersion of DU could give rise to a possibility of injury to a member of the public comparable to that caused by the explosive components of the ammunition. In such a case the more restricted of the two distances, the radiological safety distance or the explosives quantity-distance, shall be the one applied. ",
+    "bbox": [
+      112,
+      739,
+      884,
+      862
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-25- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "Section IV - Quantity-Distances for Certain Exposed Sites ",
+    "text_level": 1,
+    "bbox": [
+      381,
+      138,
+      702,
+      169
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "1.3.4.1. Separation of Miscellaneous Occupied Buildings and Facilities in an Explosives Area ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      185,
+      729,
+      213
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "Buildings containing empty packages or other inert materials should be separated from a PES by a distance based on the risk to the ammunition and explosives from a fire in the empty packages or other inert materials (minimum distance 25 m). Special consideration should be given to the separation of high value packages from a PES. ",
+    "bbox": [
+      161,
+      237,
+      860,
+      317
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "1.3.4.2. Criteria for Siting of Holding, Marshalling and Interchange Yards ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      345,
+      749,
+      359
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "a) Holding Yards ",
+    "bbox": [
+      163,
+      390,
+      329,
+      404
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "Each holding yard is considered to be a PES. Quantity-Distances and/or explosive limits are determined as for storage sites. ",
+    "bbox": [
+      221,
+      432,
+      858,
+      469
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "b) Marshalling Yards ",
+    "bbox": [
+      163,
+      496,
+      356,
+      511
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Appropriate Inter-Magazine Distances must be applied to protect a marshalling yard from external explosions. ",
+      "2) It is not necessary to treat a marshalling yard as a PES provided the vehicles are moved expeditiously from the yard. If a yard is used at any time for purposes other than marshalling, e.g. holding, it is considered to be a PES and appropriate quantity-distances as for storage site applied. "
+    ],
+    "bbox": [
+      223,
+      539,
+      860,
+      684
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "c) Interchange Yards ",
+    "bbox": [
+      163,
+      703,
+      354,
+      718
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "It is not necessary to treat an interchange yard as a PES, provided the vehicles are moved expeditiously from the yard. However, if a yard is used at any time for a purpose other than interchange, it is considered to be a PES and appropriate quantity-distances applied. ",
+    "bbox": [
+      221,
+      739,
+      860,
+      798
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      621,
+      914
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-26- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      942
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "1.3.4.3. Separation of Pipelines etc from an Explosives Area ",
+    "bbox": [
+      164,
+      125,
+      653,
+      140
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "a) Aboveground Facilities ",
+    "bbox": [
+      163,
+      163,
+      389,
+      176
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "For the separation of POL facilities: see Chapter 5. ",
+    "bbox": [
+      221,
+      205,
+      571,
+      220
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "b) Underground Pipelines ",
+    "bbox": [
+      163,
+      248,
+      386,
+      263
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "For the separation of underground pipelines: see Chapter 5. ",
+    "bbox": [
+      221,
+      290,
+      630,
+      306
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "1.3.4.4. Separation of Electric Supply and Communications Systems from an Explosives Area ",
+    "bbox": [
+      164,
+      340,
+      858,
+      370
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "There may be mutual hazards created by siting an explosives area near to high voltage transmission lines, powerful transmitters, vital communications lines etc. Each case must be assessed individually to take account of the voltage and power involved, the importance of the transmission lines, the time for the necessary repairs and the consequences of losing communications at a time when assistance may be required following an explosion. The assessment should be based on the following factors: ",
+    "bbox": [
+      161,
+      394,
+      860,
+      514
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "1) Hazard from the Ammunition or Explosives ",
+    "bbox": [
+      164,
+      536,
+      539,
+      551
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "The Public Traffic Route Distance is a reasonable separation, subject to a minimum of 60 m, to protect public service or military emergency communication lines and overhead electrical power transmission lines exceeding 15 kV or associated substations. Particularly important installations such as the lines of a supergrid network should be given greater protection from fragments and debris by affording them one or even one and a half times the Inhabited Building Distance. This increased separation is also appropriate for microwave, ultra high frequency (UHF) reflectors which would be vulnerable to damage by air shock or debris and fragments. Minor transmission and communication lines such as those serving the buildings of the explosives area, may be sited in accordance with subparagraph 2) below. ",
+    "bbox": [
+      233,
+      579,
+      860,
+      788
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      620,
+      914
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-27- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      941
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "2) Hazard to the Ammunition or Explosives ",
+    "text_level": 1,
+    "bbox": [
+      163,
+      125,
+      507,
+      140
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "The quantity-distances determined on the basis of 1) above should be reviewed in the light of a possible hazard from electrical lines and transmitters to the ammunition and explosives themselves. If any overhead transmission line approaches nearer to a building containing ammunition or explosives than one span between the poles or pylons, consideration should be given to the consequences of mechanical failure in the line. Arcing and large leakage currents may be set up before the supply could be isolated. An overriding minimum separation of 15 m is prudent. Generating stations and substations should be at least 45 m from any building containing ammunition or explosives in view of the small but real risk of fire, explosions or burning oil in such electrical equipment. Powerful transmitters of electromagnetic energy may hazard electrically initiated ammunition. See Chapter 6. ",
+    "bbox": [
+      221,
+      167,
+      863,
+      377
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "1.3.4.5. Explosives Storage Site/Depot Safety ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      404,
+      552,
+      420
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "a) Protective Zones Around a Depot or Storage Site. ",
+    "text_level": 1,
+    "bbox": [
+      163,
+      448,
+      564,
+      465
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "Subject to national regulations it is advisable that any depot or Potential Explosion Site be surrounded by zones, out to the distance at which the hazard is considered tolerable, within which construction is controlled or made subject to special authorization. ",
+    "bbox": [
+      221,
+      492,
+      860,
+      551
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "b) Procedures for Safety Site Plans. ",
+    "text_level": 1,
+    "bbox": [
+      163,
+      570,
+      450,
+      586
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "1) Since all explosives areas require quantity-distance (QD) separations, a safety site plan is necessary to demonstrate these separation distances are provided before construction commences, or explosives are deployed into any given area. Maps and drawings will demonstrate graphically that separation distances are in compliance with appropriate tables in this Manual. The damaging effects of potential explosions may also be altered by barricades and specialized construction features. Site plan submissions will also demonstrate when these features exist and provide details for review by safety authorities. The following kinds of information constitute a safety site plan: ",
+    "bbox": [
+      223,
+      606,
+      862,
+      793
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      621,
+      914
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-28- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      942
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) A Q-D schedule providing the hazard division and net explosive quantity (NEQ) assigned to each potential explosion site (PES). ",
+      "(b) A map of the explosives area in relation to other internal facilities and buildings, surrounding villages, highways and cities (exterior Q-D). ",
+      "(c) Drawings showing the location of explosives buildings in relation to one another (interior Q-D). ",
+      "(d) Drawings showing details of construction features which affect quantity-distances "
+    ],
+    "bbox": [
+      294,
+      122,
+      860,
+      308
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "2) The NATO force sponsoring the new facility should require the preparation of a safety site plan and its submission through appropriate military and national authorities for review and approval. Normally, the military command planning to use the new facility will provide the specific details to support preparation of the site plan document. However, administrative details are properly the business of individual member nations. The intent of this requirement is to ensure that documentation is provided for competent review before funds are committed. ",
+    "bbox": [
+      223,
+      334,
+      860,
+      478
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "1.3.4.6. Levels of Protection ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      507,
+      435,
+      522
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "A more detailed examination of the levels of protection afforded by the quantity-distances given in Annex A, Tables 1-3B, and of the structures and activities considered acceptable at each protection level is given in Section VII for Hazard Division 1.1. ",
+    "bbox": [
+      161,
+      545,
+      860,
+      603
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      620,
+      913
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-29- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      941
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "Section V - Storage Buildings: General Principles and ",
+    "text_level": 1,
+    "bbox": [
+      346,
+      138,
+      739,
+      154
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "Influence on Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      423,
+      161,
+      660,
+      174
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "1.3.5.1. General ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      213,
+      357,
+      226
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "a) It is not considered practicable to construct surface buildings which withstand direct attack by hostile activities but in order to reduce the hazards and the quantity-distances as far as practicable, certain precautions in building construction should be observed. ",
+      "b) The construction of buildings for one hazard division only is uneconomic. Buildings may be used for storage of different hazard divisions because storage requirements vary in the course of time. ",
+      "c) The distances in Annex A, Tables 1 to 3 are based on explosives safety. They do not take account of structural requirements, space for roads and access for fire-fighting. These practical considerations may require greater distances than given in the tables. Guidance on structural requirements is given in Part II, Chapter 3, Section II. "
+    ],
+    "bbox": [
+      163,
+      258,
+      860,
+      509
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "1.3.5.2. Igloos ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      536,
+      344,
+      551
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "a) A storage site comprising igloos gives the simplest and safest set of Inter-Magazine Distances when it is a rectangular array with the axes of the igloos parallel and the doors all facing in one direction. A front-to-front configuration should be avoided since this requires a very large separation of the igloos. It may be expedient to arrange the igloos back-to-back in two rows, but this configuration may be less flexible for further development of the storage area. ",
+    "bbox": [
+      163,
+      574,
+      860,
+      697
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "b) Igloos which conform to the minimum design criteria in Part II, paragraph 2.3.2.2. qualify for reduced Inter-Magazine Distances compared with other types of aboveground magazines and open stacks. Igloos of a strength exceeding the minimum prescription may warrant further reductions in Inter-Magazine Distances. Conversely, the earth-covered buildings described in Annex, subparagraph 6.d) require larger Inter-Magazine Distances. It is for the National Authority to balance the cost of various types of construction against the cost and availability of real estate and to determine the optimum balance in any particular situation. ",
+    "bbox": [
+      163,
+      724,
+      860,
+      869
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      620,
+      914
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-30- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      941
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "1.3.5.3. ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      125,
+      218,
+      138
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "Blast Resistance of Structures at Exposed Sites ",
+    "text_level": 1,
+    "bbox": [
+      295,
+      125,
+      616,
+      140
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "It may be possible for a structure at an ES to fail under blast loading so that its contents are initiated practically instantaneously. This may be the result of major internal spalling from walls, implosion of the door(s) or catastrophic failure of the entire structure. The quantity-distances in Annex A, Table 1 presume that a structure at an ES is designed either to be strong enough to withstand the blast or to be so light that secondary projections from the structure do not initiate the contents taking account of their sensitiveness. An ES containing ammunition vulnerable to attack by heavy spalling (e.g. missile warheads filled with relatively sensitive high explosives) requires special consideration, see Part II, Chapter 5. ",
+    "bbox": [
+      161,
+      163,
+      860,
+      327
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "1.3.5.4. ",
+    "text_level": 1,
+    "bbox": [
+      164,
+      356,
+      220,
+      370
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "Influence of Protective Construction upon Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      295,
+      356,
+      719,
+      371
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "a) A building with marked asymmetry of construction, such as an igloo or another building with protective roof and walls, but with one relatively weak wall, induces very directional effects from the flames and the projection of burning packages containing ammunition and explosives of Hazard Division 1.3. However, it is assumed for simplicity that the effects from Hazard Division 1.3 are symmetrical about a PES, although it is known that other structural characteristics and the wind can be significant. ",
+    "bbox": [
+      161,
+      394,
+      860,
+      517
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "b) Roofs may be designed to have special functions, such as: ",
+    "bbox": [
+      161,
+      536,
+      623,
+      551
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "1) Containment of fragments and prevention of lbbing of ammunition (the roof on a PES). ",
+    "bbox": [
+      223,
+      573,
+      860,
+      609
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "2) Shielding against blast, projections and lobbed ammunition (the roof on an ES). ",
+    "bbox": [
+      221,
+      637,
+      840,
+      652
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "The quantity-distances for buildings which contain fragments etc. depend upon the particular design specifications. The reduced quantity-distances resulting from shielding roofs are incorporated in the Tables in Annex A. ",
+    "bbox": [
+      292,
+      674,
+      860,
+      732
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "c) Walls may be designed to exclude firebrands, projections and lobbed ammunition. The resultant reduced quantity-distances are incorporated in the Tables in Annex A. However, a reduction often depends also on the provision of shielding roofs. ",
+    "bbox": [
+      161,
+      758,
+      860,
+      815
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      620,
+      914
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-31- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      941
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      779,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "1.3.5.5. Construction to Contain Fragments and to Prevent Lobbing ",
+    "bbox": [
+      164,
+      125,
+      707,
+      140
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "a) The design of structures to contain projections or lobbed ammunition of Hazard Division 1.1 is an extremely complicated procedure and, unless warranted due to other special circumstances, is prohibitive in cost. ",
+    "bbox": [
+      161,
+      176,
+      860,
+      235
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "b) In practice, it is generally only feasible to design a structure when the NEQ is small or when the total content of the building is divided into smaller units by dividing walls which prevent the mass explosion of the entire content of the building in the event of explosion of one of the units. The design of a structure to contain projections and lobbed ammunition represents a more stringent requirement than that for dividing walls to prevent propagation. ",
+    "bbox": [
+      161,
+      269,
+      860,
+      371
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "1.3.5.6. Structures to Protect from Flame, Projections and Lobbed Ammunition ",
+    "bbox": [
+      164,
+      406,
+      781,
+      421
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "a) Protection from Effects of Ammunition of Hazard Division 1.1 ",
+    "bbox": [
+      163,
+      451,
+      653,
+      465
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "1) Protection against High Velocity Projections from the Explosion of Stacks of Ammunition ",
+    "bbox": [
+      223,
+      486,
+      860,
+      521
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "Ammunition stacks in the open or in buildings can produce high velocity projections during an explosion. These projections may penetrate storage buildings and retain sufficient energy to initiate the contents practically instantaneously. Certain of the Q-Ds in Annex A (igloos, rows 7, 8 and 9) presume that the roof, headwall and door(s) of igloos at the ES will arrest these high velocity fragments. The presence of a barricade around the stack or building is always preferred because of the increased protection given against attack by high velocity projections. ",
+    "bbox": [
+      292,
+      529,
+      860,
+      694
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "2) Protection against the Explosion on Impact of Lobbed Ammunition ",
+    "bbox": [
+      223,
+      714,
+      754,
+      729
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "In the case of accident or fire, ammunition may be lobbed from any of the PES in Table 1. Ammunition is least likely to be lobbed from the PES described in columns a and b and more likely to be lobbed as the PES description changes from c to f. These lobbed items may explode on impact (see subparagraph 1.2.1.2.b)). The fragments from these may penetrate stacks in the open or in a storage building and retain sufficient energy to initiate the stacks practically instantaneously. Certain of the quantity-distances in Annex A (igloos, rows 7, 8 and 9) presume that the roof, ",
+    "bbox": [
+      292,
+      743,
+      860,
+      887
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      620,
+      914
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "-1-3-32- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      941
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      401,
+      41,
+      621,
+      55
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      779,
+      68,
+      858,
+      81
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      778,
+      83,
+      858,
+      97
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "headwall and door(s) at the ES will arrest these high velocity fragments, but not necessarily lobbed items larger than 155 mm shell (see subparagraph 1.2.1.2.b)). The presence of a barricade around a building is always preferred and gives increased protection against the high velocity projections, with the exception of those arising from items lobbed over the barricade. ",
+    "bbox": [
+      292,
+      125,
+      860,
+      225
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "b) Protection from Effects of Ammunition of Hazard Division 1.2 or 1.3 ",
+    "bbox": [
+      163,
+      245,
+      699,
+      261
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "Certain types of construction provide a reasonable degree of protection against firebrands, comparatively low velocity projections, and lobbed ammunition (see Part II, paragraph 2.3.2.3.). Examples are: ",
+    "bbox": [
+      221,
+      283,
+      860,
+      342
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1. An earth-covered building with a headwall and door(s) of 15 cm reinforced concrete or equivalent. ",
+      "2. A heavy-walled building. ",
+      "3. A barricaded explosives workshop with a protective roof. "
+    ],
+    "bbox": [
+      223,
+      359,
+      860,
+      483
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "In such cases the smaller Interior Quantity-Distances in Annex A, Table 2 or Table 3 are used. If the door or one weak wall etc. does not completely conform to the above requirements, such smaller distances should only be authorized after a special assessment of the relative orientation of the weak elements and the hazards involved. ",
+    "bbox": [
+      221,
+      505,
+      860,
+      584
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      401,
+      901,
+      621,
+      914
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-33- ",
+    "bbox": [
+      482,
+      915,
+      539,
+      927
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      768,
+      928,
+      858,
+      941
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "Section VI - Barricades: General Principles and ",
+    "text_level": 1,
+    "bbox": [
+      354,
+      138,
+      702,
+      154
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "Influence on Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      411,
+      160,
+      648,
+      174
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.1. Functions of Barricades ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      213,
+      415,
+      226
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "a) An effective barricade arrests high velocity projections at low elevation from an explosion which otherwise could cause direct propagation of the explosion. ",
+      "b) A vertical faced barricade close to a PES also reduces the projection of burning packages, ammunition and debris. ",
+      "c) A barricade may also provide limited protection against blast and flame arising either from an external or from an internal explosion when the quantity of explosives is relatively small as it usually is in explosives workshops. "
+    ],
+    "bbox": [
+      112,
+      264,
+      882,
+      423
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.2. Influence of Barricades upon Quantity-Distances for Hazard Division 1.1 ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      459,
+      749,
+      473
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "a) Inter-Magazine Distances ",
+    "bbox": [
+      114,
+      497,
+      352,
+      511
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "An effective barricade avoids the use of very large Inter-Magazine Distances around a site containing ammunition of Hazard Division 1.1. This is a significant factor in the cost of a depot. The reduced quantity-distances are given in Annex A, Table 1. ",
+    "bbox": [
+      171,
+      524,
+      882,
+      583
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "b) Explosives Workshop Distances ",
+    "bbox": [
+      114,
+      625,
+      398,
+      638
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "An effective barricade avoids the use of large Explosives Workshop Distances from PES containing ammunition of Hazard Division 1.1. A barricade or heavy wall around an explosives workshop considered as an ES may provide some protection for personnel in the lee of the barricade. ",
+    "bbox": [
+      171,
+      654,
+      882,
+      712
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "c) Exterior Quantity-Distances ",
+    "bbox": [
+      114,
+      739,
+      369,
+      754
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "Investigation of damage caused by blast and projections in recorded accidents and trials shows that, in the case of Hazard Division 1.1, the difference between the Exterior Quantity-Distances required for barricaded and unbarricaded buildings or stacks respectively, is too small to be taken into account. ",
+    "bbox": [
+      171,
+      768,
+      882,
+      826
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-34- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.3. Influence of Barricades upon Quantity-Distances for Hazard Division 1.2 or 1.3 ",
+    "bbox": [
+      115,
+      125,
+      794,
+      140
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "A barricade, other than a door barricade, does not itself generally provide sufficiently effective protection against flame, radiant heat, projections and lobbed ammunition to justify a reduction of the Inter-Magazine Distances around a PES containing Hazard Division 1.2 or 1.3. However, to achieve flexibility in the use of sites, each one should be effectively barricaded. ",
+    "bbox": [
+      112,
+      169,
+      884,
+      248
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.4. Influence of Door Barricades upon Quantity-Distances for Hazard Division 1.1 ",
+    "bbox": [
+      115,
+      277,
+      789,
+      293
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "A door barricade is superfluous, as far as the use of Inter-Magazine Distances is concerned, when igloos or other earth-covered buildings are sited side-to-side or rear-to-rear. When the front of such a building at an ES faces the side or rear of an earth-covered building at a PES, a door barricade may intercept concrete debris but the major consideration is the blast resistance of the headwall and door(s) at the ES and this is not much affected by the barricade. When such buildings are sited front-to-front, a door barricade may be ineffective. As regards personnel hazards, a door barricade of reasonable height does not intercept debris which is lobbed or projected at a high elevation. ",
+    "bbox": [
+      112,
+      323,
+      884,
+      465
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.5. Influence of Door Barricades upon Quantity-Distances for Hazard Division 1.2 ",
+    "bbox": [
+      115,
+      495,
+      794,
+      510
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "A fire in an earth-covered building containing ammunition of Hazard Division 1.2 produces a serious hazard through the doorway from fragments and ejected ammunition. This hazard is reduced by providing a separate barricade, with a vertical wall facing the door. Such a barricade at an ES permits reduced distances shown in Annex A, Table 2. ",
+    "bbox": [
+      112,
+      533,
+      882,
+      612
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.6. Influence of Door Barricades upon Quantity-Distances for Hazard Division 1.3 ",
+    "bbox": [
+      115,
+      641,
+      789,
+      656
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "a) The deflagration of propellants in an igloo or similar earth-covered building produces marked directional effects in the hazardous sector which is taken to be the area bounded by lines drawn from the centre of the door and inclined 30° on either side of a perpendicular to the door. This hazard is reduced by a door barricade, at the PES, which has a vertical wall facing the door and is preferably backed with earth. Such a barricade permits the use of the reduced quantity-distances in Annex A, Table 3A. This door barricade is not necessary when the door of the building at the PES faces an earth-covered rear or side wall of a building at an ES, or faces an explosives workshop which has both a barricade and a protective roof. ",
+    "bbox": [
+      112,
+      693,
+      884,
+      858
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-35- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "b) The burning of items other than propellants in an igloo or similar earth-covered building produces a hazard from fragments and projected items in the sector in front of the door. This hazard is reduced by providing a separate barricade, with a vertical wall facing the door. Such a barricade at both a PES and at an ES permits reduced distances shown in Annex A, Table 3B. ",
+    "bbox": [
+      112,
+      125,
+      882,
+      204
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.7. Quantity-distances between earth-covered buildings with common earth cover ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      239,
+      781,
+      255
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "a) In the case of a detonation, the type of earth cover between earth-covered buildings affects the load on the acceptor igloo. The earth cover should be at least 0,6 m in depth. A slope of two to one, meaning one unit of vertical rise for every two units of horizontal run is recommended for the earth cover. The earth should comply with Part II, Para 2.3.3.3. An earth-covered building often provides virtually complete protection to its contents from the effects of an incident at a potential explosion site (PES) containing ammunition and explosives of Hazard Division 1.2 or 1.3. When two or more buildings share a common earth cover, the amount of ammunition and explosives permitted in them is less than it would be if the buildings had separate earth cover. This is due to the earth couple between the two PES's, meaning the earth will transmit the explosive shock loading with greater efficiency than air. In order to accommodate various types of earth, the following Q-D is applied: ",
+    "bbox": [
+      112,
+      277,
+      884,
+      486
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) If the two earth covers intersect at a point 3/4 the height of the structures or higher, Column D5 distances apply. ",
+      "2) If the two earth covers intersect at a point between $3/4$ and $1/2$ the height of the structures, Column D4 distances apply. ",
+      "3) If the two earth covers intersect at, or below, a point $1/2$ the height of the structures, there is no Q-D reduction and Column D3 applies. "
+    ],
+    "bbox": [
+      173,
+      513,
+      882,
+      679
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "These distances refer to earth-covered buildings as specified in Annex II B. In the case of unspecified earth-covered buildings in principle Column D6 distance applies. ",
+    "bbox": [
+      173,
+      707,
+      882,
+      744
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "image",
+    "img_path": "images/a23f47fa47b907a20e441ca28fc411dbc40fa0140069d374fa8f440667206c93.jpg",
+    "image_caption": [],
+    "image_footnote": [],
+    "content": "H\n3H/4\nH/2",
+    "sub_type": "text_image",
+    "bbox": [
+      194,
+      769,
+      868,
+      847
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      900,
+      606,
+      914
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-36- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "b) When earth-covered buildings, which meet the requirements of subparagraph 1.3.6.7.a) and have an internal volume exceeding $500\\mathrm{m}^3$ , are considered as PES, then for NEQ of Hazard Division 1.1 ammunition not exceeding $45000\\mathrm{kg}$ the following quantity-distances should be applied to side- and rear-configurations only: ",
+    "bbox": [
+      112,
+      125,
+      884,
+      204
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "1) Inhabited Building Distances ",
+    "bbox": [
+      174,
+      232,
+      450,
+      247
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "D15-distances in Table 1 may be used from the sides of the earth-covered building (PES) and D14-distances from the rear of the same building, but in no case must the quantity-distance be less than 400 m. Definitions of front/rear/side configurations are given in Annex A, Section I, Note 1. ",
+    "bbox": [
+      243,
+      274,
+      884,
+      353
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "2) Public Traffic Route Distances ",
+    "bbox": [
+      173,
+      381,
+      460,
+      396
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "The Public Traffic Route Distances may be reduced to 2/3 of the Inhabited Building Distances (D14- and D15-distances respectively) as calculated in subparagraph 1), with a minimum of 270 m. These distances (D16- and D17-distances) are shown in Table 1. However, the full Inhabited Building Distances (D14- and D15-distances) with a minimum distance of 400 m should be used, when necessary, in accordance with subparagraph 1.3.1.15.b). ",
+    "bbox": [
+      243,
+      423,
+      885,
+      546
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.8. Partly Barricaded Buildings or Stacks ",
+    "bbox": [
+      115,
+      574,
+      510,
+      591
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "Partly barricaded buildings or stacks are considered effectively barricaded only when both ends of the barricade extend 1 m beyond the ends of the protected sides of the buildings or stacks. ",
+    "bbox": [
+      112,
+      619,
+      885,
+      657
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.9. Natural Barricades ",
+    "bbox": [
+      115,
+      671,
+      383,
+      686
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "It is acceptable to take advantage of natural terrain where this provides protection equivalent to that of artificial barricades. However, it is found that hills are usually insufficiently steep or close to the ammunition or explosives and woods cannot usually be relied upon to provide the required protection. ",
+    "bbox": [
+      112,
+      716,
+      887,
+      774
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "1.3.6.10. Barricade Design Criteria ",
+    "bbox": [
+      115,
+      809,
+      430,
+      825
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "The details of what constitutes an effective barricade are given in Part II, Chapter 3, Section III. ",
+    "bbox": [
+      173,
+      855,
+      806,
+      870
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-37- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      942
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "Section VII -Injury and Damage to be Expected at Different Levels of Protection for Hazard Division 1.1 and Grouping of Structures and Facilities ",
+    "text_level": 1,
+    "bbox": [
+      310,
+      125,
+      749,
+      179
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.1. Introduction ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      195,
+      337,
+      209
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "a) The purpose of applying Hazard Division 1.1 quantity-distances between PES and ES is to ensure that the minimum risk is caused to personnel, structures and facilities. In principle, those functions and facilities not directly related to operating requirements or to the security of ammunition and explosives should be sited at or beyond the Inhabited Building Distance. ",
+      "b) In practice, it may not always be possible to provide this level of protection and some activities and facilities will of necessity be sited at less than the Inhabited Building Distance. In other cases, the nature of the facility or structure requires that greater protection than that afforded by the Inhabited Building Distance, should be provided. ",
+      "c) Damage to buildings and injury to personnel can result from either blast overpressure effects or from projections (ammunition fragments and building debris from the PES). The severity of the effects will be dependent on both the type of structure at the PES and at the ES. The levels of damage considered in this section are when the PES is an: "
+    ],
+    "bbox": [
+      112,
+      233,
+      885,
+      498
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Open or lightly confined stack of ammunition and explosives. ",
+      "2) Earth-covered building containing ammunition and explosives. "
+    ],
+    "bbox": [
+      173,
+      524,
+      670,
+      562
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "d) The blast overpressure predictions in this section are relevant for quantities in excess of 4500 kg. For smaller quantities the damage and injury levels may be pessimistic. ",
+    "bbox": [
+      112,
+      589,
+      885,
+      627
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.2. Purpose of the Section ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      662,
+      403,
+      678
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "The aim of this section is to provide guidance on the kind of injuries and damage which can be expected at different levels of protection and to propose typical personnel or facilities for which these levels of protection might be considered acceptable. The standard base line for predicting blast parameters is that outlined in Part II, Chapter 5, Section III, modified as appropriate for the charge configuration, suppression by earth-cover or other technical considerations. ",
+    "bbox": [
+      112,
+      700,
+      887,
+      800
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-38- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      941
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.3. Levels of Protection ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      125,
+      386,
+      138
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "a) The blast overpressure effects to be expected at a given scaled distance can be predicted with a high degree of confidence. The technique is fairly well developed and the effects of blast may be treated deterministically, however, the techniques for determining the hazards from projections are considerably less developed and the effects require a probabilistic approach. ",
+    "bbox": [
+      112,
+      162,
+      882,
+      243
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "b) Blast Effects - Open Stacks and Light Structures ",
+    "bbox": [
+      112,
+      276,
+      507,
+      292
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "It can be assumed that the blast overpressure from a light structure is the same as that to be expected from a bare charge. This assumption is especially true as the scaled distance increases. The following levels of protection (scaled distances) are considered: ",
+    "bbox": [
+      171,
+      319,
+      884,
+      378
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "table",
+    "img_path": "images/0e02162b14db4b4395a781c4b5e1c779cbe7de9fa9dcdc5ef0fc2046d603daf3.jpg",
+    "table_caption": [],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Scaled Distance (Q in kg, distance in m)</td><td>Peak Incident (Side-on) Overpressure Expected (bar)</td></tr><tr><td>55.5  $Q^{1/3}$ </td><td>0.015</td></tr><tr><td>44.4  $Q^{1/3}$  to 33.3  $Q^{1/3}$ </td><td>0.02 to 0.03</td></tr><tr><td>22.2  $Q^{1/3}$ </td><td>0.05</td></tr><tr><td>14.8  $Q^{1/3}$ </td><td>0.09</td></tr><tr><td>9.6  $Q^{1/3}$ </td><td>0.16</td></tr><tr><td>8.0  $Q^{1/3}$ </td><td>0.21</td></tr><tr><td>7.2  $Q^{1/3}$ </td><td>0.24</td></tr><tr><td>3.6  $Q^{1/3}$ </td><td>0.70</td></tr><tr><td>2.4  $Q^{1/3}$ </td><td>1.80</td></tr></table>",
+    "bbox": [
+      401,
+      410,
+      805,
+      652
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "c) Blast Effects - Earth-Covered Magazines ",
+    "bbox": [
+      112,
+      671,
+      458,
+      686
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "Earth-covered magazines will generally attenuate the blast overpressure, although in the near field enhanced overpressure can be expected from the front of an earth-covered magazine. The degree of reduction in blast overpressure from the sides and rear of the magazine decreases as the scaled distance and/or as the NEQ increases. In general the greatest reduction will be obtained from the rear of the earth-covered building. The following levels of protection (scaled distance) are considered: ",
+    "bbox": [
+      171,
+      713,
+      885,
+      814
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-39- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "table",
+    "img_path": "images/5a51fcee07fa332edf4bc96b709d2afbc6ddb739bdf4be1c5f3dee11db0bbaeb.jpg",
+    "table_caption": [],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Direction</td><td>Scaled Distance (Q in kg) (distance in m)</td><td>Peak Incident (Side-on) Overpressure Expected (bar)</td></tr><tr><td>Side</td><td> $18.0 \\text{ Q}^{1/3}$ </td><td>0.05</td></tr><tr><td>Rear</td><td> $14.0 \\text{ Q}^{1/3}$ </td><td>0.05</td></tr><tr><td>Side</td><td> $12.0 \\text{ Q}^{1/3}$ </td><td>0.09</td></tr><tr><td>Rear</td><td> $9.3 \\text{ Q}^{1/3}$ </td><td>0.09</td></tr></table>",
+    "bbox": [
+      368,
+      138,
+      836,
+      273
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "These overpressures do not apply when the NEQ is greater than 45 000 kg and when the volume of the building is less than $500 \\, m^{3}$ . ",
+    "bbox": [
+      171,
+      300,
+      884,
+      336
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "d) Projection Hazards - All Types of Potential Explosion Sites ",
+    "bbox": [
+      114,
+      371,
+      581,
+      385
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "The projection hazard from a PES cannot be related to the scaled distance. However, for all practical purposes, there is likely to be a hazard from projections at all scaled distances less than $14.8 \\, Q^{1/3}$ , this hazard will be greater when the PES is not barricaded. Unless the ES has been provided with protection against all projections, including high angle missiles, then minimum distances at which the projection hazard is considered to be acceptable for a particular situation, have been introduced as follows: ",
+    "bbox": [
+      171,
+      414,
+      884,
+      514
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "1) $\\underline{180 m}$ ",
+    "bbox": [
+      174,
+      549,
+      294,
+      564
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "There is a significant hazard from projections at 180 m. This hazard is tolerable for: ",
+    "bbox": [
+      245,
+      592,
+      815,
+      606
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Public traffic routes when the traffic is not dense and when the PES is an open stack or a light structure. ",
+      "- The protection of unbarricaded ammunition i.e., to prevent propagation from low trajectory high velocity projections. "
+    ],
+    "bbox": [
+      184,
+      635,
+      878,
+      735
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "2) $\\underline{270 m}$ ",
+    "bbox": [
+      174,
+      763,
+      294,
+      777
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "There is a significant hazard from projections at 270 m. The hazard is tolerable for: ",
+    "bbox": [
+      245,
+      806,
+      794,
+      820
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-40- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Main public traffic routes or when the traffic is dense and when the PES is an open stack or light structure. ",
+      "- Public traffic routes when the traffic is not dense and when the PES is a heavy-walled or earth-covered building. ",
+      "- Sparsely populated areas when the PES is an open stack or a light structure; there would be a small expectation of damage or injury from projections. "
+    ],
+    "bbox": [
+      184,
+      125,
+      882,
+      290
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "3) $\\underline{400 m}$ ",
+    "bbox": [
+      174,
+      317,
+      295,
+      333
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "There is a minor hazard from projections at 400 m. This hazard is tolerable for: ",
+    "bbox": [
+      245,
+      359,
+      784,
+      375
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Main public traffic routes or when the traffic is dense and when the PES is a heavy-walled or earth-covered building ",
+      "- Built-up areas when the PES is an open stack or a light structure. ",
+      "- All \"Inhabited Buildings\" when the PES is a heavy-walled or earth-covered building. "
+    ],
+    "bbox": [
+      184,
+      403,
+      882,
+      526
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.4. Reduction of the Hazard ",
+    "bbox": [
+      115,
+      553,
+      418,
+      568
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "Strengthening of buildings to prevent or reduce the hazard is feasible and may not be prohibitively expensive. The hazard may be reduced by: ",
+    "bbox": [
+      112,
+      592,
+      882,
+      629
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Suitably designed suppressive construction at the PES, this is only practicable when the NEQ is relatively small for example reinforced concrete cubicles used in explosive process building construction have a maximum practical limit of about 250 kg. Standard NATO igloos can suppress about 100kg as a PES. ",
+      "2) By designing the structures at the ES to withstand the overpressures and the debris and fragment attack. "
+    ],
+    "bbox": [
+      115,
+      648,
+      884,
+      790
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-41- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      941
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "3) The use of light structures for ES which although they will be severely damaged by the overpressure will not produce hazardous debris. In this case protection from high velocity debris and fragments by receptor barricades is essential. ",
+    "bbox": [
+      112,
+      124,
+      882,
+      184
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.5. Protection Level 55.5 $Q^{1/3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      115,
+      211,
+      668,
+      226
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      112,
+      250,
+      334,
+      264
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) The overpressure expected at this distance ( $55.5 \\, Q^{1/3}$ ) will cause little or no damage to unstrengthened structures. ",
+      "2) Injuries and fatalities are very unlikely as a direct result of the blast effects. There may be a minor hazard from broken glass or cladding falling from a considerable height so as to strike people. "
+    ],
+    "bbox": [
+      173,
+      283,
+      882,
+      408
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "bbox": [
+      112,
+      428,
+      421,
+      442
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "At this distance and beyond there is no restriction on personnel, activities or facilities. ",
+    "bbox": [
+      173,
+      464,
+      739,
+      479
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.6. Protection Level 44.4 $Q^{1/3}$ to 33.3 $Q^{1/3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      115,
+      505,
+      749,
+      524
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      112,
+      546,
+      332,
+      560
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Unstrengthened structures are likely to suffer only superficial damage. ",
+      "2) When large panes of glass are exposed so as to face the PES, 50 % or more breakages may occur. ",
+      "3) Injuries and fatalities are very unlikely as a direct result of the blast effects. Injuries that do occur will be caused principally by flying glass. "
+    ],
+    "bbox": [
+      173,
+      581,
+      882,
+      726
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "bbox": [
+      112,
+      752,
+      421,
+      768
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "Because even superficial damage may in some instances be unacceptable, National Authorities may require siting at these distances for facilities of especially vulnerable construction or public importance. Examples are: ",
+    "bbox": [
+      171,
+      790,
+      882,
+      847
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-42- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "1) Large facilities of special construction of importance including: ",
+    "bbox": [
+      174,
+      125,
+      680,
+      140
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Large factories of vulnerable construction. ",
+      "- Multi-storey office or apartment buildings of vulnerable construction. ",
+      "- Public buildings and edifices of major value. ",
+      "- Large educational facilities of vulnerable construction. ",
+      "- Large hospitals. ",
+      "- Major traffic terminals (e.g. large railway stations, airports etc.) ",
+      "- Major public utilities (e.g. gas, water, electricity works). "
+    ],
+    "bbox": [
+      243,
+      161,
+      734,
+      305
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "2) Facilities of vulnerable construction used for mass meetings: ",
+    "bbox": [
+      173,
+      325,
+      660,
+      339
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Assembly halls and fairs. ",
+      "- Exhibition areas. ",
+      "- Sports stadiums. "
+    ],
+    "bbox": [
+      243,
+      359,
+      435,
+      418
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "3) Built-up areas which are both large and densely developed. ",
+    "bbox": [
+      173,
+      446,
+      650,
+      461
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.7. Protection Level 22.2 $Q^{1/3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      115,
+      489,
+      668,
+      505
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "The equivalent protection levels in respect of earth-covered buildings greater in volume than $500 \\, m^{3}$ and when containing a NEQ of Hazard Division 1.1 less than 45 000 kg are: ",
+    "bbox": [
+      112,
+      528,
+      882,
+      565
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- From the side: $18.0 Q^{1/3}$ ",
+      "- From the rear: $14.0 Q^{1/3}$ "
+    ],
+    "bbox": [
+      173,
+      584,
+      371,
+      621
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      114,
+      642,
+      332,
+      657
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Unstrengthened buildings will suffer minor damage, particularly to parts such as windows, door frames and chimneys. In general, damage is unlikely to exceed approximately 5 % of the replacement cost but some buildings may suffer serious damage. ",
+      "2) Injuries and fatalities are very unlikely as a direct result of the blast effects. Injuries that do occur will be caused principally by glass breakage and flying/falling debris. "
+    ],
+    "bbox": [
+      173,
+      678,
+      884,
+      800
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-43- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "text_level": 1,
+    "bbox": [
+      112,
+      146,
+      421,
+      161
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "This distance is termed \"Inhabited Building Distance\" and is the minimum distance, in conjunction with the overriding minimum distances given in paragraph 1.3.7.3., at which inhabited buildings not directly connected with the functions of the Explosives Area should be sited. This level of protection is proposed as acceptable for the following kinds of facility: ",
+    "bbox": [
+      171,
+      182,
+      884,
+      263
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Unbarricaded stacks of ammunition and explosives. ",
+      "2) Structures and facilities in the administration area of a depot or factory with a considerable number of occupants (more than 20), examples are: "
+    ],
+    "bbox": [
+      173,
+      288,
+      882,
+      369
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Main office buildings. ",
+      "- Non-explosives workshops. ",
+      "- Mess halls and kitchens. ",
+      "- Main canteens. ",
+      "- Main shower and changing facilities. "
+    ],
+    "bbox": [
+      184,
+      389,
+      453,
+      489
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "3) Structures and facilities in the administrative area of a depot or a factory which are important for the functioning of the installation, examples are: ",
+    "bbox": [
+      173,
+      510,
+      882,
+      546
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Manned fire stations. ",
+      "- Central heating plants. ",
+      "- Main vehicle pools. ",
+      "- Gasoline storage and dispensing facilities. ",
+      "- Unprotected water supply and power installations. "
+    ],
+    "bbox": [
+      184,
+      568,
+      544,
+      668
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "4) Inhabited buildings (as defined by the National Authority), whether single buildings, communities or areas of scattered habitations. ",
+      "5) Structures and facilities in which people assemble, except as indicated in subparagraph 1.3.7.6.b) above. ",
+      "6) Facilities serving the safety and needs of the general public, examples are: "
+    ],
+    "bbox": [
+      173,
+      688,
+      882,
+      832
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "\\- Gas, water and electricity supply installations. ",
+    "bbox": [
+      184,
+      853,
+      515,
+      868
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-44- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "\\- Radar and communications stations. ",
+    "bbox": [
+      184,
+      125,
+      450,
+      138
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "7) Important lines of transport, examples are: ",
+    "bbox": [
+      174,
+      146,
+      537,
+      161
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Main railway lines. ",
+      "- Motorways and major roads. ",
+      "- Major navigable waterways. "
+    ],
+    "bbox": [
+      184,
+      182,
+      398,
+      239
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.8. Protection Level 14.8 $Q^{1 / 3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      115,
+      268,
+      668,
+      283
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "The equivalent protection levels in respect of earth-covered buildings greater in volume than $500 \\, m^{3}$ and when containing a NEQ of Hazard Division 1.1 less than 45 000 kg are: ",
+    "bbox": [
+      112,
+      306,
+      882,
+      343
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- From the side: $12.0 Q^{1/3}$ ",
+      "- From the rear: $9.3 Q^{1/3}$ "
+    ],
+    "bbox": [
+      173,
+      362,
+      369,
+      400
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      114,
+      421,
+      332,
+      435
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Unstrengthened buildings will suffer average damage costing in the range of 10 % of the total replacement costs to repair. ",
+      "2) Personnel in the open are not likely to be seriously injured by blast. ",
+      "3) There is a fairly high probability that injuries will be caused by glass breakage and flying/falling debris. ",
+      "b) Personnel and Facilities Acceptable "
+    ],
+    "bbox": [
+      112,
+      456,
+      882,
+      615
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "This distance is termed the \"Public Traffic Route Distance\" and is the minimum distance, in conjunction with the overriding minimum distances given in paragraph 1.3.7.3., at which routes used by the general public, for purposes unconnected with the explosives facility, should be sited (except when the PES is a heavy-walled building and when the route is a main route or when the traffic is dense). This level of protection is proposed as acceptable for the following kinds of facility: ",
+    "bbox": [
+      171,
+      636,
+      884,
+      739
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "1) Structures and facilities within an administration area connected with the explosives installation with a limited number of occupants (less than 20). ",
+    "bbox": [
+      174,
+      756,
+      882,
+      793
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-45- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "2) Facilities in which people assemble only temporarily and which can be quickly cleared. Examples are: ",
+    "bbox": [
+      173,
+      124,
+      882,
+      162
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- Public paths. ",
+      "- Recreational areas where no structures are involved. ",
+      "- Parking places. ",
+      "- Small arms ranges. "
+    ],
+    "bbox": [
+      186,
+      182,
+      557,
+      262
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "3) Railways, public roads and navigable waterways of minor to medium importance. (For public roads the risk of secondary injury can be reduced by ensuring that the road sides are free from obstacles which are likely to result in injuries to the occupants of vehicles leaving the road as a result of the driver's reaction to the explosion). ",
+    "bbox": [
+      173,
+      281,
+      884,
+      361
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.9. Protection Level $9.6 Q^{1/3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      115,
+      389,
+      660,
+      406
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      114,
+      428,
+      332,
+      442
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Buildings which are unstrengthened can be expected to suffer damage to main structural members. Repairs may cost more than 20 % of the replacement cost of the building. Strengthening of buildings to prevent damage and secondary hazards is feasible and not prohibitively expensive. ",
+      "2) Cars may suffer some damage to metal portions of the body and roof by blast. Windows facing the blast may be broken, however, the glass should not cause serious injuries to the occupants. ",
+      "3) Aircraft will suffer some damage to appendages and sheet metal skin. They should be operational with only minor repair (see also Part IV, Chapter 5). ",
+      "4) Cargo type ships will suffer minor damage from blast to deck houses and exposed electronic gear (see also Part IV, Chapter 6). ",
+      "5) Personnel may suffer temporary loss of hearing, permanent ear damage is not to be expected. Other injuries from the direct effects of blast overpressure are unlikely, although there are likely to be injuries from secondary effects, i.e. translation of objects. "
+    ],
+    "bbox": [
+      173,
+      463,
+      885,
+      843
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      900,
+      608,
+      914
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-46- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      941
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "bbox": [
+      112,
+      125,
+      421,
+      140
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "This should normally be the minimum distance at which unprotected duty personnel (troops, military and civilian maintenance and security personnel and crews of ships) should be permitted when their duties are not closely and specifically related to the PES. Examples are: ",
+    "bbox": [
+      171,
+      161,
+      884,
+      219
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Open air recreation facilities used only by military personnel and where dependants and the general public are not involved. ",
+      "2) Training areas for unprotected military personnel. ",
+      "3) All military aircraft when the PES is not for the immediate service of the aircraft. "
+    ],
+    "bbox": [
+      173,
+      245,
+      885,
+      369
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.10. Protection Level 8.0 $Q^{1/3}$ - Open stacks and Light Structures ",
+    "bbox": [
+      115,
+      396,
+      658,
+      413
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      112,
+      435,
+      332,
+      450
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Buildings which are unstrengthened can be expected to suffer serious damage which is likely to cost above 30 % of the total replacement cost to repair. ",
+      "2) Serious injuries to personnel, which may result in death, are likely to occur due to building collapse or loose translated objects. ",
+      "3) There is some possibility of delayed communication of the explosion as a result of fires or equipment failure at the ES, direct propagation of the explosion is not likely. ",
+      "4) Cargo ships would suffer damage to decks and superstructure. In particular doors and bulkheads on the weather-deck are likely to be buckled. ",
+      "5) Aircraft are expected to sustain considerable structural damage. "
+    ],
+    "bbox": [
+      173,
+      471,
+      885,
+      743
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "bbox": [
+      112,
+      770,
+      421,
+      786
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "This distance is termed \"Explosives Workshop Distance\", the level of protection is proposed as acceptable for the following kinds of facility: ",
+    "bbox": [
+      171,
+      806,
+      884,
+      843
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-47- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      941
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Explosives workshops in which the personnel present are kept to the minimum essential for the task. ",
+      "2) Packing and shipping (transit) buildings in the Explosives Area. ",
+      "3) Minor transmission and communication lines. "
+    ],
+    "bbox": [
+      173,
+      125,
+      882,
+      247
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.11. Protection Level 7.2 $Q^{1 / 3}$ ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      281,
+      420,
+      299
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "text",
+    "text": "This distance is used by US Authorities to define explosives workshop separation in the US and is comparable to Protection Level 8.0 Q $^{1/3}$ . However, a great deal of information is available in the US for Protection Level 7.2 Q $^{1/3}$ and is included in this section for completeness. ",
+    "bbox": [
+      112,
+      320,
+      884,
+      380
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      399,
+      332,
+      414
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Damage to unstrengthened buildings will be of a serious nature. Repair is likely to cost 50 % or more of the total replacement cost. ",
+      "2) Personnel injuries of a serious nature or possible death are likely from debris of the building at the ES and from translation of loose objects. ",
+      "3) There is a 1 % chance of eardrum damage to personnel. ",
+      "4) Some possibility of delayed communication of explosion as a result of fires or equipment failure at the ES. There is a high degree of protection against direct propagation of an explosion. ",
+      "5) Cargo ships would suffer some damage to decks and superstructure by having doors and bulkheads buckled by overpressure. ",
+      "6) Aircraft can be expected to suffer considerable structural damage from blast overpressure. "
+    ],
+    "bbox": [
+      173,
+      435,
+      882,
+      771
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-48- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      125,
+      421,
+      140
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1) Workers engaged in major construction in the vicinity of ammunition production areas, waterfront areas where ammunition is being handled or areas used for the loading of aircraft with explosives. ",
+      "2) Labour intensive operations closely related to the PES, including inert supply functions serving two or more identical or similar PES. ",
+      "3) Rest and buildings for light refreshment for use of workers in the immediate vicinity. Such facilities will normally only be used when work is stopped in the nearby explosives buildings and should be limited to a maximum of 6 persons. ",
+      "4) Area offices with a permanent occupancy of not more than 6 persons directly supporting the work of the Explosives Area or process buildings. ",
+      "5) Guard buildings in which those security personnel directly responsible for the security of the Explosives Area are housed when not on patrol. ",
+      "6) Unmanned buildings containing immediate reaction fire-fighting appliances. ",
+      "7) Operations and training functions that are exclusively manned or attended by personnel of the unit operating the PES. This includes day rooms, squadron operations offices and similar functions for units such as individual missile firing batteries, aircraft squadrons, or ammunition supply companies. Manoeuvre area, proving grounds tracks and similar facilities for armoured vehicles together with the armoured vehicles themselves may provide adequate protection to the crew from fragment and debris. ",
+      "8) Areas used for the maintenance of military vehicles and equipment (trucks, tanks) when the PES is basic load or ready storage limited to 4 000 kg or less at each end when the maintenance work is performed exclusively by and for military personnel of the unit for which the basic load of ammunition is stored. ",
+      "9) Auxiliary power and utilities functions, inert storage and issue sites and mechanical support at naval dock areas when not continuously manned, when serving only the waterfront area, and when the PES is a ship or an ammunition handling location at "
+    ],
+    "bbox": [
+      173,
+      160,
+      884,
+      824
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-49- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "the waterfront. When loss of the facility would cause an immediate loss of a vital function, Inhabited Building Distance must be used. ",
+    "bbox": [
+      243,
+      125,
+      882,
+      161
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "10) Minimum distance between separate groups of explosives loaded combat-configured aircraft or between aircraft and a PES such as a preload site which serves to arm the aircraft. The use of intervening barricades is required to further reduce communication and fragment damage and eliminate the necessity for totalling the NEQ. The loading of ammunition and explosives aboard aircraft can be accomplished within each group of aircraft without additional protection. ",
+    "bbox": [
+      176,
+      188,
+      884,
+      312
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "11) Parking lots for privately owned automobiles belonging to the personnel employed or stationed at the PES. ",
+    "bbox": [
+      174,
+      338,
+      882,
+      374
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "12) Separation of naval vessels from PES consisting of other naval vessels to which quantity-distance standards apply. When the PES is an ammunition ship or an ammunition activity, the separation will be determined by reference to special regulations established for piers and wharves of ammunition shiploading activities. ",
+    "bbox": [
+      174,
+      402,
+      882,
+      482
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "13) Container \"stuffing\" and \"unstuffing\" operations which are routine support of the PES. When the PES is a magazine in a storage area, containerizing operations may be considered as part of the magazine and separate quantity-distance rules will not be applied. ",
+    "bbox": [
+      174,
+      509,
+      882,
+      568
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.12. Protection Level 3.6 $Q^{1/3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      115,
+      603,
+      658,
+      619
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      114,
+      641,
+      332,
+      656
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "1) Unstrengthened buildings will suffer severe structural damage approaching total demolition. ",
+    "bbox": [
+      173,
+      676,
+      875,
+      694
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "2) Severe injuries or death to occupants of the ES are to be expected from direct blast effects, building collapse or translation. ",
+    "bbox": [
+      173,
+      705,
+      880,
+      742
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "3) Aircraft will be damaged by blast to the extent that they will be beyond economical repair. If aircraft are loaded with explosives, delayed explosions are likely to result from subsequent fires. ",
+    "bbox": [
+      173,
+      755,
+      884,
+      812
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      914
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-50- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "4) Explosions may occur in ES containing ammunition as a result of fire spread by lobbed debris or blast damage. A high degree of protection against direct propagation of an explosion is to be expected providing direct attack by high velocity fragments is prevented. ",
+    "bbox": [
+      173,
+      124,
+      884,
+      184
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "bbox": [
+      112,
+      210,
+      421,
+      226
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "1) Buildings housing successive steps of a single process in an explosives factory. ",
+    "bbox": [
+      173,
+      245,
+      786,
+      263
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "2) Separation of buildings for security guards from explosives locations, provided the risk of the personnel becoming militarily ineffective in the event of an explosive accident can be accepted. ",
+    "bbox": [
+      173,
+      288,
+      885,
+      347
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "3) Separations among buildings and facilities of a tactical missile site where greater distances cannot be provided due to technical reasons. ",
+    "bbox": [
+      173,
+      374,
+      882,
+      412
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "4) Temporary holding areas for trucks or railcars containing explosives to service production or maintenance facilities provided barricades are interposed between the explosives locations. ",
+    "bbox": [
+      173,
+      438,
+      882,
+      476
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "5) Unmanned auxiliary power facilities, transformer stations, water treatment and pollution abatement facilities and other utility installations which serve the PES, and loss of which will not create an immediate secondary hazard or prejudice vital operations. ",
+    "bbox": [
+      173,
+      502,
+      884,
+      561
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "1.3.7.13. Protection Level 2.4 $Q^{1/3}$ - Open Stacks and Light Structures ",
+    "bbox": [
+      114,
+      595,
+      660,
+      612
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "a) Expected Blast Effects ",
+    "bbox": [
+      112,
+      635,
+      332,
+      649
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Unstrengthened buildings will almost certainly suffer complete demolition. ",
+    "bbox": [
+      233,
+      656,
+      732,
+      671
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "b) Personnel and Facilities Acceptable ",
+    "bbox": [
+      112,
+      691,
+      421,
+      706
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "1) Personnel stationed in magazine areas for one or two men. ",
+    "bbox": [
+      173,
+      713,
+      643,
+      729
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "2) Crews performing storage and shipping functions in the magazines may operate for short periods of time at adjacent magazines. In large magazine areas controls ",
+    "bbox": [
+      173,
+      755,
+      884,
+      792
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-51- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      806,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "text",
+    "text": "should be exercised by management to reduce the length of time that unrelated operations are exposed to one another at distances less than $9.6 \\, Q^{1/3}$ ",
+    "bbox": [
+      243,
+      125,
+      884,
+      162
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-52- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      806,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-53- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "Section VIII - Q-D Rules in the Particular case of Aboveground Storage ",
+    "text_level": 1,
+    "bbox": [
+      282,
+      125,
+      805,
+      140
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "of Ammunition Classified 1.6N ",
+    "text_level": 1,
+    "bbox": [
+      431,
+      146,
+      657,
+      159
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "1.3.8.1. Preliminary remark ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      199,
+      386,
+      213
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "This section of the Manual is reserved for ammunition classified 1.6N. It was written at a time when very few statistical data were known on the behaviour of these articles in transport and in storage. Therefore it was difficult to derive from experience what should be the behaviour of a set of 1.6N ammunition of the same family in case of an accidental stimulus. ",
+    "bbox": [
+      112,
+      237,
+      882,
+      315
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "Among several options, the AC/258 Group took the decision to choose a middle way solution which leads to the recommendations listed below. In the future when the behaviour in storage of 1.6N ammunition will be better known it may be necessary to revise this decision. ",
+    "bbox": [
+      112,
+      321,
+      882,
+      380
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "1.3.8.2. Most credible accidental event ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      409,
+      458,
+      423
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "During storage of 1.6N ammunition belonging to the same family the most credible accidental event resulting from an accidental stimulus is the detonation of a single munition without instant transmission of the detonation to other munitions of the same family and/or moderate combustion of the whole quantities of ammunition. ",
+    "bbox": [
+      112,
+      447,
+      887,
+      524
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "1.3.8.3. Q-D rules ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      555,
+      319,
+      570
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "The Q-D distances between an ES and a PES which are given by the Q-D rules, are derived from the above-mentioned \"most credible accidental event\". The assessment of the hazard generated by the detonation of a single munition takes into account only the blast effect and neglects the projection effect of a single munition. ",
+    "bbox": [
+      112,
+      593,
+      882,
+      650
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "The Q-D distances are obtained by taking, for a given configuration \"ES, PES\" the largest distance determined by applying ",
+    "bbox": [
+      112,
+      657,
+      882,
+      695
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "a) the Table 1 (1.1 Q-D rules) to a single munition ",
+    "bbox": [
+      112,
+      714,
+      502,
+      729
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "b) the Table 3B (1.3 Q-D rules) to the whole quantities of ammunition with aggregation of the NEQ. ",
+    "bbox": [
+      112,
+      757,
+      840,
+      771
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "Table 4 (Annex I-A) hereafter has been built by applying these rules. It gives the Q-D distances of a stock of 1.6N ammunition (single family or compatible families as defined hereafter) in the case where theNEQ of a single munition is 1 000 kg. Tables can of course also be constructed to better cater for the storage of 1.6N ammunition where the HD 1.1 NEQ of a single munition is other than 1000 kg. ",
+    "bbox": [
+      171,
+      801,
+      884,
+      881
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      901,
+      608,
+      914
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "page_number",
+    "text": "-1-3-54- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      882,
+      941
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      806,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      901,
+      606,
+      913
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "footer",
+    "text": "-1-3-55- ",
+    "bbox": [
+      470,
+      915,
+      527,
+      927
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      928,
+      880,
+      941
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "CHAPTER 4 – UNDERGROUND STORAGE IN DEPOTS ",
+    "text_level": 1,
+    "bbox": [
+      252,
+      141,
+      747,
+      157
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "Section I - General ",
+    "text_level": 1,
+    "bbox": [
+      428,
+      201,
+      569,
+      214
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "1.4.1.1. Types and Effects ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      261,
+      359,
+      277
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "a) Types ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      308,
+      220,
+      323
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "1. This section details how to predict QD based on criteria given in para 3.1.1.2. for the underground storage of military ammunition and explosives. Underground storage typically includes natural caverns and excavated chambers. Recommendations in this section shall only be used when the minimum distance from the perimeter of a storage area to an external surface exceeds 600 mm and $0.1 \\cdot Q^{1/3}$ (m, kg). Otherwise, use aboveground siting criteria. This section addresses explosives safety criteria both with and without rupture of the cover. ",
+    "bbox": [
+      174,
+      350,
+      884,
+      473
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "2. Ground shock, debris, and air blast from an accidental explosion in an underground storage facility depend on several variables, including the local geology and site-specific parameters. These parameters vary significantly from facility to facility. Consequently, distances other than those listed below may be used provided approved experimental or analytical data indicate that the desired protection can be achieved. See below for default methods to determine QD. ",
+    "bbox": [
+      173,
+      500,
+      885,
+      623
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "3. The QD for tolerable ground shock is the same in all directions for homogeneous, geological media, whereas QDs for other hazards (blast, thermal, impulse, etc.) vary markedly in different directions. Variations in QDs in different directions arise from configuration-specific features such as the locations of adits and ventilation shafts, hazards mitigating designs, and terrain. The acceptable QD in a given direction is generally taken as the maximum QD determined for the various hazards. ",
+    "bbox": [
+      173,
+      649,
+      885,
+      771
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "4. QD siting requirements of this section may be determined from the applicable equations or by interpolating between figure entries. ",
+    "bbox": [
+      173,
+      799,
+      884,
+      837
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "b) Effects ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      863,
+      226,
+      878
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      608,
+      921
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "page_number",
+    "text": "-1-4-1- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      935
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "The following effects, peculiar to underground storage sites, must be taken into consideration for quantity-distance purposes: ",
+    "bbox": [
+      173,
+      122,
+      884,
+      159
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "1. Inside the Underground Installation: ",
+    "text_level": 1,
+    "bbox": [
+      174,
+      186,
+      495,
+      201
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "The volume available to an expanding shock front is less in an underground configuration than it is in an aboveground configuration. Because of this limited space, an explosion in an underground facility typically results in long-duration, high pressures and temperatures that spread throughout the entire volume available to the shock front. Unless robust engineered designs (doors and/or other closing devices) are used to separate various parts of the facility, these long-duration blast effects spread throughout the entire underground complex. Doors or other closing devices must be properly designed and, in the case of doors, closed to provide the desired separation. ",
+    "bbox": [
+      243,
+      229,
+      884,
+      394
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "An initial event in Hazard Division 1.2 and 1.4 materials usually starts a fire, which is sustained by burning packages and components of the ammunition. This process causes additional explosions, likely at increasing frequency, until combustible materials in the site have been consumed. The results of these repeated explosions in the confined space underground will depend on the type and quantity of the substances in each unit of ammunition and the type of explosion produced. ",
+    "bbox": [
+      243,
+      421,
+      885,
+      543
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "2. Outside the Underground Installation: ",
+    "text_level": 1,
+    "bbox": [
+      144,
+      571,
+      507,
+      586
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "Blast waves from adits exhibit highly directional flow-fields along the extended centerline of the passageway. Consequently, the blast wave effects (overpressure and impulse) do not attenuate as rapidly along the centerline axis as they do off the centerline axis. ",
+    "bbox": [
+      243,
+      614,
+      885,
+      672
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "The following effects should be considered for an external ES: ",
+    "bbox": [
+      243,
+      699,
+      672,
+      714
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(1) Blast from tunnel adits ",
+      "(2) Blast from craters, if the rock cover is insufficient. ",
+      "(3) Debris from tunnel adits ",
+      "(4) Debris from cratering "
+    ],
+    "bbox": [
+      240,
+      738,
+      655,
+      887
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      608,
+      921
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "page_number",
+    "text": "-1-4-2- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      935
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(5) Ground Shock ",
+      "(6) Flame and hot gases "
+    ],
+    "bbox": [
+      245,
+      122,
+      447,
+      180
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "1.4.1.2. Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      222,
+      381,
+      237
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "a) Inside the UG Installation ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      268,
+      347,
+      283
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "QD should be determined for the following: ",
+    "bbox": [
+      173,
+      311,
+      463,
+      326
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1. Chamber Intervals ",
+      "2. Loading/Unloading Dock ",
+      "3. Explosives Workshop Distance (EWD) ",
+      "4. Inspection "
+    ],
+    "bbox": [
+      176,
+      353,
+      517,
+      496
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "b) Outside the UG Installation ",
+    "text_level": 1,
+    "bbox": [
+      114,
+      524,
+      357,
+      539
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "QD should be determined for the following: ",
+    "bbox": [
+      173,
+      567,
+      463,
+      583
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1. Inhabited Building Distance (IBD) ",
+      "2. Public Traffic Route Distance (PTRD) ",
+      "3. Explosives Workshop Distance (EWD) ",
+      "4. Earth-covered Magazine Distance (ECMD) ",
+      "5. Aboveground Magazine Distance (AGMD) "
+    ],
+    "bbox": [
+      173,
+      610,
+      544,
+      796
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "1.4.1.3. Net Explosives Quantity (NEQ) ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      838,
+      462,
+      853
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "page_number",
+    "text": "-1-4-3- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      935
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      880,
+      948
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      388,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "For siting purposes, the NEQ is the total quantity of explosives material that must be included in defining a potential event. Part I, paragraph 1.3.2.5. provides guidance for finding the appropriate NEQ for sites containing materials with different Hazard Classes. ",
+    "bbox": [
+      112,
+      122,
+      885,
+      180
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "1.4.1.4. Measuring Quantity-Distances ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      222,
+      460,
+      238
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "a) Inside the Underground Installation. ",
+    "bbox": [
+      112,
+      268,
+      413,
+      283
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "The Chamber Interval is the shortest distance between the walls of two adjacent chambers. The subdivision of a cavern requires construction of massive barricades to close the gaps in the natural rock and to isolate one site or chamber from any other. The thickness of these barricades should be equal to the chamber intervals. ",
+    "bbox": [
+      171,
+      311,
+      885,
+      389
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "b) Outside the Underground Installation. ",
+    "bbox": [
+      112,
+      418,
+      425,
+      432
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "Distances to ESs outside the underground facility are normally measured as radial distances (see below) unless conditions make such a procedure clearly unreasonable: ",
+    "bbox": [
+      171,
+      461,
+      884,
+      497
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1. Distances determined for airblast, debris, and thermal effects issuing from tunnel openings shall be the minimum distance measured from the openings to the nearest wall or point of the location to be protected. Extended centerlines of the openings should be used as reference lines for directional effects. ",
+      "2. A distance determined by ground shock should be measured from the nearest wall of a chamber or a cavern containing ammunition or explosives to the nearest wall or point of the location to be protected. ",
+      "3. A distance determined for air blast and debris from a breached cover shall be the minimum distance from the centre of the breach (CCB), at ground surface level, to the location to be protected (See Annex IIIB, Figures 3-Ia and 3-Ib.). "
+    ],
+    "bbox": [
+      173,
+      524,
+      885,
+      777
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      608,
+      921
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "page_number",
+    "text": "-1-4-4- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      934
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "Section II - Hazard Division Material Dependence ",
+    "text_level": 1,
+    "bbox": [
+      346,
+      122,
+      710,
+      137
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "1.4.2.1. Hazard Division 1.1, 1.3, 1.5 and 1.6 materials ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      182,
+      571,
+      197
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "a) Distances shall be determined from the total quantity of explosives, propellants, pyrotechnics, and incendiary materials in the individual chambers, unless the total quantity is subdivided to prevent rapid communication of an incident between subdivisions. All Hazard Divisions 1.1, 1.3, 1.5, and 1.6 material subject to involvement in a single incident shall be assumed to contribute to the explosion yield. ",
+      "b) A connected chamber or cavern storage site containing Hazard Division 1.1 or 1.3, 1.5 and 1.6 materials shall be treated as a single chamber site, unless explosion communication is prevented by adequate subdivision or chamber separation. ",
+      "c) HD 1.3 material should be treated as HD 1.1 material when it is stored underground. "
+    ],
+    "bbox": [
+      112,
+      229,
+      885,
+      437
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "1.4.2.2. Hazard Division 1.2 materials ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      478,
+      455,
+      492
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "a) The hazard to exterior ESs from primary fragments where a line-of-sight path exists from the detonation point to the ES is the only explosives safety hazard of concern for HD 1.2 materials. ",
+      "b) When line-of-sight conditions exist, use distances common to aboveground situations. ",
+      "c) QD requirements do not apply if the exterior ES is located outside the line-of-sight or if barricades (constructed or natural) intercept fragments issuing from an opening. "
+    ],
+    "bbox": [
+      112,
+      524,
+      882,
+      669
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "1.4.2.3. Hazard Division 1.4 materials ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      710,
+      455,
+      723
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "Exterior: Exterior explosives safety hazards are not normally significant for Hazard Division 1.4 materials. Accordingly, QD requirements do not apply for Hazard Division 1.4 materials. ",
+    "bbox": [
+      112,
+      756,
+      880,
+      793
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "page_number",
+    "text": "-1-4-5- ",
+    "bbox": [
+      475,
+      922,
+      522,
+      935
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      880,
+      948
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      806,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      608,
+      921
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "footer",
+    "text": "-1-4-6- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      935
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "Section III - Chamber Interval ",
+    "text_level": 1,
+    "bbox": [
+      384,
+      123,
+      613,
+      136
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "References [7-10] deal with chamber intervals. ",
+    "bbox": [
+      337,
+      169,
+      657,
+      182
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "1.4.3.1. Hazard Divisions 1.1, 1.3, 1.5, and 1.6 ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      204,
+      515,
+      218
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "a) Three modes by which an explosion or fire can be communicated are rock spall, propagation through cracks or fissures, and airblast or thermal effects travelling through connecting passages. Minimum storage chamber separation distances are required to prevent or control the communication of explosions or fires between donor and acceptor chambers. ",
+    "bbox": [
+      112,
+      250,
+      884,
+      330
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "The minimum chamber separation ( $D_{cd}$ ) is 5 m for HD 1.1, 1.3, 1.5, and 1.6 materials. ",
+    "bbox": [
+      173,
+      357,
+      734,
+      372
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "b) Prevention of major damage by rock spall. ",
+    "bbox": [
+      112,
+      400,
+      453,
+      415
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "The chamber separation distance is the shortest distance (rock/concrete thickness) between two chambers. When an explosion occurs in a donor chamber, a shock wave propagates through the surrounding rock. The intensity of the shock decreases with distance. For small, chamber separation distances, the shock may be strong enough to spall the rock/concrete walls of acceptor chambers. ",
+    "bbox": [
+      171,
+      442,
+      884,
+      522
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "For hard rock with no specific protective construction, the minimum, chamber separation distance, $D_{cd}$ , required to prevent major damage by spall depends on the chamber loading density ( $\\gamma$ ) as: ",
+    "bbox": [
+      171,
+      549,
+      882,
+      586
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 1. 0 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      176,
+      606,
+      292,
+      627
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\n(\\gamma \\leq 5 0 k g / m ^ {3})\n$$",
+    "text_format": "latex",
+    "bbox": [
+      539,
+      608,
+      662,
+      627
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-1 ",
+    "bbox": [
+      695,
+      609,
+      784,
+      625
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "and ",
+    "bbox": [
+      233,
+      635,
+      268,
+      649
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 2. 0 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      178,
+      650,
+      295,
+      671
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\n(\\gamma > 5 0 k g / m ^ {3})\n$$",
+    "text_format": "latex",
+    "bbox": [
+      539,
+      652,
+      665,
+      671
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-2 ",
+    "bbox": [
+      697,
+      653,
+      791,
+      669
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "Example ( $\\gamma\\leq50kg/m^{3}$ ): ",
+    "bbox": [
+      173,
+      695,
+      376,
+      713
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{Q} = 2 0 0, 0 0 0 \\mathrm{kg}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      302,
+      745,
+      416,
+      760
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{D} _ {\\mathrm{cd}} = 1. 0 \\cdot 5 8. 4 8 = 5 8. 5 \\mathrm{m}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      307,
+      766,
+      487,
+      780
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "For soft rock (See para 1.4.4.3.a), at all loading densities, the separation distance is: ",
+    "bbox": [
+      173,
+      830,
+      715,
+      845
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 1. 4 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      176,
+      866,
+      295,
+      885
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-3 ",
+    "bbox": [
+      470,
+      869,
+      549,
+      884
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "footer",
+    "text": "-1-4-7- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      934
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      880,
+      948
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Example: ",
+    "bbox": [
+      174,
+      144,
+      240,
+      157
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{Q} = 2 0 0, 0 0 0 \\mathrm{kg}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      302,
+      186,
+      416,
+      201
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{D} _ {\\mathrm{cd}} = 1. 4 \\cdot 5 8. 4 8 = 8 2 \\mathrm{m}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      307,
+      207,
+      475,
+      222
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "c) Prevention of propagation by rock spall ",
+    "bbox": [
+      114,
+      250,
+      435,
+      264
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "If damage to stored munitions in the adjacent chambers is acceptable, the chamber separation distance can be reduced to the distance required to prevent propagation of the detonation by the impact of rock spall against the munitions. For smaller distances, propagation is possible. Propagation by rock spall is practically instantaneous because time separations between donor and acceptor explosions may not be sufficient to prevent coalescence of blast waves. Unless analyses or experiments indicate otherwise, explosives quantities subject to this mode must be added to other donor explosives to determine NEQ. For loading densities up to $270 \\, kg/m^{3}$ , when no protective construction is used, the separation distance, Dcd, to prevent explosion communication by spalled rock is: ",
+    "bbox": [
+      171,
+      293,
+      884,
+      458
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 0. 6 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      284,
+      479,
+      403,
+      500
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-4 ",
+    "bbox": [
+      715,
+      482,
+      794,
+      497
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Example: ",
+    "bbox": [
+      174,
+      529,
+      243,
+      543
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{Q} = 2 0 0, 0 0 0 \\mathrm{kg}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      302,
+      572,
+      416,
+      587
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{D} _ {\\mathrm{cd}} = 0. 6 \\cdot 5 8. 4 8 = 3 5 \\mathrm{m}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      307,
+      593,
+      475,
+      608
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "When the acceptor chamber has protective construction to prevent spall and collapse (into the acceptor chamber) the separation distance must be determined on a site-specific basis but may be as low as: ",
+    "bbox": [
+      173,
+      636,
+      884,
+      672
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 0. 3 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      284,
+      694,
+      403,
+      713
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-5 ",
+    "bbox": [
+      715,
+      695,
+      794,
+      711
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Example: ",
+    "bbox": [
+      174,
+      744,
+      243,
+      758
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{Q} = 2 0 0, 0 0 0 \\mathrm{kg}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      302,
+      787,
+      416,
+      802
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{D} _ {\\mathrm{cd}} = 0. 3 \\cdot 5 8. 4 8 = 1 7. 5 \\mathrm{m}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      307,
+      808,
+      487,
+      823
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "d) Prevention of propagation through passageways ",
+    "bbox": [
+      114,
+      851,
+      490,
+      866
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "footer",
+    "text": "-1-4-8- ",
+    "bbox": [
+      475,
+      922,
+      522,
+      935
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      880,
+      948
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Blast, flame and hot gas may cause delayed propagation. Time separations between the original donor event and the potential explosions of this mode will likely be sufficient to prevent coalescence of blast waves. Consequently, for purposes of Q-D siting, only the maximum credible explosives quantity need be used to determine NEQ. ",
+    "bbox": [
+      171,
+      122,
+      884,
+      201
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "In order to protect assets, blast and fire resistant doors must be installed within multi-chambered facilities. Evaluations of design loads on doors must be made on a site-specific basis. ",
+    "bbox": [
+      173,
+      229,
+      880,
+      264
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "e) Propagation by Flame and Hot Gas through Cracks and Fissures ",
+    "bbox": [
+      114,
+      293,
+      594,
+      308
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Consideration must be given to the long-duration action of the explosion gas. These quasi-static forces might form cracks in the rock that extend from the donor to an adjacent (acceptor) chamber, thus making it possible for hot gases to flow into this chamber and initiate an event. Significant factors for this mode of propagation include the strength of rock, the existence of cracks formed before the explosion incident, the type of barriers in cavern storage sites, the cover and the loading density in the chamber. This mode of propagation must be considered when final decisions about chamber separation distances are made. ",
+    "bbox": [
+      171,
+      336,
+      884,
+      458
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Thus, because of these cracks and fissures, propagation may occur beyond ",
+    "bbox": [
+      174,
+      486,
+      660,
+      501
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 0. 3 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      282,
+      521,
+      403,
+      541
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-6 ",
+    "bbox": [
+      715,
+      524,
+      794,
+      540
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Example: ",
+    "bbox": [
+      174,
+      572,
+      240,
+      586
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{Q} = 2 0 0, 0 0 0 \\mathrm{kg}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      302,
+      614,
+      416,
+      629
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{D} _ {\\mathrm{cd}} = 0. 3 \\cdot 5 8. 4 8 = 1 7. 5 \\mathrm{m}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      307,
+      635,
+      487,
+      650
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "but not likely beyond; ",
+    "bbox": [
+      173,
+      679,
+      319,
+      693
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "equation",
+    "text": "$$\nD _ {c d} = 2. 0 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      282,
+      714,
+      403,
+      735
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.3-7 ",
+    "bbox": [
+      715,
+      718,
+      794,
+      733
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Example: ",
+    "bbox": [
+      174,
+      766,
+      240,
+      780
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{Q} = 2 0 0, 0 0 0 \\mathrm{kg}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      302,
+      808,
+      416,
+      823
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\mathrm{D} _ {\\mathrm{cd}} = 2 \\cdot 5 8. 4 8 = 1 1 7 \\mathrm{m}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      307,
+      828,
+      470,
+      844
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "Site-specific analyses, using a sound geological survey, should be made to determine proper intervals between chambers. ",
+    "bbox": [
+      171,
+      872,
+      884,
+      906
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "-1-4-9- ",
+    "bbox": [
+      475,
+      923,
+      522,
+      935
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      880,
+      948
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "1.4.3.2. Hazard Division 1.2 ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      157,
+      389,
+      171
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "Intervals between a chamber containing ammunition of Hazard Division 1.2 and adjacent chambers should be at least 5 m of competent rock unless structural considerations apply. This applies also to barriers used to isolate chambers in a cavern storage site. ",
+    "bbox": [
+      112,
+      204,
+      885,
+      262
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "1.4.3.3. Hazard Division 1.4 ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      304,
+      450,
+      317
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "Intervals between chambers containing ammunition of Hazard Division 1.4 should be determined from structural considerations with no regard to the content of ammunition. This applies also to barriers used to isolate chambers in a cavern storage site. ",
+    "bbox": [
+      112,
+      350,
+      882,
+      408
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      608,
+      921
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "footer",
+    "text": "-1-4-10- ",
+    "bbox": [
+      470,
+      923,
+      527,
+      934
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 46
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      98
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "Section IV - Inhabited Building Distance (IBD) ",
+    "text_level": 1,
+    "bbox": [
+      371,
+      179,
+      714,
+      194
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "IBD must be the largest of the distances for protection against airblast, debris, and ground shock [1, 7]. ",
+    "bbox": [
+      173,
+      225,
+      873,
+      239
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "1.4.4.1. Airblast [8-15] ",
+    "text_level": 1,
+    "bbox": [
+      115,
+      282,
+      354,
+      296
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "a) The side-on overpressure of 5 kPa defines IBD. ",
+    "bbox": [
+      112,
+      328,
+      487,
+      344
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "b) An explosion in an underground storage chamber may produce external airblast from two sources; the exit of blast from existing openings (tunnel entrances, ventilation shafts, etc.) and the rupture or breach of the chamber cover by the detonation. Required IBDs are independently determined for each of these airblast sources, with the maximum IBD used for siting. ",
+    "bbox": [
+      112,
+      371,
+      885,
+      451
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "1. A breaching chamber cover will produce external airblast. Use the following table to site for IBD due to airblast produced by breaching of the chamber cover. Values of IBD for airblast through the ruptured cover are: ",
+    "bbox": [
+      173,
+      478,
+      885,
+      536
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "CoverThickness ",
+    "bbox": [
+      166,
+      568,
+      309,
+      585
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\text { Cover } \\leq 0. 1 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      168,
+      589,
+      310,
+      612
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\n0. 1 \\cdot Q ^ {1 / 3} <   C o v e r \\leq 0. 2 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      132,
+      612,
+      366,
+      635
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\n0. 2 \\cdot Q ^ {1 / 3} <   C o v e r \\leq 0. 3 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      132,
+      635,
+      366,
+      657
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\nC o v e r > 0. 3 \\cdot Q ^ {1 / 3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      169,
+      657,
+      310,
+      681
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "IBD ",
+    "bbox": [
+      490,
+      568,
+      532,
+      585
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\nI B D \\text {   for   SurfaceBurst   }\n$$",
+    "text_format": "latex",
+    "bbox": [
+      440,
+      595,
+      628,
+      612
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\n1 / 2 I B D \\text { for   SurfaceBurst }\n$$",
+    "text_format": "latex",
+    "bbox": [
+      440,
+      618,
+      658,
+      635
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\n1 / 4   I B D   f o r   S u r f a c e B u r s t\n$$",
+    "text_format": "latex",
+    "bbox": [
+      440,
+      640,
+      658,
+      657
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "Equation ",
+    "bbox": [
+      690,
+      568,
+      774,
+      587
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\nE q. 3. 3. 4 - 1 (a)\n$$",
+    "text_format": "latex",
+    "bbox": [
+      687,
+      595,
+      808,
+      612
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\nE q. 3. 3. 4 - 1 (b)\n$$",
+    "text_format": "latex",
+    "bbox": [
+      687,
+      618,
+      808,
+      635
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\nE q. 3. 3. 4 - 1 (c)\n$$",
+    "text_format": "latex",
+    "bbox": [
+      687,
+      640,
+      806,
+      657
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\n\\text { NegligibleAirblastHazard } \\quad E q. 3. 3. 4 - 1 (d)\n$$",
+    "text_format": "latex",
+    "bbox": [
+      379,
+      662,
+      747,
+      681
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "This paragraph defines airblast IBDs from openings in an underground storage facility. The IBD for airblast must be considered for any opening. ",
+    "bbox": [
+      243,
+      692,
+      884,
+      729
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "(a) To a first approximation, distance and overpressure along the extended centerline axis of an opening may be estimated with an algorithm of the form: ",
+    "bbox": [
+      243,
+      777,
+      884,
+      814
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "equation",
+    "text": "$$\np _ {S O} = 1 9 0 0 \\cdot \\left[ \\frac {Q}{V _ {E}} \\right] ^ {0. 5} \\cdot \\left[ \\frac {r}{D _ {H Y D}} \\right] ^ {- n}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      247,
+      834,
+      510,
+      880
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "Eq. 1.4.4-2 ",
+    "bbox": [
+      594,
+      851,
+      673,
+      866
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      388,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "footer",
+    "text": "-1-4-11- ",
+    "bbox": [
+      470,
+      923,
+      527,
+      934
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 47
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      803,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "where: ",
+    "bbox": [
+      304,
+      123,
+      354,
+      135
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "k: constant, kPa ",
+    "bbox": [
+      302,
+      165,
+      448,
+      179
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "r: radial distance from opening, m ",
+    "bbox": [
+      304,
+      187,
+      573,
+      201
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "$p_{so}$ : overpressure at distance r, kPa ",
+    "bbox": [
+      304,
+      207,
+      564,
+      222
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "$D_{HYD}$ : effective hydraulic diameter that controls the dynamic flow from the opening, m [A robust constriction within five tunnel diameters of an exit defines the hydraulic diameter used for predicting overpressures outside the underground facility.], ",
+    "bbox": [
+      302,
+      229,
+      884,
+      308
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "Q: Mass of explosives material, kg ",
+    "bbox": [
+      304,
+      314,
+      573,
+      328
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "$V_{E}$ : Total volume inside the underground facility that is engulfed by blast waves at the time the blast arrives at the location of interest ( $m^{3}$ ) ( $V_{E}$ is often the total volume of the underground complex.) ",
+    "bbox": [
+      302,
+      334,
+      882,
+      394
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "n: measure of attenuation rate of $p_{SO}$ vs r (no units). ",
+    "bbox": [
+      304,
+      400,
+      687,
+      414
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "Site-specific analyses should be conducted where there are complex tunnel systems, tunnel constrictions, or significant tunnel roughness. ",
+    "bbox": [
+      302,
+      442,
+      880,
+      479
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "The value n for pressures between 200 Pa and 20 kPa varies from 0.91 to 0.66. The value of n that best fits available data over the range of interest for Workshops to IBD is 1/1.4. For the overpressure of interest at IBD, $p_{SO} = 5$ kPa, so: ",
+    "bbox": [
+      302,
+      505,
+      882,
+      565
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "equation",
+    "text": "$$\nI B D = 7 0 \\cdot D _ {H Y D} \\cdot \\left[ \\frac {Q}{V _ {E}} \\right] ^ {\\frac {1}{2 . 8}} \\tag {Eq.1.4.4-3}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      299,
+      586,
+      687,
+      638
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "(b) For a simple horizontal geometry (no barricade, a rapidly rising rock face, an extended centerline normal to the rock face) the following equation for off centerline axis can be used. ",
+    "bbox": [
+      245,
+      667,
+      884,
+      724
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "equation",
+    "text": "$$\nI B D (\\theta) = I B D (\\theta = 0) \\cdot \\left[ 1 + (\\theta / 5 6) ^ {2} \\right] ^ {- 1 / 1. 4} \\quad \\text { Eq. } 1. 4. 4 - 4\n$$",
+    "text_format": "latex",
+    "bbox": [
+      295,
+      744,
+      700,
+      771
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "where: ",
+    "bbox": [
+      304,
+      800,
+      354,
+      812
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "θ: horizontal angle off centerline in degrees ",
+    "bbox": [
+      304,
+      842,
+      603,
+      857
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "Large variations in directivity have been observed (Annex IIIB Figure 3-II). ",
+    "bbox": [
+      304,
+      885,
+      880,
+      900
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      908,
+      606,
+      921
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "-1-4-12- ",
+    "bbox": [
+      470,
+      923,
+      527,
+      934
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      880,
+      948
+    ],
+    "page_idx": 48
+  },
+  {
+    "type": "text",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "text_level": 1,
+    "bbox": [
+      389,
+      41,
+      608,
+      55
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "AASTP-1 ",
+    "bbox": [
+      805,
+      68,
+      880,
+      81
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "(Edition 1) ",
+    "bbox": [
+      801,
+      83,
+      880,
+      97
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "Therefore, it is recommended that carefully constructed models and realistic exit pressures should be used to investigate directivity for an actual site. ",
+    "bbox": [
+      304,
+      122,
+      882,
+      159
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "(c) High-Pressure Closure Block Designed to Remain Intact ",
+    "bbox": [
+      245,
+      186,
+      695,
+      201
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "References [4, 5] contain illustrative examples of a closure block designs. ",
+    "bbox": [
+      304,
+      229,
+      806,
+      244
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "For chamber loading densities greater than or equal to $10 \\, kg/m^{3}$ , IBD may be reduced by 50% when a high-pressure closure block, designed to remain intact in case of an explosion, is used. ",
+    "bbox": [
+      302,
+      271,
+      884,
+      330
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "For chamber loading densities lower $10 \\, kg/m^{3}$ (but greater than $1.0 \\, kg/m^{3}$ ), determine the reduction by the formula: ",
+    "bbox": [
+      302,
+      356,
+      882,
+      394
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "equation",
+    "text": "$$\ny(\\%) = 50 \\cdot \\log_{10}(\\gamma) \\tag{Eq. 1.4.4 - 5}\n$$",
+    "text_format": "latex",
+    "bbox": [
+      342,
+      414,
+      665,
+      435
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "where, y is the percentage reduction in IBD, and $\\gamma$ is loading density in kg/m $^{3}$ . For loading densities lower than 1.0 kg/m $^{3}$ , use $y(\\%) = 0$ . ",
+    "bbox": [
+      304,
+      463,
+      882,
+      501
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "(d) Portal Barricade ",
+    "bbox": [
+      245,
+      528,
+      421,
+      543
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "When a properly designed and located portal barricade $[5, 7]$ is in front of the opening, IBD for airblast along the extended tunnel axis may be reduced up to 50 percent. Although the total airblast hazarded area remains almost unchanged, its shape, for explosives safety applications, becomes more circular. ",
+    "bbox": [
+      302,
+      571,
+      884,
+      650
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "1.4.4.2. Debris ",
+    "bbox": [
+      115,
+      731,
+      297,
+      745
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "Debris from an explosion in an underground facility may issue from adits or other openings; failure of nearby structures (portal, barricades, etc.); and breaching of the geological cover over the PES (crater debris). ",
+    "bbox": [
+      112,
+      777,
+      884,
+      815
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "text",
+    "text": "a) Adit Debris [16-17, 20]: ",
+    "bbox": [
+      112,
+      842,
+      339,
+      858
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com ",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "footer",
+    "text": "NATO/PFP UNCLASSIFIED ",
+    "bbox": [
+      389,
+      908,
+      608,
+      921
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "footer",
+    "text": "-1-4-13- ",
+    "bbox": [
+      470,
+      923,
+      527,
+      934
+    ],
+    "page_idx": 49
+  },
+  {
+    "type": "footer",
+    "text": "CHANGE 2 ",
+    "bbox": [
+      791,
+      935,
+      882,
+      948
+    ],
+    "page_idx": 49
+  }
+]

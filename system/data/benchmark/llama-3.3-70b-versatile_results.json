@@ -1,0 +1,29 @@
+[
+  {
+    "item_no": 1,
+    "text": "Magazine Alpha stores 800 kg NEQ of HD 1.1 artillery shells and 300 kg NEQ of HD 1.5 insensitive munitions. The combined storage is classified and treated as HD 1.1 for all quantity-distance calculations.",
+    "verdict": "BELİRSİZ",
+    "reasoning": "The context does not provide information on how to classify and treat the combined storage of HD 1.1 and HD 1.5 munitions, as the tables and sections provided only discuss Hazard Divisions 1.1-1.4 and 1.6, but do not mention the specific rules for combining different hazard divisions or the treatment of HD 1.5 insensitive munitions.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 2.68
+  },
+  {
+    "item_no": 2,
+    "text": "Depot Building 3 contains HD 1.1 bombs and HD 1.6 insensitive munitions in the same storage facility. The aggregate hazard classification applied for standoff calculations is HD 1.1.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions, the aggregate hazard division (HD) classification for HD 1.1 stored with HD 1.6 is HD 1.1, as stated in the table.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 2.41
+  },
+  {
+    "item_no": 3,
+    "text": "Storage igloo F-4 holds HD 1.3 propellants and HD 1.5 substances together. The facility applies HD 1.1 classification to the combined storage for all Q-D requirements.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions, HD 1.3 (Hazard Division 1.3) stored with HD 1.5 (Hazard Division 1.5) has an aggregate classification of HD 1.1, which matches the facility's application of HD 1.1 classification to the combined storage.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 2.6
+  }
+]

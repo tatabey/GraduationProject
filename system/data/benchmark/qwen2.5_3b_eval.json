@@ -1,0 +1,132 @@
+{
+  "total": 138,
+  "correct": 91,
+  "wrong": 47,
+  "accuracy": 65.94202898550725,
+  "by_table": {
+    "Table 4": {
+      "correct": 15,
+      "total": 28
+    },
+    "Table 5": {
+      "correct": 17,
+      "total": 27
+    },
+    "Table 6": {
+      "correct": 19,
+      "total": 27
+    },
+    "Table T.2": {
+      "correct": 21,
+      "total": 28
+    },
+    "Table 133": {
+      "correct": 19,
+      "total": 28
+    }
+  },
+  "by_verdict": {
+    "UYGUN": {
+      "tp": 47,
+      "fn": 28,
+      "fp": 19
+    },
+    "UYGUN DEĞİL": {
+      "tp": 44,
+      "fn": 19,
+      "fp": 28
+    }
+  },
+  "errors": [
+    {
+      "item_no": 8,
+      "text": "Storage building C-3 holds HD 1.2.2 items alone and treats them as HD 1.2.2 for all safety calculations.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "The storage of HD 1.2.2 items with other items in Storage building C-3 is treated as HD 1.1, which violates the rule that such storage should be treated as HD 1.2.2 for all safety calculations according to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions section 1.2.3.2.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 4.4
+    },
+    {
+      "item_no": 16,
+      "text": "Magazine D-3 stores HD 1.1 and HD 1.3 items together. The commander has classified the combined storage as HD 1.3 to reduce required standoff distances.",
+      "verdict": "UYGUN",
+      "reasoning": "The given item states that Magazine D-3 stores HD 1.1 and HD 1.3 items together, which is classified as HD 1.1 to reduce standoff distances. According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions in the context provided, HD 1.1 stored with HD 1.3 results in an aggregate classification of HD 1.1. This aligns with the commander's decision to classify the combined storage as HD 1.3.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 5.14
+    },
+    {
+      "item_no": 17,
+      "text": "Facility R-9 stores HD 1.2.1 and HD 1.2.2 munitions in the same building. The aggregate classification applied is HD 1.2.2.",
+      "verdict": "UYGUN",
+      "reasoning": "The item states that Facility R-9 stores HD 1.2.1 and HD 1.2.2 munitions in the same building with an aggregate classification of HD 1.2.2, which is compliant with Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions, specifically Section 1.2.3.2.1 where it states that HD 1.2.1 stored with HD 1.2.2 results in an aggregate classification of HD 1.2.2.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 5.23
+    },
+    {
+      "item_no": 18,
+      "text": "Building S-6 stores HD 1.5 and HD 1.3 propellants together. The storage is classified as HD 1.3 for Q-D calculations.",
+      "verdict": "UYGUN",
+      "reasoning": "The item complies with the standard as per Table 4 - Aboveground Storage, Mixing and Aggregation Rules for hazard Divisions, which states that HD 1.3 (propellants) stored with any other HD will result in an aggregate classification of HD 1.1 if no specific circumstances exist to classify it as another Hazard Division. In this case, the storage is classified as HD 1.3 for Q-D calculations, which aligns with the rule that HD 1.3 (propellants) stored with any other HD will result in an aggregate classification of HD 1.1.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 6.09
+    },
+    {
+      "item_no": 19,
+      "text": "Magazine V-3 stores HD 1.1 and HD 1.2.1 items. The aggregate hazard classification applied to the combined storage is HD 1.2.1.",
+      "verdict": "UYGUN",
+      "reasoning": "The given item states that Magazine V-3 stores HD 1.1 and HD 1.2.1 items, with the aggregate hazard classification applied to the combined storage being HD 1.2.1. According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions in Section 1.2.3.2 of the context, storing HD 1.1 (Hazard Division 1.1) with HD 1.2.1 (Hazard Division 1.2.1) results in an aggregate classification of HD 1.2.1, which aligns with the given item's finding.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 5.95
+    },
+    {
+      "item_no": 21,
+      "text": "Magazine H-4 contains HD 1.2.2 and HD 1.5 items. The aggregate classification applied is HD 1.2.2.",
+      "verdict": "UYGUN",
+      "reasoning": "The item states that Magazine H-4 contains HD 1.2.2 and HD 1.5 items, with the aggregate classification applied as HD 1.2.2. According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions in Section 1.2.3.2. of the context, HD 1.2.2 stored with HD 1.5 results in an aggregate classification of HD 1.2.2. This aligns with the given information.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 5.76
+    },
+    {
+      "item_no": 22,
+      "text": "Storage building J-9 holds HD 1.1 and HD 1.6 items. The combined classification applied by the facility is HD 1.6.",
+      "verdict": "UYGUN",
+      "reasoning": "The context provides rules for aggregate hazard division classification in Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions. According to the rule HD 1.1 (Hazard Division 1.1) stored with HD 1.6 (Hazard Division 1.6): aggregate classification HD 1.1., since storage building J-9 holds both HD 1.1 and HD 1.6 items, the combined classification should be HD 1.1. This aligns with the given finding that the facility applied HD 1.6 for these items, which is compliant with the standard rules.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 5.9
+    },
+    {
+      "item_no": 23,
+      "text": "Depot N-5 stores HD 1.3 and HD 1.5 items together. The aggregate classification applied is HD 1.3 for Q-D calculations.",
+      "verdict": "UYGUN",
+      "reasoning": "The given item states that Depot N-5 stores HD 1.3 and HD 1.5 items together with an aggregate classification of HD 1.3 for Q-D calculations. According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions in Section 1.2.3.2. Storage Limitations, HD 1.3 stored with HD 1.5 results in an aggregate classification of HD 1.1 (Table 4, Section: Aggregate hazard division (HD) classification rules for mixed storage). However, Footnote $^{3}$ states that if any of the following circumstances exists, the mix must be aggregated as 1.1, unless relevant trials or analysis indicate otherwise. Since no specific circumstances are mentioned in the given context, we can assume that the depot's practice complies with the standard since it results in an aggregate classification of HD 1.3 for Q-D calculations, which is within the allowed range (HD 1.1).",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 8.76
+    },
+    {
+      "item_no": 24,
+      "text": "Magazine E-2 holds HD 1.2.1 and HD 1.5 items. The facility applies HD 1.2.1 as the aggregate classification for combined storage.",
+      "verdict": "UYGUN",
+      "reasoning": "The context provides a table of aggregate hazard division rules which explicitly states that HD 1.2.1 stored with HD 1.5 results in an aggregate classification of HD 1.1, matching the finding from the audit report.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 3.46
+    },
+    {
+      "item_no": 25,
+      "text": "Building F-6 stores HD 1.5 and HD 1.5 items together. The storage is classified as HD 1.5 for standoff calculations.",
+      "verdict": "UYGUN",
+      "reasoning": "The item states that Building F-6 stores HD 1.5 and HD 1.5 items together, which is classified as HD 1.5 for standoff calculations. According to Table 4 - Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions in the context provided, HD 1.5 stored with HD 1.5 results in an aggregate classification of HD 1.5. This directly aligns with the finding from the audit report.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 4",
+      "elapsed_s": 6.75
+    }
+  ]
+}
