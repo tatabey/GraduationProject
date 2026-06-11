@@ -252,6 +252,26 @@ Snapshot'lar: `data/benchmark/eval_all_<faz>.json`.
 |---|---|---|---|---|
 | 0 (baseline) | — | 98.7 / 98.7 / 92.0 | 54.5 / 54.5 | — |
 | 1+2 | section_path embed + boilerplate satır filtresi + sahte-başlık bastırma (457→248 chunk) + uzun chunk'a multi-vector pencereleme | 98.7 / 98.7 / 92.0 | 56.0 / 56.5 | ✅ |
+| 3a (red) | TEXT_FETCH_K=160 düz (tarama: K=12/30/50/80/160 → 56/60/63.5/67/68) | 94.0 / 90.7 / 88.7 | 68.0 / 71.0 | ❌ tablolar |
+| 3b (red) | K=160 + tip-içi shortlist z-norm | 97.3 / 96.0 / 89.3 | 60.5 / 62.5 | ❌ |
+| 3 | İki aşamalı seçim: slot tahsisi dar baseline zinciri, text slot içeriği geniş kanal (K=160) | 98.7 / 98.7 / 92.0 (birebir) | 59.5 / 60.0 | ✅ |
+| 4 | BM25 lexical kanal (geniş kanala) | — | 59.5 (+0) | açık bırakıldı |
+| 6 (red) | Sentetik soru vektörleri (496, yerel Ollama) | 98.7 / 98.7 / 92.0 | 56.0 (K=400'de 54.5) | ❌ net zararlı |
+| **SPLIT** | **Modalite-ayrık 3+3 sonuç (kullanıcı önerisi): füzyon tamamen kalktı** | 98.7 / 98.7 / 92.0 | **71.5 / 75.0** | ✅ |
+| **5 (FINAL)** | **bge-reranker-base (GPU, yerel klasör) + SPLIT** | **100.0 / 98.7 / 96.7** | **84.5 / 85.0** | ✅✅ |
+
+**Sonuç (2026-06-11):** text HR@3 %54.5 → **%84.5** (+30), hedef %75 aşıldı;
+tablolar gerilemedi, set1 ve set3 İYİLEŞTİ (98.7→100, 92→96.7). text HR@1
+27.5→68.5, MRR 0.412→0.766. Kazanan mimari: modalite-ayrık sonuç listesi
+(yarış yok) + güçlü reranker (bge-reranker-base, 278M, GPU).
+
+Önemli negatif bulgular (tez için):
+- Modaliteler arası HER istatistiksel füzyon (RRF, geniş havuz, shortlist
+  z-norm) bir tarafı geriletti — yapısal ayrıştırma (3+3) tek kalıcı çözüm.
+- 3B-üretimi sentetik soru vektörleri zayıf reranker'la gürültü ekledi
+  (aday arttıkça yanlış seçim arttı) — embedding değil reranker darboğazdı.
+- Maliyet notu: 3+3 modu LLM bağlamını ~2x büyütür; verdict doğruluğuna
+  etkisi (138'lik set, gpt-oss-120B %89.1) henüz ölçülmedi → sıradaki iş.
 
 Faz 1+2 notları:
 - "NATO/PFP UNCLASSIFIED" 212 kez sahte heading olarak bölüm parçalıyordu;

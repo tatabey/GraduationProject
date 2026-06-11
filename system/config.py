@@ -28,7 +28,7 @@ EMBED_MODEL = "BAAI/bge-large-en-v1.5"
 # ---------------------------------------------------------------------------
 # bge-reranker-base: HF CDN'e IPv6 takılması nedeniyle yerel klasörden
 # (wget -4 ile indirildi: system/models/bge-reranker-base)
-RERANKER_MODEL  = "cross-encoder/ms-marco-MiniLM-L-6-v2"  # gecici: bge indiriliyor
+RERANKER_MODEL  = str(BASE_DIR / "models" / "bge-reranker-base")
 TOP_K           = 3       # kaç sonuç dönsün
 RERANK_FACTOR   = 4       # reranker için kaç kat fazla candidate al
 # CUDA varsa embedding + reranker GPU'da çalışır (yoksa otomatik CPU).
