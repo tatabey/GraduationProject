@@ -64,18 +64,25 @@
          style="min-height:100vh; transition:margin-left .25s ease;">
 
     <!-- Logo -->
-    <div class="px-6 pt-7 pb-6 border-b border-slate-800">
-      <div class="flex items-center gap-4">
+    <div class="px-5 pt-7 pb-6 border-b border-slate-800">
+      <div class="flex items-center gap-3">
         <div class="w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
           <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
           </svg>
         </div>
-        <div>
+        <div class="flex-1 min-w-0">
           <div class="text-white font-bold text-base leading-tight">Denetim Sistemi</div>
           <div class="text-slate-500 text-sm mt-1">v3.0 · RAG Tabanlı</div>
         </div>
+        <button onclick="toggleSidebar()" title="Menüyü kapat"
+                class="w-9 h-9 flex items-center justify-center rounded-lg text-slate-500
+                       hover:bg-slate-800 hover:text-slate-200 transition-all flex-shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/>
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -120,8 +127,8 @@
 
     <!-- Top bar -->
     <div class="bg-white border-b border-slate-200 px-6 py-5 flex items-center gap-4 flex-shrink-0">
-      <button onclick="toggleSidebar()" title="Menüyü aç/kapat"
-              class="w-10 h-10 flex items-center justify-center rounded-xl text-slate-500
+      <button onclick="toggleSidebar()" id="sidebar-open-btn" title="Menüyü aç"
+              class="hidden w-10 h-10 items-center justify-center rounded-xl text-slate-500
                      border border-slate-200 hover:bg-slate-50 hover:text-indigo-600
                      transition-all flex-shrink-0">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -215,32 +222,6 @@
                 <span class="btn-label">Belgeyi İndeksle</span>
               </button>
             </form>
-
-            <!-- Pipeline bilgi kartı -->
-            <div class="card p-4">
-              <p class="sec mb-3">İndeksleme Hattı</p>
-              <ol class="space-y-2 text-sm text-slate-500">
-                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">1</span> MinerU — PDF ayrıştırma</li>
-                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">2</span> Tablo birleştirme + not/dipnot iliştirme</li>
-                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">3</span> Bölüm hiyerarşili metin parçalama</li>
-                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">4</span> Vektör indeksleme (bge-large)</li>
-              </ol>
-            </div>
-
-            <!-- KB Sil -->
-            <div class="border-t border-slate-100 pt-4">
-              <p class="sec mb-3">Bilgi Tabanı Sil</p>
-              <form hx-post="/kb/delete" hx-target="#kb-list" hx-swap="innerHTML"
-                    hx-confirm="Bu bilgi tabanı kalıcı olarak silinecek. Emin misiniz?"
-                    hx-encoding="multipart/form-data" class="flex gap-2">
-                <input type="text" name="kb_name" placeholder="KB adını yazın" class="inp flex-1 inp-sm">
-                <button type="submit"
-                        class="px-4 py-2 text-sm font-bold text-red-600 border-2 border-red-200
-                               rounded-xl hover:bg-red-50 hover:border-red-400 transition-all whitespace-nowrap">
-                  Sil
-                </button>
-              </form>
-            </div>
 
           </div>
         </div>
@@ -469,9 +450,14 @@
   };
 
   function toggleSidebar() {
-    const sb = document.getElementById('sidebar');
+    const sb  = document.getElementById('sidebar');
+    const btn = document.getElementById('sidebar-open-btn');
+    const isCollapsed = sb.style.marginLeft === '-16rem';
     // w-64 = 16rem; negatif margin ile kayarak gizlenir/açılır
-    sb.style.marginLeft = sb.style.marginLeft === '-16rem' ? '0' : '-16rem';
+    sb.style.marginLeft = isCollapsed ? '0' : '-16rem';
+    // Panel kapalıyken üst barda açma butonu görünür
+    btn.classList.toggle('hidden', isCollapsed);
+    btn.classList.toggle('flex', !isCollapsed);
   }
 
   function switchTab(name) {
