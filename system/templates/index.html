@@ -260,16 +260,19 @@
             </div>
 
             <div>
-              <div class="flex items-center justify-between mb-3">
+              <div class="flex items-start justify-between mb-3">
                 <p class="sec">Mevcut Bilgi Tabanları</p>
-                <button hx-get="/kb/list" hx-target="#kb-list" hx-swap="innerHTML"
-                        class="flex items-center gap-2 text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                  </svg>
-                  Yenile
-                </button>
+                <div class="flex flex-col items-end gap-0.5">
+                  <button hx-get="/kb/list" hx-target="#kb-list" hx-swap="innerHTML"
+                          class="flex items-center gap-2 text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Yenile
+                  </button>
+                  <span class="text-xs text-slate-400">silmek için ← kaydırınız</span>
+                </div>
               </div>
               <div id="kb-list" class="space-y-3">{{ kb_list_html | safe }}</div>
             </div>
@@ -604,8 +607,14 @@
   document.addEventListener('pointerup', e => {
     if (!_sw) return;
     const inner = _sw.inner;
-    const dx = e.clientX - _sw.x0 + (_sw.open ? -SWIPE_W : 0);
-    const open = dx < -SWIPE_W / 2;
+    const rawDx = e.clientX - _sw.x0;
+    let open;
+    if (Math.abs(rawDx) < 6) {
+      open = !_sw.open;                      // tıklama: aç/kapa (otomatik kaydırma)
+    } else {
+      const dx = rawDx + (_sw.open ? -SWIPE_W : 0);
+      open = dx < -SWIPE_W / 2;              // sürükleme: yarıyı geçtiyse açık kal
+    }
     inner.style.transition = 'transform .25s ease';
     inner.style.transform  = open ? `translateX(-${SWIPE_W}px)` : 'translateX(0)';
     inner.dataset.open = open ? '1' : '0';
