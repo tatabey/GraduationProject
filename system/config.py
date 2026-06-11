@@ -158,6 +158,9 @@ MINERU_PARALLEL_CHUNKS = 0
 # ---------------------------------------------------------------------------
 # Aşama sürelerini loglara (ve kb_meta.json'a) yaz — önce/sonra ölçümü için.
 TIMING_LOGS = True
+# ChromaDB'ye doküman ekleme parti boyutu (1 = eski doküman-başına davranış).
+# Parti = tek embedding batch'i → GPU'da indeksleme ~4-5x hızlanır.
+CHROMA_ADD_BATCH = 128
 
 # ---------------------------------------------------------------------------
 # Verdict etiketleri (LLM çıktısı için) — binary

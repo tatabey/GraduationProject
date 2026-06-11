@@ -70,6 +70,35 @@ def _code_overlap(query: str, serialized: str) -> float:
         return 0.0
     return len(q & d) / len(q)
 
+# ── Süreklilik cache'leri ───────────────────────────────────────────────────
+# Embed-fn ve koleksiyon nesneleri çağrılar arası yeniden kullanılır; her
+# retrieve'de client+model kurmak sorgu başına ~0.5 sn ek yük getiriyordu.
+_emb_fns: dict[str, object] = {}
+_collections: dict[tuple[str, str], object] = {}
+
+
+def _get_emb_fn(embed_model: str):
+    fn = _emb_fns.get(embed_model)
+    if fn is None:
+        fn = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name=embed_model, device=best_device() or "cpu"
+        )
+        _emb_fns[embed_model] = fn
+    return fn
+
+
+def _get_collection(chroma_dir: str | Path, collection_name: str, embed_model: str):
+    key = (str(chroma_dir), collection_name)
+    col = _collections.get(key)
+    if col is None:
+        chroma = chromadb.PersistentClient(path=str(chroma_dir))
+        col = chroma.get_collection(
+            name=collection_name, embedding_function=_get_emb_fn(embed_model)
+        )
+        _collections[key] = col
+    return col
+
+
 # Cross-encoder lazy load
 _reranker = None
 
@@ -118,15 +147,33 @@ def retrieve(
     """
     Sorgu için en iyi top_k eşleşmeyi döndürür.
     Semantic search → cross-encoder rerank.
+    Koleksiyon cache'i bayatlamışsa (reindex/silme) bir kez tazeleyip dener.
     """
-    chroma = chromadb.PersistentClient(path=str(chroma_dir))
-    emb_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=embed_model, device=best_device() or "cpu"
-    )
-    collection = chroma.get_collection(name=collection_name, embedding_function=emb_fn)
+    try:
+        return _retrieve_inner(query, chroma_dir, collection_name,
+                               top_k, embed_model, log_fn)
+    except Exception:
+        _collections.pop((str(chroma_dir), collection_name), None)
+        return _retrieve_inner(query, chroma_dir, collection_name,
+                               top_k, embed_model, log_fn)
 
-    if collection.count() == 0:
+
+def _retrieve_inner(
+    query: str,
+    chroma_dir: str | Path,
+    collection_name: str,
+    top_k: int = TOP_K,
+    embed_model: str = EMBED_MODEL,
+    log_fn: Callable[[str], None] | None = None,
+) -> list[dict]:
+    collection = _get_collection(chroma_dir, collection_name, embed_model)
+    count = collection.count()
+    if count == 0:
         return []
+
+    # Sorgu BİR kez embed edilir; üç sorgu da aynı vektörü kullanır
+    # (eskiden her collection.query sorguyu yeniden embed ediyordu).
+    q_emb = _get_emb_fn(embed_model)([query])
 
     # ── İKİ AŞAMALI SEÇİM ──────────────────────────────────────────────
     # 1) Slot tahsisi: DAR havuz (baseline ile birebir aynı: genel top-12 +
@@ -138,7 +185,7 @@ def retrieve(
     fetch_k = top_k * RERANK_FACTOR
 
     # Dar havuz: genel arama
-    results = collection.query(query_texts=[query], n_results=min(fetch_k, collection.count()))
+    results = collection.query(query_embeddings=q_emb, n_results=min(fetch_k, count))
     candidates = [
         _meta_to_match(meta, doc, dist)
         for doc, meta, dist in zip(
@@ -152,7 +199,7 @@ def retrieve(
     # kalabalık text popülasyonunda boğulmazlar.
     try:
         tbl_results = collection.query(
-            query_texts=[query],
+            query_embeddings=q_emb,
             n_results=TABLE_POOL_MAX,
             where={"type": "table"},
         )
@@ -171,8 +218,8 @@ def retrieve(
     if TEXT_FETCH_K > fetch_k:
         try:
             wt = collection.query(
-                query_texts=[query],
-                n_results=min(TEXT_FETCH_K, collection.count()),
+                query_embeddings=q_emb,
+                n_results=min(TEXT_FETCH_K, count),
                 where={"type": "text_chunk"},
             )
             for doc, meta, dist in zip(
