@@ -141,6 +141,14 @@ LLM_MAX_TOKENS   = 2000   # reasoning modelleri (gpt-oss/qwen3) düşünme + VER
 # (ölçülen: 11-19k char); eski 6000 sınırı TEXT bloklarını tamamen kesiyordu
 # (tablolar listede önce). 24000 = en büyük ölçülen bağlam + pay.
 CONTEXT_CHAR_CAP = 24000
+# Denetim pipelining (F5): bir sonraki maddenin retrieval'ı, mevcut maddenin
+# LLM çağrısıyla paralel yürür (GPU-yerel vs ağ — çakışma yok).
+AUDIT_PREFETCH = True
+# Proaktif tempo: kayar 60 sn penceresinde en fazla bu kadar LLM çağrısı
+# (Cerebras free tier = 5 istek/dk). Reaktif 429 backoff'un kör beklemelerinin
+# ve DEĞERLENDİRİLEMEDİ düşmelerinin yerini alır; küçük raporlarda (≤5 madde)
+# burst korunur. 0 = kapalı.
+LLM_MAX_CALLS_PER_MIN = 5
 
 # ---------------------------------------------------------------------------
 # LLM — Ollama (indeksleme özeti için, yerel)

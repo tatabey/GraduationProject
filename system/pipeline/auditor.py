@@ -18,8 +18,11 @@ Her sonuç:
     }
 """
 
+import queue
 import re
+import threading
 import time
+from collections import deque
 from pathlib import Path
 from typing import Callable
 
@@ -34,6 +37,7 @@ from config import (
     GROQ_API_KEY, GROQ_BASE_URL,
     CEREBRAS_API_KEY, CEREBRAS_BASE_URL,
     OLLAMA_URL, LLM_MAX_TOKENS, CONTEXT_CHAR_CAP,
+    AUDIT_PREFETCH, LLM_MAX_CALLS_PER_MIN, TIMING_LOGS,
 )
 from pipeline.retriever import retrieve, format_context
 
@@ -177,19 +181,78 @@ def audit_items(
     results = []
 
     n = len(items)
-    for idx, item in enumerate(items):
+
+    # ── Pipelining: N+1'in retrieval'ı, N'in LLM çağrısıyla paralel yürür ──
+    def _retrieve_one(item: dict):
+        t0 = time.perf_counter()
+        try:
+            m = retrieve(
+                query=item["text"],
+                chroma_dir=chroma_dir,
+                collection_name=collection_name,
+                top_k=top_k,
+            )
+            return m, time.perf_counter() - t0
+        except Exception as e:
+            return e, time.perf_counter() - t0
+
+    if AUDIT_PREFETCH and n > 1:
+        _q: queue.Queue = queue.Queue(maxsize=2)
+
+        def _producer():
+            for it in items:
+                _q.put((it, _retrieve_one(it)))
+            _q.put(None)
+
+        threading.Thread(target=_producer, daemon=True).start()
+
+        def _stream():
+            while True:
+                got = _q.get()
+                if got is None:
+                    return
+                yield got
+        stream = _stream()
+    else:
+        stream = ((it, _retrieve_one(it)) for it in items)
+
+    # ── Proaktif tempo: kayar 60 sn penceresinde ≤ LLM_MAX_CALLS_PER_MIN çağrı.
+    #    Reaktif 429 backoff'un kör beklemelerinin yerini alır; küçük raporlarda
+    #    (pencere dolmadan) burst korunur.
+    _call_times: deque = deque()
+
+    def _pace():
+        if LLM_MAX_CALLS_PER_MIN <= 0 or provider == "ollama":
+            return
+        now = time.time()
+        while _call_times and now - _call_times[0] > 60:
+            _call_times.popleft()
+        if len(_call_times) >= LLM_MAX_CALLS_PER_MIN:
+            wait = 60 - (now - _call_times[0]) + 0.5
+            if wait > 0:
+                log_fn(f"  ⏳ API temposu — {wait:.0f}s bekleniyor (limit aşımı önleme)")
+                time.sleep(wait)
+        _call_times.append(time.time())
+
+    for idx, (item, ret) in enumerate(stream):
         no   = item["item_no"]
         text = item["text"]
         pct  = int((idx + 0.5) / n * 100)
         log_fn(f"__PROGRESS__:{pct}:Madde {idx+1}/{n} denetleniyor")
         log_fn(f"▶ Madde #{no:02d} analiz ediliyor...")
 
-        matches = retrieve(
-            query=text,
-            chroma_dir=chroma_dir,
-            collection_name=collection_name,
-            top_k=top_k,
-        )
+        matches, retrieve_s = ret
+        if isinstance(matches, Exception):
+            log_fn(f"  → {ERROR_VERDICT} (retrieval hatası: {matches})")
+            results.append({
+                "item_no"  : no,
+                "text"     : text,
+                "verdict"  : ERROR_VERDICT,
+                "reasoning": f"Retrieval hatası: {matches}",
+                "sources"  : [],
+                "context"  : "",
+            })
+            continue
 
         if not matches:
             log_fn(f"  → {ERROR_VERDICT} (ilgili kayıt bulunamadı)")
@@ -204,8 +267,13 @@ def audit_items(
             continue
 
         context = format_context(matches)
+        _pace()
+        t_llm = time.perf_counter()
         verdict, reasoning = _call_llm(client, model, provider, text, context, log_fn)
+        llm_s = time.perf_counter() - t_llm
 
+        if TIMING_LOGS:
+            log_fn(f"  ⏱ retrieval {retrieve_s:.1f}s · LLM {llm_s:.1f}s")
         log_fn(f"  → {verdict}")
 
         results.append({

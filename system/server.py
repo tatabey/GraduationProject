@@ -736,6 +736,23 @@ def _empty_results() -> str:
     </div>"""
 
 
+# ── Model ön-ısıtma: ilk denetimde ~25-30 sn'lik model yükleme beklenmesin ──
+@app.on_event("startup")
+async def _warmup_models():
+    def _warm():
+        try:
+            from config import EMBED_MODEL
+            from pipeline.retriever import _get_emb_fn, _get_reranker
+            _get_emb_fn(EMBED_MODEL)(["warmup"])
+            rr = _get_reranker()
+            if rr:
+                rr.predict([("warmup", "warmup")])
+            print("  🔥 Modeller hazır (embedding + reranker GPU'da).")
+        except Exception as e:
+            print(f"  Ön-ısıtma atlandı: {e}")
+    threading.Thread(target=_warm, daemon=True).start()
+
+
 # ── Başlat ─────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
