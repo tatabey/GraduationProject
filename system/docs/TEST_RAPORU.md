@@ -285,6 +285,23 @@ harflerden). Sonuç: set1/2/3 = 99.3/99.3/98.0 — Faz 5'e göre ortalama İYİL
 "UNOBSTRUCTED SPACE", "trash containers" → B-2.1.5.13; standoff soruları
 doğru C-tablolarını getirdi). Sistem AASTP'ye bağımlı DEĞİL.
 
+### Verdict yeniden doğrulaması — 3+3 bağlamla (2026-06-11)
+
+**Kritik ön bulgu:** `CONTEXT_CHAR_CAP=6000` kırpması 3+3 bağlamda (11-19k
+char; tablolar önce) TEXT bloklarını 8/8 örnekte tamamen kesiyordu — retrieval
+kazanımları LLM'e hiç ulaşmıyordu. Cap → 24000 (en büyük ölçülen bağlam + pay).
+
+**Sonuç (gpt-oss-120B @ Cerebras, 150 senaryo):** geçerli verdictlerde
+**115/129 = %89.1** — eski referansla (123/138 = %89.1, 3-doküman bağlam)
+birebir aynı. 2x bağlam (3 tablo + 3 text) doğruluğu BOZMADI.
+Tablo bazında: Table 6 %100, Table 4 %96, Table 133 %94, Table 5 %89, T.2 %70.
+
+Notlar: (1) Eski/yeni koşular farklı numaralandırma kullandığından madde-bazlı
+karşılaştırma geçersiz, yalnız toplam doğruluk kıyaslanabilir. (2) 21 madde
+Cerebras gün-içi limiti nedeniyle DEĞERLENDİRİLEMEDİ — kota yenilenince
+`benchmark_local.py --models gpt-oss-120b --tag split6doc` cache sayesinde
+yalnız eksikleri koşar. (3) Maliyet: bağlam ~2.5x token (≈6-8k/çağrı).
+
 Faz 1+2 notları:
 - "NATO/PFP UNCLASSIFIED" 212 kez sahte heading olarak bölüm parçalıyordu;
   bastırılınca bölümler sayfa aşımlarında birleşti (104 çöp-başlıklı chunk yok oldu).

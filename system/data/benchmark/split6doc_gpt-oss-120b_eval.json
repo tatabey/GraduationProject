@@ -1,0 +1,137 @@
+{
+  "total": 150,
+  "correct": 115,
+  "wrong": 35,
+  "accuracy": 76.66666666666667,
+  "by_table": {
+    "Table 4": {
+      "correct": 27,
+      "total": 30
+    },
+    "Table 5": {
+      "correct": 24,
+      "total": 30
+    },
+    "Table 6": {
+      "correct": 26,
+      "total": 30
+    },
+    "Table T.2": {
+      "correct": 21,
+      "total": 30
+    },
+    "Table 133": {
+      "correct": 17,
+      "total": 30
+    }
+  },
+  "by_verdict": {
+    "UYGUN": {
+      "tp": 63,
+      "fn": 18,
+      "fp": 2
+    },
+    "UYGUN DEĞİL": {
+      "tp": 52,
+      "fn": 17,
+      "fp": 12
+    },
+    "DEĞERLENDİRİLEMEDİ": {
+      "tp": 0,
+      "fn": 0,
+      "fp": 21
+    }
+  },
+  "errors": [
+    {
+      "item_no": 12,
+      "text": "Facility R-1 stores HD 1.6 and HD 1.2.1 items together. The aggregate classification applied is HD 1.2.1.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 4 specifies that mixing HD 1.6 with HD 1.2.1 yields “(If demonstrated by testing or analogy. If not: 1.1)”. Since the item provides no evidence of such testing, the aggregate classification must default to HD 1.1, not HD 1.2.1. Hence the applied classification violates the standard.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 30,
+      "text": "Storage building 12 holds Compatibility Group C and Group S explosive substances together. This combination is permitted by AASTP-1 Table 5.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 shows that mixing Compatibility Group C with Group S is permitted only “provided substances have all passed UN Test Series 3” (Note 1). The audit item merely cites the table without confirming the required test‑series compliance, so the stated storage does not satisfy the condition and is therefore non‑compliant.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 38,
+      "text": "Facility 9 stores Compatibility Group D and Group D explosive substances together. All substances have passed UN Test Series 3.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 (Aboveground Storage of Explosive Substances) lists “Compatibility Group D with Compatibility Group D: Mixing NOT permitted.” The note allowing mixing when all substances have passed UN Test Series 3 applies only to groups where mixing is otherwise permitted (marked X), and does not change the “NOT permitted” status for D‑D. Therefore storing Group D substances together violates the standard.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 43,
+      "text": "Facility 19 stores only Compatibility Group D substances; the storage is documented as single-group.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 5 lists “Compatibility Group D with Compatibility Group D: Mixing NOT permitted.” Storing more than one Group D substance together (documented as a single‑group storage) constitutes mixing of Group D items, which the standard expressly forbids. Hence the described storage violates the mixing rule.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 64,
+      "text": "Magazine 9J stores Compatibility Group J articles with Group J articles.",
+      "verdict": "DEĞERLENDİRİLEMEDİ",
+      "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+      "expected": "UYGUN",
+      "table": "Table 6",
+      "elapsed_s": 45.86
+    },
+    {
+      "item_no": 88,
+      "text": "During an HD 1.2 incident at a storage facility, nonessential personnel were evacuated to 560 meters regardless of the quantity.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 specifies that emergency withdrawal distances for nonessential personnel vary with the hazard division and the known/unknown quantity of explosives; the table does not assign a single 560 m distance to HD 1.2. The SOP further states that “all nonessential personnel shall be withdrawn to the appropriate emergency withdrawal distance listed in Table T.2,” which must be selected based on the quantity. Evacuating to 560 m “regardless of the quantity” ignores these quantity‑dependent requirements, thus violating the standard.",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 89,
+      "text": "A facility stores 5,000 kg NEQ of HD 1.1 ammunition in transportation configuration. During an emergency, nonessential personnel were withdrawn to 870 meters.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 lists the emergency withdrawal distance for HD 1.1 ammunition in transportation configuration as 1 250 m (known quantity). The audit item withdrew non‑essential personnel to only 870 m, which is below the required 1 250 m, violating the standard.",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 90,
+      "text": "An HD 1.1 transportation convoy carries 10,000 kg NEQ of munitions. During an incident, nonessential personnel were evacuated to 1120 meters from the vehicle.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 specifies that for Hazard Division 1.1 transportation (truck/tractor‑trailer) the emergency withdrawal distance for nonessential personnel is 1250 m (both for known and unknown quantities). The reported evacuation distance of 1120 m is below this required minimum, thus the action does not comply with the standard.",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 91,
+      "text": "An HD 1.5 storage facility experienced an emergency. Nonessential personnel were withdrawn to 1100 meters from the potential explosion site.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 specifies that for Hazard Division 1.5 the emergency withdrawal distance for non‑essential personnel is 1250 m (row “HD: Unknown, located in facility… Unknown Quantity: 1250 m”). The audit item withdrew personnel to only 1100 m, which is below the required 1250 m, thus violating the standard.",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 92,
+      "text": "A facility stores 4,000 kg NEQ of HD 1.1 items. During an emergency, nonessential personnel were evacuated to 850 meters from the facility.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 lists the emergency withdrawal distance for HD 1.1 (known quantity) as 1 250 m. The facility evacuated nonessential personnel only to 850 m, which is below the required 1 250 m distance, thus violating the standard.",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 0.0
+    }
+  ]
+}
