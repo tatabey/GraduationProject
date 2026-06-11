@@ -291,16 +291,18 @@ doğru C-tablolarını getirdi). Sistem AASTP'ye bağımlı DEĞİL.
 char; tablolar önce) TEXT bloklarını 8/8 örnekte tamamen kesiyordu — retrieval
 kazanımları LLM'e hiç ulaşmıyordu. Cap → 24000 (en büyük ölçülen bağlam + pay).
 
-**Sonuç (gpt-oss-120B @ Cerebras, 150 senaryo):** geçerli verdictlerde
-**115/129 = %89.1** — eski referansla (123/138 = %89.1, 3-doküman bağlam)
-birebir aynı. 2x bağlam (3 tablo + 3 text) doğruluğu BOZMADI.
-Tablo bazında: Table 6 %100, Table 4 %96, Table 133 %94, Table 5 %89, T.2 %70.
+**Sonuç (gpt-oss-120B @ Cerebras, 150 senaryo, 142 geçerli):**
+**127/142 = %89.4** — eski referans (123/138 = %89.1, 3-doküman bağlam)
+korundu/aşıldı. 2x bağlam (3 tablo + 3 text) doğruluğu BOZMADI.
+Tablo bazında: Table 133 %97, Table 4 %96, Table 6 %96, Table 5 %89, T.2 %70.
 
 Notlar: (1) Eski/yeni koşular farklı numaralandırma kullandığından madde-bazlı
-karşılaştırma geçersiz, yalnız toplam doğruluk kıyaslanabilir. (2) 21 madde
-Cerebras gün-içi limiti nedeniyle DEĞERLENDİRİLEMEDİ — kota yenilenince
+karşılaştırma geçersiz, yalnız toplam doğruluk kıyaslanabilir. (2) 8 madde
+(#139-149) Cerebras günlük token bütçesi (1M/gün; bağlam ~8k token/çağrı)
+nedeniyle DEĞERLENDİRİLEMEDİ — bütçe yenilenince
 `benchmark_local.py --models gpt-oss-120b --tag split6doc` cache sayesinde
-yalnız eksikleri koşar. (3) Maliyet: bağlam ~2.5x token (≈6-8k/çağrı).
+yalnız eksikleri koşar. (3) Maliyet: bağlam ~2.5x token; limitler:
+5 istek/dk, 150/saat, 2400/gün, 30k token/dk, 1M token/gün.
 
 Faz 1+2 notları:
 - "NATO/PFP UNCLASSIFIED" 212 kez sahte heading olarak bölüm parçalıyordu;

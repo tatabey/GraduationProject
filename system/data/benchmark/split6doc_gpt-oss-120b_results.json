@@ -569,11 +569,11 @@
   {
     "item_no": 64,
     "text": "Magazine 9J stores Compatibility Group J articles with Group J articles.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6 (Aboveground Storage of Explosive Articles – Rules for Mixing of Compatibility Groups) lists “Compatibility Group J with Compatibility Group J: Mixing permitted,” so storing Group J articles together in Magazine 9J complies with the standard.",
     "expected": "UYGUN",
     "table": "Table 6",
-    "elapsed_s": 45.86
+    "elapsed_s": 1.13
   },
   {
     "item_no": 65,
@@ -975,10 +975,10 @@
     "item_no": 109,
     "text": "During an HD 1.3 emergency with known quantity of 500 kg NEQ, nonessential personnel were evacuated to only 50 meters, below the 120-meter minimum required distance.",
     "verdict": "UYGUN DEĞİL",
-    "reasoning": "Table T.2 Emergency Withdrawal Distances for Nonessential Personnel states that for a known quantity the minimum evacuation distance is 120 m (“Known Quantity: with a 120 m minimum”). Evacuating nonessential personnel to only 50 m during an HD 1.3 emergency therefore violates this requirement.",
+    "reasoning": "Table T.2 Emergency Withdrawal Distances for Nonessential Personnel states that for a known quantity (e.g., 500 kg NEQ) the minimum evacuation distance is 120 m. Evacuating nonessential personnel to only 50 m falls short of this 120‑meter minimum, thus violating the standard.",
     "expected": "UYGUN DEĞİL",
     "table": "Table T.2",
-    "elapsed_s": 0.0
+    "elapsed_s": 0.71
   },
   {
     "item_no": 110,
@@ -1104,16 +1104,16 @@
     "reasoning": "Table 1.7.2.1 (p.133) assigns Hazard Division 1.3 to Fire Division 3 with the hazard “Mass fire, or fire with minor blast or projections,” and the Fire Division 3 procedures (c) describe the required response for a developing/fully‑developed mass fire. Therefore using mass‑fire procedures as the primary scenario for HD 1.3 (propellants) complies with the standard.",
     "expected": "UYGUN",
     "table": "Table 133",
-    "elapsed_s": 1.09
+    "elapsed_s": 0.0
   },
   {
     "item_no": 124,
     "text": "Depot M-7 stores HD 1.4 items and is marked FD 4. The base emergency plan treats this facility as presenting no significant explosive hazard.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN",
+    "reasoning": "Table (p.133) links Hazard Division 1.4 with Fire Division 4 and states the hazard involved is “No significant hazard,” matching the depot’s marking and classification. Additionally, Section 1.4.2.3 confirms that HD 1.4 materials have no significant exterior explosive hazards, so the emergency plan’s treatment is consistent with the standard.",
     "expected": "UYGUN",
     "table": "Table 133",
-    "elapsed_s": 44.74
+    "elapsed_s": 6.58
   },
   {
     "item_no": 125,
@@ -1131,61 +1131,61 @@
     "reasoning": "According to Table (p.133) “Hazard Divisions involved”, HD 1.1 is paired with Fire Division 1, and the text in section 1.7.2.1 states that fire divisions correspond to HD 1.1‑1.4, with HD 1.1 belonging to Fire Division 1. Marking a magazine storing HD 1.1 munitions as Fire Division 2 therefore violates the required classification.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 8.29
+    "elapsed_s": 0.0
   },
   {
     "item_no": 127,
     "text": "Depot Q-4 stores HD 1.5 explosive substances but is classified as Fire Division 3 in the emergency response plan.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the text in section 1.7.2.1, Hazard Division 1.5 “belongs to Fire Division 1” (and is treated as Hazard Division 1.1 for storage), not Fire Division 3. Classifying HD 1.5 as Fire Division 3 therefore contradicts the standard mapping.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 43.47
+    "elapsed_s": 0.65
   },
   {
     "item_no": 128,
     "text": "Building R-6 stores HD 1.2 munitions but carries a Fire Division 1 marking.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 1.7.2.1, Hazard Division 1.2 is associated with Fire Division 2 (explosion with fragment hazard). The building is marked with Fire Division 1, which is reserved for HD 1.1, 1.5 (mass‑explosion hazards). Therefore the marking does not match the stored HD 1.2 munitions and violates the standard.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 43.4
+    "elapsed_s": 0.68
   },
   {
     "item_no": 129,
     "text": "Storage facility S-9 holds HD 1.6 items but the building is marked as Fire Division 3.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133) “Hazard Divisions involved,” HD 1.6 is assigned to Fire Division 2, and the accompanying text confirms that “HD 1.6 belongs to Fire Division 2 (non‑mass explosion).” Marking the building as Fire Division 3 contradicts this mapping. Hence the item is non‑compliant.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 45.51
+    "elapsed_s": 0.81
   },
   {
     "item_no": 130,
     "text": "Igloo T-3 stores HD 1.3 propellants but is designated Fire Division 1 (mass explosion) in facility records.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133) 1.7.2.1, Hazard Division 1.3 (propellants) is linked to Fire Division 3 (mass fire/minor blast), whereas Fire Division 1 corresponds to Hazard Divisions 1.1 and 1.5 (mass explosion). Designating the Igloo T‑3, which stores HD 1.3 propellants, as Fire Division 1 therefore violates the standard.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 44.35
+    "elapsed_s": 0.76
   },
   {
     "item_no": 131,
     "text": "Magazine U-7 stores HD 1.4 items but carries Fire Division 1 marking in the emergency plan, suggesting mass explosion hazard.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) links Hazard Division 1.4 with Fire Division 4 (no significant hazard), while Fire Division 1 is reserved for HD 1.1/1.5 items that involve a mass‑explosion hazard. Marking a magazine storing HD 1.4 items with Fire Division 1 therefore misrepresents the hazard and violates the standard.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 45.92
+    "elapsed_s": 3.19
   },
   {
     "item_no": 132,
     "text": "Building V-2 stores HD 1.4 items but is designated as Fire Division 3 (mass fire hazard) in the emergency response plan.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) shows that Hazard Division 1.4 is assigned to Fire Division 4 (no significant hazard), while Fire Division 3 corresponds to Hazard Division 1.3 (mass fire). Designating a building storing HD 1.4 items as Fire Division 3 therefore contradicts the standard.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 44.5
+    "elapsed_s": 60.76
   },
   {
     "item_no": 133,
@@ -1199,29 +1199,29 @@
   {
     "item_no": 134,
     "text": "Facility X-4 stores HD 1.3 propellants but emergency responders are briefed to treat the site as Fire Division 2 (explosion with projection).",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133) 1.7.2.1, Hazard Division HD 1.3 is assigned to Fire Division 3 (mass fire/minor blast), whereas Fire Division 2 corresponds to HD 1.2 (explosion with projection). Briefing responders to treat an HD 1.3 propellant site as Fire Division 2 contradicts this mapping.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 43.82
+    "elapsed_s": 0.62
   },
   {
     "item_no": 135,
     "text": "Magazine Y-6 stores HD 1.1 munitions. The storage building is marked with Fire Division 4 (diamond symbol), indicating no significant hazard.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133) HD 1.1 is linked to Fire Division 1 (mass explosion), while Fire Division 4 (diamond symbol) is assigned to HD 1.4 (no significant hazard). Marking a storage of HD 1.1 munitions with the diamond (Fire Division 4) therefore contradicts the hazard‑division mapping.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 43.83
+    "elapsed_s": 0.62
   },
   {
     "item_no": 136,
     "text": "Depot Z-1 stores HD 1.6 insensitive munitions but is classified as Fire Division 1 in the base emergency plan.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 1.7.2.1 (Hazard Divisions involved) and the accompanying text, Hazard Division 1.6 (non‑mass explosion) is assigned to Fire Division 2, not Fire Division 1. Classifying a depot storing HD 1.6 munitions as Fire Division 1 therefore contradicts the standard.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 42.29
+    "elapsed_s": 0.5
   },
   {
     "item_no": 137,
@@ -1235,11 +1235,11 @@
   {
     "item_no": 138,
     "text": "Igloo BB-3 stores HD 1.4 items. The emergency plan classifies this building as Fire Division 2 (explosion with projection hazard).",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table (p.133) links Hazard Division 1.4 to Fire Division 4 (no significant hazard), while Fire Division 2 corresponds to Hazard Division 1.2 (explosion with projection). Classifying a building storing HD 1.4 items as Fire Division 2 contradicts this mapping.",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 44.93
+    "elapsed_s": 0.68
   },
   {
     "item_no": 139,
@@ -1248,7 +1248,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN DEĞİL",
     "table": "Table 4",
-    "elapsed_s": 43.96
+    "elapsed_s": 42.03
   },
   {
     "item_no": 140,
@@ -1257,7 +1257,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN",
     "table": "Table 4",
-    "elapsed_s": 47.18
+    "elapsed_s": 44.7
   },
   {
     "item_no": 141,
@@ -1266,7 +1266,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN DEĞİL",
     "table": "Table 5",
-    "elapsed_s": 45.6
+    "elapsed_s": 44.41
   },
   {
     "item_no": 142,
@@ -1275,7 +1275,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN",
     "table": "Table 5",
-    "elapsed_s": 46.84
+    "elapsed_s": 46.53
   },
   {
     "item_no": 143,
@@ -1284,7 +1284,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN DEĞİL",
     "table": "Table 5",
-    "elapsed_s": 43.95
+    "elapsed_s": 47.53
   },
   {
     "item_no": 144,
@@ -1293,7 +1293,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN",
     "table": "Table 6",
-    "elapsed_s": 46.23
+    "elapsed_s": 45.32
   },
   {
     "item_no": 145,
@@ -1302,16 +1302,16 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN DEĞİL",
     "table": "Table 6",
-    "elapsed_s": 43.81
+    "elapsed_s": 46.72
   },
   {
     "item_no": 146,
     "text": "Storage unit 7G holds only Compatibility Group S explosive articles. Per Table 6, Group S articles may be stored together with any other compatible group or alone. Storing Group S alone is fully compliant.",
-    "verdict": "DEĞERLENDİRİLEMEDİ",
-    "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 shows “Compatibility Group S with Compatibility Group S: Mixing NOT permitted.” Storing only Group S articles together means mixing S with S, which the table forbids; therefore the claim that storing Group S alone is fully compliant contradicts the standard.",
     "expected": "UYGUN",
     "table": "Table 6",
-    "elapsed_s": 47.39
+    "elapsed_s": 1.09
   },
   {
     "item_no": 147,
@@ -1329,7 +1329,7 @@
     "reasoning": "Table T.2 does not provide a specific emergency withdrawal distance for a known‑quantity HD 1.2 item; the listed rows correspond to other HD designations (e.g., “HD a” 300 m, “HD b” 100 m) and no entry matches a 200 m distance for HD 1.2. Consequently, the claim that 200 m complies with Table T.2 is unsupported by the provided standard.",
     "expected": "UYGUN",
     "table": "Table T.2",
-    "elapsed_s": 1.01
+    "elapsed_s": 0.0
   },
   {
     "item_no": 149,
@@ -1338,7 +1338,7 @@
     "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
     "expected": "UYGUN DEĞİL",
     "table": "Table 133",
-    "elapsed_s": 45.03
+    "elapsed_s": 44.03
   },
   {
     "item_no": 150,
@@ -1347,6 +1347,6 @@
     "reasoning": "Table (p.133) links Hazard Division HD 1.4 to Fire Division 4, whereas Table (p.134) defines the Cross symbol as representing Fire Division 2. Marking the HD 1.4 magazine with a Cross therefore does not match the required fire‑division assignment.",
     "expected": "UYGUN",
     "table": "Table 133",
-    "elapsed_s": 0.46
+    "elapsed_s": 0.0
   }
 ]
