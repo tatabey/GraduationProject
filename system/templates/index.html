@@ -27,6 +27,14 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
     .pulse { animation: pulse 2s ease-in-out infinite; }
     .nav-link { transition: all .15s ease; }
+    /* Sidebar mini-rail: kapaliyken ikon seridi */
+    #sidebar { width: 16rem; transition: width .25s ease; }
+    #sidebar.mini { width: 4.5rem; }
+    #sidebar.mini .side-label, #sidebar.mini .logo-icon { display: none; }
+    #sidebar.mini .side-head { justify-content: center; padding-left: 0; padding-right: 0; }
+    #sidebar.mini nav { padding-left: .65rem; padding-right: .65rem; }
+    #sidebar.mini .nav-link { justify-content: center; padding-left: 0; padding-right: 0; }
+    #sidebar.mini .side-foot { justify-content: center; padding-left: 0; padding-right: 0; }
     .nav-link.active { background: rgba(99,102,241,.18); color: #a5b4fc; }
     .nav-link.active svg { color: #818cf8; }
     .nav-link:not(.active) { color: #94a3b8; }
@@ -60,23 +68,23 @@
   <!-- ════════════════════════════════
        SIDEBAR
   ════════════════════════════════ -->
-  <aside id="sidebar" class="w-64 flex-shrink-0 bg-slate-900 flex flex-col overflow-hidden"
-         style="min-height:100vh; transition:margin-left .25s ease;">
+  <aside id="sidebar" class="flex-shrink-0 bg-slate-900 flex flex-col overflow-hidden"
+         style="min-height:100vh;">
 
     <!-- Logo -->
     <div class="px-5 pt-7 pb-6 border-b border-slate-800">
-      <div class="flex items-center gap-3">
-        <div class="w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+      <div class="side-head flex items-center gap-3">
+        <div class="logo-icon w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
           <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
           </svg>
         </div>
-        <div class="flex-1 min-w-0">
+        <div class="side-label flex-1 min-w-0">
           <div class="text-white font-bold text-base leading-tight">Denetim Sistemi</div>
           <div class="text-slate-500 text-sm mt-1">v3.0 · RAG Tabanlı</div>
         </div>
-        <button onclick="toggleSidebar()" title="Menüyü kapat"
+        <button onclick="toggleSidebar()" title="Menüyü aç/kapat"
                 class="w-9 h-9 flex items-center justify-center rounded-lg text-slate-500
                        hover:bg-slate-800 hover:text-slate-200 transition-all flex-shrink-0">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,34 +96,34 @@
 
     <!-- Nav -->
     <nav class="flex-1 px-4 py-5 space-y-2">
-      <p class="sec px-3 mb-4">Modüller</p>
+      <p class="sec px-3 mb-4 side-label">Modüller</p>
 
-      <button onclick="switchTab('kb')" id="nav-kb"
+      <button onclick="switchTab('kb')" id="nav-kb" title="Bilgi Tabanı"
               class="nav-link active w-full flex items-center gap-3.5 px-4 py-3.5 rounded-xl font-semibold text-base">
         <svg class="flex-shrink-0 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
         </svg>
-        Bilgi Tabanı
+        <span class="side-label">Bilgi Tabanı</span>
       </button>
 
-      <button onclick="switchTab('audit')" id="nav-audit"
+      <button onclick="switchTab('audit')" id="nav-audit" title="Denetim"
               class="nav-link w-full flex items-center gap-3.5 px-4 py-3.5 rounded-xl font-semibold text-base">
         <svg class="flex-shrink-0 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
         </svg>
-        Denetim
+        <span class="side-label">Denetim</span>
       </button>
     </nav>
 
     <!-- Footer -->
     <div class="px-6 py-5 border-t border-slate-800">
-      <div class="flex items-center gap-2.5 mb-2">
-        <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full pulse"></div>
-        <span class="text-sm font-semibold text-slate-300">Sistem aktif</span>
+      <div class="side-foot flex items-center gap-2.5 mb-2">
+        <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full pulse flex-shrink-0" title="Sistem aktif"></div>
+        <span class="side-label text-sm font-semibold text-slate-300">Sistem aktif</span>
       </div>
-      <p class="text-xs text-slate-500 leading-relaxed">Domain-bağımsız · Standart/regülasyon PDF'leri</p>
+      <p class="side-label text-xs text-slate-500 leading-relaxed">Domain-bağımsız · Standart/regülasyon PDF'leri</p>
     </div>
   </aside>
 
@@ -127,14 +135,6 @@
 
     <!-- Top bar -->
     <div class="bg-white border-b border-slate-200 px-6 py-5 flex items-center gap-4 flex-shrink-0">
-      <button onclick="toggleSidebar()" id="sidebar-open-btn" title="Menüyü aç"
-              class="hidden w-10 h-10 items-center justify-center rounded-xl text-slate-500
-                     border border-slate-200 hover:bg-slate-50 hover:text-indigo-600
-                     transition-all flex-shrink-0">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
       <div id="page-title-area">
         <h1 class="text-2xl font-bold text-slate-900">Bilgi Tabanı Yönetimi</h1>
         <p class="text-base text-slate-500 mt-1">Standart belgeleri yükleyin ve indeksleyin</p>
@@ -435,14 +435,8 @@
   };
 
   function toggleSidebar() {
-    const sb  = document.getElementById('sidebar');
-    const btn = document.getElementById('sidebar-open-btn');
-    const isCollapsed = sb.style.marginLeft === '-16rem';
-    // w-64 = 16rem; negatif margin ile kayarak gizlenir/açılır
-    sb.style.marginLeft = isCollapsed ? '0' : '-16rem';
-    // Panel kapalıyken üst barda açma butonu görünür
-    btn.classList.toggle('hidden', isCollapsed);
-    btn.classList.toggle('flex', !isCollapsed);
+    // Kapali durum = mini ikon seridi (moduller + toggle gorunur kalir)
+    document.getElementById('sidebar').classList.toggle('mini');
   }
 
   function switchTab(name) {
