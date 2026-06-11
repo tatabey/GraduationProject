@@ -73,7 +73,7 @@
         </div>
         <div>
           <div class="text-white font-bold text-base leading-tight">Denetim Sistemi</div>
-          <div class="text-slate-500 text-sm mt-1">v2.0 · RAG Tabanlı</div>
+          <div class="text-slate-500 text-sm mt-1">v3.0 · RAG Tabanlı</div>
         </div>
       </div>
     </div>
@@ -103,11 +103,22 @@
 
     <!-- Footer -->
     <div class="px-6 py-5 border-t border-slate-800">
-      <div class="flex items-center gap-2.5 mb-2.5">
+      <div class="flex items-center gap-2.5 mb-3">
         <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full pulse"></div>
         <span class="text-sm font-semibold text-slate-300">Sistem aktif</span>
       </div>
-      <p class="text-sm text-slate-500 leading-relaxed">NATO AASTP-1<br>Patlayıcı Depolama Standartları</p>
+      <div class="space-y-1.5 text-xs text-slate-500 leading-relaxed">
+        <div class="flex items-center justify-between">
+          <span>Retrieval (tablo)</span><span class="font-semibold text-slate-400">HR@3 %99+</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span>Retrieval (metin)</span><span class="font-semibold text-slate-400">HR@3 %84.5</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <span>Denetim doğruluğu</span><span class="font-semibold text-slate-400">%89.4</span>
+        </div>
+        <p class="pt-1.5 text-slate-600">Domain-bağımsız · Standart/regülasyon PDF'leri</p>
+      </div>
     </div>
   </aside>
 
@@ -123,13 +134,13 @@
         <h1 class="text-2xl font-bold text-slate-900">Bilgi Tabanı Yönetimi</h1>
         <p class="text-base text-slate-500 mt-1">Standart belgeleri yükleyin ve indeksleyin</p>
       </div>
-      <div class="flex items-center gap-3 text-sm text-slate-500 bg-slate-50
-                  px-4 py-2.5 rounded-xl border border-slate-200 font-medium">
-        <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-        bge-large-en-v1.5 · cross-encoder rerank
+      <div class="flex items-center gap-2.5">
+        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 border border-indigo-200
+                     px-3 py-1.5 rounded-lg">3 tablo + 3 metin retrieval</span>
+        <span class="text-xs font-semibold text-slate-500 bg-slate-50 border border-slate-200
+                     px-3 py-1.5 rounded-lg">bge-large · bge-reranker</span>
+        <span class="text-xs font-semibold text-slate-500 bg-slate-50 border border-slate-200
+                     px-3 py-1.5 rounded-lg">gpt-oss-120B</span>
       </div>
     </div>
 
@@ -138,143 +149,149 @@
 
 
       <!-- ══════════════════════════════════════════
-           SAYFA: Bilgi Tabanı  (kendi içinde scroll)
+           SAYFA: Bilgi Tabanı  (kaydırmasız, panel-içi scroll)
       ══════════════════════════════════════════ -->
-      <div id="tab-kb" class="h-full overflow-y-auto">
-        <div class="px-8 py-8 max-w-screen-xl mx-auto">
-          <div class="grid grid-cols-5 gap-8">
+      <div id="tab-kb" class="h-full flex overflow-hidden">
 
-            <!-- SOL: Form -->
-            <div class="col-span-2 space-y-6">
+        <!-- SOL PANEL: form, sabit genişlik, kendi scroll'u -->
+        <div class="w-[26rem] flex-shrink-0 border-r border-slate-200 bg-white overflow-y-auto">
+          <div class="p-5 space-y-4">
 
-              <div class="card">
-                <div class="px-7 pt-7 pb-5 border-b border-slate-100">
-                  <h2 class="text-xl font-bold text-slate-800">Yeni Bilgi Tabanı</h2>
-                  <p class="text-base text-slate-500 mt-1.5">PDF yükleyin, sistem MinerU + RAG pipeline ile otomatik işler.</p>
-                </div>
-                <div class="p-7">
-                  <form id="kb-form" hx-post="/kb/index" hx-target="#index-result"
-                        hx-swap="outerHTML" hx-encoding="multipart/form-data" class="space-y-6">
-
-                    <div>
-                      <label class="lbl">Bilgi Tabanı Adı</label>
-                      <input type="text" name="kb_name" placeholder="örn. NATO_AASTP1" class="inp">
-                    </div>
-
-                    <div>
-                      <label class="lbl">Standart Belgesi (PDF)</label>
-                      <label class="drop flex flex-col items-center justify-center py-9 px-4">
-                        <svg class="w-10 h-10 text-slate-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                        </svg>
-                        <span class="text-base font-semibold text-slate-500">PDF'i seçin veya sürükleyin</span>
-                        <span class="text-sm text-slate-400 mt-1">Maks. 50 MB</span>
-                        <input type="file" name="pdf_file" accept=".pdf" class="hidden" onchange="showFile(this,'kf')">
-                      </label>
-                      <span id="kf" class="fname"></span>
-                    </div>
-
-                    <div>
-                      <label class="lbl">Groq API Anahtarı <span class="font-normal text-slate-400 text-sm">(opsiyonel)</span></label>
-                      <input type="password" name="groq_key" placeholder="gsk_…" class="inp">
-                    </div>
-
-                    <details class="group">
-                      <summary class="flex items-center gap-2 text-base font-medium text-slate-400
-                                     hover:text-indigo-600 cursor-pointer select-none list-none py-1 transition-colors">
-                        <svg class="chevron w-4 h-4 transition-transform flex-shrink-0"
-                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                        Gelişmiş Seçenekler
-                      </summary>
-                      <div class="mt-4 pl-6 border-l-2 border-indigo-100 space-y-3">
-                        <label class="flex items-center gap-3 text-base text-slate-600 cursor-pointer">
-                          <input type="checkbox" name="skip_mineru" value="true"
-                                 onchange="document.getElementById('jf').style.display=this.checked?'block':'none'"
-                                 class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-400">
-                          MinerU'yu atla — hazır JSON kullan
-                        </label>
-                        <div id="jf" style="display:none;">
-                          <label class="lbl" style="font-size:14px;">content_list.json</label>
-                          <input type="file" name="existing_json" accept=".json"
-                                 class="w-full text-sm text-slate-500 file:mr-3 file:py-2 file:px-3
-                                        file:rounded-lg file:border-0 file:font-medium
-                                        file:bg-slate-100 file:text-slate-600 hover:file:bg-slate-200
-                                        border border-slate-200 rounded-xl px-3 py-2 bg-white cursor-pointer">
-                        </div>
-                      </div>
-                    </details>
-
-                    <button type="submit" class="btn">
-                      <span class="btn-spinner spin">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                        </svg>
-                      </span>
-                      <svg class="btn-label w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                      </svg>
-                      <span class="btn-label">Belgeyi İndeksle</span>
-                    </button>
-                  </form>
-                </div>
-              </div>
-
-              <div class="card p-6">
-                <h3 class="text-base font-bold text-slate-600 mb-4">Bilgi Tabanı Sil</h3>
-                <form hx-post="/kb/delete" hx-target="#kb-list" hx-swap="innerHTML"
-                      hx-encoding="multipart/form-data" class="flex gap-3">
-                  <input type="text" name="kb_name" placeholder="KB adını yazın" class="inp flex-1 inp-sm">
-                  <button type="submit"
-                          class="px-5 py-2.5 text-base font-bold text-red-600 border-2 border-red-200
-                                 rounded-xl hover:bg-red-50 hover:border-red-400 transition-all whitespace-nowrap">
-                    Sil
-                  </button>
-                </form>
-              </div>
+            <div>
+              <h2 class="text-xl font-bold text-slate-800">Yeni Bilgi Tabanı</h2>
+              <p class="text-sm text-slate-500 mt-1">PDF yükleyin; MinerU + RAG pipeline otomatik işler.</p>
             </div>
 
-            <!-- SAĞ: Log + KB listesi -->
-            <div class="col-span-3 space-y-6">
+            <form id="kb-form" hx-post="/kb/index" hx-target="#index-result"
+                  hx-swap="outerHTML" hx-encoding="multipart/form-data" class="space-y-4">
+
               <div>
-                <p class="sec mb-3">İşlem Durumu</p>
-                <div id="index-result">
-                  <div class="card overflow-hidden">
-                    <div class="bg-slate-950">
-                      <div class="flex items-center gap-2.5 px-5 py-4 border-b border-slate-800">
-                        <div class="w-3.5 h-3.5 rounded-full bg-red-500"></div>
-                        <div class="w-3.5 h-3.5 rounded-full bg-amber-400"></div>
-                        <div class="w-3.5 h-3.5 rounded-full bg-emerald-400"></div>
-                        <span class="ml-3 text-sm text-slate-500 font-mono tracking-widest">TERMINAL</span>
-                      </div>
-                      <pre class="p-6 text-sm font-mono text-slate-500 leading-relaxed h-48 overflow-y-auto">$ İndeksle butonuna basıldığında işlem günlüğü burada görünecek...</pre>
-                    </div>
-                  </div>
-                </div>
+                <label class="lbl" style="font-size:14px;">Bilgi Tabanı Adı</label>
+                <input type="text" name="kb_name" placeholder="örn. NATO_AASTP1" class="inp inp-sm">
               </div>
 
               <div>
-                <div class="flex items-center justify-between mb-4">
-                  <p class="sec">Mevcut Bilgi Tabanları</p>
-                  <button hx-get="/kb/list" hx-target="#kb-list" hx-swap="innerHTML"
-                          class="flex items-center gap-2 text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                    </svg>
-                    Yenile
-                  </button>
-                </div>
-                <div id="kb-list" class="space-y-3">{{ kb_list_html | safe }}</div>
+                <label class="lbl" style="font-size:14px;">Standart Belgesi (PDF)</label>
+                <label class="drop flex flex-col items-center justify-center py-6 px-3">
+                  <svg class="w-8 h-8 text-slate-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                  </svg>
+                  <span class="text-sm font-semibold text-slate-500">PDF'i seçin veya sürükleyin</span>
+                  <span class="text-xs text-slate-400 mt-1">Maks. 50 MB</span>
+                  <input type="file" name="pdf_file" accept=".pdf" class="hidden" onchange="showFile(this,'kf')">
+                </label>
+                <span id="kf" class="fname"></span>
               </div>
+
+              <details class="group">
+                <summary class="flex items-center gap-2 text-sm font-medium text-slate-400
+                               hover:text-indigo-600 cursor-pointer select-none list-none py-1 transition-colors">
+                  <svg class="chevron w-4 h-4 transition-transform flex-shrink-0"
+                       fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  Gelişmiş Seçenekler
+                </summary>
+                <div class="mt-3 pl-6 border-l-2 border-indigo-100 space-y-3">
+                  <label class="flex items-center gap-3 text-sm text-slate-600 cursor-pointer">
+                    <input type="checkbox" name="skip_mineru" value="true"
+                           onchange="document.getElementById('jf').style.display=this.checked?'block':'none'"
+                           class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-400">
+                    MinerU'yu atla — hazır JSON kullan
+                  </label>
+                  <div id="jf" style="display:none;">
+                    <label class="lbl" style="font-size:13px;">content_list.json</label>
+                    <input type="file" name="existing_json" accept=".json"
+                           class="w-full text-sm text-slate-500 file:mr-3 file:py-2 file:px-3
+                                  file:rounded-lg file:border-0 file:font-medium
+                                  file:bg-slate-100 file:text-slate-600 hover:file:bg-slate-200
+                                  border border-slate-200 rounded-xl px-3 py-2 bg-white cursor-pointer">
+                  </div>
+                </div>
+              </details>
+
+              <button type="submit" class="btn btn-sm">
+                <span class="btn-spinner spin">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                  </svg>
+                </span>
+                <svg class="btn-label w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                </svg>
+                <span class="btn-label">Belgeyi İndeksle</span>
+              </button>
+            </form>
+
+            <!-- Pipeline bilgi kartı -->
+            <div class="card p-4">
+              <p class="sec mb-3">İndeksleme Hattı</p>
+              <ol class="space-y-2 text-sm text-slate-500">
+                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">1</span> MinerU — PDF ayrıştırma</li>
+                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">2</span> Tablo birleştirme + not/dipnot iliştirme</li>
+                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">3</span> Bölüm hiyerarşili metin parçalama</li>
+                <li class="flex items-center gap-2.5"><span class="w-5 h-5 rounded-full bg-indigo-50 text-indigo-500 text-xs font-bold flex items-center justify-center flex-shrink-0">4</span> Vektör indeksleme (bge-large)</li>
+              </ol>
+            </div>
+
+            <!-- KB Sil -->
+            <div class="border-t border-slate-100 pt-4">
+              <p class="sec mb-3">Bilgi Tabanı Sil</p>
+              <form hx-post="/kb/delete" hx-target="#kb-list" hx-swap="innerHTML"
+                    hx-confirm="Bu bilgi tabanı kalıcı olarak silinecek. Emin misiniz?"
+                    hx-encoding="multipart/form-data" class="flex gap-2">
+                <input type="text" name="kb_name" placeholder="KB adını yazın" class="inp flex-1 inp-sm">
+                <button type="submit"
+                        class="px-4 py-2 text-sm font-bold text-red-600 border-2 border-red-200
+                               rounded-xl hover:bg-red-50 hover:border-red-400 transition-all whitespace-nowrap">
+                  Sil
+                </button>
+              </form>
             </div>
 
           </div>
         </div>
+
+        <!-- SAĞ PANEL: durum + KB listesi, kendi scroll'u -->
+        <div class="flex-1 overflow-y-auto bg-slate-100">
+          <div class="p-6 space-y-5">
+            <div>
+              <p class="sec mb-3">İşlem Durumu</p>
+              <div id="index-result">
+                <div class="card overflow-hidden">
+                  <div class="bg-slate-950">
+                    <div class="flex items-center gap-2.5 px-5 py-3 border-b border-slate-800">
+                      <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                      <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                      <span class="ml-3 text-xs text-slate-500 font-mono tracking-widest">TERMINAL</span>
+                    </div>
+                    <pre class="p-5 text-sm font-mono text-slate-500 leading-relaxed h-36 overflow-y-auto">$ İndeksle butonuna basıldığında işlem günlüğü burada görünecek...</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <p class="sec">Mevcut Bilgi Tabanları</p>
+                <button hx-get="/kb/list" hx-target="#kb-list" hx-swap="innerHTML"
+                        class="flex items-center gap-2 text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                  </svg>
+                  Yenile
+                </button>
+              </div>
+              <div id="kb-list" class="space-y-3">{{ kb_list_html | safe }}</div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
@@ -325,11 +342,6 @@
                   <input type="file" name="report_pdf" accept=".pdf" class="hidden" onchange="showFile(this,'af')">
                 </label>
                 <span id="af" class="fname"></span>
-              </div>
-
-              <div>
-                <label class="lbl" style="font-size:14px;">API Anahtarı <span class="font-normal text-slate-400">(opsiyonel)</span></label>
-                <input type="password" name="groq_key" placeholder="csk_… (boşsa sistem anahtarı)" class="inp inp-sm">
               </div>
 
               <button type="submit" class="btn btn-sm">

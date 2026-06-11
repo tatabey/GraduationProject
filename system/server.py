@@ -124,13 +124,27 @@ def render_verdict_card(r: dict, kb_name: str = "") -> str:
     text_col, bg_col, border_col, accent, sym = VERDICT_CFG.get(
         r["verdict"], ("#475569", "#f8fafc", "#e2e8f0", "#94a3b8", "·")
     )
-    sources = "".join(
-        _table_btn(s, kb_name) if s["type"] == "table"
-        else f'<span class="inline-flex items-center gap-1 text-xs text-slate-500 '
-             f'bg-slate-100 border border-slate-200 rounded px-2 py-0.5">'
-             f'¶ {s["name"][:38]}</span>'
-        for s in r["sources"]
+    # 3+3 retrieval: kaynaklar modalite gruplarıyla etiketlenir
+    tbl_btns = "".join(_table_btn(s, kb_name) for s in r["sources"] if s["type"] == "table")
+    txt_tags = "".join(
+        f'<span class="inline-flex items-center gap-1 text-xs text-slate-500 '
+        f'bg-slate-100 border border-slate-200 rounded px-2 py-0.5">'
+        f'¶ {s["name"][:38]}</span>'
+        for s in r["sources"] if s["type"] != "table"
     )
+    sources = ""
+    if tbl_btns:
+        sources += (
+            '<div class="flex flex-wrap items-center gap-2 mb-2">'
+            '<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider '
+            'w-12 flex-shrink-0">Tablo</span>' + tbl_btns + "</div>"
+        )
+    if txt_tags:
+        sources += (
+            '<div class="flex flex-wrap items-center gap-2">'
+            '<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider '
+            'w-12 flex-shrink-0">Metin</span>' + txt_tags + "</div>"
+        )
     return f"""
     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden mb-3 shadow-sm transition-shadow hover:shadow-md"
          style="border-left:4px solid {accent};">
@@ -158,7 +172,7 @@ def render_verdict_card(r: dict, kb_name: str = "") -> str:
         </summary>
         <div class="px-5 py-4 border-t border-slate-100 bg-white">
           <p class="text-sm text-slate-600 leading-relaxed mb-4">{r['reasoning']}</p>
-          <div class="flex flex-wrap gap-2">{sources}</div>
+          <div>{sources}</div>
         </div>
       </details>
     </div>"""
