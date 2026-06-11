@@ -285,6 +285,18 @@ harflerden). Sonuç: set1/2/3 = 99.3/99.3/98.0 — Faz 5'e göre ortalama İYİL
 "UNOBSTRUCTED SPACE", "trash containers" → B-2.1.5.13; standoff soruları
 doğru C-tablolarını getirdi). Sistem AASTP'ye bağımlı DEĞİL.
 
+## 9. HIZ Optimizasyonu (2026-06-12) — AASTP sıfırdan-sona
+
+| Aşama | Önce | Sonra | Nasıl |
+|---|---|---|---|
+| MinerU (5 parça) | sıralı: parça toplamı (~10 dk soğuk / 118 sn sıcak) | **en yavaş parça (~2-2.5 dk soğuk / 34 sn sıcak)** | F1: tüm parçalar eşzamanlı (`MINERU_PARALLEL_CHUNKS=0`), merged JSON BAYT-AYNI doğrulandı |
+| Retrieval / sorgu | 4.76 sn | **1.33 sn (3.6x)** | F3: reranker fp16 + batch64 — kalite BİREBİR (99.3/99.3/98.0, text 84.5/85.0); max_length=320 denendi, kapıdan döndü (set3 −7.3) |
+| Denetim / madde | ~12-15 sn + 429 hataları | **~2 sn (≤5 madde burst) / 12 sn tabanı (sürekli), hatasız** | F5: prefetch pipelining + 60sn kayar pencere ≤5 çağrı |
+| İlk denetim gecikmesi | +28 sn (model yükleme) | **0** | sunucu açılışında ön-ısıtma |
+| eval_all guardrail süresi | ~65 dk | **~19 dk** | F3'ün yan kazancı |
+| F2 (batch add + cache) | — | **+0 (dürüst ölçüm)** | chromadb/st zaten süreç-içi cache'liyormuş; kod kalitesi için tutuldu |
+| F4 (TEXT_FETCH_K küçültme) | — | ATLANDI | 1.33 sn'de marjinal; denetim tabanı zaten RPM |
+
 ### Verdict yeniden doğrulaması — 3+3 bağlamla (2026-06-11)
 
 **Kritik ön bulgu:** `CONTEXT_CHAR_CAP=6000` kırpması 3+3 bağlamda (11-19k
