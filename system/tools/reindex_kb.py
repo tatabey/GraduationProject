@@ -75,6 +75,19 @@ def main():
 
     save_text_chunks(chunks, text_dir)
 
+    # Sentetik sorular mevcutsa chunk'lara iliştir (CHUNK_SYNTH_QUERIES > 0
+    # ise kb_builder ek vektör olarak indeksler; üretim: tools/enrich_chunks.py)
+    synth_path = text_dir / "synth_queries.json"
+    if synth_path.exists():
+        synth = json.loads(synth_path.read_text(encoding="utf-8"))
+        n_att = 0
+        for c in chunks:
+            qs = synth.get(c["chunk_id"]) or []
+            if qs:
+                c["synth_queries"] = qs
+                n_att += 1
+        print(f"  ✔ {n_att} chunk'a sentetik soru iliştirildi (synth_queries.json)")
+
     # 3) ChromaDB'yi sıfırdan kur
     print("  ⏳ ChromaDB indeksleniyor...")
     idx = reindex_from_units(units, chunks, chroma_dir, col_name)

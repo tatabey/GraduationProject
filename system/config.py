@@ -59,6 +59,11 @@ TEXT_BOILERPLATE_MIN_PAGES = 5
 # chunk_id metadata'sıyla çoklu vektör olarak indekslenir (retriever dedupe
 # bunları tek match'e indirger). 0 = kapalı.
 CHUNK_EMBED_MAX_CHARS = 2000
+# Chunk başına en fazla bu kadar sentetik soru ek vektör olarak indekslenir
+# (tools/enrich_chunks.py çıktısı; yerel Ollama, sıfır cloud token).
+# Senaryo-dili ↔ mevzuat-dili embedding boşluğunu indeks tarafında kapatır.
+# 0 = kapalı.
+CHUNK_SYNTH_QUERIES = 2
 
 # ---------------------------------------------------------------------------
 # Retrieval aday havuzu
@@ -74,7 +79,7 @@ TEXT_FETCH_K = 160
 RERANK_SHORTLIST = 0
 # BM25 lexical kanal: aday havuzuna (final sıralamaya DEĞİL) BM25 top-N eklenir.
 # Paragraf numarası / kod atıflarını ("para 1.2.2.1") yakalar. False = kapalı.
-BM25_ENABLED = False
+BM25_ENABLED = True
 BM25_TOP_N   = 10
 
 # ---------------------------------------------------------------------------

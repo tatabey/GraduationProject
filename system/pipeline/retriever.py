@@ -87,6 +87,7 @@ def _meta_to_match(meta: dict, doc: str, distance: float | None = None) -> dict:
         "section_path": meta.get("section_path", ""),
         "content"     : meta.get("content", ""),
         "summary"     : doc,
+        "synth"       : meta.get("synth", 0),
         "distance"    : distance,
         "page_idx"    : meta.get("page_idx"),
         "img_path"    : meta.get("img_path", ""),
@@ -211,7 +212,13 @@ def retrieve(
         pairs = []
         for k in keys:
             m = to_score[k]
-            doc_text = m["summary"] or m.get("content", "")[:800] or m.get("html", "")[:500]
+            if m["type"] == "text_chunk" and m.get("synth"):
+                # Sentetik-soru vektörü: rerank sorgu↔chunk İÇERİĞİ üzerinden
+                # yapılmalı, sorgu↔sentetik-soru üzerinden değil.
+                doc_text = (m.get("section_path", "") + "\n" + m.get("title", "")
+                            + "\n" + m.get("content", ""))[:800]
+            else:
+                doc_text = m["summary"] or m.get("content", "")[:800] or m.get("html", "")[:500]
             pairs.append((query, doc_text))
         scores = reranker.predict(pairs)
         score_of = {k: float(s) for k, s in zip(keys, scores)}
@@ -242,8 +249,9 @@ def retrieve(
         unique = shortlisted
 
         # 2) Jenerik kod-token bonusu: sorgu↔doc kod örtüşmesine küçük ek puan.
+        #    (tabloda serialized, text'te tam content — synth/window'dan bağımsız)
         for m in unique:
-            doc_text = m.get("serialized") or m.get("summary", "") or m.get("content", "")
+            doc_text = m.get("serialized") or m.get("content") or m.get("summary", "")
             ov = _code_overlap(query, doc_text)
             m["code_score"]  = ov
             m["norm_score"] += CODE_TOKEN_BONUS * ov
@@ -262,7 +270,7 @@ def retrieve(
             mu = mean(s)
             sd = pstdev(s) or 1.0
             for m in wide:
-                doc_text = m.get("summary", "") or m.get("content", "")
+                doc_text = m.get("content") or m.get("summary", "")
                 ov = _code_overlap(query, doc_text)
                 m["code_score"] = ov
                 m["norm_score"] = (m["rerank_score"] - mu) / sd + CODE_TOKEN_BONUS * ov

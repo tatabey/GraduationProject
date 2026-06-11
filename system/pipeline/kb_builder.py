@@ -23,7 +23,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config import (
-    EMBED_MODEL, EMBED_SECTION_PATH, CHUNK_EMBED_MAX_CHARS,
+    EMBED_MODEL, EMBED_SECTION_PATH, CHUNK_EMBED_MAX_CHARS, CHUNK_SYNTH_QUERIES,
     MINERU_API_KEY, MINERU_CHUNK_SIZE,
 )
 from scripts.mineru_batch import process_all
@@ -173,6 +173,16 @@ def _index_chunks(chunks: list[dict], collection, log_fn: Callable) -> int:
             document = header + "\n" + win
             collection.add(documents=[document], metadatas=[metadata], ids=[doc_id])
             docs += 1
+        # Sentetik soru vektörleri: aynı chunk_id metadata'sı, "synth" işareti
+        # (retriever rerank'te soru metnini değil chunk içeriğini kullansın diye)
+        if CHUNK_SYNTH_QUERIES > 0:
+            for q_i, q in enumerate(chunk.get("synth_queries", [])[:CHUNK_SYNTH_QUERIES]):
+                collection.add(
+                    documents=[q],
+                    metadatas=[{**metadata, "synth": 1}],
+                    ids=[f"{chunk['chunk_id']}__q{q_i}"],
+                )
+                docs += 1
     log_fn(f"  {len(chunks)} text chunk kaydedildi ({docs} embedding dokümanı).")
     return len(chunks)
 
