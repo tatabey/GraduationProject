@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config import (
     EMBED_MODEL, RERANKER_MODEL, TOP_K, RERANK_FACTOR,
     TABLE_POOL_MAX, CODE_TOKEN_BONUS, TABLE_FLOOR,
-    TEXT_FETCH_K, BM25_ENABLED, BM25_TOP_N,
+    TEXT_FETCH_K, BM25_ENABLED, BM25_TOP_N, RERANK_SHORTLIST,
 )
 
 # Jenerik "kod-benzeri" token yakalayıcı: HD 1.1, 1.2.1, Group K, Q-D, Table 4 vb.
@@ -115,11 +115,16 @@ def retrieve(
     if collection.count() == 0:
         return []
 
-    # Embedding recall darboğazına karşı genel havuz TEXT_FETCH_K'ya kadar
-    # genişletilebilir; final seçimi her zaman rerank zinciri yapar.
-    fetch_k = max(top_k * RERANK_FACTOR, TEXT_FETCH_K)
+    # ── İKİ AŞAMALI SEÇİM ──────────────────────────────────────────────
+    # 1) Slot tahsisi: DAR havuz (baseline ile birebir aynı: genel top-12 +
+    #    tüm tablolar) final top_k'daki tablo/text slot dağılımını belirler.
+    #    Tablo davranışı bu sayede İNŞA GEREĞİ değişmez.
+    # 2) Slot içeriği: head'deki text slotlarına hangi chunk'ın gireceğini
+    #    GENİŞ text kanalı (TEXT_FETCH_K + BM25) seçer. Text yerine text
+    #    takası tablo isabetini etkileyemez.
+    fetch_k = top_k * RERANK_FACTOR
 
-    # General search
+    # Dar havuz: genel arama
     results = collection.query(query_texts=[query], n_results=min(fetch_k, collection.count()))
     candidates = [
         _meta_to_match(meta, doc, dist)
@@ -130,8 +135,8 @@ def retrieve(
         )
     ]
 
-    # Table-boosted search: always include ALL table candidates so tables are
-    # not crowded out by the much larger text_chunk population.
+    # Dar havuz: tablo kanalı — tüm tablolar her zaman adaydır, böylece
+    # kalabalık text popülasyonunda boğulmazlar.
     try:
         tbl_results = collection.query(
             query_texts=[query],
@@ -147,51 +152,94 @@ def retrieve(
     except Exception:
         pass
 
+    # Geniş text kanalı: embedding recall darboğazına karşı derin havuz.
+    # Yalnızca text slotlarının İÇERİĞİNİ seçmek için kullanılır.
+    wide_text: list[dict] = []
+    if TEXT_FETCH_K > fetch_k:
+        try:
+            wt = collection.query(
+                query_texts=[query],
+                n_results=min(TEXT_FETCH_K, collection.count()),
+                where={"type": "text_chunk"},
+            )
+            for doc, meta, dist in zip(
+                wt["documents"][0], wt["metadatas"][0], wt["distances"][0]
+            ):
+                wide_text.append(_meta_to_match(meta, doc, dist))
+        except Exception:
+            pass
+
     # BM25 lexical kanal: birebir kod/paragraf atıflarını ("para 1.2.2.1")
-    # embedding kaçırsa da havuza sokar. Sadece ADAY üretir — final sıralama
-    # yine tek rerank zincirinde (başarısız RRF final-füzyonunun tersi).
+    # embedding kaçırsa da geniş kanala sokar. (Tablolar zaten eksiksiz dar
+    # havuzda olduğundan BM25 tablo adayı ekleyemez — text'e filtrelenir.)
     if BM25_ENABLED:
         try:
             from pipeline.lexical import bm25_top
             for doc, meta in bm25_top(collection, query, BM25_TOP_N):
-                candidates.append(_meta_to_match(meta, doc, None))
+                if meta.get("type") == "text_chunk":
+                    wide_text.append(_meta_to_match(meta, doc, None))
         except Exception as e:
             if log_fn:
                 log_fn(f"BM25 kanalı atlandı: {e}")
 
-    # Duplicate temizle
+    def _key(m: dict) -> str:
+        return m["table_name"] if m["type"] == "table" else m["chunk_id"] or m["title"]
+
+    # Duplicate temizle (dar havuz)
     seen: set[str] = set()
     unique: list[dict] = []
     for m in candidates:
-        key = m["table_name"] if m["type"] == "table" else m["chunk_id"] or m["title"]
-        if key not in seen:
-            seen.add(key)
+        if _key(m) not in seen:
+            seen.add(_key(m))
             unique.append(m)
 
-    # Cross-encoder rerank (tüm adaylar için)
+    # Duplicate temizle (geniş kanal, kendi içinde)
+    wseen: set[str] = set()
+    wide: list[dict] = []
+    for m in wide_text:
+        if _key(m) not in wseen:
+            wseen.add(_key(m))
+            wide.append(m)
+
+    # Cross-encoder rerank — dar + geniş tüm adaylar TEK seferde skorlanır
     reranker = _get_reranker()
     if reranker and len(unique) > top_k:
+        to_score: dict[str, dict] = {}
+        for m in unique + wide:
+            to_score.setdefault(_key(m), m)
+        keys  = list(to_score)
         pairs = []
-        for m in unique:
+        for k in keys:
+            m = to_score[k]
             doc_text = m["summary"] or m.get("content", "")[:800] or m.get("html", "")[:500]
             pairs.append((query, doc_text))
         scores = reranker.predict(pairs)
-        for m, s in zip(unique, scores):
-            m["rerank_score"] = float(s)
+        score_of = {k: float(s) for k, s in zip(keys, scores)}
+        for m in unique + wide:
+            m["rerank_score"] = score_of[_key(m)]
 
         # 1) Modalite-içi z-normalizasyon: ms-marco tabloyu web-passage gibi
         #    puanlamaz (sistematik kayma). Skorları her `type` grubu içinde
         #    ayrı normalize ederek modaliteler arası adil kıyas sağlanır.
         #    Domain anahtar kelimesi gerektirmez → her PDF'de çalışır.
+        #    Z-norm'dan ÖNCE her tip raw skora göre RERANK_SHORTLIST'e kırpılır:
+        #    aksi hâlde büyük havuzun (ör. 160 text adayı) örneklem-maksimumu
+        #    küçük havuza (31 tablo) karşı istatistiksel avantaj kazanır.
         by_type: dict[str, list[dict]] = defaultdict(list)
         for m in unique:
             by_type[m["type"]].append(m)
+        shortlisted: list[dict] = []
         for grp in by_type.values():
+            grp.sort(key=lambda x: x["rerank_score"], reverse=True)
+            if RERANK_SHORTLIST > 0:
+                grp = grp[:RERANK_SHORTLIST]
             s  = [m["rerank_score"] for m in grp]
             mu = mean(s)
             sd = pstdev(s) or 1.0
             for m in grp:
                 m["norm_score"] = (m["rerank_score"] - mu) / sd
+            shortlisted.extend(grp)
+        unique = shortlisted
 
         # 2) Jenerik kod-token bonusu: sorgu↔doc kod örtüşmesine küçük ek puan.
         for m in unique:
@@ -205,6 +253,27 @@ def retrieve(
         # 3) Yumuşak tablo tabanı: en iyi tablo adayı medyanın altında değilse
         #    final top_k içinde yer garantisi (zorlama değil, rekabetçiyse dahil).
         unique = _apply_table_floor(unique, top_k)
+
+        # 4) Slot içeriği seçimi: head'deki text slotları geniş kanalın en iyi
+        #    adaylarıyla (sırayla) doldurulur. Slot SAYISI dar zincirden gelir,
+        #    İÇERİK geniş havuzdan — tablo sonuçları bu adımdan etkilenemez.
+        if wide:
+            s  = [m["rerank_score"] for m in wide]
+            mu = mean(s)
+            sd = pstdev(s) or 1.0
+            for m in wide:
+                doc_text = m.get("summary", "") or m.get("content", "")
+                ov = _code_overlap(query, doc_text)
+                m["code_score"] = ov
+                m["norm_score"] = (m["rerank_score"] - mu) / sd + CODE_TOKEN_BONUS * ov
+            wide.sort(key=lambda x: x["norm_score"], reverse=True)
+            head = unique[:top_k]
+            wi = 0
+            for i, m in enumerate(head):
+                if m["type"] == "text_chunk" and wi < len(wide):
+                    head[i] = wide[wi]
+                    wi += 1
+            unique = head + [m for m in unique[top_k:] if _key(m) not in {_key(h) for h in head}]
     else:
         for m in unique:
             m["code_score"] = 0.0

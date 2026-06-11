@@ -63,10 +63,15 @@ CHUNK_EMBED_MAX_CHARS = 2000
 # ---------------------------------------------------------------------------
 # Retrieval aday havuzu
 # ---------------------------------------------------------------------------
-# Genel semantic sorgunun aday sayısı tabanı. Embedding recall darboğazına
-# karşı top_k*RERANK_FACTOR'dan büyük tutulabilir; final seçim her zaman
-# rerank zincirinde. 12 = eski davranışla birebir aynı.
-TEXT_FETCH_K = 12
+# GENİŞ text kanalının derinliği (iki aşamalı seçim, aşama 2):
+# final head'deki text slotlarının İÇERİĞİ bu derinlikteki text havuzundan
+# rerank ile seçilir. Slot tahsisi (tablo/text dağılımı) ise her zaman dar
+# baseline zincirinden gelir → tablo sonuçları yapısal olarak korunur.
+# ≤ top_k*RERANK_FACTOR = kanal kapalı (saf baseline).
+TEXT_FETCH_K = 160
+# (Deneysel kalıntı, varsayılan kapalı) Dar zincirde z-norm öncesi tip başına
+# aday kırpma. İki aşamalı seçim varken gerekmez. 0 = kapalı.
+RERANK_SHORTLIST = 0
 # BM25 lexical kanal: aday havuzuna (final sıralamaya DEĞİL) BM25 top-N eklenir.
 # Paragraf numarası / kod atıflarını ("para 1.2.2.1") yakalar. False = kapalı.
 BM25_ENABLED = False
