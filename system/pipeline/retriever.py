@@ -24,7 +24,19 @@ from config import (
     EMBED_MODEL, RERANKER_MODEL, TOP_K, RERANK_FACTOR,
     TABLE_POOL_MAX, CODE_TOKEN_BONUS, TABLE_FLOOR,
     TEXT_FETCH_K, BM25_ENABLED, BM25_TOP_N, RERANK_SHORTLIST,
+    USE_GPU, SPLIT_RESULTS,
 )
+
+
+def best_device() -> str | None:
+    """USE_GPU açıksa ve CUDA varsa 'cuda', aksi hâlde None (otomatik CPU)."""
+    if not USE_GPU:
+        return None
+    try:
+        import torch
+        return "cuda" if torch.cuda.is_available() else None
+    except Exception:
+        return None
 
 # Jenerik "kod-benzeri" token yakalayıcı: HD 1.1, 1.2.1, Group K, Q-D, Table 4 vb.
 # Domain'e özel DEĞİL — herhangi bir standardın kodlarına uyar.
@@ -66,7 +78,7 @@ def _get_reranker():
     if _reranker is None:
         try:
             from sentence_transformers import CrossEncoder
-            _reranker = CrossEncoder(RERANKER_MODEL)
+            _reranker = CrossEncoder(RERANKER_MODEL, device=best_device())
         except Exception:
             _reranker = False
     return _reranker if _reranker else None
@@ -109,7 +121,7 @@ def retrieve(
     """
     chroma = chromadb.PersistentClient(path=str(chroma_dir))
     emb_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=embed_model
+        model_name=embed_model, device=best_device() or "cpu"
     )
     collection = chroma.get_collection(name=collection_name, embedding_function=emb_fn)
 
@@ -262,9 +274,7 @@ def retrieve(
         #    final top_k içinde yer garantisi (zorlama değil, rekabetçiyse dahil).
         unique = _apply_table_floor(unique, top_k)
 
-        # 4) Slot içeriği seçimi: head'deki text slotları geniş kanalın en iyi
-        #    adaylarıyla (sırayla) doldurulur. Slot SAYISI dar zincirden gelir,
-        #    İÇERİK geniş havuzdan — tablo sonuçları bu adımdan etkilenemez.
+        # 4) Geniş text kanalı sıralaması (z-norm + kod bonusu kendi içinde)
         if wide:
             s  = [m["rerank_score"] for m in wide]
             mu = mean(s)
@@ -275,6 +285,21 @@ def retrieve(
                 m["code_score"] = ov
                 m["norm_score"] = (m["rerank_score"] - mu) / sd + CODE_TOKEN_BONUS * ov
             wide.sort(key=lambda x: x["norm_score"], reverse=True)
+
+        # 5a) Modalite-ayrık mod: top_k TABLO + top_k TEXT, yarış yok.
+        #     Tablolar dar zincirin tablo sıralamasından, text'ler geniş
+        #     kanaldan gelir. Modaliteler arası füzyon tamamen devre dışı.
+        if SPLIT_RESULTS:
+            tables = [m for m in unique if m["type"] == "table"][:top_k]
+            if wide:
+                texts = wide[:top_k]
+            else:
+                texts = [m for m in unique if m["type"] == "text_chunk"][:top_k]
+            return tables + texts
+
+        # 5b) Karma mod: slot içeriği seçimi — head'deki text slotları geniş
+        #     kanalın en iyileriyle doldurulur. Slot SAYISI dar zincirden gelir.
+        if wide:
             head = unique[:top_k]
             wi = 0
             for i, m in enumerate(head):

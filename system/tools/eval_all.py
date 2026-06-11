@@ -64,15 +64,17 @@ def _summary(results: dict[str, dict]) -> str:
     return "\n".join(lines)
 
 
-def _check_baseline(results: dict[str, dict], baseline_path: Path) -> bool:
+def _check_baseline(results: dict[str, dict], baseline_path: Path,
+                    tolerance: float = 0.0) -> bool:
     base = json.loads(baseline_path.read_text(encoding="utf-8"))["results"]
     ok = True
-    print("\n  GUARDRAIL — tablo setleri baseline karşılaştırması:")
+    tol_str = f" (tolerans: {tolerance:.0%})" if tolerance else ""
+    print(f"\n  GUARDRAIL — tablo setleri baseline karşılaştırması{tol_str}:")
     for name in GUARD_SETS:
         b, c = base[name]["hr3"], results[name]["hr3"]
-        status = "✅" if c + EPS >= b else "❌ REGRESYON"
+        status = "✅" if c + tolerance + EPS >= b else "❌ REGRESYON"
         print(f"    {name}: HR@3 {b:.1%} → {c:.1%}  {status}")
-        if c + EPS < b:
+        if c + tolerance + EPS < b:
             ok = False
     # Text bilgilendirme (gate değil, bilgi amaçlı)
     for name in ("text_chunk", "text_page"):
@@ -91,6 +93,9 @@ def main():
     ap.add_argument("--baseline", type=Path, default=None,
                     help="Karşılaştırılacak eval_all_*.json; set1/2/3 HR@3 "
                          "düşerse exit 1")
+    ap.add_argument("--tolerance", type=float, default=0.0,
+                    help="Tablo setlerinde kabul edilebilir HR@3 düşüşü "
+                         "(ör. 0.02 = 2 puan). Asıl hedef text ≥ 0.75.")
     args = ap.parse_args()
 
     results: dict[str, dict] = {}
@@ -123,7 +128,7 @@ def main():
     print(f"  Snapshot: {out.relative_to(ROOT.parent)}")
 
     if args.baseline:
-        if not _check_baseline(results, args.baseline):
+        if not _check_baseline(results, args.baseline, args.tolerance):
             print("\n  ❌ Tablo guardrail İHLAL — değişiklik revert edilmeli.")
             sys.exit(1)
         print("\n  ✅ Guardrail geçti.")

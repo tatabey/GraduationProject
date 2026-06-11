@@ -26,9 +26,13 @@ EMBED_MODEL = "BAAI/bge-large-en-v1.5"
 # ---------------------------------------------------------------------------
 # Cross-encoder reranker (yerel)
 # ---------------------------------------------------------------------------
-RERANKER_MODEL  = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+# bge-reranker-base: HF CDN'e IPv6 takılması nedeniyle yerel klasörden
+# (wget -4 ile indirildi: system/models/bge-reranker-base)
+RERANKER_MODEL  = "cross-encoder/ms-marco-MiniLM-L-6-v2"  # gecici: bge indiriliyor
 TOP_K           = 3       # kaç sonuç dönsün
 RERANK_FACTOR   = 4       # reranker için kaç kat fazla candidate al
+# CUDA varsa embedding + reranker GPU'da çalışır (yoksa otomatik CPU).
+USE_GPU         = True
 
 # ---------------------------------------------------------------------------
 # Modalite-dengeli retrieval (text vs tablo)
@@ -63,7 +67,7 @@ CHUNK_EMBED_MAX_CHARS = 2000
 # (tools/enrich_chunks.py çıktısı; yerel Ollama, sıfır cloud token).
 # Senaryo-dili ↔ mevzuat-dili embedding boşluğunu indeks tarafında kapatır.
 # 0 = kapalı.
-CHUNK_SYNTH_QUERIES = 2
+CHUNK_SYNTH_QUERIES = 0
 
 # ---------------------------------------------------------------------------
 # Retrieval aday havuzu
@@ -81,6 +85,11 @@ RERANK_SHORTLIST = 0
 # Paragraf numarası / kod atıflarını ("para 1.2.2.1") yakalar. False = kapalı.
 BM25_ENABLED = True
 BM25_TOP_N   = 10
+# Modalite-ayrık sonuç: final çıktı = top_k TABLO + top_k TEXT (yarış yok).
+# Tablolar tablo kanalında, text'ler geniş kanalda kendi içlerinde sıralanır;
+# modaliteler arası füzyon/slot tahsisi tamamen devre dışı kalır.
+# LLM bağlamı 2 doküman tipini de görür (maliyet ~2x context).
+SPLIT_RESULTS = True
 
 # ---------------------------------------------------------------------------
 # LLM — Groq (inference için)
