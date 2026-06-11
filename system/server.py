@@ -59,32 +59,47 @@ def render_kb_list() -> str:
         </div>"""
     rows = ""
     for kb in kbs:
+        kb_attr = kb["kb_name"].replace('"', "&quot;")
         rows += f"""
-        <div class="card flex items-center gap-5 px-5 py-4 hover:border-indigo-300 hover:shadow-md transition-all duration-150">
-          <div class="w-11 h-11 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center flex-shrink-0">
-            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="kb-row relative rounded-2xl overflow-hidden" data-kb="{kb_attr}">
+          <!-- Kaydırınca açığa çıkan silme butonu (iOS tarzı) -->
+          <button type="button" onclick="confirmKbDelete(this)" title="Bilgi tabanını sil"
+                  class="absolute inset-y-0 right-0 w-20 bg-red-500 hover:bg-red-600
+                         flex flex-col items-center justify-center gap-1 text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
             </svg>
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="font-bold text-slate-800 text-sm">{kb['kb_name']}</div>
-            <div class="text-xs text-slate-400 mt-0.5 truncate">{kb.get('pdf','—')} · {kb.get('created_at','')}</div>
-          </div>
-          <div class="flex items-center gap-4 flex-shrink-0">
-            <div class="text-center">
-              <div class="text-xl font-extrabold text-emerald-600">{kb.get('tables',0)}</div>
-              <div class="text-xs text-slate-400">Tablo</div>
+            <span class="text-xs font-bold">Sil</span>
+          </button>
+          <div class="kb-card-inner card relative flex items-center gap-5 px-5 py-4
+                      hover:border-indigo-300 hover:shadow-md duration-150"
+               style="transition:transform .25s ease; touch-action:pan-y;">
+            <div class="w-11 h-11 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+              </svg>
             </div>
-            <div class="w-px h-8 bg-slate-100"></div>
-            <div class="text-center">
-              <div class="text-xl font-extrabold text-indigo-500">{kb.get('chunks',0)}</div>
-              <div class="text-xs text-slate-400">Chunk</div>
+            <div class="flex-1 min-w-0">
+              <div class="font-bold text-slate-800 text-sm">{kb['kb_name']}</div>
+              <div class="text-xs text-slate-400 mt-0.5 truncate">{kb.get('pdf','—')} · {kb.get('created_at','')}</div>
             </div>
-            <div class="w-px h-8 bg-slate-100"></div>
-            <div class="text-center">
-              <div class="text-xl font-extrabold text-slate-700">{kb.get('total',0)}</div>
-              <div class="text-xs text-slate-400">Toplam</div>
+            <div class="flex items-center gap-4 flex-shrink-0">
+              <div class="text-center">
+                <div class="text-xl font-extrabold text-emerald-600">{kb.get('tables',0)}</div>
+                <div class="text-xs text-slate-400">Tablo</div>
+              </div>
+              <div class="w-px h-8 bg-slate-100"></div>
+              <div class="text-center">
+                <div class="text-xl font-extrabold text-indigo-500">{kb.get('chunks',0)}</div>
+                <div class="text-xs text-slate-400">Chunk</div>
+              </div>
+              <div class="w-px h-8 bg-slate-100"></div>
+              <div class="text-center">
+                <div class="text-xl font-extrabold text-slate-700">{kb.get('total',0)}</div>
+                <div class="text-xs text-slate-400">Toplam</div>
+              </div>
             </div>
           </div>
         </div>"""
@@ -352,7 +367,13 @@ async def kb_list_route():
 @app.post("/kb/delete", response_class=HTMLResponse)
 async def kb_delete(kb_name: str = Form("")):
     _delete_kb(kb_name.strip(), KB_DIR)
-    return HTMLResponse(render_kb_list())
+    # Liste + denetim sekmesindeki KB seçimi (OOB) birlikte tazelenir
+    opts = "".join(f'<option value="{k["kb_name"]}">{k["kb_name"]}</option>'
+                   for k in list_kbs(KB_DIR))
+    return HTMLResponse(render_kb_list() + f"""
+    <select id="kb-select" hx-swap-oob="true"
+            name="kb_name" class="inp inp-sm appearance-none pr-10 cursor-pointer">
+      <option value="">— Seçin —</option>{opts}</select>""")
 
 
 # ── Denetim: Başlat ────────────────────────────────────────────────────────

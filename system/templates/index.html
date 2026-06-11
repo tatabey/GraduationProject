@@ -35,6 +35,9 @@
     #sidebar.mini nav { padding-left: .65rem; padding-right: .65rem; }
     #sidebar.mini .nav-link { justify-content: center; padding-left: 0; padding-right: 0; }
     #sidebar.mini .side-foot { justify-content: center; padding-left: 0; padding-right: 0; }
+    /* KB karti: iOS tarzi sola kaydir-sil */
+    .kb-card-inner { user-select: none; -webkit-user-select: none; cursor: grab; }
+    .kb-card-inner:active { cursor: grabbing; }
     .nav-link.active { background: rgba(99,102,241,.18); color: #a5b4fc; }
     .nav-link.active svg { color: #818cf8; }
     .nav-link:not(.active) { color: #94a3b8; }
@@ -446,6 +449,37 @@
 
 
 <!-- ════════════════════════════════
+     KB SİLME ONAY MODALI
+════════════════════════════════ -->
+<dialog id="kb-del-modal"
+        class="rounded-2xl shadow-2xl border border-slate-200 p-0 w-full max-w-md
+               backdrop:bg-slate-900/75 backdrop:backdrop-blur-sm">
+  <div class="p-6 text-center">
+    <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-red-50 border border-red-100
+                flex items-center justify-center">
+      <svg class="w-7 h-7 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+      </svg>
+    </div>
+    <h3 class="text-lg font-bold text-slate-800">Bilgi tabanı silinsin mi?</h3>
+    <p class="text-sm text-slate-500 mt-2">
+      <span id="kb-del-name" class="font-bold text-slate-700"></span>
+      kalıcı olarak silinecek. Bu işlem geri alınamaz.
+    </p>
+    <div class="flex gap-3 mt-6">
+      <button onclick="document.getElementById('kb-del-modal').close()"
+              class="flex-1 px-4 py-2.5 text-sm font-bold text-slate-600 border-2 border-slate-200
+                     rounded-xl hover:bg-slate-50 transition-all">Vazgeç</button>
+      <button onclick="doKbDelete()"
+              class="flex-1 px-4 py-2.5 text-sm font-bold text-white bg-red-500
+                     rounded-xl hover:bg-red-600 transition-all">Evet, Sil</button>
+    </div>
+  </div>
+</dialog>
+
+
+<!-- ════════════════════════════════
      GÜNLÜK MODAL (büyütülmüş terminal)
 ════════════════════════════════ -->
 <dialog id="log-modal"
@@ -549,6 +583,56 @@
   }
 
   document.getElementById('table-modal').addEventListener('click', function(e) {
+    if (e.target === this) this.close();
+  });
+
+  // ── KB kartı: iOS tarzı sola kaydır → sil (pointer events: mouse + dokunmatik) ──
+  const SWIPE_W = 80;   // açığa çıkan buton genişliği (w-20)
+  let _sw = null;
+  document.addEventListener('pointerdown', e => {
+    const inner = e.target.closest('.kb-card-inner');
+    if (!inner) return;
+    _sw = { inner, x0: e.clientX, open: inner.dataset.open === '1' };
+    inner.style.transition = 'none';
+  });
+  document.addEventListener('pointermove', e => {
+    if (!_sw) return;
+    let dx = e.clientX - _sw.x0 + (_sw.open ? -SWIPE_W : 0);
+    dx = Math.min(0, Math.max(-SWIPE_W, dx));
+    _sw.inner.style.transform = `translateX(${dx}px)`;
+  });
+  document.addEventListener('pointerup', e => {
+    if (!_sw) return;
+    const inner = _sw.inner;
+    const dx = e.clientX - _sw.x0 + (_sw.open ? -SWIPE_W : 0);
+    const open = dx < -SWIPE_W / 2;
+    inner.style.transition = 'transform .25s ease';
+    inner.style.transform  = open ? `translateX(-${SWIPE_W}px)` : 'translateX(0)';
+    inner.dataset.open = open ? '1' : '0';
+    // Aynı anda tek kart açık kalsın
+    if (open) document.querySelectorAll('.kb-card-inner').forEach(c => {
+      if (c !== inner) { c.style.transform = 'translateX(0)'; c.dataset.open = '0'; }
+    });
+    _sw = null;
+  });
+
+  // ── Silme onayı (pop-up) + htmx ile silme ──
+  let _kbToDelete = null;
+  function confirmKbDelete(btn) {
+    _kbToDelete = btn.closest('.kb-row').dataset.kb;
+    document.getElementById('kb-del-name').textContent = _kbToDelete;
+    document.getElementById('kb-del-modal').showModal();
+  }
+  function doKbDelete() {
+    document.getElementById('kb-del-modal').close();
+    if (!_kbToDelete) return;
+    htmx.ajax('POST', '/kb/delete', {
+      target: '#kb-list', swap: 'innerHTML',
+      values: { kb_name: _kbToDelete },
+    });
+    _kbToDelete = null;
+  }
+  document.getElementById('kb-del-modal').addEventListener('click', function(e) {
     if (e.target === this) this.close();
   });
 </script>
