@@ -506,8 +506,8 @@ def _log_box(text: str, progress: int = -1, step: str = "", footer: str = "") ->
           <span class="ml-2 text-xs text-slate-400 font-mono">İşlem Günlüğü</span>
         </div>
         <pre id="log-content"
-             class="p-5 text-sm font-mono text-emerald-400 leading-relaxed
-                    max-h-64 overflow-y-auto whitespace-pre-wrap">{lines}</pre>
+             class="p-4 text-sm font-mono text-emerald-400 leading-relaxed
+                    max-h-40 overflow-y-auto whitespace-pre-wrap">{lines}</pre>
         {f'<div class="px-4 py-2 border-t border-slate-700 text-xs text-slate-400 font-medium">{footer}</div>' if footer else ''}
       </div>
     </div>"""

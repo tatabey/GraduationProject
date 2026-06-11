@@ -273,17 +273,17 @@
 
         <!-- SOL PANEL: sabit genişlik, kendi scroll'u -->
         <div class="w-96 flex-shrink-0 border-r border-slate-200 bg-white overflow-y-auto">
-          <div class="p-5 space-y-4">
+          <div class="p-4 space-y-3">
 
             <!-- Başlık -->
             <div>
-              <h2 class="text-xl font-bold text-slate-800">Denetim Başlat</h2>
-              <p class="text-sm text-slate-500 mt-1">KB seçin, raporu yükleyin.</p>
+              <h2 class="text-lg font-bold text-slate-800">Denetim Başlat</h2>
+              <p class="text-sm text-slate-500 mt-0.5">KB seçin, raporu yükleyin.</p>
             </div>
 
             <!-- Form -->
             <form hx-post="/audit/run" hx-target="#audit-result"
-                  hx-swap="outerHTML" hx-encoding="multipart/form-data" class="space-y-4">
+                  hx-swap="outerHTML" hx-encoding="multipart/form-data" class="space-y-3">
 
               <div>
                 <label class="lbl" style="font-size:14px;">Bilgi Tabanı</label>
@@ -303,8 +303,8 @@
 
               <div>
                 <label class="lbl" style="font-size:14px;">Denetim Raporu (PDF)</label>
-                <label class="drop flex flex-col items-center justify-center py-6 px-3">
-                  <svg class="w-8 h-8 text-slate-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <label class="drop flex flex-col items-center justify-center py-4 px-3">
+                  <svg class="w-7 h-7 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                           d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                   </svg>
@@ -332,17 +332,28 @@
 
             <!-- Terminal -->
             <div>
-              <p class="sec mb-2.5">Günlük</p>
+              <div class="flex items-center justify-between mb-2">
+                <p class="sec">Günlük</p>
+                <button type="button" onclick="openLogModal()" title="Günlüğü büyüt"
+                        class="flex items-center gap-1.5 text-xs font-bold text-slate-400
+                               hover:text-indigo-600 transition-colors">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+                  </svg>
+                  Büyüt
+                </button>
+              </div>
               <div id="audit-result">
                 <div class="card overflow-hidden">
                   <div class="bg-slate-950">
-                    <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800">
+                    <div class="flex items-center gap-2 px-4 py-2.5 border-b border-slate-800">
                       <div class="w-3 h-3 rounded-full bg-red-500"></div>
                       <div class="w-3 h-3 rounded-full bg-amber-400"></div>
                       <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
                       <span class="ml-2.5 text-xs text-slate-500 font-mono tracking-widest">TERMINAL</span>
                     </div>
-                    <pre class="p-4 text-sm font-mono text-slate-500 leading-relaxed overflow-y-auto" style="height:140px;">$ Denetim başladığında loglar burada görünür...</pre>
+                    <pre class="p-4 text-sm font-mono text-slate-500 leading-relaxed overflow-y-auto" style="height:112px;">$ Denetim başladığında loglar burada görünür...</pre>
                   </div>
                 </div>
               </div>
@@ -426,6 +437,30 @@
 
 
 <!-- ════════════════════════════════
+     GÜNLÜK MODAL (büyütülmüş terminal)
+════════════════════════════════ -->
+<dialog id="log-modal"
+        class="rounded-2xl shadow-2xl border border-slate-700 p-0 w-1/2
+               backdrop:bg-slate-900/75 backdrop:backdrop-blur-sm"
+        style="height:50vh; max-width:860px;">
+  <div class="h-full flex flex-col bg-slate-950">
+    <div class="flex items-center gap-2 px-5 py-3 border-b border-slate-800 flex-shrink-0">
+      <div class="w-3 h-3 rounded-full bg-red-500"></div>
+      <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+      <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+      <span class="ml-2.5 text-xs text-slate-500 font-mono tracking-widest">TERMINAL — DETAYLI GÜNLÜK</span>
+      <button onclick="document.getElementById('log-modal').close()"
+              class="ml-auto w-8 h-8 flex items-center justify-center rounded-lg text-slate-500
+                     hover:bg-slate-800 hover:text-slate-200 transition-all">✕</button>
+    </div>
+    <pre id="log-modal-content"
+         class="flex-1 p-5 text-sm font-mono text-emerald-400 leading-relaxed
+                overflow-y-auto whitespace-pre-wrap">(günlük boş)</pre>
+  </div>
+</dialog>
+
+
+<!-- ════════════════════════════════
      JAVASCRIPT
 ════════════════════════════════ -->
 <script>
@@ -455,6 +490,33 @@
 
   document.addEventListener('htmx:afterSwap', e => {
     e.detail.target.querySelectorAll('pre').forEach(p => { p.scrollTop = p.scrollHeight; });
+    syncLogModal();   // modal açıksa canlı günlüğü güncel tut
+  });
+
+  // ── Günlük modalı: soldaki terminalin canlı aynası ──
+  function _auditLogText() {
+    const pre = document.querySelector('#audit-result pre');
+    return pre ? pre.textContent : '(günlük boş)';
+  }
+  function syncLogModal() {
+    const dlg = document.getElementById('log-modal');
+    if (!dlg.open) return;
+    const tgt = document.getElementById('log-modal-content');
+    const txt = _auditLogText();
+    if (tgt.textContent !== txt) {
+      tgt.textContent = txt;
+      tgt.scrollTop = tgt.scrollHeight;   // aşağı doğru akar
+    }
+  }
+  function openLogModal() {
+    const dlg = document.getElementById('log-modal');
+    dlg.showModal();
+    const tgt = document.getElementById('log-modal-content');
+    tgt.textContent = _auditLogText();
+    tgt.scrollTop = tgt.scrollHeight;
+  }
+  document.getElementById('log-modal').addEventListener('click', function(e) {
+    if (e.target === this) this.close();
   });
 
   function openTableModal(name, imgUrl, notesB64, legendB64) {
