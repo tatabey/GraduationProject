@@ -149,6 +149,15 @@ OLLAMA_MODEL = "llama3.2:3b"
 MINERU_API_KEY = os.getenv("MINERU_API_KEY",
     "***REMOVED***")
 MINERU_CHUNK_SIZE = 50  # sayfa başına chunk boyutu
+# Parça paralelliği: 0 = TÜM parçalar aynı anda (önerilen; parçalar bağımsız,
+# birleştirme deterministik), 1 = sıralı (eski davranış/fallback), N = üst sınır.
+MINERU_PARALLEL_CHUNKS = 0
+
+# ---------------------------------------------------------------------------
+# Performans enstrümantasyonu
+# ---------------------------------------------------------------------------
+# Aşama sürelerini loglara (ve kb_meta.json'a) yaz — önce/sonra ölçümü için.
+TIMING_LOGS = True
 
 # ---------------------------------------------------------------------------
 # Verdict etiketleri (LLM çıktısı için) — binary

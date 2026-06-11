@@ -10,15 +10,19 @@ Import kullanımı:
 
 import io
 import json
+import threading
 import time
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Callable
 
 import requests
 from pypdf import PdfReader, PdfWriter
 
-from config import MINERU_API_KEY, MINERU_CHUNK_SIZE
+from config import (
+    MINERU_API_KEY, MINERU_CHUNK_SIZE, MINERU_PARALLEL_CHUNKS, TIMING_LOGS,
+)
 
 MINERU_TASK_URL = "https://mineru.net/api/v4/extract/task"
 CATBOX_URL      = "https://catbox.moe/user/api.php"
@@ -195,6 +199,70 @@ def merge_chunks(chunks_dir: Path, output_path: Path) -> int:
 
 
 # ---------------------------------------------------------------------------
+# Tek parça işleme (paralel worker gövdesi)
+# ---------------------------------------------------------------------------
+def _process_one_chunk(
+    pdf_path: Path,
+    chunks_dir: Path,
+    images_dir: Path | None,
+    api_key: str,
+    idx: int,
+    n: int,
+    start: int,
+    end: int,
+    log_fn: Callable[[str], None],
+) -> bool:
+    """Bir parçayı uçtan uca işler: böl → yükle → MinerU → indir.
+    Parçalar arasında veri bağımlılığı yoktur — güvenle paralel çalışır."""
+    prefix   = f"pages_{start+1:03d}-{end:03d}"
+    out_file = chunks_dir / f"{prefix}_content_list.json"
+    tag      = f"[{idx+1}/{n}]"
+
+    if out_file.exists():
+        log_fn(f"✓ {tag} sayfa {start+1}–{end} (önbellekten)")
+        return True
+
+    t = {}
+    t0 = time.perf_counter()
+    pdf_bytes = extract_chunk_bytes(pdf_path, start, end)
+    t["bölme"] = time.perf_counter() - t0
+
+    log_fn(f"▶ {tag} sayfa {start+1}–{end}: sunucuya yükleniyor...")
+    t0 = time.perf_counter()
+    pub_url = upload_catbox(pdf_bytes, f"{prefix}.pdf")
+    t["yükleme"] = time.perf_counter() - t0
+    if not pub_url:
+        log_fn(f"  ✗ {tag} yükleme başarısız. (İnternet bağlantısını kontrol edin)")
+        return False
+
+    task_id = submit_task(pub_url, api_key, log_fn=log_fn)
+    if not task_id:
+        log_fn(f"  ✗ {tag} görev oluşturulamadı.")
+        return False
+    log_fn(f"  {tag} yapay zekaya gönderildi, işleniyor...")
+
+    t0 = time.perf_counter()
+    zip_url = poll_task(task_id, api_key,
+                        log_fn=lambda m: log_fn(f"  {tag} {m.strip()}"))
+    t["MinerU"] = time.perf_counter() - t0
+    if not zip_url:
+        return False
+
+    t0 = time.perf_counter()
+    result = download_chunk(zip_url, chunks_dir, prefix, images_dir=images_dir)
+    t["indirme"] = time.perf_counter() - t0
+    if not result:
+        log_fn(f"  ✗ {tag} sonuç indirilemedi.")
+        return False
+
+    if TIMING_LOGS:
+        parts = " · ".join(f"{k} {v:.0f}s" for k, v in t.items())
+        log_fn(f"  ⏱ {tag} {parts}")
+    log_fn(f"  ✅ {tag} tamamlandı.")
+    return True
+
+
+# ---------------------------------------------------------------------------
 # Ana İşleme Fonksiyonu
 # ---------------------------------------------------------------------------
 def process_all(
@@ -211,56 +279,61 @@ def process_all(
     total_pages = sum(e - s for s, e in chunks)
     n = len(chunks)
 
-    log_fn(f"PDF'iniz {total_pages} sayfa. {n} adımda işlenecek.")
-    log_fn(f"__PROGRESS__:2:MinerU başlatılıyor ({n} adım)")
+    # 0 = tüm parçalar aynı anda; 1 = sıralı (eski davranış); N = üst sınır
+    workers = MINERU_PARALLEL_CHUNKS if MINERU_PARALLEL_CHUNKS > 0 else n
+    workers = max(1, min(workers, n))
 
-    failed = []
-    for i, (start, end) in enumerate(chunks):
-        prefix   = f"pages_{start+1:03d}-{end:03d}"
-        out_file = chunks_dir / f"{prefix}_content_list.json"
+    mode = "paralel" if workers > 1 else "sıralı"
+    log_fn(f"PDF'iniz {total_pages} sayfa. {n} parça {mode} işlenecek"
+           + (f" ({workers} eşzamanlı)." if workers > 1 else "."))
+    log_fn(f"__PROGRESS__:2:MinerU başlatılıyor ({n} parça, {mode})")
 
-        if out_file.exists():
-            log_fn(f"✓ Adım {i+1}/{n}: sayfa {start+1}–{end} (önbellekten)")
-            pct = int((i + 1) / n * 95) + 2
-            log_fn(f"__PROGRESS__:{pct}:Adım {i+1}/{n} tamamlandı")
-            continue
+    done_count = 0
+    lock = threading.Lock()
 
-        log_fn(f"▶ Adım {i+1}/{n}: sayfa {start+1}–{end} işleniyor...")
-        log_fn(f"  PDF bölünüyor ve sunucuya yükleniyor...")
-        log_fn(f"__PROGRESS__:{int(i / n * 95) + 2}:Adım {i+1}/{n} → yükleniyor")
+    def run_one(args) -> tuple[str, bool]:
+        nonlocal done_count
+        i, (start, end) = args
+        prefix = f"pages_{start+1:03d}-{end:03d}"
+        if workers > 1:
+            time.sleep(min(i, 8) * 1.0)   # yüklemeleri hafifçe kademelendir
+        ok = _process_one_chunk(pdf_path, chunks_dir, images_dir, api_key,
+                                i, n, start, end, log_fn)
+        with lock:
+            done_count += 1
+            pct = int(done_count / n * 95) + 2
+            log_fn(f"__PROGRESS__:{pct}:{done_count}/{n} parça tamam")
+        return prefix, ok
 
-        pdf_bytes = extract_chunk_bytes(pdf_path, start, end)
-        pub_url   = upload_catbox(pdf_bytes, f"{prefix}.pdf")
-        if not pub_url:
-            log_fn(f"  ✗ Yükleme başarısız. (İnternet bağlantısını kontrol edin)")
-            failed.append(prefix)
-            continue
+    t_mineru = time.perf_counter()
+    if workers == 1:
+        results = []
+        for i, ch in enumerate(chunks):
+            results.append(run_one((i, ch)))
+            if i < n - 1:
+                time.sleep(4)
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            results = list(ex.map(run_one, enumerate(chunks)))
 
-        log_fn(f"  Yapay zekaya gönderildi. İşlem başlatılıyor...")
-        task_id = submit_task(pub_url, api_key, log_fn=log_fn)
-        if not task_id:
-            failed.append(prefix)
-            continue
+    failed = [p for p, ok in results if not ok]
 
-        log_fn(f"__PROGRESS__:{int((i + 0.3) / n * 95) + 2}:Adım {i+1}/{n} → AI işliyor")
-        zip_url = poll_task(task_id, api_key, log_fn=log_fn)
-        if not zip_url:
-            failed.append(prefix)
-            continue
-
-        log_fn(f"  Sonuçlar indiriliyor...")
-        result = download_chunk(zip_url, chunks_dir, prefix, images_dir=images_dir)
-        if result:
-            log_fn(f"  ✅ Adım {i+1}/{n} tamamlandı.")
-        else:
-            log_fn(f"  ✗ Sonuç indirilemedi.")
-            failed.append(prefix)
-
-        pct = int((i + 1) / n * 95) + 2
-        log_fn(f"__PROGRESS__:{pct}:Adım {i+1}/{n} tamamlandı")
-
-        if i < len(chunks) - 1:
+    # Dayanıklılık: başarısız parçalar havuz boşaldıktan sonra SIRALI yeniden denenir
+    if failed:
+        log_fn(f"⚠ {len(failed)} parça başarısız — sıralı yeniden deneniyor...")
+        still_failed = []
+        for i, (start, end) in enumerate(chunks):
+            prefix = f"pages_{start+1:03d}-{end:03d}"
+            if prefix not in failed:
+                continue
             time.sleep(4)
+            if not _process_one_chunk(pdf_path, chunks_dir, images_dir, api_key,
+                                      i, n, start, end, log_fn):
+                still_failed.append(prefix)
+        failed = still_failed
+
+    if TIMING_LOGS:
+        log_fn(f"⏱ MinerU toplam: {time.perf_counter() - t_mineru:.0f}s ({mode}, {n} parça)")
 
     total_items = merge_chunks(chunks_dir, merged_output)
     if total_items == 0:

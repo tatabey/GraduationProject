@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config import (
     EMBED_MODEL, EMBED_SECTION_PATH, CHUNK_EMBED_MAX_CHARS, CHUNK_SYNTH_QUERIES,
-    MINERU_API_KEY, MINERU_CHUNK_SIZE,
+    MINERU_API_KEY, MINERU_CHUNK_SIZE, TIMING_LOGS,
 )
 from scripts.mineru_batch import process_all
 from scripts.table_assembler import assemble_semantic_units, save_semantic_units
@@ -221,6 +221,8 @@ def build_kb(
     text_dir     = kb_dir / "text_chunks"
     chroma_dir   = kb_dir / "chroma_db"
     kb_dir.mkdir(parents=True, exist_ok=True)
+    timings: dict[str, float] = {}
+    _t0 = time.perf_counter()
 
     # ── Adım 1: MinerU (0–65%) ────────────────────────────────────────────
     if skip_mineru and merged_json:
@@ -243,8 +245,10 @@ def build_kb(
                     "error": result.get("error", "MinerU başarısız")}
         if result.get("error"):
             log_fn(f"Uyarı: {result['error']}")
+    timings["mineru_s"] = round(time.perf_counter() - _t0, 1)
 
     # ── Adım 2: Tablo çıkarma (65–75%) ───────────────────────────────────
+    _t0 = time.perf_counter()
     log_fn(f"__PROGRESS__:65:Tablolar analiz ediliyor")
     log_fn("Tablolar ve veri yapıları çıkarılıyor...")
     units, rejected = assemble_semantic_units(merged_out)
@@ -268,21 +272,31 @@ def build_kb(
 
     save_semantic_units(units, rejected, units_dir)
     log_fn(f"  ✅ {len(units)} tablo bulundu ({len(rejected)} gürültü tablosu atlandı).")
+    timings["assemble_s"] = round(time.perf_counter() - _t0, 1)
 
     # ── Adım 3: Metin bölümleri (75–80%) ─────────────────────────────────
+    _t0 = time.perf_counter()
     log_fn(f"__PROGRESS__:75:Metin bölümleri oluşturuluyor")
     log_fn("Metin bölümleri oluşturuluyor...")
     text_chunks = chunk_text_blocks(merged_out)
     save_text_chunks(text_chunks, text_dir)
     log_fn(f"  ✅ {len(text_chunks)} metin bölümü hazır.")
+    timings["chunk_s"] = round(time.perf_counter() - _t0, 1)
 
     # ── Adım 4: ChromaDB indeksleme (80–99%) ─────────────────────────────
+    _t0 = time.perf_counter()
     log_fn(f"__PROGRESS__:80:Vektör veritabanı oluşturuluyor")
     log_fn("Vektör veritabanı oluşturuluyor...")
     idx = reindex_from_units(
         units, text_chunks, chroma_dir, col_name,
         _scaled_log(log_fn, offset=80, scale=19),
     )
+    timings["index_s"] = round(time.perf_counter() - _t0, 1)
+    timings["total_s"] = round(sum(timings.values()), 1)
+    if TIMING_LOGS:
+        log_fn(f"⏱ Aşama süreleri: MinerU {timings['mineru_s']}s · "
+               f"tablo {timings['assemble_s']}s · chunk {timings['chunk_s']}s · "
+               f"indeks {timings['index_s']}s · TOPLAM {timings['total_s']}s")
     log_fn(f"__PROGRESS__:99:İndeksleme tamamlandı")
     table_count = idx["tables"]
     chunk_count = idx["chunks"]
@@ -301,6 +315,7 @@ def build_kb(
         "total"     : total,
         "chroma_dir": str(chroma_dir),
         "created_at": time.strftime("%Y-%m-%d %H:%M"),
+        "timings"   : timings,
     }
     (kb_dir / "kb_meta.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"
