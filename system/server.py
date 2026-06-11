@@ -503,7 +503,6 @@ def _log_box(text: str, progress: int = -1, step: str = "", footer: str = "") ->
           <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
           <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
           <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
-          <span class="ml-2 text-xs text-slate-400 font-mono">İşlem Günlüğü</span>
         </div>
         <pre id="log-content"
              class="p-4 text-sm font-mono text-emerald-400 leading-relaxed

@@ -230,7 +230,18 @@
         <div class="flex-1 overflow-y-auto bg-slate-100">
           <div class="p-6 space-y-5">
             <div>
-              <p class="sec mb-3">İşlem Durumu</p>
+              <div class="flex items-center justify-between mb-3">
+                <p class="sec">İşlem Durumu</p>
+                <button type="button" onclick="openLogModal('kb')" title="Günlüğü büyüt"
+                        class="flex items-center gap-1.5 text-xs font-bold text-slate-400
+                               hover:text-indigo-600 transition-colors">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+                  </svg>
+                  Büyüt
+                </button>
+              </div>
               <div id="index-result">
                 <div class="card overflow-hidden">
                   <div class="bg-slate-950">
@@ -238,7 +249,6 @@
                       <div class="w-3 h-3 rounded-full bg-red-500"></div>
                       <div class="w-3 h-3 rounded-full bg-amber-400"></div>
                       <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-                      <span class="ml-3 text-xs text-slate-500 font-mono tracking-widest">TERMINAL</span>
                     </div>
                     <pre class="p-5 text-sm font-mono text-slate-500 leading-relaxed h-36 overflow-y-auto">$ İndeksle butonuna basıldığında işlem günlüğü burada görünecek...</pre>
                   </div>
@@ -334,7 +344,7 @@
             <div>
               <div class="flex items-center justify-between mb-2">
                 <p class="sec">Günlük</p>
-                <button type="button" onclick="openLogModal()" title="Günlüğü büyüt"
+                <button type="button" onclick="openLogModal('audit')" title="Günlüğü büyüt"
                         class="flex items-center gap-1.5 text-xs font-bold text-slate-400
                                hover:text-indigo-600 transition-colors">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -351,7 +361,6 @@
                       <div class="w-3 h-3 rounded-full bg-red-500"></div>
                       <div class="w-3 h-3 rounded-full bg-amber-400"></div>
                       <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-                      <span class="ml-2.5 text-xs text-slate-500 font-mono tracking-widest">TERMINAL</span>
                     </div>
                     <pre class="p-4 text-sm font-mono text-slate-500 leading-relaxed overflow-y-auto" style="height:112px;">$ Denetim başladığında loglar burada görünür...</pre>
                   </div>
@@ -448,7 +457,7 @@
       <div class="w-3 h-3 rounded-full bg-red-500"></div>
       <div class="w-3 h-3 rounded-full bg-amber-400"></div>
       <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-      <span class="ml-2.5 text-xs text-slate-500 font-mono tracking-widest">TERMINAL — DETAYLI GÜNLÜK</span>
+      <span class="ml-2.5 text-xs text-slate-500 font-mono tracking-widest">DETAYLI GÜNLÜK</span>
       <button onclick="document.getElementById('log-modal').close()"
               class="ml-auto w-8 h-8 flex items-center justify-center rounded-lg text-slate-500
                      hover:bg-slate-800 hover:text-slate-200 transition-all">✕</button>
@@ -493,26 +502,29 @@
     syncLogModal();   // modal açıksa canlı günlüğü güncel tut
   });
 
-  // ── Günlük modalı: soldaki terminalin canlı aynası ──
-  function _auditLogText() {
-    const pre = document.querySelector('#audit-result pre');
+  // ── Günlük modalı: seçili terminalin canlı aynası (audit | kb) ──
+  let _logSource = 'audit';
+  const _LOG_SEL = { audit: '#audit-result pre', kb: '#index-result pre' };
+  function _logText() {
+    const pre = document.querySelector(_LOG_SEL[_logSource]);
     return pre ? pre.textContent : '(günlük boş)';
   }
   function syncLogModal() {
     const dlg = document.getElementById('log-modal');
     if (!dlg.open) return;
     const tgt = document.getElementById('log-modal-content');
-    const txt = _auditLogText();
+    const txt = _logText();
     if (tgt.textContent !== txt) {
       tgt.textContent = txt;
       tgt.scrollTop = tgt.scrollHeight;   // aşağı doğru akar
     }
   }
-  function openLogModal() {
+  function openLogModal(source) {
+    _logSource = source || 'audit';
     const dlg = document.getElementById('log-modal');
     dlg.showModal();
     const tgt = document.getElementById('log-modal-content');
-    tgt.textContent = _auditLogText();
+    tgt.textContent = _logText();
     tgt.scrollTop = tgt.scrollHeight;
   }
   document.getElementById('log-modal').addEventListener('click', function(e) {
