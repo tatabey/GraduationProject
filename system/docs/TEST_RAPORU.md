@@ -273,6 +273,18 @@ tablolar gerilemedi, set1 ve set3 İYİLEŞTİ (98.7→100, 92→96.7). text HR@
 - Maliyet notu: 3+3 modu LLM bağlamını ~2x büyütür; verdict doğruluğuna
   etkisi (138'lik set, gpt-oss-120B %89.1) henüz ölçülmedi → sıradaki iş.
 
+### Faz 7 — Genelleme doğrulaması (2026-06-11)
+
+**7a. Jenerik serializer:** Tüm AASTP hard-code'ları kaldırıldı (X-matrisi
+yapısal tespit + legend parse; etiket köşe hücresinden; kısaltma baş
+harflerden). Sonuç: set1/2/3 = 99.3/99.3/98.0 — Faz 5'e göre ortalama İYİLEŞTİ.
+
+**7b. İkinci PDF (UFC 4-010-01, DoD Antiterrorism Standards, 95 sayfa):**
+`build_kb` sıfır kod değişikliğiyle uçtan uca çalıştı → 9 tablo + 278 chunk.
+8/8 spot-check sorgusu isabetli (semantik eşleşmeler dahil: "clear zone" →
+"UNOBSTRUCTED SPACE", "trash containers" → B-2.1.5.13; standoff soruları
+doğru C-tablolarını getirdi). Sistem AASTP'ye bağımlı DEĞİL.
+
 Faz 1+2 notları:
 - "NATO/PFP UNCLASSIFIED" 212 kez sahte heading olarak bölüm parçalıyordu;
   bastırılınca bölümler sayfa aşımlarında birleşti (104 çöp-başlıklı chunk yok oldu).
