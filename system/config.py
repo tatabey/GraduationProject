@@ -33,6 +33,11 @@ TOP_K           = 3       # kaç sonuç dönsün
 RERANK_FACTOR   = 4       # reranker için kaç kat fazla candidate al
 # CUDA varsa embedding + reranker GPU'da çalışır (yoksa otomatik CPU).
 USE_GPU         = True
+# Reranker hız ayarları (F3): doc'lar ≤800 char (~200 token) + sorgu olduğundan
+# 512 token gereksiz uzun. Değerler tam eval kapısıyla doğrulanır.
+RERANKER_MAX_LENGTH = 512   # 320 denendi ve KAPIDAN DONDU (tablo serialized >800 char, kesme set3 -7.3)
+RERANKER_BATCH_SIZE = 64
+RERANKER_FP16       = True
 
 # ---------------------------------------------------------------------------
 # Modalite-dengeli retrieval (text vs tablo)

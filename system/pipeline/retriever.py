@@ -25,6 +25,7 @@ from config import (
     TABLE_POOL_MAX, CODE_TOKEN_BONUS, TABLE_FLOOR,
     TEXT_FETCH_K, BM25_ENABLED, BM25_TOP_N, RERANK_SHORTLIST,
     USE_GPU, SPLIT_RESULTS,
+    RERANKER_MAX_LENGTH, RERANKER_BATCH_SIZE, RERANKER_FP16,
 )
 
 
@@ -107,7 +108,10 @@ def _get_reranker():
     if _reranker is None:
         try:
             from sentence_transformers import CrossEncoder
-            _reranker = CrossEncoder(RERANKER_MODEL, device=best_device())
+            _reranker = CrossEncoder(RERANKER_MODEL, device=best_device(),
+                                     max_length=RERANKER_MAX_LENGTH)
+            if RERANKER_FP16 and best_device() == "cuda":
+                _reranker.model.half()
         except Exception:
             _reranker = False
     return _reranker if _reranker else None
@@ -279,7 +283,7 @@ def _retrieve_inner(
             else:
                 doc_text = m["summary"] or m.get("content", "")[:800] or m.get("html", "")[:500]
             pairs.append((query, doc_text))
-        scores = reranker.predict(pairs)
+        scores = reranker.predict(pairs, batch_size=RERANKER_BATCH_SIZE)
         score_of = {k: float(s) for k, s in zip(keys, scores)}
         for m in unique + wide:
             m["rerank_score"] = score_of[_key(m)]
