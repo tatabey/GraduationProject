@@ -365,3 +365,75 @@ iyileşti** (X-matris hizası), text 84.5/85.0 sabit. Gerileme yok.
 table_assembler'ın caption'sız-tablo-devamı sezgisinden (çok-sayfa Q-D birleşmesi
 için gerekli); zararsız gürültü olduğundan ve heuristik değişikliği regresyon riski
 taşıdığından bu turda ele alınmadı.
+
+---
+
+## 11. Serializer Kompaktlama — Bağlam Token Diyeti (2026-06-13)
+
+**Sorun:** verdict bağlamının %79'u tablolarda; serializer her hücrede uzun etiketi
+tekrar ediyordu (örn. "Q-D TABLE FOR HAZARD DIVISION 1.3" yüzlerce kez; s.147'de
+köşe etiketi her satırda 2 kez). Çağrı başına ~4.3k token → rate-limit/maliyet baskısı.
+
+**Düzeltme (`table_serializer.py`, kayıpsız):**
+- `_serialize_binary_matrix` / `_serialize_value_matrix`: köşe/sözlük etiketi bir kez
+  intro'da, satırlarda kısaltma+kod.
+- `_serialize_kv`: colspan-band tespiti (≥2 özdeş sütun başlığı → üst-başlık bandı;
+  gerçek alt-başlık kullanılır). **Hata:** ilk sürüm tek-sütunlu tabloda (p192) yanlış
+  tetiklenip bozdu (set2 99.3→92.0); `len(col_part)>=2` koşuluyla düzeltildi.
+
+**Sonuç:** bağlam **17165 → 12761 char (~%25 az token)**. Retrieval kapısı GEÇTİ
+(set1/2 99.3 sabit, set3 98.0→99.3 iyileşti, text 84.5/85.0 sabit). Bağlam küçülmesi
+hem rate-limit'i her sağlayıcıda rahatlatır hem küçük modelin işini kolaylaştırır.
+
+---
+
+## 12. Üretim Modeli: Mistral Small 24B'ye Geçiş (2026-06-13)
+
+**Neden:** Cerebras gpt-oss-120B'nin **günlük 1M token duvarı** üretimi tıkıyordu
+(çağrı başına ~4k token → ~150-250 çağrı/gün; benchmark'lar bütçeyi bitiriyordu).
+Darboğaz model boyutu değil, **çağrı başına token + sağlayıcı bütçesi**ydi.
+
+**Sağlayıcı taraması (ücretsiz):** Groq TPM (6-8K) bağlamımızdan küçük → throttle;
+Cerebras 1M/gün duvarı; **Mistral Experiment: 500K TPM + 1 milyar token/AY** → kazanan.
+
+**Mistral Small 24B (ayarlı prompt) — AASTP tüm setler:**
+
+| Set | Doğruluk |
+|---|---|
+| set1 | 88.0% | 
+| set2 | 98.0% |
+| set3 | 98.7% |
+| text | 97.0% |
+| **Ağırlıklı genel** | **95.5% (621/650)** |
+
+**Ayarlı prompt:** ham Mistral aşırı-katıydı (set1 80.7%, 28/29 hata UYGUN→UYGUN DEĞİL).
+"Yalnız açık ihlalde UYGUN DEĞİL; gereksinim karşılanıyorsa/tereddütte UYGUN" kuralı
+eklenince set1 80.7→88.0; ihlal-recall korundu. `auditor.py` üretim prompt'u bununla eşitlendi.
+
+**Hız (ölçülü, madde başı):** 120B medyan 2.1s ama **ortalama 13.4s** (5/dk + TPM +
+günlük duvar); Mistral medyan 2.1s / **ortalama 3.7s**, duvar yok. 20-maddelik rapor:
+120B ~3.2 dk → Mistral ~1.2 dk. `AUDIT_PROVIDER="mistral"`, Mistral tempo muafiyeti.
+
+**Not:** gpt-oss-120B (%94.7 set1) hâlâ daha güçlü; kompakt bağlamla güncel ölçümü
+Cerebras bütçesi açılınca yapılıp **rapor/kıyas** verisi olarak eklenecek.
+
+---
+
+## 13. Genelleme — DEF(AUST) 9022 (2026-06-13)
+
+Apayrı domain (Avustralya havacılık **bakım personeli yeterliği**), **sıfır kod
+değişikliği**. KB: 8 tablo + 55 chunk. Test seti: 160 senaryo (120 tablo + 40 text,
+matris senaryoları hücrelerden deterministik üretildi → ground-truth garantili).
+
+| Katman | Sonuç |
+|---|---|
+| **Retrieval HR@3** | **%97.5** (HR@1 83.8, MRR 0.907) |
+| **Verdict (Mistral 24B)** | **%91.2 (146/160)** |
+
+- Tüm tablo/text grupları %93-100; yoğun MEA97 matrisleri 80/89%.
+- **Test hijyeni:** ilk koşu %80.6'ydı; düşüklüğün ~%80'i hatalı "refused authorisation"
+  şablonundandı (Qualified hücreden tartışmalı UYGUN DEĞİL; model hücreyi doğru okuyup
+  makul şekilde UYGUN diyordu). Şablon kaldırılınca **80.6→91.2, Avionics 51→80,
+  Mekanik 71→89.** Serializer'a dokunulmadı.
+- Model Partially nüansını hem yargılıyor hem gerekçede gösteriyor ("Partially Qualified,
+  not Qualified"). Detay: `data/benchmark/defaust_RESULTS.md`.

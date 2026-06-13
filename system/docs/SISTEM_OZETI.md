@@ -14,7 +14,7 @@
 | 3 | **Text chunking** | `scripts/text_chunker.py` | Metin bloklara bölünür; `chunk_id = chunk_p{page}_idx{N}` (blok-indeksine bağlı, stabil). Uzun chunk'lar pencerelenir. |
 | 4 | **İndeksleme** | `pipeline/kb_builder.py` | **bge-large-en-v1.5** ile embed (GPU), **ChromaDB**'ye toplu (`batch=128`) yazılır. KB = 31 tablo + 248 chunk → 336 doküman. |
 | 5 | **Retrieval** | `pipeline/retriever.py` | 2 kanal: tablo (tümü aday) + text (160-derinlik havuz + **BM25** `lexical.py`). Her kanal **bge-reranker-base** (fp16, GPU) ile yeniden sıralanır → **3 tablo + 3 text** (SPLIT, füzyon yok). |
-| 6 | **Verdict** | `pipeline/auditor.py` | Her madde için bağlam **gpt-oss-120B @ Cerebras**'a gönderilir → UYGUN / UYGUN DEĞİL. Retrieval prefetch + kayar-pencere tempo. |
+| 6 | **Verdict** | `pipeline/auditor.py` | Her madde için bağlam **Mistral Small 24B @ Mistral** (üretim; ücretsiz, limitsiz) → UYGUN / UYGUN DEĞİL. Tablolar kompakt serileştirilir (bağlam −%25). Cerebras/Groq/Ollama da seçilebilir. |
 | 7 | **Arayüz** | `server.py` + `templates/` | FastAPI + HTMX + Tailwind; canlı günlük, KB yönetimi, denetim raporu görünümü. |
 
 Tüm ayarlar tek yerde: **`config.py`** (her özellik bir bayrakla aç/kapa).
@@ -53,34 +53,45 @@ Tüm ayarlar tek yerde: **`config.py`** (her özellik bir bayrakla aç/kapa).
 
 > text baseline HR@3 = 54.5'ti → 3+3 split + bge-reranker ile **84.5**.
 
-### 3b. Verdict — gpt-oss-120B @ Cerebras (en güncel, 3+3 / 6-doküman bağlam, `split6doc`, 150 senaryo)
+### 3b. Verdict — ÜRETİM: Mistral Small 24B @ Mistral (ayarlı prompt)
 
-**Genel: 94.7% (142/150)** — tüm 150 madde değerlendirildi, DEĞERLENDİRİLEMEDİ yok. Serializer iki-kusur düzeltmesi sonrası (2026-06-13; öncesi 88.7%, bkz. TEST_RAPORU §10).
+**AASTP tüm setler:**
 
-| Tablo | Doğruluk |
+| Set | Mistral 24B | (kıyas) 120B @Cerebras |
+|---|---|---|
+| set1 | 88.0% | 94.7% |
+| set2 | 98.0% | (güncel ölçüm bekliyor) |
+| set3 | 98.7% | — |
+| text | 97.0% | — |
+| **Ağırlıklı genel** | **95.5% (621/650)** | — |
+
+> Mistral ücretsiz (1 milyar token/AY, rate-limit duvarı yok), 24B (120B'nin 1/5'i).
+> 120B set1'de %94.7 ile hâlâ önde; kompakt bağlamla güncel 120B ölçümü Cerebras bütçesi
+> açılınca rapor/kıyas için eklenecek. Üretim Mistral'a geçti (TEST_RAPORU §12).
+
+### 3c. Genelleme — DEF(AUST) 9022 (apayrı domain, sıfır kod değişikliği)
+
+| Katman | Sonuç |
 |---|---|
-| Table 4 | 96.7 (29/30) |
-| Table 133 | 96.7 (29/30) |
-| Table 5 | 93.3 (28/30) |
-| Table 6 | 93.3 (28/30) |
-| Table T.2 | 93.3 (28/30) |
+| Retrieval HR@3 | **97.5%** |
+| Verdict (Mistral 24B) | **91.2% (146/160)** |
 
-> Sınıf bazında: UYGUN 75/81 doğru · UYGUN DEĞİL 67/69 doğru (ihlalleri çok güvenilir yakalıyor).
-> T.2 70→93.3, Table 5 86.7→93.3 sıçradı (LaTeX formül + X-matris hizası düzeltmesiyle).
+> Detay: `data/benchmark/defaust_RESULTS.md`. UFC 4-010-01 + DEF(AUST) 9022 → domain-bağımsızlık doğrulandı.
 
-### 3c. Daha önce lokalde/bulutta denenen LLM'ler (model merdiveni, eski 3-doküman bağlam)
+### 3d. Daha önce denenen LLM'ler (model merdiveni)
 
 | Model | Params | Sağlayıcı | Doğruluk |
 |---|---|---|---|
-| **gpt-oss-120b** (seçildi) | 120B | Cerebras | **89.1%** (123/138) |
-| llama-4-scout-17b | 17B | Groq | 80.4% (111/138) |
-| llama-3.3-70b-versatile | 70B | Groq | (eksik koşu, limit) |
-| qwen2.5-3b | 3B | Ollama (yerel) | 65.9% (91/138) |
-| llama-3.1-8b-instant | 8B | Groq | 48.5% (97/200) |
+| gpt-oss-120b | 120B | Cerebras | 89.1-94.7% (güçlü ama günlük token duvarı) |
+| **mistral-small-latest** (üretim) | 24B | Mistral | **95.5% AASTP / 91.2% DEF** |
+| llama-4-scout-17b | 17B | Groq | 80.4% |
+| qwen2.5-3b | 3B | Ollama (yerel) | 65.9% |
+| llama-3.1-8b-instant | 8B | Groq | 48.5% |
 
-> Sonuç: 120B açık ara en iyi; küçük modeller (≤8B) ikili kararı güvenilir veremiyor. gpt-oss-120B üretim modeli seçildi.
+> Sonuç: 120B en güçlü ama bütçe-duvarlı; **Mistral 24B** ücretsiz + limitsiz + güçlü →
+> üretim için seçildi. Küçük modeller (≤8B) ikili kararı güvenilir veremiyor.
 
-**Sıfırdan-sona (AASTP, 207 sayfa + 20 maddelik denetim):** ~15 dk → **~7 dk**.
+**Sıfırdan-sona (AASTP, 207 sayfa + 20 maddelik denetim):** ~15 dk → **~7 dk** (Mistral ile ~1-2 dk denetim).
 
 ---
 
