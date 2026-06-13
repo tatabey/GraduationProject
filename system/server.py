@@ -327,7 +327,8 @@ async def kb_index(
             if tmp_json and os.path.exists(tmp_json): os.unlink(tmp_json)
 
     threading.Thread(target=worker, daemon=True).start()
-    return HTMLResponse(_poll_html(job_id, "kb", progress=0, step="Hazırlanıyor..."))
+    return HTMLResponse(_poll_html(job_id, "kb", progress=0, step="Hazırlanıyor...",
+                                   start_ms=int(_jobs[job_id]["start_time"] * 1000)))
 
 
 # ── KB: Polling ────────────────────────────────────────────────────────────
@@ -340,7 +341,8 @@ async def kb_poll(job_id: str):
     step     = job.get("step", "")
 
     if status == "running":
-        return HTMLResponse(_poll_html(job_id, "kb", log_text, progress=progress, step=step))
+        start_ms = int(job.get("start_time", 0) * 1000)
+        return HTMLResponse(_poll_html(job_id, "kb", log_text, progress=progress, step=step, start_ms=start_ms))
 
     kb_list_html = render_kb_list()
     kb_choices = [kb["kb_name"] for kb in list_kbs(KB_DIR)]
@@ -443,7 +445,8 @@ async def audit_run(
             if os.path.exists(tmp_path): os.unlink(tmp_path)
 
     threading.Thread(target=worker, daemon=True).start()
-    return HTMLResponse(_poll_html(job_id, "audit", progress=0, step="Denetim başlatılıyor..."))
+    return HTMLResponse(_poll_html(job_id, "audit", progress=0, step="Denetim başlatılıyor...",
+                                   start_ms=int(_jobs[job_id]["start_time"] * 1000)))
 
 
 # ── Denetim: Polling ───────────────────────────────────────────────────────
@@ -459,7 +462,8 @@ async def audit_poll(job_id: str):
         n     = job.get("item_count", 0)
         done  = max(0, int(progress * n / 100)) if n else 0
         step_label = f"Madde {done}/{n} analiz ediliyor..." if n else step
-        return HTMLResponse(_poll_html(job_id, "audit", log_text, progress=progress, step=step_label))
+        start_ms = int(job.get("start_time", 0) * 1000)
+        return HTMLResponse(_poll_html(job_id, "audit", log_text, progress=progress, step=step_label, start_ms=start_ms))
 
     results_html = render_results(job.get("results") or [], kb_name=job.get("kb_name", ""))
     return HTMLResponse(f"""
@@ -495,20 +499,34 @@ def _error_html(msg: str) -> str:
     </div>"""
 
 
-def _log_box(text: str, progress: int = -1, step: str = "", footer: str = "") -> str:
+def _log_box(text: str, progress: int = -1, step: str = "", footer: str = "",
+             start_ms: int = 0) -> str:
     lines = text.replace("<", "&lt;").replace(">", "&gt;") if text else "Başlatılıyor…"
 
     progress_section = ""
     if progress >= 0:
         bar_color = "background:#22c55e" if progress >= 100 else "background:#6366f1"
+        # Canlı süre sayacı: sunucu sabit başlangıç epoch'unu verir, sayfadaki
+        # global tik (index.html) her saniye akıcı günceller. İşlem bitince (100)
+        # sayaç durur; nihai süre özet kartında gösterilir.
+        timer_html = ""
+        if start_ms:
+            running_attr = "" if progress >= 100 else f'data-start-ms="{start_ms}"'
+            timer_html = (
+                f'<span class="elapsed-timer" {running_attr} '
+                f'style="font-size:13px;font-weight:700;color:#64748b;'
+                f'font-variant-numeric:tabular-nums;flex-shrink:0;">⏱ 0:00</span>'
+            )
         progress_section = f"""
       <div style="padding:14px 20px 12px;border-bottom:1px solid #e2e8f0;background:#fff;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
           <span style="font-size:13px;font-weight:600;color:#334155;
                        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-                       max-width:85%;">{step or 'İşleniyor...'}</span>
-          <span style="font-size:13px;font-weight:700;color:#6366f1;flex-shrink:0;
-                       margin-left:8px;">{'✅' if progress >= 100 else f'{progress}%'}</span>
+                       flex:1;min-width:0;">{step or 'İşleniyor...'}</span>
+          <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;margin-left:8px;">
+            {timer_html}
+            <span style="font-size:13px;font-weight:700;color:#6366f1;">{'✅' if progress >= 100 else f'{progress}%'}</span>
+          </div>
         </div>
         <div style="height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden;">
           <div style="height:100%;border-radius:99px;transition:width .6s ease;
@@ -534,7 +552,8 @@ def _log_box(text: str, progress: int = -1, step: str = "", footer: str = "") ->
 
 
 def _poll_html(job_id: str, kind: str, log_text: str = "Başlatılıyor…",
-               progress: int = 0, step: str = "Hazırlanıyor...") -> str:
+               progress: int = 0, step: str = "Hazırlanıyor...",
+               start_ms: int = 0) -> str:
     endpoint = f"/{kind}/poll/{job_id}"
     elem_id = "index-result" if kind == "kb" else "audit-result"
     return f"""
@@ -542,7 +561,7 @@ def _poll_html(job_id: str, kind: str, log_text: str = "Başlatılıyor…",
          hx-get="{endpoint}"
          hx-trigger="every 1500ms"
          hx-swap="outerHTML">
-      {_log_box(log_text, progress=progress, step=step)}
+      {_log_box(log_text, progress=progress, step=step, start_ms=start_ms)}
     </div>"""
 
 

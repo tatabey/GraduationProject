@@ -515,6 +515,18 @@
     audit: { h: 'Uygunluk Denetimi',     s: 'Denetim raporlarını standartlarla karşılaştırın' },
   };
 
+  // ── Canlı süre sayacı ──────────────────────────────────────────────────
+  // Sunucu .elapsed-timer[data-start-ms] basar; htmx her 1.5s'de poll'u
+  // değiştirse de bu tek interval DOM'u sorgulayıp akıcı (saniye) günceller.
+  // data-start-ms yoksa (işlem bitti) sayaç son değerinde donar.
+  setInterval(function () {
+    document.querySelectorAll('.elapsed-timer[data-start-ms]').forEach(function (el) {
+      var t = Math.max(0, (Date.now() - parseInt(el.dataset.startMs, 10)) / 1000);
+      var m = Math.floor(t / 60), s = Math.floor(t % 60);
+      el.textContent = '⏱ ' + m + ':' + (s < 10 ? '0' : '') + s;
+    });
+  }, 250);
+
   function toggleSidebar() {
     // Kapali durum = mini ikon seridi (moduller + toggle gorunur kalir)
     document.getElementById('sidebar').classList.toggle('mini');
