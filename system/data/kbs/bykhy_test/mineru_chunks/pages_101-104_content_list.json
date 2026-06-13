@@ -1,0 +1,102 @@
+[
+  {
+    "type": "table",
+    "img_path": "images/889237fd33bbdcb35366acbeb87e4f1c55785862e53f0db362fbb42575d15db2.jpg",
+    "table_caption": [
+      "Ek-12/B Yanıcı ve Parlayıcı Sıvıların Bina İçinde Depolanması $^{(1)}$"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>En fazla Depolama Alanı (m2)</td><td>Müsaade edilebilir miktar (litre/ Döşeme Alanı  $m^{2}$ )</td><td>Yangına dayanıklılık (dakika)</td><td>Yangın korunumu $^{(2)}$ </td></tr><tr><td>15</td><td>70</td><td>60</td><td>YOK</td></tr><tr><td>15</td><td>175</td><td>60</td><td>VAR</td></tr><tr><td>50</td><td>140</td><td>120</td><td>YOK</td></tr><tr><td>50</td><td>350</td><td>120</td><td>VAR</td></tr><tr><td colspan=\"4\">(1) Yanıcı ve parlayıcı sıvıların işlendiği fabrika ve atölye binalarında işlemin yürütüldüğü alandan tecrit edilmiş bir alandır.(2) (Değişik: 10/8/2009-2009/15316 K.) Yangın korunumu, yağmurlama sistemi, karbondioksit, kuru kimyevi toz veya diğer uygun bir sistem ile sağlanır. Sınıf IA Sınıf IB sıvı toplam miktarı Ek-12/A’daki değerini aşmaz.</td></tr></table>",
+    "bbox": [
+      154,
+      91,
+      773,
+      233
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "table",
+    "img_path": "images/b6ae79e03f033ad2d1ab129a0ce9c4d8a9a52bd31ceb8fa08e35afc2a7c34d0a.jpg",
+    "table_caption": [
+      "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Tank Hacmi (Litre)</td><td>Komşu arsa sınırına, ana trafik yollarına veya demir yollarına uzaklıkları (metre)</td><td>Tesise ait idari binalara uzaklıkları (metre)</td><td>Tankların Birbirinden Uzaklığı (metre)</td></tr><tr><td>1.000 veya daha az</td><td>1.5</td><td>1.5</td><td></td></tr><tr><td>1001–3000</td><td>3.0</td><td>1.5</td><td>1</td></tr><tr><td>3.001–45.000</td><td>5.0</td><td>1.5</td><td>1</td></tr><tr><td>45.001–115.000</td><td>7.0</td><td>1.5</td><td>1.5</td></tr><tr><td>115.001–190.000</td><td>10.0</td><td>3.0</td><td rowspan=\"7\">Birbirine komşu tankların çaplarının toplamının 1⁄4 ü</td></tr><tr><td>190.001- 375.000</td><td>15.0</td><td>5.0</td></tr><tr><td>375.001–1.900.000</td><td>25.0</td><td>7,5</td></tr><tr><td>1.900.001–3.750.000</td><td>30.0</td><td>10.0</td></tr><tr><td>3.750.001- 7.550.000</td><td>40.0</td><td>15.0</td></tr><tr><td>7.550.001–11.375.000</td><td>50.0</td><td>17.5</td></tr><tr><td>11.375.001 veya daha fazla</td><td>55.0</td><td>20.0</td></tr><tr><td colspan=\"4\">Mesafeler tank dış cidarlarından ölçülen en kısa mesafedir.Tank tesis sahasında dökülen sıvıların kolayca biriktirileceği havuzlama sistemi yaptırılır.Tankların tamamı yağmur, drenaj ve kanalizasyon sisteminden ayrı olarak bir kanal sistemi ile ve uygun bir eğimle bu havuz sistemine bağlanır.</td></tr></table>",
+    "bbox": [
+      154,
+      269,
+      779,
+      551
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "table",
+    "img_path": "images/6bd15cfa0094a10e4ff6bfa5a1c5907ef91cf975a92aebe4175cb21866bf5f12.jpg",
+    "table_caption": [
+      "Ek-12/Ç Yeralı Tankları ile İlgili Asgari Emniyet Mesafeleri"
+    ],
+    "table_footnote": [
+      "Mesafeler Tank dış cidarlarından ölçülen en kısa mesafedir"
+    ],
+    "table_body": "<table><tr><td>Tank Hacmi (Litre)</td><td>Yeralı tanklarının komşu arsa sınırına, ana trafik yollarına veya demir vollarına uzaklıkları (metre)</td><td>Tankların Birbirinden Uzaklığı (metre)</td></tr><tr><td>500 veya daha az</td><td>0</td><td>0</td></tr><tr><td>500–3000</td><td>3.0</td><td>1.0</td></tr><tr><td>3.001–10.000</td><td>5.0</td><td>1.0</td></tr><tr><td>10.001–50.000</td><td>7.5</td><td>1.0</td></tr><tr><td>50.001–120.000</td><td>10.0</td><td>1.5</td></tr><tr><td>120.001–250.000</td><td>15.0</td><td rowspan=\"5\">Birbirine komşu tankların caplarının toplamının 1⁄4 ü</td></tr><tr><td>250.001–600.000</td><td>15.0</td></tr><tr><td>600.001–1.200.000</td><td>15.0</td></tr><tr><td>1.200.001–5.000.000</td><td>15.0</td></tr><tr><td>5.000.000 den büyük</td><td>15.0</td></tr></table>",
+    "bbox": [
+      154,
+      104,
+      763,
+      317
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "table",
+    "img_path": "images/6a02fbcb55e6a41283945e9cf7d9228b29b6c52dd4032e6e113b7be441054e65.jpg",
+    "table_caption": [
+      "Ek-12/D Taşınabilir Kaplar ile Depolamada Koruyucu Bölge Genişliği"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Depolanan Hacim</td><td>Koruyucu Bölge Genişliği</td></tr><tr><td>10-30  $m^{3}$ </td><td>10 m.</td></tr><tr><td>30-100  $m^{3}$ </td><td>20 m.</td></tr><tr><td>200  $m^{3}$ &#x27;den büyük</td><td>30 m.</td></tr></table>",
+    "bbox": [
+      164,
+      394,
+      621,
+      454
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "table",
+    "img_path": "images/b44aa5c2b948e0ba35e51d24a5e20aa2ccebb31da951764028f6c508ef6c1c5e.jpg",
+    "table_caption": [
+      "Ek-13 Akaryakıt Servis İstasyonlarında Asgari Emniyet Mesafeleri (m)",
+      "(Değişik: 10/8/2009-2009/15316 K.)"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td></td><td>Akaryakı Tankı Yeraltı(1)</td><td>Akaryakı Pompası Adası</td><td>Tank Havalan. Borusu</td><td>Tank Doldurma Ağzı</td><td>İdari Bina(2)</td><td>Komşu Arsa Sınırlı</td><td>Karayolu (Şehiriçi) Sınırlı</td><td>Karayolu (Şehirlerarası) Arsa Sınırlı</td><td>Topluma Açık Yerler(3)</td><td>Hastane Okul Arsa Sınırlı</td></tr><tr><td>Akaryakı Tankı Yeraltı</td><td>0,5</td><td></td><td></td><td></td><td>2</td><td>7,5</td><td>5</td><td>15</td><td>25</td><td>50</td></tr><tr><td>Akaryakı Pompası (Dispenser) Adası</td><td>0</td><td>6</td><td>6</td><td>6</td><td>6</td><td>7,5</td><td>6</td><td>6</td><td>25</td><td>50</td></tr><tr><td>Tank Havalandırma Borusu</td><td>0</td><td>6</td><td></td><td>1</td><td>5</td><td>5</td><td>3</td><td>6</td><td>25</td><td>50</td></tr><tr><td>Tank Doldurma Ağzı</td><td>0</td><td>6</td><td>1</td><td></td><td>5</td><td>5</td><td>5</td><td>6</td><td>25</td><td>50</td></tr><tr><td colspan=\"11\">(1) Tank dış cidarlarından ölçülen en kısa mesafedir.(2) İstasyonun idari, ticari ve sosyal faaliyetlerinin yürütüldüğü, istasyona ait makine ve donanımların bakımlarının yapıldığı, istasyonun ihtiyacı olan, elektrik, basınçlı hava ve su temin ünitelerinin bulunduğu yapılardan meydana gelen idari bürolarda bodrum katı bulunamaz. Bu Yönetmeliğin yürürlüğe girdiği tarihten önce inşa edilmiş istasyonlarda bodrum kat mevcut ise bodrum kat girişi ve bodrum katın herhangi bir açıklığı havalandırma borusu çıkış ucu, doldurma ağzı, tank ve dağıtım birimleri ile aksi cephede (girişi arkadan) olması ve girişte eşik ve eşikten sonra dışarıya doğru bir meyil bulunması şartır.(3) Topluma açık yerler: Konaklama, tören, ibadet, eğlence, yeme, içme, ulaşım, araç bekleme, alış-veriş gibi sebeplerle 50 veya daha fazla kişinin bir araya gelebildiği bütün binalar veya bunların bu amaçla kullanılan bölümlerini kapsar.NOT:a) Topluma açık yerler ile hastane ve okul arsa sınırına olan mesafeler mevcut akaryakı istasyonları için % 60 azaltılır. İstasyonda sadece motorin tankı olması hâlinde, bu mesafeler yeni istasyonlarda % 50 azaltılabilir.b) Akaryakı istasyonlarında, binaların pencere, kapı, klima, aydınlatma sistemi gibi herhangi bir açıklığı olmayan cephesine 0 metre olabilir. Nefeslik ağzı, çatı veya elemanlarından en az 3,6 m yüksekte olmalı ve toplam yükseklik 9 m&#x27;yi aşmamalıdır.</td></tr></table>",
+    "bbox": [
+      112,
+      117,
+      813,
+      548
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "table",
+    "img_path": "images/eee28faf52b909b9f59d62bc575d3b43948f5936573974ece3e74786528f1afe.jpg",
+    "table_caption": [
+      "Ek-14",
+      "Çıkışlara Götüren En Uzun Kaçış Uzaklıkları"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td rowspan=\"2\">Kullanım Sınıfı</td><td colspan=\"2\">Tek yön en çok uzaklık (m)</td><td colspan=\"2\">İki yön en çok uzaklık (m)</td></tr><tr><td>Yağmurlama sistemi yok</td><td>Yağmurlama sistemli</td><td>Yağmurlama sistemi yok</td><td>Yağmurlama sistemli</td></tr><tr><td>Yüksek Tehlikeli Yerler</td><td>10</td><td>20</td><td>20</td><td>35</td></tr><tr><td>Endüstriyel Amaçlı Yapılar $^{(1)}$ </td><td>15</td><td>25</td><td>30</td><td>60</td></tr><tr><td>Yurtlar, Yatakhaneler</td><td>15</td><td>30</td><td>45</td><td>75</td></tr><tr><td>Mağazalar, Dükkânlar, Marketler</td><td>15</td><td>25</td><td>45</td><td>60</td></tr><tr><td>Büro Binaları</td><td>15</td><td>30</td><td>45</td><td>75</td></tr><tr><td>Otoparklar ve Depolar $^{(1)}$ </td><td>15</td><td>25</td><td>45</td><td>60</td></tr><tr><td>Okul ve Eğitim Yapıları</td><td>15</td><td>30</td><td>45</td><td>75</td></tr><tr><td>Toplanma Amaçlı Binalar</td><td>15</td><td>25</td><td>45</td><td>60</td></tr><tr><td>Hastaneler, Huzurevleri</td><td>15</td><td>25</td><td>30</td><td>45</td></tr><tr><td>Oteller, Pansiyonlar</td><td>15</td><td>20</td><td>30</td><td>45</td></tr><tr><td>Apartmanlar</td><td>15</td><td>30</td><td>30</td><td>75</td></tr><tr><td colspan=\"5\"> $^{(1)}$ (Değişik: 10/8/2009-2009/15316 K.) Kolay alevlenici malzeme üretimi yapmayan endüstriyel tesislerde uzaklık en çok 2 katına kadar artırılabilir.</td></tr></table>",
+    "bbox": [
+      163,
+      117,
+      764,
+      368
+    ],
+    "page_idx": 3
+  }
+]

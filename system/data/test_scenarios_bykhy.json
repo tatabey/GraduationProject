@@ -1,0 +1,771 @@
+[
+ {
+  "item_no": 1,
+  "text": "Oteller, Pansiyonlar bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 56 m'dir (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 2,
+  "text": "Otoparklar ve Depolar bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 30 m'dir (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 3,
+  "text": "Hastaneler, Huzurevleri bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 18 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 4,
+  "text": "Hastaneler, Huzurevleri bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 30 m'dir (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 5,
+  "text": "Yurtlar, Yatakhaneler bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 18 m olarak ölçülmüştür (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 6,
+  "text": "Otoparklar ve Depolar bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 36 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 7,
+  "text": "Hastaneler, Huzurevleri bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 56 m'dir (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 8,
+  "text": "Mağazalar, Dükkânlar, Marketler bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 9 m olarak ölçülmüştür (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 9,
+  "text": "Apartmanlar bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 132 m'dir (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 10,
+  "text": "Hastaneler, Huzurevleri bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 81 m'dir (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 11,
+  "text": "Okul ve Eğitim Yapıları bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 30 m'dir (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 12,
+  "text": "Okul ve Eğitim Yapıları bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 18 m olarak ölçülmüştür (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 13,
+  "text": "Mağazalar, Dükkânlar, Marketler bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 36 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 14,
+  "text": "Mağazalar, Dükkânlar, Marketler bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 27 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 15,
+  "text": "Yüksek Tehlikeli Yerler bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 39 m'dir (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 16,
+  "text": "Yüksek Tehlikeli Yerler bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 22 m'dir (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 17,
+  "text": "Apartmanlar bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 45 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 18,
+  "text": "Büro Binaları bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 9 m olarak ölçülmüştür (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 19,
+  "text": "Oteller, Pansiyonlar bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 27 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 20,
+  "text": "Hastaneler, Huzurevleri bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 47 m'dir (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 21,
+  "text": "Toplanma Amaçlı Binalar bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 47 m'dir (tek yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 22,
+  "text": "Büro Binaları bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 45 m olarak ölçülmüştür (iki yönlü kaçış imkânı olan mekân).",
+  "expected": "UYGUN",
+  "table": "Table_page95"
+ },
+ {
+  "item_no": 23,
+  "text": "Kullanıcı yükü hesabında, 'Hastane yatak odaları, hemşire odaları' için 20.0 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 24,
+  "text": "Kullanıcı yükü hesabında, 'Konferans salonu, çok amaçlı salonlar (balo v' için 1.5 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 25,
+  "text": "Kullanıcı yükü hesabında, 'Sergi alanları, stüdyolar (film, radyo, telev' için 1.5 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 26,
+  "text": "Kullanıcı yükü hesabında, 'Fitnes merkezleri, aerobik salonları, okuma s' için 5.0 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 27,
+  "text": "Kullanıcı yükü hesabında, 'Ofisler, dernek merkezleri, halk kütüphaneler' için 10.0 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 28,
+  "text": "Kullanıcı yükü hesabında, 'Oturulan kısımları için' için 1.0 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 29,
+  "text": "Kullanıcı yükü hesabında, 'Sanat galerileri, müzeler, atölyeler' için 5.0 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 30,
+  "text": "Kullanıcı yükü hesabında, 'Depolar, ambarlar, makina daireleri' için 0.5 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 31,
+  "text": "Kullanıcı yükü hesabında, 'Resepsiyon alanları, bekleme alanları, atrium' için 5.0 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 32,
+  "text": "Kullanıcı yükü hesabında, 'Hastane laboratuarları, eczaneler' için 20.0 m²/kişi katsayısı esas alınmıştır.",
+  "expected": "UYGUN",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 33,
+  "text": "Kullanıcı yükü hesabında, 'Oturulan kısımları için' için 30.0 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 34,
+  "text": "Kullanıcı yükü hesabında, 'Supermarketler, mağazalar, dükkânlar' için 0.5 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 35,
+  "text": "Kullanıcı yükü hesabında, 'Hastane yatak odaları, hemşire odaları' için 1.5 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 36,
+  "text": "Kullanıcı yükü hesabında, 'Öğrenci yatak odaları' için 1.0 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 37,
+  "text": "Kullanıcı yükü hesabında, 'Ofisler, dernek merkezleri, halk kütüphaneler' için 0.5 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 38,
+  "text": "Kullanıcı yükü hesabında, 'Sergi alanları, stüdyolar (film, radyo, telev' için 10.0 m²/kişi katsayısı kullanılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu"
+ },
+ {
+  "item_no": 39,
+  "text": "Bir sinema salonunda sıra genişliği 425-449 mm olan sıralarda, çıkış yolu iki yanında, her sırada 27 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 40,
+  "text": "Bir sinema salonunda sıra genişliği 475-499 mm olan sıralarda, çıkış yolu yalnız bir yanda, her sırada 15 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 41,
+  "text": "Bir toplanma salonunda sıra genişliği 400-424 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 9 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 42,
+  "text": "Bir toplanma salonunda sıra genişliği 450-474 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 10 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 43,
+  "text": "Bir sinema salonunda sıra genişliği 300-324 mm olan sıralarda, çıkış yolu iki yanında, her sırada 17 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 44,
+  "text": "Bir sinema salonunda sıra genişliği 425-449 mm olan sıralarda, çıkış yolu yalnız bir yanda, her sırada 14 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 45,
+  "text": "Bir toplanma salonunda sıra genişliği 375-399 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 8 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 46,
+  "text": "Bir sinema salonunda sıra genişliği 300-324 mm olan sıralarda, çıkış yolu yalnız bir yanda, her sırada 10 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 47,
+  "text": "Bir toplanma salonunda sıra genişliği 350-374 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 7 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 48,
+  "text": "Bir sinema salonunda sıra genişliği 375-399 mm olan sıralarda, çıkış yolu iki yanında, her sırada 23 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 49,
+  "text": "Bir toplanma salonunda sıra genişliği 425-449 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 9 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 50,
+  "text": "Bir toplanma salonunda sıra genişliği 475-499 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 10 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 51,
+  "text": "Bir toplanma salonunda sıra genişliği 450-474 mm olan koltuk sıralarında, çıkış yolu iki yanında, her sırada 24 koltuk bulunmaktadır.",
+  "expected": "UYGUN",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 52,
+  "text": "Bir sinema salonunda sıra genişliği 450-474 mm olan sıralarda, çıkış yolu yalnız bir yanda, her sırada 15 koltuk yerleştirilmiştir.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı"
+ },
+ {
+  "item_no": 53,
+  "text": "Su hacmi 30.1 m³ olan bir dökme LPG yerüstü tankı, en yakın bina ve tesise 18.0 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 54,
+  "text": "Su hacmi 1.8 m³ olan bir dökme LPG yerüstü tankı, en yakın bina ve tesise 7.5 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 55,
+  "text": "Su hacmi 425.1 m³ olan dökme LPG yerüstü tankı, en yakın binaya yalnızca 19.0 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 56,
+  "text": "Su hacmi 900.0 m³ olan bir dökme LPG yerüstü tankı, en yakın bina ve tesise 94.5 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 57,
+  "text": "Su hacmi 85.0 m³ olan dökme LPG yerüstü tankı, en yakın binaya yalnızca 7.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 58,
+  "text": "Su hacmi 900.0 m³ olan bir dökme LPG yeraltı tankı, en yakın bina ve tesise 25.5 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 59,
+  "text": "Su hacmi 185.1 m³ olan dökme LPG yerüstü tankı, en yakın binaya yalnızca 11.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 60,
+  "text": "Su hacmi 900.0 m³ olan dökme LPG yeraltı tankı, en yakın binaya yalnızca 7.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 61,
+  "text": "Su hacmi 425.1 m³ olan bir dökme LPG yeraltı tankı, en yakın bina ve tesise 25.5 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 62,
+  "text": "Su hacmi 3100.1 m³ olan dökme LPG yeraltı tankı, en yakın binaya yalnızca 7.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 63,
+  "text": "Su hacmi 1.8 m³ olan bir dökme LPG yeraltı tankı, en yakın bina ve tesise 7.5 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 64,
+  "text": "Su hacmi 0.2 m³ olan dökme LPG yerüstü tankı, en yakın binaya yalnızca 1.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 65,
+  "text": "Su hacmi 1.8 m³ olan dökme LPG yeraltı tankı, en yakın binaya yalnızca 1.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 66,
+  "text": "Su hacmi 30.1 m³ olan bir dökme LPG yeraltı tankı, en yakın bina ve tesise 14.2 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 67,
+  "text": "Su hacmi 5000.5 m³ olan bir dökme LPG yeraltı tankı, en yakın bina ve tesise 25.5 m emniyet uzaklığında yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 68,
+  "text": "Su hacmi 5000.5 m³ olan dökme LPG yeraltı tankı, en yakın binaya yalnızca 7.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları"
+ },
+ {
+  "item_no": 69,
+  "text": "Açıkta kurulu, hacmi 80000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 13.5 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 70,
+  "text": "Hacmi 500 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 0.8 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 71,
+  "text": "Hacmi 80000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 3.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 72,
+  "text": "Açıkta kurulu, hacmi 2825000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 48.0 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 73,
+  "text": "Hacmi 24000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 2.5 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 74,
+  "text": "Açıkta kurulu, hacmi 5650000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 63.0 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 75,
+  "text": "Açıkta kurulu, hacmi 152500 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 18.0 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 76,
+  "text": "Açıkta kurulu, hacmi 282500 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 25.5 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 77,
+  "text": "Hacmi 5650000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 20.0 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 78,
+  "text": "Hacmi 2825000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 15.0 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 79,
+  "text": "Hacmi 9462500 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 25.0 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 80,
+  "text": "Hacmi 152500 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına yalnızca 5.0 m mesafede konumlandırılmıştır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 81,
+  "text": "Açıkta kurulu, hacmi 500 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 5.2 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 82,
+  "text": "Açıkta kurulu, hacmi 24000 litre olan yerüstü yanıcı sıvı tankı, komşu arsa sınırına 10.5 m mesafede yerleştirilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri"
+ },
+ {
+  "item_no": 83,
+  "text": "Büro Binaları sınıfı, yapı yüksekliği 35.5 m olan bir binada otomatik yangın algılama sistemi tesis edilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 84,
+  "text": "Yüksek Tehlikeli Yerler sınıfı, yapı yüksekliği 11.5 m olan bir binada otomatik yangın algılama sistemi tesis edilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 85,
+  "text": "Yüksek Tehlikeli Yerler sınıfı, yapı yüksekliği 11.5 m olan bir binada otomatik yangın algılama sistemi bulunmamaktadır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 86,
+  "text": "Büro Binaları sınıfı, yapı yüksekliği 35.5 m olan bir binada otomatik yangın algılama sistemi bulunmamaktadır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 87,
+  "text": "Depolar sınıfı, yapı yüksekliği 11.5 m olan bir binada otomatik yangın algılama sistemi tesis edilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 88,
+  "text": "Konaklama Amaçlı Binalar sınıfı, yapı yüksekliği 11.5 m olan bir binada otomatik yangın algılama sistemi bulunmamaktadır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 89,
+  "text": "Depolar sınıfı, yapı yüksekliği 11.5 m olan bir binada otomatik yangın algılama sistemi bulunmamaktadır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 90,
+  "text": "Konaklama Amaçlı Binalar sınıfı, yapı yüksekliği 11.5 m olan bir binada otomatik yangın algılama sistemi tesis edilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 91,
+  "text": "Konutlar sınıfı, yapı yüksekliği 56.5 m olan bir binada otomatik yangın algılama sistemi bulunmamaktadır.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 92,
+  "text": "Konutlar sınıfı, yapı yüksekliği 56.5 m olan bir binada otomatik yangın algılama sistemi tesis edilmiştir.",
+  "expected": "UYGUN",
+  "table": "Ek-7 Otomatik Algılama Sistemi Gereken Binalar"
+ },
+ {
+  "item_no": 93,
+  "section": "Yangın duvarları",
+  "chunk_id": "chunk_p14_idx103",
+  "expected": "UYGUN",
+  "text": "Bitişik nizam iki yapıyı birbirinden ayıran yangın duvarı, yangına 120 dakika dayanıklı olarak projelendirilmiştir."
+ },
+ {
+  "item_no": 94,
+  "section": "Yangın duvarları",
+  "chunk_id": "chunk_p14_idx103",
+  "expected": "UYGUN DEĞİL",
+  "text": "Bitişik nizam yapıları ayıran yangın duvarı yangına yalnızca 60 dakika dayanıklı olarak projelendirilmiştir."
+ },
+ {
+  "item_no": 95,
+  "section": "Yangın duvarları",
+  "chunk_id": "chunk_p14_idx103",
+  "expected": "UYGUN DEĞİL",
+  "text": "Bir yangın duvarı üzerine, gerekli koruma sağlanmadan havalandırma için açık boşluklar bırakılmıştır."
+ },
+ {
+  "item_no": 96,
+  "section": "Yangın duvarları",
+  "chunk_id": "chunk_p14_idx103",
+  "expected": "UYGUN",
+  "text": "Bitişik nizam yapıları ayıran yangın duvarı yangına 90 dakika dayanıklı olarak inşa edilmiştir."
+ },
+ {
+  "item_no": 97,
+  "section": "Acil çıkış zorunluluğu",
+  "chunk_id": "chunk_p21_idx201",
+  "expected": "UYGUN",
+  "text": "70 kişinin bulunduğu bir toplantı salonunda korunmuş en az 2 çıkış tesis edilmiştir."
+ },
+ {
+  "item_no": 98,
+  "section": "Acil çıkış zorunluluğu",
+  "chunk_id": "chunk_p21_idx201",
+  "expected": "UYGUN DEĞİL",
+  "text": "60 kişinin bulunabildiği bir yeme-içme mekânında yalnızca tek bir çıkış bulunmaktadır."
+ },
+ {
+  "item_no": 99,
+  "section": "Acil çıkış zorunluluğu",
+  "chunk_id": "chunk_p21_idx201",
+  "expected": "UYGUN DEĞİL",
+  "text": "30 kişinin çalıştığı yüksek tehlikeli bir imalat mekânında tek çıkış bulunmaktadır."
+ },
+ {
+  "item_no": 100,
+  "section": "Acil çıkış zorunluluğu",
+  "chunk_id": "chunk_p21_idx201",
+  "expected": "UYGUN",
+  "text": "Düşük tehlikeli, en çok 20 kişinin bulunduğu küçük bir ofiste tek çıkış bulunmaktadır."
+ },
+ {
+  "item_no": 101,
+  "section": "Acil çıkış zorunluluğu",
+  "chunk_id": "chunk_p21_idx201",
+  "expected": "UYGUN DEĞİL",
+  "text": "Bir binada yalnızca 1 adet çıkış tesis edilmiş ve aksini gerektiren bir istisna belirtilmemiştir."
+ },
+ {
+  "item_no": 102,
+  "section": "Toplanma amaçlı binalar",
+  "chunk_id": "chunk_p9_idx63",
+  "expected": "UYGUN",
+  "text": "80 kişinin bir araya gelebildiği bir düğün salonu, toplanma amaçlı bina sınıfında değerlendirilmiştir."
+ },
+ {
+  "item_no": 103,
+  "section": "Toplanma amaçlı binalar",
+  "chunk_id": "chunk_p9_idx63",
+  "expected": "UYGUN DEĞİL",
+  "text": "120 kişinin bir araya geldiği bir tören salonu, toplanma amaçlı bina sayılmamış ve bu sınıfın gerekleri uygulanmamıştır."
+ },
+ {
+  "item_no": 104,
+  "section": "Toplanma amaçlı binalar",
+  "chunk_id": "chunk_p9_idx63",
+  "expected": "UYGUN",
+  "text": "En çok 30 kişinin kullandığı küçük bir çay ocağı, toplanma amaçlı bina sınıfı dışında değerlendirilmiştir."
+ },
+ {
+  "item_no": 105,
+  "section": "MADDE 27- (Değişik: 16/3/2015-2015/7401 ",
+  "chunk_id": "chunk_p15_idx111",
+  "expected": "UYGUN",
+  "text": "Yapı yüksekliği 35 m olan bir binanın dış cephesi zor yanıcı malzemeden yapılmıştır."
+ },
+ {
+  "item_no": 106,
+  "section": "MADDE 27- (Değişik: 16/3/2015-2015/7401 ",
+  "chunk_id": "chunk_p15_idx111",
+  "expected": "UYGUN DEĞİL",
+  "text": "Yapı yüksekliği 40 m olan bir binanın dış cephesinde kolay alevlenici malzeme kullanılmıştır."
+ },
+ {
+  "item_no": 107,
+  "section": "MADDE 27- (Değişik: 16/3/2015-2015/7401 ",
+  "chunk_id": "chunk_p15_idx111",
+  "expected": "UYGUN DEĞİL",
+  "text": "İki katın korumasız pencere boşlukları arasında düşeyde yalnızca 60 cm yüksekliğinde dolu yüzey bırakılmıştır."
+ },
+ {
+  "item_no": 108,
+  "section": "MADDE 27- (Değişik: 16/3/2015-2015/7401 ",
+  "chunk_id": "chunk_p15_idx111",
+  "expected": "UYGUN",
+  "text": "İki katın pencere boşlukları arasında düşeyde 120 cm yüksekliğinde yangına dayanıklı dolu cephe yüzeyi oluşturulmuştur."
+ },
+ {
+  "item_no": 109,
+  "section": "Yangın kompartımanları",
+  "chunk_id": "chunk_p13_idx99",
+  "expected": "UYGUN",
+  "text": "Bir binanın kazan dairesi ve jeneratör odası, kompartıman niteliğindeki duvar ve döşemelerle ayrılmıştır."
+ },
+ {
+  "item_no": 110,
+  "section": "Yangın kompartımanları",
+  "chunk_id": "chunk_p13_idx99",
+  "expected": "UYGUN DEĞİL",
+  "text": "Bir binadaki ana elektrik dağıtım odası, çevresinden kompartıman niteliğinde duvar ve döşeme ile ayrılmamıştır."
+ },
+ {
+  "item_no": 111,
+  "section": "Acil durum yönlendirmesi",
+  "chunk_id": "chunk_p37_idx374",
+  "expected": "UYGUN",
+  "text": "Acil durum yönlendirmesi, normal aydınlatmanın kesilmesi hâlinde 90 dakika süreyle çalışacak şekilde tasarlanmıştır (kullanıcı yükü 150)."
+ },
+ {
+  "item_no": 112,
+  "section": "Acil durum yönlendirmesi",
+  "chunk_id": "chunk_p37_idx374",
+  "expected": "UYGUN DEĞİL",
+  "text": "Acil durum yönlendirmesinin, normal aydınlatma kesildiğinde yalnızca 30 dakika süreyle çalışması öngörülmüştür."
+ },
+ {
+  "item_no": 113,
+  "section": "Acil durum yönlendirmesi",
+  "chunk_id": "chunk_p37_idx374",
+  "expected": "UYGUN DEĞİL",
+  "text": "Kullanıcı yükü 350 olan bir mekânda acil durum yönlendirmesi 60 dakika süreyle çalışacak şekilde tasarlanmıştır."
+ },
+ {
+  "item_no": 114,
+  "section": "Acil durum yönlendirmesi",
+  "chunk_id": "chunk_p37_idx374",
+  "expected": "UYGUN",
+  "text": "Kullanıcı yükü 400 olan bir terminalde acil durum yönlendirmesi 120 dakika süreyle çalışacak şekilde tasarlanmıştır."
+ },
+ {
+  "item_no": 115,
+  "section": "Acil durum yönlendirmesi",
+  "chunk_id": "chunk_p37_idx374",
+  "expected": "UYGUN DEĞİL",
+  "text": "Yönlendirme işaretlerinin işaret yüksekliği 8 cm olarak belirlenmiştir."
+ },
+ {
+  "item_no": 116,
+  "section": "Acil durum yönlendirmesi",
+  "chunk_id": "chunk_p37_idx374",
+  "expected": "UYGUN",
+  "text": "Yönlendirme işaretleri yerden 220 cm yüksekliğe yerleştirilmiştir."
+ },
+ {
+  "item_no": 117,
+  "section": "Algılama ve uyarı sistemi",
+  "chunk_id": "chunk_p38_idx382",
+  "expected": "UYGUN",
+  "text": "Yangın uyarı butonları, kaçış yollarında herhangi bir noktadan yatay erişim uzaklığı 50 m olacak şekilde yerleştirilmiştir."
+ },
+ {
+  "item_no": 118,
+  "section": "Algılama ve uyarı sistemi",
+  "chunk_id": "chunk_p38_idx382",
+  "expected": "UYGUN DEĞİL",
+  "text": "Yangın uyarı butonları, kaçış yolu üzerinde yatay erişim uzaklığı 80 m olacak şekilde seyrek yerleştirilmiştir."
+ },
+ {
+  "item_no": 119,
+  "section": "Algılama ve uyarı sistemi",
+  "chunk_id": "chunk_p38_idx382",
+  "expected": "UYGUN",
+  "text": "Yangın uyarı butonları yerden 120 cm yüksekliğe monte edilmiştir."
+ },
+ {
+  "item_no": 120,
+  "section": "Algılama ve uyarı sistemi",
+  "chunk_id": "chunk_p38_idx382",
+  "expected": "UYGUN DEĞİL",
+  "text": "Yangın uyarı butonları yerden 160 cm yüksekliğe monte edilmiştir."
+ },
+ {
+  "item_no": 121,
+  "section": "Algılama ve uyarı sistemi",
+  "chunk_id": "chunk_p38_idx382",
+  "expected": "UYGUN DEĞİL",
+  "text": "Konut dışı, kat alanı 600 m² olan üç katlı bir binada yangın uyarı butonu tesis edilmemiştir."
+ },
+ {
+  "item_no": 122,
+  "section": "Acil durum aydınlatması sistemi",
+  "chunk_id": "chunk_p36_idx359",
+  "expected": "UYGUN",
+  "text": "Kaçış yollarındaki acil durum aydınlatması, dış elektrik beslemesinin kesilmesi hâlinde en az 60 dakika çalışacak şekilde tasarlanmıştır."
+ },
+ {
+  "item_no": 123,
+  "section": "Acil durum aydınlatması sistemi",
+  "chunk_id": "chunk_p36_idx359",
+  "expected": "UYGUN DEĞİL",
+  "text": "Kaçış yollarındaki acil durum aydınlatmasının, besleme kesildiğinde yalnızca 20 dakika çalışması öngörülmüştür."
+ }
+]

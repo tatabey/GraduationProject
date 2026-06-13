@@ -1,0 +1,38 @@
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  MODEL-BOYUTU MERDİVENİ — AASTP-1 / 123 Senaryo (2 sınıf: UYGUN / UYGUN DEĞİL)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  Model                       Params  Sağlay.  Doğruluk   UYGUN   DEĞİL  Ort.Süre
+  ────────────────────────── ─────── ──────── ───────── ─────── ─────── ─────────
+  mistral-small-latest           24B  mistral     86.2%     93%     79%      3.7s
+
+  Tablo Bazında Doğruluk (%):
+  Tablo         mistral-small-
+  ────────────────────────────
+  Acil durum aydınlatması sistemi         100.0
+  Acil durum yönlendirmesi          83.3
+  Acil çıkış zorunluluğu          80.0
+  Algılama ve uyarı sistemi          60.0
+  Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları         100.0
+  Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri          92.9
+  Ek-5/A Kullanıcı Yükü Katsayısı Tablosu          87.5
+  Ek-6 Bir Sıra İçindeki Koltuk Sayısı          78.6
+  Ek-7 Otomatik Algılama Sistemi Gereken Binalar         100.0
+  MADDE 27- (Değişik: 16/3/2015-2015/7401           75.0
+  Table_page95            72.7
+  Toplanma amaçlı binalar         100.0
+  Yangın duvarları         100.0
+  Yangın kompartımanları         100.0
+
+  Verdict Dağılımı:
+  Verdict       mistral-small-
+  ────────────────────────────
+  UYGUN                     69
+  UYGUN DEĞİL               53
+  Beklenen      
+
+    UYGUN: 61 beklenen
+    UYGUN DEĞİL: 62 beklenen
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+

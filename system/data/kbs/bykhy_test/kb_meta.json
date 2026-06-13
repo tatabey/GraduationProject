@@ -1,0 +1,17 @@
+{
+  "kb_name": "bykhy_test",
+  "collection": "bykhy_test",
+  "pdf": "21.5.200712937.pdf",
+  "tables": 28,
+  "chunks": 216,
+  "total": 301,
+  "chroma_dir": "data/kbs/bykhy_test/chroma_db",
+  "created_at": "2026-06-14 00:05",
+  "timings": {
+    "mineru_s": 39.0,
+    "assemble_s": 0.0,
+    "chunk_s": 0.0,
+    "index_s": 53.2,
+    "total_s": 92.2
+  }
+}
