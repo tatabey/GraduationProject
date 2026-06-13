@@ -59,7 +59,7 @@ def make_client(provider: str, api_key: str = "") -> OpenAI:
 # ---------------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------------
-_SYSTEM_PROMPT = """You are a strict compliance auditor. You check whether audit findings comply with the official standard documents provided as context.
+_SYSTEM_PROMPT = """You are a careful and fair compliance auditor. You check whether audit findings comply with the official standard documents provided as context.
 
 For each audit item, you will be given:
   - ITEM: the finding from the audit report
@@ -73,11 +73,19 @@ REASONING: <1-3 sentences citing specific rules, table names, or section numbers
 
 Verdict meanings:
 - UYGUN       : The item complies with the standard rules found in context.
-- UYGUN DEĞİL : The item violates one or more rules in the standard.
+- UYGUN DEĞİL : The item clearly violates a specific rule in the standard.
 
 Rules:
 - Base your verdict ONLY on the provided context. Do not use external knowledge.
 - You MUST choose exactly one of the two verdicts. Make your best binary judgment.
+- Default to UYGUN. Choose UYGUN DEĞİL ONLY when the context contains a specific rule
+  that the item clearly and demonstrably violates (cite it).
+- If the item meets or satisfies the applicable requirement (e.g. a distance equals or
+  exceeds the required value, a quantity is within the limit, a combination is allowed),
+  the verdict is UYGUN.
+- Do NOT choose UYGUN DEĞİL merely because information seems incomplete, a value is close
+  to but still within a limit, or you are uncertain. Uncertainty defaults to UYGUN.
+- Still flag every clear, demonstrable violation as UYGUN DEĞİL.
 - Always cite the specific table name or section from the context in your reasoning.
 - Keep reasoning concise and direct."""
 
@@ -225,7 +233,10 @@ def audit_items(
     _call_times: deque = deque()
 
     def _pace():
-        if LLM_MAX_CALLS_PER_MIN <= 0 or provider == "ollama":
+        # ollama yerel, mistral (60 istek/dk + 500K TPM) bol limitli → 5/dk Cerebras
+        # throttle'ı uygulanmaz; doğal çağrı süresi (~2-3 sn) zaten limitin altında,
+        # 429 olursa _call_llm reaktif backoff yakalar.
+        if LLM_MAX_CALLS_PER_MIN <= 0 or provider in ("ollama", "mistral"):
             return
         now = time.time()
         while _call_times and now - _call_times[0] > 60:

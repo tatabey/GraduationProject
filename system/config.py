@@ -119,10 +119,12 @@ MISTRAL_RPS_DELAY = 1.0   # Mistral free tier = ~1 istek/sn (çağrılar arası 
 # ---------------------------------------------------------------------------
 # Üretim denetim modeli (arayüz / auditor.py bunu kullanır)
 # ---------------------------------------------------------------------------
-# Ölçtüğümüz en iyi binary model: gpt-oss-120b @ Cerebras (%89.1).
-# provider: "cerebras" | "groq" | "ollama" — değiştirmek için tek satır.
-AUDIT_PROVIDER = "cerebras"
-AUDIT_MODEL    = "gpt-oss-120b"
+# Üretim modeli: Mistral Small 24B @ Mistral (ücretsiz, 1 milyar token/ay, rate-limit
+# duvarı yok). AASTP genel %95.5, DEF(AUST) %91.2 (ayarlı prompt). Cerebras 120B
+# (%94.7 set1) daha güçlü ama günlük 1M token duvarı üretimi tıkıyordu.
+# provider: "mistral" | "cerebras" | "groq" | "ollama" — değiştirmek için tek satır.
+AUDIT_PROVIDER = "mistral"
+AUDIT_MODEL    = "mistral-small-latest"
 
 # ---------------------------------------------------------------------------
 # Model-boyutu merdiveni (benchmark) — parametreye göre artan
