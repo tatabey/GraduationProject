@@ -20,3 +20,7 @@ unsloth_compiled_cache/
 venv/
 .env
 
+
+# Claude baglam/araclari — GitHub'a gitmez (yalniz lokal)
+CLAUDE.md
+.claude/
