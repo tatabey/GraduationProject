@@ -296,7 +296,11 @@ def _serialize_value_matrix(rows: list[list[str]], fmap: dict, corner: str) -> s
     Etiket sözlüğü köşe hücresinden türetilir — domain'e özel sabit yok.
     """
     col_hdrs = [_clean(c) for c in rows[0][1:]]
-    intro = (f"{corner} combination matrix — resulting value for each pair:"
+    # Sözlük bir kez intro'da; her satırda kısaltma+kod (tam ad tekrar EDİLMEZ → token tasarrufu)
+    ab = _abbrev(corner)
+    short = ab or corner
+    name  = f"{corner} ({ab})" if ab else corner
+    intro = (f"{name} combination matrix — resulting value for each pair:"
              if corner else "Combination matrix — resulting value for each pair:")
     lines: list[str] = [intro]
 
@@ -314,10 +318,9 @@ def _serialize_value_matrix(rows: list[list[str]], fmap: dict, corner: str) -> s
             if not val or not ccode:
                 continue
             val_exp = _expand(val, fmap)
-            lines.append(
-                f"{_label_pair(corner, rcode)} combined with "
-                f"{_label_pair(corner, ccode)}: resulting value {val_exp}."
-            )
+            rl = f"{short} {rcode}" if short else rcode
+            cl = f"{short} {ccode}" if short else ccode
+            lines.append(f"{rl} + {cl} → {val_exp}.")
 
     return "\n".join(lines)
 
@@ -346,7 +349,10 @@ def _serialize_binary_matrix(rows: list[list[str]], fmap: dict,
     """
     col_lbls = [_clean(c) for c in rows[0][1:]]
     pos, neg = _legend_x_meaning(legend)
+    # Köşe etiketi bir kez intro'da (eskiden her satırda İKİ kez tekrarlanıyordu → büyük israf)
     lines: list[str] = []
+    if corner:
+        lines.append(f"{corner} — row with column (X = {pos}):")
 
     for row in rows[1:]:
         if not row:
@@ -367,9 +373,7 @@ def _serialize_binary_matrix(rows: list[list[str]], fmap: dict,
                 perm = neg
             else:
                 perm = _expand(_clean(raw), fmap)
-            row_t = f"{corner} {rl}" if corner else rl
-            col_t = f"{corner} {cl}" if corner else cl
-            lines.append(f"{row_t} with {col_t}: {perm}.")
+            lines.append(f"{rl} with {cl}: {perm}.")
 
     return "\n".join(lines)
 
@@ -384,9 +388,22 @@ def _serialize_kv(rows: list[list[str]], fmap: dict) -> str:
     başlıktan türetilir, domain'e özel sabit yok.
     """
     hdrs = [_clean(c) for c in rows[0]]
+    body_start = 1
     lines: list[str] = []
 
-    for row in rows[1:]:
+    # Colspan-band tespiti: ilk satırın sütun başlıkları (col0 hariç) tek bir
+    # tekrarlı değerse, bu bir üst-başlık bandıdır (örn. "Quantity-Distances in
+    # metres" 4 kez) → gerçek başlıklar (D1-D4) alt satırda. Band'i bir kez yaz,
+    # alt satırı başlık yap; hücre başına uzun band tekrarını önler.
+    col_part = [h for h in hdrs[1:] if h]
+    if len(rows) > 2 and len(col_part) >= 2 and len(set(col_part)) == 1:
+        sub = [_clean(c) for c in rows[1]]
+        if any(sub[1:]):
+            lines.append(f"{col_part[0]}:")
+            hdrs = sub
+            body_start = 2
+
+    for row in rows[body_start:]:
         cells = [_clean(c) for c in row]
         if not any(cells):
             continue
