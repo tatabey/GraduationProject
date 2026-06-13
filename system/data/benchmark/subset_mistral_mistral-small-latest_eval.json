@@ -1,0 +1,87 @@
+{
+  "total": 30,
+  "correct": 25,
+  "wrong": 5,
+  "accuracy": 83.33333333333334,
+  "by_table": {
+    "Table 4": {
+      "correct": 4,
+      "total": 6
+    },
+    "Table 5": {
+      "correct": 5,
+      "total": 6
+    },
+    "Table 6": {
+      "correct": 5,
+      "total": 6
+    },
+    "Table T.2": {
+      "correct": 5,
+      "total": 6
+    },
+    "Table 133": {
+      "correct": 6,
+      "total": 6
+    }
+  },
+  "by_verdict": {
+    "UYGUN": {
+      "tp": 10,
+      "fn": 5,
+      "fp": 0
+    },
+    "UYGUN DEĞİL": {
+      "tp": 15,
+      "fn": 0,
+      "fp": 5
+    }
+  },
+  "errors": [
+    {
+      "item_no": 2,
+      "text": "Depot Building 3 contains HD 1.1 bombs and HD 1.6 insensitive munitions in the same storage facility. The aggregate hazard classification applied for standoff calculations is HD 1.1.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), HD 1.1 + HD 1.6 → 1.1. The audit finding states the aggregate hazard classification applied is HD 1.1, which is correct per the standard. However, the standard requires that when HD 1.1 and HD 1.6 are stored together, the aggregate hazard classification must be HD 1.1 for standoff calculations (Section 1.4.2.1(a)). The finding is compliant with the standard in this regard. Correction: The verdict should be UYGUN as the item complies with the standard.\n\nVERDICT: UYGUN\nREASONING: The item states that the aggregate hazard classification applied for standoff calculations is HD 1.1, which aligns with Table 4's rule for HD 1.1 + HD 1.6 → 1.1 (Section 1.4.2.1(a)).",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 2.63
+    },
+    {
+      "item_no": 3,
+      "text": "Storage igloo F-4 holds HD 1.3 propellants and HD 1.5 substances together. The facility applies HD 1.1 classification to the combined storage for all Q-D requirements.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to Table 4 (Section 1.2.3.2), HD 1.3 + HD 1.1 combination must be aggregated as HD 1.1. The facility incorrectly applies HD 1.1 classification to the combined storage without aggregating the NEQ for Q-D requirements.",
+      "expected": "UYGUN",
+      "table": "Table 4",
+      "elapsed_s": 1.91
+    },
+    {
+      "item_no": 31,
+      "text": "Depot 4 stores Compatibility Group D and Group S explosive substances in the same magazine. No incompatibility issues are identified.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), Compatibility Group D and Group S are listed as \"Mixing permitted.\" However, the context also states that Group S substances are \"so packed or designed that any hazardous effects arising from accidental functioning are confined within the package unless the package has been degraded by fire\" (Section 1.2.2.3). Storing D and S together without considering fire degradation risks violates the requirement for Group S isolation under fire conditions.",
+      "expected": "UYGUN",
+      "table": "Table 5",
+      "elapsed_s": 2.18
+    },
+    {
+      "item_no": 58,
+      "text": "Building 3C stores Compatibility Group C and Group E explosive articles in the same magazine.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) explicitly states \"C with E: Mixing permitted,\" but does not permit mixing Group C with Group E in the same magazine. The note under Table 6 (Note 3) states: \"Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.\" Since the magazine stores both Group C and Group E, this violates the storage rules.",
+      "expected": "UYGUN",
+      "table": "Table 6",
+      "elapsed_s": 2.08
+    },
+    {
+      "item_no": 83,
+      "text": "An emergency response team was withdrawn to 1250 meters from a facility storing munitions of unknown quantity and unknown hazard division. No personnel remained inside the exclusion zone.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 specifies that for HD Unknown in a facility with unknown quantity, the emergency withdrawal distance for nonessential personnel is 1250m. However, the item states that no personnel remained inside the exclusion zone, which violates the standard's requirement that emergency withdrawal distances are for nonessential personnel in emergency situations (Standard Operating Procedures, Section: Standard Operating Procedures).",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 1.9
+    }
+  ]
+}

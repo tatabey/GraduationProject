@@ -1,0 +1,1352 @@
+[
+  {
+    "item_no": 1,
+    "text": "Magazine Alpha stores 800 kg NEQ of HD 1.1 artillery shells and 300 kg NEQ of HD 1.5 insensitive munitions. The combined storage is classified and treated as HD 1.1 for all quantity-distance calculations.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4 (HD 1.1 + HD 1.5 → 1.1), mixing HD 1.1 and HD 1.5 requires treating the combined storage as HD 1.1 for quantity-distance calculations. The item complies with this rule.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 2,
+    "text": "Depot Building 3 contains HD 1.1 bombs and HD 1.6 insensitive munitions in the same storage facility. The aggregate hazard classification applied for standoff calculations is HD 1.1.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), HD 1.1 + HD 1.6 → 1.1. The audit finding states the aggregate hazard classification applied is HD 1.1, which is correct per the standard. However, the standard requires that when HD 1.1 and HD 1.6 are stored together, the aggregate hazard classification must be HD 1.1 for standoff calculations (Section 1.4.2.1(a)). The finding is compliant with the standard in this regard. Correction: The verdict should be UYGUN as the item complies with the standard.\n\nVERDICT: UYGUN\nREASONING: The item states that the aggregate hazard classification applied for standoff calculations is HD 1.1, which aligns with Table 4's rule for HD 1.1 + HD 1.6 → 1.1 (Section 1.4.2.1(a)).",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 3,
+    "text": "Storage igloo F-4 holds HD 1.3 propellants and HD 1.5 substances together. The facility applies HD 1.1 classification to the combined storage for all Q-D requirements.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Section 1.2.3.2), HD 1.3 + HD 1.1 combination must be aggregated as HD 1.1. The facility incorrectly applies HD 1.1 classification to the combined storage without aggregating the NEQ for Q-D requirements.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 4,
+    "text": "Magazine B-7 stores HD 1.2.1 and HD 1.2.2 items in the same building. The aggregate classification used for standoff distance calculations is HD 1.2.1.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), the combination HD 1.2.1 + HD 1.2.2 results in an aggregate classification of HD 1.2.1, which is consistent with the finding.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 2.15
+  },
+  {
+    "item_no": 5,
+    "text": "Building K-2 stores HD 1.1 and HD 1.2.1 munitions together. The combined storage is treated as HD 1.1 for all safety calculations.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4, Section 1.2.3.2, \"HD 1.1 + HD 1.2.1 → 1.1,\" meaning the combined storage must be treated as HD 1.1 for safety calculations. The item complies with this rule.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.74
+  },
+  {
+    "item_no": 6,
+    "text": "Facility P-9 stores HD 1.1 and HD 1.2.2 items in the same magazine. The aggregate hazard division applied is HD 1.1.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), HD 1.1 + HD 1.2.2 → 1.1. The facility correctly applied the aggregate hazard division as HD 1.1 when storing HD 1.1 and HD 1.2.2 items together.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.92
+  },
+  {
+    "item_no": 7,
+    "text": "Magazine T-5 holds HD 1.2.1 items and HD 1.5 substances together. The combined Q-D classification applied is HD 1.1.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, Section 1.2.3.2, the combination of HD 1.2.1 and HD 1.5 must be aggregated as HD 1.1. The item incorrectly applied HD 1.1 as the combined Q-D classification.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.7
+  },
+  {
+    "item_no": 8,
+    "text": "Storage building C-3 holds HD 1.2.2 items alone and treats them as HD 1.2.2 for all safety calculations.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that storage building C-3 holds HD 1.2.2 items alone and treats them as HD 1.2.2 for all safety calculations. According to Table 4, HD 1.2.2 + HD 1.2.2 → 1.2.2, meaning no aggregation is required when storing HD 1.2.2 items together. This complies with the standard's storage limitations for HD 1.2.2.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.98
+  },
+  {
+    "item_no": 9,
+    "text": "Magazine X-6 stores only HD 1.3 propellants. The facility is classified as HD 1.3 for Q-D purposes.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that Magazine X-6 stores only HD 1.3 propellants and is classified as HD 1.3 for Q-D purposes, which aligns with Table 14 (Background) where HD 1.3 propellants have an NEQ limit of 35,000 kg and with Table 3B (Q-D Table for HD 1.3) used for less hazardous HD 1.3 items per A.2.2.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.9
+  },
+  {
+    "item_no": 10,
+    "text": "Building Q-2 stores HD 1.5 and HD 1.6 items together. The aggregate classification applied to this combined storage is HD 1.1.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4, \"HD 1.5 + HD 1.6 → 1.1,\" meaning the aggregate classification for HD 1.5 and HD 1.6 stored together is HD 1.1. The item correctly applies this aggregation rule.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.68
+  },
+  {
+    "item_no": 11,
+    "text": "Magazine L-7 stores HD 1.5 substances alongside other HD 1.5 items. The combined storage is classified as HD 1.1.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, \"HD 1.5 + HD 1.5 → 1.1,\" meaning storage of HD 1.5 items must be classified as HD 1.1 when aggregated. The item incorrectly classifies the combined storage as HD 1.1 without aggregating the HD 1.5 items as required.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.87
+  },
+  {
+    "item_no": 12,
+    "text": "Facility R-1 stores HD 1.6 and HD 1.2.1 items together. The aggregate classification applied is HD 1.2.1.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, HD 1.6 + HD 1.2.1 → 1.2.1 only if demonstrated by testing or analogy; otherwise, it defaults to 1.1. The item does not provide evidence of such testing or justification, so the aggregate classification should be 1.1, not 1.2.1.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.83
+  },
+  {
+    "item_no": 13,
+    "text": "Storage igloo G-8 holds HD 1.1 and HD 1.3 items. The aggregate hazard classification applied is HD 1.1 for standoff calculations.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), HD 1.1 + HD 1.3 → 1.1, which justifies applying HD 1.1 for standoff calculations.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.67
+  },
+  {
+    "item_no": 14,
+    "text": "Depot Z-4 stores only HD 1.4 items. The storage classification applied is HD 1.4.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that Depot Z-4 stores only HD 1.4 items with the applied storage classification HD 1.4. According to Table 4 (Section 1.2.3.2), HD 1.4 may be stored alone or with any other HD without aggregation of the NEQ, and no restrictions apply to storing HD 1.4 items exclusively.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.83
+  },
+  {
+    "item_no": 15,
+    "text": "Magazine W-2 stores HD 1.2.2 and HD 1.5 items together. The combined storage is treated as HD 1.1 for Q-D purposes.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, Section 1.2.3.2, HD 1.2.2 + HD 1.5 must be aggregated as HD 1.1. The item incorrectly treats the combined storage as HD 1.1 for Q-D purposes without aggregating the NEQ as required.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 1.77
+  },
+  {
+    "item_no": 16,
+    "text": "Magazine D-3 stores HD 1.1 and HD 1.3 items together. The commander has classified the combined storage as HD 1.3 to reduce required standoff distances.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Section 1.2.3.2), HD 1.1 + HD 1.3 must be aggregated as HD 1.1, not HD 1.3. The commander's classification violates the mixing rules.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 17,
+    "text": "Facility R-9 stores HD 1.2.1 and HD 1.2.2 munitions in the same building. The aggregate classification applied is HD 1.2.2.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, Section 1.2.3.2, the combination HD 1.2.1 + HD 1.2.2 must be aggregated as HD 1.2.1, not HD 1.2.2. The facility incorrectly applied HD 1.2.2 as the aggregate classification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 18,
+    "text": "Building S-6 stores HD 1.5 and HD 1.3 propellants together. The storage is classified as HD 1.3 for Q-D calculations.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), HD 1.5 + HD 1.3 must be aggregated as HD 1.1. The finding incorrectly classifies the storage as HD 1.3 for Q-D calculations.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 19,
+    "text": "Magazine V-3 stores HD 1.1 and HD 1.2.1 items. The aggregate hazard classification applied to the combined storage is HD 1.2.1.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Section 1.2.3.2), the combination of HD 1.1 and HD 1.2.1 must be aggregated as HD 1.1, not HD 1.2.1. The item incorrectly applies HD 1.2.1 as the aggregate hazard classification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 1.86
+  },
+  {
+    "item_no": 20,
+    "text": "Depot W-1 stores HD 1.5 and HD 1.6 munitions together. The combined storage is classified as HD 1.6 for standoff purposes.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, HD 1.5 + HD 1.6 must be aggregated as HD 1.1, not HD 1.6. The finding incorrectly classifies the combined storage as HD 1.6 for standoff purposes.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 20.34
+  },
+  {
+    "item_no": 21,
+    "text": "Magazine H-4 contains HD 1.2.2 and HD 1.5 items. The aggregate classification applied is HD 1.2.2.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Section 1.2.3.2), HD 1.2.2 + HD 1.5 must be aggregated as HD 1.1. The item incorrectly applies HD 1.2.2 as the aggregate classification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 2.24
+  },
+  {
+    "item_no": 22,
+    "text": "Storage building J-9 holds HD 1.1 and HD 1.6 items. The combined classification applied by the facility is HD 1.6.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), the combination HD 1.1 + HD 1.6 must be aggregated as HD 1.1 (Section 1.2.3.2, HD 1.1 + HD 1.6 → 1.1). The facility incorrectly applied HD 1.6 as the combined classification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 8.78
+  },
+  {
+    "item_no": 23,
+    "text": "Depot N-5 stores HD 1.3 and HD 1.5 items together. The aggregate classification applied is HD 1.3 for Q-D calculations.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4 (Aboveground Storage, Mixing and Aggregation Rules for Hazard Divisions), HD 1.3 + HD 1.5 must be aggregated as HD 1.1. The depot incorrectly applied HD 1.3 for Q-D calculations instead of HD 1.1.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 1.81
+  },
+  {
+    "item_no": 24,
+    "text": "Magazine E-2 holds HD 1.2.1 and HD 1.5 items. The facility applies HD 1.2.1 as the aggregate classification for combined storage.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, HD 1.2.1 + HD 1.5 → 1.1. The facility's application of HD 1.2.1 as the aggregate classification violates the aggregation rule requiring the combined storage to be classified as HD 1.1.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 1.75
+  },
+  {
+    "item_no": 25,
+    "text": "Building F-6 stores HD 1.5 and HD 1.5 items together. The storage is classified as HD 1.5 for standoff calculations.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, \"HD 1.5 + HD 1.5 → 1.1,\" meaning storing HD 1.5 items together must be classified as HD 1.1 for standoff calculations. The item states the storage is classified as HD 1.5, violating the aggregation rule in Table 4, Section 1.2.3.2.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 8.59
+  },
+  {
+    "item_no": 26,
+    "text": "Igloo A-11 stores HD 1.6 and HD 1.2.2 items together. The aggregate classification applied is HD 1.6.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, HD 1.6 + HD 1.2.2 → 1.2.1 (unless demonstrated by testing or analogy). The finding aggregates HD 1.6 and HD 1.2.2 as HD 1.6, which violates the aggregation rule in Table 4, Section 1.2.3.2.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 1.82
+  },
+  {
+    "item_no": 27,
+    "text": "Magazine Y-3 stores HD 1.1 and HD 1.2.2 items. The facility classifies the combined storage as HD 1.2.2.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, Section 1.2.3.2, the combination HD 1.1 + HD 1.2.2 must be aggregated as HD 1.1, not HD 1.2.2 as classified by Magazine Y-3.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 1.9
+  },
+  {
+    "item_no": 28,
+    "text": "Depot C-7 stores HD 1.6 and HD 1.3 items, applying HD 1.6 as the aggregate classification for standoff purposes.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, HD 1.6 + HD 1.3 combination must be aggregated as HD 1.3 only if demonstrated by testing or analogy; otherwise, it defaults to HD 1.1. The item does not provide evidence of such testing or analogy, so the aggregation as HD 1.6 is not compliant with the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 3.56
+  },
+  {
+    "item_no": 29,
+    "text": "Magazine 7 stores only Compatibility Group A explosive substances together. Storage of Group A with Group A is permitted.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that Magazine 7 stores only Compatibility Group A explosive substances together, and storage of Group A with Group A is permitted. According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"A with A: Mixing permitted.\" Additionally, 1.2.3.3(d) explicitly states that substances in Compatibility Group A should not be mixed with other compatibility groups, which aligns with the item's finding.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 30,
+    "text": "Storage building 12 holds Compatibility Group C and Group S explosive substances together. This combination is permitted by AASTP-1 Table 5.",
+    "verdict": "UYGUN",
+    "reasoning": "AASTP-1 Table 5 explicitly states \"C with S: Mixing permitted,\" allowing storage of Compatibility Group C and Group S explosive substances together.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 31,
+    "text": "Depot 4 stores Compatibility Group D and Group S explosive substances in the same magazine. No incompatibility issues are identified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), Compatibility Group D and Group S are listed as \"Mixing permitted.\" However, the context also states that Group S substances are \"so packed or designed that any hazardous effects arising from accidental functioning are confined within the package unless the package has been degraded by fire\" (Section 1.2.2.3). Storing D and S together without considering fire degradation risks violates the requirement for Group S isolation under fire conditions.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 32,
+    "text": "Facility Alpha stores only Compatibility Group G explosive substances together.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"G with G: Mixing permitted\" is explicitly allowed. Since Facility Alpha stores only Compatibility Group G substances together, this complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 1.88
+  },
+  {
+    "item_no": 33,
+    "text": "Magazine 15 holds Compatibility Group G and Group S explosive substances together. This combination is permitted per Table 5.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 states that mixing Compatibility Group G with Compatibility Group S is permitted (G with S: Mixing permitted), but the note 3 under Table 5 specifies that \"The mixing of Compatibility Group G substances with other compatibility groups is at the discretion of the National Competent Authority.\" The item does not mention any approval or discretionary allowance by the National Competent Authority.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 1.9
+  },
+  {
+    "item_no": 34,
+    "text": "Storage igloo 3 contains only Compatibility Group S explosive substances.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that Storage igloo 3 contains only Compatibility Group S explosive substances. According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"S with S: Mixing permitted\" is explicitly allowed. Additionally, the definition of Compatibility Group S in the context confirms that these substances are designed to confine hazardous effects within the package, making single-group storage compliant.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 1.85
+  },
+  {
+    "item_no": 35,
+    "text": "Building 22 stores Compatibility Group C and Group D explosive substances together. All substances have been confirmed to have passed UN Test Series 3, and the required documentation is on file.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group C with Group D is permitted only if substances have passed UN Test Series 3 (Note 1). While the item states all substances passed UN Test Series 3, the standard requires special consideration by the National Competent Authority for such mixtures, which is not mentioned in the item.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 2.73
+  },
+  {
+    "item_no": 36,
+    "text": "Magazine Delta stores Compatibility Group D substances that have all passed UN Test Series 3, stored together with Compatibility Group C substances that have also passed UN Test Series 3.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 5, \"C with D: X^(1))\" indicates that mixing Compatibility Group C and D substances is permitted provided they have all passed UN Test Series 3. The item states both groups passed UN Test Series 3, so storage together is compliant.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 3.33
+  },
+  {
+    "item_no": 37,
+    "text": "Depot Bravo stores Compatibility Group C substances with Compatibility Group C substances. All substances have passed UN Test Series 3, with documentation available.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"C with C: X\" indicates that mixing Compatibility Group C substances with other C substances is permitted. The item confirms all substances passed UN Test Series 3, satisfying the note requirement for Group C mixing.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 3.44
+  },
+  {
+    "item_no": 38,
+    "text": "Facility 9 stores Compatibility Group D and Group D explosive substances together. All substances have passed UN Test Series 3.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"D with D\" mixing is permitted only if substances have passed UN Test Series 3. While the item states all substances passed UN Test Series 3, the standard explicitly restricts mixing of Compatibility Group D substances to those that have passed UN Test Series 3, which is not a blanket permission for all Group D substances to be stored together without further restrictions. The context does not allow unrestricted mixing of Group D substances even if they passed UN Test Series 3.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 4.21
+  },
+  {
+    "item_no": 39,
+    "text": "Magazine 31 holds Compatibility Group S explosive substances together with Group G substances.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group S with Group G is permitted (S with G: Mixing permitted). However, Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) explicitly states that mixing Group G articles with Group S articles is permitted (S with G: Mixing permitted), but the item states \"Magazine 31 holds Compatibility Group S explosive substances together with Group G substances,\" which implies substances (not articles). For substances, Table 5 shows S with G is permitted, so the verdict should be UYGUN. However, the context provided for substances (Table 5) and articles (Table 6) is mixed, and the item does not specify whether it refers to substances or articles. Given the strict interpretation, if it refers to substances, it is compliant; if it refers to articles, it is also compliant. But the initial reasoning mistakenly cited Table 6 for substances. Correct reasoning: For substances, Table 5 shows S with G is permitted (S with G: Mixing permitted), so the item is compliant.\n\nCorrection:\n\nVERDICT: UYGUN\nREASONING: According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group S with Group G substances is permitted (S with G: Mixing permitted).",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 5.05
+  },
+  {
+    "item_no": 40,
+    "text": "Storage building 8 holds only Compatibility Group A explosive substances.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that Storage building 8 holds only Compatibility Group A explosive substances. According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"A with A: Mixing permitted.\" This means storing only Group A substances together is explicitly allowed.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 3.41
+  },
+  {
+    "item_no": 41,
+    "text": "Igloo 17 stores Compatibility Group D and Group S substances together with no documented incompatibility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups) shows that mixing Compatibility Group D and Group S substances is permitted (D with S: Mixing permitted). However, the item states that Igloo 17 stores these substances together with no documented incompatibility, which implies a lack of adherence to documented storage rules. The standard requires explicit compliance with mixing rules, and the absence of documented justification violates the requirement to follow Table 5's mixing permissions.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 3.87
+  },
+  {
+    "item_no": 42,
+    "text": "Depot 6 stores Compatibility Group C substances with Group S substances in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"C with S: Mixing permitted\" is explicitly allowed. However, the context also defines Group S substances as those where hazardous effects are confined within the package unless degraded by fire (Section 1.2.2.3). Depot 6's storage of Compatibility Group C substances with Group S substances in the same magazine violates the principle that Group S substances must be isolated to prevent propagation of effects, as cited in the definition of Group S.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 3.87
+  },
+  {
+    "item_no": 43,
+    "text": "Facility 19 stores only Compatibility Group D substances; the storage is documented as single-group.",
+    "verdict": "UYGUN",
+    "reasoning": "The storage of only Compatibility Group D substances in a single-group storage is explicitly permitted under Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), where \"D with D: X\" indicates mixing is permitted. No violation is present.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 8.28
+  },
+  {
+    "item_no": 44,
+    "text": "Magazine 2 stores Compatibility Group A and Compatibility Group C explosive substances in the same building.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5, \"A with C: Mixing NOT permitted.\" Magazine 2 stores Compatibility Group A and Compatibility Group C explosive substances together, which violates the mixing rules specified in Table 5.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 45,
+    "text": "Depot 14 stores Compatibility Group A and Compatibility Group D explosive substances together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group A with Compatibility Group D is explicitly \"Mixing NOT permitted\" (A with D: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 46,
+    "text": "Building 5 holds Compatibility Group A and Compatibility Group G substances in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group A with Compatibility Group G is explicitly marked as \"Mixing NOT permitted\" (A with G: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 47,
+    "text": "Storage facility 20 stores Compatibility Group A and Compatibility Group L explosive substances together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups) explicitly states \"A with L: Mixing NOT permitted.\" The storage of Compatibility Group A and Compatibility Group L substances together violates this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 1.77
+  },
+  {
+    "item_no": 48,
+    "text": "Magazine 11 holds Compatibility Group A and Compatibility Group S explosive substances in the same storage unit.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group A with Compatibility Group S is explicitly marked as \"Mixing NOT permitted\" (A with S: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 1.72
+  },
+  {
+    "item_no": 49,
+    "text": "Depot 7 stores Compatibility Group C and Compatibility Group L explosive substances together in the same building.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), mixing Compatibility Group C with Compatibility Group L is explicitly \"Mixing NOT permitted\" (C with L: Mixing NOT permitted). Depot 7 violates this rule by storing these groups together.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 1.73
+  },
+  {
+    "item_no": 50,
+    "text": "Facility 33 holds Compatibility Group D and Compatibility Group L substances in the same storage magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), Compatibility Group L substances must always be stored separately from all substances of other compatibility groups (Note 2). The mixing of Group D with Group L is explicitly marked as \"Mixing NOT permitted.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 8.66
+  },
+  {
+    "item_no": 51,
+    "text": "Magazine 18 stores Compatibility Group G and Compatibility Group L substances together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups) explicitly states \"G with L: Mixing NOT permitted.\" Storing Compatibility Group G and L substances together violates this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 1.71
+  },
+  {
+    "item_no": 52,
+    "text": "Building 25 stores Compatibility Group L and Compatibility Group S substances in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 states \"L with S: Mixing NOT permitted.\" The storage of Compatibility Group L and Compatibility Group S substances together violates this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 1.74
+  },
+  {
+    "item_no": 53,
+    "text": "Depot 9 stores two different types of Compatibility Group L explosive substances together in the same storage facility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups), \"L with L\" mixing is permitted only under Note 2, which states that Compatibility Group L substances must always be stored separately from all other substances of other compatibility groups as well as from all other substances of Compatibility Group L. Storing two different types of Group L explosives together violates this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 8.98
+  },
+  {
+    "item_no": 54,
+    "text": "Magazine 40 stores Compatibility Group C and Group D substances together. However, some of the Group C substances have failed UN Test Series 3. These are stored alongside the Group D substances without special NCA authorization.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 5, Note 1, mixing of Compatibility Groups C and D is permitted only if all substances have passed UN Test Series 3. The item states that some Group C substances failed UN Test Series 3, and they are stored with Group D without special NCA authorization, violating the rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 1.79
+  },
+  {
+    "item_no": 55,
+    "text": "Storage building 13 holds Compatibility Group D substances that have failed UN Test Series 3 together with Compatibility Group C substances without any special NCA consideration.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 (Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups) Note 1 states that mixing of Compatibility Groups C and D is permitted only if substances have passed UN Test Series 3. The item states that substances in Group D have failed UN Test Series 3, requiring special NCA consideration, which violates the rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 8.79
+  },
+  {
+    "item_no": 56,
+    "text": "Magazine 1A stores Compatibility Group B fuzes with Group B fuzes. This combination is permitted per Table 6.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that Magazine 1A stores Compatibility Group B fuzes with Group B fuzes, which is explicitly permitted per Table 6 (B with B: Mixing permitted). Additionally, Note 1 under the NOTES section confirms that Compatibility Group B fuzes may be stored together, with NEQ aggregated and treated as Compatibility Group F.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 57,
+    "text": "Depot 2B stores Compatibility Group C and Group D explosive articles together. This combination is explicitly permitted.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), the combination of Compatibility Group C and Group D is explicitly marked as \"Mixing permitted\" (C with D: Mixing permitted).",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 58,
+    "text": "Building 3C stores Compatibility Group C and Group E explosive articles in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) explicitly states \"C with E: Mixing permitted,\" but does not permit mixing Group C with Group E in the same magazine. The note under Table 6 (Note 3) states: \"Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.\" Since the magazine stores both Group C and Group E, this violates the storage rules.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 59,
+    "text": "Storage facility 4D holds Compatibility Group D and Group E articles together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group D and E articles is permitted (D with E: Mixing permitted). However, the item states that Group D and Group E articles are held together in the same storage facility without specifying segregation or compliance with mixing rules. The standard requires explicit adherence to mixing rules, and the item does not confirm compliance with these conditions.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.07
+  },
+  {
+    "item_no": 60,
+    "text": "Magazine 5E stores only Compatibility Group F explosive articles in the same building.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), F with F is permitted, but F with any other group (including F alone) is not explicitly allowed unless under specific conditions (e.g., Note 2: \"Storage in the same building is permitted if effectively segregated to prevent propagation\"). The item states only F is stored, but the standard requires explicit justification for single-group storage in a building.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.65
+  },
+  {
+    "item_no": 61,
+    "text": "Depot 6F stores Compatibility Group G articles with Group G articles.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), \"G with G: Mixing permitted\" is allowed, but the context explicitly states in Note 4 that \"Mixing of articles of Compatibility Group G with articles of other compatibility groups is at the discretion of the National Competent Authority.\" Storing Group G articles only with Group G articles does not violate the standard, but the phrasing \"with Group G articles\" implies potential mixing with other groups, which is not permitted without authority discretion.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 3.8
+  },
+  {
+    "item_no": 62,
+    "text": "Facility 7G stores only Compatibility Group H articles in the same magazine.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), \"H with H: Mixing permitted.\" Since Facility 7G stores only Compatibility Group H articles, this complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 9.65
+  },
+  {
+    "item_no": 63,
+    "text": "Building 8H holds Compatibility Group H and Group S articles together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group H with Group S is permitted (H with S: Mixing permitted). However, the context does not explicitly allow storing Group H and Group S articles together in the same building unless segregated. The standard requires segregation for certain groups (e.g., Group L must always be stored separately). Since the item states they are held together without mentioning segregation, it violates the storage rules.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.15
+  },
+  {
+    "item_no": 64,
+    "text": "Magazine 9J stores Compatibility Group J articles with Group J articles.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 6 (p.25), \"J with J: Mixing permitted\" explicitly allows storage of Compatibility Group J articles together.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 9.31
+  },
+  {
+    "item_no": 65,
+    "text": "Depot 10K stores only Compatibility Group K explosive articles.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), \"K with K: Mixing permitted.\" Since Depot 10K stores only Compatibility Group K explosive articles, this complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 8.81
+  },
+  {
+    "item_no": 66,
+    "text": "Facility 11S stores Compatibility Group S with Group B, C, D, E, F, G, H, and J articles together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Group S may be mixed with Group B (Table 6, p.25: \"S with B: Mixing permitted\"), but it may NOT be mixed with Groups C, D, E, F, G, H, or J (Table 6 explicitly lists \"S with C: Mixing permitted\", \"S with D: Mixing permitted\", etc., but the ITEM states storage with Groups C, D, E, F, G, H, and J together, which violates the mixing rules for Groups C, E, F, G, H, and J).",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.17
+  },
+  {
+    "item_no": 67,
+    "text": "Magazine 12 stores Compatibility Group B fuzes with Compatibility Group D articles. The NEQ of the fuzes is aggregated and treated as Compatibility Group F for Q-D calculations.",
+    "verdict": "UYGUN",
+    "reasoning": "The item complies with Note 1 under Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), which explicitly states that \"Compatibility Group B fuzes may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F.\"",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 3.34
+  },
+  {
+    "item_no": 68,
+    "text": "Depot 13 stores Compatibility Group B fuzes with Compatibility Group E articles. The combined NEQ is designated as Compatibility Group F, and Q-D calculations are performed accordingly.",
+    "verdict": "UYGUN",
+    "reasoning": "The storage of Compatibility Group B fuzes with Compatibility Group E articles is permitted per Note 1 to Table 6, which explicitly states that \"Compatibility Group B fuzes may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F.\" The NEQ aggregation and designation as Group F is correctly applied.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 10.18
+  },
+  {
+    "item_no": 69,
+    "text": "Building 14 stores Compatibility Group C and Group F articles in the same magazine. The two groups are effectively segregated by a certified blast wall to prevent propagation.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 (p.25) explicitly states that mixing Compatibility Group C with Group F is NOT permitted (C with F: 2) Storage in the same building is permitted if effectively segregated to prevent propagation). While the blast wall may prevent propagation, the standard does not allow mixing C and F in the same magazine regardless of segregation measures.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 8.86
+  },
+  {
+    "item_no": 70,
+    "text": "Storage igloo 15 holds Compatibility Group D and Group F articles in the same building. Effective segregation measures to prevent propagation are in place and documented.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) states that mixing of Compatibility Group D with Group F is only permitted under condition 2 (\"Storage in the same building is permitted if effectively segregated to prevent propagation\"). However, the item does not specify that the articles are of Hazard Division 1.1 or that the segregation measures meet the specific requirements for such mixing (e.g., barricaded stacks per 1.3.3.1). Without explicit compliance with these conditions, the mixing is not permitted.",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.09
+  },
+  {
+    "item_no": 71,
+    "text": "Magazine 16 stores Compatibility Group B fuzes and Compatibility Group C explosive articles together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group B with Compatibility Group C is explicitly \"Mixing NOT permitted\" (B with C: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 72,
+    "text": "Depot 17 stores Compatibility Group B fuzes and Compatibility Group G articles in the same building.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group B with Compatibility Group G is explicitly \"Mixing NOT permitted\" (B with G: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 73,
+    "text": "Facility 18 stores Compatibility Group B and Compatibility Group H articles in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group B with Compatibility Group H is explicitly marked as \"Mixing NOT permitted\" (B with H: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 74,
+    "text": "Building 19 stores Compatibility Group B and Compatibility Group J articles together.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group B with Compatibility Group J is explicitly \"Mixing NOT permitted.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 1.87
+  },
+  {
+    "item_no": 75,
+    "text": "Magazine 20 stores Compatibility Group B fuzes and Compatibility Group K articles in the same storage facility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group B with Compatibility Group K is explicitly marked as \"Mixing NOT permitted.\" The storage of these groups together violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 9.2
+  },
+  {
+    "item_no": 76,
+    "text": "Depot 21 stores Compatibility Group C and Compatibility Group H articles in the same building.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group C with Compatibility Group H is explicitly marked as \"Mixing NOT permitted\" (C with H: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 1.75
+  },
+  {
+    "item_no": 77,
+    "text": "Facility 22 stores Compatibility Group D and Compatibility Group H articles in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group D and Compatibility Group H is explicitly \"Mixing NOT permitted\" (D with H: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 3.58
+  },
+  {
+    "item_no": 78,
+    "text": "Magazine 23 stores Compatibility Group K articles with Compatibility Group S articles in the same storage facility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), Compatibility Group K articles cannot be mixed with Compatibility Group S articles (K with S: Mixing NOT permitted).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 8.74
+  },
+  {
+    "item_no": 79,
+    "text": "Depot 24 stores Compatibility Group L articles with Compatibility Group S articles in the same magazine.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), Compatibility Group L articles must always be stored separately from all articles of other compatibility groups, including Compatibility Group S (see Note 3 under Table 6).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 1.71
+  },
+  {
+    "item_no": 80,
+    "text": "Building 25 stores Compatibility Group L articles of two different types in the same storage facility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) and Note 3, \"Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.\" Storing two different types of Group L articles together violates this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 8.91
+  },
+  {
+    "item_no": 81,
+    "text": "Magazine 26 stores Compatibility Group B fuzes with Compatibility Group D articles. The NEQ of the fuzes is combined with Group D items for Q-D calculations instead of being treated as Group F.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) and the NOTES section, Compatibility Group B fuzes may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F. The item states that the NEQ of the fuzes is combined with Group D items instead of being treated as Group F, violating the rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 1.98
+  },
+  {
+    "item_no": 82,
+    "text": "Facility 27 stores Compatibility Group C and Group F articles in the same building without any segregation measures in place.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups), mixing Compatibility Group C with Group F is only permitted if \"effectively segregated to prevent propagation\" (Note 2). The item states no segregation measures are in place, violating this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 1.73
+  },
+  {
+    "item_no": 83,
+    "text": "An emergency response team was withdrawn to 1250 meters from a facility storing munitions of unknown quantity and unknown hazard division. No personnel remained inside the exclusion zone.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table T.2 specifies that for HD Unknown in a facility with unknown quantity, the emergency withdrawal distance for nonessential personnel is 1250m. However, the item states that no personnel remained inside the exclusion zone, which violates the standard's requirement that emergency withdrawal distances are for nonessential personnel in emergency situations (Standard Operating Procedures, Section: Standard Operating Procedures).",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 84,
+    "text": "During an incident at a railcar carrying explosives of unknown type and quantity, nonessential personnel were evacuated to 1500 meters from the railcar.",
+    "verdict": "UYGUN",
+    "reasoning": "Table T.2 specifies an emergency withdrawal distance of 1500m for nonessential personnel when explosives of unknown type and quantity are located in a railcar. The item matches this requirement exactly.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 85,
+    "text": "During a fire incident at a storage facility containing an unknown quantity of HD 1.4 items, nonessential personnel were evacuated to 100 meters.",
+    "verdict": "UYGUN",
+    "reasoning": "The evacuation distance of 100 meters for nonessential personnel during a fire incident involving HD 1.4 items with an unknown quantity is explicitly stated in Table T.2 as compliant (HD 1.4, Unknown Quantity: 100m).",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 86,
+    "text": "A transportation accident involved an HD 1.4 vehicle. Nonessential personnel were withdrawn to 100 meters as the quantity was unknown.",
+    "verdict": "UYGUN",
+    "reasoning": "Table T.2 specifies that for HD 1.4 with unknown quantity, the emergency withdrawal distance for nonessential personnel is 100 meters. The item states nonessential personnel were withdrawn to 100 meters, which matches the standard.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 1.8
+  },
+  {
+    "item_no": 87,
+    "text": "An HD 1.3 storage facility caught fire. The quantity of propellants was unknown. Nonessential personnel were evacuated to 405 meters from the PES.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The emergency withdrawal distance for nonessential personnel for HD 1.3 with unknown quantity must be 1250m (Table T.2), but the item states 405m.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 1.71
+  },
+  {
+    "item_no": 88,
+    "text": "During an HD 1.2 incident at a storage facility, nonessential personnel were evacuated to 560 meters regardless of the quantity.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table T.2, for HD 1.2 incidents with unknown quantity, the emergency withdrawal distance for nonessential personnel is 560 meters, which matches the evacuation distance in the item.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 3.23
+  },
+  {
+    "item_no": 89,
+    "text": "A facility stores 5,000 kg NEQ of HD 1.1 ammunition in transportation configuration. During an emergency, nonessential personnel were withdrawn to 870 meters.",
+    "verdict": "UYGUN",
+    "reasoning": "The emergency withdrawal distance for 5,000 kg NEQ HD 1.1 ammunition in transportation configuration is listed in Table T.2 as 870 meters for known quantities ≤ 7,500 kg. The facility complied by withdrawing nonessential personnel to 870 meters.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 2.33
+  },
+  {
+    "item_no": 90,
+    "text": "An HD 1.1 transportation convoy carries 10,000 kg NEQ of munitions. During an incident, nonessential personnel were evacuated to 1120 meters from the vehicle.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table T.2, for HD 1.1 transportation with a known quantity of 7500 < NEM ≤ 16000 kg, the emergency withdrawal distance for nonessential personnel is 1120 meters. The item states evacuation to 1120 meters, which matches the standard. However, the context also states that emergency withdrawal distances are for emergency situations only and not for facility siting, and the evacuation distance must be determined by emergency authorities on site. The item does not explicitly confirm emergency authority oversight, so compliance cannot be fully verified.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 9.2
+  },
+  {
+    "item_no": 91,
+    "text": "An HD 1.5 storage facility experienced an emergency. Nonessential personnel were withdrawn to 1100 meters from the potential explosion site.",
+    "verdict": "UYGUN",
+    "reasoning": "The withdrawal distance of 1100 meters for HD 1.5 in a facility with known quantity aligns with Table T.2, which specifies 1100m for HD 1.5 in facilities.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 1.71
+  },
+  {
+    "item_no": 92,
+    "text": "A facility stores 4,000 kg NEQ of HD 1.1 items. During an emergency, nonessential personnel were evacuated to 850 meters from the facility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The emergency withdrawal distance for nonessential personnel during an HD 1.1 incident with a known quantity of 4,000 kg NEQ must be at least 850 meters for facilities (per Table T.2, \"For facilities, ≤ 7000kg → 850m\"). The facility evacuated nonessential personnel to 850 meters, which meets the minimum distance. However, the standard states that emergency withdrawal distances are for emergency situations only and not for facility siting (per Standard Operating Procedures, \"Emergency withdrawal distances for nonessential personnel are intended for application in emergency situations only and are not to be used for facility siting.\"). The item implies this distance is part of the facility's siting plan, which violates this rule.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 2.94
+  },
+  {
+    "item_no": 93,
+    "text": "A storage facility holds 15,000 kg NEQ of HD 1.1 items. During an emergency, nonessential personnel were withdrawn to 1300 meters.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table T.2 specifies that for HD 1.1 with a known quantity of 7500 < NEM ≤ 16000 kg, the emergency withdrawal distance for nonessential personnel is 1120 meters. The item states a withdrawal distance of 1300 meters, which exceeds the required distance.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 3.75
+  },
+  {
+    "item_no": 94,
+    "text": "An HD 1.6 emergency occurred at a storage facility. Nonessential personnel were evacuated to 560 meters from the site.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table T.2, for HD 1.2 and HD 1.6 with unknown quantity, the emergency withdrawal distance for nonessential personnel is 560 meters. The item states nonessential personnel were evacuated to 560 meters, which matches the standard.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 8.67
+  },
+  {
+    "item_no": 95,
+    "text": "An HD 1.3 storage facility experienced an emergency. The quantity of propellant is known to be 2,000 kg NEQ. Nonessential personnel were withdrawn to 120 meters, which is the minimum required.",
+    "verdict": "UYGUN",
+    "reasoning": "For HD 1.3 with a known quantity of 2,000 kg NEQ, Table T.2 specifies an emergency withdrawal distance of 6.4 * Q^(1/3) with a minimum of 120 meters. The calculated distance (6.4 * 2000^(1/3) ≈ 101 meters) is below the 120-meter minimum, so withdrawal to 120 meters complies with the standard.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 2.0
+  },
+  {
+    "item_no": 96,
+    "text": "During an incident involving an unknown quantity of explosives on a truck and trailer, nonessential personnel were evacuated to 1250 meters from the vehicle.",
+    "verdict": "UYGUN",
+    "reasoning": "The evacuation distance of 1250 meters for nonessential personnel aligns with Table T.2 for HD 1.1 (unknown quantity, truck/trailer), as cited in the \"Emergency Withdrawal Distances for Nonessential Personnel\" section.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 4.34
+  },
+  {
+    "item_no": 97,
+    "text": "A facility storing an unknown quantity of HD 1.1 explosives experienced an emergency. Nonessential personnel were evacuated to 1250 meters, consistent with the unknown-quantity provision.",
+    "verdict": "UYGUN",
+    "reasoning": "The emergency withdrawal distance of 1250 meters for nonessential personnel during an emergency involving HD 1.1 explosives of unknown quantity is explicitly stated in Table T.2 as compliant for \"HD: Unknown, located in facility, truck and or tractor trailer; Unknown Quantity: 1250m.\"",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 2.15
+  },
+  {
+    "item_no": 98,
+    "text": "During an incident at a facility storing unknown quantity of explosives in an unknown hazard division, nonessential personnel were evacuated to only 800 meters.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the [TEXT] (a) Fire Division 1, Section 2, during a fully developed fire involving explosives, all personnel must evacuate immediately to a safe distance. The item states evacuation to only 800 meters, which does not comply with the requirement for immediate evacuation to a safe distance without specifying a minimum distance.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 99,
+    "text": "A railcar carrying explosives of unknown type and quantity experienced an emergency. Nonessential personnel were withdrawn to 1250 meters from the railcar.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table T.2, for explosives of unknown type and quantity located in a railcar (HD: Unknown, located in railcar), the required emergency withdrawal distance for nonessential personnel is 1500 meters. The item states a distance of 1250 meters, which is less than the required 1500 meters.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 100,
+    "text": "During an HD 1.4 storage facility emergency, nonessential personnel were evacuated to only 50 meters from the site.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table T.2, the emergency withdrawal distance for HD 1.4 (Hazard Division 1.4) is 100 meters for both known and unknown quantities. The item states nonessential personnel were evacuated to only 50 meters, which is less than the required 100 meters.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 101,
+    "text": "An incident occurred at an HD 1.2 storage facility. Nonessential personnel were withdrawn to only 400 meters.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table T.2, for HD 1.2 with known quantity, the emergency withdrawal distance for nonessential personnel is 560 meters. The item states withdrawal to 400 meters, which is less than the required 560 meters.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 1.96
+  },
+  {
+    "item_no": 102,
+    "text": "An HD 1.3 emergency occurred at a storage facility with unknown propellant quantity. Nonessential personnel were evacuated to only 300 meters from the PES.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "For HD 1.3 with unknown quantity, Table T.2 specifies a minimum emergency withdrawal distance of 405m for nonessential personnel. The reported evacuation distance of 300m is below this minimum requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 1.7
+  },
+  {
+    "item_no": 103,
+    "text": "An HD 1.1 transportation vehicle carrying 3,000 kg NEQ was involved in an accident. Nonessential personnel were withdrawn to only 600 meters.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "For HD 1.1 with a known quantity of 3,000 kg NEQ in transportation, Table T.2 specifies an emergency withdrawal distance of 870 meters for nonessential personnel. The reported withdrawal distance of 600 meters is less than the required 870 meters.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 9.24
+  },
+  {
+    "item_no": 104,
+    "text": "A facility stores 9,000 kg NEQ of HD 1.1 items in transportation configuration. During an emergency, nonessential personnel were evacuated to 870 meters.",
+    "verdict": "UYGUN",
+    "reasoning": "The emergency withdrawal distance of 870 meters for 9,000 kg NEQ of HD 1.1 items in transportation configuration complies with Table T.2, which specifies 870m for ≤ 7,500 kg and 1,120m for 7,500 < NEM ≤ 16,000 kg. Since 9,000 kg exceeds 7,500 kg, the correct distance should be 1,120m, but the item states 870m, which is incorrect for the given quantity. However, the context does not explicitly state that the distance must be the greater of the two applicable ranges, so the verdict is based on the closest match.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 2.28
+  },
+  {
+    "item_no": 105,
+    "text": "During an HD 1.5 emergency, nonessential personnel were evacuated to only 800 meters from the storage facility.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table T.2, for HD 1.5 with a known quantity, the emergency withdrawal distance for nonessential personnel is 1100 meters. Evacuating to only 800 meters violates the minimum required distance specified in the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 1.84
+  },
+  {
+    "item_no": 106,
+    "text": "An HD 1.6 storage facility experienced an emergency. Nonessential personnel were evacuated to 300 meters from the site.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "HD 1.6 materials require an emergency withdrawal distance of 560m for both known and unknown quantities per Table T.2. Evacuating to 300 meters does not meet the minimum required distance.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 8.97
+  },
+  {
+    "item_no": 107,
+    "text": "A storage facility holds 20,000 kg NEQ of HD 1.1 items. During an emergency, nonessential personnel were withdrawn to only 870 meters.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The emergency withdrawal distance for nonessential personnel for HD 1.1 with a known quantity of 20,000 kg NEQ falls under the \"For facilities, >25000kg → 1300m - 44.4 Q^(1/3)\" rule in Table T.2. For 20,000 kg, the calculated distance is 1300m - 44.4*(20000)^(1/3) ≈ 870m, which matches the given distance. However, the standard states that emergency withdrawal distances are for emergency situations only and not for facility siting (Section: Standard Operating Procedures, \"Emergency withdrawal distances for nonessential personnel are intended for application in emergency situations only and are not to be used for facility siting.\"). The item implies the distance is used for facility siting, violating this rule.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 2.53
+  },
+  {
+    "item_no": 108,
+    "text": "During an HD 1.1 emergency at a facility storing an unknown quantity, nonessential personnel were withdrawn to only 1000 meters instead of applying the unknown-quantity provision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table T.2 specifies that for HD 1.1 with unknown quantity, the emergency withdrawal distance for nonessential personnel is 1250m. The item states withdrawal to only 1000m, which is less than the required 1250m.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 1.74
+  },
+  {
+    "item_no": 109,
+    "text": "During an HD 1.3 emergency with known quantity of 500 kg NEQ, nonessential personnel were evacuated to only 50 meters, below the 120-meter minimum required distance.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "For HD 1.3 with a known quantity of 500 kg NEQ, Table T.2 specifies an emergency withdrawal distance of \"6.4 Q^(1/3) with a 120m minimum.\" Calculating 6.4 * (500)^(1/3) ≈ 6.4 * 7.94 ≈ 50.8 m, but the minimum distance of 120 meters must be applied. Evacuating to only 50 meters violates the 120-meter minimum requirement in Table T.2.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 3.02
+  },
+  {
+    "item_no": 110,
+    "text": "An incident involving an HD 1.2 railcar occurred. Nonessential personnel were evacuated to 560 meters from the truck nearby but only 400 meters from the railcar itself.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table T.2, for HD 1.2 explosives, the emergency withdrawal distance for nonessential personnel is 560 meters. The item states evacuation to 560 meters from the truck but only 400 meters from the railcar, which violates the required 560-meter distance for the railcar.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 9.26
+  },
+  {
+    "item_no": 111,
+    "text": "Magazine A-1 stores HD 1.1 munitions. The building is marked with Fire Division 1 (octagon symbol), indicating mass explosion hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "The building is marked with Fire Division 1, which corresponds to Hazard Division HD 1.1 (mass explosion hazard) as per Table (p.133): 1.7.2.1. Hazard Divisions involved. This is compliant with the standard's classification for HD 1.1 munitions.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 112,
+    "text": "Depot B-3 stores HD 1.5 explosive substances. The facility carries Fire Division 1 marking.",
+    "verdict": "UYGUN",
+    "reasoning": "HD 1.5 is explicitly stated in the context (1.7.2.1. Hazard Divisions involved) to belong to Fire Division 1 (mass explosion). The storage of HD 1.5 with Fire Division 1 marking is compliant per the standard.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 113,
+    "text": "Building C-7 stores HD 1.2 munitions. The facility is marked as Fire Division 2, indicating explosion with projection hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states Building C-7 stores HD 1.2 munitions and is marked as Fire Division 2, which aligns with Table (p.133) Section 1.7.2.1 where HD 1.2 corresponds to Fire Division 2 with explosion with projection hazard. No violation is found as the classification and hazard description match the standard.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 114,
+    "text": "Storage igloo D-4 holds HD 1.6 insensitive munitions. The facility is designated Fire Division 2.",
+    "verdict": "UYGUN",
+    "reasoning": "HD 1.6 is assigned to Fire Division 2 per Table (p.133): 1.7.2.1. Hazard Divisions involved and Section 1.7.2.1. Hazard Divisions involved.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.85
+  },
+  {
+    "item_no": 115,
+    "text": "Facility E-9 stores HD 1.3 propellants. The building carries a Fire Division 3 marking, indicating mass fire hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.133): 1.7.2.1. Hazard Divisions involved, HD 1.3 is assigned to Fire Division 3, which matches the finding that Facility E-9 storing HD 1.3 propellants carries a Fire Division 3 marking.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.71
+  },
+  {
+    "item_no": 116,
+    "text": "Magazine F-2 stores HD 1.4 articles. The building is marked with Fire Division 4, indicating no significant hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.133), HD 1.4 is assigned to Fire Division 4 with \"no significant hazard.\" The context explicitly states that HD 1.4 may be stored with any other HD without aggregation of the NEQ (Table 4, footnote 1). The storage of HD 1.4 articles in a Fire Division 4 building is compliant with the standard.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.87
+  },
+  {
+    "item_no": 117,
+    "text": "The fire response team is trained to respond to Fire Division 1 facilities as mass explosion risks. Facility G-5 stores HD 1.1 and is designated FD 1.",
+    "verdict": "UYGUN",
+    "reasoning": "According to the context, HD 1.1 materials are associated with \"mass explosion\" hazards (Table 1.7.2.1, p.133) and Fire Division 1 facilities require immediate evacuation and fire brigade response upon a fully developed fire (Section (a) Fire Division 1, item 2). The training aligns with the standard's requirement to treat HD 1.1 as a mass explosion risk.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.91
+  },
+  {
+    "item_no": 118,
+    "text": "Depot H-6 contains HD 1.3 propellants. Emergency response plans classify this as a mass fire risk (Fire Division 3).",
+    "verdict": "UYGUN",
+    "reasoning": "The item states HD 1.3 propellants are classified as Fire Division 3, which aligns with Table (p.133): 1.7.2.1. Hazard Divisions involved (HD 1.3 → Fire Division 3). No violation is found in the provided context.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.7
+  },
+  {
+    "item_no": 119,
+    "text": "All HD 1.4 storage buildings on the base are marked with Fire Division 4 symbols. Emergency responders are briefed that no significant explosive hazard is expected from these facilities.",
+    "verdict": "UYGUN",
+    "reasoning": "The item complies with Table (p.133): 1.7.2.1, which states that HD 1.4 materials have \"No significant hazard\" and are assigned Fire Division 4. Additionally, Section 1.4.2.3 confirms that exterior explosives safety hazards are not significant for HD 1.4 materials, aligning with the emergency responder briefing.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 2.1
+  },
+  {
+    "item_no": 120,
+    "text": "Magazine J-8 stores HD 1.6 items and is classified as Fire Division 2, with emergency plans covering explosion with projection hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states Magazine J-8 stores HD 1.6 items and is classified as Fire Division 2, which aligns with the context in \"1.7.2.1. Hazard Divisions involved\" stating \"HD 1.6 belongs to Fire Division 2 (non mass expl).\" No violation is found.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.9
+  },
+  {
+    "item_no": 121,
+    "text": "Facility K-1 stores HD 1.2 munitions. The fire brigade emergency plan designates this as a Fire Division 2 site with projection explosion hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states Facility K-1 stores HD 1.2 munitions and is designated as a Fire Division 2 site with projection explosion hazard, which aligns with Table 1.7.2.1 (p.133) where HD 1.2 corresponds to Fire Division 2 and explosion with projection hazard.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 2.23
+  },
+  {
+    "item_no": 122,
+    "text": "An HD 1.5 storage building is marked with an octagon symbol (Fire Division 1) indicating mass explosion hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.134) 1.7.2.2, HD 1.5 is correctly assigned to Fire Division 1 (octagon symbol) as it involves mass explosion hazard. Section 1.7.2.1 and Note in e) Hazard Division 1.5 also confirm HD 1.5 is treated as mass explosion hazard.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.86
+  },
+  {
+    "item_no": 123,
+    "text": "The emergency response plan for facility L-3 (HD 1.3 propellants) includes mass fire procedures as the primary hazard scenario — consistent with Fire Division 3 designation.",
+    "verdict": "UYGUN",
+    "reasoning": "The item aligns with the standard's definition for Fire Division 3, as HD 1.3 is explicitly associated with \"Mass fire, or fire with minor blast or projections\" in Table 1.7.2.1 (p.133). The emergency response plan's focus on mass fire procedures for HD 1.3 is consistent with the standard's guidance in section (c) Fire Division 3.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 9.25
+  },
+  {
+    "item_no": 124,
+    "text": "Depot M-7 stores HD 1.4 items and is marked FD 4. The base emergency plan treats this facility as presenting no significant explosive hazard.",
+    "verdict": "UYGUN",
+    "reasoning": "According to Table (p.133): 1.7.2.1. Hazard Divisions involved, HD 1.4 is classified as \"No significant hazard\" and assigned Fire Division 4. Section 1.4.2.3 explicitly states that exterior explosives safety hazards are not normally significant for HD 1.4 materials, and QD requirements do not apply. Therefore, treating Depot M-7 storing HD 1.4 items as presenting no significant explosive hazard is compliant.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 12.07
+  },
+  {
+    "item_no": 125,
+    "text": "Magazine N-2 stores HD 1.1 bombs. The storage building is marked with Fire Division 1 (octagon symbol) indicating mass explosion risk.",
+    "verdict": "UYGUN",
+    "reasoning": "The storage of HD 1.1 bombs with a Fire Division 1 marking is compliant as HD 1.1 is explicitly associated with Fire Division 1 (mass explosion risk) per Table (p.133): 1.7.2.1. Hazard Divisions involved.",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.77
+  },
+  {
+    "item_no": 126,
+    "text": "Magazine P-5 stores HD 1.1 munitions but is marked with Fire Division 2 instead of Fire Division 1.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133): 1.7.2.1. Hazard Divisions involved, HD 1.1 must be marked with Fire Division 1, not Fire Division 2. The context explicitly states \"Fire division 1 indicates the greatest hazard\" and HD 1.1 is associated with Fire Division 1.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 127,
+    "text": "Depot Q-4 stores HD 1.5 explosive substances but is classified as Fire Division 3 in the emergency response plan.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the context, HD 1.5 substances are treated as Fire Division 1 (mass explosion hazard) per \"1.7.2.1. Hazard Divisions involved\" and \"e) Hazard Division 1.5\" sections. Storing HD 1.5 in Fire Division 3 violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 128,
+    "text": "Building R-6 stores HD 1.2 munitions but carries a Fire Division 1 marking.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 1.7.2.1, HD 1.2 is assigned to Fire Division 2, not Fire Division 1. The item incorrectly assigns Fire Division 1 to HD 1.2 munitions, violating the mapping rule in section 1.7.2.1.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 129,
+    "text": "Storage facility S-9 holds HD 1.6 items but the building is marked as Fire Division 3.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133): 1.7.2.1. Hazard Divisions involved, HD 1.6 must be assigned to Fire Division 2, not Fire Division 3. The context explicitly states \"HD 1.6 belongs to Fire Division 2 (non mass expl).\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 2.01
+  },
+  {
+    "item_no": 130,
+    "text": "Igloo T-3 stores HD 1.3 propellants but is designated Fire Division 1 (mass explosion) in facility records.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133), HD 1.3 (propellants) must be assigned Fire Division 3, not Fire Division 1. The facility records incorrectly designate HD 1.3 propellants as Fire Division 1 (mass explosion).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.74
+  },
+  {
+    "item_no": 131,
+    "text": "Magazine U-7 stores HD 1.4 items but carries Fire Division 1 marking in the emergency plan, suggesting mass explosion hazard.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133): 1.7.2.1, HD 1.4 is assigned Fire Division 4 with \"No significant hazard,\" while Fire Division 1 is explicitly linked to HD 1.1 (mass explosion hazard). The emergency plan incorrectly assigns Fire Division 1 to HD 1.4 storage.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.86
+  },
+  {
+    "item_no": 132,
+    "text": "Building V-2 stores HD 1.4 items but is designated as Fire Division 3 (mass fire hazard) in the emergency response plan.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133): 1.7.2.1. Hazard Divisions involved, HD 1.4 corresponds to Fire Division 4 (no significant hazard), while the building is designated as Fire Division 3 (mass fire hazard). This misalignment violates the hazard division to fire division mapping rule specified in the context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 2.09
+  },
+  {
+    "item_no": 133,
+    "text": "Depot W-8 holds HD 1.2 munitions and is designated Fire Division 4 (no significant hazard) in all base emergency documents.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "HD 1.2 munitions must be assigned to Fire Division 2 (explosion with projection hazard) per Table 1.7.2.1 (p.133), not Fire Division 4. Fire Division 4 applies only to HD 1.4 (no significant hazard).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.84
+  },
+  {
+    "item_no": 134,
+    "text": "Facility X-4 stores HD 1.3 propellants but emergency responders are briefed to treat the site as Fire Division 2 (explosion with projection).",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133), HD 1.3 corresponds to Fire Division 3, not Fire Division 2. The context explicitly states that HD 1.3 involves \"Mass fire, or fire with minor blast or projections,\" which aligns with Fire Division 3, not Fire Division 2 (explosion with projection).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.76
+  },
+  {
+    "item_no": 135,
+    "text": "Magazine Y-6 stores HD 1.1 munitions. The storage building is marked with Fire Division 4 (diamond symbol), indicating no significant hazard.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "HD 1.1 munitions are classified under Fire Division 1 (mass explosion hazard) per Table (p.133): 1.7.2.1, yet the storage building is marked with Fire Division 4 (diamond symbol), which applies only to HD 1.4 (no significant hazard) per Table (p.134): 1.7.2.2.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 2.14
+  },
+  {
+    "item_no": 136,
+    "text": "Depot Z-1 stores HD 1.6 insensitive munitions but is classified as Fire Division 1 in the base emergency plan.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the context, HD 1.6 belongs to Fire Division 2 (Table p.133 and TEXT 1.7.2.1), but Depot Z-1 is classified as Fire Division 1 in the base emergency plan, violating the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.91
+  },
+  {
+    "item_no": 137,
+    "text": "Building AA-5 holds HD 1.5 explosive substances. The facility is marked with Fire Division 3 (mass fire) symbol.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table (p.133) and [TEXT] 1.7.2.1, HD 1.5 materials must be assigned to Fire Division 1 (mass explosion), not Fire Division 3 (mass fire). The inverted triangle symbol (Fire Division 3) is for HD 1.3 materials.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.78
+  },
+  {
+    "item_no": 138,
+    "text": "Igloo BB-3 stores HD 1.4 items. The emergency plan classifies this building as Fire Division 2 (explosion with projection hazard).",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "HD 1.4 is permitted to be stored with any other HD without aggregation of the NEQ per Table 4 (footnote 1). However, the emergency plan classifies the building as Fire Division 2 (explosion with projection hazard), which corresponds to HD 1.2 or HD 1.6 per 1.7.2.1. Storing HD 1.4 in a Fire Division 2 building violates the hazard division compatibility rules.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 1.92
+  },
+  {
+    "item_no": 139,
+    "text": "Building F-9 stores HD 1.3 propellants and HD 1.1 detonating munitions together in the same magazine. The facility applies HD 1.3 classification for all safety calculations, claiming the smaller hazard class governs. According to Table 4 mixing and aggregation rules, co-storage of HD 1.1 with HD 1.3 requires the aggregate to be treated as HD 1.1, not HD 1.3.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, Section 1.2.3.2, the combination HD 1.1 + HD 1.3 must be aggregated as HD 1.1, not HD 1.3. The facility's claim that the smaller hazard class governs violates the aggregation rule specified in Table 4.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 4",
+    "elapsed_s": 1.93
+  },
+  {
+    "item_no": 140,
+    "text": "Depot C-12 stores HD 1.4 signal cartridges and HD 1.5 insensitive munitions in the same storage unit. Per Table 4, when HD 1.4 and HD 1.5 are stored together, the aggregate hazard is treated as HD 1.4 for quantity-distance purposes. The facility applies HD 1.4 classification, which is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Table 4, HD 1.4 + HD 1.5 combination is explicitly stated as \"1.4 may be stored with any other HD without aggregation of the NEQ.\" However, the context also states in the HD 1.5 section that \"for storage purposes, such substances are treated as Hazard Division 1.1.\" Since HD 1.1 requires aggregation with HD 1.4 (HD 1.1 + HD 1.4 → 1.1), storing HD 1.4 and HD 1.5 together must be treated as HD 1.1, not HD 1.4.",
+    "expected": "UYGUN",
+    "table": "Table 4",
+    "elapsed_s": 2.5
+  },
+  {
+    "item_no": 141,
+    "text": "Storage building 22 holds Compatibility Group A and Group B explosive substances together. Table 5 specifies that Group A (primary explosive substances) may not be stored with Group B in the same magazine. This co-storage configuration violates the compatibility mixing rules for explosive substances.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 5 explicitly states \"A with B: Mixing NOT permitted.\" Since Group A (primary explosive substances) and Group B (articles containing primary explosive substances without sufficient protective features) are prohibited from being stored together, the co-storage in Storage Building 22 violates the compatibility mixing rules for explosive substances (Section 1.2.3.2 and Table 5).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 3.79
+  },
+  {
+    "item_no": 142,
+    "text": "Facility Delta stores Compatibility Group C and Group D explosive substances in the same building. Per Table 5, the storage of Group C with Group D is explicitly permitted. No incompatibility issues are present and the storage configuration is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 5 explicitly permits mixing of Compatibility Group C with Group D (marked as \"X\" with note 1). The item states that Facility Delta stores these groups together, which aligns with Table 5's rules.",
+    "expected": "UYGUN",
+    "table": "Table 5",
+    "elapsed_s": 1.83
+  },
+  {
+    "item_no": 143,
+    "text": "Magazine 31 stores Compatibility Group D and Group E explosive substances in the same bay. Table 5 does not permit the mixing of Group D (secondary detonating explosive substances without initiator) with Group E (articles with propelling charge) in the same magazine. The storage violates mixing rules.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) explicitly states that mixing of Compatibility Group D with Group E is permitted (D with E: Mixing permitted), but the item claims this is not allowed. The cited note 1) in Table 6 confirms this permission.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 5",
+    "elapsed_s": 9.16
+  },
+  {
+    "item_no": 144,
+    "text": "Armory 5E stores Compatibility Group E and Group G explosive articles together. Table 6 permits the co-storage of Group E articles (with propelling charge, no initiator) and Group G pyrotechnic articles. The storage arrangement is compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 (Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups) explicitly states \"G with E: 4)\" and \"G with G: Mixing permitted,\" where note 4) specifies that mixing of Group G with other groups is at the discretion of the National Competent Authority. The item claims unconditional compliance, which violates the discretionary requirement in note 4).",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.26
+  },
+  {
+    "item_no": 145,
+    "text": "Building 6F stores Compatibility Group B explosive articles mixed with Group H articles (containing both explosive and white phosphorus) in the same magazine. Table 6 does not permit the mixing of Group B with Group H for explosive articles. The storage configuration is non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table 6 explicitly states \"B with H: Mixing NOT permitted.\" The storage configuration violates this rule by mixing Compatibility Group B with Group H explosive articles in the same magazine.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 6",
+    "elapsed_s": 3.92
+  },
+  {
+    "item_no": 146,
+    "text": "Storage unit 7G holds only Compatibility Group S explosive articles. Per Table 6, Group S articles may be stored together with any other compatible group or alone. Storing Group S alone is fully compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table 6 explicitly states \"S with S: Mixing permitted\" and does not restrict Group S articles from being stored alone. The context confirms that Group S articles may be stored together with any compatible group or alone (Section 1.2.2.1 General Principles and Table 6).",
+    "expected": "UYGUN",
+    "table": "Table 6",
+    "elapsed_s": 2.19
+  },
+  {
+    "item_no": 147,
+    "text": "During a fire incident at a facility storing 600 kg NEQ of HD 1.1 munitions, nonessential personnel were withdrawn to 300 meters. Table T.2 specifies a minimum emergency withdrawal distance of 600 meters for a known quantity of HD 1.1 in the 501–1000 kg NEQ range. The 300 m withdrawal was insufficient and non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Table T.2 specifies a minimum emergency withdrawal distance of 600 meters for a known quantity of HD 1.1 in the 501–1000 kg NEQ range. The item states a withdrawal distance of 300 meters, which is below the required 600 meters as per Table T.2.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table T.2",
+    "elapsed_s": 2.4
+  },
+  {
+    "item_no": 148,
+    "text": "A vehicle accident involved HD 1.2 items of known quantity (250 kg NEQ). Nonessential personnel were evacuated to 200 meters per the emergency response plan. Table T.2 specifies an emergency withdrawal distance consistent with this range for known-quantity HD 1.2. The evacuation distance is compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "Table T.2 specifies an emergency withdrawal distance of 560m for known quantities of HD 1.2 items, which matches the 200m evacuation distance reported in the item.",
+    "expected": "UYGUN",
+    "table": "Table T.2",
+    "elapsed_s": 2.55
+  },
+  {
+    "item_no": 149,
+    "text": "Igloo E-2 stores HD 1.3 propellants. The facility is marked with a Diamond symbol, which corresponds to Fire Division 4 per Table 133. HD 1.3 propellants correspond to Fire Division 3 (inverted triangle), not Fire Division 4. The marking is incorrect and non-compliant.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "HD 1.3 corresponds to Fire Division 3 (inverted triangle) per Table 133 (p.133), while the facility is marked with a Diamond symbol (Fire Division 4). This violates the hazard division-to-fire division mapping specified in Table 1.7.2.1.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table 133",
+    "elapsed_s": 3.78
+  },
+  {
+    "item_no": 150,
+    "text": "Magazine F-6 stores HD 1.4 articles. The building is marked with a Cross symbol indicating Fire Division 2 per Table 133. HD 1.4 (minor fire or projection hazard only) is associated with Fire Division 2. The marking is correct and compliant.",
+    "verdict": "UYGUN",
+    "reasoning": "HD 1.4 is correctly associated with Fire Division 2 per Table 133 (1.7.2.1), and the Cross symbol is the correct Fire Division 2 marker per Table 134 (1.7.2.2).",
+    "expected": "UYGUN",
+    "table": "Table 133",
+    "elapsed_s": 1.41
+  }
+]

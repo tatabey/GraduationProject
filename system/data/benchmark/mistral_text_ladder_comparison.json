@@ -1,0 +1,23 @@
+[
+  {
+    "label": "mistral-small-latest",
+    "params_b": 24.0,
+    "provider": "mistral",
+    "accuracy": 97.0,
+    "per_class": {
+      "UYGUN": 96.3,
+      "UYGUN DEĞİL": 97.8
+    },
+    "per_table": {
+      "Compatibility_Mixing": 92.0,
+      "NEQ_Computation": 100.0,
+      "Inter_Magazine_Distance": 96.0,
+      "Barricade_Rules": 100.0,
+      "IBD_Personnel": 92.0,
+      "Traffic_Projection": 96.0,
+      "Underground_Storage": 100.0,
+      "Workshop_Construction": 100.0
+    },
+    "avg_s": 5.4
+  }
+]

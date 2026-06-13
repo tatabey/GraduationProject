@@ -1,0 +1,20 @@
+[
+  {
+    "label": "mistral-small-latest",
+    "params_b": 24.0,
+    "provider": "mistral",
+    "accuracy": 98.0,
+    "per_class": {
+      "UYGUN": 98.7,
+      "UYGUN DEĞİL": 97.3
+    },
+    "per_table": {
+      "Table 6-1": 100.0,
+      "TABLE 6-2": 100.0,
+      "Table_page192": 100.0,
+      "Table_page147": 96.7,
+      "Table_page25": 93.3
+    },
+    "avg_s": 4.64
+  }
+]

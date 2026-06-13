@@ -1,0 +1,182 @@
+[
+ {
+  "item_no": 1,
+  "text": "Magazine Alpha stores 800 kg NEQ of HD 1.1 artillery shells and 300 kg NEQ of HD 1.5 insensitive munitions. The combined storage is classified and treated as HD 1.1 for all quantity-distance calculations.",
+  "expected": "UYGUN",
+  "table": "Table 4"
+ },
+ {
+  "item_no": 2,
+  "text": "Depot Building 3 contains HD 1.1 bombs and HD 1.6 insensitive munitions in the same storage facility. The aggregate hazard classification applied for standoff calculations is HD 1.1.",
+  "expected": "UYGUN",
+  "table": "Table 4"
+ },
+ {
+  "item_no": 3,
+  "text": "Storage igloo F-4 holds HD 1.3 propellants and HD 1.5 substances together. The facility applies HD 1.1 classification to the combined storage for all Q-D requirements.",
+  "expected": "UYGUN",
+  "table": "Table 4"
+ },
+ {
+  "item_no": 16,
+  "text": "Magazine D-3 stores HD 1.1 and HD 1.3 items together. The commander has classified the combined storage as HD 1.3 to reduce required standoff distances.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 4"
+ },
+ {
+  "item_no": 17,
+  "text": "Facility R-9 stores HD 1.2.1 and HD 1.2.2 munitions in the same building. The aggregate classification applied is HD 1.2.2.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 4"
+ },
+ {
+  "item_no": 18,
+  "text": "Building S-6 stores HD 1.5 and HD 1.3 propellants together. The storage is classified as HD 1.3 for Q-D calculations.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 4"
+ },
+ {
+  "item_no": 29,
+  "text": "Magazine 7 stores only Compatibility Group A explosive substances together. Storage of Group A with Group A is permitted.",
+  "expected": "UYGUN",
+  "table": "Table 5"
+ },
+ {
+  "item_no": 30,
+  "text": "Storage building 12 holds Compatibility Group C and Group S explosive substances together. This combination is permitted by AASTP-1 Table 5.",
+  "expected": "UYGUN",
+  "table": "Table 5"
+ },
+ {
+  "item_no": 31,
+  "text": "Depot 4 stores Compatibility Group D and Group S explosive substances in the same magazine. No incompatibility issues are identified.",
+  "expected": "UYGUN",
+  "table": "Table 5"
+ },
+ {
+  "item_no": 44,
+  "text": "Magazine 2 stores Compatibility Group A and Compatibility Group C explosive substances in the same building.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 5"
+ },
+ {
+  "item_no": 45,
+  "text": "Depot 14 stores Compatibility Group A and Compatibility Group D explosive substances together.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 5"
+ },
+ {
+  "item_no": 46,
+  "text": "Building 5 holds Compatibility Group A and Compatibility Group G substances in the same magazine.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 5"
+ },
+ {
+  "item_no": 56,
+  "text": "Magazine 1A stores Compatibility Group B fuzes with Group B fuzes. This combination is permitted per Table 6.",
+  "expected": "UYGUN",
+  "table": "Table 6"
+ },
+ {
+  "item_no": 57,
+  "text": "Depot 2B stores Compatibility Group C and Group D explosive articles together. This combination is explicitly permitted.",
+  "expected": "UYGUN",
+  "table": "Table 6"
+ },
+ {
+  "item_no": 58,
+  "text": "Building 3C stores Compatibility Group C and Group E explosive articles in the same magazine.",
+  "expected": "UYGUN",
+  "table": "Table 6"
+ },
+ {
+  "item_no": 71,
+  "text": "Magazine 16 stores Compatibility Group B fuzes and Compatibility Group C explosive articles together.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 6"
+ },
+ {
+  "item_no": 72,
+  "text": "Depot 17 stores Compatibility Group B fuzes and Compatibility Group G articles in the same building.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 6"
+ },
+ {
+  "item_no": 73,
+  "text": "Facility 18 stores Compatibility Group B and Compatibility Group H articles in the same magazine.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 6"
+ },
+ {
+  "item_no": 83,
+  "text": "An emergency response team was withdrawn to 1250 meters from a facility storing munitions of unknown quantity and unknown hazard division. No personnel remained inside the exclusion zone.",
+  "expected": "UYGUN",
+  "table": "Table T.2"
+ },
+ {
+  "item_no": 84,
+  "text": "During an incident at a railcar carrying explosives of unknown type and quantity, nonessential personnel were evacuated to 1500 meters from the railcar.",
+  "expected": "UYGUN",
+  "table": "Table T.2"
+ },
+ {
+  "item_no": 85,
+  "text": "During a fire incident at a storage facility containing an unknown quantity of HD 1.4 items, nonessential personnel were evacuated to 100 meters.",
+  "expected": "UYGUN",
+  "table": "Table T.2"
+ },
+ {
+  "item_no": 98,
+  "text": "During an incident at a facility storing unknown quantity of explosives in an unknown hazard division, nonessential personnel were evacuated to only 800 meters.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table T.2"
+ },
+ {
+  "item_no": 99,
+  "text": "A railcar carrying explosives of unknown type and quantity experienced an emergency. Nonessential personnel were withdrawn to 1250 meters from the railcar.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table T.2"
+ },
+ {
+  "item_no": 100,
+  "text": "During an HD 1.4 storage facility emergency, nonessential personnel were evacuated to only 50 meters from the site.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table T.2"
+ },
+ {
+  "item_no": 111,
+  "text": "Magazine A-1 stores HD 1.1 munitions. The building is marked with Fire Division 1 (octagon symbol), indicating mass explosion hazard.",
+  "expected": "UYGUN",
+  "table": "Table 133"
+ },
+ {
+  "item_no": 112,
+  "text": "Depot B-3 stores HD 1.5 explosive substances. The facility carries Fire Division 1 marking.",
+  "expected": "UYGUN",
+  "table": "Table 133"
+ },
+ {
+  "item_no": 113,
+  "text": "Building C-7 stores HD 1.2 munitions. The facility is marked as Fire Division 2, indicating explosion with projection hazard.",
+  "expected": "UYGUN",
+  "table": "Table 133"
+ },
+ {
+  "item_no": 126,
+  "text": "Magazine P-5 stores HD 1.1 munitions but is marked with Fire Division 2 instead of Fire Division 1.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 133"
+ },
+ {
+  "item_no": 127,
+  "text": "Depot Q-4 stores HD 1.5 explosive substances but is classified as Fire Division 3 in the emergency response plan.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 133"
+ },
+ {
+  "item_no": 128,
+  "text": "Building R-6 stores HD 1.2 munitions but carries a Fire Division 1 marking.",
+  "expected": "UYGUN DEĞİL",
+  "table": "Table 133"
+ }
+]

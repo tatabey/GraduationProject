@@ -1,0 +1,29 @@
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  MODEL-BOYUTU MERDİVENİ — AASTP-1 / 150 Senaryo (2 sınıf: UYGUN / UYGUN DEĞİL)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  Model                       Params  Sağlay.  Doğruluk   UYGUN   DEĞİL  Ort.Süre
+  ────────────────────────── ─────── ──────── ───────── ─────── ─────── ─────────
+  mistral-small-latest           24B  mistral     88.0%     85%     91%      3.9s
+
+  Tablo Bazında Doğruluk (%):
+  Tablo         mistral-small-
+  ────────────────────────────
+  Table 133               93.3
+  Table 4                 83.3
+  Table 5                 83.3
+  Table 6                 86.7
+  Table T.2               93.3
+
+  Verdict Dağılımı:
+  Verdict       mistral-small-
+  ────────────────────────────
+  UYGUN                     75
+  UYGUN DEĞİL               75
+  Beklenen      
+
+    UYGUN: 81 beklenen
+    UYGUN DEĞİL: 69 beklenen
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
