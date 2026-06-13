@@ -23,7 +23,7 @@ import re
 import subprocess
 import sys
 import time
-from collections import Counter, defaultdict
+from collections import Counter, defaultdict, deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,6 +36,7 @@ from config import (
     OLLAMA_URL, GROQ_API_KEY, GROQ_BASE_URL,
     CEREBRAS_API_KEY, CEREBRAS_BASE_URL,
     MODEL_LADDER, GROQ_RPM_DELAY, LLM_MAX_TOKENS, CONTEXT_CHAR_CAP,
+    LLM_MAX_CALLS_PER_MIN, MISTRAL_BASE_URL, MISTRAL_API_KEY, MISTRAL_RPS_DELAY,
 )
 
 # ── Sabitler ──────────────────────────────────────────────────────────────────
@@ -47,7 +48,7 @@ KB_META_PATH    = ROOT / "data" / "kbs" / "aastp_test" / "kb_meta.json"
 CACHE_PATH      = BENCHMARK_DIR / os.getenv("VERDICT_CACHE_NAME", ".verdict_cache.json")
 DEFAULT_MODELS  = ["phi4-mini", "qwen2.5:3b", "llama3.2:3b"]
 
-SYSTEM_PROMPT = """You are a strict compliance auditor. You check whether audit findings comply with the official standard documents provided as context.
+SYSTEM_PROMPT = """You are a careful and fair compliance auditor. You check whether audit findings comply with the official standard documents provided as context.
 
 For each audit item, you will be given:
   - ITEM: the finding from the audit report
@@ -61,11 +62,19 @@ REASONING: <1-3 sentences citing specific rules, table names, or section numbers
 
 Verdict meanings:
 - UYGUN       : The item complies with the standard rules found in context.
-- UYGUN DEĞİL : The item violates one or more rules in the standard.
+- UYGUN DEĞİL : The item clearly violates a specific rule in the standard.
 
 Rules:
 - Base your verdict ONLY on the provided context. Do not use external knowledge.
 - You MUST choose exactly one of the two verdicts. Make your best binary judgment.
+- Default to UYGUN. Choose UYGUN DEĞİL ONLY when the context contains a specific rule
+  that the item clearly and demonstrably violates (cite it).
+- If the item meets or satisfies the applicable requirement (e.g. a distance equals or
+  exceeds the required value, a quantity is within the limit, a combination is allowed),
+  the verdict is UYGUN.
+- Do NOT choose UYGUN DEĞİL merely because information seems incomplete, a value is close
+  to but still within a limit, or you are uncertain. Uncertainty defaults to UYGUN.
+- Still flag every clear, demonstrable violation as UYGUN DEĞİL.
 - Always cite the specific table name or section from the context in your reasoning.
 - Keep reasoning concise and direct."""
 
@@ -105,6 +114,8 @@ def make_client(provider: str) -> OpenAI:
         return OpenAI(base_url=GROQ_BASE_URL, api_key=GROQ_API_KEY)
     if provider == "cerebras":
         return OpenAI(base_url=CEREBRAS_BASE_URL, api_key=CEREBRAS_API_KEY)
+    if provider == "mistral":
+        return OpenAI(base_url=MISTRAL_BASE_URL, api_key=MISTRAL_API_KEY)
     return OpenAI(base_url=OLLAMA_URL, api_key="ollama")
 
 
@@ -181,6 +192,26 @@ def run_benchmark(entry: dict, kb_meta: dict, scenarios: list[dict],
     durations = []
     n = len(scenarios)
 
+    # Proaktif tempo (auditor.py ile aynı): bulut sağlayıcılarda kayar 60 sn
+    # penceresinde ≤ LLM_MAX_CALLS_PER_MIN taze çağrı. Reaktif 429 backoff'un
+    # büyük-bağlam maddelerinde TPM borcunu temizleyememesini (DEĞERLENDİRİLEMEDİ
+    # kümeleri) önler. Groq kendi GROQ_RPM_DELAY'ini kullanır; ollama temposuz.
+    _call_times: deque = deque()
+
+    def _pace():
+        # ollama/groq/mistral kendi gecikmelerini kullanır; 5/dk pencere yalnız
+        # Cerebras gibi sıkı-RPM sağlayıcılar için.
+        if provider in ("ollama", "groq", "mistral") or LLM_MAX_CALLS_PER_MIN <= 0:
+            return
+        now = time.time()
+        while _call_times and now - _call_times[0] > 60:
+            _call_times.popleft()
+        if len(_call_times) >= LLM_MAX_CALLS_PER_MIN:
+            wait = 60 - (now - _call_times[0]) + 0.5
+            if wait > 0:
+                time.sleep(wait)
+        _call_times.append(time.time())
+
     print(f"\n{'─'*60}")
     print(f"  Model : {label}  ({params_b:g}B, {provider})")
     print(f"  Madde : {n}")
@@ -205,6 +236,7 @@ def run_benchmark(entry: dict, kb_meta: dict, scenarios: list[dict],
                 verdict, reasoning = cache[ckey]["verdict"], cache[ckey]["reasoning"]
                 cached = True
             else:
+                _pace()   # bulut sağlayıcılarda taze çağrı öncesi proaktif tempo
                 verdict, reasoning = call_llm(client, label, text, context, provider)
                 # Hatalı/limit sonuçlarını cache'leme → resume'da tekrar denensin
                 if not reasoning.startswith("hata:"):
@@ -212,6 +244,8 @@ def run_benchmark(entry: dict, kb_meta: dict, scenarios: list[dict],
                 cached = False
                 if provider == "groq":
                     time.sleep(GROQ_RPM_DELAY)  # throttle
+                elif provider == "mistral":
+                    time.sleep(MISTRAL_RPS_DELAY)  # Mistral free ~1 istek/sn
         else:
             verdict, reasoning = ERROR_VERDICT, "Bağlamda ilgili kural bulunamadı."
             cached = False
@@ -375,7 +409,11 @@ def main():
                         help="Test senaryoları JSON dosyası (varsayılan: data/test_scenarios.json)")
     parser.add_argument("--tag", type=str, default=None,
                         help="Çıktı dosyası öneki, ör. set1/set2/set3 (varsayılan: senaryolar dosyasından türetilir)")
+    parser.add_argument("--kb", type=str, default="aastp_test",
+                        help="Bilgi tabanı adı (varsayılan: aastp_test)")
     args = parser.parse_args()
+    global KB_META_PATH
+    KB_META_PATH = ROOT / "data" / "kbs" / args.kb / "kb_meta.json"
 
     BENCHMARK_DIR.mkdir(parents=True, exist_ok=True)
 

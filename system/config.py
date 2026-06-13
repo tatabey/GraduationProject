@@ -109,6 +109,13 @@ CEREBRAS_API_KEY  = os.getenv("CEREBRAS_API_KEY",
     "***REMOVED***")
 CEREBRAS_BASE_URL = "https://api.cerebras.ai/v1"
 
+# Mistral (ücretsiz Experiment: 1 milyar token/AY, 500K TPM, ~60 istek/dk;
+# Cerebras'ın 1M/gün token duvarına alternatif — 24B, OpenAI-uyumlu)
+MISTRAL_API_KEY  = os.getenv("MISTRAL_API_KEY",
+    "***REMOVED***")
+MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
+MISTRAL_RPS_DELAY = 1.0   # Mistral free tier = ~1 istek/sn (çağrılar arası bekleme)
+
 # ---------------------------------------------------------------------------
 # Üretim denetim modeli (arayüz / auditor.py bunu kullanır)
 # ---------------------------------------------------------------------------
@@ -125,6 +132,7 @@ MODEL_LADDER = [
     {"label": "llama3.2:3b",              "params_b": 3.0,   "provider": "ollama"},
     {"label": "qwen2.5:3b",               "params_b": 3.0,   "provider": "ollama"},
     {"label": "phi4-mini",                "params_b": 3.8,   "provider": "ollama"},
+    {"label": "mistral-small-latest",     "params_b": 24.0,  "provider": "mistral"},
     {"label": "llama-3.1-8b-instant",     "params_b": 8.0,   "provider": "groq"},
     {"label": "meta-llama/llama-4-scout-17b-16e-instruct", "params_b": 17.0, "provider": "groq"},
     {"label": "openai/gpt-oss-20b",       "params_b": 20.0,  "provider": "groq"},

@@ -36,6 +36,7 @@ from config import (
     AUDIT_PROVIDER, AUDIT_MODEL,
     GROQ_API_KEY, GROQ_BASE_URL,
     CEREBRAS_API_KEY, CEREBRAS_BASE_URL,
+    MISTRAL_API_KEY, MISTRAL_BASE_URL,
     OLLAMA_URL, LLM_MAX_TOKENS, CONTEXT_CHAR_CAP,
     AUDIT_PREFETCH, LLM_MAX_CALLS_PER_MIN, TIMING_LOGS,
 )
@@ -50,6 +51,8 @@ def make_client(provider: str, api_key: str = "") -> OpenAI:
         return OpenAI(base_url=CEREBRAS_BASE_URL, api_key=api_key or CEREBRAS_API_KEY)
     if provider == "groq":
         return OpenAI(base_url=GROQ_BASE_URL, api_key=api_key or GROQ_API_KEY)
+    if provider == "mistral":
+        return OpenAI(base_url=MISTRAL_BASE_URL, api_key=api_key or MISTRAL_API_KEY)
     return OpenAI(base_url=OLLAMA_URL, api_key="ollama")
 
 
