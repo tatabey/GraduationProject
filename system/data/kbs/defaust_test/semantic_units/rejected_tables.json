@@ -1,0 +1,32 @@
+[
+  {
+    "table_name": "AMENDMENT LIST",
+    "page_idx": 6,
+    "reject_reason": "doluluk=20% < 30% (6/30 hücre dolu)",
+    "html_len": 439
+  },
+  {
+    "table_name": "Table_page29",
+    "page_idx": 29,
+    "reject_reason": "html_len=0 < 100",
+    "html_len": 0
+  },
+  {
+    "table_name": "Table_page30",
+    "page_idx": 30,
+    "reject_reason": "html_len=0 < 100",
+    "html_len": 0
+  },
+  {
+    "table_name": "Table_page37",
+    "page_idx": 37,
+    "reject_reason": "html_len=0 < 100",
+    "html_len": 0
+  },
+  {
+    "table_name": "Table_page38",
+    "page_idx": 38,
+    "reject_reason": "html_len=0 < 100",
+    "html_len": 0
+  }
+]

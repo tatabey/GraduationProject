@@ -1,0 +1,5058 @@
+[
+  {
+    "type": "text",
+    "text": "DEF(AUST) 9022",
+    "text_level": 2,
+    "bbox": [
+      305,
+      195,
+      576,
+      222
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "Dated 4 July 2006",
+    "bbox": [
+      305,
+      222,
+      445,
+      236
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "SUPERSEDING",
+    "bbox": [
+      542,
+      262,
+      670,
+      275
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "RAAF STD(ENG) T5022/Issue 2",
+    "bbox": [
+      542,
+      276,
+      791,
+      290
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "Dated 09 APR 1999",
+    "bbox": [
+      542,
+      290,
+      697,
+      302
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "REQUIREMENTS FOR CIVILIAN PERSONNEL",
+    "text_level": 1,
+    "bbox": [
+      196,
+      461,
+      805,
+      524
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "MAINTAINING STATE AIRCRAFT AND AERONAUTICAL PRODUCT",
+    "text_level": 1,
+    "bbox": [
+      134,
+      534,
+      865,
+      595
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "STANDARD",
+    "bbox": [
+      384,
+      710,
+      613,
+      737
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "\\*",
+    "bbox": [
+      490,
+      771,
+      507,
+      783
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "PUBLISHED UNDER AUTHORITY",
+    "bbox": [
+      364,
+      795,
+      631,
+      808
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "OF DEPARTMENT OF DEFENCE",
+    "bbox": [
+      368,
+      809,
+      628,
+      823
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "header",
+    "text": "AUSTRALIA",
+    "bbox": [
+      124,
+      83,
+      267,
+      163
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "header",
+    "text": "COMMONWEALTH OF AUSTRALIA",
+    "bbox": [
+      284,
+      106,
+      574,
+      121
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "header",
+    "text": "AUSTRALIAN DEFENCE STANDARD",
+    "bbox": [
+      284,
+      134,
+      586,
+      148
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "footer",
+    "text": "USAGE: Air",
+    "bbox": [
+      112,
+      909,
+      208,
+      921
+    ],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      406,
+      494,
+      591,
+      522
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      115,
+      24,
+      245,
+      38
+    ],
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "DEF(AUST) 9022",
+    "text_level": 2,
+    "bbox": [
+      403,
+      91,
+      593,
+      112
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "DOCUMENT MANAGEMENT INFORMATION",
+    "text_level": 2,
+    "bbox": [
+      287,
+      122,
+      709,
+      138
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "This page lists the ownership and area responsible for providing final technical approval for the standard or specification. It also lists the implementation document(s) that call up the standard or specification and identified all specifications and standards referenced in this document. The information below will need to be reviewed for currency and applicability at the 5 year review cycle as stated in the Defence Standardisation Manual (STANMAN).",
+    "bbox": [
+      112,
+      150,
+      884,
+      220
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Defence Group: AIR",
+    "bbox": [
+      179,
+      256,
+      480,
+      271
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Sponsoring Organisation: DGTA – ADF",
+    "bbox": [
+      181,
+      283,
+      549,
+      299
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Sponsor: DAIRMAINT",
+    "bbox": [
+      181,
+      311,
+      542,
+      325
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Approving Authority: DGTA",
+    "bbox": [
+      181,
+      338,
+      497,
+      353
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Implementation Document(s): Document Number",
+    "bbox": [
+      184,
+      389,
+      426,
+      415
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "AAP7001.053(AM1)",
+    "bbox": [
+      186,
+      416,
+      339,
+      431
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Technical Airworthiness Management Manual (TAMM)",
+    "bbox": [
+      445,
+      416,
+      791,
+      445
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Referenced Document(s): Document Number",
+    "bbox": [
+      184,
+      495,
+      394,
+      521
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "AAP7001.059(AM1)",
+    "bbox": [
+      186,
+      523,
+      339,
+      536
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "Title",
+    "bbox": [
+      445,
+      509,
+      485,
+      522
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "ADF Aviation Maintenance Management Manual)",
+    "bbox": [
+      445,
+      523,
+      752,
+      549
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "page_number",
+    "text": "i",
+    "bbox": [
+      494,
+      939,
+      504,
+      950
+    ],
+    "page_idx": 2
+  },
+  {
+    "type": "text",
+    "text": "BLANK PAGE",
+    "text_level": 2,
+    "bbox": [
+      386,
+      480,
+      611,
+      504
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "page_number",
+    "text": "ii",
+    "bbox": [
+      492,
+      934,
+      505,
+      945
+    ],
+    "page_idx": 3
+  },
+  {
+    "type": "text",
+    "text": "LIST OF EFFECTIVE PAGES",
+    "text_level": 2,
+    "bbox": [
+      339,
+      105,
+      658,
+      124
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "table",
+    "img_path": "images/7ba9b03cdbfab01993cfededb82df7beed857caeaafde47664779cd278ceab98.jpg",
+    "table_caption": [
+      "PRELIMINARY PAGES"
+    ],
+    "table_footnote": [
+      "\\* Indicates pages affected by the current AL"
+    ],
+    "table_body": "<table><tr><td>Cover</td><td>pgs</td><td>AL</td></tr><tr><td>Document Management Information</td><td>i</td><td>0</td></tr><tr><td>List of Effective Pages</td><td>iii</td><td>0</td></tr><tr><td>Amendment Certificate</td><td>v</td><td>0</td></tr><tr><td>Table of Contents</td><td>vii to viii</td><td>0</td></tr><tr><td>CONTENTS</td><td>1 to 14</td><td>0</td></tr><tr><td>ANNEX A</td><td>1 to 2</td><td>0</td></tr><tr><td>ANNEX B</td><td>1 to 2</td><td>0</td></tr><tr><td>ANNEX C</td><td>1 to 4</td><td>0</td></tr><tr><td>ANNEX D</td><td>1 to 2</td><td>0</td></tr><tr><td>ANNEX E</td><td>1 to 2</td><td>0</td></tr><tr><td>ANNEX F</td><td>1 to 4</td><td>0</td></tr><tr><td>ANNEX G</td><td>1 to 2</td><td>0</td></tr><tr><td>Rear Pages</td><td>1 to 4</td><td>0</td></tr></table>",
+    "bbox": [
+      292,
+      176,
+      712,
+      471
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "COMPLIANCE CERTIFICATE",
+    "text_level": 2,
+    "bbox": [
+      381,
+      524,
+      615,
+      539
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "Certified that the publication has been page checked in accordance with the details on this page.",
+    "bbox": [
+      114,
+      568,
+      836,
+      583
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "...... Signature (Distributee)",
+    "bbox": [
+      448,
+      610,
+      800,
+      625
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "Rank or Title and Name",
+    "bbox": [
+      448,
+      638,
+      806,
+      652
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "Date .... Appointment and Unit or Section",
+    "bbox": [
+      114,
+      666,
+      873,
+      681
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "page_number",
+    "text": "iii",
+    "bbox": [
+      490,
+      934,
+      507,
+      945
+    ],
+    "page_idx": 4
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      406,
+      480,
+      591,
+      507
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "page_number",
+    "text": "iv",
+    "bbox": [
+      490,
+      934,
+      505,
+      945
+    ],
+    "page_idx": 5
+  },
+  {
+    "type": "table",
+    "img_path": "images/948976aa3b1075f101f2d84f54ce20713ae257cabc035a1798af14b6d3eae27c.jpg",
+    "table_caption": [
+      "AMENDMENT LIST"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td colspan=\"2\">Amendment</td><td colspan=\"2\">Effected</td></tr><tr><td>No</td><td>Date of Issue</td><td>SIGNATURE</td><td>Date Incorporated</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></table>",
+    "bbox": [
+      114,
+      133,
+      922,
+      345
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "Revision Note",
+    "text_level": 2,
+    "bbox": [
+      114,
+      384,
+      258,
+      401
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "This document supersedes: RAAF STD(ENG) T5022/Issue 2 Dated 09 APR 1999",
+    "bbox": [
+      114,
+      414,
+      726,
+      429
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "Historical Record",
+    "text_level": 2,
+    "bbox": [
+      114,
+      442,
+      287,
+      458
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "RAAF STD(ENG) T5022/Issue 2 Dated 09 APR 1999",
+    "bbox": [
+      114,
+      473,
+      515,
+      488
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "page_number",
+    "text": "V",
+    "bbox": [
+      492,
+      935,
+      505,
+      945
+    ],
+    "page_idx": 6
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      406,
+      480,
+      591,
+      507
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "page_number",
+    "text": "vi",
+    "bbox": [
+      490,
+      934,
+      505,
+      945
+    ],
+    "page_idx": 7
+  },
+  {
+    "type": "text",
+    "text": "TABLE OF CONTENTS",
+    "text_level": 2,
+    "bbox": [
+      386,
+      136,
+      608,
+      150
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "Section",
+    "text_level": 2,
+    "bbox": [
+      115,
+      167,
+      179,
+      180
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "Page",
+    "text_level": 2,
+    "bbox": [
+      836,
+      167,
+      880,
+      182
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1. INTRODUCTION....1",
+      "2. SCOPE 2",
+      "3. ABBREVIATIONS....3",
+      "4. DEFINITIONS 4",
+      "5. MAINTENANCE....5"
+    ],
+    "bbox": [
+      115,
+      194,
+      880,
+      261
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "5.1 Regulatory requirement.... 5",
+      "5.2 Overview of Policy....5",
+      "5.3 Task Authorisation....6",
+      "5.4 Currency 6",
+      "5.5 Maintenance Transition....6",
+      "5.6 On-aircraft maintenance....7",
+      "5.7 Off-aircraft maintenance....7",
+      "5.8 Non-Aviation tradespeople....7",
+      "5.9 Non-tradesperson....7",
+      "5.10 Quality Inspections....7"
+    ],
+    "bbox": [
+      132,
+      264,
+      880,
+      399
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "6. MAINTENANCE MANAGEMENT 7",
+    "bbox": [
+      115,
+      401,
+      880,
+      412
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "7. QUALIFICATION AND COMPETENCY 8",
+    "bbox": [
+      115,
+      414,
+      880,
+      426
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "7.1 Background....8",
+      "7.2 Regulatory Requirement....8",
+      "7.3 Aviation Tradespeople....8",
+      "7.4 Aviation Specialist Tradespeople....8",
+      "7.5 Non-Aviation Tradesperson....9",
+      "7.6 Overseas Qualification....9",
+      "7.7 Mechanisms for RPL/RCC....9",
+      "7.8 Enterprise competencies....9"
+    ],
+    "bbox": [
+      132,
+      428,
+      880,
+      536
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "8. OUT-OF-TRADE EMPLOYMENT 10",
+    "bbox": [
+      115,
+      536,
+      880,
+      549
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "9. TASK AUTHORISATION 10",
+    "bbox": [
+      115,
+      549,
+      880,
+      562
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "9.1 Background....10",
+      "9.2 Regulatory Requirement....10",
+      "9.3 Task authorisation pre-requisites....10",
+      "9.4 Delegation of Authority to Authorise....11",
+      "9.5 Task authorisation responsibilities....11",
+      "9.6 Task Authorisation Records....11",
+      "9.7 Personnel Under Training....11",
+      "9.8 Non-Tradesperson Task Authorisation....11",
+      "9.9 Tradesperson Task Authorisation 11",
+      "9.10 Trade Supervisor Authorisation 12",
+      "9.11 Self Certifying Maintainer Authorisation....12",
+      "9.12 Independent Inspectors 12",
+      "9.13 Out-of-trade Employment....13"
+    ],
+    "bbox": [
+      132,
+      564,
+      880,
+      741
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "10. MANDATORY TRAINING REQUIREMENTS.... 13",
+    "bbox": [
+      115,
+      742,
+      880,
+      754
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "11. GUIDANCE and REFERENCE MATERIAL 14",
+    "bbox": [
+      115,
+      755,
+      880,
+      767
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "ANNEX A....1",
+      "ANNEX B 1",
+      "ANNEX C 1",
+      "ANNEX D....1",
+      "ANNEX E 1",
+      "ANNEX F....1",
+      "ANNEX G....1"
+    ],
+    "bbox": [
+      115,
+      769,
+      880,
+      863
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "page_number",
+    "text": "vii",
+    "bbox": [
+      487,
+      934,
+      509,
+      945
+    ],
+    "page_idx": 8
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      406,
+      494,
+      591,
+      520
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "page_number",
+    "text": "viii",
+    "bbox": [
+      485,
+      933,
+      512,
+      945
+    ],
+    "page_idx": 9
+  },
+  {
+    "type": "text",
+    "text": "AUSTRALIAN DEFENCE STANDARD",
+    "text_level": 1,
+    "bbox": [
+      290,
+      79,
+      707,
+      99
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "DEF(AUST) 9022",
+    "text_level": 1,
+    "bbox": [
+      406,
+      112,
+      591,
+      131
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "REQUIREMENTS FOR CIVILIAN PERSONNEL MAINTAINING STATE AIRCRAFT AND AERONAUTICAL PRODUCT",
+    "text_level": 1,
+    "bbox": [
+      152,
+      146,
+      848,
+      185
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "STANDARD",
+    "text_level": 1,
+    "bbox": [
+      430,
+      200,
+      564,
+      217
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "Specific inquiries regarding the application of this standard to Requests for Tender or contracts should be addressed to the Ordering Authority named in the Request for Tender, or to the Quality Assurance Authority named in the contract, as appropriate.",
+    "bbox": [
+      112,
+      247,
+      878,
+      290
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "WARNING",
+    "text_level": 2,
+    "bbox": [
+      453,
+      317,
+      544,
+      331
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "This standard may call for the use of substances and test procedures that may be injurious to health if adequate precautions are not taken. It refers to technical suitability only and in no way absolves the supplier or user from statutory obligations relating to health and safety at any stage of manufacture or use.",
+    "bbox": [
+      112,
+      344,
+      857,
+      400
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "1. INTRODUCTION",
+    "text_level": 2,
+    "bbox": [
+      115,
+      428,
+      284,
+      441
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "1.1 Australian Defence Force (ADF) technical airworthiness policy is established by the ADF Technical Airworthiness Regulator (TAR) and set out in Regulations published in AAP7001.053 (AM1) - Technical Airworthiness Management Manual (TAMM). These Regulations require that State aircraft and aeronautical product are maintained to approved standards by competent and authorised individuals acting as members of an approved organisation whose work is both certified as correct and accepted on behalf of the ADF.",
+      "1.2 Within the ADF, the systems of regulation, instructions, personnel management and training are established and managed to ensure ADF technical personnel are appropriately trained, assessed and authorised to undertake aviation maintenance activities. This standard provides a similar mechanism for civilian personnel - either Defence civilians or Defence's contractors - employed on maintenance of Australian State aircraft or associated aeronautical product to satisfy the Regulations covering personnel qualifications and trade competency.",
+      "1.3 In Australia, there have been many changes in aviation trade qualifications and trade training, particularly since the introduction of competency based, multi-skilled aviation trade training. A generalised mapping of Australian aviation trades, training and qualifications is provided at annex A. This Standard provides guidance on the various qualifications, how they may relate to competency and lead to task authorisation. The Standard also provides guidance on the relationship between attainment of competence and task authorisation of tradespeople. Furthermore, this standard addresses the criteria for employment of civilian personnel in maintenance management roles.",
+      "1.4 The National Training Framework (NTF) is now the dominant source of trade training in Australia under the Australian Quality Training Framework (AQTF) using nationally endorsed Training Packages. The Training Packages specify competency standards, based on the principles of Competency Based Training and Assessment (CBTA), within the structure of the Australian Qualifications Framework (AQF). Before CBTA, task authorisation of individuals was linked inseparably to trade qualifications. The changes in trade training systems since 1991 have resulted in many variations of qualification, and thus complicated identification of appropriate qualifications of civilian personnel $^{1}$ for the conduct of maintenance on State aircraft and aviation"
+    ],
+    "bbox": [
+      115,
+      457,
+      884,
+      883
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "page_footnote",
+    "text": "$^{1}$ Particularly those civilian personnel who may have an ADF trade background.",
+    "bbox": [
+      114,
+      906,
+      657,
+      923
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      494,
+      937,
+      504,
+      947
+    ],
+    "page_idx": 10
+  },
+  {
+    "type": "text",
+    "text": "product.",
+    "bbox": [
+      208,
+      67,
+      268,
+      79
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "With a significant proportion of tradespeople now holding CBTA based qualifications, the basis for determining suitability of skills sets has moved from qualification to competencies on which qualifications are now based. This Standard sets out the acceptable basis for employment of civilian personnel, who have been assessed competent under the AQTF, to perform maintenance on State aircraft and on aeronautical product.",
+    "bbox": [
+      208,
+      80,
+      882,
+      149
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "1.5 The purpose of this Standard is not to address workplace safety, as workplace safety is a prevailing requirement and the responsibility of the Accountable Manager.",
+    "bbox": [
+      115,
+      162,
+      882,
+      191
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "1.6 Maintenance organisations or individuals conducting or managing maintenance on State aircraft or aeronautical product are invited to propose improvements to this Standard. Any comments, anomalies or requests for exemptions in relation to this Standard should be directed to the Sponsor - DAIRMAINT-DGTA.",
+    "bbox": [
+      115,
+      203,
+      882,
+      258
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "1.7 Precedence. In the event of a conflict between the requirements of this Standard, and the references cited herein, the requirements of this Standard take precedence. Nothing in this Standard however, overrides applicable laws and regulations, unless a specific exemption has been obtained.",
+    "bbox": [
+      115,
+      271,
+      882,
+      327
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "2. SCOPE",
+    "text_level": 2,
+    "bbox": [
+      115,
+      340,
+      205,
+      355
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "2.1 Applicability. DEF(AUST) 9022 is applicable to the conduct of maintenance by civilian maintenance organisations, civilian maintenance management staff and tradespeople, and Defence civilians on State aircraft and aeronautical product within Australia. The Standard defines the required criteria for civilian personnel - either Defence civilians or Defence's contractors - employed on maintenance of Australian State aircraft or associated aeronautical product to satisfy the Regulations covering personnel qualifications and trade competency. Maintenance carried out by organisations outside of Australia is to meet the intent of this Standard with respect to overseas equivalent trades, qualifications, facilities and organisational standards.",
+    "bbox": [
+      115,
+      369,
+      882,
+      480
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "NOTE",
+    "text_level": 2,
+    "bbox": [
+      497,
+      492,
+      547,
+      505
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "This Standard does not apply to Aircraft maintained under TAMM Regulation 2.7 as these Aircraft are maintained in accordance with CASA regulatory framework including AME licensing regulations.",
+    "bbox": [
+      174,
+      505,
+      870,
+      535
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "2.2 This Standard is aligned with the Aeroskills Training Package for the Aerospace Industry MEA97 Version 4 $^{2}$ (referred to hereafter as the Aeroskills Training Package) and associated Competencies under the NTF. This Standard also attempts to harmonise to the maximum extent as is practical with standards being established by CASA for civil aircraft and aeronautical product maintenance as part of the CASA Maintenance Regulations Project.",
+    "bbox": [
+      115,
+      548,
+      882,
+      618
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "2.3 This Standard does not specify aerospace trade qualification and competency systems for maintenance organisations located outside Australia. However, notwithstanding provisions of 2.1, where maintenance contracts are being performed outside Australia by foreign maintenance organisations, the minimum requirements for qualifications and competency of personnel undertaking maintenance on Australian State Aircraft or aeronautical product shall be equivalent to those specified in this Standard. Unless otherwise specified in the contract, foreign maintenance organisations are to comply with their National Airworthiness Authority (NAA). The NAA of Australia, Canada, New Zealand, France, Netherlands, UK and USA are recognised and acceptable to the ADF TAR. Maintenance may be performed in countries other than those specified where that country's NAA is acceptable to the ADF TAR.",
+    "bbox": [
+      115,
+      630,
+      884,
+      769
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "2.4 Organisations conducting maintenance may propose other standards for personnel qualification for consideration by the TAR. Such submissions should take the form of a proposal to improve this standard as noted at clause 1.6 above.",
+    "bbox": [
+      115,
+      781,
+      882,
+      823
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "page_footnote",
+    "text": "$^{2}$ At the time of writing of this version of the Standard, the Aeroskills Training Package MEA06 was in the final phases of development and review with an anticipated release date of Dec 06. This Standard will be revised to incorporate the developments included in MEA06 after formal release of that package.",
+    "bbox": [
+      112,
+      876,
+      873,
+      921
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 11
+  },
+  {
+    "type": "text",
+    "text": "3. ABBREVIATIONS",
+    "text_level": 2,
+    "bbox": [
+      114,
+      65,
+      290,
+      79
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "table",
+    "img_path": "images/87914a3fa2f66873f9b16eda4bb2212e93fdaa3ff4bc6515b4c5ad9e24c1d1a8.jpg",
+    "table_caption": [],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>3.1</td><td>ADF</td><td>Australian Defence Force</td></tr><tr><td>3.2</td><td>AM</td><td>Aircraft Mechanic</td></tr><tr><td>3.3</td><td>AME</td><td>Aircraft Maintenance Engineer</td></tr><tr><td>3.4</td><td>AMO</td><td>Authorised Maintenance Organisation</td></tr><tr><td>3.5</td><td>ANTA</td><td>Australian National Training Authority</td></tr><tr><td>3.6</td><td>AQF</td><td>Australian Qualifications Framework</td></tr><tr><td>3.7</td><td>AQTF</td><td>Australian Quality Training Framework</td></tr><tr><td>3.8</td><td>ATP</td><td>Aeroskills Training Package</td></tr><tr><td>3.9</td><td>CASA</td><td>Civil Aviation Safety Authority</td></tr><tr><td>3.10</td><td>CBTA</td><td>Competency Based Training and Assessment</td></tr><tr><td>3.11</td><td>CMO</td><td>Critical Maintenance Operation</td></tr><tr><td>3.12</td><td>DAIRMAINT</td><td>Directorate of Aircraft Maintenance</td></tr><tr><td>3.13</td><td>DGTA - ADF</td><td>Directorate General Technical Airworthiness - Australian Defence Force</td></tr><tr><td>3.14</td><td>LAME</td><td>Licensed Aircraft Maintenance Engineer</td></tr><tr><td>3.15</td><td>MMP</td><td>Maintenance Management Plan</td></tr><tr><td>3.16</td><td>NAA</td><td>National Airworthiness Authority</td></tr><tr><td>3.17</td><td>NAC95</td><td>National Aerospace Curriculum 1995</td></tr><tr><td>3.18</td><td>NCC91</td><td>National Core Curriculum 1991</td></tr><tr><td>3.19</td><td>NTF</td><td>National Training Framework</td></tr><tr><td>3.20</td><td>QWPA</td><td>Qualified Workplace Assessor</td></tr><tr><td>3.21</td><td>RTO</td><td>Registered Training Organisation</td></tr><tr><td>3.22</td><td>RWPA</td><td>Registered Workplace Assessor</td></tr><tr><td>3.23</td><td>SME</td><td>Subject Matter Expert</td></tr><tr><td>3.24</td><td>SMM</td><td>Senior Maintenance Manager</td></tr><tr><td>3.25</td><td>TAMM</td><td>Technical Airworthiness Management Manual</td></tr><tr><td>3.26</td><td>TAR</td><td>Technical Airworthiness Regulator</td></tr><tr><td>3.27</td><td>TTR</td><td>Technical Trades Restructure (RAAF)</td></tr></table>",
+    "bbox": [
+      115,
+      93,
+      853,
+      834
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "page_number",
+    "text": "3",
+    "bbox": [
+      492,
+      933,
+      504,
+      945
+    ],
+    "page_idx": 12
+  },
+  {
+    "type": "text",
+    "text": "4. DEFINITIONS",
+    "text_level": 2,
+    "bbox": [
+      114,
+      66,
+      260,
+      79
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "4.1 Unless specified to the contrary, words and phrases used in this Standard have the meanings expressed in the Australian Macquarie Dictionary. Definitions and Abbreviations used in this Standard are listed in AAP 7001.059 (AM1) Glossary and List of Abbreviations.",
+      "4.2 Aeroskills. Aeroskills are the nationally agreed trade competency standards that comprise the Aeroskills Training Package and that may combine to result in achievement AQF qualifications and/or Statements of Attainment.",
+      "4.3 Aeroskills Training Package. The term Aeroskills Training Package as used in this Standard refers to the nationally endorsed Training Package, currently the Aeroskills Training Package for the Aerospace Industry MEA97 Version 4, Release Date 24 August 2004.",
+      "4.4 Allied trades. The term allied trades refers to pre-NCC91 (ADF) and NAC95 (Civil) aviation trained tradespeople. In those earlier training regimes, aviation tradespeople were trained either in airframes, engines, instruments, radio or electrical trades; refer annex A. For the mechanical discipline, airframe and engine trades are allied trades. For the avionics discipline, instrument, radio and electrical trades are the allied trades. The trades within each discipline are considered to be allied because the training in each trade had a common core: mechanical principles or electrical and electronic theory.",
+      "4.5 Aviation Tradesperson (plural: Aviation Tradespeople). This is a person who has achieved a formal Registered Training Organisation (RTO)-delivered aviation qualification, or a Statement of Attainment that includes as a minimum all Aeroskills Core Competencies and at least one trade stream competency from the Aeroskills Training Package. The Core Competencies together with one or more stream competencies qualifies and certifies the individual as having the associated trades skills to competently perform related aviation maintenance tasks under routine levels of supervision. The award of these trade competencies recognises a level of professional development but does not authorise the tradesperson to perform the task without due process of task authorisation. Refer to Section 9 for task authorisation and Section 7 for rules under this Standard on flexible use of Aeroskills competencies for Aviation Tradespeople.",
+      "4.6 Aviation Specialist Tradesperson. This term refers to an aviation tradesperson who has completed qualifications in one of the Aviation Specialist Trades listed at annex E to this Standard. The Aviation Specialist Trades listed are a unique set of aviation trades, with skills sets necessary for some aviation maintenance activities on State aircraft and aeronautical product. These specialist trades are recognised by the ADF and are not included in the Aeroskills Training Package.",
+      "4.7 Non-Aviation Tradesperson (plural: Non-Aviation Tradespeople). A person employed on specific maintenance task/s who does not meet the requirements of this Standard to be an Aviation Tradesperson, but does have formal, non-aviation trade qualifications.",
+      "4.8 Non-Tradesperson (plural: Non-Tradespeople). A Non-Tradesperson is any person who does not meet the requirements in this standard to be an Aviation Tradesperson or a Non-Aviation Tradesperson.",
+      "4.9 Out-of-trade employment. This term refers to qualified tradespeople being task authorised and employed on work outside their core trade stream without holding all the relevant competencies for that task authorisation. For example an Aircraft Maintenance Engineer (AME)-Mechanical being authorised to perform a simple avionics task.",
+      "4.10 Supervision. Supervision is the control exercised by one person over the work of others. This control includes the authority to guide and direct others, and responsibility for correctness of supervised work. Supervision is classified as follows:",
+      "4.10.1 Routine Supervision is the degree of control exercised over the work of others such that authorised personnel performing maintenance tasks under routine supervision assume the responsibility for the correctness and quality of any work they perform. Routine supervision requires that all critical maintenance activities are closely supervised."
+    ],
+    "bbox": [
+      115,
+      93,
+      884,
+      907
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "page_number",
+    "text": "4",
+    "bbox": [
+      492,
+      934,
+      504,
+      945
+    ],
+    "page_idx": 13
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "4.10.2 Direct Supervision denotes the highest degree of control over the work of others than that exercised under routine supervision. The key difference is that when direct supervision is in effect, the supervisor assumes responsibility for the correctness and quality of any specific tasks performed by the person under supervision. Personnel performing the direct supervision of personnel carrying out maintenance tasks are not to apply any hands on skills, ie not be involved in or provide on the job demonstration during the maintenance task, or be employed on other tasks or duties during the period of direct supervision.",
+      "4.11 Self-Certifying Maintainer. Self-Certifying Maintainers are Aviation Tradespeople who have been authorised to certify in the role of both Tradesperson and Trade Supervisor (first and second level of certification) for work they have performed personally.",
+      "4.12 Task Authorisation. Task authorisation is a formally assigned authority which permits a person to perform a specified maintenance task. To be task authorised, a tradesperson must first be competent in the range of competencies that are pre-requisites for that task.",
+      "4.13 Technical Trainee. A technical trainee is a person, regardless of skill level, who is yet to complete and is required to complete an aviation trade competency assessment. The term ‘technical trainee’ does not imply that a member is unable to conduct any autonomous maintenance on aircraft or aeronautical product, but reflects the requirement to assess competencies related to specific tasks prior to task authorisation. A technical trainee includes personnel who are employed as an apprentice or an adult trainee. See Section 9 for further information on the relationship between competency accomplishment and task authorisation.",
+      "4.14 Tradesperson (plural: Tradespeople). A Tradesperson is a person who has achieved a formal Registered Training Organisation (RTO)-delivered AQF technical trade qualification or Statement of Attainment, or similar trade award issued within Australia. Refer to Section 7 for rules under this Standard on flexible use of Aeroskills competencies for Aviation Tradespeople.",
+      "4.15 Workplace Assessor. A workplace assessor is someone who meets the AQTF requirements for workplace assessment by holding formal RTO issued competencies under the Training Package BSZ98 or TAA04."
+    ],
+    "bbox": [
+      115,
+      66,
+      884,
+      505
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "5. MAINTENANCE",
+    "text_level": 2,
+    "bbox": [
+      114,
+      520,
+      278,
+      534
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "5.1 Regulatory requirement. Personnel are not permitted to perform tasks on aircraft or aeronautical product unless they have the relevant trade qualification, part qualification or Statement of Attainment (as appropriate) and are correctly authorised (TAMM Regulation 4.5.7), or are Technical Trainees gaining experience towards competency assessment and task authorisation. Such trainees shall be directly supervised by task authorised personnel, and the person supervising is responsible for the correct performance of the entire task and is to certify the work performed (TAMM Regulation 5.1.5).",
+    "bbox": [
+      114,
+      548,
+      884,
+      644
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "5.2 Overview of Policy. In the context of the TAMM, proficiency to undertake a maintenance task comprises three elements, specifically: competency, application training and experience. Where CBTA based training is not yet provided for a trade, then proficiency is comprised of a formal trade qualification, application training and experience. A determination of proficiency must also address the currency of the three elements.",
+    "bbox": [
+      114,
+      657,
+      884,
+      726
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "text",
+    "text": "5.2.1 Competency. Competency is evidenced by the tradesperson holding a formal qualification or statement of attainment, issued by a RTO under the AQF, which must clearly state the competencies held by the tradesperson. Competency is normally gained through formal off-job (theory), related on-job (practical) development and assessment of generic underpinning knowledge and skills in the trade using the CBTA system. Application training and experience is not a substitute for holding a formal competency. Under the CBTA system, only those RTOs that hold scope of registration for the relevant Training Package are to assess and issue formal documentation detailing competencies achieved. All qualifications and Statements of Attainment detailing competency as required by this Standard must be officially issued by an AQTF compliant RTO, or by Federal or State training board where no CBTA based qualification exists.",
+    "bbox": [
+      114,
+      739,
+      884,
+      878
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "page_number",
+    "text": "5",
+    "bbox": [
+      492,
+      933,
+      504,
+      945
+    ],
+    "page_idx": 14
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "5.2.2 Application Training. Application training is that specialist aircraft system or aeronautical product course which provides the tradesperson with specific knowledge on that aircraft system or aeronautical product. Such application courses are normally predicated on the tradesperson already having the generic underpinning knowledge and core skills (competency) for that trade. Such aircraft, system or aeronautical product courses are not pseudo-trade courses unless established specifically by an approved RTO to include trade competency outcomes. Where any trade competency outcome is included in application training, the requirements of 5.2.1 above apply and a Statement of Attainment is required.",
+      "5.2.3 Experience. Familiarity with the task and local context gained after trade competency/qualification and application training, and relates to frequency of exposure to the task or related tasks and a specific work environment.",
+      "5.3 Task Authorisation. Proficiency leads to task authorisation after due consideration by the SMM through the assignment of Maintenance Authority (TAMM Regulation 4.5.1). The system of assessment and assignment of internal Maintenance Authority must include documented requisite competencies (or qualifications where appropriate) for tasks: ie a competency list matrixed against task authorisations. Requisite competencies for tasks (or qualifications where appropriate) are to be established using a documented training needs analysis, which is defined or referenced in the MMP.",
+      "5.4 Currency. Currency in the three elements comprising proficiency is a critical consideration in deciding to assign task authorisation. The following guidance and criteria apply to such consideration:",
+      "5.4.1 Currency of Competency. Currency of competencies held by a tradesperson can be influenced by a number of factors. NTF Training Packages are reviewed on a regular basis and reviewed competencies may reflect necessary changes including advances in technology, and developments in the understanding of the skills domain. Physiological changes in individuals may result in them becoming no longer competent and this may be either a temporary or permanent outcome. A tradesperson who has not been actively exercising the range of competencies held may suffer degradation in competency skills. Consequently, in considering the proficiency of a tradesperson to be task authorised, or to retain that authorisation, an SMM shall review the competencies held against those necessary for task authorisation. For tradespeople who have not exercised their trade qualification or competencies in the last 5 years through certification of aviation maintenance tasks for which they have held task authorisation, then that tradesperson is to undergo RPL/RCC by a RTO that holds scope of registration for the relevant Training Package prior to consideration for task authorisation. Where a SMM review or RTO RPL/RCC exposes gaps in competency, task authorisation must be limited by the extent of the gap until the tradesperson completes additional training and/or formal competency assessment.",
+      "5.4.2 Currency of Application Training. A range of technical information changes, modifications, or OEM revisions to data and/or the equipment being maintained, may affect currency of Application Training. Consequently, in considering the proficiency of a tradesperson to be task authorised, or to retain that authorisation, an SMM shall review the application training completed against the current revision status of the course. Where change has resulted in a gap in Application Training, appropriate gap training is to be provided. Where a tradesperson has not exercised task authorisation in the last 5 years through certification of maintenance tasks they have completed, then that tradesperson is to complete the current requisite Application Training prior to task authorisation.",
+      "5.4.3 Currency of Experience. The currency requirement for experience is at least three months on the aircraft or aerospace product within the last 18 month period.",
+      "5.5 Maintenance Transition. When an AMO has not previously been involved with a particular aircraft or aerospace product, then there is likely to be deficit in direct experience levels. In such circumstances, a phase-in plan and risk assessment shall be prepared and accompany the application for a Maintenance Authority Certificate (MAC)."
+    ],
+    "bbox": [
+      115,
+      93,
+      884,
+      891
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "page_number",
+    "text": "6",
+    "bbox": [
+      492,
+      934,
+      505,
+      945
+    ],
+    "page_idx": 15
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "5.6 On-aircraft maintenance. The minimum acceptable competency standards for on-aircraft maintenance are detailed in Aeroskills Training Package or at annex E for Aviation Specialist Trades; enterprise competency standards may be used to supplement Aeroskills Training Package competencies and Aviation Specialist Trades qualifications. Aviation tradespeople holding earlier qualifications or statements of attainment are required to be assessed through a RTO that holds the Aeroskills Training Package on its scope of registration, and undergo RPL/RCC to determine their current competency standing. The information included at annexes A, B, C and F may be useful in preparing applications for RPL/RCC where tradespeople hold earlier or alternate qualifications and competencies. It is desirable for aviation tradespeople to hold an AQF Cert IV in Aeroskills, as the complete qualification permits wider and often more effective and efficient human resource employment, and can promote sustainment of proficiency levels and robustness within an AMO.",
+      "5.7 Off-aircraft maintenance. The minimum acceptable competency standards for aeronautical product/off-aircraft maintenance are detailed in Aeroskills Training Package or annex E for Aviation Specialist Trades; enterprise competency standards and competencies from other Training Packages may be used to supplement Aeroskills Training Package competencies and Aviation Specialist Trades qualifications. Aviation tradespeople holding earlier aeroskills qualifications or statements of attainment are required to be assessed through a RTO that holds the Aeroskills Training Package on its scope of registration, and undergo RPL/RCC to determine their current competency standing. Guidance on qualifications and competency standards for off-aircraft maintenance of aeronautical product are listed in annex D and F.",
+      "5.8 Non-Aviation tradespeople. The ADF and Contractors may employ non-aviation tradespeople to carry out a restricted range of maintenance tasks on or off aircraft. The work that may be completed by a non-aviation tradesperson is to be limited to component removal and installation, or in manufacturing and off-aircraft maintenance. At no time are non-aviation tradespeople to be task authorised to conduct fault finding, or adjustment/testing of aeronautical product or aviation systems for on-aircraft maintenance. SMMs are to ensure that tasks are suitable for the trade specialty of the individual. Annex F is provided as a guide for SMM's on the suitability of non-aviation tradespeople.",
+      "5.9 Non-tradesperson. The employment of personnel with no trade qualifications is to be strictly limited to tasks that do not require skill, knowledge or the full training of a tradesperson. Some training will be required for these personnel to work around aircraft and they must demonstrate the necessary proficiency prior to task authorisation. All non-tradespeople tasks are to be specified or referenced in the organisation's Maintenance Management Plan (MMP) (TAMM Regulation 4.5.9) and include documented proficiency criteria. Examples of suitable tasks for non-tradespeople are listed in G.",
+      "5.10 Quality Inspections. Quality Inspections are to be conducted and certified for all work completed on aircraft or aeronautical product by non-aviation trades personnel or non-tradesperson. The inspection is to be done by an authorised Aviation Tradesperson to ensure compliance with aviation standards and publications.",
+      "6.1 Senior Maintenance Manager. Reserved.",
+      "6.2 Quality Manager. Reserved.",
+      "6.3 Maintenance Manager. Reserved.",
+      "6.4 Maintenance Inspector. Reserved.",
+      "6.5 Maintenance Supervisor. Reserved."
+    ],
+    "bbox": [
+      115,
+      93,
+      884,
+      852
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "6. MAINTENANCE MANAGEMENT",
+    "text_level": 2,
+    "bbox": [
+      115,
+      698,
+      410,
+      711
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "page_number",
+    "text": "7",
+    "bbox": [
+      492,
+      933,
+      504,
+      944
+    ],
+    "page_idx": 16
+  },
+  {
+    "type": "text",
+    "text": "7. QUALIFICATION AND COMPETENCY",
+    "text_level": 2,
+    "bbox": [
+      114,
+      93,
+      455,
+      108
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "7.1 Background. Qualifications in the aerospace industry have changed considerably since the late 1980s. Prior to then, aviation tradespeople received intensive, but narrowly focussed training in one trade discipline. The depth of that training often supported employment of those tradespeople in work on both aircraft and aeronautical product. Industry re-structuring in the early 1990s amalgamated the allied single aviation trade disciplines into a smaller number of multi-skilled aviation trades known as streams. Apart from broadening scope of trade skills, the other fundamental modification to training made at that time was to tailor it specifically for on-aircraft or off-aircraft (aeronautical product) maintenance.",
+      "7.2 Regulatory Requirement. TAMM Regulation 4.5.7 requires tradespeople to be competent.",
+      "7.3 Aviation Tradespeople. The Aeroskills Training Package is designed around the principle of a common component of Core Competencies that applies to all AQF level outcomes. To these Core Competencies are added Technical Units of Competency that are related to trade streams and/or AQF levels. Completion of Core and Technical Units of Competency within the Aeroskills Training Package packaging rules is required to achieve AQF level awards. Whilst it is highly desirable for Aviation Tradespeople to hold a complete AQF award outcome, it is not mandatory to be considered a tradesperson for the purposes of this Standard. Additionally, competencies or qualifications from other NTF Training Packages may be added. In all cases, to be considered an Aviation Tradesperson the following criteria apply:",
+      "7.3.1 Minimum Core Competencies. The minimum Core Competencies required from the Aeroskills Training Package to be considered an Aviation Tradesperson are MEA101, MEA103, MEA105, MEA107, MEA108 and MEA109.",
+      "7.3.2 Trade Stream Compulsory Technical Units of Competency. Where an Aviation Tradesperson works in one of the trades streams and there are compulsory units of competency for multiple pathways, then those common units of competency are mandatory in conjunction with the requirements of clause 7.3.1.",
+      "7.3.3 Additional Stream Units of Competency. An Aviation Tradesperson may complete as many of the remaining units of competency for that stream that are required to support task authorisation provided clause 7.3.1 and 7.3.2 are met.",
+      "7.3.4 Completing Competencies across Multiple Aeroskills Streams. Where an Aviation Tradesperson is to be employed across more than one Aeroskills trade stream, then the compulsory units for all streams (refer clause 7.3.2) for which that Aviation Tradesperson is to be employed are mandatory and must be met to complete additional multiple stream competencies.",
+      "7.3.5 Adding Non-Aeroskills Qualifications or Competencies. Where non-Aeroskills qualifications and/or competencies are required to supplement an Aviation Tradesperson's skills base for task authorisation, the SMM is to ensure that the qualification or competencies are relevant, and that necessary prerequisite competencies from the source Training Package are included. Additionally, a training needs analysis is to be documented to support the additional qualification and/or competencies being included in the task authorisation system; refer clause 5.3 of this Standard."
+    ],
+    "bbox": [
+      115,
+      121,
+      884,
+      769
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "text",
+    "text": "7.4 Aviation Specialist Tradespeople. Aviation Specialist Trades are listed at annex E to this Standard. The Aviation Specialist Trades are a unique set of aviation trades, with skills sets necessary for some aviation maintenance activities on State aircraft and aeronautical product, which are recognised by the ADF and are not included in the Aeroskills Training Package. Aviation specialist trades include trades such as electroplaters, surface finishers and metal machinists. As the Aeroskills Training Package does not yet support CBTA for Aviation Specialist Trades, this Standard does not support tailoring Aviation Specialist Trade skills at a detail competency level. To be considered as an Aviation Specialist Tradesperson, the individual must meet the requirements of annex E; and proficiency for task authorisation comprises the detailed requirements for that specialist trade, application training and experience.",
+    "bbox": [
+      115,
+      755,
+      884,
+      893
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "page_number",
+    "text": "8",
+    "bbox": [
+      492,
+      933,
+      504,
+      945
+    ],
+    "page_idx": 17
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "7.5 Non-Aviation Tradesperson. This Standard is closely associated and maintained with the Aeroskills Training Package and focuses on aviation industry and skilling. For Non-Aviation Tradespeople, the scope of this Standard does not extend beyond State Aircraft and aeronautical product, and does not support tailoring of other NTF Training Packages at the detail competency level. Accordingly, to be considered as a Non-Aviation Tradesperson, the individual must hold an AFQ qualification award that meets the requirements of the latest version of the Training Package for that industry. In this regard, proficiency for task authorisation of Non-Aviation Tradespeople comprises a formal trade qualification, application training and experience.",
+      "7.6 Overseas Qualification. State and Territory Vocational and Education Training Boards assess equivalency of qualifications gained overseas to Australian qualifications. However, the Training Boards only have access to a restricted amount of information on non-Australian training. The quality of their assessments can therefore be variable. For the purpose of this Standard, Recognition of Prior Learning (RPL)/Recognition of Current Competence (RCC) through a RTO that holds the Aeroskills Training Package on its scope of registration is the acceptable method of compliance to determine suitability for employment as an Aviation Technician.",
+      "7.7 Mechanisms for RPL/RCC. The following processes are the acceptable methods that can be used by AMOs to address the Aeroskills RPL/RCC requirements of this Standard.",
+      "7.7.1 RTO RPL/RCC. The preferred mechanism for RPL/RCC of Aeroskills Training Package competencies is the use of a formally registered RTO. RTO that operate under the NTF and AQTF system are required to meet a range of standards that provides an acceptable level of assurance and accountability for assessments and award of qualifications and Statements of Attainment.",
+      "7.7.2 Internal AMO RPL/RCC. The TAR may find an AMO internal process for RPL/RCC that is documented in the MMP an acceptable method provided the following minimum requirements are met. This mechanism is only intended to provide for company mapping of the competencies of aviation tradespeople who hold earlier qualifications and who are already employed within a company prior to this Standard coming into effect (transitional provisions). Should a SMM choose to use an internal RPL/RCC process, a risk assessment (AS4360 or equivalent) of such a system is to be completed and referenced in the MMP. An internal RPL/RCC process requires assessment to be conducted against the Aeroskills Training Package by an Aeroskills qualified SME $^{3}$ who hold the competencies being assessed and a QWPA/RWPA, and for the results to be documented and accepted by the SMM. Internally assessed competencies are to be clearly documented as such on competency records held by the AMO and the individual, and are not transferable to another AMO $^{4}$ . For an internal AMO RPL/RCC process, the SMM is ultimately responsible for the correct identification of a tradesperson's competencies and assumes that risk in any subsequent task authorisation. The minimum formal qualification requirements for the workplace assessors are:",
+      "(a) RWPA must hold the competencies TAA ASS401A, 402A and 404A.",
+      "(b) QWPA must hold the competencies BSZ 401A, 402A and 403A."
+    ],
+    "bbox": [
+      115,
+      121,
+      884,
+      714
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "7.8 Enterprise competencies. Reserved.",
+    "bbox": [
+      115,
+      726,
+      465,
+      742
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "page_footnote",
+    "text": "$^{3}$ An Aeroskills SME in the context of this standard is an Aviation Tradesperson who meets the Trade Supervisor criteria at Section 9. $^{4}$ AMO Internal RPL/RCC performed to this Standard may prove useful as part of a subsequent portfolio of evidence provided to a RTO for formal RPL/RCC towards a qualification or Statement of Attainment.",
+    "bbox": [
+      112,
+      875,
+      878,
+      932
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "page_number",
+    "text": "9",
+    "bbox": [
+      492,
+      934,
+      504,
+      944
+    ],
+    "page_idx": 18
+  },
+  {
+    "type": "text",
+    "text": "8. OUT-OF-TRADE EMPLOYMENT",
+    "text_level": 2,
+    "bbox": [
+      112,
+      93,
+      408,
+      106
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "8.1 The foundation for units of competency is underpinning skills and knowledge (ie the subject's theoretical basis). The aviation trade streams (Avionics, Mechanical and Structures) have few technical principles in common. Thus tradespeople, supervisors and inspectors within one stream generally lack the necessary theoretical base to support work in the other trade steams unless they have completed the associated competencies for that stream.",
+      "8.1.1 A tradesperson from an Avionics, Mechanical or Structures trades stream, or from the specialist trades listed in annex E, may only be employed and task authorised outside their trade stream on simple tasks; ie, such as an avionics tradesperson undertaking a minor mechanical trade task. It is not feasible to provide a definition of 'simple tasks' because of the vast diversity in the aviation maintenance environment. SMMs are to use their judgement together with the risk assessment requirement described in this section to determine if a task is simple or complex. The SMMs shall justify and formally record any tasks they have assessed as suitable simple tasks. The MMP shall also contain or reference the process to assess and assign out-of-trade authorisations.",
+      "8.2 Where staff are to be employed as a Tradesperson or Trade Supervisor on other than simple tasks, then such staff shall undergo an RPL/RCC assessment by an Aeroskills RTO, and complete any necessary training to gain the applicable competency units.",
+      "8.3 Risk assessment. The risk assessment is to be documented, retained and cross referred to the document recording the member's authorisation. If the SMM assesses the risk to be acceptable, then the tradesperson may be authorised for that task as required by the TAMM and IAW the MMP. The risk assessment process comprises two steps, specifically:",
+      "(a) Assessment of task complexity. Task complexity is primarily related to the underpinning skills and knowledge required to perform it. An important element to be considered by the SMM is the degree of diagnosis required to undertake the task. A technician is more likely to be suited for work in a cross-trade capacity where the task is mechanistic in nature rather than if the task relies on fault diagnosis, because fault diagnosis challenges the individual's underpinning skills and knowledge.",
+      "(b) Assessment of risk. The second aspect the SMM must take into account is the risk of the task being performed incorrectly because the individual does not possess the appropriate underpinning skills and knowledge. Mitigating actions, such as the required level of supervision should also be considered. AS4360 is one acceptable STD for risk assessment."
+    ],
+    "bbox": [
+      115,
+      121,
+      882,
+      604
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "9. TASK AUTHORISATION",
+    "text_level": 2,
+    "bbox": [
+      112,
+      616,
+      344,
+      630
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "9.1 Background. The ADF assigns responsibility for the condition and readiness for use of aircraft and aeronautical product to the SMM. The SMM is to ensure that personnel who certify as having performed or supervised work are proficient and been formally task authorised to perform these duties.",
+    "bbox": [
+      114,
+      644,
+      882,
+      700
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "NOTE",
+    "text_level": 2,
+    "bbox": [
+      495,
+      714,
+      547,
+      726
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "Diversity of aviation maintenance environments precludes specific standards being specified for literacy, disabilities and attitude to safety and maintenance procedures. The SMM will have to use judgement and experience to determine appropriate standards in these criteria, relevant to the task.",
+    "bbox": [
+      159,
+      726,
+      873,
+      769
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "9.2 Regulatory Requirement. Authorisations and annual re-authorisations shall be carried out in accordance with TAMM Regulation 4.5.",
+    "bbox": [
+      114,
+      796,
+      882,
+      825
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "9.3 Task authorisation pre-requisites. Prior to task authorisation, SMMs shall ensure that individuals have the necessary competencies, application training and experience. Application training includes safety and familiarisation courses for the aircraft, system or aeronautical product that is relevant to the task. Additionally, maintenance or operation of some systems (eg explosive ordnance, egress, oxygen systems, engine running) requires specific, mandatory training. These mandatory courses are detailed at Section 10. SMMs shall ensure individuals have completed relevant pre-requisite courses prior to task authorisation.",
+    "bbox": [
+      114,
+      837,
+      882,
+      907
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "page_number",
+    "text": "10",
+    "bbox": [
+      490,
+      933,
+      510,
+      945
+    ],
+    "page_idx": 19
+  },
+  {
+    "type": "text",
+    "text": "",
+    "bbox": [
+      206,
+      66,
+      884,
+      95
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "9.4 Delegation of Authority to Authorise. The SMM may only delegate the function of task authorisation of tradespeople, and not of supervisor or higher roles. Where an SMM chooses to delegate tradesperson task authorisation, the SMM is to provide written instruction to the delegate, outlining the delegate's specific duties and responsibilities for the task authorisation process. AAP 7001.059 Sect 7 can be used as a guide for the content of the written instruction."
+    ],
+    "bbox": [
+      114,
+      106,
+      884,
+      176
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "9.5 Task authorisation responsibilities. When authorising or re-authorising personnel to supervise or perform work and make the associated certification, the SMM or delegate is:",
+    "bbox": [
+      114,
+      190,
+      884,
+      219
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) acknowledging that the person has the technical and administrative competency and/or qualifications required to perform, supervise or inspect the work and complete the associated certification covered by the authorisation;",
+      "(b) requiring the person to perform the prescribed duties to the required standards; and",
+      "(c) acknowledging that the person is proficient and has the personal attributes to reliably and consistently perform the duties to the standard required."
+    ],
+    "bbox": [
+      206,
+      232,
+      884,
+      344
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "9.6 Task Authorisation Records. The SMM is to record and promulgate authorisations in writing through appropriate means as defined or referenced in the MMP (TAMM Regulation 4.5.1). Authorised personnel are to be provided with and maintain a copy of assigned authorisations.",
+    "bbox": [
+      114,
+      357,
+      884,
+      399
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "9.7 Personnel Under Training. Personnel who are under training for a maintenance task, leading to task authorisation, may perform the work of a tradesperson providing:",
+    "bbox": [
+      114,
+      412,
+      884,
+      441
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) The maintenance is performed under direct supervision.",
+      "(b) The tradesperson supervising is authorised to carry out the task."
+    ],
+    "bbox": [
+      208,
+      453,
+      690,
+      551
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "(c) Mandatory off-the-job training for that task has been completed by the trainee (ie underpinning skills and knowledge from relevant competency unit(s) and any necessary application courses).",
+    "bbox": [
+      208,
+      509,
+      882,
+      551
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "9.8 Non-Tradesperson Task Authorisation. Personnel are only to be authorised or re-authorised to perform a non-tradesperson maintenance task when the SMM or delegate has verified that the individual meets the documented proficiency criteria required by the MMP. In order to be authorised an individual shall demonstrate to the SMM or delegate that he/she:",
+    "bbox": [
+      114,
+      564,
+      884,
+      619
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) Understands the requirements and limitations in undertaking simple maintenance tasks as a non-tradesperson per clause 5.9 of this Standard.",
+      "(b) Has completed any necessary competency unit(s) required in relation to the suitable non-tradesperson task(s).",
+      "(c) Has completed appropriate application, safety and awareness course(s) as defined or referenced in the MMP for non-tradespeople."
+    ],
+    "bbox": [
+      206,
+      633,
+      884,
+      745
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "(d) Is able to read, write and understand English to a level appropriate to the task(s).",
+    "bbox": [
+      208,
+      758,
+      803,
+      773
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "(e) Does not suffer from any disability likely to affect necessary skill or judgement.",
+    "bbox": [
+      208,
+      786,
+      800,
+      801
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "(f) Has displayed a positive attitude to safety and maintenance procedures.",
+    "bbox": [
+      208,
+      813,
+      741,
+      828
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "text",
+    "text": "9.9 Tradesperson Task Authorisation. Personnel are only to be authorised or re-authorised to perform a maintenance task when the SMM or delegate has verified that the individual meets the documented criteria specified in the MMP. In order to be authorised an individual shall demonstrate to the SMM or delegate that he/she:",
+    "bbox": [
+      114,
+      842,
+      884,
+      897
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "page_number",
+    "text": "11",
+    "bbox": [
+      490,
+      933,
+      507,
+      945
+    ],
+    "page_idx": 20
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) Meets the requirements to be an Aviation Tradesperson as per clause 7.3 or 7.4 of this Standard, or a Non-Aviation Tradesperson per clause 7.5 of this Standard.",
+      "(b) Has completed the applicable competency unit(s) required in relation to the task.",
+      "(c) Has completed appropriate application course(s) as defined or referenced in the MMP.",
+      "(d) Is able to read, write and understand English to a level appropriate to the task.",
+      "(e) Does not suffer from any disability likely to affect technical skill or judgement.",
+      "(f) Has displayed a positive attitude to safety and maintenance procedures."
+    ],
+    "bbox": [
+      206,
+      66,
+      884,
+      235
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "9.10 Trade Supervisor Authorisation. Personnel are only to be authorised or re-authorised to supervise a maintenance task where the SMM has verified that the individual meets that criteria required by the MMP. In order to be authorised the individual shall demonstrate to the SMM that he/she:",
+    "bbox": [
+      114,
+      247,
+      884,
+      302
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) Meets the requirements to be an Aviation Tradesperson as per clause 7.3 or 7.4 of this Standard.",
+      "(b) Holds the applicable competency unit(s) required in relation to the task.",
+      "(c) Has completed appropriate application course(s) as defined or referenced in the MMP.",
+      "(d) Has requisite supervision qualification, training and experience to supervise the task in accordance with the MMP.",
+      "(e) Has at least five years aviation experience, (which may include an apprenticeship), in maintenance of aircraft or on aeronautical product if supervising in a workshop.",
+      "(f) Has at least 12 months experience as a fully qualified tradesperson on Aircraft type or, for workshop maintenance, at least 12 months experience on relevant aeronautical product.",
+      "(g) Has displayed a positive attitude to safety and maintenance procedures."
+    ],
+    "bbox": [
+      206,
+      315,
+      882,
+      554
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "9.11 Self Certifying Maintainer Authorisation. Self Certifying Maintainers are authorised to certify for both the Tradesperson and Trade Supervisor level of certifications on maintenance designated as Self Certifying Maintenance (SCM) tasks by the SMM. This does not remove the requirement for Independent Inspections for Critical Maintenance Operations (CMOs). A Self Certifying Maintainer must first be a trade supervisor for the specific task(s) and have demonstrated adequate performance as a supervisor to the satisfaction of the SMM. Personnel are only to be authorised or re-authorised to perform Self Certification of maintenance tasks when the SMM has verified that the individual meets the criteria required herein and by the MMP.",
+    "bbox": [
+      114,
+      565,
+      884,
+      676
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "text",
+    "text": "9.12 Independent Inspectors. Personnel are only to be authorised or re-authorised to perform Independent Inspections of maintenance tasks when the SMM has verified that the individual meets the criteria required by the MMP. In order to be authorised the individual shall demonstrate to the SMM that he/she:",
+    "bbox": [
+      114,
+      688,
+      884,
+      745
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) has an appropriate qualification in relation to the task;",
+      "(b) has completed appropriate application course(s) as defined or referenced in the MMP;",
+      "(c) has sufficient knowledge of the task and the inspection requirements;",
+      "(d) has skills to perform inspection to the required standards;",
+      "(e) is able to read, write and understand English to a level appropriate to the task;",
+      "(f) does not suffer from any disability likely to affect technical skill or judgement;"
+    ],
+    "bbox": [
+      208,
+      758,
+      840,
+      914
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "page_number",
+    "text": "12",
+    "bbox": [
+      490,
+      933,
+      510,
+      945
+    ],
+    "page_idx": 21
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(g) has displayed a positive attitude to safety and maintenance procedures;",
+      "(h) where the individual is a tradesperson, has at least four years aviation experience in maintenance of aircraft, or, for workshop maintenance, at least 12 months experience on relevant aeronautical product; and",
+      "(i) where the individual is a tradesperson, has at least two years experience as Trade Supervisor on Aircraft type or, for workshop maintenance, at least 12 months experience on relevant aeronautical product:",
+      "(j) where the individual is a Professional Engineer, has a relevant discipline engineering degree and at least 12 months experience in maintenance of aircraft, or, for off-aircraft maintenance, at least 12 months experience on relevant aeronautical product; and",
+      "(k) where the individual is a Professional Engineer, has at least 6 months experience on Aircraft type or, for off-aircraft maintenance, at least 6 months experience on relevant aeronautical product."
+    ],
+    "bbox": [
+      208,
+      66,
+      884,
+      301
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "9.13 Out-of-trade Employment. Tradespeople may be authorised to perform limited maintenance tasks by following the requirements of Section 8. The MMP shall contain or reference a process on how the SMM will assess and authorise out-of-trade authorisations and meet the requirements of this Standard.",
+    "bbox": [
+      114,
+      315,
+      882,
+      369
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "10. MANDATORY TRAINING REQUIREMENTS",
+    "text_level": 2,
+    "bbox": [
+      115,
+      383,
+      495,
+      397
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "10.1 Personnel authorised to perform maintenance shall have completed the safety, familiarisation and application training courses and if required, the relevant ADF or ADF approved off-the-job training as specified in the Statement of Work or MMP.",
+      "10.2 The following formal training requirements are mandatory for specific maintenance activities.",
+      "10.2.1 Explosive Ordnance. For Explosive Ordnance (EO) and related aircraft maintenance, other than egress system maintenance and safety and distress pyrotechnics inspection and handling, completion of the Explosive Ordnance Course is mandatory pre-requisite training before subsequent Weapon System specific EO training.",
+      "10.2.2 Egress system. Egress system maintenance, other than basic safing functions, requires completion of type specific egress system courses.",
+      "10.2.3 Safety and Survival Distress Pyrotechnics. Safety, survival and distress pyrotechnics inspection and handling requires completion of the ADF ALSFITT Safety and Survival Distress Pyrotechnics Course.",
+      "10.2.4 Oxygen replenishment. Oxygen system replenishment requires tradespeople to complete the type specific oxygen course.",
+      "10.2.5 Engine Ground Running. Ground running of installed and uninstalled military aircraft engines requires completion of the applicable ADF aircraft type, engine specialist course or equivalent as approved by DAIRMAINT, DGTA-ADF. Additionally, personnel authorised to ground run installed and uninstalled military aircraft engines are to complete a formal on-job aircraft engine ground running training program, be formally assessed as competent and be reassessed at least annually."
+    ],
+    "bbox": [
+      115,
+      410,
+      882,
+      785
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "NOTE",
+    "text_level": 2,
+    "bbox": [
+      502,
+      790,
+      552,
+      804
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "Ground running of installed rotary wing aircraft engines. Maintenance personnel shall only ground run installed rotary wing aircraft engines with the rotors disengaged. Only qualified pilots shall ground run installed rotary wing aircraft engines with the rotors engaged.",
+    "bbox": [
+      166,
+      805,
+      865,
+      847
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "10.2.6 Confined Space Entry. Maintenance personnel shall only be authorised to enter aircraft or aeronautical product confined spaces after they have completed the associated Confined Space Entry training and have been assessed as competent for the confined space entry role for which they are to be authorised.",
+    "bbox": [
+      115,
+      859,
+      882,
+      915
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "page_number",
+    "text": "13",
+    "bbox": [
+      490,
+      933,
+      509,
+      945
+    ],
+    "page_idx": 22
+  },
+  {
+    "type": "text",
+    "text": "10.3",
+    "bbox": [
+      115,
+      66,
+      149,
+      79
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "ADF Enterprise Specific Competency Standards. Where an ADF Enterprise Specific Competency Standard is a requirement for a maintenance task, any tradesperson employed in that maintenance task must have been assessed as competent in that ADF enterprise competency standard prior to task authorisation.",
+    "bbox": [
+      206,
+      66,
+      884,
+      122
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "11. Guidance and Reference Material",
+    "text_level": 2,
+    "bbox": [
+      115,
+      163,
+      394,
+      176
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "11.1 The following listed resources may prove useful in application of this Standard:",
+    "bbox": [
+      115,
+      191,
+      751,
+      205
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "www.ntis.gov.au The National Training Information Service (NTIS) provides a web site that includes download availability of all the current nationally endorsed Training Packages. The NTIS site also provides a range of other information and services for training. In particular the following Training Packages may be of assistance in meeting the requirements and intent of this Standard:",
+    "bbox": [
+      174,
+      219,
+      885,
+      276
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "- http://www.ntis.gov.au/?/trainingpackage/TDA03/ - Aviation Training Package",
+      "- www.ntis.gov.au/?/trainingpackage/MEA97/- Aeroskills Training Package"
+    ],
+    "bbox": [
+      233,
+      287,
+      806,
+      331
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "www.mskills.com.au Manufacturing Skills Australia is the Industry Skills Council that has carriage of the development of Aeroskills Training Package. Details of current status of development of the package are available and a means of contributing to future developments.",
+      "www.tdtaustralia.com Transport and Logistics Industry Skills Council has carriage of the development of Aviation Training Package which covers a range of aviation competencies and skills other than for maintenance.",
+      "www.defence.gov.au/dgta The DGTA internet site contains up-to-date releases of this Standard and other relevant technical airworthiness policy and guidance material that would be relevant to any AMO operating to the requirements of this Standard."
+    ],
+    "bbox": [
+      174,
+      343,
+      885,
+      496
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "page_number",
+    "text": "14",
+    "bbox": [
+      490,
+      933,
+      510,
+      945
+    ],
+    "page_idx": 23
+  },
+  {
+    "type": "text",
+    "text": "ANNEX A",
+    "text_level": 2,
+    "bbox": [
+      463,
+      73,
+      544,
+      86
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "AVIATION TECHNICAL TRAINING MAP – A BRIEF GUIDE TO AUSTRALIAN AVIATION TRADE QUALIFICATIONS",
+    "text_level": 2,
+    "bbox": [
+      119,
+      93,
+      890,
+      121
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "table",
+    "img_path": "images/0825c9311d9c4e7b85fd6668bab72d307c9d143c06f023b21f6ff4f607ec89c0.jpg",
+    "table_caption": [],
+    "table_footnote": [
+      "Note: This table provides guidance on the more common initial trade training outcomes; it does not address all aviation and related trade skilling regimes in Australia."
+    ],
+    "table_body": "<table><tr><td>DATE</td><td colspan=\"3\">CIVIL REGIME</td><td colspan=\"3\">MILITARY REGIME</td></tr><tr><td rowspan=\"2\">Pre-89</td><td>Trade Structure</td><td>Training</td><td>Qualification</td><td>Trade Structure</td><td>Training</td><td>Qualification</td></tr><tr><td>Airframes Engines Radio Instrument Electrical</td><td>Single Trade Training</td><td>Certificate of Proficiency (Single Trade) issued by state VET</td><td>Airframes Engines Radio Instrument Electrical</td><td>Single Trade Training</td><td>Certificate of Proficiency (Single Trade) issued by NSW VET</td></tr><tr><td>89 – 92</td><td colspan=\"3\">National Aeroskills Project (included ADF involvement)</td><td></td><td></td><td></td></tr><tr><td>92 – 94</td><td>Nil change</td><td>Nil change</td><td>As above</td><td>TTR introduced Aircraft, Avionics and Structures</td><td>NCC 91</td><td>No formal qual unless 1995 Make up Modules completed.</td></tr><tr><td>95</td><td colspan=\"2\">NAC95 developed. Curriculum based, CASA driven. No competencies.</td><td></td><td></td><td colspan=\"2\">Make Up Modules developed to convert NCC91 personnel to NAC 95 standard</td></tr><tr><td>96</td><td>Avionics, Mechanical or Structures</td><td>NAC 95</td><td>AME (Mech, Av or Struct) after 4 yrs OJT</td><td>As above</td><td>NAC 95</td><td>AME (Mech, Av or Struct) after 4 yrs OJT</td></tr><tr><td>97</td><td colspan=\"6\">ANTA rejects NAC95 as it lacked defined competencies</td></tr><tr><td>98</td><td colspan=\"6\">National Aeroskills Training Package developed (MEA 97 v1) Journal of Industrial Experience not available initially.</td></tr><tr><td>99</td><td colspan=\"3\"></td><td></td><td>NAC 95 + Competency Log</td><td></td></tr><tr><td>2000</td><td>Mechanical Avionics Structures</td><td>MEA 97 V1 (includes Competency Log)</td><td>Cert IV AME – Mech Cert IV AME – Av Cert IV AME - Struct</td><td>As above</td><td>As above</td><td>Cert IV AME – Mech Cert IV AME – Av Cert IV AME - Struct</td></tr><tr><td>2003</td><td>As above</td><td>MEA 97 V3</td><td>As above</td><td>As above</td><td>As above</td><td>As above</td></tr><tr><td>2005</td><td>As above</td><td>MEA 97 V4</td><td>As above</td><td>As above</td><td>MEA 97 V4</td><td>As above</td></tr></table>",
+    "bbox": [
+      78,
+      134,
+      944,
+      706
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      776,
+      24,
+      905,
+      38
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "header",
+    "text": "ANNEX A",
+    "bbox": [
+      828,
+      38,
+      905,
+      49
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      500,
+      937,
+      510,
+      947
+    ],
+    "page_idx": 24
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      413,
+      494,
+      598,
+      522
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      102,
+      24,
+      233,
+      38
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "header",
+    "text": "ANNEX A",
+    "bbox": [
+      104,
+      39,
+      183,
+      51
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      499,
+      933,
+      510,
+      945
+    ],
+    "page_idx": 25
+  },
+  {
+    "type": "text",
+    "text": "ANNEX B",
+    "text_level": 2,
+    "bbox": [
+      458,
+      86,
+      539,
+      100
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "GUIDANCE ON PREVIOUS ON-AIRCRAFT MAINTENANCE QUALIFICATIONS",
+    "text_level": 2,
+    "bbox": [
+      184,
+      106,
+      811,
+      121
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS.",
+    "text_level": 2,
+    "bbox": [
+      114,
+      149,
+      633,
+      163
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "1.1 An alternate structure of single trade technicians existed before establishment of the aircraft and avionic trade streams with the introduction of the National Core Curriculum (NCC91) for ADF Aviation Trades in 1991 and National Aerospace Curriculum (NAC95) for both Civil and ADF trades in 1995. The single trade training was to a greater depth than the subsequent training systems; including MEA97 based training which used the NAC95 as an underpinning curriculum. Thus, the competencies defined in the Aeroskills Training Package do not directly translate to single trade trained personnel. Guidance on competency relationships between old single trades training (refer to as Allied Trades) and the Aeroskills Training Package is provided at annex C. Caution should be exercised when considering employment history of individuals who were old single trade trained, as they may not have exercised task authorisations outside their core trade even if they were employed in Aircraft or Avionic Technician positions after 1991.",
+    "bbox": [
+      115,
+      176,
+      884,
+      328
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "table",
+    "img_path": "images/699e749fa3d5688d8c0cae67d2ddd90d40ddd9e3aa79dfad78453016510ccb39.jpg",
+    "table_caption": [],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Trade Group</td><td>Civilian Trades</td><td>RAAF Trades</td><td colspan=\"2\">Army Trades</td><td>RAN Trades</td></tr><tr><td>Radio</td><td>Certificate of Proficiency-Radio</td><td>RADTECHA</td><td rowspan=\"3\">Tech AVECN412</td><td>Radio Mechanic ECN225</td><td>ATC</td></tr><tr><td>Instruments</td><td>Certificate of Proficiency-Instruments</td><td>INSTFITT</td><td rowspan=\"2\">Technician Electronics Systems Air (TESAIR) ECN414</td><td rowspan=\"2\">ATWL</td></tr><tr><td>Electrical</td><td>Certificate of Proficiency-Electrical</td><td>ELECFITT</td></tr><tr><td>Airframe</td><td>Certificate of Proficiency-Airframe</td><td>AFFITT</td><td rowspan=\"2\">Tech ACFT ECN 411</td><td rowspan=\"2\">Fitter Aircraft ECN143</td><td rowspan=\"3\">ATA</td></tr><tr><td>Engines</td><td>Certificate of Proficiency-Engine</td><td>ENGFITT</td></tr><tr><td>Structures</td><td>Certificate of Proficiency-Structures</td><td>AMWKR</td><td>ASFITT ECN 153</td><td>Metal-smith Aviation Maintenance ECN235</td></tr></table>",
+    "bbox": [
+      114,
+      340,
+      884,
+      584
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "2. 1991-1997 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS",
+    "text_level": 2,
+    "bbox": [
+      112,
+      596,
+      633,
+      611
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "2.1 ADF Trained. Personnel holding NCC91 (with make up modules) $^{5}$ or NAC95 AME qualifications were employed as an Avionics Technician, Aircraft Technician or Structural Fitter. Such personnel should hold certificates of training form their respective Service that indicates the training completed; they may also hold a Certificate of Proficiency issued by the NSW Department of Employment and Training (NSWDET).",
+      "2.2 Civil Trained. Personnel holding NAC95, MEA97 AME qualification or a LAME licence were employed as an Avionics Technician, Mechanical Technician or Structural Fitter. Caution should be exercised when considering employment history of LAMEs who were old single trade trained, as they may not have exercised task authorisations outside their core trade even if they were employed in Aircraft or Avionic Technician positions after 1995."
+    ],
+    "bbox": [
+      112,
+      624,
+      884,
+      777
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "header",
+    "text": "ANNEX B",
+    "bbox": [
+      805,
+      38,
+      882,
+      49
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "page_footnote",
+    "text": "$^{5}$ Make Up Modules were extra training that brought RAAF NCC91 trained personnel to NAC95 standard. Army and Navy NCC91 trained personnel completed all NCC91 modules and achieved the NAC95 standard during their initial training.",
+    "bbox": [
+      112,
+      878,
+      880,
+      923
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      494,
+      935,
+      504,
+      947
+    ],
+    "page_idx": 26
+  },
+  {
+    "type": "text",
+    "text": "3. AEROSKILLS TRAINING PACKAGE ALIGNED TRAINING AND QUALIFICATIONS.",
+    "text_level": 2,
+    "bbox": [
+      112,
+      65,
+      808,
+      80
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "4. OTHER ADF AVIATION QUALIFICATIONS",
+    "text_level": 2,
+    "bbox": [
+      115,
+      519,
+      492,
+      534
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "3.1 ADF Approved Aerospace Assessors. ADF Aviation Technicians who hold or have held task authorisation as an Approved Aerospace Assessor (AAA) have been assessed as competent in the Aeroskills Training Package competencies for which they hold certification to assess. Accordingly, any pre-CBTA ADF aviation technician who has sufficient formal evidence of their standing as an AAA, including a certificate that details the competencies for which they hold AAA authority, has previously been assessed as competent in those listed competencies by the ADF. Such ADF Aviation Technicians who have applied whilst a serving member may already have a Service issued Aeroskills Cert IV qualification or Statement of Attainment. AAA technicians who did not apply for an Aeroskills qualification or Statement of Attainment whilst a serving member may find their record of employment and AAA certificate useful when approaching an RTO for RCC/RPL.",
+      "3.2 ADF trained NCC91 (with make up modules). ADF maintenance personnel who received NCC91 training, including Make-Up-Modules, have received the equivalent underpinning knowledge training and training experience as ADF Aeroskills MEA97 trained personnel.",
+      "3.3 NAC95 Training. The NAC95 curriculum was also the underpinning knowledge and skills training provided for MEA97 Version 1. ADF and Civil aviation tradespeople who completed NAC95 training therefore have completed the underpinning and knowledge component of the Aeroskills Training Package for MEA97 Version 1. Consideration of RPL/RCC for these personnel is therefore dependant upon their employment history providing and equivalent outcome to the MEA97 Version1 Journal of Industrial Experience.",
+      "3.4 MEA97 Version 1 and 3. The Aeroskills Training Package commenced and was issued in 1997 as Version 1. Subsequent revisions have resulted in Versions 3 and 4 being formally endorsed and issued (there was no formal issue of a Version 2). Each successive version of the Aeroskills Training Package contains change information and mapping of competencies between versions where there have been changes and/or additions. This information will be of assistance in considering the current competency of aviation tradespeople who hold qualification or Statements and Attainment for superseded versions.",
+      "4.1 Systems Technician. The ADF has provided training to Advanced Diploma level to selected technicians who had either single trade or Cert IV AME qualifications. The Advanced Diploma provides underpinning skills and knowledge (theory) in both avionics and mechanical disciplines. However, post-training employment is variable. Thus, while their qualifications indicate an apparent ability to work in multiple Aeroskills Streams, the employment history of a systems technician must be considered with regard to RPL/RCC.",
+      "4.2 Advanced Avionics Technicians. The RAAF has trained selected single trade (Instrument, Radio or Electrical) or Cert IV AME (Avionics) technicians to Diploma level. This training enabled such personnel to operate and maintain Automatic Test Equipment (ATE). The advanced training did not extend the breadth of the original single trade qualification."
+    ],
+    "bbox": [
+      115,
+      93,
+      884,
+      700
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "header",
+    "text": "DEF (AUST) 9022",
+    "bbox": [
+      114,
+      24,
+      248,
+      38
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "header",
+    "text": "ANNEX B",
+    "bbox": [
+      115,
+      38,
+      194,
+      49
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 27
+  },
+  {
+    "type": "text",
+    "text": "ANNEX C",
+    "text_level": 2,
+    "bbox": [
+      458,
+      87,
+      539,
+      100
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "ALLIED TRADES",
+    "text_level": 1,
+    "bbox": [
+      428,
+      108,
+      568,
+      119
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "1. Allied Trades",
+    "text_level": 2,
+    "bbox": [
+      115,
+      150,
+      247,
+      163
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "1.1 The avionics allied trade groups are: Radio, Instruments and Electrical. The mechanical allied trade groups are: Airframe and Engines. They were trained to a deeper level in both academics and practical skills than the CBTA-trained technicians (ie those trained under CBTA-based NAC95 courses or MEA97). Thus, the competencies defined in the latter two schemes are not directly transferable to single trade trained personnel.",
+    "bbox": [
+      115,
+      176,
+      882,
+      247
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "1.2 Single trade technicians have the necessary training to support competency in part of the present Mechanical or Avionics trade streams. Certificates of training issued prior to CBTA-based training list subjects or learning outcomes studied. However, there is no direct link between these subjects/learning outcomes and competencies.",
+    "bbox": [
+      115,
+      260,
+      884,
+      315
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "2. SINGLE AND ALLIED TRADES COMPETENCIES",
+    "text_level": 2,
+    "bbox": [
+      114,
+      328,
+      534,
+      343
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "text",
+    "text": "2.1 The following table gives an indication only of the competency skill sets that the single and allied trade groups may hold. The member will still require evidence of application training, experience and task authorisation to support RPL/RCC. This evidence should be available where the single aviation trade technician holds appropriate records of employment. “Partially Qualified” in the tables below indicate that some competency elements were supported in the training and should have been achieved.",
+    "bbox": [
+      112,
+      357,
+      882,
+      439
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "table",
+    "img_path": "images/423c8400d2fb56f775bb03f9e397d3ae22ada791d136bad3240ec1f65b8ce28c.jpg",
+    "table_caption": [
+      "MEA 97 version 3/4 Avionics qualification and allied single trade groups"
+    ],
+    "table_footnote": [
+      "Note 1: Only if the member has completed Oxy specialist course.",
+      "Note 2: Only if member has completed a Micro Miniature Repair soldering course."
+    ],
+    "table_body": "<table><tr><td>MEA97 3/4 Competency Units</td><td>Radio Trade Group</td><td>Instrument Trade Group</td><td>Electrical Trade Group</td><td>Armament Trade Group</td></tr><tr><td>101</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>103</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>105</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>107</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>108</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>109</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>201</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>202</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>203</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>204</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>205</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>206</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>207</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>208</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>209</td><td>Note 1</td><td>Qualified</td><td>Note 1</td><td>Note 1</td></tr><tr><td>210</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>211</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>212</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>213</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>214</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>215</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>216</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>217</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>218</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>219</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>220</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>221</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>222</td><td>Note 1</td><td>Qualified</td><td>Note 1</td><td>Note 1</td></tr><tr><td>223</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>224</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>225</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>226</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>227</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>228</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>229</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>230</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>231</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>232</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>233</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>234</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>238</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>239</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>240</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>246</td><td></td><td></td><td>Qualified</td><td></td></tr><tr><td>247</td><td></td><td></td><td>Qualified</td><td></td></tr><tr><td>248</td><td></td><td>Qualified</td><td></td><td></td></tr><tr><td>249</td><td>Qualified</td><td></td><td></td><td></td></tr><tr><td>250</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td></td></tr><tr><td>251</td><td>Note 1</td><td>Qualified</td><td>Note 1</td><td>Note 1</td></tr><tr><td>252</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td></td></tr><tr><td>258</td><td>Qualified</td><td>Qualified</td><td></td><td></td></tr><tr><td>260</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>261</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>262</td><td>Qualified</td><td>Qualified</td><td>Qualified</td><td></td></tr><tr><td>263</td><td>Note 2</td><td>Note 2</td><td>Note 2</td><td></td></tr></table>",
+    "bbox": [
+      115,
+      477,
+      895,
+      910
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      754,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "header",
+    "text": "ANNEX C",
+    "bbox": [
+      805,
+      38,
+      882,
+      49
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      494,
+      937,
+      502,
+      947
+    ],
+    "page_idx": 28
+  },
+  {
+    "type": "table",
+    "img_path": "",
+    "table_caption": [],
+    "table_footnote": [
+      "",
+      ""
+    ],
+    "bbox": [
+      115,
+      64,
+      895,
+      480
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "table",
+    "img_path": "images/fc9f407f02f4a9bf53ca6094d76aea3653ef960a6d818b788d502d48033f3b02.jpg",
+    "table_caption": [
+      "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups"
+    ],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>MEA97 Version 3/4 Competency Units</td><td>Engine Trade Group</td><td>Airframe Trade Group</td><td>Structural Trade Group</td></tr><tr><td>101</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>103</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>105</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>107</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>108</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>109</td><td>Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>301</td><td>Qualified</td><td>Qualified</td><td>Partially Qualified</td></tr><tr><td>302</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td></tr><tr><td>303</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td></tr><tr><td>304</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td></tr><tr><td>305</td><td>Partially Qualified</td><td>Qualified</td><td>Partially Qualified</td></tr><tr><td>306</td><td>Qualified</td><td>Partially Qualified</td><td>Partially Qualified</td></tr><tr><td>307</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>308</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>309</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>310</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>311</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td></tr><tr><td>312</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>313</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>314</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>315</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>316</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>317</td><td>Partially Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>318</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>319</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>320</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>321</td><td>Partially Qualified</td><td>Qualified</td><td></td></tr><tr><td>322</td><td>Qualified</td><td>Partially Qualified</td><td></td></tr><tr><td>327</td><td></td><td></td><td>Qualified</td></tr><tr><td>328</td><td>Partially Qualified</td><td>Partially Qualified</td><td>Qualified</td></tr><tr><td>329</td><td></td><td>Qualified</td><td></td></tr><tr><td>330</td><td></td><td>Qualified</td><td></td></tr><tr><td>331</td><td>Qualified</td><td></td><td></td></tr><tr><td>332</td><td>Qualified</td><td>Qualified</td><td></td></tr><tr><td>333</td><td>Qualified</td><td></td><td></td></tr><tr><td>334</td><td></td><td>Qualified</td><td></td></tr><tr><td>335</td><td>Qualified</td><td></td><td></td></tr><tr><td>336</td><td>Qualified</td><td></td><td></td></tr><tr><td>337</td><td>Qualified</td><td></td><td></td></tr><tr><td>338</td><td>Qualified</td><td>Qualified</td><td></td></tr><tr><td>401</td><td>Partially Qualified</td><td>Qualified</td><td>Qualified</td></tr><tr><td>402</td><td></td><td></td><td>Qualified</td></tr><tr><td>403</td><td></td><td></td><td>Qualified</td></tr><tr><td>404</td><td></td><td></td><td>Qualified</td></tr><tr><td>405</td><td></td><td></td><td>Qualified</td></tr><tr><td>406</td><td></td><td></td><td>Qualified</td></tr><tr><td>407</td><td></td><td></td><td>Qualified</td></tr><tr><td>408</td><td></td><td></td><td>Qualified</td></tr><tr><td>409</td><td></td><td></td><td>Qualified</td></tr><tr><td>410</td><td></td><td>Qualified</td><td>Qualified</td></tr></table>",
+    "bbox": [
+      112,
+      573,
+      892,
+      919
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      115,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "header",
+    "text": "ANNEX C",
+    "bbox": [
+      115,
+      38,
+      194,
+      49
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 29
+  },
+  {
+    "type": "table",
+    "img_path": "",
+    "table_caption": [],
+    "table_footnote": [],
+    "bbox": [
+      112,
+      64,
+      892,
+      495
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      754,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "header",
+    "text": "ANNEX C",
+    "bbox": [
+      805,
+      38,
+      882,
+      49
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "page_number",
+    "text": "3",
+    "bbox": [
+      492,
+      934,
+      504,
+      945
+    ],
+    "page_idx": 30
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      406,
+      480,
+      591,
+      507
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      114,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "header",
+    "text": "ANNEX C",
+    "bbox": [
+      115,
+      39,
+      194,
+      49
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "page_number",
+    "text": "4",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 31
+  },
+  {
+    "type": "text",
+    "text": "ANNEX D",
+    "text_level": 2,
+    "bbox": [
+      458,
+      73,
+      539,
+      86
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "GUIDANCE ON AERONAUTICAL PRODUCT (OFF-AIRCRAFT) MAINTENANCE QUALIFICATIONS AND COMPETENCIES",
+    "text_level": 2,
+    "bbox": [
+      183,
+      93,
+      815,
+      121
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "1. Aeronautical product guidance",
+    "text_level": 2,
+    "bbox": [
+      115,
+      150,
+      374,
+      165
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "1.1 This annex provides guidance on aviation trade qualifications of tradespeople who may be considered for employment as an Aviation Tradesperson on aeronautical product/off-aircraft maintenance. The qualifications and competencies are, or were traditionally, part of the aeroskills trades group. The information included in this annex may be useful in preparing applications for RPL/RCC where tradespeople hold earlier or alternate qualifications and competencies. Guidance on the employment of non-aviation tradespeople in aeronautical product/off-aircraft maintenance is provided at annex F.",
+    "bbox": [
+      115,
+      176,
+      884,
+      274
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "NOTE",
+    "text_level": 2,
+    "bbox": [
+      472,
+      287,
+      524,
+      299
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "There is some overlap between Aircraft Mechanic (AM) and AME competencies. Thus an AME may be suitable for some aeronautical product maintenance.",
+    "bbox": [
+      115,
+      300,
+      880,
+      328
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Pre CBTA qualifications",
+    "text_level": 2,
+    "bbox": [
+      114,
+      340,
+      297,
+      356
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Civil trained aviation tradesperson in:",
+    "text_level": 2,
+    "bbox": [
+      112,
+      369,
+      393,
+      383
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Radio – Certificate of proficiency Radio Instruments – Certificate of proficiency Instrument Electrical – Certificate of proficiency Electrical Airframe – Certificate of proficiency Airframe Engine – Certificate of proficiency Engine Structures – Certificate of proficiency Structures",
+    "bbox": [
+      112,
+      383,
+      463,
+      465
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "ADF trained aviation tradesperson in:",
+    "text_level": 2,
+    "bbox": [
+      114,
+      479,
+      393,
+      492
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "RAAF",
+    "text_level": 2,
+    "bbox": [
+      115,
+      492,
+      164,
+      504
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Radio – RADTECHA",
+    "bbox": [
+      115,
+      505,
+      268,
+      517
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Instruments – INSTFITT",
+    "bbox": [
+      115,
+      520,
+      287,
+      532
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Electrical - ELECFITT",
+    "bbox": [
+      115,
+      534,
+      277,
+      545
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Airframe - AFFITT",
+    "bbox": [
+      115,
+      547,
+      253,
+      559
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Engine – ENGFITT",
+    "bbox": [
+      115,
+      561,
+      253,
+      573
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Structures - AMWKR",
+    "bbox": [
+      115,
+      574,
+      268,
+      586
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "ARMY",
+    "text_level": 2,
+    "bbox": [
+      115,
+      600,
+      171,
+      612
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Radio and Instrument and Electrical – Tech AV ECN412",
+    "bbox": [
+      115,
+      615,
+      502,
+      628
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Radio – Radio Mechanic ECN225",
+    "bbox": [
+      115,
+      629,
+      349,
+      641
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Instrument and Electrical – Technician Electronic Systems (TESAIR) ECN414",
+    "bbox": [
+      115,
+      643,
+      650,
+      656
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Airframe and Engine – Tech ACFT ECN411",
+    "bbox": [
+      115,
+      657,
+      418,
+      669
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Airframe and Engine – Fitter Aircraft ECN143",
+    "bbox": [
+      115,
+      669,
+      433,
+      682
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Structures - ASFITT ECN 153",
+    "bbox": [
+      115,
+      684,
+      327,
+      695
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Structures – Metal-smith Aviation Maintenance ECN235",
+    "bbox": [
+      115,
+      697,
+      502,
+      710
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "NAVY",
+    "text_level": 2,
+    "bbox": [
+      115,
+      724,
+      166,
+      736
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Radio - ATC",
+    "bbox": [
+      115,
+      738,
+      208,
+      750
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Instrument and Electrical - ATWL",
+    "bbox": [
+      115,
+      752,
+      354,
+      764
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Airframe and Engine – ATA",
+    "bbox": [
+      115,
+      764,
+      310,
+      779
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "MEA97 Version 1",
+    "text_level": 2,
+    "bbox": [
+      114,
+      799,
+      247,
+      812
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "The standing of tradespeople holding MEA97 Version 1 qualifications or statements of attainment can be determined through reference to MEA97 Version 3, Section 4, pages 70 to 76.",
+    "bbox": [
+      112,
+      820,
+      882,
+      849
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "header",
+    "text": "ANNEX D",
+    "bbox": [
+      803,
+      38,
+      880,
+      49
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      494,
+      935,
+      502,
+      947
+    ],
+    "page_idx": 32
+  },
+  {
+    "type": "text",
+    "text": "Blank Page",
+    "text_level": 2,
+    "bbox": [
+      406,
+      480,
+      591,
+      507
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      114,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "header",
+    "text": "ANNEX D",
+    "bbox": [
+      115,
+      39,
+      194,
+      49
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 33
+  },
+  {
+    "type": "text",
+    "text": "ANNEX E",
+    "text_level": 2,
+    "bbox": [
+      458,
+      86,
+      539,
+      100
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "AVIATION SPECIALIST TRADES",
+    "text_level": 2,
+    "bbox": [
+      364,
+      106,
+      631,
+      121
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "1. Aviation Specialist trades",
+    "text_level": 2,
+    "bbox": [
+      115,
+      150,
+      332,
+      165
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "1.1 Aircraft and aeronautical product maintenance requires a range of skills and knowledge beyond those provided by the Aeroskills Training Package. Personnel with the skill sets defined in this annex are termed Aviation Specialist Tradespeople; refer Table 1 below. The trades described in the following paragraphs are suitable for both on aircraft and aeronautical product maintenance in the areas of maintenance covered by their qualifications.",
+    "bbox": [
+      115,
+      176,
+      884,
+      248
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "table",
+    "img_path": "images/6e512cb80b5d6538b897050c400bc39e7cf2fa374b8cf17c9d3465e0c8cde288.jpg",
+    "table_caption": [],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Trade Group</td><td>Civilian Trades</td><td>RAAF Trades</td><td>Army Trades</td><td>RAN Trades</td></tr><tr><td>Aircraft Life Support</td><td>Nil</td><td>ALSFITT / SEW</td><td>ALSFITTECN 154</td><td>SE up to &#x27;92 post&#x27;92 ATA and ATV (OLM only)</td></tr><tr><td>Non Destructive Testing</td><td>NDT</td><td>ADATECH-NDI</td><td>Nil</td><td>ATA/ATV with formal NDT qualifications</td></tr><tr><td>Aircraft Surface Finisher</td><td>Nil</td><td>ASURFIN / SURFIN</td><td>Nil</td><td>Nil</td></tr><tr><td>Armament</td><td>Nil</td><td>ARMFITT /EOES</td><td>FITARMT ECN146</td><td>ATWO up to &#x27;84 post &#x27;84 ATV</td></tr><tr><td>Electroplater</td><td>Various see 5.1</td><td>EPLTR</td><td>Nil</td><td>Nil</td></tr><tr><td>Metal Machinist</td><td>Various see 6.1</td><td>METMACH</td><td>Nil</td><td>Nil</td></tr><tr><td>Composite maintenance</td><td>Various see 7.1</td><td>ADASTFITT</td><td>ADASTFITT ECN153</td><td>ATA</td></tr><tr><td>Aircraft Welder</td><td>Nil</td><td>ACWLDR</td><td>Nil</td><td>Nil</td></tr></table>",
+    "bbox": [
+      114,
+      258,
+      884,
+      524
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "2. Aircraft Life Support.",
+    "text_level": 2,
+    "bbox": [
+      112,
+      536,
+      309,
+      553
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "2.1 Aircraft Life Support Fitters (ALSFITT), formerly Safety Equipment Workers (SEW), are trained specifically for the maintenance of Aircraft Life Support Equipment fitted to an aircraft or worn by aircrew, with the exception of oxygen systems. Personnel employed as Life Support Fitters must have successfully completed the RAAF Aircraft Life Support Fitter course, or Certificate III in Public Safety (Aviation Life Support Maintenance). Equivalent courses or qualifications for ALSFITT must be approved by Directorate of Aircraft Maintenance (DAIRMAINT), Directorate General Technical Airworthiness (DGTA)-ADF and be delivered by a RTO or an organisation approved by Training Command (Air Force). Life support equipment/aircraft type-specific courses shall be identified or referenced in the organisation's MMP.",
+    "bbox": [
+      112,
+      565,
+      882,
+      690
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "2.2 Part qualification. An AMO's approved scope and level may not require an individual with complete skill sets provided by the Cert III in Public Safety (Aviation Life Support Maintenance) qualification. In such instances, employment of personnel with a Statement of Attainment towards that qualification may be acceptable. The MMP shall identify, or reference the competency unit identification process.",
+    "bbox": [
+      112,
+      701,
+      884,
+      771
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "3. Non Destructive Testing.",
+    "text_level": 2,
+    "bbox": [
+      112,
+      785,
+      327,
+      800
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "3.1 Only NDT technicians qualified to AS3669 (Non Destructive Testing Qualification and Registration of Personnel - Aerospace) may carry out Non Destructive Testing on ADF aircraft or aeronautical product.",
+    "bbox": [
+      112,
+      813,
+      882,
+      855
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "3.2 NDT technicians are trained to different levels of inspection and in different inspection methods. NDT technicians shall only carry out inspections to the level and method(s) for which they are qualified. Certification of NDT technicians shall be carried out annually in accordance with the process specified by AS3669 or other standard approved by DAIRMAINT, DGTA-ADF.",
+    "bbox": [
+      112,
+      868,
+      882,
+      897
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      754,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "header",
+    "text": "ANNEX E",
+    "bbox": [
+      805,
+      38,
+      882,
+      49
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      492,
+      935,
+      504,
+      948
+    ],
+    "page_idx": 34
+  },
+  {
+    "type": "text",
+    "text": "",
+    "bbox": [
+      206,
+      66,
+      882,
+      93
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "4. Aircraft Surface Finisher.",
+    "text_level": 2,
+    "bbox": [
+      112,
+      108,
+      334,
+      121
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "4.1 Surface finishing of ADF aircraft and equipment shall only be carried out by ex-ADF Aircraft surface finishers or by qualified automotive spray painters who have completed additional training to upgrade their competency to aircraft surface finisher standard. The additional training to add aircraft surface finisher skills to automotive painter must be a course of training and assessment approved by DAIRMAINT, DGTA-ADF. The 2006 review of the Aeroskills Training Package is addressing aircraft surface finishing and is expected to make provision for competencies and an AQF pathway as an aviation trade. Once available, the Aircraft Surface Finisher pathway in the Aeroskills Training Package will result in the trade becoming an Aviation Trade for the purposes of this Standard rather than an Aviation Specialist Trade.",
+    "bbox": [
+      112,
+      135,
+      884,
+      258
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "5. Armament.",
+    "text_level": 2,
+    "bbox": [
+      114,
+      273,
+      231,
+      285
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "5.1 Single trade (Pre-1991) Armament Fitters were trained by the ADF only for armament duties. Whilst still a specialist aviation qualification, Armament Fitters were not considered an avionics or mechanical allied tradespeople and hence must obtain the relevant competency or competencies if employed beyond explosive ordnance-related tasks. Specialised armament training ceased in the early 1990s. Since then, Avionics and Mechanical technicians have undergone aircraft-specific Explosive Ordnance training to enable them to perform armament maintenance tasks. In January 2003 RAAF introduced the Explosive Ordnance Employment Stream. Employment in this stream gives technicians, who have already attained their Avionics or Mechanical qualification, the opportunity to be employed in the Explosive Ordnance field.",
+    "bbox": [
+      112,
+      300,
+      882,
+      425
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "6. Electroplater.",
+    "text_level": 2,
+    "bbox": [
+      112,
+      438,
+      248,
+      452
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "6.1 Electroplating of ADF aircraft and equipment shall only be carried out by ex-ADF Electroplaters or by tradespeople who have attained the minimum qualification of Certificate III in Engineering Production Systems (Electroplating).",
+    "bbox": [
+      112,
+      465,
+      882,
+      508
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "7. Metal Machinist.",
+    "text_level": 2,
+    "bbox": [
+      114,
+      521,
+      270,
+      534
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "7.1 Suitable qualifications for the metal machinist specialist trade are ex-ADF trained METMACHs or GMETECHs or other training provided by an RTO that is approved by DAIRMAINT, DGTA-ADF.",
+    "bbox": [
+      114,
+      548,
+      882,
+      590
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "8. Composite Maintenance.",
+    "text_level": 2,
+    "bbox": [
+      114,
+      604,
+      327,
+      618
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "8.1 Composite structures may be manufactured from metal(s) only (eg metallic honeycomb between metallic skins); non-metallic materials (eg Kevlar, fibreglass etc) or a combination of both.",
+    "bbox": [
+      112,
+      631,
+      882,
+      660
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "8.2 For maintenance that involves repairs to metallic composites or metallic/non-metallic combinations, acceptable qualifications are as per the above table or Cert IV AME (Structures).",
+    "bbox": [
+      112,
+      673,
+      882,
+      701
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "8.3 For maintenance which involves repairs to non-metallic composites only, a Cert IV in Polymer Technology is an acceptable qualification. Note: individuals with this qualification are also required to undertake the Aeroskills bridging units listed in annex F.",
+    "bbox": [
+      112,
+      714,
+      882,
+      757
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "8.4 Repairs involving adhesive bonding of metallic composites or metallic/non-metallic combinations requires successful completion of the RAAF Adhesive Bonding Technique course, ADHESBONDTECH 112570, or equivalent training as approved by DAIRMAINT, DGTA-ADF.",
+    "bbox": [
+      112,
+      770,
+      882,
+      812
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "9. Aircraft Welder.",
+    "text_level": 2,
+    "bbox": [
+      112,
+      826,
+      268,
+      839
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "9.1 Welding of ADF aircraft and equipment shall only be carried out by ex-ADF aircraft welders who have completed course WELDER AIRCRAFT 112543, or by welders who have attained the minimum qualification of CASA STD CAAP33-1 including billet retest for re-qualification. Further guidance is available in Specification Engineering W5033 and DEF(AUST) 9004.",
+    "bbox": [
+      112,
+      853,
+      882,
+      909
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      114,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "header",
+    "text": "ANNEX E",
+    "bbox": [
+      115,
+      38,
+      193,
+      49
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      504,
+      945
+    ],
+    "page_idx": 35
+  },
+  {
+    "type": "text",
+    "text": "ANNEX F",
+    "text_level": 2,
+    "bbox": [
+      458,
+      73,
+      539,
+      86
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "NON-AVIATION TRADESPERSON",
+    "text_level": 2,
+    "bbox": [
+      361,
+      93,
+      635,
+      106
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "10. Non-Aviation Tradesperson",
+    "text_level": 2,
+    "bbox": [
+      115,
+      136,
+      349,
+      150
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "10.1",
+    "bbox": [
+      115,
+      163,
+      149,
+      176
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "text",
+    "text": "Technical tradespeople without an aviation trade qualification may be suitable, on achievement of additional competencies, for some aeronautical product maintenance. This annex lists some non-aviation trade qualifications that an SMM may choose to employ under the provisions in Sections of this Standard. The first and second columns of the table indicate task and relevant trade qualifications. The third column provides some guidance on necessary competencies to be achieved to become an Aviation Tradesperson for the purposes of this Standard. Bridging training for non-aviation trades is dependant on the original trade held and the intended inherent nature of authorisations planned to be given by the SMM.",
+    "bbox": [
+      206,
+      163,
+      884,
+      274
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "table",
+    "img_path": "images/3e39cd07677cb98dd92ef5d8421cd3667e0a0798e37db9d61032955fc2f858dc.jpg",
+    "table_caption": [],
+    "table_footnote": [],
+    "table_body": "<table><tr><td>Inherent Nature of Task</td><td>Original Qualification</td><td>Aeroskills Bridging Units</td></tr><tr><td>Electrical</td><td>Certificate III Electro-technology Assembly and Servicing</td><td>MEA101A, MEA103A,MEA105A,MEA107A,MEA109A,MEA246A</td></tr><tr><td>Electronic</td><td>Certificate III Electro-technology CommunicationsCertificate III Electro-technology ScanningCertificate III Electro-technology Entertainment and ServicingCertificate III Electro-technology InstrumentationCertificate IV Electro-technology CommunicationsCertificate IV Electro-technology Radar SystemsCertificate IV Electro-technology Entertainment and Servicing</td><td>MEA101A,MEA103A,MEA105A,MEA107A,MEA109A,MEA246A</td></tr><tr><td>Instrument and Display</td><td>Certificate III Electro-technology Instrumentation</td><td>MEA101A,MEA103A,MEA105A,MEA107A,MEA109A,MEA246A</td></tr><tr><td>Radio and Microwave Frequency</td><td>Certificate III Electro-technology CommunicationsCertificate III Electro-technology ScanningCertificate III Electro-technology Entertainment and ServicingCertificate IV Electro-technology CommunicationsCertificate IV Electro-technology Radar Systems</td><td>MEA101A,MEA103A,MEA105A,MEA107A,MEA109A,MEA246A</td></tr><tr><td>Oxygen</td><td></td><td>MEA209A,MEA 222A (on aircraft),MEA251A (off aircraft)</td></tr><tr><td>Optical</td><td></td><td></td></tr><tr><td>Fuel</td><td>Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)Certificate III in Automotive (Mechanical – Light Vehicle)Marine EngineerMarine Engineer Driver Class 1Marine Engineer Driver Class 2</td><td>MEA101A,MEA103A,MEA105A,MEA107A,MEA109A,MEA327A orMEA328A</td></tr><tr><td>Hydraulic</td><td>Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)Certificate III in Automotive (Mechanical – Heavy Vehicle Agriculture)Certificate III in Automotive (Mechanical – Heavy Vehicle Mobile Equipment Plant)Marine EngineerMarine Engineer Driver Class 1</td><td>MEA101A, MEA103A,MEA105A, MEA107A,MEA109A, MEA327A orMEA328A</td></tr><tr><td>Pneumatic</td><td>Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)Certificate III in Automotive (Mechanical – Heavy Vehicle Road Transport)Certificate III in Automotive (Mechanical – Heavy Vehicle Agriculture)Certificate III in Automotive (Mechanical – Heavy Vehicle Mobile Equipment Plant)Marine EngineerMarine Engineer Driver Class 1Marine Engineer Driver Class 2</td><td>MEA101A, MEA103A,MEA105A, MEA107A,MEA109A, MEA327A orMEA328AIf the authorisation is to cover the sealed section of Vapour Cycle Air-conditioning systems then unit AUR22666A must also be held</td></tr><tr><td>MechanicalRubber</td><td>Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)Certificate III in Automotive (Mechanical – Heavy Vehicle Road Transport)Certificate III in Automotive (Mechanical – Heavy Vehicle Agriculture)Certificate III in Automotive (Mechanical – Heavy Vehicle Mobile Equipment Plant)Certificate III in Automotive (Mechanical – Light Vehicle)Marine EngineerMarine Engineer Driver Class 1Marine Engineer Driver Class 2Certificate III in Marine (Mechanics)</td><td>MEA101A, MEA103A,MEA105A, MEA107A,MEA109A, MEA327A orMEA328A</td></tr><tr><td>Glass/Plastic</td><td></td><td></td></tr><tr><td>Sheetmetal</td><td></td><td></td></tr><tr><td>Composite (Non – Metallic composite maintenance only)</td><td>Certificate IV in Polymer Technology</td><td>MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A</td></tr><tr><td>Fabric</td><td>Certificate III Automotive (Vehicle Body Trimming)</td><td>MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A</td></tr><tr><td>Wood</td><td></td><td></td></tr></table>",
+    "bbox": [
+      105,
+      285,
+      892,
+      853
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      754,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "header",
+    "text": "ANNEX F",
+    "bbox": [
+      806,
+      38,
+      882,
+      49
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      494,
+      937,
+      502,
+      947
+    ],
+    "page_idx": 36
+  },
+  {
+    "type": "table",
+    "img_path": "",
+    "table_caption": [],
+    "table_footnote": [],
+    "bbox": [
+      105,
+      78,
+      892,
+      714
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      115,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "header",
+    "text": "ANNEX F",
+    "bbox": [
+      115,
+      38,
+      191,
+      49
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      504,
+      945
+    ],
+    "page_idx": 37
+  },
+  {
+    "type": "table",
+    "img_path": "",
+    "table_caption": [],
+    "table_footnote": [],
+    "bbox": [
+      105,
+      81,
+      892,
+      268
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "NOTE",
+    "text_level": 2,
+    "bbox": [
+      472,
+      293,
+      524,
+      304
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "The list of Original Qualifications in the Table is non-exhaustive. SMMs may propose other qualifications to DAIRMAINT (preferably with suggested bridging units). If agreed, the Standard will be updated.",
+    "bbox": [
+      129,
+      306,
+      865,
+      334
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      631,
+      15
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      754,
+      24,
+      880,
+      38
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "header",
+    "text": "ANNEX F",
+    "bbox": [
+      806,
+      38,
+      880,
+      49
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "page_number",
+    "text": "3",
+    "bbox": [
+      492,
+      933,
+      502,
+      945
+    ],
+    "page_idx": 38
+  },
+  {
+    "type": "text",
+    "text": "BLANK PAGE",
+    "text_level": 2,
+    "bbox": [
+      386,
+      480,
+      611,
+      504
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      114,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "header",
+    "text": "ANNEX F",
+    "bbox": [
+      115,
+      39,
+      191,
+      49
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "page_number",
+    "text": "4",
+    "bbox": [
+      492,
+      934,
+      505,
+      945
+    ],
+    "page_idx": 39
+  },
+  {
+    "type": "text",
+    "text": "ANNEX G",
+    "text_level": 2,
+    "bbox": [
+      458,
+      73,
+      541,
+      86
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "NON-TRADESPERSON EMPLOYMENT",
+    "text_level": 2,
+    "bbox": [
+      342,
+      93,
+      655,
+      106
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "1. Non-tradesperson",
+    "text_level": 2,
+    "bbox": [
+      115,
+      136,
+      278,
+      150
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "1.1 Consideration should be given to the training of non-tradespeople in some aspects of Aeroskills Training Package Core Competencies. Elements of the Core Competencies support the safety and awareness requirements for an individual working in an aerospace environment and also serve to aid in the protection of aviation materiel. Where the work proposed for a non-tradesperson is to involve the use of handtools, the Aeroskills Training Package competency MEA109 is mandatory.",
+    "bbox": [
+      115,
+      163,
+      884,
+      233
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "2. Examples of suitable tasks for Non-Tradespeople are:",
+    "bbox": [
+      112,
+      245,
+      510,
+      261
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "list",
+    "sub_type": "text",
+    "list_items": [
+      "(a) marshalling aircraft;",
+      "(b) refuelling aircraft;",
+      "(c) earthing aircraft;",
+      "(d) towing aircraft;",
+      "(e) securing and picketing aircraft;",
+      "(f) cleaning and washing aircraft;",
+      "(g) removing and replacing aircraft engine covers;",
+      "(h) removing control surface locks and undercarriage locks where applicable and stowing correctly in aircraft;",
+      "(i) acting as fire sentries and operating fire extinguishers as necessary during engine operations;",
+      "(j) operating Ground Support Equipment (GSE);",
+      "(k) carrying out stores liaison duties;",
+      "(l) acting as safety observers when technical personnel are working in confined or dangerous areas;",
+      "(m) cleaning and washing dismantled components; and",
+      "(n) dismantling simple sub-assemblies."
+    ],
+    "bbox": [
+      161,
+      274,
+      880,
+      666
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "NOTE",
+    "text_level": 2,
+    "bbox": [
+      473,
+      679,
+      524,
+      691
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "This list of suitable tasks in the Table is non-exhaustive. SMMs may propose other suitable tasks to DAIRMAINT. If agreed, the Standard will be updated.",
+    "bbox": [
+      161,
+      692,
+      835,
+      720
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "header",
+    "text": "ANNEX G",
+    "bbox": [
+      803,
+      38,
+      880,
+      49
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      494,
+      937,
+      502,
+      947
+    ],
+    "page_idx": 40
+  },
+  {
+    "type": "text",
+    "text": "BLANK PAGE",
+    "text_level": 2,
+    "bbox": [
+      386,
+      480,
+      611,
+      504
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      114,
+      24,
+      243,
+      38
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "header",
+    "text": "ANNEX G",
+    "bbox": [
+      115,
+      39,
+      194,
+      49
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 41
+  },
+  {
+    "type": "text",
+    "text": "DOCUMENT IMPROVEMENT PROPOSAL",
+    "text_level": 1,
+    "bbox": [
+      268,
+      80,
+      729,
+      99
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      428,
+      112,
+      569,
+      128
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "CIVILIAN PERSONNEL MAINTAINING STATE AIRCRAFT OR AERONAUTICAL PRODUCT",
+    "text_level": 2,
+    "bbox": [
+      142,
+      140,
+      855,
+      156
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "The purpose of this form is to solicit comments from users to assist in maintaining the above document as both practical and realistic. When completed, the form and any supporting information, should be forwarded to the applicable Standardisation Coordinator (SC) or other Agency SC corresponding to the sponsoring organisation listed at Section 2 Chapter 1 annex B of the Defence Materiel Standardisation Manual, STANMAN.",
+    "bbox": [
+      112,
+      169,
+      884,
+      239
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "Note Comments submitted do not constitute or imply authorisation to waive any requirement of the document or to amend contractual requirements.",
+    "bbox": [
+      112,
+      252,
+      855,
+      280
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "1. Has any part of this document created problems or required interpretation in use? Please state paragraph no(s) and any rewording suggested.",
+    "bbox": [
+      112,
+      308,
+      853,
+      338
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "2. Has new technology rendered any process obsolete? Suggestions supported by examples are welcome where the new process/hardware has proved satisfactory.",
+    "bbox": [
+      112,
+      470,
+      853,
+      500
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "3. Comments on any requirements considered to be too rigid.",
+    "bbox": [
+      112,
+      633,
+      640,
+      648
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "4. Remarks (attach any relevant data which may be of use in improving this document).",
+    "bbox": [
+      112,
+      782,
+      843,
+      796
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [
+      492,
+      937,
+      504,
+      948
+    ],
+    "page_idx": 42
+  },
+  {
+    "type": "text",
+    "text": "BLANK PAGE",
+    "text_level": 2,
+    "bbox": [
+      386,
+      494,
+      611,
+      517
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      115,
+      24,
+      245,
+      38
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [
+      492,
+      933,
+      505,
+      945
+    ],
+    "page_idx": 43
+  },
+  {
+    "type": "text",
+    "text": "TECHNICAL STANDARDS DOCUMENT CENTRE",
+    "text_level": 2,
+    "bbox": [
+      228,
+      93,
+      771,
+      112
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Requests for copies of this Specification/Standard, or certain copies of the listed Applicable Documents, may be obtained from Defence Technical Standards Document Centre listed below:",
+    "bbox": [
+      112,
+      127,
+      882,
+      156
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "DEPARTMENT OF DEFENCE (Maritime)",
+    "text_level": 2,
+    "bbox": [
+      161,
+      210,
+      480,
+      224
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Director Naval Platform Systems.",
+    "text_level": 2,
+    "bbox": [
+      163,
+      225,
+      431,
+      239
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Department of Defence (Navy Office)",
+    "bbox": [
+      163,
+      239,
+      442,
+      252
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Campbell Park Offices (CP1-4-16)",
+    "bbox": [
+      163,
+      252,
+      421,
+      266
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "CANBERRA ACT 2600",
+    "bbox": [
+      163,
+      266,
+      339,
+      277
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Attention: NMR Standards Centre",
+    "bbox": [
+      163,
+      279,
+      416,
+      292
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Telephone: (02) 6266 2906/2946",
+    "bbox": [
+      163,
+      292,
+      410,
+      306
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Facsimile: (02) 6266 4994",
+    "bbox": [
+      163,
+      306,
+      364,
+      320
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "DEPARTMENT OF DEFENCE (Land)",
+    "text_level": 2,
+    "bbox": [
+      161,
+      362,
+      452,
+      377
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Land Engineering Agency",
+    "bbox": [
+      161,
+      377,
+      359,
+      391
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Attention: Equipment Information Officer",
+    "bbox": [
+      161,
+      391,
+      465,
+      404
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Raleigh Road",
+    "bbox": [
+      163,
+      404,
+      268,
+      416
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "MARIBYRNONG, VIC 3032",
+    "bbox": [
+      163,
+      418,
+      371,
+      429
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Postal Address: Private Bag 12",
+    "bbox": [
+      163,
+      431,
+      400,
+      445
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "PO ASCOT VALE VIC 3032",
+    "bbox": [
+      163,
+      445,
+      376,
+      458
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Attention: Equipment Information Officer",
+    "bbox": [
+      163,
+      459,
+      465,
+      472
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Telephone: (03) 9319 5385",
+    "bbox": [
+      163,
+      472,
+      369,
+      486
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Facsimile: (03) 9319 5382",
+    "bbox": [
+      163,
+      486,
+      366,
+      500
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "DEPARTMENT OF DEFENCE (Air)",
+    "text_level": 2,
+    "bbox": [
+      161,
+      542,
+      435,
+      555
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Specifications and Standards",
+    "bbox": [
+      161,
+      557,
+      384,
+      570
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Defence Air Publications Agency (DAPA)",
+    "bbox": [
+      161,
+      570,
+      470,
+      584
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Building 7",
+    "bbox": [
+      163,
+      584,
+      240,
+      597
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "RAAF Williams",
+    "bbox": [
+      163,
+      598,
+      278,
+      610
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "LAVERTON VIC 3027",
+    "bbox": [
+      163,
+      611,
+      332,
+      624
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Telephone: (03) 9256 4236",
+    "bbox": [
+      163,
+      625,
+      369,
+      638
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Facsimile: (03) 9256 4178",
+    "bbox": [
+      163,
+      638,
+      364,
+      652
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Other Users: Refer Land",
+    "bbox": [
+      161,
+      679,
+      349,
+      693
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      752,
+      24,
+      882,
+      38
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "page_number",
+    "text": "3",
+    "bbox": [
+      492,
+      933,
+      504,
+      945
+    ],
+    "page_idx": 44
+  },
+  {
+    "type": "text",
+    "text": "Crown copyright reserved",
+    "bbox": [
+      391,
+      393,
+      605,
+      408
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "PUBLISHED UNDER AUTHORITY OF",
+    "text_level": 2,
+    "bbox": [
+      292,
+      435,
+      705,
+      454
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "DEPARTMENT OF DEFENCE",
+    "text_level": 2,
+    "bbox": [
+      337,
+      469,
+      660,
+      486
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "COPIES OF DEF(AUST) DOCUMENTS ARE",
+    "bbox": [
+      327,
+      515,
+      672,
+      530
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "text",
+    "text": "OBTAINABLE FROM SOURCES SHOWN INSIDE BACK COVER",
+    "bbox": [
+      247,
+      543,
+      751,
+      557
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "header",
+    "text": "Downloaded from http://www.everyspec.com",
+    "bbox": [
+      361,
+      2,
+      633,
+      15
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "header",
+    "text": "DEF(AUST) 9022",
+    "bbox": [
+      115,
+      24,
+      245,
+      38
+    ],
+    "page_idx": 45
+  },
+  {
+    "type": "page_number",
+    "text": "4",
+    "bbox": [
+      492,
+      934,
+      505,
+      945
+    ],
+    "page_idx": 45
+  }
+]

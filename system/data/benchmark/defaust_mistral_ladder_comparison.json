@@ -1,0 +1,32 @@
+[
+  {
+    "label": "mistral-small-latest",
+    "params_b": 24.0,
+    "provider": "mistral",
+    "accuracy": 91.25,
+    "per_class": {
+      "UYGUN": 82.5,
+      "UYGUN DEĞİL": 100.0
+    },
+    "per_table": {
+      "MEA 97 version 3/4 Avionics qualification and allied single trade groups": 80.0,
+      "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups": 88.6,
+      "Table_page26": 93.8,
+      "Table_page34": 100.0,
+      "Table_page36": 100.0,
+      "5. MAINTENANCE": 100.0,
+      "10. MANDATORY TRAINING REQUIREMENTS": 100.0,
+      "3. Non Destructive Testing.": 100.0,
+      "4. Aircraft Surface Finisher.": 100.0,
+      "6. Electroplater.": 100.0,
+      "2. SCOPE": 100.0,
+      "9. TASK AUTHORISATION": 100.0,
+      "8. OUT-OF-TRADE EMPLOYMENT": 100.0,
+      "5. Armament.": 50.0,
+      "2. Aircraft Life Support.": 75.0,
+      "1. INTRODUCTION": 100.0,
+      "7. Metal Machinist.": 100.0
+    },
+    "avg_s": 4.14
+  }
+]

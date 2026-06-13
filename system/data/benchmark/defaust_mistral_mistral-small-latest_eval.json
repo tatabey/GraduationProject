@@ -1,0 +1,180 @@
+{
+  "total": 160,
+  "correct": 146,
+  "wrong": 14,
+  "accuracy": 91.25,
+  "by_table": {
+    "MEA 97 version 3/4 Avionics qualification and allied single trade groups": {
+      "correct": 28,
+      "total": 35
+    },
+    "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups": {
+      "correct": 31,
+      "total": 35
+    },
+    "Table_page26": {
+      "correct": 15,
+      "total": 16
+    },
+    "Table_page34": {
+      "correct": 14,
+      "total": 14
+    },
+    "Table_page36": {
+      "correct": 20,
+      "total": 20
+    },
+    "5. MAINTENANCE": {
+      "correct": 5,
+      "total": 5
+    },
+    "10. MANDATORY TRAINING REQUIREMENTS": {
+      "correct": 5,
+      "total": 5
+    },
+    "3. Non Destructive Testing.": {
+      "correct": 4,
+      "total": 4
+    },
+    "4. Aircraft Surface Finisher.": {
+      "correct": 4,
+      "total": 4
+    },
+    "6. Electroplater.": {
+      "correct": 3,
+      "total": 3
+    },
+    "2. SCOPE": {
+      "correct": 2,
+      "total": 2
+    },
+    "9. TASK AUTHORISATION": {
+      "correct": 2,
+      "total": 2
+    },
+    "8. OUT-OF-TRADE EMPLOYMENT": {
+      "correct": 4,
+      "total": 4
+    },
+    "5. Armament.": {
+      "correct": 1,
+      "total": 2
+    },
+    "2. Aircraft Life Support.": {
+      "correct": 3,
+      "total": 4
+    },
+    "1. INTRODUCTION": {
+      "correct": 2,
+      "total": 2
+    },
+    "7. Metal Machinist.": {
+      "correct": 3,
+      "total": 3
+    }
+  },
+  "by_verdict": {
+    "UYGUN DEĞİL": {
+      "tp": 80,
+      "fn": 0,
+      "fp": 14
+    },
+    "UYGUN": {
+      "tp": 66,
+      "fn": 14,
+      "fp": 0
+    }
+  },
+  "errors": [
+    {
+      "item_no": 2,
+      "text": "An approved maintenance organisation authorises Radio Trade Group personnel to certify MEA97 competency unit 103 work as fully qualified.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "MEA 97 version 3/4 Avionics qualification table shows that competency unit 103 is qualified under Radio Trade Group, but the standard does not authorize non-Radio Trade Group personnel (e.g., from Radio Trade Group) to certify MEA97 competency unit 103 work unless explicitly permitted by the maintenance organisation's approval scope. The item states \"Radio Trade Group personnel\" are authorized, which does not match the requirement that certification must be performed by personnel qualified in the relevant trade group for the work being certified.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 11,
+      "text": "A civilian holding the Instrument Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 205 tasks.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table, MEA97 3/4 Competency Unit 205 lists the Instrument Trade Group as \"Partially Qualified,\" not fully competent and unrestricted.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 14,
+      "text": "A civilian holding the Armament Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 101 tasks.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "The Armament Trade Group is listed under MEA97 Version 3/4 Avionics qualifications (e.g., MEA97 3/4 Competency Units: 101, 103, 105, etc.), but there is no entry for MEA97 Version 3/4 Competency Unit 101 under the Mechanical and Structures qualifications table. The item incorrectly attributes full competence for MEA97 unit 101 tasks to the Armament Trade Group, which is not supported by the provided context.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 2.74
+    },
+    {
+      "item_no": 24,
+      "text": "A civilian holding the Electrical Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 108 tasks.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "The Electrical Trade Group is not listed as \"Qualified\" for MEA97 unit 108 in the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table (Section 2. SINGLE AND ALLIED TRADES COMPETENCIES > ALLIED TRADES). Only Radio, Instrument, and Armament Trade Groups are marked \"Qualified\" for unit 108, while Electrical is not mentioned, indicating no competency.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 9.87
+    },
+    {
+      "item_no": 25,
+      "text": "A Electrical Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 107 maintenance tasks without supervision.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "The context states that \"single trade technicians have the necessary training to support competency in part of the present Mechanical or Avionics trade streams\" and that \"the competencies defined in the latter two schemes are not directly transferable to single trade trained personnel\" (Section 1.1, Allied Trades). The Electrical Trade Group is a single trade group, and MEA97 competency unit 107 is listed as \"Qualified\" for the Electrical Trade Group, but this does not imply full independence without supervision for maintenance tasks outside their core trade scope.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 9.85
+    },
+    {
+      "item_no": 26,
+      "text": "A civilian holding the Electrical Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 219 tasks.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table, MEA97 3/4 Competency Unit 219 lists the Electrical Trade Group as \"Qualified,\" but the Radio Trade Group and Instrument Trade Group are only \"Partially Qualified.\" The item states the Electrical Trade Group is rated as fully competent and unrestricted for MEA97 unit 219 tasks, which is correct, but it does not mention the partial qualification status of the other trade groups, which is a requirement under the standard.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 2.41
+    },
+    {
+      "item_no": 29,
+      "text": "A civilian holding the Instrument Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 233 tasks.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "MEA97 Version 3/4 Avionics qualification table lists MEA97 3/4 Competency Unit 233 as \"Instrument Trade Group: Qualified; Radio Trade Group: Partially Qualified; Electrical Trade Group: Partially Qualified.\" The item claims full competence and unrestricted status for the Instrument Trade Group for this unit, which contradicts the \"Partially Qualified\" status for Radio and Electrical Trade Groups in the standard.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+      "elapsed_s": 3.11
+    },
+    {
+      "item_no": 38,
+      "text": "An approved maintenance organisation authorises Airframe Trade Group personnel to certify MEA97 competency unit 303 work as fully qualified.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, competency unit 303 is marked as \"Partially Qualified\" for the Airframe Trade Group, not \"Qualified.\" The item states that Airframe Trade Group personnel are authorized to certify MEA97 competency unit 303 work as fully qualified, which contradicts the table's designation.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+      "elapsed_s": 10.3
+    },
+    {
+      "item_no": 44,
+      "text": "An approved maintenance organisation authorises Airframe Trade Group personnel to certify MEA97 competency unit 321 work as fully qualified.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 competency unit 321 is listed as \"Airframe Trade Group: Qualified\" but \"Engine Trade Group: Partially Qualified.\" The item states that Airframe Trade Group personnel are authorized to certify MEA97 competency unit 321 work as fully qualified, which implies full qualification for all trade groups, violating the standard's specific qualification mapping for unit 321.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+      "elapsed_s": 2.6
+    },
+    {
+      "item_no": 56,
+      "text": "A Structural Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 317 maintenance tasks without supervision.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "MEA97 Version 3/4 Competency Units table shows Structural Trade Group is \"Qualified\" for competency unit 317, but the standard does not explicitly state that a Structural Trade Group technician is authorized to perform MEA97 competency unit 317 maintenance tasks independently without supervision. The table only indicates qualification status, not authorization levels.",
+      "expected": "UYGUN",
+      "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+      "elapsed_s": 2.98
+    }
+  ]
+}

@@ -1,0 +1,1442 @@
+[
+  {
+    "item_no": 1,
+    "text": "An organisation assigns MEA97 competency unit 252 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 3/4 Competency Units table shows Competency Unit 252 is qualified for Radio, Instrument, and Electrical Trade Groups only. Armament Trade Group is not listed as qualified for Unit 252 in the table (Section: 2. SINGLE AND ALLIED TRADES COMPETENCIES > ALLIED TRADES, MEA97 3/4 Competency Units table).",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 8.23
+  },
+  {
+    "item_no": 2,
+    "text": "An approved maintenance organisation authorises Radio Trade Group personnel to certify MEA97 competency unit 103 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA 97 version 3/4 Avionics qualification table shows that competency unit 103 is qualified under Radio Trade Group, but the standard does not authorize non-Radio Trade Group personnel (e.g., from Radio Trade Group) to certify MEA97 competency unit 103 work unless explicitly permitted by the maintenance organisation's approval scope. The item states \"Radio Trade Group personnel\" are authorized, which does not match the requirement that certification must be performed by personnel qualified in the relevant trade group for the work being certified.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 3,
+    "text": "An organisation assigns MEA97 competency unit 225 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Competency Units table shows that competency unit 225 is only marked as \"Partially Qualified\" for the Armament Trade Group (see MEA97 3/4 Competency Units: 225; Armament Trade Group: Partially Qualified). The standard does not permit full certification for this unit within the Armament Trade Group.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.23
+  },
+  {
+    "item_no": 4,
+    "text": "A civilian holding the Radio Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 218 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Competency Unit 218 lists \"Radio Trade Group: Partially Qualified\" for civilian Radio Trade Group holders, so rating the holder as \"fully competent and unrestricted\" for MEA97 unit 218 tasks violates the table’s explicit “Partially Qualified” entry.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 1.92
+  },
+  {
+    "item_no": 5,
+    "text": "A Radio Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 240 maintenance tasks without supervision.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 version 3/4 Competency Unit 240 explicitly lists \"Radio Trade Group: Qualified\" (TABLE: MEA 97 version 3/4 Avionics qualification and allied single trade groups, Competency Unit 240). This indicates that a Radio Trade Group technician is qualified to perform maintenance tasks for this competency unit independently.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 6,
+    "text": "A Electrical Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 215 maintenance tasks without supervision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 215 lists the Electrical Trade Group as \"Partially Qualified,\" not \"Qualified.\" According to the MEA 97 version 3/4 Avionics qualification table, competency unit 215 does not grant full qualification to the Electrical Trade Group, so signing off an Electrical Trade Group technician as fully qualified to independently perform maintenance tasks without supervision violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 1.98
+  },
+  {
+    "item_no": 7,
+    "text": "An approved maintenance organisation authorises Electrical Trade Group personnel to certify MEA97 competency unit 205 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Competency Units table (Section 2) lists MEA97 3/4 Competency Unit 205 as \"Partially Qualified\" for the Electrical Trade Group, not \"Qualified.\" Authorising Electrical Trade Group personnel to certify MEA97 competency unit 205 work as fully qualified violates the competency designation in the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 8,
+    "text": "A civilian holding the Electrical Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 233 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Avionics qualification table lists MEA97 3/4 Competency Unit 233 as \"Electrical Trade Group: Partially Qualified,\" not fully competent. The cited context explicitly states this limitation for unit 233.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.02
+  },
+  {
+    "item_no": 9,
+    "text": "A Instrument Trade Group maintainer performs MEA97 unit 211 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 3/4 Competency Units table shows Instrument Trade Group as \"Partially Qualified\" for unit 211, which aligns with the finding that an Instrument Trade Group maintainer performs MEA97 unit 211 work under supervision as partially qualified. (MEA 97 version 3/4 Avionics qualification and allied single trade groups, Unit 211)",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 10,
+    "text": "A Radio Trade Group technician is assessed as only partially qualified for MEA97 competency unit 210 and is restricted to supervised tasks pending bridging training.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 version 3/4 Competency Units table (p.24) explicitly lists \"MEA97 3/4 Competency Units: 210; Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Qualified.\" This confirms that a Radio Trade Group technician being \"Partially Qualified\" for competency unit 210 is compliant with the standard.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.75
+  },
+  {
+    "item_no": 11,
+    "text": "A civilian holding the Instrument Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 205 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table, MEA97 3/4 Competency Unit 205 lists the Instrument Trade Group as \"Partially Qualified,\" not fully competent and unrestricted.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 12,
+    "text": "An organisation assigns MEA97 competency unit 234 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Competency Unit 234 is listed under MEA97 Version 3/4 Avionics qualifications with \"Radio Trade Group: Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Partially Qualified\" (TABLE: MEA 97 version 3/4 Avionics qualification and allied single trade groups). Armament Trade Group is not listed as qualified for Unit 234, violating the requirement that only qualified trade groups may be assigned and certified for a competency unit.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.39
+  },
+  {
+    "item_no": 13,
+    "text": "An approved maintenance organisation authorises Radio Trade Group personnel to certify MEA97 competency unit 219 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Competency Units table lists MEA97 3/4 Competency Unit 219 as \"Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Qualified.\" The item states that Radio Trade Group personnel are \"fully qualified\" to certify this unit, which contradicts the \"Partially Qualified\" status specified in the standard (MEA97 version 3/4 Avionics qualification and allied single trade groups table).",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 51.43
+  },
+  {
+    "item_no": 14,
+    "text": "A civilian holding the Armament Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 101 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The Armament Trade Group is listed under MEA97 Version 3/4 Avionics qualifications (e.g., MEA97 3/4 Competency Units: 101, 103, 105, etc.), but there is no entry for MEA97 Version 3/4 Competency Unit 101 under the Mechanical and Structures qualifications table. The item incorrectly attributes full competence for MEA97 unit 101 tasks to the Armament Trade Group, which is not supported by the provided context.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.74
+  },
+  {
+    "item_no": 15,
+    "text": "A Instrument Trade Group technician is assessed as only partially qualified for MEA97 competency unit 226 and is restricted to supervised tasks pending bridging training.",
+    "verdict": "UYGUN",
+    "reasoning": "The context shows that MEA97 Version 3/4 Competency Unit 226 lists the Instrument Trade Group as \"Partially Qualified\" (Avionics qualification table). The assessment of partial qualification and restriction to supervised tasks pending bridging training aligns with the standard's recognition of partial qualification status for this competency unit.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 16,
+    "text": "An organisation assigns MEA97 competency unit 233 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Avionics qualification table shows Competency Unit 233 is only \"Partially Qualified\" for the Armament Trade Group. Assigning and certifying full competency for a unit where the standard specifies only partial qualification violates the competency mapping in the MEA97 Avionics table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 3.54
+  },
+  {
+    "item_no": 17,
+    "text": "An organisation assigns MEA97 competency unit 239 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Avionics qualification table shows Competency Unit 239 as \"Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Qualified.\" Armament Trade Group is not listed as qualified for competency unit 239, so assigning and certifying Armament Trade Group personnel for it violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 14.06
+  },
+  {
+    "item_no": 18,
+    "text": "A Instrument Trade Group technician is assessed as only partially qualified for MEA97 competency unit 202 and is restricted to supervised tasks pending bridging training.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists MEA97 3/4 Competency Unit 202 as \"Partially Qualified\" for the Instrument Trade Group (see MEA 97 version 3/4 Avionics qualification and allied single trade groups table). The assessment of partial qualification and restriction to supervised tasks pending bridging training aligns with the standard's recognition of partial qualification status.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 19,
+    "text": "An organisation assigns MEA97 competency unit 204 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table, MEA97 Competency Unit 204 is only marked as \"Partially Qualified\" for the Armament Trade Group (and other trades), not \"Qualified.\" Assigning and certifying Armament Trade Group personnel as fully competent for Unit 204 violates the standard's competency mapping.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.23
+  },
+  {
+    "item_no": 20,
+    "text": "A Electrical Trade Group maintainer performs MEA97 unit 231 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units table lists MEA97 Unit 231 under Electrical Trade Group as \"Partially Qualified\" (see MEA 97 version 3/4 Avionics qualification and allied single trade groups, Competency Unit 231). The standard allows partially qualified personnel to perform work under supervision (see Section 2.1: \"Partially Qualified\" indicates some competency elements were supported in the training and should have been achieved).",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 9.42
+  },
+  {
+    "item_no": 21,
+    "text": "An approved maintenance organisation authorises Electrical Trade Group personnel to certify MEA97 competency unit 240 work as fully qualified.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 240 is listed under the Avionics qualification table as \"Electrical Trade Group: Qualified,\" which explicitly authorizes Electrical Trade Group personnel to perform this competency unit.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 3.67
+  },
+  {
+    "item_no": 22,
+    "text": "An organisation assigns MEA97 competency unit 248 work to Electrical Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Competency Unit 248 is explicitly listed under the Instrument Trade Group as \"Qualified,\" not the Electrical Trade Group (TABLE: MEA 97 version 3/4 Avionics qualification and allied single trade groups, Competency Unit 248). Assigning and certifying Electrical Trade Group personnel for this competency unit violates the standard assignment rules.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 12.01
+  },
+  {
+    "item_no": 23,
+    "text": "An approved maintenance organisation authorises Instrument Trade Group personnel to certify MEA97 competency unit 211 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Avionics qualification table shows Competency Unit 211 as \"Partially Qualified\" for Instrument Trade Group (see \"MEA97 3/4 Competency Units: 211; Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Qualified\"). Authorising Instrument Trade Group personnel to certify MEA97 competency unit 211 work as fully qualified violates the standard's competency designation.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 4.32
+  },
+  {
+    "item_no": 24,
+    "text": "A civilian holding the Electrical Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 108 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The Electrical Trade Group is not listed as \"Qualified\" for MEA97 unit 108 in the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table (Section 2. SINGLE AND ALLIED TRADES COMPETENCIES > ALLIED TRADES). Only Radio, Instrument, and Armament Trade Groups are marked \"Qualified\" for unit 108, while Electrical is not mentioned, indicating no competency.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 9.87
+  },
+  {
+    "item_no": 25,
+    "text": "A Electrical Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 107 maintenance tasks without supervision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context states that \"single trade technicians have the necessary training to support competency in part of the present Mechanical or Avionics trade streams\" and that \"the competencies defined in the latter two schemes are not directly transferable to single trade trained personnel\" (Section 1.1, Allied Trades). The Electrical Trade Group is a single trade group, and MEA97 competency unit 107 is listed as \"Qualified\" for the Electrical Trade Group, but this does not imply full independence without supervision for maintenance tasks outside their core trade scope.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 9.85
+  },
+  {
+    "item_no": 26,
+    "text": "A civilian holding the Electrical Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 219 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table, MEA97 3/4 Competency Unit 219 lists the Electrical Trade Group as \"Qualified,\" but the Radio Trade Group and Instrument Trade Group are only \"Partially Qualified.\" The item states the Electrical Trade Group is rated as fully competent and unrestricted for MEA97 unit 219 tasks, which is correct, but it does not mention the partial qualification status of the other trade groups, which is a requirement under the standard.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 2.41
+  },
+  {
+    "item_no": 27,
+    "text": "An approved maintenance organisation authorises Electrical Trade Group personnel to certify MEA97 competency unit 220 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Avionics qualification table shows Competency Unit 220 as \"Electrical Trade Group: Partially Qualified,\" not \"Qualified.\" Authorizing Electrical Trade Group personnel to certify MEA97 competency unit 220 work as fully qualified violates the competency designation in the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 28,
+    "text": "A Instrument Trade Group technician is assessed as only partially qualified for MEA97 competency unit 239 and is restricted to supervised tasks pending bridging training.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists MEA97 Version 3/4 Competency Unit 239 as \"Partially Qualified\" for the Instrument Trade Group (MEA97 3/4 Competency Units: 239; Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Qualified). The assessment of partial qualification and restriction to supervised tasks pending bridging training aligns with the standard's recognition of partial qualification.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 13.2
+  },
+  {
+    "item_no": 29,
+    "text": "A civilian holding the Instrument Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 233 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Avionics qualification table lists MEA97 3/4 Competency Unit 233 as \"Instrument Trade Group: Qualified; Radio Trade Group: Partially Qualified; Electrical Trade Group: Partially Qualified.\" The item claims full competence and unrestricted status for the Instrument Trade Group for this unit, which contradicts the \"Partially Qualified\" status for Radio and Electrical Trade Groups in the standard.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 3.11
+  },
+  {
+    "item_no": 30,
+    "text": "A Armament Trade Group technician is treated as qualified to perform MEA97 competency unit 210 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Avionics qualification table lists competency unit 210 as \"Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Qualified.\" The Armament Trade Group is not listed as qualified for competency unit 210, so an Armament Trade Group technician without additional training is not qualified to perform MEA97 competency unit 210 tasks.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 4.62
+  },
+  {
+    "item_no": 31,
+    "text": "An approved maintenance organisation authorises Radio Trade Group personnel to certify MEA97 competency unit 233 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Avionics qualification table lists competency unit 233 as \"Radio Trade Group: Partially Qualified,\" not \"Qualified.\" Authorizing Radio Trade Group personnel to certify MEA97 competency unit 233 work as fully qualified violates the standard's explicit qualification status for that unit.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 9.99
+  },
+  {
+    "item_no": 32,
+    "text": "A civilian holding the Instrument Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 210 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Avionics qualification and allied single trade groups\" table, for MEA97 3/4 Competency Unit 210, the Instrument Trade Group is listed as \"Partially Qualified,\" not \"Qualified\" or \"fully competent and unrestricted.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 4.85
+  },
+  {
+    "item_no": 33,
+    "text": "An organisation assigns MEA97 competency unit 226 work to Armament Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Avionics qualification table lists Competency Unit 226 as \"Radio Trade Group: Partially Qualified; Instrument Trade Group: Partially Qualified; Electrical Trade Group: Partially Qualified; Armament Trade Group: Not listed.\" Since Armament Trade Group is not qualified for Unit 226, assigning and certifying Armament Trade Group personnel for it violates the competency mapping in the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 9.13
+  },
+  {
+    "item_no": 34,
+    "text": "A Radio Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 101 maintenance tasks without supervision.",
+    "verdict": "UYGUN",
+    "reasoning": "The context shows that MEA97 Competency Unit 101 is listed as \"Qualified\" for the Radio Trade Group (MEA97 version 3/4 Avionics qualification and allied single trade groups table), indicating that a Radio Trade Group technician is authorized to independently perform maintenance tasks for this competency unit without supervision.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 11.11
+  },
+  {
+    "item_no": 35,
+    "text": "A Radio Trade Group technician is assessed as only partially qualified for MEA97 competency unit 204 and is restricted to supervised tasks pending bridging training.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists MEA97 3/4 Competency Unit 204 as \"Radio Trade Group: Partially Qualified\" (Table: MEA 97 version 3/4 Avionics qualification and allied single trade groups). The assessment of partial qualification and the requirement for supervised tasks pending bridging training aligns with the standard's recognition of partial qualification status.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Avionics qualification and allied single trade groups",
+    "elapsed_s": 7.31
+  },
+  {
+    "item_no": 36,
+    "text": "A Engine Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 108 maintenance tasks without supervision.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows \"MEA97 Version 3/4 Competency Units: 108; Engine Trade Group: Qualified\", indicating that the Engine Trade Group is fully qualified to perform competency unit 108 tasks. No further supervision requirement is specified in the context for fully qualified personnel.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 10.88
+  },
+  {
+    "item_no": 37,
+    "text": "A Structural Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 407 maintenance tasks without supervision.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units table lists MEA97 competency unit 407 as \"Structural Trade Group: Qualified,\" which means a Structural Trade Group technician is authorized to perform maintenance tasks for this competency unit independently without supervision.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 1.88
+  },
+  {
+    "item_no": 38,
+    "text": "An approved maintenance organisation authorises Airframe Trade Group personnel to certify MEA97 competency unit 303 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, competency unit 303 is marked as \"Partially Qualified\" for the Airframe Trade Group, not \"Qualified.\" The item states that Airframe Trade Group personnel are authorized to certify MEA97 competency unit 303 work as fully qualified, which contradicts the table's designation.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 10.3
+  },
+  {
+    "item_no": 39,
+    "text": "An approved maintenance organisation authorises Airframe Trade Group personnel to certify MEA97 competency unit 307 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 Competency Unit 307 is listed as \"Airframe Trade Group: Partially Qualified,\" not \"Qualified.\" The item states that Airframe Trade Group personnel are authorized to certify MEA97 competency unit 307 work as fully qualified, which contradicts the table's specification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 9.59
+  },
+  {
+    "item_no": 40,
+    "text": "A Airframe Trade Group maintainer performs MEA97 unit 308 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA 97 version 3/4 Mechanical and Structures qualifications table lists MEA97 Unit 308 as \"Airframe Trade Group: Partially Qualified.\" According to Section 4.10, personnel under partial qualification must perform work under supervision, which aligns with the finding that the maintainer performs the work under supervision.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 12.88
+  },
+  {
+    "item_no": 41,
+    "text": "An organisation assigns MEA97 competency unit 307 work to Structural Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows MEA97 307 is only qualified for Engine Trade Group and Partially Qualified for Airframe Trade Group, with no qualification for Structural Trade Group. Assigning and certifying Structural Trade Group personnel for MEA97 307 violates the competency mapping in the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.66
+  },
+  {
+    "item_no": 42,
+    "text": "A Structural Trade Group technician is treated as qualified to perform MEA97 competency unit 313 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the MEA 97 version 3/4 Mechanical and Structures qualifications table, the Structural Trade Group is only \"Partially Qualified\" for competency unit 313, not \"Qualified.\" Therefore, treating a Structural Trade Group technician as fully qualified to perform MEA97 competency unit 313 tasks without additional training violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 19.74
+  },
+  {
+    "item_no": 43,
+    "text": "A Engine Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 107 maintenance tasks without supervision.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units table explicitly lists \"MEA97 Version 3/4 Competency Units: 107; Engine Trade Group: Qualified; Airframe Trade Group: Qualified; Structural Trade Group: Qualified,\" indicating that the Engine Trade Group is fully qualified to perform MEA97 competency unit 107 maintenance tasks.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.29
+  },
+  {
+    "item_no": 44,
+    "text": "An approved maintenance organisation authorises Airframe Trade Group personnel to certify MEA97 competency unit 321 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 competency unit 321 is listed as \"Airframe Trade Group: Qualified\" but \"Engine Trade Group: Partially Qualified.\" The item states that Airframe Trade Group personnel are authorized to certify MEA97 competency unit 321 work as fully qualified, which implies full qualification for all trade groups, violating the standard's specific qualification mapping for unit 321.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.6
+  },
+  {
+    "item_no": 45,
+    "text": "A civilian holding the Structural Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 305 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, the Structural Trade Group is listed as \"Partially Qualified\" for MEA97 Version 3/4 Competency Unit 305. The item claims full competence and unrestricted rating, which contradicts the standard's explicit \"Partially Qualified\" designation for this unit.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 10.33
+  },
+  {
+    "item_no": 46,
+    "text": "An approved maintenance organisation authorises Engine Trade Group personnel to certify MEA97 competency unit 307 work as fully qualified.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units table lists MEA97 competency unit 307 as \"Engine Trade Group: Qualified,\" which means Engine Trade Group personnel are authorized to certify this competency unit. No violation is present.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 47,
+    "text": "An organisation assigns MEA97 competency unit 405 work to Airframe Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 Competency Unit 405 is only listed as \"Qualified\" under the Structural Trade Group, not the Airframe Trade Group. Assigning and certifying Airframe Trade Group personnel for this competency violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 11.41
+  },
+  {
+    "item_no": 48,
+    "text": "A Structural Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 409 maintenance tasks without supervision.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units list shows \"MEA97 Version 3/4 Competency Units: 409; Structural Trade Group: Qualified.\" This explicitly authorizes a Structural Trade Group technician to perform competency unit 409 maintenance tasks.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 9.34
+  },
+  {
+    "item_no": 49,
+    "text": "A Airframe Trade Group technician is treated as qualified to perform MEA97 competency unit 333 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows that competency unit 333 is only listed under the Engine Trade Group as \"Qualified,\" with no mention of the Airframe Trade Group. Therefore, an Airframe Trade Group technician is not qualified to perform MEA97 competency unit 333 tasks without additional training.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 10.7
+  },
+  {
+    "item_no": 50,
+    "text": "A Engine Trade Group maintainer performs MEA97 unit 312 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "According to MEA 97 version 3/4 Mechanical and Structures qualifications table, MEA97 Unit 312 is listed as \"Engine Trade Group: Partially Qualified.\" The standard allows partially qualified personnel to perform work under supervision, as defined in Section 4.10 Supervision.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 17.25
+  },
+  {
+    "item_no": 51,
+    "text": "A Airframe Trade Group technician is treated as qualified to perform MEA97 competency unit 337 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 337 is listed under the \"Engine Trade Group: Qualified\" column, not the Airframe Trade Group. The context explicitly shows that Airframe Trade Group technicians are not qualified for competency unit 337 without additional training or qualification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 3.14
+  },
+  {
+    "item_no": 52,
+    "text": "An approved maintenance organisation authorises Airframe Trade Group personnel to certify MEA97 competency unit 319 work as fully qualified.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 Competency Unit 319 is listed as \"Airframe Trade Group: Partially Qualified,\" not \"Qualified.\" The item states that Airframe Trade Group personnel are authorized to certify MEA97 competency unit 319 work as fully qualified, which contradicts the table indicating only partial qualification for this unit.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 44.22
+  },
+  {
+    "item_no": 53,
+    "text": "A Structural Trade Group technician is treated as qualified to perform MEA97 competency unit 338 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows that competency unit 338 is only qualified for Engine and Airframe Trade Groups, not for Structural Trade Group. Citing \"MEA97 Version 3/4 Competency Units: 338; Engine Trade Group: Qualified; Airframe Trade Group: Qualified.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.03
+  },
+  {
+    "item_no": 54,
+    "text": "A Structural Trade Group technician is treated as qualified to perform MEA97 competency unit 320 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows that Structural Trade Group is only \"Partially Qualified\" for competency unit 320, not \"Qualified.\" Therefore, a Structural Trade Group technician cannot be treated as fully qualified to perform MEA97 competency unit 320 tasks without additional training.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.07
+  },
+  {
+    "item_no": 55,
+    "text": "A civilian holding the Airframe Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 107 tasks.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly states in the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table that for MEA97 Version 3/4 Competency Unit 107, the Airframe Trade Group is marked as \"Qualified.\" This directly confirms that a civilian holding the Airframe Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 107 tasks.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.22
+  },
+  {
+    "item_no": 56,
+    "text": "A Structural Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 317 maintenance tasks without supervision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows Structural Trade Group is \"Qualified\" for competency unit 317, but the standard does not explicitly state that a Structural Trade Group technician is authorized to perform MEA97 competency unit 317 maintenance tasks independently without supervision. The table only indicates qualification status, not authorization levels.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.98
+  },
+  {
+    "item_no": 57,
+    "text": "A Engine Trade Group maintainer performs MEA97 unit 309 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Units: 309 lists \"Engine Trade Group: Partially Qualified\" (TABLE: MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups). The standard allows partially qualified personnel to perform work under supervision (DEFINITIONS 4.10 Supervision).",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 2.92
+  },
+  {
+    "item_no": 58,
+    "text": "A Structural Trade Group technician is treated as qualified to perform MEA97 competency unit 330 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 version 3/4 Competency Units table shows that competency unit 330 is only listed as \"Airframe Trade Group: Qualified,\" with no qualification for the Structural Trade Group. Therefore, a Structural Trade Group technician is not qualified to perform MEA97 competency unit 330 tasks without additional training.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 30.56
+  },
+  {
+    "item_no": 59,
+    "text": "A Engine Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 320 maintenance tasks without supervision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the MEA 97 version 3/4 Mechanical and Structures qualifications table, Competency Unit 320 is listed as \"Engine Trade Group: Partially Qualified.\" The standard requires full qualification (\"Qualified\") for independent task performance without supervision, which is not met here.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 26.18
+  },
+  {
+    "item_no": 60,
+    "text": "A Airframe Trade Group technician is treated as qualified to perform MEA97 competency unit 404 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 404 is listed under the Structural Trade Group as \"Qualified,\" not the Airframe Trade Group. The context explicitly states that Airframe Trade Group technicians are not qualified for MEA97 competency unit 404 without additional training or qualification.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 1.98
+  },
+  {
+    "item_no": 61,
+    "text": "A Structural Trade Group technician is treated as qualified to perform MEA97 competency unit 318 tasks without any additional training.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, Structural Trade Group technicians are only \"Partially Qualified\" for MEA97 competency unit 318, not fully qualified. Therefore, treating them as qualified without additional training violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 62,
+    "text": "A Engine Trade Group maintainer performs MEA97 unit 328 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 328 lists \"Engine Trade Group: Partially Qualified,\" which means an Engine Trade Group maintainer is permitted to perform work on unit 328 only under supervision, consistent with the definition of \"Partially Qualified\" in the context.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 3.73
+  },
+  {
+    "item_no": 63,
+    "text": "A civilian holding the Structural Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 303 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, the Structural Trade Group is listed as \"Partially Qualified\" for MEA97 unit 303 tasks, not \"fully competent and unrestricted.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 12.38
+  },
+  {
+    "item_no": 64,
+    "text": "A civilian holding the Engine Trade Group qualification is rated as fully competent and unrestricted for MEA97 unit 312 tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 Unit 312 lists the Engine Trade Group as \"Partially Qualified,\" not \"Qualified.\" The item claims full competence and unrestricted rating, which contradicts the standard's explicit \"Partially Qualified\" designation for this unit and trade group.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 3.86
+  },
+  {
+    "item_no": 65,
+    "text": "A Engine Trade Group maintainer performs MEA97 unit 321 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 321 lists \"Engine Trade Group: Partially Qualified\" (TABLE: MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups). The standard allows a partially qualified maintainer to perform work under supervision (DEFINITIONS 4.10 Supervision).",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 8.91
+  },
+  {
+    "item_no": 66,
+    "text": "An approved maintenance organisation authorises Engine Trade Group personnel to certify MEA97 competency unit 338 work as fully qualified.",
+    "verdict": "UYGUN",
+    "reasoning": "MEA97 Version 3/4 Table lists Competency Unit 338 as \"Engine Trade Group: Qualified,\" meaning Engine Trade Group personnel are authorized to perform this competency unit. The item states that Engine Trade Group personnel are certifying MEA97 competency unit 338 work, which aligns with the table's qualification.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 9.83
+  },
+  {
+    "item_no": 67,
+    "text": "A Airframe Trade Group technician is signed off as fully qualified to independently perform MEA97 competency unit 101 maintenance tasks without supervision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The MEA97 version 3/4 Mechanical and Structures qualifications table lists Competency Unit 101 as \"Airframe Trade Group: Qualified,\" but does not explicitly authorize the Airframe Trade Group to independently perform MEA97 competency unit 101 maintenance tasks without supervision. The standard does not provide a clear statement of independent authorization, so the item violates the requirement for explicit competency-based authorization.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 4.01
+  },
+  {
+    "item_no": 68,
+    "text": "An organisation assigns MEA97 competency unit 316 work to Structural Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Units table shows that competency unit 316 is only marked as \"Qualified\" for the Engine Trade Group and \"Partially Qualified\" for the Airframe Trade Group, with no qualification status for the Structural Trade Group. Assigning and certifying Structural Trade Group personnel for unit 316 violates the competency mapping in the table.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 9.89
+  },
+  {
+    "item_no": 69,
+    "text": "An organisation assigns MEA97 competency unit 308 work to Structural Trade Group personnel and certifies them as competent for it.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "MEA97 Version 3/4 Competency Unit 308 is listed as \"Engine Trade Group: Qualified; Airframe Trade Group: Partially Qualified\" (TABLE: MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups). The Structural Trade Group is not qualified for competency unit 308, so assigning and certifying Structural Trade Group personnel for it violates the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 9.64
+  },
+  {
+    "item_no": 70,
+    "text": "A Airframe Trade Group maintainer performs MEA97 unit 316 work only under supervision, being treated as partially qualified for that unit.",
+    "verdict": "UYGUN",
+    "reasoning": "According to the \"MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups\" table, MEA97 Unit 316 is listed under the Airframe Trade Group as \"Partially Qualified.\" The context defines supervision requirements, and performing work under supervision as a partially qualified maintainer is consistent with the standard's allowance for partial qualification.",
+    "expected": "UYGUN",
+    "table": "MEA 97 version 3/4 Mechanical and Structures qualifications and allied single trade groups",
+    "elapsed_s": 11.1
+  },
+  {
+    "item_no": 71,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Electrical' (for the Electrical trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Structures' which belongs to the Structures trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly lists civilian qualifications under their respective trade groups (e.g., Electrical: Certificate of Proficiency-Electrical; Structures: Certificate of Proficiency-Structures). The standard does not provide any equivalence or recognition between the Electrical and Structures trade groups. Citing \"Table (p.26): 1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 2.91
+  },
+  {
+    "item_no": 72,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Airframe' (for the Airframe trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Electrical' which belongs to the Electrical trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly lists trade groups and their corresponding civilian trades in Table (p.26), where 'Certificate of Proficiency-Airframe' belongs to the Airframe trade group and 'Certificate of Proficiency-Electrical' belongs to the Electrical trade group. There is no provision for equivalence between these distinct trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 3.39
+  },
+  {
+    "item_no": 73,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Structures' is recognised as equivalent to the RAN trade 'Metal-smith Aviation Maintenance ECN235' for Structures trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The ITEM states that 'Certificate of Proficiency-Structures' is recognised as equivalent to the RAN trade 'Metal-smith Aviation Maintenance ECN235' for Structures trade group work. According to the context, specifically the table on p.26 under the Trade Group 'Structures', both the civilian 'Certificate of Proficiency-Structures' and the RAN trade 'Metal-smith Aviation Maintenance ECN235' are listed as equivalent qualifications for the Structures trade group.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 9.5
+  },
+  {
+    "item_no": 74,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Electrical' is recognised as equivalent to the RAAF trade 'ELECFITT' for Electrical trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists \"Certificate of Proficiency-Electrical\" under the Electrical trade group with the corresponding RAAF trade \"ELECFITT\" in Table (p.26), Section: 1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 1.75
+  },
+  {
+    "item_no": 75,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Structures' is recognised as equivalent to the RAAF trade 'AMWKR' for Structures trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The item is compliant with the standard as per \"Table (p.26): 1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS\" under the Trade Group \"Structures,\" which explicitly lists \"Certificate of Proficiency-Structures\" as equivalent to the RAAF trade \"AMWKR.\"",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 76,
+    "text": "A person holding the RAAF qualification 'AMWKR' is recognised as equivalent to the Army trade 'ASFITT ECN 153' for Structures trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The ITEM states that RAAF qualification 'AMWKR' is recognised as equivalent to the Army trade 'ASFITT ECN 153' for Structures trade group work. According to the context, specifically the \"Table (p.26): 1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS\" under the Trade Group \"Structures,\" the RAAF trade \"AMWKR\" is listed alongside the Army trade \"ASFITT ECN 153,\" confirming their equivalence for Structures trade group work.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 4.43
+  },
+  {
+    "item_no": 77,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Instruments' is recognised as equivalent to the RAAF trade 'INSTFITT' for Instruments trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists \"Certificate of Proficiency-Instruments\" under the Instruments trade group and matches it with the RAAF trade \"INSTFITT\" in Table (p.26): 1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 78,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Radio' (for the Radio trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Instruments' which belongs to the Instruments trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM claims equivalence between 'Certificate of Proficiency-Radio' (Radio trade group) and 'Certificate of Proficiency-Instruments' (Instruments trade group). However, [SECTION] ALLIED TRADES > 1. Allied Trades states that avionics allied trade groups (Radio, Instruments, Electrical) are distinct and single trade technicians are trained only in part of the trade streams, with no direct link between pre-CBTA subjects and competencies.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 2.01
+  },
+  {
+    "item_no": 79,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Instruments' is recognised as equivalent to the Army trade 'Technician Electronics Systems Air (TESAIR) ECN414' for Instruments trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that 'Certificate of Proficiency-Instruments' is recognized as equivalent to 'Technician Electronics Systems Air (TESAIR) ECN414' for Instruments trade group work. According to the \"Table (p.26): 1. PRE 1991 ON-AIRCRAFT MAINTENANCE QUALIFICATIONS\" under the Trade Group \"Instruments,\" the civilian trade \"Certificate of Proficiency-Instruments\" is explicitly listed alongside the Army trade \"Technician Electronics Systems Air (TESAIR) ECN414,\" indicating equivalence.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 2.41
+  },
+  {
+    "item_no": 80,
+    "text": "A person holding the RAAF qualification 'RADTECHA' is recognised as equivalent to the RAN trade 'Radio Mechanic ECN225' for Radio trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists \"RAAF Trades: RADTECHA\" under the \"Trade Group: Radio\" and \"RAN Trades: Radio Mechanic ECN225\" in Table (p.26), indicating equivalence for Radio trade group work.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 1.84
+  },
+  {
+    "item_no": 81,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Airframe' (for the Airframe trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Instruments' which belongs to the Instruments trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly lists civilian qualifications under separate trade groups (e.g., \"Certificate of Proficiency-Airframe\" under Airframe and \"Certificate of Proficiency-Instruments\" under Instruments in Table 1, p.26). No provision allows equivalence between these distinct trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 4.2
+  },
+  {
+    "item_no": 82,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Radio' (for the Radio trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Electrical' which belongs to the Electrical trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context shows that 'Certificate of Proficiency-Radio' belongs to the Radio trade group, while 'Certificate of Proficiency-Electrical' belongs to the Electrical trade group (Table p.26). The standard does not list any equivalence between these two distinct trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 2.35
+  },
+  {
+    "item_no": 83,
+    "text": "A person holding the Army qualification 'Tech AVECN412' is recognised as equivalent to the RAN trade 'Radio Mechanic ECN225' for Radio trade group work.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context (Table p.26) lists \"Army Trades: Radio Mechanic ECN225\" under the Radio trade group, but does not list \"Army Trades: Tech AVECN412\" as equivalent to \"RAN Trades: Radio Mechanic ECN225\" for Radio trade group work. The Army qualification 'Tech AVECN412' is only listed under Radio, Instruments, and Electrical trade groups, not as a direct equivalent to the RAN trade 'Radio Mechanic ECN225'.",
+    "expected": "UYGUN",
+    "table": "Table_page26",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 84,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Instruments' (for the Instruments trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Structures' which belongs to the Structures trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly lists civilian trades under the \"Instruments\" trade group as \"Certificate of Proficiency-Instruments\" and under the \"Structures\" trade group as \"Certificate of Proficiency-Structures\" (see \"REQUIREMENTS FOR CIVILIAN PERSONNEL\" section). The item incorrectly equates these two distinct trade groups, violating the standard's clear separation of trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 85,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Electrical' (for the Electrical trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Airframe' which belongs to the Airframe trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context defines allied trades within disciplines: for the mechanical discipline, airframe and engine are allied; for the avionics discipline, instrument, radio and electrical are allied (4.4 DEFINITIONS). The item incorrectly equates the Electrical trade group (Certificate of Proficiency-Electrical) with the Airframe trade group (Certificate of Proficiency-Airframe), which are not allied trades.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 8.98
+  },
+  {
+    "item_no": 86,
+    "text": "A person holding the civilian qualification 'Certificate of Proficiency-Engine' (for the Engines trade group) is recognised as equivalent to the civilian trade 'Certificate of Proficiency-Electrical' which belongs to the Electrical trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context shows that 'Certificate of Proficiency-Engine' belongs to the Engines trade group, while 'Certificate of Proficiency-Electrical' belongs to the Electrical trade group (Table 1, p.26). The standard does not recognize equivalence between different trade groups for civilian qualifications.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page26",
+    "elapsed_s": 1.77
+  },
+  {
+    "item_no": 87,
+    "text": "A person holding the RAAF qualification 'ADATECH-NDI' is recognised as equivalent to the RAN trade 'ATA/ATV with formal NDT qualifications' for Non Destructive Testing trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists under the \"Non Destructive Testing\" trade group that RAAF trade 'ADATECH-NDI' is equivalent to RAN trade 'ATA/ATV with formal NDT qualifications' (Table, p.34, Trade Group: Non Destructive Testing).",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 2.48
+  },
+  {
+    "item_no": 88,
+    "text": "A person holding the RAAF qualification 'ADASTFITT' is recognised as equivalent to the Army trade 'ADASTFITT ECN153' for Composite maintenance trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists under the \"Composite maintenance\" trade group (Table p.34) that the RAAF trade 'ADASTFITT' is recognized as equivalent to the Army trade 'ADASTFITT ECN153'. This direct equivalence is stated in the official table, satisfying the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 89,
+    "text": "A person holding the RAAF qualification 'ARMFITT /EOES' (for the Armament trade group) is recognised as equivalent to the RAAF trade 'METMACH' which belongs to the Metal Machinist trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM states that 'ARMFITT /EOES' (Armament trade group) is recognised as equivalent to 'METMACH' (Metal Machinist trade group). However, according to the context, these are distinct Aviation Specialist Trades listed separately in Table (p.34): 1. Aviation Specialist trades, with no provision for equivalence between them. Section 7.4 further clarifies that Aviation Specialist Trades require specific annex E requirements and are not interchangeable.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 10.59
+  },
+  {
+    "item_no": 90,
+    "text": "A person holding the RAAF qualification 'ARMFITT /EOES' (for the Armament trade group) is recognised as equivalent to the RAAF trade 'ALSFITT / SEW' which belongs to the Aircraft Life Support trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that the trade groups \"Aircraft Life Support\" (ALSFITT / SEW) and \"Armament\" (ARMFITT /EOES) are distinct and separate Aviation Specialist Trades with no listed equivalence between them (Table p.34, Section 1. Aviation Specialist trades). No rule or table in the provided context supports the recognition of equivalence between these two trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 2.03
+  },
+  {
+    "item_no": 91,
+    "text": "A person holding the RAAF qualification 'ARMFITT /EOES' is recognised as equivalent to the Army trade 'FITARMT ECN146' for Armament trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly states in Table (p.34): 1. Aviation Specialist trades, Trade Group: Armament, that RAAF trade 'ARMFITT /EOES' is equivalent to Army trade 'FITARMT ECN146' for Armament trade group work.",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 92,
+    "text": "A person holding the civilian qualification 'NDT' (for the Non Destructive Testing trade group) is recognised as equivalent to the RAAF trade 'METMACH' which belongs to the Metal Machinist trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The civilian qualification 'NDT' (Non Destructive Testing trade group) is not listed as equivalent to the RAAF trade 'METMACH' (Metal Machinist trade group) in Table (p.34): 1. Aviation Specialist trades. The NDT trade group corresponds to RAAF trade ADATECH-NDI, not METMACH.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 1.84
+  },
+  {
+    "item_no": 93,
+    "text": "A person holding the RAAF qualification 'ALSFITT / SEW' (for the Aircraft Life Support trade group) is recognised as equivalent to the RAAF trade 'EPLTR' which belongs to the Electroplater trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly lists RAAF trades for the Electroplater trade group as \"EPLTR\" (p.34, Table 1. Aviation Specialist trades) and for the Aircraft Life Support trade group as \"ALSFITT / SEW\". There is no provision in the context indicating equivalence between these two distinct trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 3.4
+  },
+  {
+    "item_no": 94,
+    "text": "A person holding the RAAF qualification 'ALSFITT / SEW' (for the Aircraft Life Support trade group) is recognised as equivalent to the RAAF trade 'ASURFIN / SURFIN' which belongs to the Aircraft Surface Finisher trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly lists \"Aircraft Life Support\" and \"Aircraft Surface Finisher\" as separate trade groups under Table 1 (p.34), with distinct RAAF trades (ALSFITT / SEW vs. ASURFIN / SURFIN). No provision in the context allows equivalence between these two distinct trade groups.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 9.26
+  },
+  {
+    "item_no": 95,
+    "text": "A person holding the RAAF qualification 'METMACH' (for the Metal Machinist trade group) is recognised as equivalent to the RAAF trade 'ADASTFITT' which belongs to the Composite maintenance trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM claims equivalence between 'METMACH' (Metal Machinist trade group) and 'ADASTFITT' (Composite maintenance trade group), but the CONTEXT explicitly lists these as separate trade groups in Table (p.34): 1. Aviation Specialist trades, with no indication of equivalence. Additionally, Section 8. Composite Maintenance specifies acceptable qualifications for composite maintenance, none of which include METMACH.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 2.25
+  },
+  {
+    "item_no": 96,
+    "text": "A person holding the RAAF qualification 'ADASTFITT' is recognised as equivalent to the RAN trade 'ATA' for Composite maintenance trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that the RAAF qualification 'ADASTFITT' is recognised as equivalent to the RAN trade 'ATA' for Composite maintenance trade group work. According to Table (p.34): 1. Aviation Specialist trades, under the Trade Group \"Composite maintenance,\" RAAF Trades include ADASTFITT and RAN Trades include ATA, indicating equivalence.",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 3.89
+  },
+  {
+    "item_no": 97,
+    "text": "A person holding the RAAF qualification 'ALSFITT / SEW' is recognised as equivalent to the RAN trade 'SE up to' for Aircraft Life Support trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The context explicitly lists \"RAAF Trades: ALSFITT / SEW\" under the \"Aircraft Life Support\" trade group and shows \"RAN Trades: SE up to '92 post '92 ATA and ATV (OLM only)\" as equivalent, indicating recognition of equivalence for Aircraft Life Support trade group work (Table p.34, Section: 1. Aviation Specialist trades).",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 98,
+    "text": "A person holding the RAAF qualification 'ARMFITT /EOES' is recognised as equivalent to the RAN trade 'ATWO up to' for Armament trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The RAAF trade 'ARMFITT /EOES' is listed under the Armament trade group in Table (p.34): 1. Aviation Specialist trades, and the RAN trade 'ATWO up to' is also listed for the same trade group. This indicates equivalence for Armament trade group work.",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 11.75
+  },
+  {
+    "item_no": 99,
+    "text": "A person holding the RAAF qualification 'ADASTFITT' (for the Composite maintenance trade group) is recognised as equivalent to the RAAF trade 'METMACH' which belongs to the Metal Machinist trade group.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that the RAAF trade 'ADASTFITT' belongs to the Composite maintenance trade group (Table p.34), while 'METMACH' belongs to the Metal Machinist trade group (Table p.34 and Section 7). The item incorrectly equates these distinct trade groups, violating the clear trade group classifications in the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page34",
+    "elapsed_s": 2.03
+  },
+  {
+    "item_no": 100,
+    "text": "A person holding the Army qualification 'ADASTFITT ECN153' is recognised as equivalent to the RAN trade 'ATA' for Composite maintenance trade group work.",
+    "verdict": "UYGUN",
+    "reasoning": "The ITEM states that 'ADASTFITT ECN153' (Army) is recognised as equivalent to 'ATA' (RAN) for Composite maintenance trade group work. According to the \"Table (p.34): 1. Aviation Specialist trades,\" under the \"Trade Group: Composite maintenance,\" the Army trade 'ADASTFITT ECN153' is explicitly listed as equivalent to the RAN trade 'ATA'. This direct match confirms compliance with the standard.",
+    "expected": "UYGUN",
+    "table": "Table_page34",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 101,
+    "text": "A maintainer performing Fabric tasks holds the original qualification 'Certificate III Automotive (Vehicle Body Trimming)...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item matches the entry in Table 10 (p.36) for “Inherent Nature of Task: Fabric,” which lists “Original Qualification: Certificate III Automotive (Vehicle Body Trimming)” and the prescribed Aeroskills bridging units MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 102,
+    "text": "A maintainer performing Fuel tasks is authorised solely on the basis of 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...', the original qualification prescribed for MechanicalRubber tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that for the \"Fuel\" task, the original qualification must be \"Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)\", \"Certificate III in Automotive (Mechanical – Light Vehicle)\", \"Marine Engineer\", \"Marine Engineer Driver Class 1\", \"Marine Engineer Driver Class 2\", or specific Aeroskills Bridging Units (Table, p.36: Inherent Nature of Task: Fuel). The item states the maintainer is authorized solely based on \"Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...)\" which is the original qualification prescribed for \"MechanicalRubber\" tasks, not Fuel tasks. This is a mismatch with the standard, as the qualification cited is not listed for Fuel tasks in the context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 103,
+    "text": "A maintainer performing Pneumatic tasks is authorised solely on the basis of 'Certificate III Automotive (Vehicle Body Trimming)...', the original qualification prescribed for Fabric tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that the original qualification for Pneumatic tasks must be one of the listed Certificate III in Automotive (Mechanical) qualifications (e.g., Heavy Vehicle Earth Moving, Road Transport, Agriculture, Mobile Equipment Plant) or Marine Engineer qualifications (Table: 10. Non-Aviation Tradesperson, Inherent Nature of Task: Pneumatic). The qualification \"Certificate III Automotive (Vehicle Body Trimming)\" is listed under the Fabric task, not Pneumatic. Therefore, it does not meet the required qualification for Pneumatic tasks.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 104,
+    "text": "A maintainer performing Radio and Microwave Frequency tasks holds the original qualification 'Certificate III Electro-technology CommunicationsCertificate III Elect...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the maintainer holds an original qualification of Certificate III in Electro-technology Communications and has completed the prescribed Aeroskills bridging units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A), which matches the requirements in Table 10 (p.36) for the \"Radio and Microwave Frequency\" task.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 105,
+    "text": "A maintainer performing Hydraulic tasks holds the original qualification 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item complies with Table (p.36) 10. Non-Aviation Tradesperson, which lists \"Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)\" as an acceptable original qualification for the \"Hydraulic\" inherent nature of task, along with the prescribed Aeroskills bridging units MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 106,
+    "text": "A maintainer performing Pneumatic tasks holds the original qualification 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item matches the \"Pneumatic\" entry in Table (p.36): 10. Non-Aviation Tradesperson, which lists \"Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)\" as an acceptable original qualification and requires the Aeroskills bridging units MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 107,
+    "text": "A maintainer performing MechanicalRubber tasks holds the original qualification 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the maintainer holds the original qualification 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...)' and has completed the prescribed Aeroskills bridging units for the 'MechanicalRubber' task, which matches the requirements listed in Table (p.36) under \"Inherent Nature of Task: MechanicalRubber.\" The table explicitly lists \"Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving)\" as an acceptable original qualification and requires the Aeroskills bridging units MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 108,
+    "text": "A maintainer performing Electrical tasks holds the original qualification 'Certificate III Electro-technology Assembly and Servicing...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the maintainer holds 'Certificate III Electro-technology Assembly and Servicing' and has completed the prescribed Aeroskills bridging units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A), which matches the requirements listed in Table 10 (Non-Aviation Tradesperson) for the 'Electrical' inherent nature of task.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 109,
+    "text": "A maintainer performing MechanicalRubber tasks is authorised solely on the basis of 'Certificate III Electro-technology Assembly and Servicing...', the original qualification prescribed for Electrical tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The \"MechanicalRubber\" task in Table 10 (p.36) requires qualifications such as Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving), Certificate III in Automotive (Mechanical – Light Vehicle), Marine Engineer, or Marine Engineer Driver Class 1/2. The cited \"Certificate III Electro-technology Assembly and Servicing\" is listed under the Electrical task, not MechanicalRubber.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 4.14
+  },
+  {
+    "item_no": 110,
+    "text": "A maintainer performing Instrument and Display tasks is authorised solely on the basis of 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...', the original qualification prescribed for Hydraulic tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that for the \"Instrument and Display\" task, the original qualification must be \"Certificate III Electro-technology Instrumentation\" (Table 10, p.36). The item states the maintainer is authorized solely based on \"Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...)\", which is the qualification for Hydraulic tasks, not Instrument and Display.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 3.95
+  },
+  {
+    "item_no": 111,
+    "text": "A maintainer performing Radio and Microwave Frequency tasks holds 'Certificate III Electro-technology CommunicationsCertificate III Elect...' but is authorised WITHOUT completing any Aeroskills bridging units.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context (Table p.36, Inherent Nature of Task: Radio and Microwave Frequency) explicitly lists required Aeroskills Bridging Units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A) for personnel with Certificate III Electro-technology Communications to be authorised for Radio and Microwave Frequency tasks. The item states the maintainer is authorised without completing these bridging units, which is a clear violation.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 112,
+    "text": "A maintainer performing Composite (Non – Metallic composite maintenance only) tasks is authorised solely on the basis of 'Certificate III Electro-technology CommunicationsCertificate III Elect...', the original qualification prescribed for Electronic tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item states that a maintainer performing Composite (Non-Metallic composite maintenance only) tasks is authorised solely on the basis of 'Certificate III Electro-technology Communications', which is not listed in Table (p.36): 10. Non-Aviation Tradesperson for Composite (Non-Metallic composite maintenance only) tasks. The table specifies that the Original Qualification for Composite (Non-Metallic composite maintenance only) is 'Certificate IV in Polymer Technology' (Section 8.3, Composite Maintenance).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 13.25
+  },
+  {
+    "item_no": 113,
+    "text": "A maintainer performing Fabric tasks is authorised solely on the basis of 'Certificate III Electro-technology Instrumentation...', the original qualification prescribed for Instrument and Display tasks.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM authorises a maintainer for Fabric tasks based solely on 'Certificate III Electro-technology Instrumentation', which is the original qualification prescribed for Instrument and Display tasks (Table 10, p.36). Fabric tasks require 'Certificate III Automotive (Vehicle Body Trimming)' per Table 10, so the cited qualification does not match the required one.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 2.07
+  },
+  {
+    "item_no": 114,
+    "text": "A maintainer performing MechanicalRubber tasks holds 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...' but is authorised WITHOUT completing any Aeroskills bridging units.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that for the \"MechanicalRubber\" task, the Non-Aviation Tradesperson must hold the listed bridging units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A) as per Table (p.36): 10. Non-Aviation Tradesperson. The item states the maintainer is authorized without completing any Aeroskills bridging units, which violates this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 10.22
+  },
+  {
+    "item_no": 115,
+    "text": "A maintainer performing Instrument and Display tasks holds the original qualification 'Certificate III Electro-technology Instrumentation...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item matches the \"Inherent Nature of Task: Instrument and Display\" entry in Table (p.36): 10. Non-Aviation Tradesperson, which lists \"Original Qualification: Certificate III Electro-technology Instrumentation\" and the same set of Aeroskills bridging units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A).",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 116,
+    "text": "A maintainer performing Electrical tasks holds 'Certificate III Electro-technology Assembly and Servicing...' but is authorised WITHOUT completing any Aeroskills bridging units.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that for Electrical tasks under Non-Aviation Tradesperson (Table p.36), the Aeroskills Bridging Units MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A are required. The item states authorization WITHOUT completing any Aeroskills bridging units, which violates the requirement cited in Table (p.36).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 117,
+    "text": "A maintainer performing Fuel tasks holds the original qualification 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the maintainer holds the original qualification 'Certificate III in Automotive (Mechanical – Heavy Vehicle Earth Moving...)' and has completed the prescribed Aeroskills bridging units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA327A or MEA328A) for the Fuel task, which matches the requirements listed in Table (p.36): 10. Non-Aviation Tradesperson under \"Inherent Nature of Task: Fuel.\"",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 118,
+    "text": "A maintainer performing Electronic tasks holds 'Certificate III Electro-technology CommunicationsCertificate III Elect...' but is authorised WITHOUT completing any Aeroskills bridging units.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context specifies that for Electronic tasks under Non-Aviation Tradesperson (Table p.36), the Aeroskills Bridging Units MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A are required. The item states the maintainer is authorized without completing any Aeroskills bridging units, which directly violates the requirement cited from Table (p.36).",
+    "expected": "UYGUN DEĞİL",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 119,
+    "text": "A maintainer performing Composite (Non – Metallic composite maintenance only) tasks holds the original qualification 'Certificate IV in Polymer Technology...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the maintainer holds the original qualification 'Certificate IV in Polymer Technology' for Composite (Non – Metallic composite maintenance only) tasks, which is explicitly listed in Table 10 (p.36) as an acceptable qualification for this task. Additionally, the item notes the prescribed Aeroskills bridging units have been completed, consistent with the requirement in section 8.3 of the Composite Maintenance standard.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 120,
+    "text": "A maintainer performing Electronic tasks holds the original qualification 'Certificate III Electro-technology CommunicationsCertificate III Elect...' and has completed the prescribed Aeroskills bridging units for that task.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the maintainer holds a Certificate III in Electro-technology Communications (an original qualification listed under \"Inherent Nature of Task: Electronic\" in Table 10) and has completed the prescribed Aeroskills bridging units (MEA101A, MEA103A, MEA105A, MEA107A, MEA109A, MEA246A), which matches the requirements in Table 10 for Electronic tasks.",
+    "expected": "UYGUN",
+    "table": "Table_page36",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 121,
+    "text": "A Technical Trainee performs a maintenance task on aeronautical product while being directly supervised by a task-authorised tradesperson, who is responsible for the task and certifies the completed work.",
+    "verdict": "UYGUN",
+    "reasoning": "The item complies with Section 9.7 of the standard, which states that personnel under training (Technical Trainee) may perform maintenance tasks under direct supervision, provided the supervising tradesperson is task-authorised. The context explicitly defines \"Supervision\" in 4.10.2, where direct supervision requires the supervisor to assume responsibility for the correctness and quality of the task.",
+    "expected": "UYGUN",
+    "table": "5. MAINTENANCE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 122,
+    "text": "A newly hired worker with no trade qualification, part qualification or task authorisation independently performs and certifies maintenance on an aircraft component.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates TAMM Regulation 5.1.5 and clause 5.1, which require that personnel performing maintenance must have relevant trade qualification, part qualification, or Statement of Attainment and be correctly authorised. A newly hired worker with no trade qualification or task authorisation cannot independently perform or certify maintenance on an aircraft component.",
+    "expected": "UYGUN DEĞİL",
+    "table": "5. MAINTENANCE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 123,
+    "text": "A tradesperson holding the relevant trade qualification and correctly task authorised performs maintenance on State aircraft.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states the tradesperson holds the relevant trade qualification and is correctly task authorised, which aligns with the requirement in Section 7.3 that tradespeople must be competent and authorised to perform maintenance on State aircraft.",
+    "expected": "UYGUN",
+    "table": "5. MAINTENANCE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 124,
+    "text": "A tradesperson holds a relevant trade qualification but has never been granted task authorisation, yet independently performs and certifies maintenance without any supervision.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates Section 9.9 of the standard, which requires task authorisation to be formally assigned before a tradesperson may perform or certify maintenance. The standard states that a tradesperson must be \"verified\" and \"demonstrated\" to the SMM before authorisation (9.9(a)-(f)).",
+    "expected": "UYGUN DEĞİL",
+    "table": "5. MAINTENANCE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 125,
+    "text": "A technician is authorised to perform aircraft maintenance without having completed the safety, familiarisation and application training courses.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates STANDARD Section 10. MANDATORY TRAINING REQUIREMENTS, specifically 10.1, which states that personnel authorised to perform maintenance shall have completed the safety, familiarisation and application training courses.",
+    "expected": "UYGUN DEĞİL",
+    "table": "10. MANDATORY TRAINING REQUIREMENTS",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 126,
+    "text": "Before authorisation, a maintainer completes the safety, familiarisation and application training courses specified in the Statement of Work.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that the maintainer completed safety, familiarisation, and application training courses before authorisation, which aligns with the requirement in STANDARD 9.3 that individuals must have completed appropriate application, safety, and awareness courses as defined in the MMP before task authorisation.",
+    "expected": "UYGUN",
+    "table": "10. MANDATORY TRAINING REQUIREMENTS",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 127,
+    "text": "A technician performs Explosive Ordnance aircraft maintenance (other than egress system work) without having completed the Explosive Ordnance training course.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to Section 10. MANDATORY TRAINING REQUIREMENTS, 10.2.1, completion of the Explosive Ordnance Course is mandatory for Explosive Ordnance (EO) and related aircraft maintenance (other than egress system maintenance and safety and distress pyrotechnics inspection and handling). The item states the technician performed EO aircraft maintenance without completing the required course, which violates this mandatory training requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "10. MANDATORY TRAINING REQUIREMENTS",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 128,
+    "text": "A maintainer completes the mandatory Explosive Ordnance training course before being authorised to perform EO-related aircraft maintenance.",
+    "verdict": "UYGUN",
+    "reasoning": "The item complies with STANDARD Section 10.2.1, which explicitly states that completion of the Explosive Ordnance Course is a mandatory prerequisite training before performing EO-related aircraft maintenance.",
+    "expected": "UYGUN",
+    "table": "10. MANDATORY TRAINING REQUIREMENTS",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 129,
+    "text": "An NDT technician qualified to AS3669 carries out non-destructive testing only to the inspection level and methods for which they are qualified, with current annual certification.",
+    "verdict": "UYGUN",
+    "reasoning": "The item aligns with Section 3. Non Destructive Testing, specifically 3.1 and 3.2, which state that only NDT technicians qualified to AS3669 may carry out NDT on ADF aircraft or aeronautical product, and they must perform inspections only to the level and method(s) for which they are qualified, with annual certification.",
+    "expected": "UYGUN",
+    "table": "3. Non Destructive Testing.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 130,
+    "text": "A general engineering technician who is not qualified to AS3669 carries out non-destructive testing on an ADF aircraft component.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates Section 3.1 of the \"Non Destructive Testing\" standard, which explicitly states that \"Only NDT technicians qualified to AS3669 may carry out Non Destructive Testing on ADF aircraft or aeronautical product.\" The general engineering technician in the item is not qualified to AS3669, thus violating this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "3. Non Destructive Testing.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 131,
+    "text": "An NDT technician qualified only in the eddy-current method performs radiographic NDT inspection because the team was short-staffed.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly states in section 3.2 of Non Destructive Testing that \"NDT technicians shall only carry out inspections to the level and method(s) for which they are qualified.\" Performing radiographic NDT without qualification in that method violates this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "3. Non Destructive Testing.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 132,
+    "text": "An automotive spray painter who completed a DAIRMAINT-approved upgrade course performs aircraft surface finishing on ADF equipment.",
+    "verdict": "UYGUN",
+    "reasoning": "The context under [TEXT] 4. Aircraft Surface Finisher explicitly states that surface finishing of ADF aircraft and equipment may be carried out by qualified automotive spray painters who have completed additional training to upgrade their competency to aircraft surface finisher standard, provided the course is approved by DAIRMAINT. The item describes exactly this scenario.",
+    "expected": "UYGUN",
+    "table": "4. Aircraft Surface Finisher.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 133,
+    "text": "A qualified automotive spray painter with no additional aircraft surface finisher training is assigned to surface finish ADF aircraft.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates the requirement in Section 4.1 of the standard, which states that surface finishing of ADF aircraft shall only be carried out by ex-ADF Aircraft surface finishers or by qualified automotive spray painters who have completed additional training to upgrade their competency to aircraft surface finisher standard approved by DAIRMAINT, DGTA-ADF. The individual in the item lacks the additional approved training.",
+    "expected": "UYGUN DEĞİL",
+    "table": "4. Aircraft Surface Finisher.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 134,
+    "text": "An ex-ADF Aircraft Surface Finisher carries out surface finishing of ADF aircraft.",
+    "verdict": "UYGUN",
+    "reasoning": "The ITEM states that an ex-ADF Aircraft Surface Finisher carries out surface finishing of ADF aircraft, which aligns with the requirement in [TEXT] 4. Aircraft Surface Finisher, 4.1 that surface finishing of ADF aircraft and equipment shall only be carried out by ex-ADF Aircraft Surface Finishers or by qualified automotive spray painters with additional approved training.",
+    "expected": "UYGUN",
+    "table": "4. Aircraft Surface Finisher.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 135,
+    "text": "An ex-ADF Electroplater carries out electroplating of ADF aircraft components.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that an ex-ADF Electroplater carries out electroplating of ADF aircraft components, which aligns with section 6.1 of the \"6. Electroplater\" standard: \"Electroplating of ADF aircraft and equipment shall only be carried out by ex-ADF Electroplaters or by tradespeople who have attained the minimum qualification of Certificate III in Engineering Production Systems (Electroplating).\"",
+    "expected": "UYGUN",
+    "table": "6. Electroplater.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 136,
+    "text": "A general workshop hand with no ADF electroplating background and without Certificate III in Engineering Production Systems (Electroplating) performs electroplating on ADF equipment.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Section ALLIED TRADES > 6. Electroplater states that electroplating of ADF aircraft and equipment shall only be carried out by ex-ADF Electroplaters or by tradespeople who have attained the minimum qualification of Certificate III in Engineering Production Systems (Electroplating). The item describes a general workshop hand without this qualification performing electroplating.",
+    "expected": "UYGUN DEĞİL",
+    "table": "6. Electroplater.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 137,
+    "text": "A tradesperson holding Certificate III in Engineering Production Systems (Electroplating) performs electroplating of ADF aircraft equipment.",
+    "verdict": "UYGUN",
+    "reasoning": "Item states tradesperson holds Certificate III in Engineering Production Systems (Electroplating), which matches the requirement in Section ALLIED TRADES > 6. Electroplater, clause 6.1 that electroplating of ADF aircraft and equipment shall only be carried out by those with this minimum qualification.",
+    "expected": "UYGUN",
+    "table": "6. Electroplater.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 138,
+    "text": "A civilian contractor organisation performing maintenance on Australian State aircraft within Australia is treated as subject to DEF(AUST) 9022.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that a civilian contractor organisation performing maintenance on Australian State aircraft within Australia is treated as subject to DEF(AUST) 9022. According to the context, DEF(AUST) 9022 is applicable to civilian maintenance organisations performing maintenance on State aircraft within Australia (STANDARD > 2. SCOPE > 2.1).",
+    "expected": "UYGUN",
+    "table": "2. SCOPE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 139,
+    "text": "A civilian maintenance organisation maintaining State aircraft in Australia claims DEF(AUST) 9022 does not apply because its staff are contractors rather than Defence civilians.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to STANDARD > 2. SCOPE > 2.1, DEF(AUST) 9022 applies to \"civilian maintenance organisations, civilian maintenance management staff and tradespeople, and Defence civilians\" performing maintenance on State aircraft. The claim that contractors are excluded is not supported by the standard.",
+    "expected": "UYGUN DEĞİL",
+    "table": "2. SCOPE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 140,
+    "text": "A maintainer certifies that work was performed correctly although they have not been formally task authorised for that duty.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Section 9.5(a) requires that the person certifying work must be \"acknowledging that the person has the technical and administrative competency and/or qualifications required to perform, supervise or inspect the work and complete the associated certification covered by the authorisation.\" The item states the maintainer was not formally task authorised, which directly violates the requirement for formal task authorisation before certifying work.",
+    "expected": "UYGUN DEĞİL",
+    "table": "9. TASK AUTHORISATION",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 141,
+    "text": "The SMM ensures that only personnel who are proficient and formally task authorised certify completed maintenance work.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that the SMM ensures only proficient and formally task-authorised personnel certify maintenance work, which aligns with Section 9.1 of the standard: \"The SMM is to ensure that personnel who certify as having performed or supervised work are proficient and been formally task authorised to perform these duties.\"",
+    "expected": "UYGUN",
+    "table": "9. TASK AUTHORISATION",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 142,
+    "text": "An Avionics-stream tradesperson is assigned to independently perform Mechanical-stream maintenance without having completed any of the associated Mechanical competencies.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Section 8.1.1 explicitly states that an avionics tradesperson may only be employed and task authorised outside their trade stream on simple tasks, and that performing Mechanical-stream maintenance requires completion of the associated competencies. The item describes an avionics tradesperson independently performing Mechanical-stream maintenance without any Mechanical competencies, which violates this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "8. OUT-OF-TRADE EMPLOYMENT",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 143,
+    "text": "A Mechanical-stream tradesperson completes the associated Avionics units of competency before being employed on Avionics-stream tasks.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that a Mechanical-stream tradesperson completes the associated Avionics units of competency before being employed on Avionics-stream tasks, which aligns with clause 7.3.4 of the standard requiring completion of compulsory units for all streams in which the tradesperson is to be employed.",
+    "expected": "UYGUN",
+    "table": "8. OUT-OF-TRADE EMPLOYMENT",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 144,
+    "text": "A Structures-stream inspector signs off Avionics-stream work, relying only on their Structures training without the underpinning Avionics competencies.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Section 8.1 explicitly states that tradespeople within one stream (e.g., Structures) generally lack the necessary theoretical base to support work in other streams (e.g., Avionics) unless they have completed the associated competencies for that stream. The inspector signing off Avionics work without Avionics competencies violates this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "8. OUT-OF-TRADE EMPLOYMENT",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 145,
+    "text": "A pre-1991 single-trade Armament Fitter is employed on general avionics maintenance beyond explosive-ordnance duties without obtaining the relevant avionics competencies.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM violates the standard found in [TEXT] 5. Armament, which explicitly states that \"Armament Fitters were not considered an avionics or mechanical allied tradespeople and hence must obtain the relevant competency or competencies if employed beyond explosive ordnance-related tasks.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "5. Armament.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 146,
+    "text": "A pre-1991 Armament Fitter performs explosive-ordnance-related armament tasks for which they were trained.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM states that a pre-1991 Armament Fitter performs explosive-ordnance-related armament tasks for which they were trained. However, per [TEXT] 5. Armament, pre-1991 Armament Fitters were trained only for armament duties and must obtain relevant competencies if employed beyond explosive ordnance-related tasks. Since the ITEM does not indicate additional competency acquisition, it violates the requirement that Armament Fitters must obtain relevant competencies for non-explosive ordnance tasks.",
+    "expected": "UYGUN",
+    "table": "5. Armament.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 147,
+    "text": "A Life Support Fitter who completed the RAAF Aircraft Life Support Fitter course maintains aircraft life support equipment, excluding oxygen systems.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The ITEM states that the Life Support Fitter maintains aircraft life support equipment excluding oxygen systems, which directly contradicts the standard in [TEXT] 2. Aircraft Life Support, Section 2.1. This section explicitly defines the scope of Aircraft Life Support Fitters as including maintenance of all aircraft life support equipment fitted to an aircraft or worn by aircrew, with the exception of oxygen systems. The exclusion of oxygen systems is permitted, but the item does not mention oxygen systems at all, implying the fitter is not authorized to maintain any life support equipment, which is incorrect.",
+    "expected": "UYGUN",
+    "table": "2. Aircraft Life Support.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 148,
+    "text": "A general aircraft mechanic with no ALS Fitter course and no Certificate III in Public Safety (Aviation Life Support Maintenance) is employed to maintain aircraft life support equipment.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "According to \"2. Aircraft Life Support\" section, personnel employed as Life Support Fitters must have successfully completed the RAAF Aircraft Life Support Fitter course or Certificate III in Public Safety (Aviation Life Support Maintenance). The item states that a general aircraft mechanic with no ALS Fitter course and no Certificate III in Public Safety (Aviation Life Support Maintenance) is employed to maintain aircraft life support equipment, which violates the requirement specified in the context.",
+    "expected": "UYGUN DEĞİL",
+    "table": "2. Aircraft Life Support.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 149,
+    "text": "A technician holding Certificate III in Public Safety (Aviation Life Support Maintenance) is employed as an Aircraft Life Support Fitter.",
+    "verdict": "UYGUN",
+    "reasoning": "The item complies with the standard as per [TEXT] 2. Aircraft Life Support, Section 2.1, which explicitly states that personnel employed as Aircraft Life Support Fitters must have successfully completed the RAAF Aircraft Life Support Fitter course or Certificate III in Public Safety (Aviation Life Support Maintenance).",
+    "expected": "UYGUN",
+    "table": "2. Aircraft Life Support.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 150,
+    "text": "State aircraft are maintained by competent and authorised individuals working within an approved organisation, with their work certified as correct.",
+    "verdict": "UYGUN",
+    "reasoning": "The item aligns with the standard's requirement in Section 1.1 of the INTRODUCTION, which states that State aircraft must be maintained by competent and authorised individuals within an approved organisation, with their work certified as correct and accepted on behalf of the ADF.",
+    "expected": "UYGUN",
+    "table": "1. INTRODUCTION",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 151,
+    "text": "An individual maintains State aircraft outside of any approved organisation, with no certification of the work performed.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates the requirement stated in Section 1.1 of the standard, which mandates that State aircraft and aeronautical product must be maintained by competent and authorised individuals acting as members of an approved organisation whose work is certified as correct and accepted on behalf of the ADF.",
+    "expected": "UYGUN DEĞİL",
+    "table": "1. INTRODUCTION",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 152,
+    "text": "An ex-ADF METMACH carries out metal machinist specialist trade work on ADF aircraft.",
+    "verdict": "UYGUN",
+    "reasoning": "The context under section 7. Metal Machinist (ALLIED TRADES > 7. Metal Machinist) explicitly states that suitable qualifications for the metal machinist specialist trade include ex-ADF trained METMACHs.",
+    "expected": "UYGUN",
+    "table": "7. Metal Machinist.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 153,
+    "text": "A person trained by a registered training organisation that has not been approved by DAIRMAINT, DGTA-ADF is employed as a metal machinist on ADF aircraft.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "Section 7.1 under ALLIED TRADES > 7. Metal Machinist explicitly requires training from an RTO approved by DAIRMAINT, DGTA-ADF. The item states the person was trained by an RTO not approved by DAIRMAINT, DGTA-ADF, violating this requirement.",
+    "expected": "UYGUN DEĞİL",
+    "table": "7. Metal Machinist.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 154,
+    "text": "NDT certification of a technician is renewed annually in accordance with the process specified by AS3669.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that NDT certification is renewed annually in accordance with AS3669, which aligns with Section 3.2 of the \"3. Non Destructive Testing\" standard: \"Certification of NDT technicians shall be carried out annually in accordance with the process specified by AS3669 or other standard approved by DAIRMAINT, DGTA-ADF.\"",
+    "expected": "UYGUN",
+    "table": "3. Non Destructive Testing.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 155,
+    "text": "Aircraft surface finishing of ADF equipment is performed by a tradesperson whose upgrade course was never approved by DAIRMAINT, DGTA-ADF.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates the requirement in [SECTION] ALLIED TRADES > 4. Aircraft Surface Finisher, 4.1, which states that additional training to upgrade automotive painters to aircraft surface finisher standard must be a course approved by DAIRMAINT, DGTA-ADF. The tradesperson's upgrade course was never approved by DAIRMAINT, DGTA-ADF.",
+    "expected": "UYGUN DEĞİL",
+    "table": "4. Aircraft Surface Finisher.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 156,
+    "text": "A Technical Trainee gains experience towards competency assessment by performing tasks under the direct supervision of task-authorised personnel.",
+    "verdict": "UYGUN",
+    "reasoning": "The item aligns with Section 9.7 of the standard, which explicitly states that personnel under training may perform maintenance tasks under direct supervision of an authorised tradesperson, provided mandatory training is completed.",
+    "expected": "UYGUN",
+    "table": "5. MAINTENANCE",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 157,
+    "text": "A maintainer is authorised for a specific activity without completing the relevant ADF-approved off-the-job training specified in the MMP.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The item violates 10.1 of the MANDATORY TRAINING REQUIREMENTS, which states that personnel authorised to perform maintenance must have completed \"the relevant ADF or ADF approved off-the-job training as specified in the ... MMP.\"",
+    "expected": "UYGUN DEĞİL",
+    "table": "10. MANDATORY TRAINING REQUIREMENTS",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 158,
+    "text": "An Avionics tradesperson, before moving to Structures-stream tasks, first completes the associated Structures units of competency.",
+    "verdict": "UYGUN",
+    "reasoning": "The item aligns with Section 8.1 of the standard, which states that tradespeople may only be employed outside their stream on simple tasks unless they complete the associated competencies for that stream. Completing the Structures units of competency before moving to Structures-stream tasks satisfies this requirement.",
+    "expected": "UYGUN",
+    "table": "8. OUT-OF-TRADE EMPLOYMENT",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 159,
+    "text": "A Life Support Fitter performs maintenance on aircraft oxygen systems, treating them as ordinary life support equipment within their ALS scope.",
+    "verdict": "UYGUN DEĞİL",
+    "reasoning": "The context explicitly states in section 2.1 (Aircraft Life Support) that \"Aircraft Life Support Fitters (ALSFITT) ... are trained specifically for the maintenance of Aircraft Life Support Equipment fitted to an aircraft or worn by aircrew, with the exception of oxygen systems.\" Treating oxygen systems as ordinary life support equipment within ALS scope violates this specific exclusion.",
+    "expected": "UYGUN DEĞİL",
+    "table": "2. Aircraft Life Support.",
+    "elapsed_s": 0.0
+  },
+  {
+    "item_no": 160,
+    "text": "A metal machinist trained by a registered training organisation approved by DAIRMAINT, DGTA-ADF carries out specialist machining work on ADF aircraft.",
+    "verdict": "UYGUN",
+    "reasoning": "The item states that a metal machinist trained by an RTO approved by DAIRMAINT, DGTA-ADF carries out specialist machining work on ADF aircraft. According to section 7.1 (ALLIED TRADES > 7. Metal Machinist), suitable qualifications for the metal machinist specialist trade include training provided by an RTO approved by DAIRMAINT, DGTA-ADF.",
+    "expected": "UYGUN",
+    "table": "7. Metal Machinist.",
+    "elapsed_s": 0.0
+  }
+]
