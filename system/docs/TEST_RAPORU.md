@@ -326,3 +326,42 @@ Faz 1+2 notları:
   olarak indekslenir (aynı chunk_id metadata'sı; retriever dedupe tekilleştirir).
 - Grup kırılımı karışık: NEQ +16, Inter_Magazine +12, Underground +8;
   Compatibility −12, IBD −8. Asıl kaldıraç Faz 3 (havuz) + Faz 4 (BM25).
+
+---
+
+## 10. Tablo Serializer İki Kusur Düzeltmesi (2026-06-13)
+
+Arayüz denetiminde bulunan iki verdict hatasının kök nedeni `table_serializer.py`'de
+iki bağımsız kusurdu; ikisi de düzeltildi (tek dosya, retrieval kapısı + verdict benchmark).
+
+**Kusur 1 — birleşik-başlık hizalaması (`_TableParser`):** rowspan/colspan yok
+sayılıyordu → çok-başlıklı X-matris tablolarında (s.147 yangın müdahale) başlık 5
+kolon / veri 7 kolon, kolonlar kayıyor, satır sonundaki X'ler kesiliyordu. Calcium
+Phosphide'ın "Apply No Water" X'i tamamen düşüyordu → model su söndürmeyi yanlışlıkla
+UYGUN sayıyordu. **Düzeltme:** birleşik hücreler ızgaraya açılır (colspan kopyalanır,
+rowspan sonraki satırlara taşınır). #06 artık uçtan uca **UYGUN DEĞİL** (gerekçe
+"apply no water" sembolünü doğru gösteriyor).
+
+**Kusur 2 — LaTeX matematiği siliniyordu (`_clean`):** `$...$` içeriği regex ile
+**siliniyordu** → T.2'de HD satır etiketleri (`$1.3^2$`) ve mesafe formülleri
+(`$\leq 7500kg \rightarrow 870m$`, `$6.4 Q^{1/3}$`) modele hiç ulaşmıyordu; model
+mesafeyi doğrulayamayıp güvenli tarafa kaçıyordu (false-negative). **Düzeltme:**
+`$...$` içeriği silinmeden metne çevrilir (`\leq`→≤, `\rightarrow`→→, `^{1/3}`→^(1/3),
+`\text{}` açılır). Tüm Q-D/formül tablolarına yarar.
+
+**Sonuç (gpt-oss-120B, 150 senaryo, eksiksiz):**
+
+| | Önce (#9) | Sonra (#10) |
+|---|---|---|
+| Genel | 88.7% (133/150) | **94.7% (142/150)** ▲+6 puan |
+| Table T.2 | 70.0% | **93.3%** (+7 madde) |
+| Table 5 | 86.7% | **93.3%** (+2) |
+| Table 4 / 6 / 133 | 96.7 / 93.3 / 96.7 | aynı |
+
+**Retrieval kapısı (eval_all, tolerans 2%): GEÇTİ** — set1/2 99.3 sabit, **set3 98.0→99.3
+iyileşti** (X-matris hizası), text 84.5/85.0 sabit. Gerileme yok.
+
+**Kapsam dışı bırakılan (ayrı iş):** T.2'ye s.149 placard tablosunun sızması
+table_assembler'ın caption'sız-tablo-devamı sezgisinden (çok-sayfa Q-D birleşmesi
+için gerekli); zararsız gürültü olduğundan ve heuristik değişikliği regresyon riski
+taşıdığından bu turda ele alınmadı.

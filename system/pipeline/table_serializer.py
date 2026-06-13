@@ -18,13 +18,22 @@ from html.parser import HTMLParser
 # ---------------------------------------------------------------------------
 
 class _TableParser(HTMLParser):
-    """HTML tablosunu 2D metin listesine çevirir (rowspan/colspan görmezden gelinir)."""
+    """HTML tablosunu 2D metin listesine çevirir; rowspan/colspan ızgaraya açılır.
+
+    Birleşik hücreler düzleştirilir: colspan=N hücre değeri N kolona kopyalanır,
+    rowspan=N değeri sonraki N-1 satırda aynı kolon konumuna taşınır. Böylece
+    çok-başlıklı matris tabloları (üst-başlık + alt-başlık) veri satırlarıyla
+    hizalı kalır — başlık etiketleri kaymaz, hücreler kesilmez.
+    """
 
     def __init__(self):
         super().__init__()
         self.rows: list[list[str]] = []
-        self._row: list[str] | None = None
+        self._row: list[tuple[str, int, int]] | None = None  # (text, colspan, rowspan)
         self._buf: str | None = None
+        self._cur_attrs: dict | None = None
+        # rowspan taşıması: {kolon_indeksi: (kalan_satir, metin)}
+        self._pending: dict[int, tuple[int, str]] = {}
 
     def handle_starttag(self, tag, attrs):
         tag = tag.lower()
@@ -32,20 +41,56 @@ class _TableParser(HTMLParser):
             self._row = []
         elif tag in ("td", "th") and self._row is not None:
             self._buf = ""
+            self._cur_attrs = dict(attrs)
 
     def handle_endtag(self, tag):
         tag = tag.lower()
-        if tag == "tr" and self._row is not None:
-            self.rows.append(self._row)
-            self._row = None
-        elif tag in ("td", "th") and self._buf is not None:
+        if tag in ("td", "th") and self._buf is not None:
             if self._row is not None:
-                self._row.append(self._buf.strip())
+                def _span(name: str) -> int:
+                    try:
+                        return max(1, int((self._cur_attrs or {}).get(name, 1)))
+                    except (TypeError, ValueError):
+                        return 1
+                self._row.append((self._buf.strip(), _span("colspan"), _span("rowspan")))
             self._buf = None
+            self._cur_attrs = None
+        elif tag == "tr" and self._row is not None:
+            self.rows.append(self._expand_row(self._row))
+            self._row = None
 
     def handle_data(self, data):
         if self._buf is not None:
             self._buf += data
+
+    def _expand_row(self, cells: list[tuple[str, int, int]]) -> list[str]:
+        """(text, colspan, rowspan) hücrelerini + bekleyen rowspan'leri düz kolon
+        listesine açar."""
+        out: list[str] = []
+        queue = list(cells)
+        ci = 0
+        # Hem kuyrukta hücre varken hem de mevcut/ileri kolonda bekleyen rowspan
+        # varken devam et; geçilmiş (ci'den küçük) bekleyenler döngüyü uzatmaz.
+        while queue or any(c >= ci for c in self._pending):
+            if ci in self._pending:
+                rem, text = self._pending[ci]
+                out.append(text)
+                if rem - 1 > 0:
+                    self._pending[ci] = (rem - 1, text)
+                else:
+                    del self._pending[ci]
+                ci += 1
+                continue
+            if queue:
+                text, cspan, rspan = queue.pop(0)
+                for _ in range(cspan):
+                    out.append(text)
+                    if rspan > 1:
+                        self._pending[ci] = (rspan - 1, text)
+                    ci += 1
+            else:
+                ci += 1  # kuyruk bitti ama ileride bekleyen var → boşluğu atla
+        return out
 
 
 def _parse_html(html: str) -> list[list[str]]:
@@ -59,10 +104,35 @@ def _parse_html(html: str) -> list[list[str]]:
 # Yardımcılar
 # ---------------------------------------------------------------------------
 
+# Sık LaTeX komutu → okunur sembol (sıra önemli: \leq, \le'den önce gelmeli)
+_LATEX_SYM = [
+    (r'\\leq', '≤'), (r'\\geq', '≥'), (r'\\le(?![a-zA-Z])', '≤'),
+    (r'\\ge(?![a-zA-Z])', '≥'), (r'\\neq', '≠'),
+    (r'\\rightarrow', '→'), (r'\\to(?![a-zA-Z])', '→'), (r'\\Rightarrow', '⇒'),
+    (r'\\times', '×'), (r'\\cdot', '·'), (r'\\pm', '±'), (r'\\approx', '≈'),
+    (r'\\div', '÷'), (r'\\sqrt', '√'), (r'\\%', '%'),
+]
+
+
+def _latex_to_text(expr: str) -> str:
+    """$...$ içeriğini SİLMEDEN okunur metne çevirir: ≤, →, üst/alt simge, \\text{} vb.
+    Mesafe formülleri ve HD satır etiketleri (örn. 1.3^2, 6.4 Q^(1/3)) korunur."""
+    s = expr
+    s = re.sub(r'\\text\s*\{([^}]*)\}', r'\1', s)   # \text{Compatibility Group} → metin
+    for pat, rep in _LATEX_SYM:
+        s = re.sub(pat, rep, s)
+    s = re.sub(r'\^\{([^}]*)\}', r'^(\1)', s)        # ^{1/3} → ^(1/3)
+    s = re.sub(r'_\{([^}]*)\}', r'_(\1)', s)         # _{p} → _(p)
+    s = re.sub(r'\\[a-zA-Z]+', ' ', s)               # kalan komutlar → boşluk
+    s = s.replace('{', '').replace('}', '').replace('\\', ' ')
+    return re.sub(r'\s+', ' ', s).strip()
+
+
 def _clean(cell: str) -> str:
-    """LaTeX footnote işaretlerini [N] formatına çevirir, diğer $ ifadelerini temizler."""
-    cell = re.sub(r'\$\^?\{?(\w+)\}?\$', r'[\1]', cell)  # $^{1}$ → [1]
-    cell = re.sub(r'\$[^$]+\$', '', cell)                  # kalan LaTeX
+    """LaTeX footnote işaretini [N]'e çevirir; kalan $...$ matematiğini metne dönüştürür
+    (eskiden siliniyordu → formül/satır-etiketi kaybına yol açıyordu)."""
+    cell = re.sub(r'\$\^?\{?(\w+)\}?\$', r'[\1]', cell)                          # $^{1}$ → [1]
+    cell = re.sub(r'\$([^$]+)\$', lambda m: _latex_to_text(m.group(1)), cell)    # kalan math → metin
     return cell.strip()
 
 
