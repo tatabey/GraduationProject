@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-06-14 (13) — Ölü kod temizliği (tablo kanıt/önizleme)
+
+(11)'de kanıt sunumu kaldırıldıktan sonra geriye kalan kullanılmayan tablo-önizleme
+altyapısı söküldü:
+- **`server.py`:** `_table_btn` üreticisi + `/table-img/{kb}/{file}` endpoint'i (`table_image`)
+  kaldırıldı; artık kullanılmayan `base64` ve `FileResponse` import'ları çıkarıldı.
+- **`templates/index.html`:** `#table-modal` dialog'u + `openTableModal()` JS fonksiyonu +
+  modal click handler'ı kaldırıldı. (Geriye log-modal ve KB-silme modalı kaldı.)
+
+Davranış değişmedi; yalnız ölü kod azaldı. Render + tag-denge doğrulandı.
+
+---
+
 ## 2026-06-14 (12) — İşlem günlüğü son-kullanıcıya göre sadeleştirildi
 
 Kullanıcı: "loglar daha profesyonel ve son kullanıcıya göre olsun; teknik şeylere

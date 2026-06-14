@@ -4,7 +4,6 @@ FastAPI sunucusu — ComplAI (Mevzuat Uygunluk Denetimi)
     python3 system/server.py
 """
 
-import base64
 import os
 import queue
 import re
@@ -17,7 +16,7 @@ from pathlib import Path
 from typing import Optional
 
 from fastapi import FastAPI, File, Form, Request, UploadFile
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 ROOT = Path(__file__).resolve().parent
@@ -117,35 +116,6 @@ def render_kb_list() -> str:
     return rows
 
 
-def _table_btn(s: dict, kb_name: str = "") -> str:
-    """Tablo kaynağı için tıklanabilir önizleme butonu üretir."""
-    name_safe  = s["name"].replace("'", "\\'").replace('"', '&quot;')
-    notes_b64  = base64.b64encode(s["notes"].encode()).decode()  if s.get("notes")  else ""
-    legend_b64 = base64.b64encode(s["legend"].encode()).decode() if s.get("legend") else ""
-
-    # Görsel URL — img_path "images/xxx.jpg" formatında gelir
-    img_path = s.get("img_path", "")
-    if img_path and kb_name:
-        img_filename = Path(img_path).name
-        img_url = f"/table-img/{kb_name}/{img_filename}"
-    else:
-        img_url = ""
-
-    img_url_safe = img_url.replace("'", "\\'")
-    return (
-        f'<button type="button" '
-        f"onclick=\"openTableModal('{name_safe}','{img_url_safe}','{notes_b64}','{legend_b64}')\" "
-        f'class="inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded '
-        f'bg-indigo-50 text-indigo-700 border border-indigo-200 '
-        f'hover:bg-indigo-100 hover:border-indigo-400 transition-colors cursor-pointer">'
-        f'⊞ {s["name"][:40]}'
-        f'<svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">'
-        f'<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" '
-        f'd="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>'
-        f'</button>'
-    )
-
-
 def render_verdict_card(r: dict, kb_name: str = "") -> str:
     text_col, bg_col, border_col, accent, sym = VERDICT_CFG.get(
         r["verdict"], ("#475569", "#f8fafc", "#e2e8f0", "#94a3b8", "·")
@@ -178,15 +148,6 @@ def render_results(results: list, kb_name: str = "") -> str:
     if not results:
         return ""
     return "".join(render_verdict_card(r, kb_name) for r in results)
-
-
-# ── Tablo görseli endpoint ────────────────────────────────────────────────
-@app.get("/table-img/{kb_name}/{filename}")
-async def table_image(kb_name: str, filename: str):
-    img_path = KB_DIR / kb_name / "images" / filename
-    if not img_path.exists():
-        return HTMLResponse("Not found", status_code=404)
-    return FileResponse(str(img_path))
 
 
 _KB_NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{1,61}[A-Za-z0-9]$")

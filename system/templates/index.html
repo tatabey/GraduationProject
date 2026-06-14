@@ -569,48 +569,6 @@
 
 
 <!-- ════════════════════════════════
-     TABLO MODAL
-════════════════════════════════ -->
-<dialog id="table-modal"
-        class="rounded-2xl shadow-2xl border border-slate-200 p-0 w-full max-w-5xl
-               backdrop:bg-slate-900/75 backdrop:backdrop-blur-sm"
-        style="max-height:90vh;">
-  <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-white">
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
-        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M10 3v18M14 3v18"/>
-        </svg>
-      </div>
-      <div>
-        <h3 id="modal-table-name" class="font-bold text-slate-800"></h3>
-        <p id="modal-table-legend" class="text-sm text-slate-400 mt-0.5 hidden"></p>
-      </div>
-    </div>
-    <button onclick="document.getElementById('table-modal').close()"
-            class="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400
-                   hover:bg-slate-100 hover:text-slate-700 transition-all text-xl">✕</button>
-  </div>
-  <div class="overflow-auto p-6 bg-white" style="max-height:calc(90vh - 160px);">
-    <div id="modal-img-wrap" class="hidden text-center">
-      <img id="modal-table-img" src="" alt="" class="max-w-full mx-auto rounded-xl border border-slate-200 shadow-sm">
-    </div>
-    <div id="modal-no-img" class="hidden flex flex-col items-center justify-center py-16 text-slate-400">
-      <svg class="w-14 h-14 mb-3 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01"/>
-      </svg>
-      <p class="text-sm font-medium">Görsel bulunamadı.</p>
-    </div>
-  </div>
-  <div id="modal-notes-section" class="hidden border-t border-slate-100 bg-slate-50 px-6 py-5">
-    <p class="sec mb-3">Notlar</p>
-    <div id="modal-table-notes" class="text-sm text-slate-600 leading-relaxed whitespace-pre-wrap"></div>
-  </div>
-</dialog>
-
-
-<!-- ════════════════════════════════
      KB SİLME ONAY MODALI
 ════════════════════════════════ -->
 <dialog id="kb-del-modal"
@@ -760,27 +718,6 @@
     tgt.scrollTop = tgt.scrollHeight;
   }
   document.getElementById('log-modal').addEventListener('click', function(e) {
-    if (e.target === this) this.close();
-  });
-
-  function openTableModal(name, imgUrl, notesB64, legendB64) {
-    document.getElementById('modal-table-name').textContent = name;
-    const iw = document.getElementById('modal-img-wrap');
-    const ni  = document.getElementById('modal-no-img');
-    const img = document.getElementById('modal-table-img');
-    if (imgUrl) { img.src = imgUrl; iw.classList.remove('hidden'); ni.classList.add('hidden'); }
-    else        { iw.classList.add('hidden'); ni.classList.remove('hidden'); }
-    const leg = legendB64 ? atob(legendB64) : '';
-    const lel = document.getElementById('modal-table-legend');
-    lel.textContent = leg; lel.classList.toggle('hidden', !leg.trim());
-    const notes = notesB64 ? atob(notesB64) : '';
-    const ns = document.getElementById('modal-notes-section');
-    if (notes && notes.trim()) { document.getElementById('modal-table-notes').textContent = notes; ns.classList.remove('hidden'); }
-    else ns.classList.add('hidden');
-    document.getElementById('table-modal').showModal();
-  }
-
-  document.getElementById('table-modal').addEventListener('click', function(e) {
     if (e.target === this) this.close();
   });
 
