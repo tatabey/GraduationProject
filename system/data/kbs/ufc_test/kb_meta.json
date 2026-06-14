@@ -5,6 +5,6 @@
   "tables": 9,
   "chunks": 278,
   "total": 298,
-  "chroma_dir": "system/data/kbs/ufc_test/chroma_db",
+  "chroma_dir": "/home/tatabey/deneme26/GraduationProject/system/data/kbs/ufc_test/chroma_db",
   "created_at": "2026-06-11 16:47"
 }

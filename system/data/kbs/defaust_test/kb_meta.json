@@ -5,7 +5,7 @@
   "tables": 8,
   "chunks": 55,
   "total": 85,
-  "chroma_dir": "data/kbs/defaust_test/chroma_db",
+  "chroma_dir": "/home/tatabey/deneme26/GraduationProject/system/data/kbs/defaust_test/chroma_db",
   "created_at": "2026-06-13 21:54",
   "timings": {
     "mineru_s": 19.7,

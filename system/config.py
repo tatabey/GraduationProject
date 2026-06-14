@@ -13,6 +13,23 @@ BASE_DIR   = Path(__file__).resolve().parent
 DATA_DIR   = BASE_DIR / "data"
 CHROMA_DIR = DATA_DIR / "chroma_db"
 
+
+# ---------------------------------------------------------------------------
+# .env yükleyici (bağımlılıksız) — API anahtarları config'e GÖMÜLMEZ, .env'den
+# okunur (.env git'e gitmez). Zaten ortamda tanımlıysa üzerine yazmaz.
+# ---------------------------------------------------------------------------
+def _load_dotenv(path: Path) -> None:
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, val = line.partition("=")
+        os.environ.setdefault(key.strip(), val.strip().strip('"').strip("'"))
+
+_load_dotenv(BASE_DIR / ".env")
+
 # ---------------------------------------------------------------------------
 # ChromaDB
 # ---------------------------------------------------------------------------
@@ -108,20 +125,17 @@ SPLIT_RESULTS = True
 # ---------------------------------------------------------------------------
 # LLM — Groq (inference için)
 # ---------------------------------------------------------------------------
-GROQ_API_KEY = os.getenv("GROQ_API_KEY",
-    "***REMOVED***")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")  # .env'den okunur
 GROQ_MODEL   = "llama-3.3-70b-versatile"
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 # Cerebras (ücretsiz, yüksek throughput, OpenAI-uyumlu)
-CEREBRAS_API_KEY  = os.getenv("CEREBRAS_API_KEY",
-    "***REMOVED***")
+CEREBRAS_API_KEY  = os.getenv("CEREBRAS_API_KEY", "")  # .env'den okunur
 CEREBRAS_BASE_URL = "https://api.cerebras.ai/v1"
 
 # Mistral (ücretsiz Experiment: 1 milyar token/AY, 500K TPM, ~60 istek/dk;
 # Cerebras'ın 1M/gün token duvarına alternatif — 24B, OpenAI-uyumlu)
-MISTRAL_API_KEY  = os.getenv("MISTRAL_API_KEY",
-    "***REMOVED***")
+MISTRAL_API_KEY  = os.getenv("MISTRAL_API_KEY", "")  # .env'den okunur
 MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
 MISTRAL_RPS_DELAY = 1.0   # Mistral free tier = ~1 istek/sn (çağrılar arası bekleme)
 
@@ -178,8 +192,7 @@ OLLAMA_MODEL = "llama3.2:3b"
 # ---------------------------------------------------------------------------
 # MinerU API (PDF → JSON)
 # ---------------------------------------------------------------------------
-MINERU_API_KEY = os.getenv("MINERU_API_KEY",
-    "***REMOVED***")
+MINERU_API_KEY = os.getenv("MINERU_API_KEY", "")  # .env'den okunur
 MINERU_CHUNK_SIZE = 50  # sayfa başına chunk boyutu
 # Parça paralelliği: 0 = TÜM parçalar aynı anda (önerilen; parçalar bağımsız,
 # birleştirme deterministik), 1 = sıralı (eski davranış/fallback), N = üst sınır.
