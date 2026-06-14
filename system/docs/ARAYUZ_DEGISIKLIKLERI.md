@@ -5,6 +5,22 @@
 
 ---
 
+## 2026-06-14 (6) — KÖK BUG: `* { font-size:16px }` iç öğeleri eziyordu
+
+**Belirti:** marka büyütülünce "yazı alanı büyüyor ama yazı büyümüyor" (büyük kutu,
+küçük yazı). İsmin bunca turdur küçük görünmesinin asıl sebebi buydu.
+
+**Kök neden:** stil bloğundaki `*, body { font-size:16px }` — evrensel `*` seçici
+**her öğeye** 16px dayatıyordu. `.brand` div'i `text-[3.5rem]` ile 56px'lik satır
+kutusu oluştursa da, içindeki `<span>`'ler `*` kuralıyla doğrudan 16px'e eziliyordu
+(font-size normalde miras alınır; `*` bu mirası override ediyordu).
+
+**Çözüm:** `font-size` `*` kuralından çıkarıldı, yalnız `body { font-size:16px }`'e
+taşındı. Artık iç öğeler ata öğenin boyut sınıfını (text-[..], text-xl…) miras alıyor.
+Diğer öğeler zaten Tailwind boyut sınıfı kullandığından etkilenmez.
+
+---
+
 ## 2026-06-14 (5) — PDF "yüklendi" durumu + logo yan yana
 
 Kullanıcı geri bildirimi:

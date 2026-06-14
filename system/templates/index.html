@@ -9,9 +9,12 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
     :root { --font-body:'Plus Jakarta Sans'; --font-display:'Space Grotesk'; }
-    *, body { font-family: var(--font-body), system-ui, -apple-system, sans-serif; font-size: 16px;
+    *, body { font-family: var(--font-body), system-ui, -apple-system, sans-serif;
               -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
               text-rendering: optimizeLegibility; }
+    /* font-size yalnız body'de — '*' ile her öğeye dayatınca text-[..]/text-xl gibi
+       boyut sınıfları iç öğelerde (ör. .brand içindeki span) 16px'e eziliyordu. */
+    body { font-size: 16px; }
     h1, h2, h3, .font-display, .brand { font-family: var(--font-display), var(--font-body), sans-serif;
               letter-spacing: -.015em; }
     html, body { height: 100%; overflow: hidden; }
