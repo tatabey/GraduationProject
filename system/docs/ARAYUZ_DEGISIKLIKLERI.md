@@ -5,6 +5,19 @@
 
 ---
 
+## 2026-06-14 (7) — Genel Bakış paleti profesyonelleştirildi (mor azaltıldı)
+
+Kullanıcı: "mor çok baskın". Palet tek-aksan sisteme çekildi:
+- İçerik artık **indigo (birincil) + slate (nötr) + emerald (başarı)**.
+- İki modül kartı: violet/indigo zıtlığı → ikisi de **nötr slate-50** kart; ikon tile'lar
+  ADIM 1 indigo-600 (birincil), ADIM 2 slate-800 (ikincil). ADIM etiketleri indigo/slate.
+- Sağ kart aksan çubuğu violet-500 → indigo-500. Hero ikonu gradyanı indigo→violet → indigo→indigo.
+- Marka wordmark ("AI") gradyanı imza olarak korundu (sidebar ile tutarlı).
+
+**Dokunulan:** `templates/index.html` (tab-home renkleri).
+
+---
+
 ## 2026-06-14 (6) — KÖK BUG: `* { font-size:16px }` iç öğeleri eziyordu
 
 **Belirti:** marka büyütülünce "yazı alanı büyüyor ama yazı büyümüyor" (büyük kutu,
