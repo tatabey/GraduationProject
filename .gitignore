@@ -27,3 +27,38 @@ venv/
 # Claude baglam/araclari — GitHub'a gitmez (yalniz lokal)
 CLAUDE.md
 .claude/
+
+# ============================================================
+# MINIMAL REPO: yalniz kod + test_scenarios + docs(*.md) gider.
+# Buyuk/uretilmis veri, modeller, raporlar, sunumlar haric.
+# ============================================================
+
+# Yerel model agirliklari (bge-reranker tokenizer/sentencepiece dahil)
+system/models/
+
+# Uretilmis / buyuk veri
+system/data/benchmark/
+system/data/kbs/
+system/data/reports/
+system/data/*.pdf
+*.bak_pre_remap
+
+# Eski/arsiv notlar
+system/docs/legacy/
+
+# Gradio cache
+.gradio
+.gradio/
+
+# Belgeler / raporlar / sunumlar / gorseller (kod reposuna girmez)
+*.pdf
+*.pptx
+*.png
+*.jpg
+*.jpeg
+TumProjeSunumları/
+TumProjeSunumlari/
+IkinciDonem_FinalReport/
+IlkDonem_FinalReport/
+IlkDonem_Poster/
+Graduation Project - Latex Template/
