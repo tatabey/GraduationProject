@@ -23,6 +23,15 @@ CHROMA_COLLECTION = "knowledge_base"
 # ---------------------------------------------------------------------------
 EMBED_MODEL = "BAAI/bge-large-en-v1.5"
 
+# Çok-dilli embedding (Türkçe vb. İngilizce-dışı belgeler için).
+# bge-large-en yalnız İngilizce; bu model çok-dilli (768-dim, yerel klasör).
+EMBED_MODEL_MULTILINGUAL = str(BASE_DIR / "models" / "multilingual-mpnet")
+
+# KB kurarken belge dilini otomatik tespit edip embedding'i seç:
+# İngilizce → EMBED_MODEL, İngilizce-dışı → EMBED_MODEL_MULTILINGUAL.
+# Kullanıcı arayüzden hiçbir şey ayarlamaz. Kapatılırsa hep EMBED_MODEL kullanılır.
+AUTO_EMBED_BY_LANG = True
+
 # ---------------------------------------------------------------------------
 # Cross-encoder reranker (yerel)
 # ---------------------------------------------------------------------------

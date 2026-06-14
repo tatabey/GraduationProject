@@ -12,7 +12,7 @@
 | 1 | **PDF parse** | `scripts/mineru_batch.py` | PDF 50 sayfalık parçalara bölünür, catbox'a yüklenir, **MinerU cloud API** ile tablo+text çıkarılır. Parçalar **tam paralel** işlenir. |
 | 2 | **Tablo birleştirme** | `scripts/table_assembler.py` + `pipeline/table_serializer.py` | Parçaların `content_list`'leri deterministik birleşir; her tablo **jenerik serializer** ile prose'a çevrilir (hard-code yok, yapısal tespit). Dipnot/legend tabloya iliştirilir. |
 | 3 | **Text chunking** | `scripts/text_chunker.py` | Metin bloklara bölünür; `chunk_id = chunk_p{page}_idx{N}` (blok-indeksine bağlı, stabil). Uzun chunk'lar pencerelenir. |
-| 4 | **İndeksleme** | `pipeline/kb_builder.py` | **bge-large-en-v1.5** ile embed (GPU), **ChromaDB**'ye toplu (`batch=128`) yazılır. KB = 31 tablo + 248 chunk → 336 doküman. |
+| 4 | **İndeksleme** | `pipeline/kb_builder.py` | Belge dili **otomatik tespit** edilir (`AUTO_EMBED_BY_LANG`): İngilizce → **bge-large-en-v1.5**, İngilizce-dışı → **multilingual-mpnet** (KB-başına `kb_meta.embed_model`). embed (GPU) → **ChromaDB**'ye toplu (`batch=128`). KB = 31 tablo + 248 chunk → 336 doküman. |
 | 5 | **Retrieval** | `pipeline/retriever.py` | 2 kanal: tablo (tümü aday) + text (160-derinlik havuz + **BM25** `lexical.py`). Her kanal **bge-reranker-base** (fp16, GPU) ile yeniden sıralanır → **3 tablo + 3 text** (SPLIT, füzyon yok). |
 | 6 | **Verdict** | `pipeline/auditor.py` | Her madde için bağlam **Mistral Small 24B @ Mistral** (üretim; ücretsiz, limitsiz) → UYGUN / UYGUN DEĞİL. Tablolar kompakt serileştirilir (bağlam −%25). Cerebras/Groq/Ollama da seçilebilir. |
 | 7 | **Arayüz** | `server.py` + `templates/` | FastAPI + HTMX + Tailwind; canlı günlük, KB yönetimi, denetim raporu görünümü. |
@@ -28,6 +28,7 @@ Tüm ayarlar tek yerde: **`config.py`** (her özellik bir bayrakla aç/kapa).
 | **3+3 SPLIT (modalite-ayrık, füzyon yok)** | Her istatistiksel füzyon (RRF, geniş havuz, z-norm) bir modaliteyi geriletti. Yapısal ayrıştırma kalıcı çözüm. → **text HR@3 54.5 → 84.5**, tablolar 99.3/99.3/98.0. |
 | **bge-reranker-base (yerel, GPU)** | Asıl kalite kaldıracı; güçlü reranker olmadan füzyonsuz split de yetersizdi. |
 | **Jenerik tablo serializer** | Hard-code yok → **domain-bağımsızlık** (UFC sıfır kod değişikliğiyle çalıştı). |
+| **Dile-göre otomatik embedding** | Kullanıcı arayüzde hiçbir şey seçmez; belge dili tespit edilip embedding otomatik seçilir. EN belgeler bge-large'da kalır, Türkçe vb. mpnet'e gider. → BYKHY (Türkçe) verdict %87.8, İngilizce setler bozulmadan. |
 | **Dipnot/legend iliştirme** | Tablodaki kritik dipnotlar ayrık sistemde kaybolmasın diye doküman metnine bağlanır. |
 | **CONTEXT_CHAR_CAP = 24000** | Eski 6000 sınırı text bloklarını tamamen kesiyordu → verdict düşüyordu. Düşürülmemeli. |
 | **MinerU tam paralel** | Süre = parça toplamı yerine **en yavaş parça**; çıktı bayt-aynı. → MinerU ~10 dk → ~2-2.5 dk. |

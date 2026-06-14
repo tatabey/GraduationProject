@@ -23,9 +23,39 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config import (
-    EMBED_MODEL, EMBED_SECTION_PATH, CHUNK_EMBED_MAX_CHARS, CHUNK_SYNTH_QUERIES,
+    EMBED_MODEL, EMBED_MODEL_MULTILINGUAL, AUTO_EMBED_BY_LANG,
+    EMBED_SECTION_PATH, CHUNK_EMBED_MAX_CHARS, CHUNK_SYNTH_QUERIES,
     MINERU_API_KEY, MINERU_CHUNK_SIZE, TIMING_LOGS, CHROMA_ADD_BATCH,
 )
+
+
+# ── Dil tespiti → embedding seçimi ────────────────────────────────────────────
+# Bağımlılıksız sezgisel: İngilizce mi, İngilizce-dışı (çok-dilli) mı?
+# bge-large-en yalnız İngilizce; Türkçe vb. için çok-dilli model gerekir.
+_EN_STOP = {"the", "and", "of", "to", "in", "for", "is", "are", "be", "as",
+            "that", "with", "this", "or", "by", "an", "from", "at", "which",
+            "shall", "not", "on", "all", "any", "such", "where", "when"}
+_TR_STOP = {"ve", "bir", "bu", "için", "ile", "olan", "da", "de", "en", "çok",
+            "veya", "göre", "gibi", "ancak", "ise", "her", "daha", "olarak",
+            "madde", "edilir", "yapılır", "şekilde", "durumda", "ya"}
+
+
+def detect_embed_model(text: str) -> tuple[str, str]:
+    """Belge metninden embedding modelini seçer.
+    Döner: (embed_model, açıklama). İngilizce → EMBED_MODEL,
+    İngilizce-dışı → EMBED_MODEL_MULTILINGUAL."""
+    sample = text[:20000].lower()
+    words = re.findall(r"[a-zçğıöşü]+", sample)
+    if len(words) < 30:                      # yetersiz metin → güvenli varsayılan
+        return EMBED_MODEL, "İngilizce (yetersiz metin → varsayılan)"
+    en = sum(w in _EN_STOP for w in words) / len(words)
+    tr = sum(w in _TR_STOP for w in words) / len(words)
+    # ı/ğ/ş İngilizce'de hiç yok → güçlü İngilizce-dışı sinyali
+    tr_chars = sample.count("ı") + sample.count("ğ") + sample.count("ş")
+    non_english = tr_chars >= 5 or tr > en or en < 0.04
+    model = EMBED_MODEL_MULTILINGUAL if non_english else EMBED_MODEL
+    lang  = "İngilizce-dışı (çok-dilli)" if non_english else "İngilizce"
+    return model, f"{lang}  (EN-stop={en:.1%} TR-stop={tr:.1%} ı/ğ/ş={tr_chars})"
 
 
 class _BatchAdder:
@@ -226,10 +256,13 @@ def build_kb(
     log_fn: Callable[[str], None] = print,
     skip_mineru: bool = False,
     merged_json: str | Path | None = None,
-    embed_model: str = EMBED_MODEL,
+    embed_model: str | None = None,
 ) -> dict:
     """
     PDF'den tam KB indekslemesi yürütür.
+
+    embed_model=None (varsayılan) → belge dili otomatik tespit edilip embedding
+    seçilir (AUTO_EMBED_BY_LANG açıksa). Açıkça verilirse o model kullanılır.
 
     skip_mineru=True ve merged_json verilirse MinerU atlanır
     (zaten işlenmiş JSON kullanılır).
@@ -309,6 +342,18 @@ def build_kb(
     save_text_chunks(text_chunks, text_dir)
     log_fn(f"  ✅ {len(text_chunks)} metin bölümü hazır.")
     timings["chunk_s"] = round(time.perf_counter() - _t0, 1)
+
+    # ── Embedding seçimi: açık verilmediyse dile göre otomatik ───────────────
+    if embed_model is None:
+        if AUTO_EMBED_BY_LANG:
+            doc_text = " ".join(
+                f"{c.get('title','')} {c.get('content','')}" for c in text_chunks
+            )
+            embed_model, why = detect_embed_model(doc_text)
+            log_fn(f"  🌐 Dil tespiti → {why}")
+            log_fn(f"     embedding: {Path(embed_model).name if '/' in embed_model else embed_model}")
+        else:
+            embed_model = EMBED_MODEL
 
     # ── Adım 4: ChromaDB indeksleme (80–99%) ─────────────────────────────
     _t0 = time.perf_counter()
