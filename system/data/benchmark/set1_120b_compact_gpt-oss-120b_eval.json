@@ -1,0 +1,137 @@
+{
+  "total": 150,
+  "correct": 140,
+  "wrong": 10,
+  "accuracy": 93.33333333333333,
+  "by_table": {
+    "Table 4": {
+      "correct": 30,
+      "total": 30
+    },
+    "Table 5": {
+      "correct": 28,
+      "total": 30
+    },
+    "Table 6": {
+      "correct": 27,
+      "total": 30
+    },
+    "Table T.2": {
+      "correct": 27,
+      "total": 30
+    },
+    "Table 133": {
+      "correct": 28,
+      "total": 30
+    }
+  },
+  "by_verdict": {
+    "UYGUN": {
+      "tp": 76,
+      "fn": 5,
+      "fp": 3
+    },
+    "UYGUN DEĞİL": {
+      "tp": 64,
+      "fn": 5,
+      "fp": 2
+    },
+    "DEĞERLENDİRİLEMEDİ": {
+      "tp": 0,
+      "fn": 0,
+      "fp": 5
+    }
+  },
+  "errors": [
+    {
+      "item_no": 91,
+      "text": "An HD 1.5 storage facility experienced an emergency. Nonessential personnel were withdrawn to 1100 meters from the potential explosion site.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table T.2 specifies emergency withdrawal distances for HD 1.5 facilities as 850 m (≤ 7 000 kg) or 1 300 m (> 7 000 kg). The 1 100 m distance is only listed for transportation of HD 1.5, not for a storage facility. Using 1 100 m for a facility therefore does not meet the required distance in the standard.",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 44.44
+    },
+    {
+      "item_no": 98,
+      "text": "During an incident at a facility storing unknown quantity of explosives in an unknown hazard division, nonessential personnel were evacuated to only 800 meters.",
+      "verdict": "UYGUN",
+      "reasoning": "The standard states that emergency withdrawal distances for non‑essential personnel must be set according to the known hazard division, fire‑division and quantity of explosives (see “Emergency withdrawal distances … depend on … whether or not the hazard classification, fire division and quantity of explosives are known”). Since the context provides no specific minimum distance for an unknown hazard division, the evacuation to 800 m does not breach any explicit requirement.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table T.2",
+      "elapsed_s": 0.72
+    },
+    {
+      "item_no": 141,
+      "text": "Storage building 22 holds Compatibility Group A and Group B explosive substances together. Table 5 specifies that Group A (primary explosive substances) may not be stored with Group B in the same magazine. This co-storage configuration violates the compatibility mixing rules for explosive substances.",
+      "verdict": "UYGUN",
+      "reasoning": "Table 5 governs mixing of explosive **substance** compatibility groups and lists only groups A, C, D, G, L, S; it does not include Group B (which is an article group). No rule in the provided context explicitly prohibits storing Group A substances together with Group B articles, so the co‑storage does not demonstrably violate the standard.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 5",
+      "elapsed_s": 0.92
+    },
+    {
+      "item_no": 143,
+      "text": "Magazine 31 stores Compatibility Group D and Group E explosive substances in the same bay. Table 5 does not permit the mixing of Group D (secondary detonating explosive substances without initiator) with Group E (articles with propelling charge) in the same magazine. The storage violates mixing rules.",
+      "verdict": "UYGUN",
+      "reasoning": "Table 5 governs mixing of explosive **substances** and does not list Compatibility Group E, which is an article group. The applicable mixing rule for articles is in Table 6, where the cell D × E is marked “Mixing permitted”. Hence storing Group D and Group E together does not violate the standard.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 5",
+      "elapsed_s": 0.81
+    },
+    {
+      "item_no": 144,
+      "text": "Armory 5E stores Compatibility Group E and Group G explosive articles together. Table 6 permits the co-storage of Group E articles (with propelling charge, no initiator) and Group G pyrotechnic articles. The storage arrangement is compliant.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Table 6 lists the intersection “E with G” as “4)”, and footnote 4 states that mixing Compatibility Group G articles with other groups is “at the discretion of the National Competent Authority”. The standard does not give an unconditional “X” (mixing permitted) for E + G, so the claim that Table 6 permits the co‑storage is inaccurate; without explicit authority approval the storage would not be compliant.",
+      "expected": "UYGUN",
+      "table": "Table 6",
+      "elapsed_s": 50.02
+    },
+    {
+      "item_no": 145,
+      "text": "Building 6F stores Compatibility Group B explosive articles mixed with Group H articles (containing both explosive and white phosphorus) in the same magazine. Table 6 does not permit the mixing of Group B with Group H for explosive articles. The storage configuration is non-compliant.",
+      "verdict": "DEĞERLENDİRİLEMEDİ",
+      "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 6",
+      "elapsed_s": 43.03
+    },
+    {
+      "item_no": 146,
+      "text": "Storage unit 7G holds only Compatibility Group S explosive articles. Per Table 6, Group S articles may be stored together with any other compatible group or alone. Storing Group S alone is fully compliant.",
+      "verdict": "DEĞERLENDİRİLEMEDİ",
+      "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+      "expected": "UYGUN",
+      "table": "Table 6",
+      "elapsed_s": 44.57
+    },
+    {
+      "item_no": 148,
+      "text": "A vehicle accident involved HD 1.2 items of known quantity (250 kg NEQ). Nonessential personnel were evacuated to 200 meters per the emergency response plan. Table T.2 specifies an emergency withdrawal distance consistent with this range for known-quantity HD 1.2. The evacuation distance is compliant.",
+      "verdict": "DEĞERLENDİRİLEMEDİ",
+      "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+      "expected": "UYGUN",
+      "table": "Table T.2",
+      "elapsed_s": 44.79
+    },
+    {
+      "item_no": 149,
+      "text": "Igloo E-2 stores HD 1.3 propellants. The facility is marked with a Diamond symbol, which corresponds to Fire Division 4 per Table 133. HD 1.3 propellants correspond to Fire Division 3 (inverted triangle), not Fire Division 4. The marking is incorrect and non-compliant.",
+      "verdict": "DEĞERLENDİRİLEMEDİ",
+      "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table 133",
+      "elapsed_s": 44.55
+    },
+    {
+      "item_no": 150,
+      "text": "Magazine F-6 stores HD 1.4 articles. The building is marked with a Cross symbol indicating Fire Division 2 per Table 133. HD 1.4 (minor fire or projection hazard only) is associated with Fire Division 2. The marking is correct and compliant.",
+      "verdict": "DEĞERLENDİRİLEMEDİ",
+      "reasoning": "hata: Error code: 429 - {'message': 'Tokens per day limit exceeded - too many tokens processed.', 'type': 'too_many_tokens_error', 'param': 'quota', 'code': 'token_quota_exceeded'}",
+      "expected": "UYGUN",
+      "table": "Table 133",
+      "elapsed_s": 42.91
+    }
+  ]
+}

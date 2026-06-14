@@ -58,13 +58,18 @@ Tüm ayarlar tek yerde: **`config.py`** (her özellik bir bayrakla aç/kapa).
 
 **AASTP tüm setler:**
 
-| Set | Mistral 24B | (kıyas) 120B @Cerebras |
+| Set | Mistral 24B | (kıyas) 120B @Cerebras (kompakt) |
 |---|---|---|
-| set1 | 88.0% | 94.7% |
-| set2 | 98.0% | (güncel ölçüm bekliyor) |
+| set1 | 88.0% | **96.6%** (140/145; 5 madde günlük token duvarında DEĞERLENDİRİLEMEDİ → resume bekliyor) |
+| set2 | 98.0% | (ölçüm bekliyor) |
 | set3 | 98.7% | — |
 | text | 97.0% | — |
 | **Ağırlıklı genel** | **95.5% (621/650)** | — |
+
+> 120B set1 kompakt-bağlam ölçümü (2026-06-14): net %96.6 — Mistral %88'in belirgin
+> üstünde. Eski kompaktlama-öncesi 120B set1 %85.3'tü; kompaktlama 120B'yi de yukarı
+> çekti. Cerebras 1M/gün token duvarı bir seti tek günde zar zor bitiriyor (madde başı
+> ~9.5k token); kalan 5 madde yarın `--tag set1_120b_compact` ile resume edilecek.
 
 > Mistral ücretsiz (1 milyar token/AY, rate-limit duvarı yok), 24B (120B'nin 1/5'i).
 > 120B set1'de %94.7 ile hâlâ önde; kompakt bağlamla güncel 120B ölçümü Cerebras bütçesi
