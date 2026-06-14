@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standart Uygunluk Denetim Sistemi</title>
+  <title>ComplAI — Mevzuat Uygunluk Denetimi</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/htmx.org@1.9.12"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-    *, body { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 16px; }
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    :root { --font-body:'Plus Jakarta Sans'; --font-display:'Space Grotesk'; }
+    *, body { font-family: var(--font-body), system-ui, -apple-system, sans-serif; font-size: 16px;
+              -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+              text-rendering: optimizeLegibility; }
+    h1, h2, h3, .font-display, .brand { font-family: var(--font-display), var(--font-body), sans-serif;
+              letter-spacing: -.015em; }
     html, body { height: 100%; overflow: hidden; }
     details > summary { list-style: none; }
     details > summary::-webkit-details-marker { display: none; }
@@ -84,8 +89,8 @@
           </svg>
         </div>
         <div class="side-label flex-1 min-w-0">
-          <div class="text-white font-bold text-base leading-tight">Denetim Sistemi</div>
-          <div class="text-slate-500 text-sm mt-1">v3.0 · RAG Tabanlı</div>
+          <div class="brand text-white font-bold text-xl leading-none">Compl<span class="text-indigo-400">AI</span></div>
+          <div class="text-slate-500 text-xs mt-1.5 tracking-wide">RAG Tabanlı Uygunluk Denetimi</div>
         </div>
         <button onclick="toggleSidebar()" title="Menüyü aç/kapat"
                 class="w-9 h-9 flex items-center justify-center rounded-lg text-slate-500

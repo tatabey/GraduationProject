@@ -1,5 +1,5 @@
 """
-FastAPI sunucusu — Standart Uygunluk Denetim Sistemi
+FastAPI sunucusu — ComplAI (Mevzuat Uygunluk Denetimi)
 Çalıştırmak için:
     python3 system/server.py
 """
@@ -30,7 +30,7 @@ from pipeline.auditor import audit_items
 KB_DIR = DATA_DIR / "kbs"
 KB_DIR.mkdir(parents=True, exist_ok=True)
 
-app = FastAPI(title="Denetim Sistemi")
+app = FastAPI(title="ComplAI")
 templates = Jinja2Templates(directory=str(ROOT / "templates"))
 
 # ── İş kuyrukları (job_id → {logs, status, result}) ──────────────────────

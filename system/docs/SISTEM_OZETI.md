@@ -1,4 +1,4 @@
-# Sistem Özeti — Pipeline, Kararlar, Faydalar
+# ComplAI — Sistem Özeti (Pipeline, Kararlar, Faydalar)
 
 > Tek bakışta: PDF → MinerU → tablo+text indeksleme → 2-kanallı 3+3 retrieval → LLM verdict.
 > Domain-bağımsız (NATO AASTP-1 ile geliştirildi, UFC 4-010-01 ile sıfır kod değişikliğiyle doğrulandı).
