@@ -121,14 +121,13 @@ def _index_tables(
 ) -> int:
     """Tabloları deterministik serializer ile ChromaDB'ye ekler (LLM yok)."""
     n = len(units)
-    log_fn(f"Tablolar vektörleştiriliyor ({n} adet)...")
+    log_fn(f"Tablolar ve çizelgeler hazırlanıyor ({n} adet)...")
     adder = _BatchAdder(collection)
     indexed = 0
     for i, unit in enumerate(units):
         pct  = int((i + 1) / n * 100)
         dname = table_display_name(unit)
-        log_fn(f"__PROGRESS__:{pct}:Tablo {i+1}/{n}: {dname[:50]}")
-        log_fn(f"  [{i+1}/{n}] {dname[:50]}")
+        log_fn(f"__PROGRESS__:{pct}:Tablo {i+1}/{n} hazırlanıyor")
 
         serialized = serialize_table(unit)
         doc_id     = f"table_p{unit.get('page_idx', i)}_idx{unit.get('table_idx', i)}"
@@ -175,7 +174,7 @@ def reindex_from_units(
     )
     try:
         chroma.delete_collection(col_name)
-        log_fn(f"Eski koleksiyon silindi: {col_name}")
+        log_fn("Önceki sürüm temizlendi.")
     except Exception:
         pass
     collection  = chroma.create_collection(name=col_name, embedding_function=emb_fn)
@@ -183,7 +182,7 @@ def reindex_from_units(
     tc = _index_tables(units, collection, log_fn)
     cc = _index_chunks(chunks, collection, log_fn)
     total = collection.count()
-    log_fn(f"✅ Reindex tamamlandı: {tc} tablo + {cc} chunk = {total} döküman")
+    log_fn(f"  Arama dizini oluşturuldu ({tc} tablo, {cc} metin bölümü).")
     return {"tables": tc, "chunks": cc, "total": total}
 
 
@@ -205,7 +204,7 @@ def _window_text(text: str, max_chars: int) -> list[str]:
 
 
 def _index_chunks(chunks: list[dict], collection, log_fn: Callable) -> int:
-    log_fn(f"Text chunk'lar indeksleniyor ({len(chunks)} adet)...")
+    log_fn(f"Belge metni hazırlanıyor ({len(chunks)} bölüm)...")
     adder = _BatchAdder(collection)
     docs = 0
     for chunk in chunks:
@@ -240,7 +239,7 @@ def _index_chunks(chunks: list[dict], collection, log_fn: Callable) -> int:
                 adder.add(q, {**metadata, "synth": 1}, f"{chunk['chunk_id']}__q{q_i}")
                 docs += 1
     adder.flush()
-    log_fn(f"  {len(chunks)} text chunk kaydedildi ({docs} embedding dokümanı).")
+    log_fn(f"  {len(chunks)} metin bölümü hazırlandı.")
     return len(chunks)
 
 
@@ -287,10 +286,10 @@ def build_kb(
     # ── Adım 1: MinerU (0–65%) ────────────────────────────────────────────
     if skip_mineru and merged_json:
         merged_out = Path(merged_json)
-        log_fn(f"__PROGRESS__:5:Hazır JSON yükleniyor")
-        log_fn(f"MinerU atlandı — mevcut JSON kullanılıyor: {merged_out.name}")
+        log_fn(f"__PROGRESS__:5:Belge verisi yükleniyor")
+        log_fn(f"Hazır belge verisi kullanılıyor.")
     else:
-        log_fn(f"__PROGRESS__:0:MinerU başlatılıyor")
+        log_fn(f"__PROGRESS__:0:Belge okunmaya başlanıyor")
         result = process_all(
             pdf_path=pdf_path,
             chunks_dir=chunks_dir,
@@ -310,7 +309,7 @@ def build_kb(
     # ── Adım 2: Tablo çıkarma (65–75%) ───────────────────────────────────
     _t0 = time.perf_counter()
     log_fn(f"__PROGRESS__:65:Tablolar analiz ediliyor")
-    log_fn("Tablolar ve veri yapıları çıkarılıyor...")
+    log_fn("Tablolar ve çizelgeler taranıyor...")
     units, rejected = assemble_semantic_units(merged_out)
 
     images_dest = kb_dir / "images"
@@ -331,7 +330,7 @@ def build_kb(
                 unit["img_path"] = f"images/{src.name}"
 
     save_semantic_units(units, rejected, units_dir)
-    log_fn(f"  ✅ {len(units)} tablo bulundu ({len(rejected)} gürültü tablosu atlandı).")
+    log_fn(f"  ✅ {len(units)} tablo bulundu.")
     timings["assemble_s"] = round(time.perf_counter() - _t0, 1)
 
     # ── Adım 3: Metin bölümleri (75–80%) ─────────────────────────────────
@@ -350,15 +349,14 @@ def build_kb(
                 f"{c.get('title','')} {c.get('content','')}" for c in text_chunks
             )
             embed_model, why = detect_embed_model(doc_text)
-            log_fn(f"  🌐 Dil tespiti → {why}")
-            log_fn(f"     embedding: {Path(embed_model).name if '/' in embed_model else embed_model}")
+            log_fn(f"  🌐 Belge dili: {why.split(' (')[0]}")
         else:
             embed_model = EMBED_MODEL
 
     # ── Adım 4: ChromaDB indeksleme (80–99%) ─────────────────────────────
     _t0 = time.perf_counter()
-    log_fn(f"__PROGRESS__:80:Vektör veritabanı oluşturuluyor")
-    log_fn("Vektör veritabanı oluşturuluyor...")
+    log_fn(f"__PROGRESS__:80:Arama dizini hazırlanıyor")
+    log_fn("Arama dizini hazırlanıyor...")
     idx = reindex_from_units(
         units, text_chunks, chroma_dir, col_name,
         _scaled_log(log_fn, offset=80, scale=19),
@@ -367,16 +365,14 @@ def build_kb(
     timings["index_s"] = round(time.perf_counter() - _t0, 1)
     timings["total_s"] = round(sum(timings.values()), 1)
     if TIMING_LOGS:
-        log_fn(f"⏱ Aşama süreleri: MinerU {timings['mineru_s']}s · "
-               f"tablo {timings['assemble_s']}s · chunk {timings['chunk_s']}s · "
-               f"indeks {timings['index_s']}s · TOPLAM {timings['total_s']}s")
-    log_fn(f"__PROGRESS__:99:İndeksleme tamamlandı")
+        log_fn(f"⏱ Toplam süre: {timings['total_s']:.0f} saniye")
+    log_fn(f"__PROGRESS__:99:Bilgi tabanı hazırlanıyor")
     table_count = idx["tables"]
     chunk_count = idx["chunks"]
     total       = idx["total"]
 
-    log_fn(f"✅ Tamamlandı: {table_count} tablo + {chunk_count} metin bölümü = {total} döküman")
-    log_fn(f"__PROGRESS__:99:İndeksleme tamamlandı")
+    log_fn(f"✅ Bilgi tabanı hazır: {table_count} tablo, {chunk_count} metin bölümü.")
+    log_fn(f"__PROGRESS__:99:Tamamlandı")
 
     # KB meta dosyası
     meta = {

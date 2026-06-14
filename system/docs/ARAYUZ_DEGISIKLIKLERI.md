@@ -5,6 +5,84 @@
 
 ---
 
+## 2026-06-14 (12) — İşlem günlüğü son-kullanıcıya göre sadeleştirildi
+
+Kullanıcı: "loglar daha profesyonel ve son kullanıcıya göre olsun; teknik şeylere
+veya tablo isimlerine girilmesin." Hem KB kurulumu hem denetim günlüğü baştan yazıldı.
+
+- **Teknik terimler ve tablo ismi dökümü kaldırıldı:** `[24/31] TABLE 3A - Q-D TABLE
+  FOR HAZARD DIVISION 1.3` gibi satırlar, ayrıca `MinerU / chunk / embedding / vektör
+  veritabanı / koleksiyon / döküman / parça / retrieval / LLM / Model: ...(provider)`
+  jargonu ve ham süre kırılımları temizlendi.
+- **Belge okuma fazı (mineru_batch):** başta `PDF'iniz 207 sayfa — 5 bölüm halinde
+  okunacak...`; her bölüm **numaralı** (`Bölüm 1 sunucuya yükleniyor...` → `Bölüm 1
+  okunuyor...` → `✅ Bölüm 1 tamamlandı.`) → eşzamanlı bölümler ayırt edilir, tek bölüm
+  içinde tekrar yok. **Parantez içi süreler ("(6s geçti)") kaldırıldı**; periyodik
+  liveness logu söküldü (canlılığı ilerleme çubuğu `Belge okunuyor (3/5)` gösteriyor).
+  Kaldırılmış "Gelişmiş Seçenekler" menüsüne atıf yapan hata mesajı da düzeltildi.
+- **KB kurulum fazı (kb_builder):** "Tablolar ve çizelgeler taranıyor", "Belge metni
+  hazırlanıyor", "🌐 Belge dili: İngilizce", "Arama dizini hazırlanıyor", "✅ Bilgi
+  tabanı hazır: 31 tablo, 248 metin bölümü". Süre satırı jargonsuz toplam saniye.
+- **Denetim fazı (auditor):** `Model: ...` satırı yerine `10 madde denetlenecek.`;
+  `retrieval hatası` → `ilgili içerik getirilemedi`; süre satırı sade `⏱ 2.3 saniye`.
+
+**Dokunulan dosyalar:** `scripts/mineru_batch.py`, `pipeline/kb_builder.py`,
+`pipeline/auditor.py`. (TIMING_LOGS açık; benchmark araçları etkilenmedi.)
+
+---
+
+## 2026-06-14 (11) — Denetim sekmesi yeniden düzenlendi (sol log / sağ özet, kanıt kaldırıldı)
+
+- **Sol panel sadeleştirildi:** "Denetimi Başlat" altındaki özet kart kaldırıldı; orada
+  artık yalnız **İşlem Günlüğü** (terminal) duruyor, tamamlanınca son log donmuş halde
+  (%100 + süre) kalıyor. Panel scroll yok, log kendi içinde kayıyor.
+- **Süre + sonuçlar sağ panelin tepesine taşındı:** zengin özet kart (emerald onay
+  ikonu, "Denetim Tamamlandı · ⏱ süre", büyük rakamlı Uygun/Uygun Değil/Değerlendirilemedi
+  hücreleri, üç-renkli uygunluk çubuğu, JSON İndir) sade "Genel Uygunluk" bloğunun yerine
+  geçti (`render_results` artık yalnız madde kartı üretiyor; özet `_audit_summary_card`).
+- **Kanıt sunumu tamamen kaldırıldı:** `render_verdict_card`'tan "Gerekçe & Kaynaklar"
+  açılır bölümü + TABLO/METİN kaynak çipleri silindi; her kart artık **madde metni +
+  verdict rozeti + gerekçe** (her zaman açık, kompakt). (`_table_btn` / tablo-görsel
+  modalı artık ölü kod — zararsız, ayrı turda sökülebilir.)
+- **Sağ panel kompakt + iç scroll, sayfa scroll yok:** `overflow-hidden flex flex-col`;
+  başlık sabit, `#audit-results` kalan alanı doldurup kendi içinde kayıyor. OOB swap
+  outerHTML olduğu için scroll sınıfları hem template'e hem server çıktısına kondu.
+
+**Dokunulan dosyalar:** `server.py` (`render_verdict_card`, `render_results`,
+`audit_poll`, `_audit_summary_card`), `templates/index.html` (tab-audit sağ panel).
+
+---
+
+## 2026-06-14 (10) — Bilgi tabanı listesi: 3 görünür + iç scroll + sade tarih
+
+- **Sayfa scroll'u kaldırıldı, scroll yalnız listede:** Bilgi Tabanı sekmesi sağ paneli
+  `overflow-hidden flex flex-col min-h-0`; "İşlem Durumu" sabit, "Mevcut Bilgi Tabanları"
+  kalan alanı dolduruyor, `#kb-list` `flex-1 min-h-0 max-h-[290px]` ile ~3 kart gösterip
+  kendi içinde kayıyor. Sayfanın tamamı asla scroll olmuyor.
+- **Kart alt-satırı sadeleştirildi:** PDF adı + ham tarih yerine tek satır
+  `Oluşturulma Zamanı: 12:24 - 14/06/2026` (SAAT - GG/AA/YYYY). `_fmt_created()` helper'ı.
+
+**Dokunulan dosyalar:** `server.py` (`render_kb_list`, `_fmt_created`),
+`templates/index.html` (tab-kb sağ panel + #kb-list).
+
+---
+
+## 2026-06-14 (9) — KB adı doğrulama + htmx hedef-id koruması (buton bug'ı)
+
+- **KB adı guard'ı (`_validate_kb_name`):** ChromaDB koleksiyon kuralları KB kurulumu
+  başlamadan kontrol ediliyor (3-63 karakter, harf/rakam/`_`/`-`, baş/son alfanümerik,
+  IPv4 değil). Geçersizse anlaşılır Türkçe uyarı; ham Chroma hatası + yarıda kalan iş yok.
+  (Önceden "AA" gibi 2-karakterli adlar tüm pipeline'ı koşturup son adımda çöküyordu.)
+- **KÖK BUG — htmx hedef-id kayboluyordu:** `_error_html` id'siz bir div döndürüyordu;
+  `outerHTML` swap `#index-result`/`#audit-result`'ı DOM'dan siliyor, sonraki form
+  gönderimi hedefi bulamayıp **sessizce çalışmıyordu** (sayfa yenilenene dek). Düzeltme:
+  `_error_html(msg, target_id)` çıktıyı doğru id'li div'le sarıyor; KB hataları
+  `index-result`, denetim hataları `audit-result` hedefini koruyor.
+
+**Dokunulan dosyalar:** `server.py` (`_validate_kb_name`, `_error_html` + tüm çağrılar).
+
+---
+
 ## 2026-06-14 (8) — Denetim özet kartı yeniden tasarım + sayaç flicker düzeltmesi
 
 - **Özet kartı (`server.py` `_audit_summary_card`) profesyonelleştirildi:** emoji yerine

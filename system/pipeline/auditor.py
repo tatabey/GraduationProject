@@ -189,7 +189,7 @@ def audit_items(
     collection_name = kb_meta["collection"]
     embed_model     = kb_meta.get("embed_model", EMBED_MODEL)
     client          = make_client(provider, api_key or "")
-    log_fn(f"Model: {model} ({provider})")
+    log_fn(f"{len(items)} madde denetlenecek.")
     results = []
 
     n = len(items)
@@ -259,12 +259,12 @@ def audit_items(
 
         matches, retrieve_s = ret
         if isinstance(matches, Exception):
-            log_fn(f"  → {ERROR_VERDICT} (retrieval hatası: {matches})")
+            log_fn(f"  → {ERROR_VERDICT} (ilgili içerik getirilemedi)")
             results.append({
                 "item_no"  : no,
                 "text"     : text,
                 "verdict"  : ERROR_VERDICT,
-                "reasoning": f"Retrieval hatası: {matches}",
+                "reasoning": "İlgili içerik getirilemedi.",
                 "sources"  : [],
                 "context"  : "",
             })
@@ -289,7 +289,7 @@ def audit_items(
         llm_s = time.perf_counter() - t_llm
 
         if TIMING_LOGS:
-            log_fn(f"  ⏱ retrieval {retrieve_s:.1f}s · LLM {llm_s:.1f}s")
+            log_fn(f"  ⏱ {retrieve_s + llm_s:.1f} saniye")
         log_fn(f"  → {verdict}")
 
         results.append({

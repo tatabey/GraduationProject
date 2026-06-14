@@ -88,13 +88,12 @@ def submit_task(
             return data.get("task_id") or data.get("data_id")
         msg = str(r.get("msg", "Sunucu hatası"))
         if any(x in msg.lower() for x in ["auth", "authenticate", "token", "login", "invalid"]):
-            log_fn("  ✗ API kimlik doğrulaması başarısız.")
-            log_fn("    → mineru.net adresinden hesabınıza giriş yaparak yeni API anahtarı alın.")
-            log_fn("    → Ardından 'Gelişmiş Seçenekler > MinerU'yu atla' ile mevcut JSON'u kullanabilirsiniz.")
+            log_fn("  ✗ Belge işleme servisine erişilemedi (yetkilendirme).")
+            log_fn("    → Lütfen sistem yöneticinizle iletişime geçin.")
         else:
-            log_fn(f"  ✗ MinerU hatası: {msg}")
+            log_fn(f"  ✗ Belge işlenemedi: {msg}")
     except Exception as e:
-        log_fn(f"  ✗ MinerU bağlantı hatası: {e}")
+        log_fn(f"  ✗ Belge işleme servisine bağlanılamadı: {e}")
     return None
 
 
@@ -107,17 +106,11 @@ def poll_task(
     headers = {"Authorization": f"Bearer {api_key}"}
     url = f"https://mineru.net/api/v4/extract/task/{task_id}"
     deadline = time.time() + timeout_sec
-    elapsed = 0
-    next_log_at = 20
     while time.time() < deadline:
         time.sleep(6)
-        elapsed += 6
         try:
             r = requests.get(url, headers=headers, timeout=15).json()
             state = r.get("data", {}).get("state", "unknown")
-            if elapsed >= next_log_at or state in ("done", "failed"):
-                log_fn(f"  Yapay zeka işliyor... ({elapsed}s geçti)")
-                next_log_at = elapsed + 30
             if state == "done":
                 return r["data"].get("full_zip_url")
             if state == "failed":
@@ -216,10 +209,10 @@ def _process_one_chunk(
     Parçalar arasında veri bağımlılığı yoktur — güvenle paralel çalışır."""
     prefix   = f"pages_{start+1:03d}-{end:03d}"
     out_file = chunks_dir / f"{prefix}_content_list.json"
-    tag      = f"[{idx+1}/{n}]"
+    bol      = f"Bölüm {idx+1}"
 
     if out_file.exists():
-        log_fn(f"✓ {tag} sayfa {start+1}–{end} (önbellekten)")
+        log_fn(f"✓ {bol} hazır (önbellekten).")
         return True
 
     t = {}
@@ -227,23 +220,23 @@ def _process_one_chunk(
     pdf_bytes = extract_chunk_bytes(pdf_path, start, end)
     t["bölme"] = time.perf_counter() - t0
 
-    log_fn(f"▶ {tag} sayfa {start+1}–{end}: sunucuya yükleniyor...")
+    log_fn(f"▶ {bol} sunucuya yükleniyor...")
     t0 = time.perf_counter()
     pub_url = upload_catbox(pdf_bytes, f"{prefix}.pdf")
     t["yükleme"] = time.perf_counter() - t0
     if not pub_url:
-        log_fn(f"  ✗ {tag} yükleme başarısız. (İnternet bağlantısını kontrol edin)")
+        log_fn(f"  ✗ {bol} yüklenemedi. (İnternet bağlantısını kontrol edin)")
         return False
 
     task_id = submit_task(pub_url, api_key, log_fn=log_fn)
     if not task_id:
-        log_fn(f"  ✗ {tag} görev oluşturulamadı.")
+        log_fn(f"  ✗ {bol} başlatılamadı.")
         return False
-    log_fn(f"  {tag} yapay zekaya gönderildi, işleniyor...")
+    log_fn(f"  {bol} okunuyor...")
 
     t0 = time.perf_counter()
     zip_url = poll_task(task_id, api_key,
-                        log_fn=lambda m: log_fn(f"  {tag} {m.strip()}"))
+                        log_fn=lambda m: log_fn(f"  {bol} {m.strip()}"))
     t["MinerU"] = time.perf_counter() - t0
     if not zip_url:
         return False
@@ -252,13 +245,10 @@ def _process_one_chunk(
     result = download_chunk(zip_url, chunks_dir, prefix, images_dir=images_dir)
     t["indirme"] = time.perf_counter() - t0
     if not result:
-        log_fn(f"  ✗ {tag} sonuç indirilemedi.")
+        log_fn(f"  ✗ {bol} sonuç alınamadı.")
         return False
 
-    if TIMING_LOGS:
-        parts = " · ".join(f"{k} {v:.0f}s" for k, v in t.items())
-        log_fn(f"  ⏱ {tag} {parts}")
-    log_fn(f"  ✅ {tag} tamamlandı.")
+    log_fn(f"  ✅ {bol} tamamlandı.")
     return True
 
 
@@ -283,10 +273,8 @@ def process_all(
     workers = MINERU_PARALLEL_CHUNKS if MINERU_PARALLEL_CHUNKS > 0 else n
     workers = max(1, min(workers, n))
 
-    mode = "paralel" if workers > 1 else "sıralı"
-    log_fn(f"PDF'iniz {total_pages} sayfa. {n} parça {mode} işlenecek"
-           + (f" ({workers} eşzamanlı)." if workers > 1 else "."))
-    log_fn(f"__PROGRESS__:2:MinerU başlatılıyor ({n} parça, {mode})")
+    log_fn(f"PDF'iniz {total_pages} sayfa — {n} bölüm halinde okunacak...")
+    log_fn(f"__PROGRESS__:2:Belge okunmaya başlanıyor")
 
     done_count = 0
     lock = threading.Lock()
@@ -302,10 +290,9 @@ def process_all(
         with lock:
             done_count += 1
             pct = int(done_count / n * 95) + 2
-            log_fn(f"__PROGRESS__:{pct}:{done_count}/{n} parça tamam")
+            log_fn(f"__PROGRESS__:{pct}:Belge okunuyor ({done_count}/{n})")
         return prefix, ok
 
-    t_mineru = time.perf_counter()
     if workers == 1:
         results = []
         for i, ch in enumerate(chunks):
@@ -320,7 +307,7 @@ def process_all(
 
     # Dayanıklılık: başarısız parçalar havuz boşaldıktan sonra SIRALI yeniden denenir
     if failed:
-        log_fn(f"⚠ {len(failed)} parça başarısız — sıralı yeniden deneniyor...")
+        log_fn(f"⚠ Bazı bölümler yeniden deneniyor...")
         still_failed = []
         for i, (start, end) in enumerate(chunks):
             prefix = f"pages_{start+1:03d}-{end:03d}"
@@ -332,17 +319,14 @@ def process_all(
                 still_failed.append(prefix)
         failed = still_failed
 
-    if TIMING_LOGS:
-        log_fn(f"⏱ MinerU toplam: {time.perf_counter() - t_mineru:.0f}s ({mode}, {n} parça)")
-
     total_items = merge_chunks(chunks_dir, merged_output)
     if total_items == 0:
         return {"success": False, "chunks_ok": 0, "chunks_total": n,
                 "output": None, "error": "Birleştirilecek veri bulunamadı."}
 
     chunks_ok = n - len(failed)
-    log_fn(f"✅ {total_items} içerik öğesi birleştirildi.")
-    log_fn(f"__PROGRESS__:99:MinerU tamamlandı")
+    log_fn(f"✅ Belge başarıyla okundu.")
+    log_fn(f"__PROGRESS__:99:Belge okundu")
     return {
         "success": len(failed) == 0,
         "chunks_ok": chunks_ok,

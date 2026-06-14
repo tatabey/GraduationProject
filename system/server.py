@@ -7,6 +7,7 @@ FastAPI sunucusu — ComplAI (Mevzuat Uygunluk Denetimi)
 import base64
 import os
 import queue
+import re
 import sys
 import tempfile
 import threading
@@ -43,6 +44,16 @@ VERDICT_CFG = {
     "UYGUN DEĞİL"       : ("#b91c1c", "#fef2f2", "#fecaca", "#dc2626", "✗"),
     "DEĞERLENDİRİLEMEDİ": ("#475569", "#f8fafc", "#e2e8f0", "#64748b", "—"),
 }
+
+
+def _fmt_created(s: str) -> str:
+    """'2026-06-14 12:24' → '12:24 - 14/06/2026'. Beklenmeyen biçimde olduğu gibi döner."""
+    try:
+        d, t = s.split(" ")
+        y, mo, da = d.split("-")
+        return f"{t} - {da}/{mo}/{y}"
+    except Exception:
+        return s
 
 
 def render_kb_list() -> str:
@@ -83,7 +94,7 @@ def render_kb_list() -> str:
             </div>
             <div class="flex-1 min-w-0">
               <div class="font-bold text-slate-800 text-sm">{kb['kb_name']}</div>
-              <div class="text-xs text-slate-400 mt-0.5 truncate">{kb.get('pdf','—')} · {kb.get('created_at','')}</div>
+              <div class="text-xs text-slate-400 mt-0.5 truncate">Oluşturulma Zamanı: {_fmt_created(kb.get('created_at',''))}</div>
             </div>
             <div class="flex items-center gap-4 flex-shrink-0">
               <div class="text-center">
@@ -139,100 +150,34 @@ def render_verdict_card(r: dict, kb_name: str = "") -> str:
     text_col, bg_col, border_col, accent, sym = VERDICT_CFG.get(
         r["verdict"], ("#475569", "#f8fafc", "#e2e8f0", "#94a3b8", "·")
     )
-    # 3+3 retrieval: kaynaklar modalite gruplarıyla etiketlenir
-    tbl_btns = "".join(_table_btn(s, kb_name) for s in r["sources"] if s["type"] == "table")
-    txt_tags = "".join(
-        f'<span class="inline-flex items-center gap-1 text-xs text-slate-500 '
-        f'bg-slate-100 border border-slate-200 rounded px-2 py-0.5">'
-        f'¶ {s["name"][:38]}</span>'
-        for s in r["sources"] if s["type"] != "table"
-    )
-    sources = ""
-    if tbl_btns:
-        sources += (
-            '<div class="flex flex-wrap items-center gap-2 mb-2">'
-            '<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider '
-            'w-12 flex-shrink-0">Tablo</span>' + tbl_btns + "</div>"
-        )
-    if txt_tags:
-        sources += (
-            '<div class="flex flex-wrap items-center gap-2">'
-            '<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider '
-            'w-12 flex-shrink-0">Metin</span>' + txt_tags + "</div>"
-        )
+    # Kanıt sunumu (tablo/metin kaynakları) kaldırıldı: yalnız madde metni +
+    # verdict + model gerekçesi gösterilir. Kompakt kart, gerekçe her zaman açık.
     return f"""
-    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden mb-3 shadow-sm transition-shadow hover:shadow-md"
+    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden mb-2.5 shadow-sm"
          style="border-left:4px solid {accent};">
-      <div class="flex items-start gap-4 px-5 py-4">
-        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center font-extrabold text-sm"
+      <div class="flex items-start gap-3 px-4 py-3">
+        <div class="w-8 h-8 rounded-lg flex-shrink-0 flex items-center justify-center font-extrabold text-xs"
              style="background:{bg_col};color:{text_col};border:2px solid {border_col};">
           {r['item_no']:02d}
         </div>
-        <p class="flex-1 text-sm leading-relaxed text-slate-700 pt-1">{r['text']}</p>
-        <span class="flex-shrink-0 font-bold text-sm px-3 py-1.5 rounded-full self-start"
+        <p class="flex-1 text-sm leading-relaxed text-slate-700">{r['text']}</p>
+        <span class="flex-shrink-0 font-bold text-xs px-2.5 py-1 rounded-full self-start whitespace-nowrap"
               style="background:{bg_col};color:{text_col};border:2px solid {border_col};">
           {sym} {r['verdict']}
         </span>
       </div>
-      <details class="group">
-        <summary class="cursor-pointer flex items-center gap-2 px-5 py-3
-                        border-t border-slate-100 bg-slate-50/80 text-sm font-semibold
-                        text-slate-500 hover:text-indigo-700 select-none list-none
-                        hover:bg-indigo-50 transition-all">
-          <svg class="w-4 h-4 transition-transform group-open:rotate-90 flex-shrink-0"
-               fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
-          </svg>
-          Gerekçe &amp; Kaynaklar
-        </summary>
-        <div class="px-5 py-4 border-t border-slate-100 bg-white">
-          <p class="text-sm text-slate-600 leading-relaxed mb-4">{r['reasoning']}</p>
-          <div>{sources}</div>
-        </div>
-      </details>
+      <div class="px-4 py-3 border-t border-slate-100 bg-slate-50/60">
+        <p class="text-sm text-slate-600 leading-relaxed">{r['reasoning']}</p>
+      </div>
     </div>"""
 
 
 def render_results(results: list, kb_name: str = "") -> str:
+    # Özet (sayım + uygunluk oranı + süre) artık _audit_summary_card ile sağ panelin
+    # tepesinde gösteriliyor; burada yalnız madde kartları üretilir.
     if not results:
         return ""
-    counts = {v: 0 for v in VERDICT_CFG}
-    for r in results:
-        if r["verdict"] in counts:
-            counts[r["verdict"]] += 1
-    total = len(results)
-    # Uygunluk oranı yalnız değerlendirilen maddeler üzerinden (teknik aksaklık hariç)
-    evaluated = counts["UYGUN"] + counts["UYGUN DEĞİL"]
-    pct = round(counts["UYGUN"] / evaluated * 100) if evaluated else 0
-
-    stat_cards = ""
-    for verdict, cnt in counts.items():
-        tc, bg, border, acc, sym = VERDICT_CFG[verdict]
-        stat_cards += f"""
-        <div class="text-center px-5 py-3 rounded-xl border-2"
-             style="background:{bg}; border-color:{border};">
-          <div class="text-2xl font-bold" style="color:{tc};">{cnt}</div>
-          <div class="text-xs font-medium mt-1" style="color:{acc};">{sym} {verdict}</div>
-        </div>"""
-
-    summary = f"""
-    <div class="bg-white rounded-xl border border-slate-200 p-5 mb-5">
-      <div class="flex flex-wrap gap-3 mb-4">{stat_cards}</div>
-      <div class="flex items-center justify-between mb-2">
-        <span class="text-sm text-slate-500">Genel Uygunluk</span>
-        <span class="text-sm font-bold text-emerald-600">{pct}%</span>
-      </div>
-      <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
-        <div class="h-full bg-emerald-400 rounded-full transition-all"
-             style="width:{pct}%"></div>
-      </div>
-      <p class="text-xs text-slate-400 mt-2">
-        {total} madde · {counts['UYGUN']} uygun · {counts['UYGUN DEĞİL']} ihlal{f" · {counts['DEĞERLENDİRİLEMEDİ']} değerlendirilemedi" if counts['DEĞERLENDİRİLEMEDİ'] else ""}
-      </p>
-    </div>"""
-
-    cards = "".join(render_verdict_card(r, kb_name) for r in results)
-    return summary + cards
+    return "".join(render_verdict_card(r, kb_name) for r in results)
 
 
 # ── Tablo görseli endpoint ────────────────────────────────────────────────
@@ -242,6 +187,29 @@ async def table_image(kb_name: str, filename: str):
     if not img_path.exists():
         return HTMLResponse("Not found", status_code=404)
     return FileResponse(str(img_path))
+
+
+_KB_NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{1,61}[A-Za-z0-9]$")
+_IPV4_RE = re.compile(r"^\d{1,3}(\.\d{1,3}){3}$")
+
+
+def _validate_kb_name(name: str) -> Optional[str]:
+    """ChromaDB koleksiyon adı kurallarını kontrol eder.
+
+    Geçerliyse None, geçersizse kullanıcıya gösterilecek Türkçe hata döner.
+    Kurallar: 3-63 karakter; yalnız harf/rakam/'_'/'-'; baş ve son karakter
+    alfanümerik; IPv4 adresi olamaz.
+    """
+    if len(name) < 3 or len(name) > 63:
+        return (f"Bilgi tabanı adı 3-63 karakter olmalı (girilen: '{name}', "
+                f"{len(name)} karakter). Örn. en az 3 harf/rakam kullanın.")
+    if _IPV4_RE.match(name):
+        return "Bilgi tabanı adı bir IP adresi olamaz."
+    if not _KB_NAME_RE.match(name):
+        return ("Bilgi tabanı adı yalnız harf, rakam, '_' ve '-' içerebilir; "
+                "ilk ve son karakter harf veya rakam olmalıdır "
+                f"(girilen: '{name}'). Türkçe karakter ve boşluk kullanmayın.")
+    return None
 
 
 # ── Rotalar ────────────────────────────────────────────────────────────────
@@ -266,6 +234,10 @@ async def kb_index(
     kb_name = kb_name.strip()
     if not kb_name:
         return HTMLResponse(_error_html("Bilgi tabanı adı boş olamaz."))
+    # ChromaDB koleksiyon adı kuralları (kurulumu yarıda kestiren ham hatayı önler):
+    # 3-63 karakter, alfanümerik/'_'/'-', baş ve son karakter alfanümerik.
+    if name_err := _validate_kb_name(kb_name):
+        return HTMLResponse(_error_html(name_err))
     if not skip_mineru and (not pdf_file or not pdf_file.filename):
         return HTMLResponse(_error_html("Lütfen bir PDF dosyası seçin."))
     if skip_mineru and (not existing_json or not existing_json.filename):
@@ -386,15 +358,15 @@ async def audit_run(
     report_pdf: Optional[UploadFile] = File(None),
 ):
     if not kb_name:
-        return HTMLResponse(_error_html("Bilgi tabanı seçin."))
+        return HTMLResponse(_error_html("Bilgi tabanı seçin.", "audit-result"))
     if not report_pdf or not report_pdf.filename:
-        return HTMLResponse(_error_html("Denetim raporu PDF'i yükleyin."))
+        return HTMLResponse(_error_html("Denetim raporu PDF'i yükleyin.", "audit-result"))
 
     key = groq_key.strip()   # boşsa auditor config'deki sağlayıcı anahtarını kullanır
     kbs = list_kbs(KB_DIR)
     kb_meta = next((k for k in kbs if k["kb_name"] == kb_name), None)
     if not kb_meta:
-        return HTMLResponse(_error_html(f"'{kb_name}' bilgi tabanı bulunamadı."))
+        return HTMLResponse(_error_html(f"'{kb_name}' bilgi tabanı bulunamadı.", "audit-result"))
 
     data = await report_pdf.read()
     tmp = tempfile.NamedTemporaryFile(suffix=".pdf", delete=False)
@@ -405,11 +377,11 @@ async def audit_run(
         items = parse_report(Path(tmp_path))
     except Exception as e:
         os.unlink(tmp_path)
-        return HTMLResponse(_error_html(f"PDF okunamadı: {e}"))
+        return HTMLResponse(_error_html(f"PDF okunamadı: {e}", "audit-result"))
 
     if not items:
         os.unlink(tmp_path)
-        return HTMLResponse(_error_html("PDF'de numaralı madde bulunamadı."))
+        return HTMLResponse(_error_html("PDF'de numaralı madde bulunamadı.", "audit-result"))
 
     job_id = uuid.uuid4().hex[:10]
     _jobs[job_id] = {
@@ -466,11 +438,14 @@ async def audit_poll(job_id: str):
         return HTMLResponse(_poll_html(job_id, "audit", log_text, progress=progress, step=step_label, start_ms=start_ms))
 
     results_html = render_results(job.get("results") or [], kb_name=job.get("kb_name", ""))
+    start_ms = int(job.get("start_time", 0) * 1000)
+    # SOL panel: yalnız işlem günlüğü (donmuş, %100). SAĞ panel: zengin özet kart
+    # (süre + sonuç sayıları + uygunluk oranı + JSON indir) + madde kartları.
+    final_log = _log_box(log_text, progress=100, step="Tamamlandı", start_ms=start_ms)
+    right_panel = _audit_summary_card(job) + results_html
     return HTMLResponse(f"""
-    <div id="audit-result">
-      {_audit_summary_card(job)}
-    </div>
-    <div id="audit-results" hx-swap-oob="true">{results_html or _empty_results()}</div>
+    <div id="audit-result">{final_log}</div>
+    <div id="audit-results" class="flex-1 min-h-0 overflow-y-auto px-7 pb-7" hx-swap-oob="true">{right_panel}</div>
     """)
 
 
@@ -491,11 +466,16 @@ async def audit_download(job_id: str):
 
 
 # ── Yardımcı HTML parçaları ────────────────────────────────────────────────
-def _error_html(msg: str) -> str:
+def _error_html(msg: str, target_id: str = "index-result") -> str:
+    # outerHTML swap hedefini (id) KORU: aksi halde hata div'i id'siz basılır,
+    # #index-result/#audit-result DOM'dan silinir ve form bir daha gönderemez
+    # (sayfa yenilenene dek "buton çalışmıyor" belirtisi).
     return f"""
-    <div class="flex items-center gap-2 px-4 py-3 bg-red-50 border border-red-200
-                rounded-lg text-sm text-red-600">
-      ⚠️ {msg}
+    <div id="{target_id}">
+      <div class="flex items-center gap-2 px-4 py-3 bg-red-50 border border-red-200
+                  rounded-lg text-sm text-red-600">
+        ⚠️ {msg}
+      </div>
     </div>"""
 
 
@@ -767,23 +747,10 @@ def _audit_summary_card(job: dict) -> str:
         {kb_label}</span>
     </div>"""
 
-    toggle = f"""
-    <details class="group">
-      <summary class="flex items-center gap-2 px-5 py-2.5 cursor-pointer select-none list-none
-                      text-xs text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-colors">
-        <svg class="w-3 h-3 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
-        </svg>
-        İşlem günlüğünü göster
-      </summary>
-      <div class="bg-slate-900">
-        <pre class="p-4 text-xs font-mono text-emerald-400 leading-relaxed max-h-48 overflow-y-auto whitespace-pre-wrap">{log_text or '(günlük boş)'}</pre>
-      </div>
-    </details>"""
-
+    # İşlem günlüğü artık sol panelde (terminal) gösteriliyor → kartta toggle yok.
     return f"""
-    <div class="rounded-2xl border {border_cls} bg-white overflow-hidden shadow-sm">
-      {header}{rate_html}{warn_html}{stats}{meta}{toggle}
+    <div class="rounded-2xl border {border_cls} bg-white overflow-hidden shadow-sm mb-4">
+      {header}{rate_html}{warn_html}{stats}{meta}
     </div>"""
 
 
