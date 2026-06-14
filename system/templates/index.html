@@ -33,7 +33,7 @@
     .pulse { animation: pulse 2s ease-in-out infinite; }
     .nav-link { transition: all .15s ease; }
     /* Sidebar mini-rail: kapaliyken ikon seridi */
-    #sidebar { width: 16rem; transition: width .25s ease; }
+    #sidebar { width: 18rem; transition: width .25s ease; }
     #sidebar.mini { width: 4.5rem; }
     #sidebar.mini .side-label, #sidebar.mini .logo-icon { display: none; }
     #sidebar.mini .side-head { justify-content: center; padding-left: 0; padding-right: 0; }
@@ -63,6 +63,8 @@
     .btn-sm { font-size:15px; padding:13px 20px; }
     .drop { border:2px dashed #cbd5e1; border-radius:14px; background:#f8fafc; transition:all .2s; cursor:pointer; }
     .drop:hover { border-color:#6366f1; background:#eef2ff; }
+    .drop-active { border-style:solid; border-color:#34d399; background:#ecfdf5; }
+    .drop-active:hover { border-color:#10b981; background:#ecfdf5; }
     .lbl { display:block; font-size:15px; font-weight:600; color:#374151; margin-bottom:8px; }
     .sec { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#94a3b8; }
     .badge { display:inline-flex; align-items:center; gap:5px; padding:6px 14px;
@@ -80,24 +82,26 @@
          style="min-height:100vh;">
 
     <!-- Logo -->
-    <div class="relative px-5 pt-6 pb-6 border-b border-slate-800">
-      <button onclick="toggleSidebar()" title="Menüyü aç/kapat"
-              class="absolute top-4 right-3 z-10 w-8 h-8 flex items-center justify-center rounded-lg text-slate-500
-                     hover:bg-slate-800 hover:text-slate-200 transition-all">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-      <div class="side-head flex flex-col items-center gap-3">
-        <div class="logo-icon w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
+    <div class="px-4 pt-4 pb-5 border-b border-slate-800">
+      <div class="flex justify-end">
+        <button onclick="toggleSidebar()" title="Menüyü aç/kapat"
+                class="w-8 h-8 flex items-center justify-center rounded-lg text-slate-500
+                       hover:bg-slate-800 hover:text-slate-200 transition-all">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div class="side-head flex items-center justify-center gap-3 mt-0.5">
+        <div class="logo-icon w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
                     flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-900/40 ring-1 ring-white/10">
-          <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
           </svg>
         </div>
         <div class="side-label">
-          <div class="brand text-4xl font-extrabold leading-none tracking-tight">
+          <div class="brand text-[2.5rem] font-extrabold leading-none tracking-tight">
             <span class="text-white">Compl</span><span class="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">AI</span>
           </div>
         </div>
@@ -308,16 +312,38 @@
 
               <div>
                 <label class="lbl" style="font-size:14px;">Standart Belgesi (PDF)</label>
-                <label class="drop flex flex-col items-center justify-center py-6 px-3">
-                  <svg class="w-8 h-8 text-slate-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                  </svg>
-                  <span class="text-sm font-semibold text-slate-500">PDF'i seçin veya sürükleyin</span>
-                  <span class="text-xs text-slate-400 mt-1">Maks. 50 MB</span>
+                <label class="drop flex flex-col items-center justify-center py-6 px-4" id="drop-kf">
+                  <div id="kf-prompt" class="flex flex-col items-center">
+                    <svg class="w-8 h-8 text-slate-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                    </svg>
+                    <span class="text-sm font-semibold text-slate-500">PDF'i seçin veya sürükleyin</span>
+                    <span class="text-xs text-slate-400 mt-1">Maks. 50 MB</span>
+                  </div>
+                  <div id="kf-sel" class="hidden w-full flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l2 2 4-4"/>
+                      </svg>
+                    </div>
+                    <div class="flex-1 min-w-0 text-left">
+                      <div id="kf-name" class="font-bold text-slate-800 text-sm truncate"></div>
+                      <div class="flex items-center gap-1.5 mt-0.5 text-xs font-semibold text-emerald-600">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                        <span>Yüklendi · <span id="kf-size"></span></span>
+                      </div>
+                    </div>
+                    <button type="button" title="Kaldır"
+                            onclick="event.preventDefault();event.stopPropagation();clearFile('kf')"
+                            class="w-7 h-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-red-50 hover:text-red-500 transition-colors flex-shrink-0">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                  </div>
                   <input type="file" name="pdf_file" accept=".pdf" class="hidden" onchange="showFile(this,'kf')">
                 </label>
-                <span id="kf" class="fname"></span>
               </div>
 
               <button type="submit" class="btn btn-sm">
@@ -428,16 +454,38 @@
 
               <div>
                 <label class="lbl" style="font-size:14px;">Denetim Raporu (PDF)</label>
-                <label class="drop flex flex-col items-center justify-center py-4 px-3">
-                  <svg class="w-7 h-7 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                  </svg>
-                  <span class="text-sm font-semibold text-slate-500">Raporu seçin veya sürükleyin</span>
-                  <span class="text-xs text-slate-400 mt-1">Numaralı maddeler içeren PDF</span>
+                <label class="drop flex flex-col items-center justify-center py-4 px-4" id="drop-af">
+                  <div id="af-prompt" class="flex flex-col items-center">
+                    <svg class="w-7 h-7 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <span class="text-sm font-semibold text-slate-500">Raporu seçin veya sürükleyin</span>
+                    <span class="text-xs text-slate-400 mt-1">Numaralı maddeler içeren PDF</span>
+                  </div>
+                  <div id="af-sel" class="hidden w-full flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l2 2 4-4"/>
+                      </svg>
+                    </div>
+                    <div class="flex-1 min-w-0 text-left">
+                      <div id="af-name" class="font-bold text-slate-800 text-sm truncate"></div>
+                      <div class="flex items-center gap-1.5 mt-0.5 text-xs font-semibold text-emerald-600">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                        <span>Yüklendi · <span id="af-size"></span></span>
+                      </div>
+                    </div>
+                    <button type="button" title="Kaldır"
+                            onclick="event.preventDefault();event.stopPropagation();clearFile('af')"
+                            class="w-7 h-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-red-50 hover:text-red-500 transition-colors flex-shrink-0">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                  </div>
                   <input type="file" name="report_pdf" accept=".pdf" class="hidden" onchange="showFile(this,'af')">
                 </label>
-                <span id="af" class="fname"></span>
               </div>
 
               <button type="submit" class="btn btn-sm">
@@ -651,9 +699,30 @@
     document.querySelector('#page-title-area p').textContent  = TABS[name].s;
   }
 
-  function showFile(inp, id) {
-    const el = document.getElementById(id);
-    if (el) el.textContent = inp.files[0] ? '📎 ' + inp.files[0].name : '';
+  function fmtSize(b) {
+    return b < 1048576 ? (b / 1024).toFixed(0) + ' KB' : (b / 1048576).toFixed(1) + ' MB';
+  }
+  function showFile(inp, key) {
+    const f = inp.files[0];
+    const sel = document.getElementById(key + '-sel');
+    if (!sel) {                                   // güvenli geri dönüş (eski span)
+      const el = document.getElementById(key);
+      if (el) el.textContent = f ? '📎 ' + f.name : '';
+      return;
+    }
+    if (!f) { clearFile(key); return; }
+    document.getElementById(key + '-name').textContent = f.name;
+    document.getElementById(key + '-size').textContent = fmtSize(f.size);
+    sel.classList.remove('hidden');
+    document.getElementById(key + '-prompt').classList.add('hidden');
+    document.getElementById('drop-' + key).classList.add('drop-active');
+  }
+  function clearFile(key) {
+    const inp = document.querySelector('#drop-' + key + ' input[type=file]');
+    if (inp) inp.value = '';
+    document.getElementById(key + '-sel').classList.add('hidden');
+    document.getElementById(key + '-prompt').classList.remove('hidden');
+    document.getElementById('drop-' + key).classList.remove('drop-active');
   }
 
   document.addEventListener('htmx:afterSwap', e => {

@@ -5,6 +5,25 @@
 
 ---
 
+## 2026-06-14 (5) — PDF "yüklendi" durumu + logo yan yana
+
+Kullanıcı geri bildirimi:
+- **PDF yükleme geri bildirimi profesyonelleşti:** eski küçük `📎 dosyaadı` satırı yerine,
+  dropzone'un içinde **"Yüklendi" kartı** (yeşil dosya ikonu + dosya adı truncate +
+  ✓ Yüklendi · boyut + **Kaldır (✕)** butonu). Dropzone kenarı yeşil-dolu (`.drop-active`).
+  Hem KB (`kf`) hem Denetim (`af`) formunda. `showFile()` zenginleştirildi (prompt gizle /
+  sel göster), `clearFile()` + `fmtSize()` eklendi; eski span'ler kaldırıldı.
+  Kart/dropzone tıklayınca dosya değiştirilebilir; ✕ event.preventDefault ile sadece temizler.
+- **Logo + isim yan yana ve aynı boyutta:** dikey düzenden **yatay**a dönüldü. İsmin
+  yatay sığması için sidebar `16rem → 18rem` genişletildi. İkon `w-14` + marka `text-[2.5rem]`
+  (≈40px, ikonla dengeli) yan yana, ortalı. Menü butonu logo header'ında **ayrı üst satırda**
+  (`flex justify-end`) → satır genişliğini yemiyor, mini modda görünür kalıyor.
+
+**Dokunulan dosyalar:** `templates/index.html` (logo header, iki dropzone, JS, .drop-active CSS,
+sidebar genişliği). Render + tag-denge doğrulandı.
+
+---
+
 ## 2026-06-14 (4) — Genel Bakış yeniden tasarım + logo dikey/büyük
 
 Kullanıcı geri bildirimi:
