@@ -82,15 +82,15 @@
     <!-- Logo -->
     <div class="px-5 pt-7 pb-6 border-b border-slate-800">
       <div class="side-head flex items-center gap-3">
-        <div class="logo-icon w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
+        <div class="logo-icon w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
                     flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-900/40 ring-1 ring-white/10">
-          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
           </svg>
         </div>
         <div class="side-label flex-1 min-w-0">
-          <div class="brand text-2xl font-extrabold leading-none tracking-tight">
+          <div class="brand text-3xl font-extrabold leading-none tracking-tight">
             <span class="text-white">Compl</span><span class="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">AI</span>
           </div>
         </div>
@@ -108,8 +108,17 @@
     <nav class="flex-1 px-4 py-5 space-y-2">
       <p class="sec px-3 mb-4 side-label">Modüller</p>
 
-      <button onclick="switchTab('kb')" id="nav-kb" title="Bilgi Tabanı"
+      <button onclick="switchTab('home')" id="nav-home" title="Genel Bakış"
               class="nav-link active w-full flex items-center gap-3.5 px-4 py-3.5 rounded-xl font-semibold text-base">
+        <svg class="flex-shrink-0 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+        </svg>
+        <span class="side-label">Genel Bakış</span>
+      </button>
+
+      <button onclick="switchTab('kb')" id="nav-kb" title="Bilgi Tabanı"
+              class="nav-link w-full flex items-center gap-3.5 px-4 py-3.5 rounded-xl font-semibold text-base">
         <svg class="flex-shrink-0 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
@@ -146,8 +155,8 @@
     <!-- Top bar -->
     <div class="bg-white border-b border-slate-200 px-6 py-5 flex items-center gap-4 flex-shrink-0">
       <div id="page-title-area">
-        <h1 class="text-2xl font-bold text-slate-900">Bilgi Tabanı Yönetimi</h1>
-        <p class="text-base text-slate-500 mt-1">Standart belgeleri yükleyin ve indeksleyin</p>
+        <h1 class="text-2xl font-bold text-slate-900">Genel Bakış</h1>
+        <p class="text-base text-slate-500 mt-1">ComplAI'a hoş geldiniz — proje ve kullanım kılavuzu</p>
       </div>
     </div>
 
@@ -156,12 +165,85 @@
 
 
       <!-- ══════════════════════════════════════════
+           SAYFA: Genel Bakış  (giriş ekranı — proje + kılavuz, scrollsuz)
+      ══════════════════════════════════════════ -->
+      <div id="tab-home" class="h-full overflow-hidden bg-slate-100">
+        <div class="h-full max-w-5xl mx-auto px-6 py-5 flex flex-col gap-4">
+
+          <!-- Hero -->
+          <div class="rounded-2xl p-6 flex items-center gap-5 bg-gradient-to-br from-indigo-600 to-violet-600
+                      text-white shadow-lg shadow-indigo-900/20 flex-shrink-0">
+            <div class="w-16 h-16 rounded-2xl bg-white/15 ring-1 ring-white/25 flex items-center justify-center flex-shrink-0">
+              <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <div class="min-w-0">
+              <h2 class="font-display text-3xl font-extrabold leading-tight">ComplAI</h2>
+              <p class="text-indigo-100 mt-1.5 text-base leading-snug">
+                Mevzuat ve standart belgelerini yapay zekâ ile denetleyen <b>RAG tabanlı uygunluk</b> sistemi.
+                Bir denetim raporunu seçtiğiniz standarda karşı madde madde değerlendirir.
+              </p>
+            </div>
+          </div>
+
+          <!-- Nasıl çalışır: pipeline -->
+          <div class="card p-5 flex-shrink-0">
+            <p class="sec mb-3">Nasıl Çalışır</p>
+            <div class="flex items-center gap-2 flex-wrap text-sm font-semibold text-slate-600">
+              <span class="px-3 py-2 rounded-lg bg-slate-100">📄 PDF</span>
+              <span class="text-slate-300">→</span>
+              <span class="px-3 py-2 rounded-lg bg-slate-100">🔍 Tablo + Metin İndeksleme</span>
+              <span class="text-slate-300">→</span>
+              <span class="px-3 py-2 rounded-lg bg-slate-100">⚖️ 2-Kanallı Retrieval</span>
+              <span class="text-slate-300">→</span>
+              <span class="px-3 py-2 rounded-lg bg-slate-100">🤖 LLM Kararı</span>
+              <span class="text-slate-300">→</span>
+              <span class="px-3 py-2 rounded-lg bg-emerald-50 text-emerald-700">UYGUN / UYGUN DEĞİL</span>
+            </div>
+          </div>
+
+          <!-- Kullanım + Öne çıkanlar -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 flex-1 min-h-0">
+            <div class="card p-5">
+              <p class="sec mb-4">Kullanım Kılavuzu</p>
+              <ol class="space-y-3.5">
+                <li class="flex gap-3">
+                  <span class="w-7 h-7 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+                  <div><div class="font-bold text-slate-800 text-sm">Bilgi Tabanı oluştur</div>
+                    <div class="text-sm text-slate-500 mt-0.5"><b>Bilgi Tabanı</b> modülünden standart/regülasyon PDF'ini yükleyip <b>İndeksle</b>'yin.</div></div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="w-7 h-7 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+                  <div><div class="font-bold text-slate-800 text-sm">Denetim yap</div>
+                    <div class="text-sm text-slate-500 mt-0.5"><b>Denetim</b> modülünde raporu yükleyin, bilgi tabanını seçin; sonuç madde madde gelir.</div></div>
+                </li>
+              </ol>
+            </div>
+            <div class="card p-5">
+              <p class="sec mb-4">Öne Çıkanlar</p>
+              <ul class="space-y-2.5 text-sm text-slate-600">
+                <li class="flex gap-2.5"><span class="text-emerald-500 font-bold">✓</span> <span><b>Domain-bağımsız</b> — NATO AASTP-1, UFC, DEF(AUST), Türkçe BYKHY ile doğrulandı.</span></li>
+                <li class="flex gap-2.5"><span class="text-emerald-500 font-bold">✓</span> <span><b>Türkçe + İngilizce</b> — belge dili otomatik algılanır, embedding kendiliğinden seçilir.</span></li>
+                <li class="flex gap-2.5"><span class="text-emerald-500 font-bold">✓</span> <span><b>Tablo + metin 2 kanal</b> — güçlü reranker ile yüksek isabet (HR@3 ~%97).</span></li>
+                <li class="flex gap-2.5"><span class="text-emerald-500 font-bold">✓</span> <span><b>Gerekçeli karar</b> — her madde için UYGUN / UYGUN DEĞİL + dayanak.</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ══════════════════════════════════════════
            SAYFA: Bilgi Tabanı  (kaydırmasız, panel-içi scroll)
       ══════════════════════════════════════════ -->
-      <div id="tab-kb" class="h-full flex overflow-hidden">
+      <div id="tab-kb" class="h-full flex overflow-hidden hidden">
 
-        <!-- SOL PANEL: form, sabit genişlik, kendi scroll'u -->
-        <div class="w-[26rem] flex-shrink-0 border-r border-slate-200 bg-white overflow-y-auto">
+        <!-- SOL PANEL: form, içeriğe göre yükseklik, sağ-alt yuvarlatılır -->
+        <div class="w-[26rem] flex-shrink-0 self-start max-h-full border-r border-b border-slate-200
+                    bg-white rounded-br-3xl shadow-sm overflow-y-auto">
           <div class="p-5 space-y-4">
 
             <div>
@@ -190,33 +272,6 @@
                 </label>
                 <span id="kf" class="fname"></span>
               </div>
-
-              <details class="group">
-                <summary class="flex items-center gap-2 text-sm font-medium text-slate-400
-                               hover:text-indigo-600 cursor-pointer select-none list-none py-1 transition-colors">
-                  <svg class="chevron w-4 h-4 transition-transform flex-shrink-0"
-                       fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                  </svg>
-                  Gelişmiş Seçenekler
-                </summary>
-                <div class="mt-3 pl-6 border-l-2 border-indigo-100 space-y-3">
-                  <label class="flex items-center gap-3 text-sm text-slate-600 cursor-pointer">
-                    <input type="checkbox" name="skip_mineru" value="true"
-                           onchange="document.getElementById('jf').style.display=this.checked?'block':'none'"
-                           class="w-4 h-4 rounded text-indigo-600 focus:ring-indigo-400">
-                    MinerU'yu atla — hazır JSON kullan
-                  </label>
-                  <div id="jf" style="display:none;">
-                    <label class="lbl" style="font-size:13px;">content_list.json</label>
-                    <input type="file" name="existing_json" accept=".json"
-                           class="w-full text-sm text-slate-500 file:mr-3 file:py-2 file:px-3
-                                  file:rounded-lg file:border-0 file:font-medium
-                                  file:bg-slate-100 file:text-slate-600 hover:file:bg-slate-200
-                                  border border-slate-200 rounded-xl px-3 py-2 bg-white cursor-pointer">
-                  </div>
-                </div>
-              </details>
 
               <button type="submit" class="btn btn-sm">
                 <span class="btn-spinner spin">
@@ -518,6 +573,7 @@
 ════════════════════════════════ -->
 <script>
   const TABS = {
+    home:  { h: 'Genel Bakış',           s: "ComplAI'a hoş geldiniz — proje ve kullanım kılavuzu" },
     kb:    { h: 'Bilgi Tabanı Yönetimi', s: 'Standart belgeleri yükleyin ve indeksleyin' },
     audit: { h: 'Uygunluk Denetimi',     s: 'Denetim raporlarını standartlarla karşılaştırın' },
   };
@@ -540,7 +596,7 @@
   }
 
   function switchTab(name) {
-    ['kb','audit'].forEach(t => {
+    ['home','kb','audit'].forEach(t => {
       document.getElementById('tab-' + t).classList.toggle('hidden', t !== name);
       document.getElementById('nav-' + t).classList.toggle('active', t === name);
     });

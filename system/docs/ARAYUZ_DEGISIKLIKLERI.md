@@ -5,6 +5,27 @@
 
 ---
 
+## 2026-06-14 (3) — Genel Bakış modülü + form sadeleştirme + logo büyütme
+
+Kullanıcı geri bildirimleri (4 madde):
+1. **Sol form paneli boş beyazı sonlandırıldı:** panel artık `self-start max-h-full`
+   (içeriğe göre yükseklik) + `border-b rounded-br-3xl shadow-sm` → beyaz, butonun
+   hemen altında sağ-alt yuvarlak köşeyle bitiyor; altı sayfa zemini (slate-100).
+2. **Logo + isim büyütüldü:** ikon `w-12→w-14` (svg `w-7→w-8`), marka `text-2xl→text-3xl`.
+3. **"Gelişmiş Seçenekler" kaldırıldı:** `<details>` bloğu (skip_mineru + existing_json)
+   tamamen silindi. Backend güvenli — `kb_index` bu alanları `Form(False)/File(None)`
+   varsayılanıyla okuyor, UI'dan gelmese de normal MinerU akışı çalışır.
+4. **Yeni "Genel Bakış" modülü (giriş ekranı, scrollsuz):** sidebar'a 3. modül eklendi
+   ve **varsayılan aktif** yapıldı. İçerik: hero (ComplAI + tanım), "Nasıl Çalışır"
+   pipeline şeridi, "Kullanım Kılavuzu" (2 adım), "Öne Çıkanlar" (4 madde).
+   `tab-home` = `h-full overflow-hidden`, flex-col + max-w-5xl → tek ekrana sığar.
+   JS: `TABS.home`, `switchTab(['home','kb','audit'])`, top-bar varsayılan başlık home.
+
+**Dokunulan dosyalar:** `templates/index.html` (nav, top-bar, tab-home paneli, sol panel,
+logo, JS). Standalone Jinja render + tag-denge doğrulandı.
+
+---
+
 ## 2026-06-14 (2) — Sidebar logo sadeleştirme + KB listesi iç scroll
 
 Kullanıcı geri bildirimi üzerine:
