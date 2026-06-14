@@ -5,6 +5,26 @@
 
 ---
 
+## 2026-06-14 (4) — Genel Bakış yeniden tasarım + logo dikey/büyük
+
+Kullanıcı geri bildirimi:
+- **Genel Bakış içeriği profesyonelce yeniden kuruldu:** slim hero + iki sütun:
+  - SOL "Nasıl Kullanılır" — 2 modül kartı (Bilgi Tabanı / Denetim), her biri ikon +
+    ADIM rozet + açıklama, altında ipucu satırı.
+  - SAĞ "Sistem Hakkında" — tanım paragrafı + mini pipeline şeridi + 3 özellik +
+    metrik rozetleri (HR@3 ~%97 / 4 standart / 2 dil).
+  - `grid lg:grid-cols-2`, `flex-1 min-h-0`, kartlar `flex-col` → tek ekrana sığar, scrollsuz.
+- **Logo + isim büyütüldü ve dikey ortalı yapıldı:** isim yatay düzende sidebar'a
+  sığmadığından (text-4xl "ComplAI" ~138px) düzen **dikey ortalı**ya çevrildi:
+  ikon `w-16` üstte ortada, marka `text-4xl` altında ortada (logoyla aynı görsel ağırlık).
+  Menü (hamburger) butonu header'da **absolute top-right**'a alındı (satır genişliğini yemiyor).
+  Mini (daraltılmış) modda ikon+isim gizlenir, köşedeki menü görünür kalır.
+
+**Dokunulan dosyalar:** `templates/index.html` (logo header + tab-home).
+Render + tag-denge doğrulandı.
+
+---
+
 ## 2026-06-14 (3) — Genel Bakış modülü + form sadeleştirme + logo büyütme
 
 Kullanıcı geri bildirimleri (4 madde):
