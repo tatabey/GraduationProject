@@ -5,6 +5,24 @@
 
 ---
 
+## 2026-06-14 (8) — Denetim özet kartı yeniden tasarım + sayaç flicker düzeltmesi
+
+- **Özet kartı (`server.py` `_audit_summary_card`) profesyonelleştirildi:** emoji yerine
+  inline **SVG ikonlar** (check / x / dosya / KB); başarı başlığı emerald onay ikonu +
+  "Denetim Tamamlandı · ⏱ {süre}". Yeni **Uygunluk Oranı çubuğu** (yeşil uygun · kırmızı
+  ihlal · gri değerlendirilemedi, gerçek orana göre genişlik) + %oran rozeti. İstatistik
+  hücreleri büyük rakam (`text-3xl`) + sade etiket. **"JSON İndir"** butonu başlık satırına
+  taşındı (indigo). Kart `rounded-2xl` beyaz zemin.
+- **Sayaç flicker düzeltmesi:** `_log_box` geçen-süreyi artık ilk render'da sunucu tarafında
+  güncel değerle basıyor (önce `0:00` basıp JS'in ilk tik'ine kadar titriyordu). JS tarafında
+  `tickTimers()` fonksiyona alındı ve `htmx:afterSwap`'ta hemen çağrılıyor → swap sonrası
+  anında güncel.
+
+**Dokunulan dosyalar:** `server.py` (`_audit_summary_card`, `_log_box`), `templates/index.html`
+(timer JS + afterSwap). server.py syntax doğrulandı.
+
+---
+
 ## 2026-06-14 (7) — Genel Bakış paleti profesyonelleştirildi (mor azaltıldı)
 
 Kullanıcı: "mor çok baskın". Palet tek-aksan sisteme çekildi:

@@ -511,11 +511,15 @@ def _log_box(text: str, progress: int = -1, step: str = "", footer: str = "",
         # sayaç durur; nihai süre özet kartında gösterilir.
         timer_html = ""
         if start_ms:
+            # Başlangıç metnini GÜNCEL geçen süreyle bas; aksi halde her poll
+            # swap'ında JS bir sonraki tik'e kadar "0:00" gösterip flicker yapıyor.
+            _el = max(0, (int(time.time() * 1000) - start_ms) // 1000)
+            _init = f"{_el // 60}:{_el % 60:02d}"
             running_attr = "" if progress >= 100 else f'data-start-ms="{start_ms}"'
             timer_html = (
                 f'<span class="elapsed-timer" {running_attr} '
                 f'style="font-size:13px;font-weight:700;color:#64748b;'
-                f'font-variant-numeric:tabular-nums;flex-shrink:0;">⏱ 0:00</span>'
+                f'font-variant-numeric:tabular-nums;flex-shrink:0;">⏱ {_init}</span>'
             )
         progress_section = f"""
       <div style="padding:14px 20px 12px;border-bottom:1px solid #e2e8f0;background:#fff;">
@@ -667,63 +671,100 @@ def _audit_summary_card(job: dict) -> str:
         or counts.get(ERROR_VERDICT, 0) > 0
     )
 
+    uygun     = counts.get("UYGUN", 0)
+    ihlal     = counts.get("UYGUN DEĞİL", 0)
+    deg       = counts.get("DEĞERLENDİRİLEMEDİ", 0)
+    evaluated = uygun + ihlal
+    rate      = round(100 * uygun / evaluated) if evaluated else 0
+    def _pct(x): return (100.0 * x / n) if n else 0.0
+
+    download_btn = ""
+    if results and job_id:
+        download_btn = (
+            f'<a href="/audit/download/{job_id}" download '
+            f'class="inline-flex items-center gap-1.5 text-xs font-bold px-3.5 py-2 rounded-lg '
+            f'bg-indigo-600 text-white hover:bg-indigo-700 transition-colors flex-shrink-0">'
+            f'<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">'
+            f'<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" '
+            f'd="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>JSON İndir</a>'
+        )
+
     if success:
         header = f"""
-        <div class="flex items-center gap-3 px-5 py-4 bg-indigo-50 border-b border-indigo-200">
-          <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-xl flex-shrink-0">🔍</div>
-          <div>
-            <p class="font-semibold text-indigo-800 text-sm">Denetim tamamlandı!</p>
-            <p class="text-xs text-indigo-600 mt-0.5">{n} madde analiz edildi. Sonuçlar sağ panelde gösteriliyor.</p>
+        <div class="flex items-center gap-3.5 px-5 py-4">
+          <div class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/></svg>
           </div>
+          <div class="min-w-0 flex-1">
+            <p class="font-bold text-slate-800 text-[15px] leading-tight">Denetim Tamamlandı</p>
+            <p class="text-xs text-slate-500 mt-1">{n} madde değerlendirildi · ⏱ {dur_str}</p>
+          </div>
+          {download_btn}
         </div>"""
-        border_cls = "border-indigo-200"
+        border_cls = "border-slate-200"
     else:
-        header = """
-        <div class="flex items-center gap-3 px-5 py-4 bg-red-50 border-b border-red-200">
-          <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-xl flex-shrink-0">❌</div>
-          <div>
-            <p class="font-semibold text-red-800 text-sm">Denetim hata ile sonuçlandı.</p>
-            <p class="text-xs text-red-600 mt-0.5">Günlüğü inceleyin.</p>
+        header = f"""
+        <div class="flex items-center gap-3.5 px-5 py-4">
+          <div class="w-11 h-11 rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </div>
+          <div class="min-w-0 flex-1">
+            <p class="font-bold text-slate-800 text-[15px] leading-tight">Denetim Hata ile Sonuçlandı</p>
+            <p class="text-xs text-slate-500 mt-1">Aşağıdaki işlem günlüğünü inceleyin.</p>
           </div>
         </div>"""
         border_cls = "border-red-200"
 
-    VCFG = {
-        "UYGUN":              ("#15803d","#f0fdf4","#16a34a","✓"),
-        "UYGUN DEĞİL":        ("#b91c1c","#fef2f2","#dc2626","✗"),
-        "DEĞERLENDİRİLEMEDİ": ("#475569","#f8fafc","#64748b","—"),
-    }
-    stat_cells = ""
-    for v, (tc, bg, acc, sym) in VCFG.items():
-        cnt = counts.get(v, 0)
-        stat_cells += f"""
-        <div class="text-center px-3 py-3 border-r border-slate-100 last:border-0">
-          <div class="text-xl font-bold" style="color:{tc};">{cnt}</div>
-          <div class="text-xs mt-0.5" style="color:{acc};">{sym} {v}</div>
+    # Uygunluk oranı çubuğu (yeşil uygun · kırmızı ihlal · gri değerlendirilemedi)
+    rate_html = ""
+    if success and n:
+        rate_html = f"""
+        <div class="px-5 pb-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-slate-500">Uygunluk Oranı</span>
+            <span class="text-sm font-extrabold text-slate-800">%{rate}</span>
+          </div>
+          <div class="h-2.5 rounded-full bg-slate-100 overflow-hidden flex">
+            <div class="bg-emerald-500 h-full" style="width:{_pct(uygun):.2f}%"></div>
+            <div class="bg-red-400 h-full" style="width:{_pct(ihlal):.2f}%"></div>
+            <div class="bg-slate-300 h-full" style="width:{_pct(deg):.2f}%"></div>
+          </div>
         </div>"""
 
-    stats = f'<div class="grid grid-cols-3 divide-x divide-slate-100 border-b border-slate-200">{stat_cells}</div>'
+    # İstatistik hücreleri (büyük rakam + etiket)
+    TILES = [
+        (uygun, "Uygun",              "#16a34a"),
+        (ihlal, "Uygun Değil",        "#dc2626"),
+        (deg,   "Değerlendirilemedi", "#64748b"),
+    ]
+    stat_cells = ""
+    for cnt, label, col in TILES:
+        stat_cells += f"""
+        <div class="flex-1 text-center py-4">
+          <div class="text-3xl font-extrabold leading-none" style="color:{col};">{cnt}</div>
+          <div class="text-[11px] font-semibold mt-1.5 text-slate-500">{label}</div>
+        </div>"""
+    stats = (f'<div class="grid grid-cols-3 divide-x divide-slate-100 '
+             f'border-y border-slate-100 bg-slate-50/60">{stat_cells}</div>')
 
     warn_html = ""
     if rate_limit_warn:
         warn_html = """
-        <div class="px-5 py-2.5 bg-amber-50 border-b border-amber-200 flex items-center gap-2 text-xs text-amber-700">
-          ⚠️ <strong>API limiti aşıldı.</strong>
-          Bazı maddeler değerlendirilemedi. Biraz bekleyip tekrar deneyin veya kendi API anahtarınızı girin.
+        <div class="px-5 py-2.5 bg-amber-50 border-b border-amber-200 flex items-start gap-2 text-xs text-amber-700">
+          <span class="flex-shrink-0">⚠️</span>
+          <span><strong>API limiti aşıldı.</strong> Bazı maddeler değerlendirilemedi; biraz bekleyip tekrar deneyin.</span>
         </div>"""
 
-    download_btn = ""
-    if results and job_id:
-        download_btn = f'<a href="/audit/download/{job_id}" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition-colors" download>⬇ Sonuçları JSON İndir</a>'
-
     meta = f"""
-    <div class="px-5 py-3 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3 bg-slate-50">
-      <div class="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
-        <span>📄 {report}</span>
-        <span>🗄 {kb_label}</span>
-        <span>⏱ {dur_str}</span>
-      </div>
-      {download_btn}
+    <div class="px-5 py-3 flex flex-wrap gap-2 border-b border-slate-100">
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-medium max-w-[60%]">
+        <svg class="w-3.5 h-3.5 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span class="truncate">{report}</span></span>
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-medium">
+        <svg class="w-3.5 h-3.5 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
+        {kb_label}</span>
     </div>"""
 
     toggle = f"""
@@ -741,8 +782,8 @@ def _audit_summary_card(job: dict) -> str:
     </details>"""
 
     return f"""
-    <div class="rounded-xl border {border_cls} overflow-hidden shadow-sm">
-      {header}{warn_html}{stats}{meta}{toggle}
+    <div class="rounded-2xl border {border_cls} bg-white overflow-hidden shadow-sm">
+      {header}{rate_html}{warn_html}{stats}{meta}{toggle}
     </div>"""
 
 

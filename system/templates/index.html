@@ -680,13 +680,14 @@
   // Sunucu .elapsed-timer[data-start-ms] basar; htmx her 1.5s'de poll'u
   // değiştirse de bu tek interval DOM'u sorgulayıp akıcı (saniye) günceller.
   // data-start-ms yoksa (işlem bitti) sayaç son değerinde donar.
-  setInterval(function () {
+  function tickTimers() {
     document.querySelectorAll('.elapsed-timer[data-start-ms]').forEach(function (el) {
       var t = Math.max(0, (Date.now() - parseInt(el.dataset.startMs, 10)) / 1000);
       var m = Math.floor(t / 60), s = Math.floor(t % 60);
       el.textContent = '⏱ ' + m + ':' + (s < 10 ? '0' : '') + s;
     });
-  }, 250);
+  }
+  setInterval(tickTimers, 250);
 
   function toggleSidebar() {
     // Kapali durum = mini ikon seridi (moduller + toggle gorunur kalir)
@@ -730,6 +731,7 @@
 
   document.addEventListener('htmx:afterSwap', e => {
     e.detail.target.querySelectorAll('pre').forEach(p => { p.scrollTop = p.scrollHeight; });
+    tickTimers();     // swap'tan hemen sonra güncelle — "0:00" flicker olmasın
     syncLogModal();   // modal açıksa canlı günlüğü güncel tut
   });
 
