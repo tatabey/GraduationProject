@@ -28,11 +28,16 @@ sys.path.insert(0, str(ROOT))
 from scripts.text_chunker import chunk_text_blocks, save_text_chunks
 from pipeline.kb_builder import reindex_from_units
 from tools.check_gold_ids import check_gold_ids
+from config import EMBED_MODEL
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--kb", default="aastp_test", help="KB klasör adı (data/kbs altında)")
+    parser.add_argument("--embed-model", default=None,
+                        help="Embedding modeli (varsayılan: kb_meta'daki ya da config EMBED_MODEL)")
+    parser.add_argument("--scenarios", type=Path, default=None,
+                        help="Gold chunk_id kontrolü için senaryo dosyası (varsayılan: AASTP text)")
     args = parser.parse_args()
 
     kb_dir = ROOT / "data" / "kbs" / args.kb
@@ -51,8 +56,10 @@ def main():
 
     meta     = json.loads(meta_path.read_text(encoding="utf-8"))
     col_name = meta["collection"]
+    embed_model = args.embed_model or meta.get("embed_model") or EMBED_MODEL
 
     print(f"\n🔄 KB yeniden indeksleniyor: {args.kb}  (koleksiyon: {col_name})")
+    print(f"   embedding: {embed_model}")
     print("─" * 64)
 
     # 1) Tablolar (deterministik, değişmez)
@@ -65,7 +72,7 @@ def main():
 
     # Güvenlik kapısı: gold chunk_id'ler kaybolduysa indeksleme iptal —
     # test seti geçersizleşmeden önce chunker değişikliğini düzelt.
-    missing = check_gold_ids(chunks)
+    missing = check_gold_ids(chunks, args.scenarios) if args.scenarios else check_gold_ids(chunks)
     if missing:
         print(f"  ❌ {len(missing)} gold chunk_id yeni chunk'larda yok, reindex iptal:")
         for cid in missing[:10]:
@@ -90,12 +97,13 @@ def main():
 
     # 3) ChromaDB'yi sıfırdan kur
     print("  ⏳ ChromaDB indeksleniyor...")
-    idx = reindex_from_units(units, chunks, chroma_dir, col_name)
+    idx = reindex_from_units(units, chunks, chroma_dir, col_name, embed_model=embed_model)
 
     # 4) kb_meta güncelle
     meta["tables"] = idx["tables"]
     meta["chunks"] = idx["chunks"]
     meta["total"]  = idx["total"]
+    meta["embed_model"] = embed_model
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("─" * 64)

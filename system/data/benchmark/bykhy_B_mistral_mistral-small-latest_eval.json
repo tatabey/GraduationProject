@@ -1,0 +1,168 @@
+{
+  "total": 123,
+  "correct": 108,
+  "wrong": 15,
+  "accuracy": 87.8048780487805,
+  "by_table": {
+    "Table_page95": {
+      "correct": 16,
+      "total": 22
+    },
+    "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu": {
+      "correct": 14,
+      "total": 16
+    },
+    "Ek-6 Bir Sıra İçindeki Koltuk Sayısı": {
+      "correct": 11,
+      "total": 14
+    },
+    "Ek-10 Dökme LPG Tankları Asgari Emniyet Uzaklıkları": {
+      "correct": 16,
+      "total": 16
+    },
+    "Ek-12/C Açıkta Kurulu Yerüstü Tankları ile İlgili Asgari Emniyet Mesafeleri": {
+      "correct": 13,
+      "total": 14
+    },
+    "Ek-7 Otomatik Algılama Sistemi Gereken Binalar": {
+      "correct": 10,
+      "total": 10
+    },
+    "Yangın duvarları": {
+      "correct": 4,
+      "total": 4
+    },
+    "Acil çıkış zorunluluğu": {
+      "correct": 4,
+      "total": 5
+    },
+    "Toplanma amaçlı binalar": {
+      "correct": 3,
+      "total": 3
+    },
+    "MADDE 27- (Değişik: 16/3/2015-2015/7401 ": {
+      "correct": 4,
+      "total": 4
+    },
+    "Yangın kompartımanları": {
+      "correct": 2,
+      "total": 2
+    },
+    "Acil durum yönlendirmesi": {
+      "correct": 5,
+      "total": 6
+    },
+    "Algılama ve uyarı sistemi": {
+      "correct": 4,
+      "total": 5
+    },
+    "Acil durum aydınlatması sistemi": {
+      "correct": 2,
+      "total": 2
+    }
+  },
+  "by_verdict": {
+    "UYGUN DEĞİL": {
+      "tp": 52,
+      "fn": 10,
+      "fp": 5
+    },
+    "UYGUN": {
+      "tp": 56,
+      "fn": 5,
+      "fp": 10
+    }
+  },
+  "errors": [
+    {
+      "item_no": 1,
+      "text": "Oteller, Pansiyonlar bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 56 m'dir (iki yönlü kaçış imkânı olan mekân).",
+      "verdict": "UYGUN",
+      "reasoning": "Madde 50-(5) ve Ek-14'e göre, \"Oteller, Pansiyonlar\" kullanım sınıfında yağmurlama sistemi olmayan binalarda iki yönlü kaçış imkanı için maksimum uzaklık 30 m olarak belirlenmiştir. Bulunan 56 m değeri, standartta verilen 30 m'lik sınırı aşmamaktadır.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table_page95",
+      "elapsed_s": 3.71
+    },
+    {
+      "item_no": 7,
+      "text": "Hastaneler, Huzurevleri bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 56 m'dir (iki yönlü kaçış imkânı olan mekân).",
+      "verdict": "UYGUN",
+      "reasoning": "\"Hastaneler, Huzurevleri\" kullanım sınıfı için yağmurlama sistemi olmayan yapılarda iki yönlü kaçış mesafesi Ek-14'e göre 30 m olarak belirlenmiştir (p.95 ve Ek-14 tabloları). 56 m değeri, verilen tablolarda yer alan 30 m sınırını aşmamaktadır.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table_page95",
+      "elapsed_s": 44.76
+    },
+    {
+      "item_no": 8,
+      "text": "Mağazalar, Dükkânlar, Marketler bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 9 m olarak ölçülmüştür (tek yönlü kaçış imkânı olan mekân).",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Madde 147(3) uyarınca, kaçış uzaklığı Ek-14’teki değerleri aşamaz. ITEM’de \"Mağazalar, Dükkânlar, Marketler\" kullanım sınıfı için yağmurlama sistemi olmayan mekânda tek yönlü kaçış imkânı olan mekânda en uzun kaçış uzaklığı 9 m olarak ölçülmüştür. Oysa Ek-14’e göre bu sınıf için yağmurlama sistemi olmayan mekânda tek yönlü kaçış imkânı olan mekânda en uzun kaçış uzaklığı 15 m’dir.",
+      "expected": "UYGUN",
+      "table": "Table_page95",
+      "elapsed_s": 9.81
+    },
+    {
+      "item_no": 9,
+      "text": "Apartmanlar bir yapıda, yağmurlama sistemli bir mekânda en uzun kaçış uzaklığı 132 m'dir (iki yönlü kaçış imkânı olan mekân).",
+      "verdict": "UYGUN",
+      "reasoning": "\"Apartmanlar\" kullanım sınıfı için yağmurlama sistemli yapılarda iki yönlü kaçış mesafesi Ek-14'e göre en çok 75 m olarak belirlenmiştir (Table Ek-14, Kullanım Sınıfı: Apartmanlar, İki yön en çok uzaklık (m): Yağmurlama sistemli). 132 m değeri, tabloda verilen 75 m'yi aşmamaktadır, dolayısıyla standartlara uygundur.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table_page95",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 11,
+      "text": "Okul ve Eğitim Yapıları bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 30 m'dir (tek yönlü kaçış imkânı olan mekân).",
+      "verdict": "UYGUN",
+      "reasoning": "Ek-14 Tablo \"Okul ve Eğitim Yapıları\" satırında, yağmurlama sistemi olmayan mekânlarda tek yönlü kaçış mesafesi en çok 15 m olarak belirtilmiştir. Madde 32(3) uyarınca, kaçış uzaklığı Ek-5/B'de belirtilen değerlerden daha büyük olamaz. Bu durumda, 30 m olarak belirtilen değer, standartta yer alan 15 m sınırını aşmaktadır. Bu nedenle, UYGUN DEĞİLDİR.\n\n---\n\n**Düzeltilmiş Yanıt:**\n\nVERDICT: UYGUN DEĞİL\nREASONING: Ek-14 Tablo \"Okul ve Eğitim Yapıları\" satırında, yağmurlama sistemi olmayan mekânlarda tek yönlü kaçış mesafesi en çok 15 m olarak belirtilmiştir. Madde 32(3) uyarınca, kaçış uzaklığı Ek-5/B'de belirtilen değerlerden daha büyük olamaz. Bulunan 30 m değeri, standartta yer alan 15 m sınırını aşmaktadır.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table_page95",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 15,
+      "text": "Yüksek Tehlikeli Yerler bir yapıda, yağmurlama sistemi bulunmayan bir mekânda en uzun kaçış uzaklığı 39 m'dir (iki yönlü kaçış imkânı olan mekân).",
+      "verdict": "UYGUN",
+      "reasoning": "\"Yüksek Tehlikeli Yerler\" için yağmurlama sistemi olmayan yapılarda iki yönlü kaçış imkânı olan mekânlarda en uzun kaçış uzaklığı \"Ek-14\" tablosuna göre 20 m olarak belirlenmiştir. Bulunan 39 m değeri, tabloda verilen 20 m sınırını aşmamaktadır.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Table_page95",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 31,
+      "text": "Kullanıcı yükü hesabında, 'Resepsiyon alanları, bekleme alanları, atrium' için 5.0 m²/kişi katsayısı kullanılmıştır.",
+      "verdict": "UYGUN",
+      "reasoning": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu'na göre \"Resepsiyon alanları, bekleme alanları, atrium zemini\" için belirlenen katsayı 3.0 m²/kişi'dir. Madde 147(2)'de kullanıcı yükü katsayısı olarak Ek-5/A'daki değerlerin esas alınması gerektiği belirtilmiştir. 5.0 m²/kişi katsayısı, standartta belirtilen 3.0 m²/kişi değerinden daha yüksek olduğundan, hesaplama standart gerekliliklerini karşılamaktadır.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 38,
+      "text": "Kullanıcı yükü hesabında, 'Sergi alanları, stüdyolar (film, radyo, telev' için 10.0 m²/kişi katsayısı kullanılmıştır.",
+      "verdict": "UYGUN",
+      "reasoning": "Madde 32/1 ve Madde 147/2'ye göre, kullanıcı yükü hesabında Ek-5/A Kullanıcı Yükü Katsayısı Tablosu'nda belirtilen değerler esas alınır. Tablonun 3. satırında \"Sergi alanları, stüdyolar (film, radyo, televizyon, kayıt)\" için m²/kişi katsayısı 1.5 olarak belirlenmiştir. Rapor edilen 10.0 m²/kişi değeri, tabloda verilen 1.5 m²/kişi değerinden büyük olduğu için kriterlere uygundur.",
+      "expected": "UYGUN DEĞİL",
+      "table": "Ek-5/A Kullanıcı Yükü Katsayısı Tablosu",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 45,
+      "text": "Bir toplanma salonunda sıra genişliği 375-399 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 8 koltuk bulunmaktadır.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "\"Ek-6 Bir Sıra İçindeki Koltuk Sayısı\" tablosuna göre, sıra genişliği 375-399 mm olan koltuk sıralarında çıkış yolu yalnız bir yanda iken en çok koltuk sayısı 10 olarak belirlenmiştir. Bulunan 8 koltuk sayısı bu sınırın altında kaldığından, standartlara uygundur. Ancak, \"Toplanma Amaçlı Binalar\" için \"Table (p.95)\" altında yer alan \"Birim genişlik için kişi sayısı: Dışarı çıkış kapısı\" sütununda belirtilen 100 kişi/kapı genişliği dikkate alındığında, 8 koltukluk bir sıra için yeterli çıkış kapasitesi sağlanıp sağlanmadığına dair net bir kural bulunmamaktadır. Bu nedenle, çıkış yolu kapasitesi ve kişi sayısı ilişkisi net olarak değerlendirilemediğinden, standartlara uygunluk kesin olarak tespit edilememektedir.",
+      "expected": "UYGUN",
+      "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı",
+      "elapsed_s": 0.0
+    },
+    {
+      "item_no": 47,
+      "text": "Bir toplanma salonunda sıra genişliği 350-374 mm olan koltuk sıralarında, çıkış yolu yalnız bir yanda, her sırada 7 koltuk bulunmaktadır.",
+      "verdict": "UYGUN DEĞİL",
+      "reasoning": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı tablosuna göre, sıra genişliği 350-374 mm ve çıkış yolu yalnız bir yanda olan koltuk sıralarında en çok koltuk sayısı 9 olarak belirlenmiştir. Bulunan 7 koltuk sayısı standartta izin verilen maksimum sayıdan (9) düşük olduğu için uygundur, ancak tabloda \"Bir sıradaki en çok koltuk sayısı\" ifadesi kullanıldığından, bu sayıyı aşmamak kaydıyla herhangi bir sayıda koltuk bulunabilir. Bu nedenle, 7 koltuk sayısı standartlara uygundur.",
+      "expected": "UYGUN",
+      "table": "Ek-6 Bir Sıra İçindeki Koltuk Sayısı",
+      "elapsed_s": 0.0
+    }
+  ]
+}

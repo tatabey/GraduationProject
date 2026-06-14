@@ -11,6 +11,9 @@ __pycache__/
 *.h5
 models/checkpoints/
 models/lora_model/
+# Yerel embedding modelleri (agirliklar zaten *.safetensors ile haric; config'ler de gitmesin)
+system/models/multilingual-mpnet/
+system/models/bge-m3/
 data/chroma_db/
 *.sqlite3
 

@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from pipeline.retriever import retrieve
-from config import TOP_K, SPLIT_RESULTS
+from config import TOP_K, SPLIT_RESULTS, EMBED_MODEL
 
 SCENARIOS_PATH = ROOT / "data" / "test_scenarios.json"  # varsayılan; --scenarios ile geçersiz kılınır
 BENCHMARK_DIR  = ROOT / "data" / "benchmark"
@@ -97,6 +97,7 @@ def run_eval(kb_name: str, fetch_k: int = 5,
     meta       = json.loads(meta_path.read_text(encoding="utf-8"))
     chroma_dir = Path(meta["chroma_dir"])
     col_name   = meta["collection"]
+    embed_model = meta.get("embed_model", EMBED_MODEL)
 
     scenarios = json.loads(scenarios_path.read_text(encoding="utf-8"))
     n = len(scenarios)
@@ -120,6 +121,7 @@ def run_eval(kb_name: str, fetch_k: int = 5,
             chroma_dir=chroma_dir,
             collection_name=col_name,
             top_k=fetch_k,
+            embed_model=embed_model,
         )
         # Modalite-ayrık modda isabet, gold'un KENDİ modalite listesi içinde
         # sayılır (tablo senaryosu tablo top-k'sına, text senaryosu text

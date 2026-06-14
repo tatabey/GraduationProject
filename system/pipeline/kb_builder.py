@@ -127,6 +127,7 @@ def reindex_from_units(
     chroma_dir: str | Path,
     col_name: str,
     log_fn: Callable[[str], None] = print,
+    embed_model: str = EMBED_MODEL,
 ) -> dict:
     """
     Hazır semantic_units + text_chunks listesinden ChromaDB'yi sıfırdan kurar.
@@ -140,7 +141,7 @@ def reindex_from_units(
     chroma  = chromadb.PersistentClient(path=str(chroma_dir))
     from pipeline.retriever import best_device
     emb_fn  = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=EMBED_MODEL, device=best_device() or "cpu"
+        model_name=embed_model, device=best_device() or "cpu"
     )
     try:
         chroma.delete_collection(col_name)
@@ -225,6 +226,7 @@ def build_kb(
     log_fn: Callable[[str], None] = print,
     skip_mineru: bool = False,
     merged_json: str | Path | None = None,
+    embed_model: str = EMBED_MODEL,
 ) -> dict:
     """
     PDF'den tam KB indekslemesi yürütür.
@@ -315,6 +317,7 @@ def build_kb(
     idx = reindex_from_units(
         units, text_chunks, chroma_dir, col_name,
         _scaled_log(log_fn, offset=80, scale=19),
+        embed_model=embed_model,
     )
     timings["index_s"] = round(time.perf_counter() - _t0, 1)
     timings["total_s"] = round(sum(timings.values()), 1)
@@ -340,6 +343,7 @@ def build_kb(
         "total"     : total,
         "chroma_dir": str(chroma_dir),
         "created_at": time.strftime("%Y-%m-%d %H:%M"),
+        "embed_model": embed_model,
         "timings"   : timings,
     }
     (kb_dir / "kb_meta.json").write_text(

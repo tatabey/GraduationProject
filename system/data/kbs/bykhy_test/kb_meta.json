@@ -5,7 +5,7 @@
   "tables": 28,
   "chunks": 216,
   "total": 301,
-  "chroma_dir": "data/kbs/bykhy_test/chroma_db",
+  "chroma_dir": "/home/tatabey/deneme26/GraduationProject/system/data/kbs/bykhy_test/chroma_db",
   "created_at": "2026-06-14 00:05",
   "timings": {
     "mineru_s": 39.0,
@@ -13,5 +13,6 @@
     "chunk_s": 0.0,
     "index_s": 53.2,
     "total_s": 92.2
-  }
+  },
+  "embed_model": "/home/tatabey/deneme26/GraduationProject/system/models/multilingual-mpnet"
 }

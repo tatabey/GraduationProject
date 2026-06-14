@@ -38,7 +38,7 @@ from config import (
     CEREBRAS_API_KEY, CEREBRAS_BASE_URL,
     MISTRAL_API_KEY, MISTRAL_BASE_URL,
     OLLAMA_URL, LLM_MAX_TOKENS, CONTEXT_CHAR_CAP,
-    AUDIT_PREFETCH, LLM_MAX_CALLS_PER_MIN, TIMING_LOGS,
+    AUDIT_PREFETCH, LLM_MAX_CALLS_PER_MIN, TIMING_LOGS, EMBED_MODEL,
 )
 from pipeline.retriever import retrieve, format_context
 
@@ -187,6 +187,7 @@ def audit_items(
     """
     chroma_dir      = Path(kb_meta["chroma_dir"])
     collection_name = kb_meta["collection"]
+    embed_model     = kb_meta.get("embed_model", EMBED_MODEL)
     client          = make_client(provider, api_key or "")
     log_fn(f"Model: {model} ({provider})")
     results = []
@@ -202,6 +203,7 @@ def audit_items(
                 chroma_dir=chroma_dir,
                 collection_name=collection_name,
                 top_k=top_k,
+                embed_model=embed_model,
             )
             return m, time.perf_counter() - t0
         except Exception as e:

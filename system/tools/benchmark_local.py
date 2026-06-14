@@ -37,6 +37,7 @@ from config import (
     CEREBRAS_API_KEY, CEREBRAS_BASE_URL,
     MODEL_LADDER, GROQ_RPM_DELAY, LLM_MAX_TOKENS, CONTEXT_CHAR_CAP,
     LLM_MAX_CALLS_PER_MIN, MISTRAL_BASE_URL, MISTRAL_API_KEY, MISTRAL_RPS_DELAY,
+    EMBED_MODEL,
 )
 
 # ── Sabitler ──────────────────────────────────────────────────────────────────
@@ -168,10 +169,14 @@ def call_llm(client: OpenAI, model: str, item_text: str, context: str,
             return _parse_verdict(content)
         except Exception as e:
             err = str(e).lower()
-            if ("rate_limit" in err or "429" in err) and attempt < 3:
+            transient = ("rate_limit" in err or "429" in err
+                         or "connection" in err or "timeout" in err
+                         or "temporarily" in err or "502" in err
+                         or "503" in err or "504" in err)
+            if transient and attempt < 3:
                 wait = 5 * (2 ** attempt)  # 5, 10, 20 sn backoff
-                print(f"\n  ⏳ rate-limit, {wait}s bekleniyor (deneme {attempt+1}/3)...",
-                      flush=True)
+                print(f"\n  ⏳ geçici hata ({err[:40]}), {wait}s bekleniyor "
+                      f"(deneme {attempt+1}/3)...", flush=True)
                 time.sleep(wait)
                 continue
             return ERROR_VERDICT, f"hata: {e}"
@@ -186,6 +191,7 @@ def run_benchmark(entry: dict, kb_meta: dict, scenarios: list[dict],
     params_b = entry.get("params_b", 0.0)
     chroma_dir      = Path(kb_meta["chroma_dir"])
     collection_name = kb_meta["collection"]
+    embed_model     = kb_meta.get("embed_model", EMBED_MODEL)
     client          = make_client(provider)
 
     results   = []
@@ -226,6 +232,7 @@ def run_benchmark(entry: dict, kb_meta: dict, scenarios: list[dict],
             chroma_dir=chroma_dir,
             collection_name=collection_name,
             top_k=TOP_K,
+            embed_model=embed_model,
         )
 
         t0 = time.time()
