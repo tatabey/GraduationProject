@@ -312,7 +312,7 @@
 
               <div>
                 <label class="lbl" style="font-size:14px;">Standart Belgesi (PDF)</label>
-                <label class="drop flex flex-col items-center justify-center py-6 px-4" id="drop-kf">
+                <label class="drop flex flex-col items-center justify-center py-6 px-4" id="drop-kf" for="kf-input">
                   <div id="kf-prompt" class="flex flex-col items-center">
                     <svg class="w-8 h-8 text-slate-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -342,7 +342,7 @@
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                     </button>
                   </div>
-                  <input type="file" name="pdf_file" accept=".pdf" class="hidden" onchange="showFile(this,'kf')">
+                  <input type="file" id="kf-input" name="pdf_file" accept=".pdf" class="hidden" onchange="showFile(this,'kf')">
                 </label>
               </div>
 
@@ -454,7 +454,7 @@
 
               <div>
                 <label class="lbl" style="font-size:14px;">Denetim Raporu (PDF)</label>
-                <label class="drop flex flex-col items-center justify-center py-4 px-4" id="drop-af">
+                <label class="drop flex flex-col items-center justify-center py-4 px-4" id="drop-af" for="af-input">
                   <div id="af-prompt" class="flex flex-col items-center">
                     <svg class="w-7 h-7 text-slate-400 mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -484,7 +484,7 @@
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                     </button>
                   </div>
-                  <input type="file" name="report_pdf" accept=".pdf" class="hidden" onchange="showFile(this,'af')">
+                  <input type="file" id="af-input" name="report_pdf" accept=".pdf" class="hidden" onchange="showFile(this,'af')">
                 </label>
               </div>
 
