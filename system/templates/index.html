@@ -82,18 +82,20 @@
     <!-- Logo -->
     <div class="px-5 pt-7 pb-6 border-b border-slate-800">
       <div class="side-head flex items-center gap-3">
-        <div class="logo-icon w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+        <div class="logo-icon w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600
+                    flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-900/40 ring-1 ring-white/10">
           <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
           </svg>
         </div>
         <div class="side-label flex-1 min-w-0">
-          <div class="brand text-white font-bold text-xl leading-none">Compl<span class="text-indigo-400">AI</span></div>
-          <div class="text-slate-500 text-xs mt-1.5 tracking-wide">RAG Tabanlı Uygunluk Denetimi</div>
+          <div class="brand text-2xl font-extrabold leading-none tracking-tight">
+            <span class="text-white">Compl</span><span class="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">AI</span>
+          </div>
         </div>
         <button onclick="toggleSidebar()" title="Menüyü aç/kapat"
-                class="w-9 h-9 flex items-center justify-center rounded-lg text-slate-500
+                class="w-8 h-8 flex items-center justify-center rounded-lg text-slate-500
                        hover:bg-slate-800 hover:text-slate-200 transition-all flex-shrink-0">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -279,7 +281,7 @@
                   <span class="text-xs text-slate-400">silmek için ← kaydırınız</span>
                 </div>
               </div>
-              <div id="kb-list" class="space-y-3">{{ kb_list_html | safe }}</div>
+              <div id="kb-list" class="space-y-3 max-h-[290px] overflow-y-auto overflow-x-hidden pr-1.5 -mr-1.5">{{ kb_list_html | safe }}</div>
             </div>
           </div>
         </div>

@@ -5,6 +5,22 @@
 
 ---
 
+## 2026-06-14 (2) — Sidebar logo sadeleştirme + KB listesi iç scroll
+
+Kullanıcı geri bildirimi üzerine:
+- **Logo/marka daha dikkat çekici:** ikon gradyan (`from-indigo-500 to-violet-600`,
+  ring + gölge); marka `text-2xl font-extrabold`, "AI" gradyan metin
+  (`indigo-400→violet-400`, bg-clip-text).
+- **Alt başlık kaldırıldı:** "RAG Tabanlı Uygunluk Denetimi" 3 satıra kayıyordu →
+  tamamen kaldırıldı, artık sade **LOGO + ComplAI** (kullanıcı tercihi).
+- **Mevcut Bilgi Tabanları iç scroll:** `#kb-list` artık `max-h-[290px] overflow-y-auto`
+  → ~3 KB kartı gösterip kendi içinde kayıyor; sayfanın tamamı scroll olmuyor.
+  (Scroll sınıfları htmx hedefi olan `#kb-list`'in kendisinde → innerHTML swap'ta korunur.)
+
+**Dokunulan dosyalar:** `templates/index.html` (logo bloğu + #kb-list).
+
+---
+
 ## 2026-06-14 — Proje adı: ComplAI + profesyonel tipografi
 
 **Proje adı belirlendi: ComplAI** (*comply + AI*; iki kelimeden kaynaşan tek kelime).
