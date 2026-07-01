@@ -63,9 +63,6 @@ IlkDonem_FinalReport/
 IlkDonem_Poster/
 Graduation Project - Latex Template/
 
-# İstisna: birincil test standardı (AASTP-1) repoya dahil — demo/clone için
+# İstisna: örnek standart PDF'i (AASTP-1) repoda — kullanıcı denemesi için.
+# Bilgi tabanları (KB) repoya girmez; kullanıcı arayüzden kendi KB'sini kurar.
 !system/data/AASTP-1-May2006.003973.pdf
-
-# Not: NATO_AASTP1 demo KB'sinin MinerU'suz yeniden-kurulabilir kaynak artefaktları
-# (kb_meta.json + merged_content_list.json + semantic_units/) `git add -f` ile
-# izleniyor; chroma_db yerelde `reindex_kb.py --kb NATO_AASTP1 --no-gold-check` ile kurulur.

@@ -119,10 +119,6 @@ python3 system/tools/download_models.py
 #      - sentence-transformers/paraphrase-multilingual-mpnet-...  (multilingual embedding)
 #    The English embedding (BAAI/bge-large-en-v1.5) is fetched automatically by
 #    sentence-transformers on first use; add --with-bge-large to pre-download it too.
-
-# 4. Build the bundled demo knowledge base (NATO AASTP-1) locally — NO MinerU/API key.
-#    The parsed artifacts ship in the repo; this only rebuilds the local vector index.
-python3 system/tools/reindex_kb.py --kb NATO_AASTP1 --no-gold-check
 ```
 
 A CUDA GPU is recommended for the embedding/reranking models (developed on an RTX 3050 Ti,
@@ -142,11 +138,12 @@ cp system/.env.example system/.env    # then edit system/.env
 | Key | When needed | How to obtain |
 |---|---|---|
 | `MISTRAL_API_KEY` | **Required** — produces the compliance verdict | [console.mistral.ai](https://console.mistral.ai) → *API Keys* → *Create new key*. The free **Experiment** tier is enough (~1B tokens/month). |
-| `MINERU_API_KEY` | **Required only to add a new standard** (parsing a new PDF in the UI) | [mineru.net](https://mineru.net) → sign up → create an API token. The bundled AASTP-1 KB rebuilds **without** MinerU. |
+| `MINERU_API_KEY` | **Required** to build a knowledge base (parsing a PDF into the KB) | [mineru.net](https://mineru.net) → sign up → create an API token. |
 | `CEREBRAS_API_KEY` | Optional — stronger comparison model (gpt-oss-120B) | [cloud.cerebras.ai](https://cloud.cerebras.ai) → *API Keys*. |
 | `GROQ_API_KEY` | Optional — alternative inference provider | [console.groq.com](https://console.groq.com) → *API Keys*. |
 
-**Minimum to run the demo:** just `MISTRAL_API_KEY` (the bundled KB needs no MinerU).
+**To run the full flow:** `MISTRAL_API_KEY` (verdict) and `MINERU_API_KEY` (to index a
+standard PDF into a knowledge base).
 
 > ⚠️ **Security.** `system/.env` is git-ignored and must never be committed. Do not paste
 > real keys into `config.py`, `.env.example`, or any tracked file. If a key is ever exposed,
@@ -161,28 +158,28 @@ cp system/.env.example system/.env    # then edit system/.env
 python3 system/server.py        # → http://127.0.0.1:8000
 ```
 
-In the interface: (1) select the bundled **NATO_AASTP1** knowledge base (built in Setup step 4)
-or create a new one from a standard PDF, (2) upload an audit report and run the audit,
-(3) read the per-item COMPLIANT / NON-COMPLIANT verdicts with rationales.
+In the interface: (1) **create a knowledge base** from a standard PDF (Bilgi Tabanı → upload
+& index), (2) upload an audit report and run the audit, (3) read the per-item
+COMPLIANT / NON-COMPLIANT verdicts with rationales.
 
-> **Bundled demo KB:** the repo ships the parsed AASTP-1 artifacts, so Setup step 4 rebuilds
-> a ready-to-use `NATO_AASTP1` knowledge base locally with **no MinerU and no API key**.
-> To index *other* standards, upload their PDF in the interface (that path uses MinerU).
+> **First run:** a fresh clone ships **no knowledge bases** — build one first. A sample
+> standard, **`system/data/AASTP-1-May2006.003973.pdf`** (NATO AASTP-1), is included so you
+> can try the flow immediately: upload it in the interface and give the KB a name
+> (e.g. `NATO_AASTP1`). Indexing a PDF uses MinerU (`MINERU_API_KEY`).
 
 ```bash
-# Verdict benchmark on the bundled KB
+# After building a KB (use its name as --kb):
+# Verdict benchmark
 python3 system/tools/benchmark_local.py --models mistral-small-latest \
-  --kb NATO_AASTP1 --scenarios system/data/test_scenarios.json --tag run1
+  --kb <your_kb_name> --scenarios system/data/test_scenarios.json --tag run1
 
-# Retrieval evaluation (guardrail). The --baseline snapshot is generated on your
-# first run; omit it the first time, then reuse it to catch regressions.
-python3 system/tools/eval_retrieval.py --kb NATO_AASTP1 \
+# Retrieval evaluation (guardrail)
+python3 system/tools/eval_retrieval.py --kb <your_kb_name> \
   --scenarios system/data/test_scenarios.json --tag run1
 ```
 
-> Note: `test_scenarios.json` (table set) aligns with the bundled build. The text-retrieval
-> scenario set may not perfectly match a freshly parsed KB (chunk ids shift slightly), which
-> is why Setup step 4 uses `--no-gold-check`.
+> Note: the included `test_scenarios*.json` sets were authored against the original AASTP-1
+> build; against a freshly parsed KB some text-scenario chunk ids may not line up exactly.
 
 ---
 
