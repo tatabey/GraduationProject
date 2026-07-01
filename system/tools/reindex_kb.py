@@ -38,6 +38,9 @@ def main():
                         help="Embedding modeli (varsayılan: kb_meta'daki ya da config EMBED_MODEL)")
     parser.add_argument("--scenarios", type=Path, default=None,
                         help="Gold chunk_id kontrolü için senaryo dosyası (varsayılan: AASTP text)")
+    parser.add_argument("--no-gold-check", action="store_true",
+                        help="Gold chunk_id kapısını atla (kanonik aastp_test eval'ı DIŞINDAKİ "
+                             "KB'leri yeniden kurarken; ör. taze clone'da demo KB'si)")
     args = parser.parse_args()
 
     kb_dir = ROOT / "data" / "kbs" / args.kb
@@ -72,7 +75,11 @@ def main():
 
     # Güvenlik kapısı: gold chunk_id'ler kaybolduysa indeksleme iptal —
     # test seti geçersizleşmeden önce chunker değişikliğini düzelt.
-    missing = check_gold_ids(chunks, args.scenarios) if args.scenarios else check_gold_ids(chunks)
+    if args.no_gold_check:
+        print("  ⏭  Gold chunk_id kontrolü atlandı (--no-gold-check).")
+        missing = []
+    else:
+        missing = check_gold_ids(chunks, args.scenarios) if args.scenarios else check_gold_ids(chunks)
     if missing:
         print(f"  ❌ {len(missing)} gold chunk_id yeni chunk'larda yok, reindex iptal:")
         for cid in missing[:10]:

@@ -404,7 +404,12 @@ def list_kbs(data_dir: str | Path) -> list[dict]:
     kbs = []
     for meta_file in sorted(data_dir.glob("*/kb_meta.json")):
         try:
-            kbs.append(json.loads(meta_file.read_text(encoding="utf-8")))
+            meta = json.loads(meta_file.read_text(encoding="utf-8"))
+            # chroma_dir'i HER ZAMAN klasörün gerçek konumundan türet — kb_meta'da
+            # saklanan (mutlak/başka-makine) yol taşınabilir değil; taze clone'da
+            # kırılırdı. Böylece repo klonu farklı yola açılsa da KB yüklenir.
+            meta["chroma_dir"] = str(meta_file.parent / "chroma_db")
+            kbs.append(meta)
         except Exception:
             pass
     return kbs

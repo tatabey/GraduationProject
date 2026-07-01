@@ -1,0 +1,447 @@
+[
+  {
+    "table_idx": 64,
+    "table_name": "Table_page8",
+    "page_idx": 8,
+    "html": "<table><tr><td>Depleted Uranium</td><td>=</td><td>DU</td></tr><tr><td>Electro-Explosive Device</td><td>=</td><td>EED</td></tr><tr><td>Exposed site</td><td>=</td><td>ES</td></tr><tr><td>Exterior Quantity-Distance</td><td>=</td><td>EQD</td></tr><tr><td>Hazard Division</td><td>=</td><td>HD</td></tr><tr><td>Inhabited Building Distances</td><td>=</td><td>IBD</td></tr><tr><td>Interior Quantity-Distance</td><td>=</td><td>IQD</td></tr><tr><td>Inter-Magazine Distance</td><td>=</td><td>IMD</td></tr><tr><td>Net Explosive Quantity</td><td>=</td><td>NEQ</td></tr><tr><td>Potential Explosion Site</td><td>=</td><td>PES</td></tr><tr><td>Public Traffic Route Distance</td><td>=</td><td>PTRD</td></tr><tr><td>Quantity-Distance</td><td>=</td><td>Q-D</td></tr></table>",
+    "img_path": "images/589d0e1e54540394ea54dd39d554a1353b4284699c8b5477e3280f65f062b1b0.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "LIST OF ABBREVIATIONS"
+    }
+  },
+  {
+    "table_idx": 314,
+    "table_name": "Mixed hazard divisions (HD) should be aggregated in the following table:",
+    "page_idx": 27,
+    "html": "<table><tr><td>Hazard Division</td><td>1.1</td><td>1.2.1</td><td>1.2.2</td><td>1.3</td><td>1.4</td><td>1.5</td><td>1.6</td></tr><tr><td>1.1</td><td>1.1</td><td>1.1</td><td>1.1</td><td>1.1</td><td> $^{1}$ </td><td>1.1</td><td>1.1</td></tr><tr><td>1.2.1</td><td>1.1</td><td>1.2.1</td><td>1.2.1</td><td> $^{2}$ </td><td> $^{1}$ </td><td>1.1</td><td> $^{3}$ </td></tr><tr><td>1.2.2</td><td>1.1</td><td>1.2.1</td><td>1.2.2</td><td> $^{2}$ </td><td> $^{1}$ </td><td>1.1</td><td> $^{3}$ </td></tr><tr><td>1.3</td><td>1.1</td><td> $^{2}$ </td><td> $^{2}$ </td><td>1.3</td><td> $^{1}$ </td><td>1.1</td><td> $^{3}$ </td></tr><tr><td>1.4</td><td> $^{1}$ </td><td> $^{1}$ </td><td> $^{1}$ </td><td> $^{1}$ </td><td>1.4</td><td> $^{1}$ </td><td> $^{1}$ </td></tr><tr><td>1.5</td><td>1.1</td><td>1.1</td><td>1.1</td><td>1.1</td><td> $^{1}$ </td><td>1.1</td><td>1.1</td></tr><tr><td>1.6</td><td>1.1</td><td>1.2.1</td><td>1.2.1</td><td> $1.3^{3}$ </td><td> $^{1}$ </td><td>1.1</td><td> $1.6^{3}$ </td></tr></table>",
+    "img_path": "images/9bdbcc783ee0c7d40891712193768639b84d41822c08c6f9dbfd629a18c0988d.jpg",
+    "legend": "",
+    "notes": [
+      "Substances may be mixed in aboveground storage as shown in the following table:"
+    ],
+    "footnotes": [
+      "$^{1}$ 1.4 may be stored with any other HD without aggregation of the NEQ.",
+      "$^{2}$ Mixed 1.2.1/1.2.2 will usually behave as aggregated 1.2 or 1.3. However, there is a significant risk that, in certain circumstances, a mix of 1.2.1/1.2.2 and 1.3 will behave as an aggregated quantity of 1.1.",
+      "If any of the following circumstances exists, the mix must be aggregated as 1.1, unless relevant trials or analysis indicate otherwise:",
+      "a) The presence of 1.2 shaped charges.",
+      "b) High energy propellants (e.g. as used in some tank gun applications).",
+      "c) High loading density storage of 1.3 in conditions of relatively heavy confinement.",
+      "d) 1.2.1 articles with an individual NEQ > 5 kg.",
+      "$^{3}$ If demonstrated by testing or analogy. If not: 1.1."
+    ],
+    "hierarchy": {
+      "level_2": "1.2.3.2. Storage Limitations",
+      "level_1": "Section II - Compatibility Groups"
+    }
+  },
+  {
+    "table_idx": 328,
+    "table_name": "Table 5 - Aboveground Storage of Explosive Substances Rules for Mixing of Compatibility Groups.",
+    "page_idx": 28,
+    "html": "<table><tr><td>Compatibility Group</td><td>A</td><td>C</td><td>D</td><td>G</td><td>L</td><td>S</td></tr><tr><td>A</td><td>X</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>C</td><td></td><td> $X^{1)}$ </td><td> $X^{1)}$ </td><td> $^{3)}$ </td><td></td><td>X</td></tr><tr><td>D</td><td></td><td> $X^{1)}$ </td><td> $X^{1)}$ </td><td> $^{3)}$ </td><td></td><td>X</td></tr><tr><td>G</td><td></td><td> $^{3)}$ </td><td> $^{3)}$ </td><td>X</td><td></td><td>X</td></tr><tr><td>L</td><td></td><td></td><td></td><td></td><td> $^{2)}$ </td><td></td></tr><tr><td>S</td><td></td><td>X</td><td>X</td><td>X</td><td></td><td>X</td></tr></table>",
+    "img_path": "images/034e5818da3726c3b254577ecae4da84eb3387fd32ed7045fb1c12adc20b7bfb.jpg",
+    "legend": "LEGEND: X = Mixing permitted",
+    "notes": [
+      "1) Mixing permitted provided substances have all passed UN Test Series 3. Storage of substances of any Compatibility Groups C, D or G which have failed UN Test Series 3 will require special consideration by the National Competent Authority.",
+      "2) Compatibility Group L substances must always be stored separately from all substances of other compatibility groups as well from all other substances of Compatibility Group L.",
+      "3) The mixing of Compatibility Group G substances with other compatibility groups is at the discretion of the National Competent Authority.",
+      "Articles may be mixed in aboveground storage as shown in the following table:"
+    ],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 342,
+    "table_name": "Table 6 - Aboveground Storage of Explosive Articles - Rules for Mixing of Compatibility Groups.",
+    "page_idx": 29,
+    "html": "<table><tr><td>Compatibility Group</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>J</td><td>K</td><td>L</td><td>N</td><td>S</td></tr><tr><td>B</td><td>X</td><td></td><td> $X^{1)}$ </td><td> $X^{1)}$ </td><td> $X^{1)}$ </td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>C</td><td></td><td>X</td><td>X</td><td>X</td><td>2)</td><td>4)</td><td></td><td></td><td></td><td></td><td> $X^{5)}$ </td><td>X</td></tr><tr><td>D</td><td> $X^{1)}$ </td><td>X</td><td>X</td><td>X</td><td>2)</td><td>4)</td><td></td><td></td><td></td><td></td><td> $X^{5)}$ </td><td>X</td></tr><tr><td>E</td><td> $X^{1)}$ </td><td>X</td><td>X</td><td>X</td><td>2)</td><td>4)</td><td></td><td></td><td></td><td></td><td> $X^{5)}$ </td><td>X</td></tr><tr><td>F</td><td> $X^{1)}$ </td><td>2)</td><td>2)</td><td>2)</td><td>X</td><td>4)</td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>G</td><td></td><td>4)</td><td>4)</td><td>4)</td><td>4)</td><td>X</td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>H</td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td></td><td>X</td></tr><tr><td>J</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td><td>X</td></tr><tr><td>K</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>X</td><td></td><td></td><td></td></tr><tr><td>L</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3)</td><td></td><td></td></tr><tr><td>N</td><td></td><td> $X^{5)}$ </td><td> $X^{5)}$ </td><td> $X^{5)}$ </td><td></td><td></td><td></td><td></td><td></td><td></td><td> $X^{6)}$ </td><td> $X^{7)}$ </td></tr><tr><td>S</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td></td><td></td><td> $X^{7)}$ </td><td> $X^{6)}$ </td></tr></table>",
+    "img_path": "images/0db099c816e1da31c7b0af0ac8bc33238425e83f201aea7f8f41a6be8ce403ff.jpg",
+    "legend": "LEGEND: X= Mixing permitted",
+    "notes": [
+      "1) Compatibility Group B fuzes may be stored with the articles to which they will be assembled, but the NEQ must be aggregated and treated as Compatibility Group F.",
+      "2) Storage in the same building is permitted if effectively segregated to prevent propagation.",
+      "3) Compatibility Group L articles must always be stored separately from all articles of other compatibility groups as well as from all other articles of different types of Compatibility Group L.",
+      "4) Mixing of articles of Compatibility Group G with articles of other compatibility groups is at the discretion of the National Competent Authority.",
+      "5) Articles of Compatibility Group N should not in general be stored with articles in other compatibility groups except S. However, if such articles are stored with articles of",
+      "Compatibility Group C, D and E, the articles of Compatibility Group N should be considered as having the characteristics of Compatibility Group D and the compatibility groups mixing rules apply accordingly.",
+      "6) It is allowed to mix 1.6N munitions. The Compatibility Group of the mixed set remains N if the munitions belong to the same family or if it has been demonstrated that, in case of a detonation of one munition, there is no instant transmission to the munitions of another family (the families are then called \"compatible\"). If it is not the case the whole set of munitions should be considered as having the characteristics of Compatibility Group D.",
+      "7) A mixed set of munitions 1.6N and 1.4S may be considered as having the characteristics of Compatibility Group N."
+    ],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 899,
+    "table_name": "Table_page70",
+    "page_idx": 70,
+    "html": "<table><tr><td>Scaled Distance (Q in kg, distance in m)</td><td>Peak Incident (Side-on) Overpressure Expected (bar)</td></tr><tr><td> $55.5 \\text{ Q}^{1/3}$ </td><td>0.015</td></tr><tr><td> $44.4 \\text{ Q}^{1/3} \\text{ to } 33.3 \\text{ Q}^{1/3}$ </td><td>0.02 to 0.03</td></tr><tr><td> $22.2 \\text{ Q}^{1/3}$ </td><td>0.05</td></tr><tr><td> $14.8 \\text{ Q}^{1/3}$ </td><td>0.09</td></tr><tr><td> $9.6 \\text{ Q}^{1/3}$ </td><td>0.16</td></tr><tr><td> $8.0 \\text{ Q}^{1/3}$ </td><td>0.21</td></tr><tr><td> $7.2 \\text{ Q}^{1/3}$ </td><td>0.24</td></tr><tr><td> $3.6 \\text{ Q}^{1/3}$ </td><td>0.70</td></tr><tr><td> $2.4 \\text{ Q}^{1/3}$ </td><td>1.80</td></tr></table>",
+    "img_path": "images/ed701ed8a434af4ced09c6c7a9f654fe6f7e2d8952a9581710fc77f290002715.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "b) Blast Effects - Open Stacks and Light Structures",
+      "level_1": "Section VI - Barricades: General Principles and Influence on Quantity-Distances"
+    }
+  },
+  {
+    "table_idx": 907,
+    "table_name": "Table_page71",
+    "page_idx": 71,
+    "html": "<table><tr><td>Direction</td><td>Scaled Distance (Q in kg) (distance in m)</td><td>Peak Incident (Side-on) Overpressure Expected (bar)</td></tr><tr><td>Side</td><td> $18.0 \\text{ Q}^{1/3}$ </td><td>0.05</td></tr><tr><td>Rear</td><td> $14.0 \\text{ Q}^{1/3}$ </td><td>0.05</td></tr><tr><td>Side</td><td> $12.0 \\text{ Q}^{1/3}$ </td><td>0.09</td></tr><tr><td>Rear</td><td> $9.3 \\text{ Q}^{1/3}$ </td><td>0.09</td></tr></table>",
+    "img_path": "images/1a6e21984292773bfe8688a8511aad29c54dd03c65c6bdbec5efbfb5acaf54f3.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "c) Blast Effects - Earth-Covered Magazines"
+    }
+  },
+  {
+    "table_idx": 1472,
+    "table_name": "Table_page104",
+    "page_idx": 104,
+    "html": "<table><tr><td>Material</td><td>Density (g/cm3)</td><td>P wave Velocity (m/s)</td><td>S wave Velocity (m/s)</td></tr><tr><td>Granite</td><td>2.5-2.8</td><td>5500-5900</td><td>2800-3000</td></tr><tr><td>Basalt</td><td>2.7-3.1</td><td>6400</td><td>3200</td></tr><tr><td>Sandstone</td><td>2.0-2.6</td><td>1400-4300</td><td>700-2800</td></tr><tr><td>Limestone</td><td>2.5-2.8</td><td>5900-6100</td><td>2800-3000</td></tr><tr><td>Sand (Unsaturated)</td><td>1.7-2.3</td><td>200-1000</td><td>80-400</td></tr><tr><td>Sand (Saturated)</td><td>2.71</td><td>800-2200</td><td>320-880</td></tr><tr><td>Soil</td><td>1.7-2.3</td><td>300-900</td><td>120-360</td></tr></table>",
+    "img_path": "images/bd836087e14cacf710bbdf817f91d615eebdf72e10fd81f640b0204757f503cb.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "5. Limitations:",
+      "level_1": "Section IV - Inhabited Building Distance (IBD)"
+    }
+  },
+  {
+    "table_idx": 1522,
+    "table_name": "Table_page108",
+    "page_idx": 108,
+    "html": "<table><tr><td>MEDIA</td><td>Dry Sand</td><td>Weak Rock</td><td>Strong Rock</td><td>Units</td></tr><tr><td> $u_p$ </td><td>0.06</td><td>0.115</td><td>0.23</td><td>m/s</td></tr><tr><td> $p_s$ </td><td>2000</td><td>2200</td><td>2800</td><td>kg/m3</td></tr><tr><td> $c_p$ </td><td>600</td><td>2850</td><td>5900</td><td>m/s</td></tr><tr><td> $P_{bar}$ </td><td>1.408E-04</td><td>5.674E-06</td><td>1.040E-06</td><td></td></tr><tr><td> $Q_{bar}$ </td><td>3.785E-05</td><td>6.656E-07</td><td>1.408E-07</td><td></td></tr><tr><td>Scaled IBD (tamped)</td><td>5.5</td><td>7.3</td><td>6.9</td><td>m/kg $^{1/3}$ </td></tr><tr><td>Scaled IBD ( $\\gamma \\leq 50$  kg/m3)</td><td>2.8</td><td>3.7</td><td>3.5</td><td></td></tr><tr><td>CONSTANTS</td><td> $E_Q = 4.56$  E+06</td><td></td><td></td><td>Joules/kg</td></tr><tr><td></td><td> $p_0 = 1.01E+05$ </td><td></td><td></td><td>Newton/m2</td></tr></table>",
+    "img_path": "images/9f9d0b02a74f846ee92d5a2b0bbc51eb05ead9aff6a1c0c407151c3d16082977.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 1699,
+    "table_name": "Table 6-1 - The Minimum Service Radio Frequency Environment",
+    "page_idx": 123,
+    "html": "<table><tr><td rowspan=\"2\">Serial</td><td rowspan=\"2\">Frequency</td><td colspan=\"2\">Field Strength/Power Density</td></tr><tr><td>(V/M rms)</td><td> $(Wm^{-2})$ </td></tr><tr><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td></tr><tr><td>1</td><td>200 kHz - 525 kHz</td><td>300</td><td></td></tr><tr><td>2</td><td>525 kHz - 32 MHz</td><td>200</td><td></td></tr><tr><td>3</td><td>32 MHz - 150 MHz</td><td></td><td>10</td></tr><tr><td>4</td><td>150 MHz - 225 MHz</td><td></td><td>100</td></tr><tr><td>5</td><td>225 MHz - 790 MHz</td><td></td><td>50</td></tr><tr><td>6</td><td>790 MHz - 18 GHz</td><td></td><td>1000</td></tr><tr><td>7</td><td>18 GHz - 40 GHz</td><td></td><td>100</td></tr></table>",
+    "img_path": "images/cb66d0315b411e58b09b1adb41f0ddb956a288e1570106bda8dc4cbc6bbc7d93.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "Emergency Transport Procedures",
+      "level_1": "CHAPTER 5 - SEPARATION OF POL-FACILITIES WITHIN MILITARY INSTALLATIONS"
+    }
+  },
+  {
+    "table_idx": 1731,
+    "table_name": "TABLE 6-2 - EED Electrical Characteristics",
+    "page_idx": 125,
+    "html": "<table><tr><td rowspan=\"2\">EED Type</td><td rowspan=\"2\">Resistance Range Ω</td><td colspan=\"3\">No-Fire Threshold Values</td><td rowspan=\"2\">Typical Safety Factor dB</td></tr><tr><td>Energy MJ</td><td>Current A</td><td>Power mW</td></tr><tr><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td><td>(e)</td><td>(f)</td></tr><tr><td>US Mk 114 Primer</td><td>3 – 7</td><td>0.19</td><td>0.05</td><td>7.5</td><td>-4</td></tr><tr><td>UK F120</td><td>10 – 16</td><td>0.2</td><td>0.045</td><td>26</td><td>-7</td></tr><tr><td>FRG EL 37</td><td>0.8 - 1.7</td><td>0.3</td><td>0.015</td><td>20</td><td>-10</td></tr></table>",
+    "img_path": "images/d7cb386913921f8c0c4446f157b181dbccd00cf9e12d637c2851074166dd00e3.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 1751,
+    "table_name": "Letter Designators for RF Bands",
+    "page_idx": 126,
+    "html": "<table><tr><td>Equipment Data</td><td>Graph Line(Figure 6 - 2)</td><td>SystemSusceptibility</td></tr><tr><td>Antenna Gain 3dBTransmitter Power 20W</td><td>6</td><td> $5.0 \\text{ Vm}^{-1}$ </td></tr></table>\n<table><tr><td>Figure 6-1</td><td>NATO Approved Letter Bands</td><td>Frequency</td></tr><tr><td></td><td>M</td><td>90 GHz</td></tr><tr><td></td><td>L</td><td>60 GHz</td></tr><tr><td></td><td>K</td><td>40 GHz</td></tr><tr><td></td><td>J</td><td>30 GHz</td></tr><tr><td></td><td>I</td><td>20 GHz</td></tr><tr><td>SHF</td><td>H</td><td>10 GHz</td></tr><tr><td></td><td>G</td><td>8 GHz</td></tr><tr><td></td><td>F</td><td>6 GHz</td></tr><tr><td></td><td>E</td><td>4 GHz</td></tr><tr><td>UHF</td><td>D</td><td>3 GHz</td></tr><tr><td></td><td>C</td><td>2 GHz</td></tr><tr><td></td><td>B</td><td>1 GHz</td></tr><tr><td>VHF</td><td rowspan=\"7\">A</td><td>500 MHz</td></tr><tr><td></td><td>300 MHz</td></tr><tr><td></td><td>250 MHz</td></tr><tr><td></td><td>30 MHz</td></tr><tr><td>HF</td><td>3 MHz</td></tr><tr><td>MF</td><td>300 kHz</td></tr><tr><td></td><td>200 kHz</td></tr></table>",
+    "img_path": "images/4e9528eda385344950c2a33e5c39fc1c45168842d28c0f3317f47dae19ac85cb.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {},
+    "merged_pages": [
+      126,
+      127
+    ]
+  },
+  {
+    "table_idx": 1811,
+    "table_name": "Table_page133",
+    "page_idx": 133,
+    "html": "<table><tr><td>Hazard Division</td><td>Fire Division</td><td>Hazard involved</td></tr><tr><td>1.1; 1.5</td><td>1</td><td>Mass explosion</td></tr><tr><td>1.2; 1.6</td><td>2</td><td>Explosion with projection</td></tr><tr><td>1.3</td><td>3</td><td>Mass fire, or fire with minor blast or projections</td></tr><tr><td>1.4</td><td>4</td><td>No significant hazard</td></tr></table>",
+    "img_path": "images/3262c8257ab0c2f9932d2acb26ac98ec30d9ab49cd6eb439d25b68990d8dfb81.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "1.7.2.1. Hazard Divisions involved:",
+      "level_1": "CHAPTER 7 - FIRE FIGHTING PRINCIPLES AND PROCEDURES"
+    }
+  },
+  {
+    "table_idx": 2023,
+    "table_name": "Table T.1 Compatibility Group and Chemical Hazard Symbols Required for Storage of Chemical Ammunition and Substances.",
+    "page_idx": 147,
+    "html": "<table><tr><td rowspan=\"2\">Chemical Ammunition and Substances</td><td rowspan=\"2\"> $\\text{Compatibility Group}^2$ </td><td colspan=\"3\">Full Protective Clothing</td><td rowspan=\"2\">Breathing Apparatus</td><td rowspan=\"2\">Apply No Water</td></tr><tr><td>Set 1</td><td>Set 2</td><td>Set 3</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>Toxic Agents $^1$ </td><td>K</td><td>X</td><td></td><td></td><td></td><td></td></tr><tr><td>Tear Gas, O-Chlorobenzol</td><td>G</td><td></td><td>X</td><td></td><td></td><td></td></tr><tr><td>Smoke, Titanium Tetrachloride (FM)</td><td>G</td><td></td><td>X</td><td></td><td></td><td></td></tr><tr><td>Smoke, Sulpher trioxide-chlorosulphonic acid solution (FS)</td><td>G</td><td></td><td>X</td><td></td><td></td><td></td></tr><tr><td>Smoke, Aluminum-zinc oxide-hexachloroethane (HC)</td><td>G</td><td></td><td></td><td></td><td>X</td><td>X</td></tr><tr><td>White Phosphorous (WP)</td><td>H</td><td></td><td></td><td>X</td><td></td><td></td></tr><tr><td>White Phosphorous plasticized (PWP)</td><td>H</td><td></td><td></td><td>X</td><td></td><td></td></tr><tr><td>Thermite or Thermate (TH)</td><td>G</td><td></td><td></td><td></td><td>X</td><td>X</td></tr><tr><td>Pyrotechnic Material (PT)</td><td>G</td><td></td><td></td><td></td><td>X</td><td>X</td></tr><tr><td>Calcium Phosphide</td><td>L</td><td></td><td></td><td></td><td>X</td><td>X</td></tr><tr><td>Signaling Smokes</td><td>G</td><td></td><td></td><td></td><td>X</td><td></td></tr><tr><td>Isobutyl methacrylate with oil (IM)</td><td>J</td><td></td><td></td><td></td><td>X</td><td></td></tr><tr><td>Napalm (NP)</td><td>J</td><td></td><td></td><td>X</td><td>X</td><td>X</td></tr><tr><td>Triethylaluminim (TEA)(TPA)</td><td>L</td><td></td><td></td><td>X</td><td></td><td>X</td></tr></table>",
+    "img_path": "images/5316c2c8bd9b3f4e1ac48d3fb36db9d6e11646fc5ef19725a3d34ab80fc0ea9b.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "1.7.5.1. Standard Operating Procedures"
+    }
+  },
+  {
+    "table_idx": 2029,
+    "table_name": "Table T.2 Emergency Withdrawal Distances for Nonessential Personnel.",
+    "page_idx": 148,
+    "html": "<table><tr><td>HD</td><td>Unknown Quantity</td><td>Known Quantity</td></tr><tr><td>Unknown, located in facility, truck and or tractor trailer</td><td>1250m</td><td>1250m</td></tr><tr><td>Unknown, located in railcar</td><td>1500m</td><td>1500m</td></tr><tr><td> $1.1^1$ and 1.5</td><td>Same as unknown facility, truck trailer or railcar as appropriate</td><td>For transportation, $\\leq 7500kg \\rightarrow 870m$ ; $7500 < NEM \\leq 16000 kg \\rightarrow 1120m$  $1.5 \\rightarrow 1100m$ For facilities, $\\leq 7000kg \\rightarrow 850m$  $7000 < NEM \\leq 25000kg \\rightarrow 1300m$  $>25000kg \\rightarrow 1300m - 44.4 Q^{1/3}$ </td></tr><tr><td> $1.2^1$ and 1.6</td><td>560m</td><td>560m</td></tr><tr><td> $1.3^2$ </td><td>405m</td><td> $6.4 Q^{1/3}$  with a 120m minimum.</td></tr><tr><td>1.4</td><td>100m</td><td>100m</td></tr></table>\n<table><tr><td>Sizes</td><td>large</td><td>small</td></tr><tr><td></td><td>[mm]</td><td>[mm]</td></tr><tr><td>a</td><td>600</td><td>300</td></tr><tr><td>b</td><td>200</td><td>100</td></tr><tr><td>c</td><td>~424</td><td>~212</td></tr><tr><td>Letters (height)</td><td>~315</td><td>~158</td></tr><tr><td>Letters (width)</td><td>~50</td><td>~25</td></tr></table>",
+    "img_path": "images/106906352a849a8340fac4d3bffabcc5799246d33768650ddcce4740b25160b3.jpg",
+    "legend": "",
+    "notes": [
+      "1 For HD 1.1 and HD 1.2 AE, if known, the maximum range fragments and debris will be thrown (including the interaction effects of stacks of items, but excluding lugs, strongbacks, and/or nose and tail plates) may be used to replace the distances given.",
+      "2 Emergency withdrawal distances do not consider the potential flight range of propulsion units.",
+      "Fire Division 1"
+    ],
+    "footnotes": [],
+    "hierarchy": {},
+    "merged_pages": [
+      148,
+      149
+    ]
+  },
+  {
+    "table_idx": 2043,
+    "table_name": "Table_page149",
+    "page_idx": 149,
+    "html": "<table><tr><td>Colours*</td><td></td></tr><tr><td>Background</td><td>orange</td></tr><tr><td>Numbers</td><td>black</td></tr></table>",
+    "img_path": "images/e155a2c4ec8d866ff941f82c6c70697a5277ab5bd4ed60929231eab712035d73.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2072,
+    "table_name": "Table_page150",
+    "page_idx": 150,
+    "html": "<table><tr><td>Sizes</td><td>Large</td><td>small</td></tr><tr><td></td><td>[mm]</td><td>[mm]</td></tr><tr><td>a</td><td>630</td><td>315</td></tr><tr><td>b</td><td>12</td><td>6</td></tr></table>",
+    "img_path": "images/38cd1f9bbfe831384bcf37d57264afed802a3abacec677ea2ec37bbff79b6b0e.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2087,
+    "table_name": "Table_page151",
+    "page_idx": 151,
+    "html": "<table><tr><td></td><td>large</td><td>small</td></tr><tr><td></td><td>[mm]</td><td>[mm]</td></tr><tr><td>Diameter</td><td>630</td><td>315</td></tr><tr><td>Letters (height)</td><td>315</td><td>158</td></tr><tr><td>Letters (width)</td><td>50</td><td>25</td></tr></table>",
+    "img_path": "images/8e4240d0f5b3ac2b1a2f632f5d56a0f3ab8d2e7449c1f868cf123b90de9fa1b8.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [
+      "$^{6}$ Given as an example; Nations may use additional symbols which may differ in size, form and colour."
+    ],
+    "hierarchy": {
+      "level_2": "Colours:\\*"
+    }
+  },
+  {
+    "table_idx": 2321,
+    "table_name": "NATO/PFP UNCLASSIFIED\n-I-A-10-",
+    "page_idx": 166,
+    "html": "<table><tr><td>TABLE 1</td><td colspan=\"6\">Q-D TABLE FOR HAZARD DIVISION 1.1</td></tr><tr><td>PES</td><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td><td>(e)</td><td>(f)</td></tr><tr><td>1</td><td>D3ag</td><td>D3ag</td><td>D5a</td><td>D5a</td><td>D5a</td><td>D4ag</td></tr><tr><td>2</td><td>D3ag</td><td>D3ag</td><td>D5b</td><td>D5b</td><td>D5b</td><td>D4ag</td></tr><tr><td>3</td><td>D4ag or D5ag</td><td>D4ag or D5ag</td><td>D6be</td><td>D6be</td><td>D6be</td><td>D4bghe or D6ae</td></tr><tr><td>4</td><td>D3ag</td><td>D3ag</td><td>D5b</td><td>D5b</td><td>D5b</td><td>D5ag</td></tr><tr><td>5</td><td>D3ag</td><td>D3ag</td><td>D6b</td><td>D6b</td><td>D6b</td><td>D5bg</td></tr><tr><td>6</td><td>D4bgh or D6a</td><td>D4bgh or D6a</td><td>D6ce</td><td>D6ce</td><td>D6ce</td><td>D6ce</td></tr><tr><td>7</td><td>D4ag</td><td>D4b or D5a</td><td>D8bde, D9ble or D12ae</td><td>D8be</td><td>D8bde</td><td>D8bde</td></tr><tr><td>8</td><td>D6a</td><td>D6a</td><td>D9bde, D9ble or D12ae</td><td>D8be</td><td>D8bde</td><td>D8bde</td></tr><tr><td>9</td><td>D4bgh or D7b</td><td>D4bgh or D7b</td><td>D9ce</td><td>D4cghe or D9ce</td><td>D9ce</td><td>D9ce</td></tr><tr><td>10</td><td>D4bgh or D7b</td><td>D4bgh or D7b</td><td>D9b</td><td>D9b</td><td>D9b</td><td>D9b</td></tr><tr><td>11</td><td>D4bgh or D7b</td><td>D4bgh or D7b</td><td>D9cje</td><td>D4cghe or D9ce</td><td>D9cje</td><td>D9cje</td></tr><tr><td>12</td><td>D4cgh or D7b</td><td>D4cgh or D7b</td><td>D4cghe or D7be</td><td>D4cghe or D7be</td><td>D4cghe or D7be</td><td>D5cghe or D7be</td></tr><tr><td>13</td><td>D4cgh or D7b</td><td>D4cgh or D7b</td><td>D4cghe or D7be</td><td>D4cghe or D7be</td><td>D4cghe or D7be</td><td>D5cghe or D7be</td></tr><tr><td>14</td><td>D4bgh or D7b</td><td>D4bgh or D7b</td><td>D4bghe or D7be</td><td>D1bie, D2bie D4bghe or D7be</td><td>D1bie, D2bie D4bghe or D7be</td><td>D4bghe or D7be</td></tr><tr><td>15</td><td>D4bgh or D7b</td><td>D4bgh or D7b</td><td>D9cje or D12fe</td><td>D1bie, D2bie D4bghe or D7be</td><td>D9cje or D12fe</td><td>D9cje or D12fe</td></tr><tr><td>16</td><td>D10</td><td>D10</td><td>D10</td><td>D10</td><td>D10</td><td>D10</td></tr><tr><td>17</td><td>D10 (∃270m)</td><td>D10 (∃270m)</td><td>D10 (∃270m)</td><td>D10o</td><td>D10o</td><td>D10 (∃270m)</td></tr><tr><td>18</td><td>D10 (∃270m)</td><td>D10 (∃270m)</td><td>D13</td><td>D10o</td><td>D13</td><td>D13</td></tr><tr><td>19</td><td>D11 (∃270m)kD16 (∃270m)knD13 (∃400m)D14 (∃400m)n</td><td>D11 (∃270m)kD17 (∃270m)knD13 (∃400m)D15 (∃400m)n</td><td>D11 (∃270m)kD13 (∃400m)D13 (∃400m)</td><td>D11kD13</td><td>D11kD13</td><td>D11 (∃270m)kD13 (∃400m)</td></tr><tr><td>20</td><td>D13 (∃400m)lD14 (∃400m)ln</td><td>D13 (∃400m)lD14 (∃400m)ln</td><td>D13 (∃400m)l</td><td>D13lD13 (∃400m)</td><td>D13lD13 (∃400m)</td><td>D13 (∃400m)l</td></tr></table>",
+    "img_path": "images/6027c997c3765e7109611e1b59d032f0e0b3895ab445b87936b2f9b774c54858.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "A.2.4 Inert Ammunition",
+      "level_1": "QUANTITY-DISTANCE TABLES FOR ABOVEGROUND STORAGE"
+    }
+  },
+  {
+    "table_idx": 2324,
+    "table_name": "TABLE 1 (PAGE 1) - Q-D TABLE FOR HAZARD DIVISION 1.1",
+    "page_idx": 167,
+    "html": "<table><tr><td rowspan=\"2\">NetExplosivesQuantity inkg</td><td colspan=\"12\">Quantity-Distances in metres</td></tr><tr><td>D1</td><td>D2</td><td>D3</td><td>D4</td><td>D5</td><td>D6</td><td>D7</td><td>D8</td><td>D9</td><td>D10</td><td>D11</td><td>D12</td></tr><tr><td>500</td><td>3</td><td></td><td>4</td><td>7</td><td>9</td><td>15</td><td>20</td><td>29</td><td>39</td><td>64</td><td>180</td><td>180</td></tr><tr><td>600</td><td>3</td><td></td><td>5</td><td>7</td><td>10</td><td>16</td><td>21</td><td>31</td><td>41</td><td>68</td><td>180</td><td>190</td></tr><tr><td>700</td><td>4</td><td></td><td>5</td><td>8</td><td>10</td><td>16</td><td>22</td><td>32</td><td>43</td><td>72</td><td>180</td><td>200</td></tr><tr><td>800</td><td>4</td><td></td><td>5</td><td>8</td><td>11</td><td>17</td><td>23</td><td>34</td><td>45</td><td>75</td><td>180</td><td>210</td></tr><tr><td>900</td><td>4</td><td></td><td>5</td><td>8</td><td>11</td><td>18</td><td>24</td><td>35</td><td>47</td><td>78</td><td>180</td><td>215</td></tr><tr><td>1 000</td><td>4</td><td></td><td>5</td><td>8</td><td>11</td><td>18</td><td>24</td><td>36</td><td>48</td><td>80</td><td>180</td><td>225</td></tr><tr><td>1 200</td><td>4</td><td></td><td>6</td><td>9</td><td>12</td><td>20</td><td>26</td><td>39</td><td>52</td><td>86</td><td>180</td><td>240</td></tr><tr><td>1 400</td><td>4</td><td></td><td>6</td><td>9</td><td>13</td><td>21</td><td>27</td><td>41</td><td>54</td><td>90</td><td>180</td><td>250</td></tr><tr><td>1 600</td><td>5</td><td></td><td>6</td><td>10</td><td>13</td><td>22</td><td>29</td><td>43</td><td>57</td><td>94</td><td>180</td><td>260</td></tr><tr><td>1 800</td><td>5</td><td></td><td>7</td><td>10</td><td>14</td><td>22</td><td>30</td><td>44</td><td>59</td><td>98</td><td>180</td><td>270</td></tr><tr><td>2 000</td><td>5</td><td></td><td>7</td><td>11</td><td>14</td><td>23</td><td>31</td><td>46</td><td>61</td><td>105</td><td>180</td><td>280</td></tr><tr><td>2 500</td><td>5</td><td></td><td>7</td><td>11</td><td>15</td><td>25</td><td>33</td><td>49</td><td>66</td><td>110</td><td>185</td><td>305</td></tr><tr><td>3 000</td><td>6</td><td></td><td>8</td><td>12</td><td>16</td><td>26</td><td>35</td><td>52</td><td>70</td><td>120</td><td>205</td><td>325</td></tr><tr><td>3 500</td><td>6</td><td></td><td>8</td><td>13</td><td>17</td><td>28</td><td>37</td><td>55</td><td>73</td><td>125</td><td>220</td><td>340</td></tr><tr><td>4 000</td><td>6</td><td></td><td>8</td><td>13</td><td>18</td><td>29</td><td>39</td><td>58</td><td>77</td><td>130</td><td>235</td><td>355</td></tr><tr><td>5 000</td><td>6</td><td></td><td>9</td><td>14</td><td>19</td><td>31</td><td>42</td><td>62</td><td>83</td><td>140</td><td>255</td><td>380</td></tr><tr><td>6 000</td><td>7</td><td></td><td>10</td><td>15</td><td>20</td><td>33</td><td>44</td><td>66</td><td>88</td><td>150</td><td>270</td><td>405</td></tr><tr><td>7 000</td><td>7</td><td></td><td>10</td><td>16</td><td>22</td><td>35</td><td>46</td><td>69</td><td>92</td><td>155</td><td>285</td><td>425</td></tr><tr><td>8 000</td><td>7</td><td></td><td>10</td><td>16</td><td>22</td><td>36</td><td>48</td><td>72</td><td>96</td><td>160</td><td>300</td><td>445</td></tr><tr><td>9 000</td><td>8</td><td></td><td>11</td><td>17</td><td>23</td><td>38</td><td>50</td><td>75</td><td>100</td><td>170</td><td>310</td><td>465</td></tr><tr><td>10 000</td><td>8</td><td></td><td>11</td><td>18</td><td>24</td><td>39</td><td>52</td><td>78</td><td>105</td><td>175</td><td>320</td><td>480</td></tr><tr><td>12 000</td><td>9</td><td></td><td>12</td><td>19</td><td>26</td><td>42</td><td>55</td><td>83</td><td>110</td><td>185</td><td>340</td><td>510</td></tr><tr><td>14 000</td><td>9</td><td></td><td>13</td><td>20</td><td>27</td><td>44</td><td>58</td><td>87</td><td>120</td><td>195</td><td>360</td><td>540</td></tr><tr><td>16 000</td><td>9</td><td></td><td>13</td><td>21</td><td>28</td><td>46</td><td>61</td><td>91</td><td>125</td><td>205</td><td>375</td><td>560</td></tr><tr><td>18 000</td><td>10</td><td></td><td>14</td><td>21</td><td>29</td><td>48</td><td>63</td><td>95</td><td>130</td><td>210</td><td>390</td><td>590</td></tr><tr><td>20 000</td><td>10</td><td></td><td>14</td><td>22</td><td>30</td><td>49</td><td>66</td><td>98</td><td>135</td><td>220</td><td>405</td><td>610</td></tr><tr><td>25 000</td><td>11</td><td></td><td>15</td><td>24</td><td>33</td><td>53</td><td>71</td><td>110</td><td>145</td><td>235</td><td>435</td><td>650</td></tr><tr><td>30 000</td><td>11</td><td></td><td>16</td><td>25</td><td>35</td><td>56</td><td>75</td><td>115</td><td>150</td><td>250</td><td>460</td><td>690</td></tr><tr><td>35 000</td><td></td><td>15</td><td>17</td><td>27</td><td>36</td><td>59</td><td>79</td><td>120</td><td>160</td><td>265</td><td>485</td><td>730</td></tr><tr><td>40 000</td><td></td><td>16</td><td>18</td><td>28</td><td>38</td><td>62</td><td>83</td><td>125</td><td>165</td><td>275</td><td>510</td><td>760</td></tr><tr><td>50 000</td><td></td><td>17</td><td>19</td><td>30</td><td>41</td><td>67</td><td>89</td><td>135</td><td>180</td><td>295</td><td>550</td><td>820</td></tr><tr><td>60 000</td><td></td><td>18</td><td>20</td><td>32</td><td>44</td><td>71</td><td>94</td><td>145</td><td>190</td><td>315</td><td>580</td><td>870</td></tr><tr><td>70 000</td><td></td><td>19</td><td>21</td><td>33</td><td>46</td><td>75</td><td>99</td><td>150</td><td>200</td><td>330</td><td>610</td><td>920</td></tr><tr><td>80 000</td><td></td><td>19</td><td>22</td><td>35</td><td>48</td><td>78</td><td>105</td><td>160</td><td>210</td><td>345</td><td>640</td><td>960</td></tr><tr><td>90 000</td><td></td><td>20</td><td>23</td><td>36</td><td>50</td><td>81</td><td>110</td><td>165</td><td>220</td><td>360</td><td>670</td><td>1000</td></tr><tr><td>100 000</td><td></td><td>21</td><td>24</td><td>38</td><td>52</td><td>84</td><td>115</td><td>170</td><td>225</td><td>375</td><td>690</td><td>1040</td></tr><tr><td>120 000</td><td></td><td>22</td><td>25</td><td>40</td><td>55</td><td>89</td><td>120</td><td>180</td><td>240</td><td>395</td><td>730</td><td>1100</td></tr><tr><td>140 000</td><td></td><td></td><td>26</td><td>42</td><td>58</td><td>94</td><td>125</td><td>190</td><td>250</td><td>420</td><td>770</td><td>1160</td></tr><tr><td>160 000</td><td></td><td></td><td>28</td><td>44</td><td>60</td><td>98</td><td>135</td><td>200</td><td>265</td><td>435</td><td>810</td><td>1220</td></tr><tr><td>180 000</td><td></td><td></td><td>29</td><td>46</td><td>63</td><td>105</td><td>140</td><td>205</td><td>275</td><td>455</td><td>840</td><td>1260</td></tr><tr><td>200 000</td><td></td><td></td><td>30</td><td>47</td><td>65</td><td>110</td><td>145</td><td>215</td><td>285</td><td>470</td><td>870</td><td>1300</td></tr><tr><td>250 000</td><td></td><td></td><td>32</td><td>51</td><td>70</td><td>115</td><td>155</td><td>230</td><td>305</td><td>510</td><td>940</td><td>1400</td></tr><tr><td rowspan=\"43\">Distance Functions</td><td rowspan=\"43\">D1=0.35 $Q^{1/3}$ </td><td rowspan=\"43\">D2=0.44 $Q^{1/3}$ </td><td rowspan=\"43\">D3=0.5 $Q^{1/3}$ </td><td rowspan=\"43\">D4=0.8 $Q^{1/3}$ </td><td rowspan=\"43\">D5=1.1 $Q^{1/3}$ </td><td rowspan=\"43\">D6=1.8 $Q^{1/3}$ </td><td rowspan=\"8\">D7=2.4 $Q^{1/3}$ </td><td rowspan=\"8\">D8=3.6 $Q^{1/3}$ </td><td rowspan=\"8\">D9=4.8 $Q^{1/3}$ </td><td rowspan=\"8\">D10=8.0 $Q^{1/3}$ </td><td rowspan=\"8\">D11=3.6 $Q^{1/2}$  forQ&lt;4500D11=14.8 $Q^{1/3}$  forQ≥4500</td><td rowspan=\"8\">D12=22.2 $Q^{1/3}$ </td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"7\"></td><td rowspan=\"7\"></td><td rowspan=\"7\"></td><td rowspan=\"7\"></td><td rowspan=\"7\"></td><td rowspan=\"7\"></td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td rowspan=\"8\" colspan=\"6\">i. see 1.4.3.1. -modular storage of bombs in open stacks</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td colspan=\"6\">i. see 1.4.1.15.b) -flying and falling glass, etc.</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+    "img_path": "images/fa5600b191a84007209ad8208678c69091e78462783207c98be2c2a39f754735.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2332,
+    "table_name": "NATO/PFP UNCLASSIFIED\n-I-A-12-",
+    "page_idx": 168,
+    "html": "<table><tr><td>TABLE 1</td><td colspan=\"6\">Q-D TABLE FOR HAZARD DIVISION 1.1</td></tr><tr><td>PES ES</td><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td><td>(e)</td><td>(f)</td></tr><tr><td>1</td><td> $D3^{ag}$ </td><td> $D3^{ag}$ </td><td> $D5^a$ </td><td> $D5^a$ </td><td> $D5^a$ </td><td> $D4^{ag}$ </td></tr><tr><td>2</td><td> $D3^{ag}$ </td><td> $D3^{ag}$ </td><td> $D5^b$ </td><td> $D5^b$ </td><td> $D5^b$ </td><td> $D4^{ag}$ </td></tr><tr><td>3</td><td> $D4^{agh}\\ or\\ D5^{ag}$ </td><td> $D4^{agh}\\ or\\ D5^{ag}$ </td><td> $D6^{be}$ </td><td> $D6^{be}$ </td><td> $D6^{be}$ </td><td> $D4^{bghe}\\ or\\ D6^{ae}$ </td></tr><tr><td>4</td><td> $D3^{ag}$ </td><td> $D3^{ag}$ </td><td> $D5^b$ </td><td> $D5^b$ </td><td> $D5^b$ </td><td> $D5^{ag}$ </td></tr><tr><td>5</td><td> $D3^{ag}$ </td><td> $D3^{ag}$ </td><td> $D6^b$ </td><td> $D6^b$ </td><td> $D6^b$ </td><td> $D5^{bg}$ </td></tr><tr><td>6</td><td> $D4^{bgh}\\ or\\ D6^a$ </td><td> $D4^{bgh}\\ or\\ D6^a$ </td><td> $D6^{ce}$ </td><td> $D6^{ce}$ </td><td> $D6^{ce}$ </td><td> $D6^{ce}$ </td></tr><tr><td>7</td><td> $D4^{ag}$ </td><td> $D4^b\\ or\\ D5^a$ </td><td> $D8^{bde}, D9^{bje}\\ or\\ D12^{ae}$ </td><td> $D8^{be}$ </td><td> $D8^{bde}$ </td><td> $D8^{bde}$ </td></tr><tr><td>8</td><td> $D6^a$ </td><td> $D6^a$ </td><td> $D9^{bde}, D9^{bje}\\ or\\ D12^{ae}$ </td><td> $D8^{be}$ </td><td> $D8^{bde}$ </td><td> $D8^{bde}$ </td></tr><tr><td>9</td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D9^{ce}$ </td><td> $D4^{cghe}\\ or\\ D9^{ce}$ </td><td> $D9^{ce}$ </td><td> $D9^{ce}$ </td></tr><tr><td>10</td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D9^b$ </td><td> $D9^b$ </td><td> $D9^b$ </td><td> $D9^b$ </td></tr><tr><td>11</td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D9^{cje}$ </td><td> $D4^{cghe}\\ or\\ D9^{ce}$ </td><td> $D9^{cje}$ </td><td> $D9^{cje}$ </td></tr><tr><td>12</td><td> $D4^{cgh}\\ or\\ D7^b$ </td><td> $D4^{cgh}\\ or\\ D7^b$ </td><td> $D4^{cghe}\\ or\\ D7^{be}$ </td><td> $D4^{cghe}\\ or\\ D7^{be}$ </td><td> $D4^{cghe}\\ or\\ D7^{be}$ </td><td> $D5^{cghe}\\ or\\ D7^{be}$ </td></tr><tr><td>13</td><td> $D4^{cgh}\\ or\\ D7^b$ </td><td> $D4^{cgh}\\ or\\ D7^b$ </td><td> $D4^{cghe}\\ or\\ D7^{be}$ </td><td> $D4^{cghe}\\ or\\ D7^{be}$ </td><td> $D4^{cghe}\\ or\\ D7^{be}$ </td><td> $D5^{cghe}\\ or\\ D7^{be}$ </td></tr><tr><td>14</td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D4^{bghe}\\ or\\ D7^{be}$ </td><td> $D1^{bie}, D2^{bie}\\ D4^{bghe}\\ or\\ D7^{be}$ </td><td> $D1^{bie}, D2^{bie}\\ D4^{bghe}\\ or\\ D7^{be}$ </td><td> $D4^{bghe}\\ or\\ D7^{be}$ </td></tr><tr><td>15</td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D4^{bgh}\\ or\\ D7^b$ </td><td> $D9^{cje}\\ or\\ D12^{fe}$ </td><td> $D1^{bie}, D2^{bie}\\ D4^{bghe}\\ or\\ D7^{be}$ </td><td> $D9^{cje}\\ or\\ D12^{fe}$ </td><td> $D9^{cje}\\ or\\ D12^{fe}$ </td></tr><tr><td>16</td><td>D10</td><td>D10</td><td>D10</td><td>D10</td><td>D10</td><td>D10</td></tr><tr><td>17</td><td>D10 (∃270m)</td><td>D10 (∃270m)</td><td>D10 (∃270m)</td><td> $D10^o$ </td><td> $D10^o$ </td><td>D10 (∃270m)</td></tr><tr><td>18</td><td>D10 (∃270m)</td><td>D10 (∃270m)</td><td>D13</td><td> $D10^o$ </td><td>D13</td><td>D13</td></tr><tr><td>19</td><td> $D11(∃270m)^k$  $D16(∃270m)^{kn}$  $D13(∃400m)$  $D14(∃400m)^n$ </td><td> $D11(∃270m)^k$  $D17(∃270m)^{kn}$  $D13(∃400m)$  $D15(∃400m)^n$ </td><td> $D11(∃270m)^k$  $D13(∃400m)$ </td><td> $D11^k$  $D13$ </td><td> $D11^k$  $D13$ </td><td> $D11(∃270m)^k$  $D13(∃400m)$ </td></tr><tr><td>20</td><td> $D13(∃400m)^l$  $D14(∃400m)^ln$ </td><td> $D13(∃400m)^l$  $D14(∃400m)^ln$ </td><td> $D13(∃400m)^l$ </td><td> $D13^l$  $D13(∃400m)$ </td><td> $D13^l$  $D13(∃400m)$ </td><td> $D13(∃400m)^l$ </td></tr></table>",
+    "img_path": "images/5ac7a27dfb826875021fa4d5f3683c848fcd9a48356aa50f599d26a270e8af5b.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2335,
+    "table_name": "TABLE 1 (PAGE 2) - Q-D TABLE FOR HAZARD DIVISION 1.1",
+    "page_idx": 169,
+    "html": "<table><tr><td rowspan=\"2\">Net Explosives Quantity in kg</td><td colspan=\"5\">Quantity-Distances in metres</td></tr><tr><td>D13</td><td>D14</td><td>D15</td><td>D16</td><td>D17</td></tr><tr><td>500</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>600</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>700</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>800</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>900</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>1 000</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>1 200</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>1 400</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>1 600</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>1 800</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>2 000</td><td>270</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>2 500</td><td>280</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>3 000</td><td>305</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>3 500</td><td>330</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>4 000</td><td>350</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>5 000</td><td>380</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>6 000</td><td>405</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>7 000</td><td>425</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>8 000</td><td>445</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>9 000</td><td>465</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>10 000</td><td>480</td><td>400</td><td>400</td><td>270</td><td>270</td></tr><tr><td>12 000</td><td>510</td><td>400</td><td>415</td><td>270</td><td>275</td></tr><tr><td>14 000</td><td>540</td><td>400</td><td>435</td><td>270</td><td>290</td></tr><tr><td>16 000</td><td>560</td><td>400</td><td>455</td><td>270</td><td>305</td></tr><tr><td>18 000</td><td>490</td><td>400</td><td>475</td><td>270</td><td>315</td></tr><tr><td>20 000</td><td>610</td><td>400</td><td>490</td><td>270</td><td>330</td></tr><tr><td>25 000</td><td>650</td><td>410</td><td>530</td><td>275</td><td>355</td></tr><tr><td>30 000</td><td>690</td><td>435</td><td>560</td><td>290</td><td>375</td></tr><tr><td>35 000</td><td>730</td><td>460</td><td>590</td><td>305</td><td>395</td></tr><tr><td>40 000</td><td>760</td><td>480</td><td>620</td><td>320</td><td>415</td></tr><tr><td>45 000</td><td></td><td>500</td><td>640</td><td>335</td><td>430</td></tr><tr><td>50 000</td><td>820</td><td></td><td></td><td></td><td></td></tr><tr><td>60 000</td><td>870</td><td></td><td></td><td></td><td></td></tr><tr><td>70 000</td><td>920</td><td></td><td></td><td></td><td></td></tr><tr><td>80 000</td><td>960</td><td></td><td></td><td></td><td></td></tr><tr><td>90 000</td><td>1000</td><td></td><td></td><td></td><td></td></tr><tr><td>100 000</td><td>1040</td><td></td><td></td><td></td><td></td></tr><tr><td>120 000</td><td>1100</td><td></td><td></td><td></td><td></td></tr><tr><td>140 000</td><td>1160</td><td></td><td></td><td></td><td></td></tr><tr><td>160 000</td><td>1220</td><td></td><td></td><td></td><td></td></tr><tr><td>180 000</td><td>1260</td><td></td><td></td><td></td><td></td></tr><tr><td>200 000</td><td>1300</td><td></td><td></td><td></td><td></td></tr><tr><td>250 000</td><td>1400</td><td></td><td></td><td></td><td></td></tr><tr><td>Distance Functions</td><td> $D13=5.5Q^{1/2}$  for Q&lt;4500 $D13=22.2Q^{1/3}$  for Q≥4500</td><td> $D14=14.0Q^{1/3}$ </td><td> $D15=18.0Q^{1/3}$ </td><td> $D16=9.3Q^{1/3}$ </td><td> $D17=12.0Q^{1/3}$ </td></tr><tr><td colspan=\"3\">a. see 1.4.1.9.a)&amp;1.4.1.9.b)1)- virtually complete protection against instantaneous propagation</td><td colspan=\"3\">h. see 1.4.5.3.- excluding items at the ES vulnerable to attack by heavy spalling</td></tr><tr><td colspan=\"3\">b. see 1.4.1.9.a)&amp;1.4.1.9.b)2)- high degree of protection against instantaneous propagation</td><td colspan=\"3\">i. see 1.4.3.1.- modular storage of bombs in open stacks</td></tr><tr><td colspan=\"3\">c. see 1.4.1.9.a)&amp;1.4.1.9.b)3)- moderate degree of protection against instantaneous propagation</td><td colspan=\"3\">j. see 1.4.3.3.- untraversed stacks of robust shell</td></tr><tr><td colspan=\"3\">d. see 1.4.5.6.a)1)- effect of high velocity projections</td><td colspan=\"3\">k. see 1.4.1.14.b)- reaction of drivers on busy roads</td></tr><tr><td colspan=\"3\">e. see 1.4.5.6.a)2)- effect of lobbed ammunition</td><td colspan=\"3\">l. see 1.4.1.15.b)- flying and falling glass, etc.</td></tr><tr><td colspan=\"3\">f. see 1.4.1.8.c)- degree of protection depends on structure at ES and sensitiveness of its contents</td><td colspan=\"3\">m. see 1.4.1.15.c)- 400 m minimum to built up areas</td></tr><tr><td colspan=\"3\">g. see 1.4.3.6.- excluding very sensitive explosive substances</td><td colspan=\"3\">n. see 1.4.6.7.b)- reduced Q-D for large earth-covered buildings containing NEQ&lt;45 000kg</td></tr><tr><td colspan=\"3\"></td><td colspan=\"3\">o. see 1.4.1.13.- serious fragment hazard</td></tr></table>",
+    "img_path": "images/4608ec631e65e8b2db77d0d94a5d01f639c4747a38fa664571256f890ecc1324.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2348,
+    "table_name": "It is essential to study the foregoing text in Chapter 3 when using this Annex since they are complementary\nQUANTITY-DISTANCE MATRIX FOR HD 1.2 – TABLE 2",
+    "page_idx": 171,
+    "html": "<table><tr><td>Potential Explosion Site</td><td rowspan=\"2\" colspan=\"3\">(a)</td><td rowspan=\"2\" colspan=\"2\"><img src=\"images/e5c400b4db283fc8c5b157c5103130ec1af2d0297d733b96ceda280d0bf10fb3.jpg\"/> (b)</td></tr><tr><td>Exposed Site</td></tr><tr><td><img src=\"images/397ae38ba68d020e142c75cd1f436e9dc38dd7e915623c103b230f0797c00a23.jpg\"/></td><td>1</td><td colspan=\"2\">No QDai</td><td colspan=\"2\">No QDai</td></tr><tr><td><img src=\"images/18e8bbc8c3c4ed3f54d4d00b8ccd610fcd8ae72e0ed8952b0c94b67bb526ae94.jpg\"/></td><td>2</td><td colspan=\"2\">No QDai</td><td colspan=\"2\">No QDai</td></tr><tr><td><img src=\"images/65947fd9f8b3d17d48a3ee12d190c91ca09fad66a1315e8e58d13f4462a61b4d.jpg\"/></td><td>3</td><td colspan=\"2\">No QDai</td><td colspan=\"2\">No QDai</td></tr><tr><td><img src=\"images/d4bdf420b917b43662da780e8787153ccf84ba8d002c5c82ea858ef482ee14f3.jpg\"/></td><td>4</td><td colspan=\"2\">No QDai</td><td colspan=\"2\">D5bg or D6bh</td></tr><tr><td></td><td>5</td><td colspan=\"2\">No QDai</td><td colspan=\"2\">D5cg or D6ch</td></tr><tr><td></td><td>6</td><td colspan=\"2\">No QDei</td><td colspan=\"2\">D3eg or D4eh</td></tr><tr><td></td><td>7</td><td colspan=\"2\">No QDei</td><td colspan=\"2\">D3fg or D4fh</td></tr><tr><td><img src=\"images/92780ae688d5a007ac88c000d0b029a2a0505ec6da6d2b9b92a71eb9c24cbdd9.jpg\"/></td><td>8</td><td colspan=\"2\">No QDei</td><td colspan=\"2\">D5fg or D6fh</td></tr><tr><td><img src=\"images/5a0ce5d607e89524604626dba559f1abb6c3baef4b89ccab2af2033a8ec25b73.jpg\"/></td><td>9</td><td colspan=\"2\">No QDI</td><td colspan=\"2\">D5gk or D6hkD1gl or D2hl</td></tr><tr><td></td><td>10</td><td colspan=\"2\">No QDI</td><td colspan=\"2\">D1g or D2h</td></tr><tr><td colspan=\"3\">a. see 1.4.1.10.1) virtually complete protection against propagationb. see 1.4.1.10.2) high degree of protection against propagationc. see 1.4.1.10.3) limited degree of protection against propagationd. unallocatede. see 1.4.1.13.c)4) high degree of protection for personnelf. see 1.4.1.13.c)4) limited degree of protection for personnel</td><td>g. see 1.4.1.5.c)h. see 1.4.1.5.b)i. see 1.4.1.5.g)j. seek. see 1.4.1.14.b)l. see 1.4.1.14.b)</td><td colspan=\"2\">PES contains only the less hazardous items classified HD 1.2.2PES contains the more hazardous items classified HD 1.2.1practical considerations will dictate specific separation distancesunallocatedlow density traffichigh density traffic</td></tr></table>",
+    "img_path": "images/dc522d661d0d4814aaaaf941da3be8970513e8d11b9add662254d36c5893612e.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2355,
+    "table_name": "It is essential to study the text in Chapter 3 when using this Annex since they are complementary",
+    "page_idx": 172,
+    "html": "<table><tr><td rowspan=\"2\">NEQ</td><td colspan=\"6\">Quantity-Distances</td></tr><tr><td>D1</td><td>D2</td><td>D3</td><td>D4</td><td>D5</td><td>D6</td></tr><tr><td>Kg</td><td>m</td><td>M</td><td>m</td><td>m</td><td>M</td><td>m</td></tr><tr><td>10</td><td>30</td><td>60</td><td>20</td><td>20</td><td>30</td><td>60</td></tr><tr><td>20</td><td>36</td><td>60</td><td>20</td><td>20</td><td>30</td><td>60</td></tr><tr><td>50</td><td>44</td><td>88</td><td>20</td><td>32</td><td>30</td><td>60</td></tr><tr><td>70</td><td>47</td><td>108</td><td>20</td><td>39</td><td>32</td><td>73</td></tr><tr><td>80</td><td>49</td><td>116</td><td>20</td><td>42</td><td>33</td><td>78</td></tr><tr><td>90</td><td>50</td><td>123</td><td>20</td><td>45</td><td>34</td><td>83</td></tr><tr><td>100</td><td>51</td><td>129</td><td>20</td><td>47</td><td>35</td><td>87</td></tr><tr><td>120</td><td>53</td><td>140</td><td>20</td><td>51</td><td>36</td><td>94</td></tr><tr><td>140</td><td>55</td><td>149</td><td>20</td><td>54</td><td>37</td><td>100</td></tr><tr><td>160</td><td>57</td><td>156</td><td>21</td><td>57</td><td>39</td><td>105</td></tr><tr><td>180</td><td>59</td><td>163</td><td>22</td><td>59</td><td>40</td><td>110</td></tr><tr><td>200</td><td>60</td><td>169</td><td>22</td><td>61</td><td>41</td><td>114</td></tr><tr><td>250</td><td>64</td><td>182</td><td>24</td><td>66</td><td>43</td><td>122</td></tr><tr><td>300</td><td>66</td><td>192</td><td>24</td><td>70</td><td>45</td><td>129</td></tr><tr><td>350</td><td>69</td><td>200</td><td>25</td><td>72</td><td>47</td><td>134</td></tr><tr><td>400</td><td>71</td><td>208</td><td>26</td><td>75</td><td>48</td><td>140</td></tr><tr><td>500</td><td>75</td><td>220</td><td>27</td><td>80</td><td>51</td><td>148</td></tr><tr><td>600</td><td>78</td><td>230</td><td>29</td><td>83</td><td>53</td><td>155</td></tr><tr><td>700</td><td>81</td><td>238</td><td>30</td><td>86</td><td>55</td><td>160</td></tr><tr><td>800</td><td>83</td><td>245</td><td>30</td><td>89</td><td>56</td><td>165</td></tr><tr><td>900</td><td>86</td><td>251</td><td>31</td><td>91</td><td>58</td><td>169</td></tr><tr><td>1000</td><td>88</td><td>257</td><td>32</td><td>93</td><td>59</td><td>173</td></tr><tr><td>1200</td><td>91</td><td>266</td><td>33</td><td>96</td><td>61</td><td>179</td></tr><tr><td>1400</td><td>94</td><td>274</td><td>34</td><td>99</td><td>63</td><td>184</td></tr><tr><td>1600</td><td>97</td><td>281</td><td>35</td><td>102</td><td>65</td><td>189</td></tr><tr><td>1800</td><td>100</td><td>287</td><td>36</td><td>104</td><td>67</td><td>193</td></tr><tr><td>2000</td><td>102</td><td>292</td><td>37</td><td>106</td><td>69</td><td>196</td></tr><tr><td>2500</td><td>107</td><td>303</td><td>39</td><td>110</td><td>72</td><td>204</td></tr><tr><td>3000</td><td>111</td><td>313</td><td>40</td><td>113</td><td>75</td><td>210</td></tr><tr><td>3500</td><td>114</td><td>320</td><td>42</td><td>116</td><td>77</td><td>215</td></tr><tr><td>4000</td><td>118</td><td>327</td><td>43</td><td>118</td><td>80</td><td>220</td></tr><tr><td>4500</td><td>120</td><td>332</td><td>44</td><td>120</td><td>81</td><td>223</td></tr><tr><td>5000</td><td>123</td><td>337</td><td>45</td><td>122</td><td>83</td><td>226</td></tr><tr><td>6000</td><td>127</td><td>346</td><td>46</td><td>125</td><td>86</td><td>232</td></tr><tr><td>7000</td><td>131</td><td>354</td><td>48</td><td>128</td><td>88</td><td>238</td></tr><tr><td>8000</td><td>135</td><td>360</td><td>49</td><td>130</td><td>91</td><td>242</td></tr><tr><td>9000</td><td>138</td><td>365</td><td>50</td><td>132</td><td>93</td><td>245</td></tr><tr><td>10000</td><td>141</td><td>370</td><td>51</td><td>134</td><td>95</td><td>248</td></tr><tr><td>12000</td><td>146</td><td>379</td><td>53</td><td>137</td><td>98</td><td>254</td></tr><tr><td>14000</td><td>150</td><td>386</td><td>54</td><td>139</td><td>101</td><td>259</td></tr><tr><td>16000</td><td>154</td><td>392</td><td>56</td><td>142</td><td>104</td><td>263</td></tr><tr><td>18000</td><td>157</td><td>397</td><td>57</td><td>143</td><td>106</td><td>266</td></tr><tr><td>20000</td><td>160</td><td>402</td><td>58</td><td>145</td><td>108</td><td>270</td></tr><tr><td>25000</td><td>166</td><td>412</td><td>60</td><td>149</td><td>112</td><td>277</td></tr><tr><td>30000</td><td>172</td><td>420</td><td>62</td><td>152</td><td>116</td><td>282</td></tr><tr><td>35000</td><td>177</td><td>426</td><td>64</td><td>154</td><td>119</td><td>286</td></tr><tr><td>40000</td><td>181</td><td>432</td><td>66</td><td>156</td><td>122</td><td>290</td></tr><tr><td>45000</td><td>184</td><td>437</td><td>67</td><td>158</td><td>124</td><td>293</td></tr><tr><td>50000</td><td>188</td><td>441</td><td>68</td><td>159</td><td>126</td><td>296</td></tr><tr><td>60000</td><td>194</td><td>449</td><td>70</td><td>162</td><td>130</td><td>301</td></tr><tr><td>70000</td><td>199</td><td>455</td><td>72</td><td>164</td><td>134</td><td>305</td></tr><tr><td>80000</td><td>203</td><td>461</td><td>74</td><td>166</td><td>137</td><td>309</td></tr><tr><td>90000</td><td>207</td><td>466</td><td>75</td><td>168</td><td>139</td><td>313</td></tr><tr><td>100000</td><td>210</td><td>470</td><td>76</td><td>170</td><td>141</td><td>315</td></tr><tr><td>120000</td><td>217</td><td>477</td><td>79</td><td>172</td><td>146</td><td>320</td></tr><tr><td>140000</td><td>222</td><td>483</td><td>80</td><td>174</td><td>149</td><td>324</td></tr><tr><td>160000</td><td>227</td><td>489</td><td>82</td><td>177</td><td>153</td><td>328</td></tr><tr><td>180000</td><td>231</td><td>493</td><td>84</td><td>178</td><td>155</td><td>331</td></tr></table>",
+    "img_path": "images/db0a6cf705a99aeea6d4e916161a1a83d29885c65c30252306e1d8b105a65c61.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "QUANTITY-DISTANCE MATRIX FOR HD 1.2 – TABLE 2"
+    }
+  },
+  {
+    "table_idx": 2363,
+    "table_name": "Table_page173",
+    "page_idx": 173,
+    "html": "<table><tr><td>200000250000</td><td>235243</td><td>497506</td><td>8588</td><td>179183</td><td colspan=\"2\">158163</td><td>333340</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td colspan=\"2\"></td><td></td></tr><tr><td colspan=\"4\">D1 = 28.127-2.364*LN(NEQ)+1.577*( (LN(NEQ))^2)D2 = -167.648+70.345*LN(NEQ)-1.303*( (LN(NEQ))^2)</td><td colspan=\"2\">D3 = 0.36*D1D4 = 0.36*D2</td><td colspan=\"2\">D5 = 0.67*D1D6 = 0.67*D2</td></tr></table>",
+    "img_path": "images/5cfb82d26a9822c84153f79fadde8d3af8b12581e77880b2e884e19f629f8a5e.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2370,
+    "table_name": "TABLE 3A - Q-D TABLE FOR HAZARD DIVISION 1.3",
+    "page_idx": 174,
+    "html": "<table><tr><td>TABLE 3A</td><td colspan=\"6\">Q-D TABLE FOR HAZARD DIVISION 1.3</td></tr><tr><td>PES</td><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td><td>(e)</td><td>(f)</td></tr><tr><td>1</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td></tr><tr><td>2</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td></tr><tr><td>3</td><td>2mag</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $D1^{a}$ </td></tr><tr><td>4</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td></tr><tr><td>5</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{a}$ </td></tr><tr><td>6</td><td> $10m^{b} or 25m^{a}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $D1^{b}$ </td><td> $D1^{b}$ </td><td> $D1^{b}$ </td></tr><tr><td>7</td><td> $2m^{adg} or 25m^{a}$ </td><td> $2m^{adg} or 25m^{a}$ </td><td> $2m^{adg} or 25m^{a}$ </td><td> $25m^{ad} or D1^{a}$ </td><td> $25m^{ad} or D1^{a}$ </td><td> $D1^{ad}, D1^{bf} or 240m^{b}$ </td></tr><tr><td>8</td><td> $2m^{adg} or 25m^{a}$ </td><td> $2m^{adg} or 25m^{a}$ </td><td> $2m^{adg} or 25m^{a}$ </td><td> $25m^{ad} or D1^{a}$ </td><td> $25m^{ad} or D1^{a}$ </td><td> $D1^{ad}, D_{1}^{bf} or 240m^{b}$ </td></tr><tr><td>9</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $25m^{a}$ </td><td> $25m^{a}$ </td><td> $D1^{a}$ </td></tr><tr><td>10</td><td> $10m^{b} or 25m^{a}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{bf} or 240m^{a}$ </td></tr><tr><td>11</td><td> $25m^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{b}$ </td><td> $D1^{b}$ </td><td> $240m^{b}$ </td></tr><tr><td>12</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $D1^{a}$ </td></tr><tr><td>13</td><td> $25m^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{b}$ </td><td> $D1^{b}$ </td><td> $240m^{a}$ </td></tr><tr><td>14</td><td> $25m^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{b}$ </td><td> $D1^{b}$ </td><td> $240m^{a}$ </td></tr><tr><td>15</td><td> $25m^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{a}$ </td><td> $D1^{b}$ </td><td> $D1^{b}$ </td><td> $240m^{a}$ </td></tr><tr><td>16</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td></tr><tr><td>17</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td><td> $D2^{f} or 240m$ </td></tr><tr><td>18</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td><td>D2</td><td> $240m^{f} or D4 (≥240m)$ </td></tr><tr><td>19</td><td> $D3^{h} or D4$ </td><td> $D3^{h} or D4$ </td><td> $D3^{h} or D4$ </td><td> $D3^{h} or D4$ </td><td> $D3^{h} or D4$ </td><td> $D3 (≥160m)^{h} or D4 (≥240m)$ </td></tr><tr><td>20</td><td>D4</td><td>D4</td><td>D4</td><td>D4</td><td>D4</td><td>D4 (≥240m)</td></tr></table>\n<table><tr><td rowspan=\"2\">Net Explosives Quantity Q in kg</td><td colspan=\"4\">Quantity-Distances in metres</td></tr><tr><td>D1</td><td>D2</td><td>D3</td><td>D4</td></tr><tr><td>500</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>600</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>700</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>800</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>900</td><td>25</td><td>60</td><td>60</td><td>62</td></tr><tr><td>1 000</td><td>25</td><td>60</td><td>60</td><td>64</td></tr><tr><td>1 200</td><td>25</td><td>60</td><td>60</td><td>69</td></tr><tr><td>1 400</td><td>25</td><td>60</td><td>60</td><td>72</td></tr><tr><td>1 600</td><td>25</td><td>60</td><td>60</td><td>75</td></tr><tr><td>1 800</td><td>25</td><td>60</td><td>60</td><td>78</td></tr><tr><td>2 000</td><td>25</td><td>60</td><td>60</td><td>81</td></tr><tr><td>2 500</td><td>25</td><td>60</td><td>60</td><td>87</td></tr><tr><td>3 000</td><td>25</td><td>60</td><td>62</td><td>93</td></tr><tr><td>3 500</td><td>25</td><td>60</td><td>65</td><td>98</td></tr><tr><td>4 000</td><td>25</td><td>60</td><td>68</td><td>105</td></tr><tr><td>5 000</td><td>25</td><td>60</td><td>73</td><td>110</td></tr><tr><td>6 000</td><td>25</td><td>60</td><td>78</td><td>120</td></tr><tr><td>7 000</td><td>25</td><td>62</td><td>82</td><td>125</td></tr><tr><td>8 000</td><td>25</td><td>64</td><td>86</td><td>130</td></tr><tr><td>9 000</td><td>25</td><td>67</td><td>89</td><td>135</td></tr><tr><td>10 000</td><td>25</td><td>68</td><td>92</td><td>140</td></tr><tr><td>12 000</td><td>25</td><td>74</td><td>98</td><td>150</td></tr><tr><td>14 000</td><td>27</td><td>78</td><td>105</td><td>155</td></tr><tr><td>16 000</td><td>28</td><td>81</td><td>110</td><td>165</td></tr><tr><td>18 000</td><td>30</td><td>84</td><td>115</td><td>170</td></tr><tr><td>20 000</td><td>32</td><td>87</td><td>120</td><td>175</td></tr><tr><td>25 000</td><td>35</td><td>94</td><td>125</td><td>190</td></tr><tr><td>30 000</td><td>39</td><td>100</td><td>135</td><td>200</td></tr><tr><td>35 000</td><td>42</td><td>105</td><td>140</td><td>210</td></tr><tr><td>40 000</td><td>44</td><td>110</td><td>150</td><td>220</td></tr><tr><td>50 000</td><td>50</td><td>120</td><td>160</td><td>240</td></tr><tr><td>60 000</td><td>54</td><td>130</td><td>170</td><td>255</td></tr><tr><td>70 000</td><td>59</td><td>135</td><td>180</td><td>265</td></tr><tr><td>80 000</td><td>63</td><td>140</td><td>185</td><td>280</td></tr><tr><td>90 000</td><td>66</td><td>145</td><td>195</td><td>290</td></tr><tr><td>100 000</td><td>70</td><td>150</td><td>200</td><td>300</td></tr><tr><td>120 000</td><td>77</td><td>160</td><td>215</td><td>320</td></tr><tr><td>140 000</td><td>83</td><td>170</td><td>225</td><td>335</td></tr><tr><td>160 000</td><td>88</td><td>175</td><td>235</td><td>350</td></tr><tr><td>180 000</td><td>94</td><td>185</td><td>245</td><td>365</td></tr><tr><td>200 000</td><td>99</td><td>190</td><td>250</td><td>375</td></tr><tr><td>250 000</td><td>110</td><td>205</td><td>270</td><td>405</td></tr><tr><td>Distance Functions</td><td> $D1 = 0.22 \\, Q^{1/3}$ </td><td> $D2 = 3.2 \\, Q^{1/3}$ </td><td> $D3 = 4.3 \\, Q^{1/3}$ </td><td> $D4 = 6.4 \\, Q^{1/3}$ </td></tr></table>",
+    "img_path": "images/1213637ed9bd276e3bb92325c5faa8f6b758f57feb13ae9704f61f4a5c367387.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {},
+    "merged_pages": [
+      174,
+      175
+    ]
+  },
+  {
+    "table_idx": 2375,
+    "table_name": "Table_page175",
+    "page_idx": 175,
+    "html": "<table><tr><td>a. see 1.4.1.11.1)</td><td>- virtually complete protection</td><td>e.</td><td>- (reserved)</td></tr><tr><td>b. see 1.4.1.11.2)</td><td>- high/limited degree of protection</td><td>f. see 1.4.6.6.a)</td><td>- door barricade at PES</td></tr><tr><td>c.</td><td>- (reserved)</td><td>g. see 1.4.5.1.c)</td><td>- practical considerations may require a greater distance</td></tr><tr><td>d. see 1.4.5.6.b)</td><td>- resistance of headwall and door(s) at ES</td><td>h. see 1.4.1.14.b)</td><td>- reaction of drivers on busy roads</td></tr></table>",
+    "img_path": "images/f3686c4369a85b0c9ba35d5d4947f8295a251ffaba4896d58d6bfc571d7674ea.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2383,
+    "table_name": "It is essential to study the text in Chapter 3 when using this Annex since they are complementary",
+    "page_idx": 176,
+    "html": "<table><tr><td>TABLE 3B</td><td colspan=\"6\">Q-D TABLE FOR HAZARD DIVISION 1.3</td></tr><tr><td>PES</td><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td><td>(e)</td><td>(f)</td></tr><tr><td>1</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td></tr><tr><td>2</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td></tr><tr><td>3</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td></tr><tr><td>4</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td></tr><tr><td>5</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td></tr><tr><td>6</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td></tr><tr><td>7</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{b}$ </td><td> $25m^{ad} or 60m^{a}$ </td><td> $25m^{ad} or 60m^{a}$ </td></tr><tr><td>8</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{ad} or 25m^{a}$ </td><td> $10m^{ad} or 25m^{b}$ </td><td> $25m^{ad} or 60m^{a}$ </td><td> $25m^{ad} or 60m^{a}$ </td></tr><tr><td>9</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{a}$ </td><td> $10m^{a}$ </td><td> $25m^{a}$ </td><td> $25m^{a}$ </td></tr><tr><td>10</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{b} or 25m^{a}$ </td><td> $25m^{b} or 60m^{a}$ </td><td> $25m^{be} or 60m^{ae}$ </td><td> $25m^{be} or 60m^{ae}$ </td></tr><tr><td>11</td><td> $25m^{b} or 60m^{a}$ </td><td> $25m^{b} or 60m^{a}$ </td><td> $25m^{bh}, 60m^{ahf} or 60m^{bf}$ </td><td> $60m^{b}$ </td><td> $60m^{b}$ </td><td> $60m^{b}$ </td></tr><tr><td>12</td><td> $2m^{ag}$ </td><td> $2m^{ag}$ </td><td> $10m^{a}$ </td><td> $10m^{a}$ </td><td> $10m^{a}$ </td><td> $10m^{a}$ </td></tr><tr><td>13</td><td> $25m^{b} or 60m^{a}$ </td><td> $25m^{b} or 60m^{a}$ </td><td> $25m^{bh}, 60m^{ahf} or 60m^{bf}$ </td><td> $60m^{b}$ </td><td> $60m^{b}$ </td><td> $60m^{b}$ </td></tr></table>",
+    "img_path": "images/6d17595eac2dc28f5b959448189f217165459862c8fa199c3def92c69f68917f.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2387,
+    "table_name": "TABLE 3B - Q-D TABLE FOR HAZARD DIVISION 1.3",
+    "page_idx": 177,
+    "html": "<table><tr><td rowspan=\"2\">NetExplosivesQuantity Qin kg</td><td colspan=\"4\">Quantity-Distances in metres</td></tr><tr><td>D1</td><td>D2</td><td>D3</td><td>D4</td></tr><tr><td>500</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>600</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>700</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>800</td><td>25</td><td>60</td><td>60</td><td>60</td></tr><tr><td>900</td><td>25</td><td>60</td><td>60</td><td>62</td></tr><tr><td>1 000</td><td>25</td><td>60</td><td>60</td><td>64</td></tr><tr><td>1 200</td><td>25</td><td>60</td><td>60</td><td>69</td></tr><tr><td>1 400</td><td>25</td><td>60</td><td>60</td><td>72</td></tr><tr><td>1 600</td><td>25</td><td>60</td><td>60</td><td>75</td></tr><tr><td>1 800</td><td>25</td><td>60</td><td>60</td><td>78</td></tr><tr><td>2 000</td><td>25</td><td>60</td><td>60</td><td>81</td></tr><tr><td>2 500</td><td>25</td><td>60</td><td>60</td><td>87</td></tr><tr><td>3 000</td><td>25</td><td>60</td><td>62</td><td>93</td></tr><tr><td>3 500</td><td>25</td><td>60</td><td>65</td><td>98</td></tr><tr><td>4 000</td><td>25</td><td>60</td><td>68</td><td>105</td></tr><tr><td>5 000</td><td>25</td><td>60</td><td>73</td><td>110</td></tr><tr><td>6 000</td><td>25</td><td>60</td><td>78</td><td>120</td></tr><tr><td>7 000</td><td>25</td><td>62</td><td>82</td><td>125</td></tr><tr><td>8 000</td><td>25</td><td>64</td><td>86</td><td>130</td></tr><tr><td>9 000</td><td>25</td><td>67</td><td>89</td><td>135</td></tr><tr><td>10 000</td><td>25</td><td>68</td><td>92</td><td>140</td></tr><tr><td>12 000</td><td>25</td><td>74</td><td>98</td><td>150</td></tr><tr><td>14 000</td><td>27</td><td>78</td><td>105</td><td>155</td></tr><tr><td>16 000</td><td>28</td><td>81</td><td>110</td><td>165</td></tr><tr><td>18 000</td><td>30</td><td>84</td><td>115</td><td>170</td></tr><tr><td>20 000</td><td>32</td><td>87</td><td>120</td><td>175</td></tr><tr><td>25 000</td><td>35</td><td>94</td><td>125</td><td>190</td></tr><tr><td>30 000</td><td>39</td><td>100</td><td>135</td><td>200</td></tr><tr><td>35 000</td><td>42</td><td>105</td><td>140</td><td>210</td></tr><tr><td>40 000</td><td>44</td><td>110</td><td>150</td><td>220</td></tr><tr><td>50 000</td><td>50</td><td>120</td><td>160</td><td>240</td></tr><tr><td>60 000</td><td>54</td><td>130</td><td>170</td><td>255</td></tr><tr><td>70 000</td><td>59</td><td>135</td><td>180</td><td>265</td></tr><tr><td>80 000</td><td>63</td><td>140</td><td>185</td><td>280</td></tr><tr><td>90 000</td><td>66</td><td>145</td><td>195</td><td>290</td></tr><tr><td>100 000</td><td>70</td><td>150</td><td>200</td><td>300</td></tr><tr><td>120 000</td><td>77</td><td>160</td><td>215</td><td>320</td></tr><tr><td>140 000</td><td>83</td><td>170</td><td>225</td><td>335</td></tr><tr><td>160 000</td><td>88</td><td>175</td><td>235</td><td>350</td></tr><tr><td>180 000</td><td>94</td><td>185</td><td>245</td><td>365</td></tr><tr><td>200 000</td><td>99</td><td>190</td><td>250</td><td>375</td></tr><tr><td>250 000</td><td>110</td><td>205</td><td>270</td><td>405</td></tr><tr><td>DistanceFunctions</td><td> $D1 = 0.22 Q^{1/3}$ </td><td> $D2 = 3.2 Q^{1/3}$ </td><td> $D3 = 4.3 Q^{1/3}$ </td><td> $D4 = 6.4 Q^{1/3}$ </td></tr></table>",
+    "img_path": "images/e72cf8e72e30d8eb23851b63057bdcc3e88ed735c809e12c7da9f3c8773cb41c.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2388,
+    "table_name": "Table_page177",
+    "page_idx": 177,
+    "html": "<table><tr><td>a. see 1.4.1.11.1)</td><td>- virtually complete protection</td><td>e. see 1.4.6.6.b)</td><td>- door barricades at both PES and ES</td></tr><tr><td>b. see 1.4.1.11.2)</td><td>- high/limited degree of protection</td><td>f. see 1.4.1.14.c)</td><td>- traffic is stopped promptly to avoid worst attack</td></tr><tr><td>c.</td><td>- (reserved)</td><td>g. see 1.4.5.1.c)</td><td>- practical considerations may require a greater distance</td></tr><tr><td>d. see 1.4.5.6.b)</td><td>- resistance of headwall and door(s) at ES</td><td>h. see 1.4.5.4.</td><td>- building (PES) with heavy walls with protective roof</td></tr><tr><td></td><td></td><td>i. see 1.4.5.4.</td><td>- building (PES) with heavy walls without protective roof</td></tr></table>",
+    "img_path": "images/5e9a83a7cdc2095ec5bfa025e12511451bbd63aba030c25099a0452a7be58811.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2394,
+    "table_name": "Table_page178",
+    "page_idx": 178,
+    "html": "<table><tr><td>TABLE 4</td><td colspan=\"6\">Q-D TABLE FOR HAZARD DIVISION 1.6STORAGE OF 1.6N AMMUNITION WITH A UNIT NEQ EQUAL TO 1000 Kq</td></tr><tr><td>PES</td><td>(a)</td><td>(b)</td><td>(c)</td><td>(d)</td><td>(e)</td><td>(f)</td></tr><tr><td>1</td><td>5m</td><td>5m</td><td>11m</td><td>11m</td><td>11m</td><td>8m</td></tr><tr><td>2</td><td>5m</td><td>5m</td><td>11m</td><td>11m</td><td>11m</td><td>8m</td></tr><tr><td>3</td><td>8m</td><td>8m</td><td>8m</td><td>18m</td><td>18m</td><td>8m</td></tr><tr><td>4</td><td>5m</td><td>5m</td><td>11m</td><td>11m</td><td>11m</td><td>11m</td></tr><tr><td>5</td><td>5m</td><td>5m</td><td>18m</td><td>18m</td><td>18m</td><td>11m</td></tr><tr><td>6</td><td>8m</td><td>8m</td><td>18m</td><td>18m</td><td>18m</td><td>18m</td></tr><tr><td>7</td><td>8m</td><td>8m</td><td>36m</td><td>25m</td><td>25m</td><td> $25m^d$  or 60m</td></tr><tr><td>8</td><td>18m</td><td>18m</td><td> $36m, 48m^i$ </td><td>36m</td><td>36m</td><td> $36m^d$  or 60m</td></tr><tr><td>9</td><td>8m</td><td>8m</td><td>48m</td><td>10m</td><td>48m</td><td>48m</td></tr><tr><td>10</td><td>8m</td><td>8m</td><td>48m</td><td>48m</td><td> $48m^b$  or 68m</td><td> $48m^b$  or 68m</td></tr><tr><td>11</td><td> $25m^b$  or 60m</td><td> $25m^b$  or 60m</td><td> $48m^b$  or 60m</td><td> $60m^b$ </td><td> $60m^b$ </td><td> $60m^b$ </td></tr><tr><td>12</td><td>8m</td><td>8m</td><td>10m</td><td>10m</td><td>10m</td><td>10m</td></tr><tr><td>13</td><td> $25m^b$  or 60m</td><td> $25m^b$  or 60m</td><td> $25m^{bh}$  or  $60m^{hbi}$ </td><td> $60m^b$ </td><td> $60m^b$ </td><td> $60m^b$ </td></tr><tr><td>14</td><td> $25m^b$  or 60m</td><td> $25m^b$  or 60m</td><td> $25m^{bh}$  or  $60m^{hbi}$ </td><td> $60m^b$ </td><td> $60m^b$ </td><td> $60m^b$ </td></tr><tr><td>15</td><td> $25m^b$  or 60m</td><td> $25m^b$  or 60m</td><td> $48m^{bh}$  or  $60m^{hbi}$ </td><td> $60m^b$ </td><td> $60m^b$ </td><td> $60m^b$ </td></tr><tr><td>16</td><td>80m</td><td>80m</td><td>80m</td><td>80m</td><td>80m</td><td>80m</td></tr><tr><td>17</td><td>80m</td><td>80m</td><td>80m</td><td>80m</td><td>80m</td><td>80m</td></tr><tr><td>18</td><td>80m</td><td>80m</td><td>174m</td><td>80m</td><td>174m</td><td>174m</td></tr><tr><td>19</td><td> $107^k, 174m$  $93m^{kn}, 140m^n$ </td><td> $107^k, 174m$  $93m^{kn}, 180m^n$ </td><td> $107^k$ 174m</td><td> $107^k$ 174m</td><td> $107^k$ 174m</td><td> $107^k$ 174m</td></tr><tr><td>20</td><td>D4 &gt; 174m</td><td>D4 &gt; 174m</td><td>D4 &gt; 174m</td><td>D4 &gt; 174m</td><td>D4 &gt; 174m</td><td>D4 &gt; 174m</td></tr></table>",
+    "img_path": "images/0bb529c50172daa923fa8d15f47b66c1c70ab413afaaa56bf3de362fde045f03.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {}
+  },
+  {
+    "table_idx": 2617,
+    "table_name": "Table_page192",
+    "page_idx": 192,
+    "html": "<table><tr><td>Hazard Division</td><td>NEQ kg</td></tr><tr><td>1.1</td><td>40 000</td></tr><tr><td>1.2</td><td>10 000</td></tr><tr><td>1.3 (propellants)</td><td>35 000</td></tr><tr><td>1.3 (other than propellants)</td><td>35 000</td></tr><tr><td>1.4</td><td>20 000</td></tr></table>",
+    "img_path": "images/49d791b0fa1c747609837aa78a8d5e97f263f9f6d0623d06d30142e8c0ac190b.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_1": "Section III - Example of the Use of Q-D Tables for Planning of a new Storage Area",
+      "level_2": "12. Hazard Division 1.4"
+    }
+  },
+  {
+    "table_idx": 2743,
+    "table_name": "Table_page203",
+    "page_idx": 203,
+    "html": "<table><tr><td rowspan=\"2\">ESH No.(PES)TYPE</td><td rowspan=\"2\">NEQkg/HD</td><td colspan=\"6\">Exterior Quantity-Distance to ES in metres</td></tr><tr><td>InhabitedBuildingDistance</td><td>ReferenceColumn/-Row</td><td>Public Traffic RouteHeavyTraf.1)</td><td>ReferenceColumn/-Row</td><td>RailwayLight passenger Traf.2)</td><td>ReferenceColumn/Row</td></tr><tr><td>IGLOOS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>1 &amp; 2</td><td>20 000/1.1</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Face on</td><td></td><td>610</td><td>Table 1f/20</td><td>610</td><td>Table 1f/19(D13)</td><td>405</td><td>Table 1f/19(D11)</td></tr><tr><td>Rear on</td><td></td><td>610</td><td>a/20</td><td>610</td><td>a/19(D13)</td><td>405</td><td>a/19(D11)</td></tr><tr><td>Side on</td><td></td><td>610</td><td>b/20</td><td>610</td><td>b/19(D13)</td><td>405</td><td>b/19(D11)</td></tr><tr><td>3 &amp; 4</td><td>17 500/1.3(prop.)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Face on</td><td></td><td>240</td><td>Table 3Af/20</td><td>240</td><td>Table 3Af/19(D4)</td><td>160</td><td>Table 3Af/19(D3)</td></tr><tr><td>Rear on</td><td></td><td>170</td><td>a/20</td><td>170</td><td>a/19(D4)</td><td>115</td><td>a/19(D3)</td></tr><tr><td>Side on</td><td></td><td>170</td><td>b/20</td><td>170</td><td>b/19(D4)</td><td>115</td><td>b/19(D3)</td></tr><tr><td></td><td>5 000/1.2</td><td></td><td>Table 2f/20(D2)</td><td>320</td><td>Table 2f/20(D2)</td><td>135</td><td>Table 2f/193)</td></tr><tr><td>Face on</td><td></td><td>320</td><td>a/20(D2)</td><td>320</td><td>a/20(D2)</td><td>135</td><td>a/193)</td></tr><tr><td>Rear on</td><td></td><td>320</td><td>b/20(D2)</td><td>320</td><td>b/20(D2)</td><td>135</td><td>b/193)</td></tr><tr><td>Side on</td><td></td><td>*</td><td>*</td><td>*</td><td>*</td><td>**</td><td>**</td></tr><tr><td>5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Face on</td><td></td><td>170</td><td>Table 3Bf/20</td><td>170</td><td>Table 3Bf/19</td><td>60</td><td>Table 3Bf/193)</td></tr><tr><td>Rear on</td><td></td><td>170</td><td>a/20</td><td>170</td><td>a/19</td><td>60</td><td>a/193)</td></tr><tr><td>Side on</td><td></td><td>170</td><td>b/20</td><td>170</td><td>b/19</td><td>60</td><td>b/193)</td></tr></table>",
+    "img_path": "images/fbd128ba4a719664c51982e44fb2e83a4ada18aae9a66969b017f39550560753.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "EXTERIOR QUANTITY-DISTANCES"
+    }
+  },
+  {
+    "table_idx": 2755,
+    "table_name": "TABLE B-II",
+    "page_idx": 204,
+    "html": "<table><tr><td rowspan=\"2\">ESH No.(PES)TYPE</td><td rowspan=\"2\">NEQkg/HD</td><td colspan=\"6\">Exterior Quantity-Distances to ES in metres</td></tr><tr><td>InhabitedBuildingDistance</td><td>ReferenceColumn/Row</td><td>Public Traffic RouteHeavyTraffic1)</td><td>ReferenceColumn/Row</td><td>RailwayLight PassengerTraffic2)</td><td>ReferenceColumn/Row</td></tr><tr><td>LIGHTSTRUC-TURES,BARRICA-DED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>1 &amp; 2</td><td>20 000/1.1</td><td>610</td><td>Table 1d/20</td><td>610</td><td>Table 1d/19</td><td>405</td><td>Table 1d/19</td></tr><tr><td>3 &amp; 4</td><td>17 500/1.3(prop.)</td><td>170</td><td>Table 3Ad/20</td><td>170</td><td>Table 3Ad/19</td><td>115</td><td>Table 3Ad/19</td></tr><tr><td></td><td>5 000/1.2</td><td>320*</td><td>Table 2d/20*</td><td>320*</td><td>Table 2d/19*</td><td>135*</td><td>Table 2d/193)*</td></tr><tr><td>5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td>170</td><td>Table 3Be/20</td><td>170</td><td>Table 3Be/19</td><td>60</td><td>Table 3Be/193)</td></tr><tr><td>ExplosivesWorkshopsNo. 1 &amp; 2</td><td colspan=\"7\">The workshops are light structures barricaded and with protective roofs. These equate to a columnC in Tables 1 and 2 as PES. Table 1 gives a minimum exterior quantity-distance of 400 m to an In-habited Building or major Public Traffic Route and 270 m to a minor Public Traffic Route.</td></tr></table>\n<table><tr><td rowspan=\"2\">ESH No.(PES)TYPE</td><td rowspan=\"2\">NEQKg/HD</td><td colspan=\"5\">Interior Quantity-Distances to ES in metres</td></tr><tr><td>ReferenceTable/column</td><td>OtherESH</td><td>ReferenceTable/row</td><td>Workshop</td><td>ReferenceTable/row</td></tr><tr><td>Igloo (7 bar)ESH 1 &amp; 2</td><td>20 000/1.1</td><td>1/f</td><td>22(virtuallycompleteprotection)</td><td>1/1</td><td> $220^{1)}$ </td><td>1/16</td></tr><tr><td rowspan=\"2\">ESH 3 &amp; 4</td><td>17 500/1.3(prop.)</td><td>3A/f</td><td>25(high/limiteddegree pro-tection)</td><td>3A/1</td><td>84</td><td>3A/16</td></tr><tr><td>5 000/1.2</td><td>2/f</td><td>2</td><td>2/1*</td><td>25*</td><td>2/16</td></tr><tr><td>ESH 5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td>3B/g</td><td>2**</td><td>3B/1</td><td>25</td><td>3B/16</td></tr><tr><td>Light struc-ture, barri-cadedESH 1 &amp; 2</td><td>20 000/1.1</td><td>1/d</td><td>66(High degreeprotection)</td><td>1/14</td><td> $220^{1)}$ </td><td>1/16</td></tr><tr><td rowspan=\"2\">ESH 3 &amp; 4</td><td>17 500/1.3(prop.)</td><td>3A/d</td><td>32</td><td>3A/14</td><td>84</td><td>3A/16</td></tr><tr><td>5 000/1.2</td><td>2/d</td><td>90(limited de-gree of pro-tection)***</td><td>2/14***</td><td>25***</td><td>2/16***</td></tr><tr><td>ESH 5 &amp; 6</td><td>17 500/1.3(other thanprop.)</td><td>3B/c</td><td>60</td><td>3B/14</td><td>25</td><td>3B/16</td></tr></table>",
+    "img_path": "images/b68fccb6d399d56ec70f2e84f514380d6f4af941269505d3b6b82adc1da75783.jpg",
+    "legend": "",
+    "notes": [],
+    "footnotes": [],
+    "hierarchy": {
+      "level_2": "EXTERIOR QUANTITY-DISTANCES"
+    },
+    "merged_pages": [
+      204,
+      205
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "kb_name": "NATO_AASTP1",
+  "collection": "NATO_AASTP1",
+  "pdf": "AASTP-1-May2006.003973.pdf",
+  "tables": 33,
+  "chunks": 239,
+  "total": 322,
+  "chroma_dir": "data/kbs/NATO_AASTP1/chroma_db",
+  "created_at": "2026-07-01 18:34",
+  "embed_model": "BAAI/bge-large-en-v1.5",
+  "timings": {
+    "mineru_s": 37.2,
+    "assemble_s": 0.0,
+    "chunk_s": 0.0,
+    "index_s": 20.1,
+    "total_s": 57.3
+  }
+}

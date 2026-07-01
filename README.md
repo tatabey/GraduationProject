@@ -119,6 +119,10 @@ python3 system/tools/download_models.py
 #      - sentence-transformers/paraphrase-multilingual-mpnet-...  (multilingual embedding)
 #    The English embedding (BAAI/bge-large-en-v1.5) is fetched automatically by
 #    sentence-transformers on first use; add --with-bge-large to pre-download it too.
+
+# 4. Build the bundled demo knowledge base (NATO AASTP-1) locally — NO MinerU/API key.
+#    The parsed artifacts ship in the repo; this only rebuilds the local vector index.
+python3 system/tools/reindex_kb.py --kb NATO_AASTP1 --no-gold-check
 ```
 
 A CUDA GPU is recommended for the embedding/reranking models (developed on an RTX 3050 Ti,
@@ -133,24 +137,28 @@ A CUDA GPU is recommended for the embedding/reranking models (developed on an RT
 python3 system/server.py        # → http://127.0.0.1:8000
 ```
 
-In the interface: (1) create a knowledge base from a standard PDF, (2) upload an audit report
-and run the audit, (3) read the per-item COMPLIANT / NON-COMPLIANT verdicts with rationales.
+In the interface: (1) select the bundled **NATO_AASTP1** knowledge base (built in Setup step 4)
+or create a new one from a standard PDF, (2) upload an audit report and run the audit,
+(3) read the per-item COMPLIANT / NON-COMPLIANT verdicts with rationales.
 
-> **First run:** a fresh clone ships **no knowledge bases** (`system/data/kbs/` is gitignored).
-> Build one first via the interface — upload a standard PDF and index it. The evaluation
-> scenario sets under `system/data/*.json` are included, but the commands below need a
-> matching KB to exist (e.g. index a KB named `aastp_test` before running them).
+> **Bundled demo KB:** the repo ships the parsed AASTP-1 artifacts, so Setup step 4 rebuilds
+> a ready-to-use `NATO_AASTP1` knowledge base locally with **no MinerU and no API key**.
+> To index *other* standards, upload their PDF in the interface (that path uses MinerU).
 
 ```bash
-# Verdict benchmark (requires a KB named 'aastp_test' to be built first)
+# Verdict benchmark on the bundled KB
 python3 system/tools/benchmark_local.py --models mistral-small-latest \
-  --kb aastp_test --scenarios system/data/test_scenarios.json --tag run1
+  --kb NATO_AASTP1 --scenarios system/data/test_scenarios.json --tag run1
 
 # Retrieval evaluation (guardrail). The --baseline snapshot is generated on your
 # first run; omit it the first time, then reuse it to catch regressions.
-python3 system/tools/eval_retrieval.py --kb aastp_test \
+python3 system/tools/eval_retrieval.py --kb NATO_AASTP1 \
   --scenarios system/data/test_scenarios.json --tag run1
 ```
+
+> Note: `test_scenarios.json` (table set) aligns with the bundled build. The text-retrieval
+> scenario set may not perfectly match a freshly parsed KB (chunk ids shift slightly), which
+> is why Setup step 4 uses `--no-gold-check`.
 
 ---
 
