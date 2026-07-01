@@ -109,7 +109,7 @@ system/
 # 1. Python dependencies
 pip install -r requirements.txt
 
-# 2. API keys — copy the template and fill in your own keys
+# 2. API keys — copy the template and fill in your own keys (see "API keys" below)
 cp system/.env.example system/.env      # then edit system/.env
 
 # 3. Retrieval models — download the local models into system/models/
@@ -127,6 +127,30 @@ python3 system/tools/reindex_kb.py --kb NATO_AASTP1 --no-gold-check
 
 A CUDA GPU is recommended for the embedding/reranking models (developed on an RTX 3050 Ti,
 4 GB, fp16); CPU-only also works (slower).
+
+---
+
+## API keys
+
+All keys are read from `system/.env` (never hard-coded). Copy the template and fill in
+your own keys:
+
+```bash
+cp system/.env.example system/.env    # then edit system/.env
+```
+
+| Key | When needed | How to obtain |
+|---|---|---|
+| `MISTRAL_API_KEY` | **Required** — produces the compliance verdict | [console.mistral.ai](https://console.mistral.ai) → *API Keys* → *Create new key*. The free **Experiment** tier is enough (~1B tokens/month). |
+| `MINERU_API_KEY` | **Required only to add a new standard** (parsing a new PDF in the UI) | [mineru.net](https://mineru.net) → sign up → create an API token. The bundled AASTP-1 KB rebuilds **without** MinerU. |
+| `CEREBRAS_API_KEY` | Optional — stronger comparison model (gpt-oss-120B) | [cloud.cerebras.ai](https://cloud.cerebras.ai) → *API Keys*. |
+| `GROQ_API_KEY` | Optional — alternative inference provider | [console.groq.com](https://console.groq.com) → *API Keys*. |
+
+**Minimum to run the demo:** just `MISTRAL_API_KEY` (the bundled KB needs no MinerU).
+
+> ⚠️ **Security.** `system/.env` is git-ignored and must never be committed. Do not paste
+> real keys into `config.py`, `.env.example`, or any tracked file. If a key is ever exposed,
+> **rotate it** (revoke + regenerate) in the provider console — that is the only reliable fix.
 
 ---
 

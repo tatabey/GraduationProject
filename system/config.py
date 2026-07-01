@@ -122,22 +122,41 @@ BM25_TOP_N   = 10
 # LLM bağlamı 2 doküman tipini de görür (maliyet ~2x context).
 SPLIT_RESULTS = True
 
+# ===========================================================================
+# API ANAHTARLARI
 # ---------------------------------------------------------------------------
-# LLM — Groq (inference için)
-# ---------------------------------------------------------------------------
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")  # .env'den okunur
-GROQ_MODEL   = "llama-3.3-70b-versatile"
-GROQ_BASE_URL = "https://api.groq.com/openai/v1"
+# TÜM anahtarlar ortam değişkenlerinden (system/.env) okunur; KODA GÖMÜLMEZ.
+# Kurulum: `cp system/.env.example system/.env` → kendi anahtarlarınızı yazın.
+# Anahtar nasıl alınır: aşağıdaki her bloğun yorumuna + README "API keys" bölümüne bakın.
+# ⚠️ system/.env git'e GİTMEZ (.gitignore). Anahtarları asla bu dosyaya yazmayın/commit etmeyin.
+# ===========================================================================
 
-# Cerebras (ücretsiz, yüksek throughput, OpenAI-uyumlu)
-CEREBRAS_API_KEY  = os.getenv("CEREBRAS_API_KEY", "")  # .env'den okunur
-CEREBRAS_BASE_URL = "https://api.cerebras.ai/v1"
-
-# Mistral (ücretsiz Experiment: 1 milyar token/AY, 500K TPM, ~60 istek/dk;
-# Cerebras'ın 1M/gün token duvarına alternatif — 24B, OpenAI-uyumlu)
-MISTRAL_API_KEY  = os.getenv("MISTRAL_API_KEY", "")  # .env'den okunur
+# ── Mistral — ÜRETİM verdict modeli (ZORUNLU) ──────────────────────────────
+# Ne için: uygunluk kararı (UYGUN / UYGUN DEĞİL) üreten LLM (Mistral Small 24B).
+# Nereden: https://console.mistral.ai → API Keys → Create new key.
+# Ücret: ücretsiz "Experiment" kademesi yeterli (~1 milyar token/AY, 500K TPM).
+MISTRAL_API_KEY  = os.getenv("MISTRAL_API_KEY", "")   # system/.env'den okunur
 MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
 MISTRAL_RPS_DELAY = 1.0   # Mistral free tier = ~1 istek/sn (çağrılar arası bekleme)
+
+# ── MinerU — PDF ayrıştırma (YENİ standart eklerken ZORUNLU) ────────────────
+# Ne için: arayüzden yeni bir PDF indekslerken tablo+metin çıkarımı (cloud parse).
+# Nereden: https://mineru.net → hesap aç → API token oluştur.
+# Not: repodaki HAZIR KB'ler (reindex ile) MinerU'suz kurulur; anahtar yalnız
+#      YENİ bir PDF eklemek istediğinizde gerekir. (Tanım aşağıda MINERU bölümünde.)
+
+# ── Cerebras — OPSİYONEL (kıyas/rapor; gpt-oss-120B) ───────────────────────
+# Ne için: daha güçlü ama günlük token-duvarlı kıyas modeli. Üretim için gerekmez.
+# Nereden: https://cloud.cerebras.ai → API Keys.
+CEREBRAS_API_KEY  = os.getenv("CEREBRAS_API_KEY", "")  # system/.env'den okunur
+CEREBRAS_BASE_URL = "https://api.cerebras.ai/v1"
+
+# ── Groq — OPSİYONEL (alternatif inference sağlayıcı) ──────────────────────
+# Ne için: alternatif LLM sağlayıcı (llama-3.x). Üretim için gerekmez.
+# Nereden: https://console.groq.com → API Keys.
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")  # system/.env'den okunur
+GROQ_MODEL   = "llama-3.3-70b-versatile"
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 # ---------------------------------------------------------------------------
 # Üretim denetim modeli (arayüz / auditor.py bunu kullanır)
@@ -190,9 +209,13 @@ OLLAMA_URL   = "http://localhost:11434/v1"
 OLLAMA_MODEL = "llama3.2:3b"
 
 # ---------------------------------------------------------------------------
-# MinerU API (PDF → JSON)
+# MinerU API (PDF → JSON) — YENİ standart eklerken ZORUNLU
+# Ne için: arayüzden yeni PDF indekslerken cloud parse (tablo+metin çıkarımı).
+# Nereden: https://mineru.net → hesap aç → API token oluştur.
+# Not: repodaki hazır KB'ler MinerU'suz kurulur (reindex_kb.py); anahtar yalnız
+#      YENİ bir PDF eklemek istediğinizde gerekir.
 # ---------------------------------------------------------------------------
-MINERU_API_KEY = os.getenv("MINERU_API_KEY", "")  # .env'den okunur
+MINERU_API_KEY = os.getenv("MINERU_API_KEY", "")  # system/.env'den okunur
 MINERU_CHUNK_SIZE = 50  # sayfa başına chunk boyutu
 # Parça paralelliği: 0 = TÜM parçalar aynı anda (önerilen; parçalar bağımsız,
 # birleştirme deterministik), 1 = sıralı (eski davranış/fallback), N = üst sınır.
