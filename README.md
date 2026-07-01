@@ -112,14 +112,17 @@ pip install -r requirements.txt
 # 2. API keys — copy the template and fill in your own keys
 cp system/.env.example system/.env      # then edit system/.env
 
-# 3. Retrieval models (downloaded into system/models/)
-#    - BAAI/bge-large-en-v1.5      (English embedding)
-#    - BAAI/bge-reranker-base      (cross-encoder reranker)
-#    A multilingual embedding model is used automatically for non-English documents.
+# 3. Retrieval models — download the local models into system/models/
+python3 system/tools/download_models.py
+#    Downloads:
+#      - BAAI/bge-reranker-base                                   (cross-encoder reranker — required)
+#      - sentence-transformers/paraphrase-multilingual-mpnet-...  (multilingual embedding)
+#    The English embedding (BAAI/bge-large-en-v1.5) is fetched automatically by
+#    sentence-transformers on first use; add --with-bge-large to pre-download it too.
 ```
 
 A CUDA GPU is recommended for the embedding/reranking models (developed on an RTX 3050 Ti,
-4 GB, fp16).
+4 GB, fp16); CPU-only also works (slower).
 
 ---
 
@@ -133,14 +136,20 @@ python3 system/server.py        # → http://127.0.0.1:8000
 In the interface: (1) create a knowledge base from a standard PDF, (2) upload an audit report
 and run the audit, (3) read the per-item COMPLIANT / NON-COMPLIANT verdicts with rationales.
 
-```bash
-# Retrieval evaluation (guardrail)
-python3 system/tools/eval_all.py --tag run1 \
-  --baseline system/data/benchmark/eval_all_baseline.json --tolerance 0.02
+> **First run:** a fresh clone ships **no knowledge bases** (`system/data/kbs/` is gitignored).
+> Build one first via the interface — upload a standard PDF and index it. The evaluation
+> scenario sets under `system/data/*.json` are included, but the commands below need a
+> matching KB to exist (e.g. index a KB named `aastp_test` before running them).
 
-# Verdict benchmark
+```bash
+# Verdict benchmark (requires a KB named 'aastp_test' to be built first)
 python3 system/tools/benchmark_local.py --models mistral-small-latest \
   --kb aastp_test --scenarios system/data/test_scenarios.json --tag run1
+
+# Retrieval evaluation (guardrail). The --baseline snapshot is generated on your
+# first run; omit it the first time, then reuse it to catch regressions.
+python3 system/tools/eval_retrieval.py --kb aastp_test \
+  --scenarios system/data/test_scenarios.json --tag run1
 ```
 
 ---
